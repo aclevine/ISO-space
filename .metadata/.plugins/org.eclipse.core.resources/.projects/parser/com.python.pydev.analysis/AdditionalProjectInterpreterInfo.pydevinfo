@@ -1,0 +1,190 @@
+-- VERSION_4
+-- START DISKCACHE
+D:\Program Files\ISO-Space\.metadata\.plugins\org.eclipse.core.resources\.projects\parser\com.python.pydev.analysis\v2_indexcache
+util.evaluator|1410281326458|D:\Program Files\ISO-Space\parser\util\evaluator.py
+util.alphabet|1410281326424|D:\Program Files\ISO-Space\parser\util\alphabet.py
+util.__init__|1410281326488|D:\Program Files\ISO-Space\parser\util\__init__.py
+Corpora.stats|1409941902508|D:\Program Files\ISO-Space\parser\Corpora\stats.py
+Corpora.corpus|1409946751905|D:\Program Files\ISO-Space\parser\Corpora\corpus.py
+Corpora.abbreviation|1409941902458|D:\Program Files\ISO-Space\parser\Corpora\abbreviation.py
+Corpora.annotation_manager|1409941902474|D:\Program Files\ISO-Space\parser\Corpora\annotation_manager.py
+Corpora.mae_corpus|1409941902500|D:\Program Files\ISO-Space\parser\Corpora\mae_corpus.py
+Corpora.mae_document|1410283398016|D:\Program Files\ISO-Space\parser\Corpora\mae_document.py
+SKClassifier|1410281459755|D:\Program Files\ISO-Space\parser\SKClassifier.py
+Corpora.__init__|1410281213069|D:\Program Files\ISO-Space\parser\Corpora\__init__.py
+Corpora.tokenizer|1409941902512|D:\Program Files\ISO-Space\parser\Corpora\tokenizer.py
+Corpora.trial_counts|1409941902532|D:\Program Files\ISO-Space\parser\Corpora\trial_counts.py
+Corpora.count_tags|1409941902496|D:\Program Files\ISO-Space\parser\Corpora\count_tags.py
+-- END DISKCACHE
+-- START DICTIONARY
+38
+17=TokenizedSentence
+34=Tokenizer.__init__
+8=util.evaluator
+25=TokenizedLex.__init__
+10=Corpora.abbreviation
+21=UnsupportedMIMETypeError
+27=SKClassifier.load_model
+1=Corpora.annotation_manager
+16=TokenizedLex
+36=Document.__init__
+29=Tokenizer._set_tag_indexes
+12=Corpora.mae_document
+26=TokenizedSentence.__init__
+33=ConfusionMatrix.__init__
+6=SKClassifier
+28=SKClassifier.__init__
+31=MAE_Document.__init__
+11=Corpora.trial_counts
+23=Alphabet.__init__
+32=UnsupportedMIMETypeError.__init__
+35=Tokenizer.tokenize_text
+7=Corpora.count_tags
+13=Alphabet
+19=Tokenizer
+37=TokenizedText.__init__
+20=ConfusionMatrix
+14=Document
+5=util.alphabet
+2=Corpora.stats
+3=Corpora.corpus
+22=MAE_Document
+9=Corpora.mae_corpus
+15=Corpus
+4=Corpora.tokenizer
+30=Corpus.__init__
+18=TokenizedText
+24=Alphabet.__eq__
+38=Tokenizer._split_contractions
+-- END DICTIONARY
+-- START TREE 1
+62
+__a|3|__author__!11@__author__!19@__author__!27@
+__e|3|__email__!27@__email__!19@__email__!11@
+abb|1|abbrev_pattern!35@
+alp|1|Alphabet!41@
+ann|2|annotators!11@annotator!11@
+apo|1|apostrophe_pattern!35@
+bas|1|base_path!11@
+bod|1|body!50@
+c|0|
+cle|3|clef_corpus!59@clef_corpus_directory!59@clef_corpus_files!59@
+clo|1|close_tag!26@
+con|3|ConfusionMatrix!65@contraction_pattern2!35@contraction_pattern1!35@
+cor|4|corpus!11@Corpus!73@corpora!59@Corpus!25@
+cp_|3|cp_corpus!59@cp_corpus_directory!59@cp_corpus_files!59@
+dat|2|data!59@datum!59@
+dic|3|dict_end_abbrevs!83@dict_abbrevs!83@dict_initial_tokens!83@
+dir|1|directory!91@
+do|0|
+doc|1|Document!25@
+fil|1|files!91@
+fin|1|find_files!26@
+geo|1|geo!83@
+get|5|get_element_span!98@get_tag_span!98@get_section!10@get_wordnet_pos!98@get_tag_attributes!98@
+hom|2|home!19@home!11@
+in_|1|in_file!35@
+ini|2|initial_tokens_brown!83@initial_tokens_other!83@
+is_|2|is_type!98@is_xml!26@
+lab|1|label!50@
+lex|1|lex_tokenize!98@
+lin|1|lines!11@
+mae|1|MAE_Document!97@
+mai|1|main!18@
+mak|2|make_xml!26@make_dir!10@
+mat|1|matrix_to_string!66@
+mea|1|measures!83@
+mon|1|months!83@
+ort|1|orth!98@
+oth|2|other_end!83@other!83@
+par|1|parse!11@
+pat|1|pattern!11@
+pos|1|pos_tag!98@
+pun|1|punctuation_pattern!35@
+rfc|3|rfc_corpus_files!59@rfc_corpus_directory!59@rfc_corpus!59@
+run|1|run!10@
+sen|1|sentences!19@
+skc|1|SKClassifier!49@
+spa|3|SpaceEval!19@span_in_span!98@space_eval_path!19@
+sta|1|states!83@
+t|0|
+t1|1|t1!35@
+tag|2|tag_set!59@tag_types!59@
+tes|2|test_nonspace!34@test_space!34@
+tex|4|text!11@text_path!11@text!35@texts!19@
+tit|1|titles!83@
+tk|1|tk!35@
+tok|8|tokenizers!19@token!50@tokenized_texts!19@TokenizedLex!33@Tokenizer!33@token_is_abbreviation!34@TokenizedSentence!33@TokenizedText!33@
+tri|2|trial_files!59@trial_directory!59@
+uns|1|UnsupportedMIMETypeError!97@
+val|1|validate_mime_type!26@
+wor|1|words!19@
+wra|1|wrap!26@
+x|0|
+-- END TREE
+-- START TREE 2
+63
+__e|1|__eq__!13&42@
+__i|12|__init__!6&50@__init__!14&26@__init__!15&26@__init__!13&42@__init__!16&34@__init__!17&34@__init__!18&34@__init__!19&34@__init__!20&66@__init__!21&98@__init__!22&98@__init__!15&74@
+__l|1|__len__!13&42@
+__r|1|__repr__!14&26@
+__s|2|__str__!16&34@__str__!21&98@
+_fi|1|_first_token_start!19&34@
+_in|1|_index_to_label!23&43@
+_la|2|_label_to_index!24&43@_label_to_index!23&43@
+_re|1|_restore_abbreviation!19&34@
+_se|3|_set_sentences!19&34@_set_tag_indexes!19&34@_set_lexes!19&34@
+_sl|1|_slurp!19&34@
+_sp|4|_split_punctuation!19&34@_split_contraction!19&34@_split_contractions!19&34@_split_word!19&34@
+add|3|add_data!20&66@add_labels!6&50@add!13&42@
+app|1|append!17&34@
+as_|9|as_vertical_string!16&34@as_vertical_string!17&34@as_vertical_string!18&34@as_pairs!16&34@as_pairs!17&34@as_pairs!18&34@as_string!16&34@as_string!17&34@as_string!18&34@
+beg|2|begin!25&35@begin!26&35@
+cla|1|classify!6&50@
+clf|2|clf!27&51@clf!28&51@
+clo|2|closing_lexes!29&35@closing_sents!29&35@
+col|3|collect_tags!15&74@collect_documents!15&74@collect_sentences!15&74@
+com|4|compute_accuracy!20&66@compute_f1!20&66@compute_recall!20&66@compute_precision!20&66@
+con|1|consuming_tags!14&26@
+dir|1|directory!30&27@
+doc|5|doc_id!31&99@documents!30&75@documents!15&26@doc_type!32&99@doc_type!31&99@
+end|2|end!25&35@end!26&35@
+eva|1|evaluate!6&50@
+ext|2|extract_tags!22&98@extract_text!22&98@
+fea|4|featurize!6&50@features!27&51@features!28&51@feature_funcs!28&51@
+fro|1|from_dict!13&42@
+get|6|get_doc_id!22&98@get_index!13&42@get_tokenized!19&34@get_tokenized_as_string!19&34@get_label!13&42@get_tokenized_as_xml!19&34@
+has|1|has_label!13&42@
+in_|0|
+ind|2|indexed_sentences!31&99@index_sentences!22&98@
+jso|2|json_dumps!13&42@json_loads!13&42@
+lab|3|labels!27&51@labels!28&51@label_codebook!33&67@
+len|1|length!34&35@
+lex|2|lexes!35&35@lexes!34&35@
+loa|1|load_model!6&50@
+mat|1|matrix!33&67@
+mod|2|model_info!27&51@model_info!28&51@
+nam|1|name!36&27@
+num|2|num_labels!24&43@num_labels!23&43@
+ope|2|opening_lexes!29&35@opening_sents!29&35@
+pat|3|path!31&99@paths!30&75@pattern!30&27@
+pri|7|print_out!20&66@print_as_string!16&34@print_as_string!17&34@print_as_string!18&34@print_as_xmlstring!16&34@print_as_xmlstring!17&34@print_as_xmlstring!18&34@
+rec|1|recursive!30&27@
+roo|1|root!14&26@
+sav|1|save_model!6&50@
+sen|5|sentences!37&35@sentences!35&35@sentences!34&35@sentences!30&75@sentences!31&99@
+set|1|set_doc_type!22&98@
+siz|1|size!13&42@
+slu|1|slurp_token!19&34@
+sup|1|supported_doc_types!31&99@
+t1|0|
+tag|8|tag_types!30&75@tags!30&75@tag_counts!15&74@tags!31&99@tag_dictionary!30&75@tags!14&26@tag_set!15&74@tag_dict!15&74@
+tas|1|task!14&26@
+tex|4|text!25&35@text!34&35@text!14&26@text!31&99@
+tk|0|
+to_|1|to_dict!13&42@
+tok|6|tokens!26&35@tokens!38&35@tokens!35&35@tokens!34&35@tokenizer!31&99@tokenize_text!19&34@
+tra|1|train!6&50@
+uni|1|unicode_text!34&35@
+val|2|validate!14&26@validate!15&26@
+-- END TREE

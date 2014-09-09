@@ -1,0 +1,44 @@
+'''
+Created on Sep 9, 2014
+
+@author: ACL73
+'''
+
+import Corpora.corpus as zach
+import Corpora.tokenizer as mark
+
+if __name__ == "__main__":
+    
+    
+    
+    #1) LOAD TRAINING DATA INTO DESIRED FORMAT
+    c = zach.Corpus('./train')
+     
+    #===========================================================================
+    # for d in c.documents():
+    #     print d.text()
+    #     print d.tags()
+    #===========================================================================
+         
+     
+    doc = list(c.documents())[0]
+    text = doc.text()
+    t = mark.Tokenizer(text)
+    x = t.tokenize_text()
+    print x.as_vertical_string()()
+    
+
+    #for t in doc.tags():
+        #print t # have tags with: WORD, OFFSETS, SPATIAL DATA (add xml -> dict parser?)
+
+
+
+
+        
+        # NEED: 
+            # TOKEN
+            # SURROUNDING WORDS (sentence?)
+            # LABEL EXTRACTOR
+         
+    
+    
