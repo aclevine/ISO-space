@@ -9,7 +9,7 @@ class MAE_Document:
     """A document object is constructed from an XML document file whose path is supplied as an initialization parameter. The XML DOM tree is expected to have the form of a MAE/MAI annotation (MAE is written by Amber Stubbs (astubbs@cs.brandeis.edu) and its documentation can be downloaded from http://code.google.com/p/mae-annotation/). The document should contain text within a <TEXT></TEXT> element whose content is CDATA[[]], and a <TAGS></TAGS> element containing offset annotations referring to the text. The document also instantiates a tokenizer for itself so that the document's text content may be tokenized for further processing."""
     def __init__(self, path):
         self.path = path
-        self.supported_doc_types = ['application/xml', 'text/xml', 'text/plain']
+        self.supported_doc_types = ['application/xml', 'text/plain']
         self.doc_type = self.set_doc_type()
         self.text = self.extract_text()
         self.tokenizer = Tokenizer(self.text)
@@ -33,7 +33,7 @@ class MAE_Document:
     def extract_text(self):
         """Returns the document's text as a string. If the document is determined to be an XML, the text is taken from <TEXT></TEXT> element if the document is an XML."""
         doc_text = ""
-        if self.doc_type == 'application/xml' or 'text/xml':
+        if self.doc_type == 'application/xml':
             #doc_text = fix(ET.parse(self.path).findall('TEXT')[0].text)
             doc_text = ET.parse(self.path).findall('TEXT')[0].text
         if self.doc_type[0] == 'text/plain':
