@@ -137,19 +137,19 @@ def validate_mime_type(file_path, valid_mime_types):
     return valid
 
 def is_xml(file_path):
-    return validate_mime_type(file_path, set(['application/xml']))
+    return validate_mime_type(file_path, set(['application/xml', 'text/xml']))
 
 def base_name(file_path):
     # basename is *nix only
     try:
-        return os.popen('basename ' + path).read().strip()
+        return os.popen('basename ' + file_path).read().strip()
     except:
         return file_path.split(os.sep)[-1]
 
 def dir_name(file_path):
     # dirname is *nix only
     try:
-        return os.popen('dirname' + path).read().strip()
+        return os.popen('dirname' + file_path).read().strip()
     except:
         return os.sep.join(file_path.split(os.sep)[:-1])
     

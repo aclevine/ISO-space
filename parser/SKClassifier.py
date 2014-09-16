@@ -1,30 +1,24 @@
 #!/usr/bin/env python
+'''
+Created on Sep 16, 2014
+
+@author: Einar Froyen, Aaron Levine
+'''
 import json
 
-from nltk import word_tokenize
 import os
 import numpy as np
 from sklearn.externals import joblib
 from sklearn.linear_model import LogisticRegression
 from sklearn.feature_extraction import DictVectorizer
 
-from feature_extract import *
 from util.alphabet import Alphabet
 from util.evaluator import ConfusionMatrix
 
-#inst =  (tag, tok, body)
-def label(inst):
-    return inst[0]
-
-def token(inst):
-    return inst[1]
-
-def body(inst):
-    return inst[2]
-
 class SKClassifier():
-    def __init__(self, clf, ffuncs):
+    def __init__(self, clf, lfunc, ffuncs):
         self.feature_funcs = ffuncs
+        self.label_extract = lfunc
         self.clf = clf
         self.labels = Alphabet()
         self.features = DictVectorizer() 
@@ -39,15 +33,12 @@ class SKClassifier():
         y = []
         #instance = (path, (body, subject, label))
         for inst in instances:
-            try:
-                y.append(self.labels.get_index(label(inst)))
-            except KeyError:
-                if not test:
-                    print "Couldn't find %s in set of labels. ^C if this is a problem." % label(inst)
-            ## FEAT EXTRACTOR HERE
-            feats = {'dummy': 0}
-            #feats = get_fsets(self.feature_funcs, body(inst), '', self.model_info)
-            #feats.update(get_fsets(self.feature_funcs, [token(instance)], 'word', self.model_info))
+            ## LABEL EXTRACTOR
+            y.append(self.labels.get_index( self.label_extract(inst) ))
+            ## FEAT EXTRACTOR0
+            feats = {}
+            for f in self.feature_funcs:
+                feats.update( f(inst) )
             X.append(feats)
         if test:
             return (self.features.transform(X), y)

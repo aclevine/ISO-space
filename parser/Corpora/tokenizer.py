@@ -304,7 +304,6 @@ class Tokenizer:
 
     
     def get_tokenized(self, xml, s_open, s_close, lex_open, lex_close, lexindent):
-        
         """Return the tokenized text as a string."""
 
         self._set_tag_indexes()
