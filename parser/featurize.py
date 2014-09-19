@@ -9,7 +9,7 @@ Created on July 30, 2014
 from sklearn.linear_model import LogisticRegression 
 from SKClassifier import SKClassifier
 import Corpora.corpus as xml
-import re
+import re, nltk
 #===============================================================================
 
 type_keys = {'PATH': 'p', 'PLACE': 'pl', 'MOTION': 'm', 'NONMOTION_EVENT': 'e', 'SPATIAL_ENTITY': 'se', # spatial elements
@@ -31,8 +31,6 @@ class Instance:
         
     # 1) Spatial Elements (SE):
     ## a) Identify spans of spatial elements including locations, paths, events and other spatial entities.
-    
-    # nltk.ne_chunker(
         
     ## b) Classify spatial elements according to type: PATH, PLACE, MOTION, NONMOTION_EVENT, SPATIAL_ENTITY.
     # LABEL EXTRACT
@@ -60,6 +58,13 @@ class Instance:
             return ''
     
     # FEATURE EXTRACT
+    def bag_of_words(self, n):
+        """ returns 2n+1 words surrounding target"""
+        tokens = [self.token]
+        tokens.extend([tok for tok, lex in self.prev_tokens[len(self.prev_tokens)-n:]])
+        tokens.extend([tok for tok, lex in self.next_tokens[:n]])
+        return {'prev_' + tok:True for tok in tokens}
+        
     def curr_token(self):
         ''' pull prev n tokens in sentence before target word.'''
         return {'curr_' + self.token:True}
@@ -80,25 +85,34 @@ class Instance:
 # TESTING
 def build_instances(doc_path = './training'):
     '''get basic sense of manipulating xml docs'''
-    c = xml.Corpus(doc_path)
-
+    c = xml.Corpus(doc_path)    
+    nonconsumed_tag = {}
     for doc in list(c.documents()):    
         # sort tag info by start offset
         sd = {}
         tags = doc.consuming_tags()
         for t in tags:
-            sd[int(t.attrs['start'])] = t.attrs # {start offset: xml tokens, offsets, spatial data}
-    
+            sd[int(t.attrs['start'])] = t.attrs # {start offset: xml tokens, offsets, spatial data}    
         # construct instance objects from corpus data    
+        start = end = 0
         for s in doc.tokenizer.tokenize_text().sentences:
             sent = s.as_pairs()
-            for i in range(len(sent)):
+            for i in range(len(sent)): 
                 token = sent [i] # (token, lexeme obj)
                 before = sent[:i] # [ (token, lexeme obj), (token, lexeme obj), ...]
                 after = sent [i+1:] # [ (token, lexeme obj), (token, lexeme obj), ...]
-                tag = sd.get( token[1].begin, {})            
-                inst = Instance(token[0], token[1], before, after, tag)                         
+                # split tags across tokens
+                if nonconsumed_tag == {}:
+                    tag = sd.get( token[1].begin, {})
+                else:
+                    tag = nonconsumed_tag
+                if tag != {} and int(tag["end"]) > token[1].end:
+                    nonconsumed_tag = tag
+                else:
+                    nonconsumed_tag = {}
+                inst = Instance(token[0], token[1], before, after, tag)
                 yield inst
+
             
 def all_false_classifier(test_data):
     # HIGHEST OCCURRING TAG: FALSE
@@ -109,8 +123,7 @@ def all_false_classifier(test_data):
     clf.evaluate(['False' for x in test_data], [label(x) for x in test_data])
 
 
-if __name__ == "__main__":
-
+def typing_demo():
     # random select train/test data    
     train_data = []
     test_data = []
@@ -119,20 +132,25 @@ if __name__ == "__main__":
             test_data.append(inst)
         else:
             train_data.append(inst)
-
-#===============================================================================
-#     features = [lambda x: x.curr_token(),
-#                 lambda x: x.prev_n_bag_of_words(9),
-#                 lambda x: x.next_n_bag_of_words(9)]
-# 
-#     #'PATH', 'PLACE', 'MOTION', 'NONMOTION_EVENT', 'SPATIAL_ENTITY'       
-#     label = lambda x: str(x.is_type('PATH'))
-# 
-#     clf = SKClassifier(LogisticRegression(), label, features)
-#     clf.add_labels(['True', 'False']) #binary classifier
-#     clf.train(train_data)
-# 
-#     pred = clf.classify(test_data)    
-#     clf.evaluate(pred, [label(x) for x in test_data])
-#===============================================================================
+ 
+    features = [lambda x: x.curr_token(),
+                lambda x: x.prev_n_bag_of_words(100),
+                lambda x: x.next_n_bag_of_words(100)]
     
+    #features = [lambda x: x.bag_of_words(3)] #awful performance
+  
+    for type_name in ['PATH', 'PLACE', 'MOTION', 'NONMOTION_EVENT', 'SPATIAL_ENTITY']:
+        label = lambda x: str(x.is_type(type_name))
+      
+        clf = SKClassifier(LogisticRegression(), label, features)
+        clf.add_labels(['True', 'False']) #binary classifier
+        clf.train(train_data)
+      
+        pred = clf.classify(test_data)    
+        print '\n\n%s:' %(type_name)
+        clf.evaluate(pred, [label(x) for x in test_data])
+        
+
+if __name__ == "__main__":
+    
+    typing_demo()
