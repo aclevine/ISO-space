@@ -5,11 +5,12 @@ Created on July 30, 2014
 @author: Aaron Levine
 '''
 
+#===============================================================================
 from sklearn.linear_model import LogisticRegression 
 from SKClassifier import SKClassifier
 import Corpora.corpus as xml
 import re
-
+#===============================================================================
 
 type_keys = {'PATH': 'p', 'PLACE': 'pl', 'MOTION': 'm', 'NONMOTION_EVENT': 'e', 'SPATIAL_ENTITY': 'se', # spatial elements
              'SPATIAL_SIGNAL': 's', # spatial signal
@@ -31,7 +32,7 @@ class Instance:
     # 1) Spatial Elements (SE):
     ## a) Identify spans of spatial elements including locations, paths, events and other spatial entities.
     
-    # > BASELINE TOKEN JOINING HERE <
+    # nltk.ne_chunker(
         
     ## b) Classify spatial elements according to type: PATH, PLACE, MOTION, NONMOTION_EVENT, SPATIAL_ENTITY.
     # LABEL EXTRACT
@@ -59,22 +60,25 @@ class Instance:
             return ''
     
     # FEATURE EXTRACT
+    def curr_token(self):
+        ''' pull prev n tokens in sentence before target word.'''
+        return {'curr_' + self.token:True}
+
     def prev_n_bag_of_words(self, n):
         ''' pull prev n tokens in sentence before target word.'''
         if n > len(self.next_tokens):
             n = len(self.next_tokens)
-        return {tok:True for tok, lex in self.prev_tokens[len(self.prev_tokens)-n:]}
+        return {'prev_' + tok:True for tok, lex in self.prev_tokens[len(self.prev_tokens)-n:]}
 
     def next_n_bag_of_words(self, n):
         ''' pull next n tokens in sentence after target word.'''
         if n > len(self.next_tokens):
             n = len(self.next_tokens)
-        return {tok:True for tok, lex in self.next_tokens[:n]}
-
+        return {'next_' + tok:True for tok, lex in self.next_tokens[:n]}
 
 
 # TESTING
-def build_instances(doc_path = './train'):
+def build_instances(doc_path = './training'):
     '''get basic sense of manipulating xml docs'''
     c = xml.Corpus(doc_path)
 
@@ -96,23 +100,39 @@ def build_instances(doc_path = './train'):
                 inst = Instance(token[0], token[1], before, after, tag)                         
                 yield inst
             
+def all_false_classifier(test_data):
+    # HIGHEST OCCURRING TAG: FALSE
+    features = []
+    label = lambda x: str(x.is_type('SPATIAL_ENTITY'))
+    clf = SKClassifier(LogisticRegression(), label, features)
+    clf.add_labels(['True', 'False']) #binary classifier    
+    clf.evaluate(['False' for x in test_data], [label(x) for x in test_data])
+
 
 if __name__ == "__main__":
 
-    train_data = [inst for inst in build_instances()]
+    # random select train/test data    
+    train_data = []
+    test_data = []
+    for i, inst in enumerate(build_instances('./training')):
+        if i%10 == 2 or i%10 == 5:
+            test_data.append(inst)
+        else:
+            train_data.append(inst)
 
-    features = [lambda x: x.prev_n_bag_of_words(9), 
-                lambda x: x.next_n_bag_of_words(9)]
-        
-    label = lambda x: str(x.is_type('PLACE'))   
-
-    print [label(inst) for inst in train_data]
+#===============================================================================
+#     features = [lambda x: x.curr_token(),
+#                 lambda x: x.prev_n_bag_of_words(9),
+#                 lambda x: x.next_n_bag_of_words(9)]
+# 
+#     #'PATH', 'PLACE', 'MOTION', 'NONMOTION_EVENT', 'SPATIAL_ENTITY'       
+#     label = lambda x: str(x.is_type('PATH'))
+# 
+#     clf = SKClassifier(LogisticRegression(), label, features)
+#     clf.add_labels(['True', 'False']) #binary classifier
+#     clf.train(train_data)
+# 
+#     pred = clf.classify(test_data)    
+#     clf.evaluate(pred, [label(x) for x in test_data])
+#===============================================================================
     
-    clf = SKClassifier(LogisticRegression(), label, features)
-    clf.add_labels(['True', 'False'])
-    clf.train(train_data)
-
-    pred = clf.classify(train_data)    
-    print pred
-    clf.evaluate(pred, [label(x) for x in train_data]) # SYSTEM WORKS (very poorly on two documents), HORRAY!
-
