@@ -15,6 +15,7 @@ import re, nltk
 type_keys = {'PATH': 'p', 'PLACE': 'pl', 'MOTION': 'm', 'NONMOTION_EVENT': 'e', 'SPATIAL_ENTITY': 'se', # spatial elements
              'SPATIAL_SIGNAL': 's', # spatial signal
              'MOTION_SIGNAL': 'ms', # motion signal
+             'ANY': ''
              # motion relation
              # spatial config
              # spatial orientation
@@ -82,12 +83,10 @@ class Instance:
         return {'next_' + tok:True for tok, lex in self.next_tokens[:n]}
 
 
-# TESTING
-def build_instances(doc_path = './training'):
+# TESTING    
+def build_instances(doc_iter):
     '''get basic sense of manipulating xml docs'''
-    c = xml.Corpus(doc_path)    
-    nonconsumed_tag = {}
-    for doc in list(c.documents()):    
+    for doc in list(doc_iter):    
         # sort tag info by start offset
         sd = {}
         tags = doc.consuming_tags()
@@ -96,6 +95,7 @@ def build_instances(doc_path = './training'):
         # construct instance objects from corpus data    
         start = end = 0
         for s in doc.tokenizer.tokenize_text().sentences:
+            nonconsumed_tag = {}
             sent = s.as_pairs()
             for i in range(len(sent)): 
                 token = sent [i] # (token, lexeme obj)
@@ -113,6 +113,14 @@ def build_instances(doc_path = './training'):
                 inst = Instance(token[0], token[1], before, after, tag)
                 yield inst
 
+def build_train_test(doc_path = './training', split=0.8):
+    c = xml.Corpus(doc_path)    
+    docs = list(c.documents())
+    i = int(len(docs) * split)
+    train_docs = docs[:i]
+    test_docs = docs[i:]
+
+    return list(build_instances(train_docs)), list(build_instances(test_docs))
             
 def all_false_classifier(test_data):
     # HIGHEST OCCURRING TAG: FALSE
@@ -125,32 +133,33 @@ def all_false_classifier(test_data):
 
 def typing_demo():
     # random select train/test data    
-    train_data = []
-    test_data = []
-    for i, inst in enumerate(build_instances('./training')):
-        if i%10 == 2 or i%10 == 5:
-            test_data.append(inst)
-        else:
-            train_data.append(inst)
+    train_data, test_data = build_train_test()
  
     features = [lambda x: x.curr_token(),
                 lambda x: x.prev_n_bag_of_words(100),
                 lambda x: x.next_n_bag_of_words(100)]
     
     #features = [lambda x: x.bag_of_words(3)] #awful performance
-  
+    any_pred = ['False' for x in test_data]
     for type_name in ['PATH', 'PLACE', 'MOTION', 'NONMOTION_EVENT', 'SPATIAL_ENTITY']:
         label = lambda x: str(x.is_type(type_name))
-      
+       
         clf = SKClassifier(LogisticRegression(), label, features)
         clf.add_labels(['True', 'False']) #binary classifier
         clf.train(train_data)
-      
+       
         pred = clf.classify(test_data)    
         print '\n\n%s:' %(type_name)
         clf.evaluate(pred, [label(x) for x in test_data])
-        
+        for i, p in enumerate(pred):
+            if p == 'True':
+                any_pred[i] = 'True'
+
+    print '\n\n%s:' %('ANY')
+    any_label = lambda x: str(x.is_type('ANY'))
+    clf.evaluate(any_pred, [any_label(x) for x in test_data])
+
 
 if __name__ == "__main__":
-    
+
     typing_demo()

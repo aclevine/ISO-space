@@ -48,6 +48,16 @@ def build_instances_kai(doc_path = './training'):
 if __name__ == "__main__":
     
     
-    print nltk.pos_tag([u'\u201c'])
+    #print nltk.pos_tag([u'\u201c'])
 
+    split = 0.8
+    docs = [1, 2, 3, 4]
 
+    i = int(len(docs) * split)
+    train_docs = docs[:i]
+    test_docs = docs[i:]
+    
+    print train_docs
+    print test_docs
+
+    
