@@ -3,13 +3,17 @@
 Created on July 30, 2014
 
 @author: Aaron Levine
+# 1) Spatial Elements (SE):
+    ## b) Classify spatial elements according to type: PATH, PLACE, MOTION, NONMOTION_EVENT, SPATIAL_ENTITY.    
 '''
 
 #===============================================================================
 from sklearn.linear_model import LogisticRegression 
 from SKClassifier import SKClassifier
-import Corpora.corpus as xml
-import re, nltk
+from Corpora.corpus import Corpus
+from se_a import Instance
+
+import re
 #===============================================================================
 
 type_keys = {'PATH': 'p', 'PLACE': 'pl', 'MOTION': 'm', 'NONMOTION_EVENT': 'e', 'SPATIAL_ENTITY': 'se', # spatial elements
@@ -21,19 +25,8 @@ type_keys = {'PATH': 'p', 'PLACE': 'pl', 'MOTION': 'm', 'NONMOTION_EVENT': 'e', 
              # spatial orientation
              }
 
-class Instance:
-    '''a class for loading tokens from XML doc with surrounding token and tag data'''
-    def __init__(self, token, lex, prev_tokens, next_tokens, tag):
-        self.token = token
-        self.lex = lex
-        self.prev_tokens = prev_tokens
-        self.next_tokens = next_tokens
-        self.tag = tag
-        
-    # 1) Spatial Elements (SE):
-    ## a) Identify spans of spatial elements including locations, paths, events and other spatial entities.
-        
-    ## b) Classify spatial elements according to type: PATH, PLACE, MOTION, NONMOTION_EVENT, SPATIAL_ENTITY.
+class Instance(Instance):
+    '''a class for loading tokens from XML doc with surrounding token and tag data'''    
     # LABEL EXTRACT
     def is_type(self, element_type):
         ''' check if tag id matches given element type. untagged tokens always come back false '''
@@ -61,14 +54,14 @@ class Instance:
     # FEATURE EXTRACT
     def bag_of_words(self, n):
         """ returns 2n+1 words surrounding target"""
-        tokens = [self.token]
+        tokens = self.token
         tokens.extend([tok for tok, lex in self.prev_tokens[len(self.prev_tokens)-n:]])
         tokens.extend([tok for tok, lex in self.next_tokens[:n]])
         return {'prev_' + tok:True for tok in tokens}
         
     def curr_token(self):
         ''' pull prev n tokens in sentence before target word.'''
-        return {'curr_' + self.token:True}
+        return {'curr_' + ' '.join(self.token):True}
 
     def prev_n_bag_of_words(self, n):
         ''' pull prev n tokens in sentence before target word.'''
@@ -82,46 +75,55 @@ class Instance:
             n = len(self.next_tokens)
         return {'next_' + tok:True for tok, lex in self.next_tokens[:n]}
 
+class Corpus_SE_B(Corpus):
+    def instances(self):
+        '''create a set of instances'''
+        docs = self.documents()
+        for doc in docs:    
+            # sort tag info by start offset
+            sd = {}
+            tags = doc.consuming_tags()
+            for t in tags:
+                sd[int(t.attrs['start'])] = t.attrs # {start offset: xml tokens, offsets, spatial data}    
+            # construct instance objects from corpus data    
+            front = 0
+            done = False
+            for s in doc.tokenizer.tokenize_text().sentences:
+                unconsumed_tag = {}
+                sent = s.as_pairs() # [ (token, lexeme obj), (token, lexeme obj), ...]
+                for i in range(len(sent)):
+                    token = sent [i] # (token, lexeme obj)
+                    tag = sd.get(token[1].begin, {})                
+                    if unconsumed_tag == {}:
+                        front = i                    
+                        if int(tag.get("end", -1)) <= token[1].end:
+                            done = True
+                        else:
+                            unconsumed_tag = tag
+                    else:
+                        if int(unconsumed_tag.get("end", -1)) == token[1].end:
+                            done = True
+                            unconsumed_tag = {}
+                    if done:
+                        done = False
+                        token = [t for t, l in sent[front:i+1]]
+                        lex = [l for t, l in sent[front:i+1]]
+                        before = sent[:front]
+                        after = sent [i+1:] 
+                        inst = Instance(token, lex, before, after, tag)
+                        yield inst
 
-# TESTING    
-def build_instances(doc_iter):
-    '''get basic sense of manipulating xml docs'''
-    for doc in list(doc_iter):    
-        # sort tag info by start offset
-        sd = {}
-        tags = doc.consuming_tags()
-        for t in tags:
-            sd[int(t.attrs['start'])] = t.attrs # {start offset: xml tokens, offsets, spatial data}    
-        # construct instance objects from corpus data    
-        start = end = 0
-        for s in doc.tokenizer.tokenize_text().sentences:
-            nonconsumed_tag = {}
-            sent = s.as_pairs()
-            for i in range(len(sent)): 
-                token = sent [i] # (token, lexeme obj)
-                before = sent[:i] # [ (token, lexeme obj), (token, lexeme obj), ...]
-                after = sent [i+1:] # [ (token, lexeme obj), (token, lexeme obj), ...]
-                # split tags across tokens
-                if nonconsumed_tag == {}:
-                    tag = sd.get( token[1].begin, {})
-                else:
-                    tag = nonconsumed_tag
-                if tag != {} and int(tag["end"]) > token[1].end:
-                    nonconsumed_tag = tag
-                else:
-                    nonconsumed_tag = {}
-                inst = Instance(token[0], token[1], before, after, tag)
-                yield inst
+# TESTING
 
 def build_train_test(doc_path = './training', split=0.8):
-    c = xml.Corpus(doc_path)    
-    docs = list(c.documents())
-    i = int(len(docs) * split)
-    train_docs = docs[:i]
-    test_docs = docs[i:]
+    c = Corpus_SE_B(doc_path)    
+    inst = list(c.instances())
+    i = int(len(inst) * split)
+    train_inst = inst[:i]
+    test_inst = inst[i:]
 
-    return list(build_instances(train_docs)), list(build_instances(test_docs))
-            
+    return (train_inst, test_inst)
+  
 def all_false_classifier(test_data):
     # HIGHEST OCCURRING TAG: FALSE
     features = []

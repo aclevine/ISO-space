@@ -7,7 +7,7 @@ Created on Sep 9, 2014
 import Corpora.corpus as xml
 import nltk
 
-def build_instances_kai(doc_path = './training'):
+def build_instances_kai(doc_path = './test'):
     '''get basic sense of manipulating xml docs'''
     c = xml.Corpus(doc_path)
 
@@ -48,16 +48,24 @@ def build_instances_kai(doc_path = './training'):
 if __name__ == "__main__":
     
     
+    
+    
+    
+    
+    
+    
     #print nltk.pos_tag([u'\u201c'])
 
-    split = 0.8
-    docs = [1, 2, 3, 4]
-
-    i = int(len(docs) * split)
-    train_docs = docs[:i]
-    test_docs = docs[i:]
-    
-    print train_docs
-    print test_docs
-
-    
+#===============================================================================
+#     split = 0.8
+#     docs = [1, 2, 3, 4]
+# 
+#     i = int(len(docs) * split)
+#     train_docs = docs[:i]
+#     test_docs = docs[i:]
+#     
+#     print train_docs
+#     print test_docs
+# 
+#     
+#===============================================================================
