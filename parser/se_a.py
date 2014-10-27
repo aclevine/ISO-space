@@ -1,10 +1,10 @@
 '''
 Created on Sep 19, 2014
 
-@author: ACL73
+@author: Aaron Levine
+@email: aclevine@brandeis.edu
 
-# 1) Spatial Elements (SE):
-    ## a) Identify spans of spatial elements including locations, paths, events and other spatial entities.    
+a) Identify spans of spatial elements including locations, paths, events and other spatial entities.    
 '''
 #===============================================================================
 from Corpora.corpus import Corpus
@@ -90,7 +90,7 @@ class Corpus_SE_A(Corpus):
     def instances(self):
         '''create a set of instances'''
         docs = self.documents()
-        for doc in docs:    
+        for doc in docs:
             # sort tag info by start offset
             sd = {}
             tags = doc.consuming_tags()
@@ -118,13 +118,19 @@ class Corpus_SE_A(Corpus):
 #===============================================================================
 
 # DEMO
-def span_model_demo(doc_path = './training', split=0.8):
+def span_model_demo(doc_path = './training', split=0.8, limit=False):
     
     c = Corpus_SE_A(doc_path)    
-    inst = list(c.instances())
-    i = int(len(inst) * split)
-    train_data = inst[:i]
-    test_data = inst[i:]
+    if limit:
+        insts = []
+        for x in  c.instances():
+            if x.tag != {}:
+                insts.append(x)    
+    else:
+        insts = list(c.instances())    
+    i = int(len(insts) * split)
+    train_data = insts[:i]
+    test_data = insts[i:]
      
     features = [lambda x: x.upper_case(),
                 lambda x: x.next_upper_case(),
@@ -146,6 +152,7 @@ def span_model_demo(doc_path = './training', split=0.8):
 
 #===============================================================================
 
+# DEMO 2
 def upper_case(test_data):
     pred = []
     for x in test_data:
@@ -158,6 +165,7 @@ def upper_case(test_data):
     return pred
 
 def noun(test_data):
+    """ do current token and next both have noun pos tags? """
     pred = []
     for x in test_data:
         if nltk.pos_tag(x.token[:1])[0][1][0] == 'N' and \
@@ -169,6 +177,7 @@ def noun(test_data):
     return pred
 
 def matching_tag(test_data):
+    """ do current token and next have same pos tag? """
     pred = []
     for x in test_data:
         if x.next_tokens != [] and \
@@ -179,34 +188,33 @@ def matching_tag(test_data):
     return pred
 
 def all_false(test_data):
+    """ have all predictions be False"""
     pred = []
     for x in test_data:
         pred.append('False')
     return pred
 
 
-
-
-
-def span_rule_demo(doc_path = './training', split=0.8):
+def span_rule_demo(doc_path = './training', split=0.8, tagged_only=False):
+    """ test some simple heuristics """
     c = Corpus_SE_A(doc_path)    
-    test_data = list(c.instances())
-    
+    if tagged_only:
+        test_data = []
+        for x in  c.instances():
+            if x.tag != {}:
+                test_data.append(x)    
+    else:
+        test_data = list(c.instances())
+
     label = lambda x: str(x.unconsumed_tag())
     features = [lambda x: x]
-
     clf = SKClassifier(LogisticRegression(), label, features)
     clf.add_labels(['True', 'False']) #binary classifier
-
     pred = upper_case(test_data)
-
     clf.evaluate(pred, [label(x) for x in test_data])
 
+#===============================================================================
 
 if __name__ == "__main__":
-
-    span_model_demo()
-    
-    
-    
+    span_model_demo(tagged_only=True)
     

@@ -42,7 +42,7 @@ F-measure 0.850330
 Accuracy: 74.245311%
 
 
-## 
+## bunch of model features
     features = [lambda x: x.upper_case(),
                 lambda x: x.next_upper_case(),
                 lambda x: x.prev_upper_case(),
@@ -52,5 +52,41 @@ Accuracy: 74.245311%
                 lambda x: x.simple_tag(),
                 lambda x: x.next_simple_tag(),
                 lambda x: x.prev_simple_tag()]
+
+
+row = predicted, column = actual
+      True  False  
+True  306.0 143.0  
+False 780.0 4231.0 
+
+========= True =========
+Precision: 0.681514 
+Recall: 0.281768
+F-measure 0.398697
+========= False =========
+Precision: 0.844342 
+Recall: 0.967307
+F-measure 0.901652
+
+Accuracy: 83.095238%
+
+				
+
+## limit training set down to tagged entities only
+row = predicted, column = actual
+      True   False 
+True  1079.0 28.0  
+False 19.0   60.0  
+
+========= True =========
+Precision: 0.974706 
+Recall: 0.982696
+F-measure 0.978685
+========= False =========
+Precision: 0.759494 
+Recall: 0.681818
+F-measure 0.718563
+
+Accuracy: 96.037099%
 
 				

@@ -2,12 +2,13 @@ Data:
 21836 train tokens
 5460 test tokens
 
-label = lambda x: str(x.is_type(<TYPE>))
+	limit = False
 
-features = [lambda x: x.curr_token(),
-            lambda x: x.prev_n_bag_of_words(100),
-            lambda x: x.next_n_bag_of_words(100)]
+	label = lambda x: str(x.is_type(<TYPE>))
 
+	features = [lambda x: x.curr_token(),
+				lambda x: x.prev_n_bag_of_words(100),
+				lambda x: x.next_n_bag_of_words(100)]
 
 
 
@@ -101,7 +102,7 @@ F-measure 0.984909
 Accuracy: 97.106227%
 
 
-ANY:
+COMBINED_ANY:
 row = predicted, column = actual
       True  False  
 True  274.0 69.0   
@@ -117,3 +118,40 @@ Recall: 0.981127
 F-measure 0.890627
 
 Accuracy: 81.421341%
+
+
+
+ANY (calculate up front):
+row = predicted, column = actual
+      True  False  
+True  537.0 190.0  
+False 549.0 4006.0 
+
+========= True =========
+Precision: 0.738652 
+Recall: 0.494475
+F-measure 0.592388
+========= False =========
+Precision: 0.879473 
+Recall: 0.954719
+F-measure 0.915553
+
+Accuracy: 86.009087%
+
+
+ANY (calculate up front and after other classifications):
+row = predicted, column = actual
+      True  False  
+True  554.0 216.0  
+False 532.0 3980.0 
+
+========= True =========
+Precision: 0.719481 
+Recall: 0.510129
+F-measure 0.596983
+========= False =========
+Precision: 0.882092 
+Recall: 0.948522
+F-measure 0.914102
+
+Accuracy: 85.838697%

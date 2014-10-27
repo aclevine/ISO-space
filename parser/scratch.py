@@ -3,7 +3,7 @@ Created on Sep 9, 2014
 
 @author: Aaron Levine
 '''
-
+import numpy
 import Corpora.corpus as xml
 import nltk
 
@@ -47,8 +47,13 @@ def build_instances_kai(doc_path = './test'):
 
 if __name__ == "__main__":
     
+    y = numpy.zeros(4)
+    x = numpy.zeros(4)
+    x[0] += 1
+
+    print numpy.add(y, x)
     
-    
+
     
     
     
