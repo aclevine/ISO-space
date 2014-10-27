@@ -30,13 +30,13 @@ class Document(BeautifulSoup):
         super(Document, self).__init__(file.read(), "xml")
         from tokenizer import Tokenizer
         self.name = file.name
-        self.basename = base_name(self.name)
-        self.dirname = dir_name(self.name)
+        self.basename = os.path.basename(self.name)
+        self.dirname = os.path.dirname(self.name)
         self.tokenizer = Tokenizer(self.text())
         self.tokenizer.tokenize_text()
     
     def __repr__(self):
-        return "Document:{d}".format(d=base_name(self.name))
+        return "Document:{d}".format(d=os.path.basename(self.name))
     
     def root(self):
         return self.children.next()
@@ -47,10 +47,13 @@ class Document(BeautifulSoup):
     def text(self):
         return u''.join(self.find('TEXT').contents)
     
-    def tags(self):
+    def tags(self, ttypes=None):
         from bs4.element import Tag
         is_tag = lambda item : isinstance(item, Tag)
-        return filter(is_tag, self.find('TAGS').children)
+        tags = filter(is_tag, self.find('TAGS').children)
+        if ttype:
+            tags = filter(lambda tag : tag.name in ttype, tags)
+        return tags
         
     def consuming_tags(self):
         is_extent_tag = lambda t : t.attrs.has_key('start')
@@ -139,20 +142,6 @@ def validate_mime_type(file_path, valid_mime_types):
 def is_xml(file_path):
     return validate_mime_type(file_path, set(['application/xml', 'text/xml']))
 
-def base_name(file_path):
-    # basename is *nix only
-    try:
-        return os.popen('basename ' + file_path).read().strip()
-    except:
-        return file_path.split(os.sep)[-1]
-
-def dir_name(file_path):
-    # dirname is *nix only
-    try:
-        return os.popen('dirname' + file_path).read().strip()
-    except:
-        return os.sep.join(file_path.split(os.sep)[:-1])
-    
 def find_files(directory='.', pattern='.*', recursive=True):
     import re
     if recursive:
