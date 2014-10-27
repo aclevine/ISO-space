@@ -51,7 +51,7 @@ class Document(BeautifulSoup):
         from bs4.element import Tag
         is_tag = lambda item : isinstance(item, Tag)
         tags = filter(is_tag, self.find('TAGS').children)
-        if ttype:
+        if ttypes:
             tags = filter(lambda tag : tag.name in ttypes, tags)
         return tags
         
