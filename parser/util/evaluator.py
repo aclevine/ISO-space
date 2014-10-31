@@ -17,7 +17,11 @@ class ConfusionMatrix(object):
         """Returns a numpy.array where precision[i] = precision for class i""" 
         precision = numpy.zeros(self.label_codebook.size())
         for i in xrange(self.label_codebook.size()):
-            precision[i] = self.matrix[i][i] / numpy.sum(self.matrix[i])
+            denominator = numpy.sum(self.matrix[i])
+            if denominator != 0:
+                precision[i] = self.matrix[i][i] / denominator
+            else:
+                precision[i] = 0
         return precision
 
     def compute_recall(self):
@@ -25,7 +29,11 @@ class ConfusionMatrix(object):
         recall = numpy.zeros(self.label_codebook.size())
         for i in xrange(self.label_codebook.size()):
             #Denominator here is sum over y-axis, returning as many sums as x-dim so get ith element.
-            recall[i] = self.matrix[i][i] / numpy.sum(self.matrix, axis=0)[i]
+            denominator = numpy.sum(self.matrix, axis=0)[i]
+            if denominator != 0:
+                recall[i] = self.matrix[i][i] / denominator
+            else:
+                recall[i] = 0
         return recall
 
     def compute_f1(self):
@@ -34,8 +42,11 @@ class ConfusionMatrix(object):
         precision = self.compute_precision()
         recall = self.compute_recall()
         for i in xrange(self.label_codebook.size()):
-            f1[i] = precision[i] * recall[i]
-            f1[i] /= (precision[i] + recall[i])
+            denominator = (precision[i] + recall[i])
+            if denominator != 0:
+                f1[i] = precision[i] * recall[i] / denominator
+            else:
+                f1[i] = 0
         f1 *= 2
         return f1
 

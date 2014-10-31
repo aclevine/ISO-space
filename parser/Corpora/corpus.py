@@ -3,33 +3,32 @@ __email__  = "zyocum@brandeis.edu"
 
 import os
 from warnings import warn
+import bs4
 from bs4 import BeautifulSoup
 
+dummy_tag = bs4.element.Tag(name='NULL')
+
 # Classes
-class Corpus(object):
-    """A class for working with collections of Documents."""
-    def __init__(self, directory, pattern='.*\.xml', recursive=True):
-        super(Corpus, self).__init__()
-        self.directory = directory
-        self.pattern = pattern
-        self.recursive = recursive
-        self.validate()
-    
-    def documents(self):
-        candidates = find_files(self.directory, self.pattern, self.recursive)
-        for xml_path in filter(is_xml, candidates):
-            with open(xml_path, 'r') as file:
-                yield Document(file)
-    
-    def validate(self):
-        map(Document.validate, self.documents())
+class Extent:
+    """A class for loading tagged data from XML doc 
+    with surrounding token and tag data"""
+    def __init__(self, sent, tag_dict, front, back):
+        self.token = [t for t, l in sent[front:back]]
+        self.lex = [l for t, l in sent[front:back]]
+        self.prev_tokens = sent[:front]
+        self.next_tokens = sent [back:] 
+        self.tag = tag_dict.get(self.lex[0].begin, {})
+        self.prev_tags = [tag_dict.get(l.begin, {}) for t, l in self.prev_tokens 
+                     if l.begin in tag_dict.keys()]
+        self.next_tags = [tag_dict.get(l.begin, {}) for t, l in self.next_tokens 
+                     if l.begin in tag_dict.keys()]
 
 class Document(BeautifulSoup):
     """A class for working with MAE annotation XMLs."""
-    def __init__(self, file):
-        super(Document, self).__init__(file.read(), "xml")
+    def __init__(self, doc_file):
+        super(Document, self).__init__(doc_file.read(), "xml")
         from tokenizer import Tokenizer
-        self.name = file.name
+        self.name = doc_file.name
         self.basename = os.path.basename(self.name)
         self.dirname = os.path.dirname(self.name)
         self.tokenizer = Tokenizer(self.text())
@@ -59,6 +58,25 @@ class Document(BeautifulSoup):
         is_extent_tag = lambda t : t.attrs.has_key('start')
         is_consuming = lambda t : int(t.attrs['start']) >= 0
         return filter(is_consuming, filter(is_extent_tag, self.tags()))
+
+    def sort_tags_by_begin_offset(self):
+        """Make dictionary of tag objects keyed on their 'start' field.
+        
+        Used for matching tags to tokens using offsets"""
+        tag_dict = {}
+        tags = self.consuming_tags()
+        for t in tags:
+            tag_dict[int(t.attrs['start'])] = t.attrs # {start offset: xml tokens, offsets, spatial data}    
+        return tag_dict
+
+    def extents(self, indices_function, extent_class=Extent):
+        tag_dict = self.sort_tags_by_begin_offset()
+        for s in self.tokenizer.tokenize_text().sentences:
+            sent = s.as_pairs() # [ (token, lexeme obj), (token, lexeme obj), ...]
+            offsets = indices_function(sent, tag_dict)
+            for begin, end in offsets:
+                extent = extent_class(sent, tag_dict, begin, end)
+                yield extent
     
     def validate(self):
         is_valid = True
@@ -117,6 +135,35 @@ class Document(BeautifulSoup):
                 )
             ]
         )
+
+class Corpus(object):
+    """A class for working with collections of Documents."""
+    def __init__(self, directory, pattern='.*\.xml', recursive=True):
+        super(Corpus, self).__init__()
+        self.directory = directory
+        self.pattern = pattern
+        self.recursive = recursive
+        self.validate()
+    
+    def documents(self):
+        candidates = find_files(self.directory, self.pattern, self.recursive)
+        for xml_path in filter(is_xml, candidates):
+            with open(xml_path, 'r') as file:
+                yield Document(file)
+    
+    def extents(self, indices_function, extent_class=Extent):
+        for doc in self.documents():
+            tag_dict = doc.sort_tags_by_begin_offset()
+            for s in doc.tokenizer.tokenize_text().sentences:
+                sent = s.as_pairs() # [ (token, lexeme obj), (token, lexeme obj), ...]
+                offsets = indices_function(sent, tag_dict)
+                for begin, end in offsets:
+                    extent = extent_class(sent, tag_dict, begin, end)
+                    yield extent
+
+              
+    def validate(self):
+        map(Document.validate, self.documents())
 
 # Helper functions for generating XML
 def wrap(tag, content, sep='\n'):
