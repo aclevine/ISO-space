@@ -76,7 +76,7 @@ def getXmlDict(path=ADJUDICATED_PATH, d={}, dname='', use_pattern=True):
             d = dict(d.items() + getXmlDict(fpath, d, f).items())
     return d
 
-def fleiss(xmls = getXmlDict()):
+def fleiss(xmls = getXmlDict(), unmatch=True):
     """Computes Fleiss' Kappa between lists of xmls.
 
     Calculates Fleiss' Kappa given a list of xmls.  If the xmls
@@ -95,19 +95,21 @@ def fleiss(xmls = getXmlDict()):
     if type(xmls) == dict:
         fleiss_scores = {}
         for key in xmls.keys():
-            score = fl.fleiss_wikpedia(fl_table.get_table(xmls[key]))
+            score = fl.fleiss_wikpedia(fl_table.get_table(xmls[key], use_unmatched=unmatch))
             fleiss_scores[key] = score
         return fleiss_scores
-    return fl.fleiss_wikpedia(fl_table.get_table(xmls))
+    return fl.fleiss_wikpedia(fl_table.get_table(xmls, use_unmatched=unmatch))
             
 def usage():
-    print "Usage: [-r] path/to/directory"
+    print "Usage: [-r] [-u] path/to/directory"
     print "Specify the -r flag if the directory is recursive."
+    print "Specify the -u flag to only consider exact matches."
 
 def main(argv):
     recursive = False
+    unmatch = True
     try:
-        opts, args = getopt.getopt(argv, 'hrd', ['help', 'recursive'])
+        opts, args = getopt.getopt(argv, 'hrmd', ['help', 'recursive', 'match'])
     except getopt.GetoptError:
         usage()
         sys.exit(2)
@@ -120,14 +122,16 @@ def main(argv):
             _debug = 1
         elif opt in ('-r', '--recursive'):
             recursive = True
+        elif opt in ('-m', '--match'):
+            unmatch = False
     source = "".join(args)
     try:
         if recursive:
-            f = fleiss(getXmlDict(source))
+            f = fleiss(getXmlDict(source), unmatch)
             for key in f.keys():
                 print key, ':', f[key]
         else:
-            print fleiss(getXmls(source))
+            print fleiss(getXmls(source), unmatch)
     except OSError:
         print "The directory " + source + " does not exist."
         sys.exit(2)
