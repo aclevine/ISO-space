@@ -10,7 +10,7 @@ PATH, PLACE, MOTION, NONMOTION_EVENT, SPATIAL_ENTITY.
 '''
 
 #===============================================================================
-from Corpora.corpus import Extent
+from util.Corpora.corpus import Extent
 from util.demo import Demo
 import re
 import nltk

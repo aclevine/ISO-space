@@ -8,7 +8,6 @@ c. Identify their attributes according to type.
 '''
 from b_identify_types.identify_types import get_tag_and_no_tag_indices, Tag
 from util.demo import Demo
-from abc import abstractmethod
 import re
 
 # check with Zach about what we're actually covering
@@ -46,21 +45,9 @@ def get_path_tag_indices(sentence, tag_dict):
 # DEMOS
 class PathDemo(Demo):
     def __init__(self, doc_path = '../training', split=0.8):
-        self.doc_path = doc_path
-        self.split = split
-        self.label_function = self.get_label_function()
-        self.feature_functions = self.get_feature_functions()
+        super(PathDemo, self).__init__(doc_path, split)
         self.indices_function = get_path_tag_indices
         self.extent_class = PathTag
-
-    @abstractmethod        
-    def get_label_function(self):
-        return None
-        
-    @abstractmethod
-    def get_feature_functions(self):
-        return []
-
 
 class PathDimensionalityDemo(PathDemo):  
     def get_label_function(self):
@@ -78,7 +65,6 @@ class PathFormDemo(PathDemo):
     def get_feature_functions(self):
         return [lambda x: x.curr_token(),
                 ]
-
 
 class PathCountableDemo(PathDemo):
     def get_label_function(self):

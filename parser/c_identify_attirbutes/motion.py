@@ -8,7 +8,6 @@ c. Identify their attributes according to type.
 '''
 from b_identify_types.identify_types import Tag, get_tag_and_no_tag_indices
 from util.demo import Demo
-from abc import abstractmethod
 import re
 
 class MotionTag(Tag):
