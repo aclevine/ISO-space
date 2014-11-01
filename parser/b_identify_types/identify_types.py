@@ -13,12 +13,13 @@ PATH, PLACE, MOTION, NONMOTION_EVENT, SPATIAL_ENTITY.
 from Corpora.corpus import Extent
 from util.demo import Demo
 import re
+import nltk
 #===============================================================================
 type_keys = {'PATH': ['p'], 'PLACE': ['pl'], 'MOTION': ['m'], 'NONMOTION_EVENT': ['e'], 
              'SPATIAL_ENTITY': ['se'], # spatial elements
              'SPATIAL_SIGNAL': ['s'], # spatial signal
              'MOTION_SIGNAL': ['ms'], # motion signal
-             'HAS_TAG': ['p', 'pl', 'm', 'e', 'se', 's', 'ms']
+             #'HAS_TAG': ['p', 'pl', 'm', 'e', 'se', 's', 'ms']
              }
 
 class Tag(Extent):
@@ -53,23 +54,72 @@ class Tag(Extent):
         tokens = self.token
         tokens.extend([tok for tok, lex in self.prev_tokens[len(self.prev_tokens)-n:]])
         tokens.extend([tok for tok, lex in self.next_tokens[:n]])
-        return {'prev_' + tok:True for tok in tokens}
+        return {'bag_' + tok:True for tok in tokens}
         
     def curr_token(self):
         ''' pull prev n tokens in sentence before target word.'''
-        return {'curr_' + ' '.join(self.token):True}
+        return {'curr_extent_' + ' '.join(self.token):True}
+
+    def curr_tokens(self):
+        return {'curr_tokens_' + tok:True for tok in self.token}
+
+    def curr_pos_tags(self):
+        return {'curr_tags_' + nltk.pos_tag(tok)[0][1]:True for tok in self.token}
+
+    def curr_token_count(self):
+        ''' pull prev n tokens in sentence before target word.'''
+        return {'curr_count_' + str(len(self.token)):True}
 
     def prev_n_bag_of_words(self, n):
         ''' pull prev n tokens in sentence before target word.'''
         if n > len(self.next_tokens):
             n = len(self.next_tokens)
-        return {'prev_' + tok:True for tok, lex in self.prev_tokens[len(self.prev_tokens)-n:]}
+        return {'prev_' + str(n) +
+                '_' + tok:True for tok, lex 
+                in self.prev_tokens[len(self.prev_tokens)-n:]}
 
     def next_n_bag_of_words(self, n):
         ''' pull next n tokens in sentence after target word.'''
         if n > len(self.next_tokens):
             n = len(self.next_tokens)
-        return {'next_' + tok:True for tok, lex in self.next_tokens[:n]}
+        return {'next_' + str(n) +
+                '_' + tok:True for tok, lex 
+                in self.next_tokens[:n]}
+
+    def prev_n_bag_of_pos_tags(self, n):
+        ''' pull prev n tokens in sentence before target word.'''
+        if n > len(self.next_tokens):
+            n = len(self.next_tokens)
+        return {'prev_tag_' + str(n) +
+                '_' + nltk.pos_tag(tok)[0][1]:True for tok, lex 
+                in self.prev_tokens[len(self.prev_tokens)-n:]}
+
+    def next_n_bag_of_pos_tags(self, n):
+        ''' pull next n tokens in sentence after target word.'''
+        if n > len(self.next_tokens):
+            n = len(self.next_tokens)
+        return {'next_tag_' + str(n) +
+                '_' + nltk.pos_tag(tok)[0][1]:True for tok, lex 
+                in self.next_tokens[:n]}
+    
+    def ordered_prev_n_bag_of_words(self, n):
+        ''' pull prev n tokens in sentence before target word.'''
+        if n > len(self.next_tokens):
+            n = len(self.next_tokens)
+        return {str(i) + 'prev_' + str(n) +
+                '_' + tok:True for i, (tok, lex)
+                in enumerate(self.prev_tokens[len(self.prev_tokens)-n:])}
+
+    def ordered_next_n_bag_of_words(self, n):
+        ''' pull next n tokens in sentence after target word.'''
+        if n > len(self.next_tokens):
+            n = len(self.next_tokens)
+        return {str(i) + 'next_' + str(n) +
+                '_' + tok:True for i, (tok, lex) 
+                in enumerate(self.next_tokens[:n])}
+
+
+    
 #===============================================================================
 def no_filter(tag):
     return True
@@ -109,8 +159,8 @@ class Types_Demo(Demo):
         self.doc_path = doc_path
         self.split = split
         self.feature_functions = [lambda x: x.curr_token(),
-                                  lambda x: x.prev_n_bag_of_words(100),
-                                  lambda x: x.next_n_bag_of_words(100)]
+                                  lambda x: x.prev_n_bag_of_words(3),
+                                  lambda x: x.next_n_bag_of_words(3)]
         self.label_function = lambda x: str(x.is_type(type_name))
         self.indices_function = get_tag_and_no_tag_indices
         self.extent_class = Tag
@@ -123,5 +173,3 @@ if __name__ == "__main__":
                       'SPATIAL_ENTITY', 'MOTION_SIGNAL' 'HAS_TAG']:
         d = Types_Demo(type_name)
         d.run_demo()
-
-    

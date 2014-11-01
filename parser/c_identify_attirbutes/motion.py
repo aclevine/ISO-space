@@ -6,76 +6,76 @@ Created on Oct 27, 2014
 
 c. Identify their attributes according to type.
 '''
-
-from Corpora.corpus import Extent
-from b_identify_types.identify_types import get_tag_and_no_tag_indices
-import re
+from b_identify_types.identify_types import Tag, get_tag_and_no_tag_indices
 from util.demo import Demo
+from abc import abstractmethod
+import re
 
-class Motion_Tags(Extent):
+class MotionTag(Tag):
     # LABEL EXTRACT
     def motion_type(self):
-        #motion_type ( MANNER | PATH | COMPOUND ) #REQUIRED >
+        #motion_type ( MANNER | PATH | COMPOUND )
         return self.tag['motion_type']
  
     def motion_class(self):
-        #motion_class ( MOVE | MOVE_EXTERNAL | MOVE_INTERNAL | LEAVE | REACH | CROSS | DETACH | HIT | FOLLOW | DEVIATE | STAY ) #REQUIRED >
+        #motion_class ( MOVE | MOVE_EXTERNAL | MOVE_INTERNAL | LEAVE | REACH | CROSS | DETACH | HIT | FOLLOW | DEVIATE | STAY )
         return self.tag['motion_class']
      
     def motion_sense(self):
-        #motion_sense ( LITERAL | FICTIVE | INTRINSIC_CHANGE ) #REQUIRED >
+        #motion_sense ( LITERAL | FICTIVE | INTRINSIC_CHANGE )
         return self.tag['motion_sense']
-     
-    # FEATURE EXTRACT
-    def curr_token(self):
-        ''' pull prev n tokens in sentence before target word.'''
-        return {'curr_' + ' '.join(self.token):True}
-    
-# DEMO
+
+# TAG TYPE FILTER
 def is_motion_tag(tag):
-    id = tag.get('id', '')
-    return re.findall('m\d+', id)
+    tag_id = tag.get('id', '')
+    return bool(re.findall('^m\d+', tag_id))
 
 def get_motion_tag_indices(sentence, tag_dict):
     return get_tag_and_no_tag_indices(sentence, tag_dict, is_motion_tag)
 
-class Motion_Type_Demo(Demo):
+# DEMOS
+class MotionDemo(Demo):
     def __init__(self, doc_path = '../training', split=0.8):
-        self.doc_path = doc_path
-        self.split = split
-        self.feature_functions = [lambda x: x.curr_token(),
-                                  ]
-        self.label_function = lambda x: str(x.motion_type())
+        super(MotionDemo, self).__init__(doc_path, split)
         self.indices_function = get_motion_tag_indices
-        self.extent_class = Motion_Tags
+        self.extent_class = MotionTag
 
-class Motion_Class_Demo(Demo):
-    def __init__(self, doc_path = '../training', split=0.8):
-        self.doc_path = doc_path
-        self.split = split
-        self.feature_functions = [lambda x: x.curr_token(),
-                                  ]
-        self.label_function = lambda x: str(x.motion_class())
-        self.indices_function = get_motion_tag_indices
-        self.extent_class = Motion_Tags
+class MotionTypeDemo(MotionDemo):
+    def get_label_function(self):
+        return lambda x: str(x.motion_type())
 
-class Motion_Sense_Demo(Demo):
-    def __init__(self, doc_path = '../training', split=0.8):
-        self.doc_path = doc_path
-        self.split = split
-        self.feature_functions = [lambda x: x.curr_token(),
-                                  ]
-        self.label_function = lambda x: str(x.motion_sense())
-        self.indices_function = get_motion_tag_indices
-        self.extent_class = Motion_Tags
+    def get_feature_functions(self):
+        return [
+                lambda x: x.curr_token(),
+                lambda x: x.curr_tokens(),
+#                 lambda x: x.prev_n_bag_of_words(3),
+#                 lambda x: x.next_n_bag_of_words(3),
+                lambda x: x.curr_pos_tags()
+                ]
+
+class MotionClassDemo(MotionDemo):
+    def get_label_function(self):
+        return lambda x: str(x.motion_class())
+
+    def get_feature_functions(self):
+        return [lambda x: x.curr_token(),
+                ]
+
+class MotionSenseDemo(MotionDemo):
+    def get_label_function(self):
+        return lambda x: str(x.motion_sense())
+
+    def get_feature_functions(self):
+        return [lambda x: x.curr_token(),
+                ]
 
 
 if __name__ == "__main__":
-    d = Motion_Type_Demo()
+    d = MotionTypeDemo()
     d.run_demo()
-    
-    d = Motion_Class_Demo()
-    d.run_demo()
-    
-    d = Motion_Sense_Demo()
-    d.run_demo()
+     
+#     d = MotionClassDemo()
+#     d.run_demo()
+#       
+#     d = MotionSenseDemo()
+#     d.run_demo()

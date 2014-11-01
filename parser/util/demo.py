@@ -9,15 +9,22 @@ Created on Oct 31, 2014
 from Corpora.corpus import Corpus, Extent
 from sklearn.linear_model import LogisticRegression 
 from SKClassifier import SKClassifier
+from abc import abstractmethod
 
-class Demo():
+class Demo(object):
     def __init__(self, doc_path = './training', split=0.8):
         self.doc_path = doc_path
         self.split = split
-        self.feature_functions = [lambda x: x]
-        self.label_function = lambda x: x
-        self.indices_function
-        self.extent_class
+        self.label_function = self.get_label_function()
+        self.feature_functions = self.get_feature_functions()
+
+    @abstractmethod        
+    def get_label_function(self):
+        return None
+    
+    @abstractmethod
+    def get_feature_functions(self):
+        return []
          
     def run_demo(self, verbose=0):
         c = Corpus(self.doc_path)
