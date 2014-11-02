@@ -7,7 +7,7 @@ Created on Sep 19, 2014
 a) Identify spans of spatial elements including locations, paths, events and other spatial entities.    
 '''
 #===============================================================================
-from util.Corpora.corpus import Extent
+from Corpora.corpus import Extent
 # from Corpora.corpus import Corpus 
 # from sklearn.linear_model import LogisticRegression 
 # from SKClassifier import SKClassifier
