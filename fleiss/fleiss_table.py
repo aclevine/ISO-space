@@ -42,13 +42,33 @@ TEST_PATH = os.path.join(ADJUDICATED_PATH, '47_N_27_E')
 EXTENT = 0
 TOKEN = 1
 
+#token spans
+START = 0
+END = 1
+
+def binary_search(token, sorted_tags, counter=1):
+    if not sorted_tags: #token isn't tagged in any extent
+        return None
+    size = len(sorted_tags)
+    index = size / 2
+    curr = sorted_tags[index]
+    if token[START] >= int(curr.attrib['start']) and token[END] <= int(curr.attrib['end']):
+        return curr
+    if token[START] > int(curr.attrib['end']):
+        return binary_search(token, sorted_tags[index + 1:size], counter + 1)
+    elif token[END] < int(curr.attrib['start']):
+        return binary_search(token, sorted_tags[0:index], counter + 1)
+    else: #if we get here, the token somehow overlaps extents!
+        return None
+    
+
 class Fleiss_Table:
     def __init__(self, xmls, categories=ISO_CATEGORIES):
         self.xmls = xmls
         self.numXmls = len(xmls)
         self.categories = ISO_CATEGORIES
         self.rows = []
-        self.table = []
+        self.table = None
         
     def _is_tag_match(self, tag1, tag2):
         """Determines if two tags have the same extent.
@@ -67,25 +87,48 @@ class Fleiss_Table:
                 return True
         return False
 
-    def _get_tagdict(xmls, categories=ISO_CATEGORIES):
+    def _get_tokens(self, xml):
+        """Gets lex tokens for an xml
+        """
+        text = ET.parse(xml).getroot().find('TEXT').text
+        tk = tokenizer.Tokenizer(text)
+        tk.tokenize_text()
+        return [token[1][0] for token in tk.tokens]
+        
+    def _get_tagdict(self):
         """Returns a dictionary mapping each rater to his/her tags
         """
-        if not xmls:
+        if not self.xmls:
             raise ValueError, "xmls input must contain at least one element"
-        if not categories:
+        if not self.categories:
             raise ValueError, "categories must contain at least one element"
-        tagdict = {} #for mapping each annotator to the extents
-        for annotator, xml in enumerate(xmls):
+        tagdict = {} #tagdict[n] = tags for annotator #n
+        for annotator, xml in enumerate(self.xmls):
             root = ET.parse(xml).getroot()
-            #only grabs tags with given categories and ignores non-consuming tags
-            tagdict[annotator] = [child for child in root.find(TAGS) if child.tag in ISO_CATEGORIES and child.attrib['text']]
+            #ignores non-consuming tags
+            tagdict[annotator] = [child for child in root.find(TAGS) if child.tag in self.categories and child.attrib['text']]
         return tagdict
     
     def _build_token_rows(self):
-        return []
+        tagdict = self._get_tagdict()
+        tokens = self._get_tokens(self.xmls[0])
+        rows = []
+        for token in tokens:
+            match = []
+            for xml in xrange(0, self.numXmls):
+                tags = tagdict[xml]
+                tags.sort(key=lambda x: int(x.attrib['start']))
+                #print token
+                tag = binary_search(token, tags)
+                if tag != None:
+                    match.append(tag)
+                else:
+                    match.append(ET.Element('NONE'))
+            rows.append(match)
+        return rows
     
     def _build_extent_rows(self, use_unmatched=True):
-        tagdict = get_tagdict(self.xmls, self.categories)
+        tagdict = self._get_tagdict()
         rows = [] #list of lists
         for xml in tagdict.keys():
             tags = tagdict[xml]
@@ -112,9 +155,19 @@ class Fleiss_Table:
         
     def build_rows(self, rowType=EXTENT, use_unmatched=True):
         if rowType == EXTENT:
-            self.rows = _build_extent_rows(use_unmatched)
+            self.rows = self._build_extent_rows(use_unmatched)
         elif rowType == TOKEN:
-            self.rows = _build_token_rows()
+            self.rows = self._build_token_rows()
+
+    def build_table(self):
+        if not self.rows:
+            raise ValueError, "call build_rows before building table"
+        self.table = numpy.zeros((len(self.rows), len(self.categories)), dtype=int)
+        for row, matched in enumerate(self.rows):
+            for tag in matched:
+                column = self.categories.index(tag.tag)
+                self.table[row][column] += 1
+        
 
 def getXmls(path):
     """Finds all xml files in a flat directory.
@@ -233,4 +286,16 @@ def get_table(xmls, categories=ISO_CATEGORIES, use_unmatched=True):
 #uncomment for a quick test run
 #f = get_table([f1, f2])        
 r = get_rows(test)       
-        
+
+f = Fleiss_Table(test)
+tokens = f._get_tokens(test[0])
+tagdict = f._get_tagdict()
+tags = tagdict[0]
+tags.sort(key=lambda x: int(x.attrib['start']))
+t = tokens[5]
+
+"""for key in tagdict.keys():
+	tags = tagdict[key]
+	tags.sort(key=lambda x: int(x.attrib['start']))
+	for x in tokens:
+		binary_search(x, tags)"""
