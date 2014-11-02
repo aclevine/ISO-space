@@ -14,7 +14,7 @@ module to take the table as input.
 """
 
 import os, sys, inspect
-cmd_subfolder = os.path.realpath(os.path.abspath(os.path.join(os.path.split(inspect.getfile( inspect.currentframe() ))[0],"parser/util/Corpora")))
+cmd_subfolder = os.path.realpath(os.path.abspath(os.path.join(os.path.split(inspect.getfile( inspect.currentframe() ))[0],"parser/Corpora")))
 cmd_subfolder = cmd_subfolder.replace('fleiss/', '')
 if cmd_subfolder not in sys.path:
     sys.path.insert(0, cmd_subfolder)
@@ -37,6 +37,84 @@ f2 = '/users/sethmachine/desktop/WhereToLosAngeles_HOLLYWOOD-AB-p1.xml'
 #path to folder containing all xmls to be adjudicated
 ADJUDICATED_PATH = '/users/sethmachine/desktop/Adjudication'
 TEST_PATH = os.path.join(ADJUDICATED_PATH, '47_N_27_E')
+
+#row types
+EXTENT = 0
+TOKEN = 1
+
+class Fleiss_Table:
+    def __init__(self, xmls, categories=ISO_CATEGORIES):
+        self.xmls = xmls
+        self.numXmls = len(xmls)
+        self.categories = ISO_CATEGORIES
+        self.rows = []
+        self.table = []
+        
+    def _is_tag_match(self, tag1, tag2):
+        """Determines if two tags have the same extent.
+
+        Two tags are have the same extent if the start and end indices match.
+        This does not necessarily mean the tags have the same category.
+
+        Args:
+            tag1: An xml based tag as from ElementTree
+            tag2: An xml based tag as from ElementTree
+
+        Returns:
+            True if the tags' indices match, False otherwise.
+        """
+        if tag1.attrib['start'] == tag2.attrib['start'] and tag1.attrib['end'] == tag2.attrib['end']:
+                return True
+        return False
+
+    def _get_tagdict(xmls, categories=ISO_CATEGORIES):
+        """Returns a dictionary mapping each rater to his/her tags
+        """
+        if not xmls:
+            raise ValueError, "xmls input must contain at least one element"
+        if not categories:
+            raise ValueError, "categories must contain at least one element"
+        tagdict = {} #for mapping each annotator to the extents
+        for annotator, xml in enumerate(xmls):
+            root = ET.parse(xml).getroot()
+            #only grabs tags with given categories and ignores non-consuming tags
+            tagdict[annotator] = [child for child in root.find(TAGS) if child.tag in ISO_CATEGORIES and child.attrib['text']]
+        return tagdict
+    
+    def _build_token_rows(self):
+        return []
+    
+    def _build_extent_rows(self, use_unmatched=True):
+        tagdict = get_tagdict(self.xmls, self.categories)
+        rows = [] #list of lists
+        for xml in tagdict.keys():
+            tags = tagdict[xml]
+            for tag in tags:
+                match = [tag]
+                for otherXml in xrange(0, self.numXmls):
+                    unmatched = True
+                    if otherXml == xml:
+                        continue
+                    otherTags = tagdict[otherXml]
+                    for otherTag in otherTags:
+                        if tag_matches(tag, otherTag):
+                            match.append(otherTag)
+                            otherTags.remove(otherTag)
+                            unmatched = False
+                            break
+                    if unmatched and use_unmatched:
+                        match.append(ET.Element('NONE'))
+                if use_unmatched:
+                    rows.append(match)
+                elif len(match) == self.numXmls:
+                    rows.append(match)
+        return rows
+        
+    def build_rows(self, rowType=EXTENT, use_unmatched=True):
+        if rowType == EXTENT:
+            self.rows = _build_extent_rows(use_unmatched)
+        elif rowType == TOKEN:
+            self.rows = _build_token_rows()
 
 def getXmls(path):
     """Finds all xml files in a flat directory.
