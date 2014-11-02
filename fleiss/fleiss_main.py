@@ -127,9 +127,12 @@ def main(argv):
     source = "".join(args)
     try:
         if recursive:
+            avg = 0.0
             f = fleiss(getXmlDict(source), unmatch)
             for key in f.keys():
                 print key, ':', f[key]
+                avg += f[key]
+            print "Average: " + str((avg / len(f.keys())))
         else:
             print fleiss(getXmls(source), unmatch)
     except OSError:
