@@ -76,7 +76,7 @@ def getXmlDict(path=ADJUDICATED_PATH, d={}, dname='', use_pattern=True):
             d = dict(d.items() + getXmlDict(fpath, d, f).items())
     return d
 
-def fleiss(xmls = getXmlDict(), unmatch=True):
+def fleiss(xmls = getXmlDict(), unmatch=True, rowType=fl_table.TOKEN):
     """Computes Fleiss' Kappa between lists of xmls.
 
     Calculates Fleiss' Kappa given a list of xmls.  If the xmls
@@ -95,21 +95,29 @@ def fleiss(xmls = getXmlDict(), unmatch=True):
     if type(xmls) == dict:
         fleiss_scores = {}
         for key in xmls.keys():
-            score = fl.fleiss_wikpedia(fl_table.get_table(xmls[key], use_unmatched=unmatch))
+            f = fl_table.Fleiss_Table(xmls[key])
+            f.build_rows(rowType, unmatch)
+            f.build_table()
+            score = fl.fleiss_wikpedia(f.table)
             fleiss_scores[key] = score
         return fleiss_scores
-    return fl.fleiss_wikpedia(fl_table.get_table(xmls, use_unmatched=unmatch))
+    f = fl_table.Fleiss_Table(xmls)
+    f.build_rows(rowType, unmatch)
+    f.build_table()
+    return fl.fleiss_wikpedia(f.table)
             
 def usage():
-    print "Usage: [-r] [-u] path/to/directory"
+    print "Usage: [-r] [-u] [-x] path/to/directory"
     print "Specify the -r flag if the directory is recursive."
     print "Specify the -u flag to only consider exact matches."
+    print "Specify the -x flag to consider extents instead of tokens."
 
 def main(argv):
     recursive = False
     unmatch = True
+    rowType = fl_table.TOKEN
     try:
-        opts, args = getopt.getopt(argv, 'hrmd', ['help', 'recursive', 'match'])
+        opts, args = getopt.getopt(argv, 'hrmxd', ['help', 'recursive', 'match', 'extents'])
     except getopt.GetoptError:
         usage()
         sys.exit(2)
@@ -124,17 +132,19 @@ def main(argv):
             recursive = True
         elif opt in ('-m', '--match'):
             unmatch = False
+        elif opt in ('-x', '--extents'):
+            rowType = fl_table.EXTENT
     source = "".join(args)
     try:
         if recursive:
             avg = 0.0
-            f = fleiss(getXmlDict(source), unmatch)
+            f = fleiss(getXmlDict(source), unmatch, rowType)
             for key in f.keys():
                 print key, ':', f[key]
                 avg += f[key]
             print "Average: " + str((avg / len(f.keys())))
         else:
-            print fleiss(getXmls(source), unmatch)
+            print fleiss(getXmls(source), unmatch, rowType)
     except OSError:
         print "The directory " + source + " does not exist."
         sys.exit(2)
