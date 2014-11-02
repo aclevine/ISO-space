@@ -47,6 +47,29 @@ START = 0
 END = 1
 
 def binary_search(token, sorted_tags, counter=1):
+    """A simple binary search to determine which tag contains the token
+
+    Performs a binary search across all sorted_tags, sorted by start spans
+    from least to greatest.  A tag matches a given token if the token's
+    start and end spans are within that tag's start/end spans.
+    Takes at most log(len(sorted_tags)) iterations.
+
+    Args:
+        token: A lexer token of the form (start, end, word), where
+            start is the index of where the token begins,
+            end is the index of where the token ends,
+            and word is the actual token string.
+        sorted_tags: A list of sorted ET tags from an annotated xml.
+            The tags are sorted by the value of their start span.
+        counter: An integer keeping track of the number of iterations,
+            primarily for debugging purposes,
+            i.e. counter <= log(len(sorted_tags))
+
+    Returns:
+        The tag which contains that token,
+        or None if there is no tag which has that token.
+
+    """
     if not sorted_tags: #token isn't tagged in any extent
         return None
     size = len(sorted_tags)
@@ -63,6 +86,20 @@ def binary_search(token, sorted_tags, counter=1):
     
 
 class Fleiss_Table:
+    """Wrapper for building a table for Fleiss' Kappa.
+
+    Args:
+        xmls: A list of absolute paths to annotated xmls of the same document
+        categories: A list of extent based tag types
+
+    Attributes:
+        xmls: A list of absolute paths to annotated xmls of the same document
+        numXmls: The number of xmls (i.e. annotators / raters)
+        categories: A list of extent based tag types
+        rows: A list of all the table entries by row
+        table: A 2D numpy.zeros array used to compute Fleiss' Kappa
+        
+    """
     def __init__(self, xmls, categories=ISO_CATEGORIES):
         self.xmls = xmls
         self.numXmls = len(xmls)
@@ -71,9 +108,9 @@ class Fleiss_Table:
         self.table = None
         
     def _is_tag_match(self, tag1, tag2):
-        """Determines if two tags have the same extent.
+        """Determines if two tags have the same span.
 
-        Two tags are have the same extent if the start and end indices match.
+        True if the start and end indices match.
         This does not necessarily mean the tags have the same category.
 
         Args:
@@ -82,13 +119,23 @@ class Fleiss_Table:
 
         Returns:
             True if the tags' indices match, False otherwise.
+            
         """
         if tag1.attrib['start'] == tag2.attrib['start'] and tag1.attrib['end'] == tag2.attrib['end']:
                 return True
         return False
 
     def _get_tokens(self, xml):
-        """Gets lex tokens for an xml
+        """Gets lex tokens for an xml.
+
+        Uses Tokenizer from Corpora to tokenize xml text.
+
+        Args:
+            xml: An absolute path to an annotated xml
+
+        Returns:
+            A list of tokens of the form (start, end, word)
+
         """
         text = ET.parse(xml).getroot().find('TEXT').text
         tk = tokenizer.Tokenizer(text)
@@ -96,7 +143,14 @@ class Fleiss_Table:
         return [token[1][0] for token in tk.tokens]
         
     def _get_tagdict(self):
-        """Returns a dictionary mapping each rater to his/her tags
+        """Returns a dictionary mapping each xml to its tags.
+
+        Args:
+            None
+
+        Returns:
+            A dictionary where dict[n] = all tags in xml #n
+
         """
         if not self.xmls:
             raise ValueError, "xmls input must contain at least one element"
@@ -110,6 +164,20 @@ class Fleiss_Table:
         return tagdict
     
     def _build_token_rows(self):
+        """Creates rows based on tokens.
+
+        Each token is considered as an object to be given a label.
+        In our case, the label is the tag associated with that token.
+
+        Args:
+            None
+
+        Returns:
+            A list of rows, where for each token there is a row
+            of the form: [a_1, ..., a_n] where a_i is the number of
+            raters who assigned that token the ith label/tag type.
+
+        """
         tagdict = self._get_tagdict()
         tokens = self._get_tokens(self.xmls[0])
         rows = []
@@ -118,7 +186,6 @@ class Fleiss_Table:
             for xml in xrange(0, self.numXmls):
                 tags = tagdict[xml]
                 tags.sort(key=lambda x: int(x.attrib['start']))
-                #print token
                 tag = binary_search(token, tags)
                 if tag != None:
                     match.append(tag)
@@ -128,6 +195,21 @@ class Fleiss_Table:
         return rows
     
     def _build_extent_rows(self, use_unmatched=True):
+        """Creates rows based on tag extents/text.
+
+        Each extent is the entire text associated with a given tag.
+
+        Args:
+            use_unmatched: If True, every unique tag extent is given its
+                own row.  If False, only extents whose exact span is assigned
+                a label across all annotators are considered for the rows.
+
+        Returns:
+            A list of rows, where for each extent there is a row
+            of the form: [a_1, ..., a_n] where a_i is the number of raters
+            who assigned that extent the ith label/tag type.
+            
+        """                
         tagdict = self._get_tagdict()
         rows = [] #list of lists
         for xml in tagdict.keys():
@@ -154,12 +236,48 @@ class Fleiss_Table:
         return rows
         
     def build_rows(self, rowType=EXTENT, use_unmatched=True):
+        """Fills in the rows attribute.
+
+        Rows can be made to be extent based, which considers only
+        text within a tag.  Rows can also be token based, which considers
+        all tokens in the document.
+
+        Note: This must be called before calling ``build_table``.
+
+        Args:
+            rowType: 0 if considering extents, 1 if considering tokens.
+            use_unmatched: If True, every unique tag extent is given its
+                own row.  If False, only extents whose exact span is assigned
+                a label across all annotators are considered for the rows
+
+        Returns:
+            None
+
+        """
         if rowType == EXTENT:
             self.rows = self._build_extent_rows(use_unmatched)
         elif rowType == TOKEN:
             self.rows = self._build_token_rows()
 
     def build_table(self):
+        """Constructs the table for computing Fleiss' Kappa
+
+        This creates an M x N numpy.zeros array, where M is the number
+        of objects being categorized and N is the number of possible labels
+        that can be assigned to an object (at most one label per object).
+
+        Each table entry e_ij is the number of annotators/raters who assigned
+        the ith object the jth label.  Each row must sum to the number of total
+        annotators, i.e. sum^{N}_{j = 0} e_ij = ``self.numXmls``.
+
+        Note: ``build_rows`` must be called before this.
+        
+        Args:
+            None
+        Returns:
+            None
+
+        """
         if not self.rows:
             raise ValueError, "call build_rows before building table"
         self.table = numpy.zeros((len(self.rows), len(self.categories)), dtype=int)
@@ -189,99 +307,6 @@ def getXmls(path):
     return files
 
 test = getXmls(TEST_PATH)
-
-#relevant value names
-TEXT = 'TEXT'
-TAGS = 'TAGS'
-#index of first xml for IAA
-FIRST = 0
-
-
-def tag_matches(tag1, tag2):
-    """Determines if two tags have the same extent.
-
-    Two tags are have the same extent if the start and end indices match.
-    This does not necessarily mean the tags have the same category.
-
-    Args:
-        tag1: An xml based tag as from ElementTree
-        tag2: An xml based tag as from ElementTree
-
-    Returns:
-        True if the tags' indices match, False otherwise.
-    """
-    if tag1.attrib['start'] == tag2.attrib['start'] and tag1.attrib['end'] == tag2.attrib['end']:
-            return True
-    return False
-
-def get_tagdict(xmls, categories=ISO_CATEGORIES):
-    if not xmls:
-        raise ValueError, "xmls input must contain at least one element"
-    if not categories:
-        raise ValueError, "categories must contain at least one element"
-    tagdict = {} #for mapping each annotator to the extents
-    for annotator, xml in enumerate(xmls):
-        root = ET.parse(xml).getroot()
-        #only grabs tags with given categories and ignores non-consuming tags
-        tagdict[annotator] = [child for child in root.find(TAGS) if child.tag in ISO_CATEGORIES and child.attrib['text']]
-    return tagdict
-
-def get_rows(xmls, categories=ISO_CATEGORIES, use_unmatched=True):
-    """Builds the rows for each table entry
-    """
-    tagdict = get_tagdict(xmls, categories)
-    numXmls = len(xmls) #number of annotators
-    rows = [] #list of lists
-    for xml in tagdict.keys():
-        tags = tagdict[xml]
-        for tag in tags:
-            match = [tag]
-            for otherXml in xrange(0, numXmls):
-                unmatched = True
-                if otherXml == xml:
-                    continue
-                otherTags = tagdict[otherXml]
-                for otherTag in otherTags:
-                    if tag_matches(tag, otherTag):
-                        match.append(otherTag)
-                        otherTags.remove(otherTag)
-                        unmatched = False
-                        break
-                if unmatched and use_unmatched:
-                    match.append(ET.Element('NONE'))
-            if use_unmatched:
-                rows.append(match)
-            elif len(match) == numXmls:
-                rows.append(match)
-    return rows
-
-def get_table(xmls, categories=ISO_CATEGORIES, use_unmatched=True):
-    """Builds the table for computing Fleiss' Kappa.
-
-    Constructs a numpy.zeros array of dimensions m * n, representing agreement amongst annotators.
-    m is the number of extents over all annotators and n is the number of categories/labels.
-    The extents are only considered if, for all xmls, that exact extent (based on ``tag_equals``)
-    exists in the other xmls.  Otherwise the extent is ignored.
-    Currently this does not consider non-consuming tags and ignores them.
-
-    Args:
-        xmls: A list of file paths, where each element is an annotated xml.
-            The xmls should all be mark up for the same text.
-        categories: A list of categories/tag types that are possible labels for
-            any given extent.  By default it includes all possible ISO-Space extents.
-
-    Returns:
-        An m * n numpy.zeros array, where each entry ij represents the number of
-        annotators who assigned label n_j to extent m_i.  The total across all rows
-        sums to the number of xmls/annotators.
-    """
-    matched_tags = get_rows(xmls, categories, use_unmatched)
-    fleiss_table = numpy.zeros((len(matched_tags), len(categories)), dtype=int)
-    for row, matched in enumerate(matched_tags):
-        for tag in matched:
-            column = categories.index(tag.tag)
-            fleiss_table[row][column] += 1
-    return fleiss_table
     
 #uncomment for a quick test run
 #f = get_table([f1, f2])        
@@ -293,9 +318,3 @@ tagdict = f._get_tagdict()
 tags = tagdict[0]
 tags.sort(key=lambda x: int(x.attrib['start']))
 t = tokens[5]
-
-"""for key in tagdict.keys():
-	tags = tagdict[key]
-	tags.sort(key=lambda x: int(x.attrib['start']))
-	for x in tokens:
-		binary_search(x, tags)"""
