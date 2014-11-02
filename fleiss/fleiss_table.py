@@ -13,9 +13,14 @@ module to take the table as input.
 
 """
 
-import os
+import os, sys, inspect
+cmd_subfolder = os.path.realpath(os.path.abspath(os.path.join(os.path.split(inspect.getfile( inspect.currentframe() ))[0],"parser/util/Corpora")))
+cmd_subfolder = cmd_subfolder.replace('fleiss/', '')
+if cmd_subfolder not in sys.path:
+    sys.path.insert(0, cmd_subfolder)
 import re
 import numpy
+import tokenizer
 import xml.etree.ElementTree as ET
 
 xml_pattern = re.compile(r'[0-9]+_[a-z]+_[0-9]+_[a-z]+\-[a-z][0-9]+\-p[0-9]+\.xml', re.IGNORECASE)
