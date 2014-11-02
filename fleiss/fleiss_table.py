@@ -78,55 +78,46 @@ def tag_matches(tag1, tag2):
             return True
     return False
 
-def get_rows(xmls, categories=ISO_CATEGORIES, use_unmatched=True):
-    """Builds the rows for each table entry
-    """
+def get_tagdict(xmls, categories=ISO_CATEGORIES):
     if not xmls:
         raise ValueError, "xmls input must contain at least one element"
     if not categories:
         raise ValueError, "categories must contain at least one element"
-    tag_dict = {} #for mapping each annotator to the extents
-    tags = [] #all tags/extents from all annotators
+    tagdict = {} #for mapping each annotator to the extents
     for annotator, xml in enumerate(xmls):
         root = ET.parse(xml).getroot()
         #only grabs tags with given categories and ignores non-consuming tags
-        tag_dict[annotator] = [child for child in root.find(TAGS) if child.tag in ISO_CATEGORIES and child.attrib['text']]
-        tags += tag_dict[annotator]
+        tagdict[annotator] = [child for child in root.find(TAGS) if child.tag in ISO_CATEGORIES and child.attrib['text']]
+    return tagdict
+
+def get_rows(xmls, categories=ISO_CATEGORIES, use_unmatched=True):
+    """Builds the rows for each table entry
+    """
+    tagdict = get_tagdict(xmls, categories)
     numXmls = len(xmls) #number of annotators
-    matched_tags = [] #list of lists
-    unmatched_tags = [] #for debugging purposes
-    for tag in tag_dict[FIRST]:
-        matched = []
-        matched.append(tag)
-        #iterate through all other xmls
-        #in order to find a match for this tag/extent
-        for i in xrange(FIRST + 1, numXmls):
-            for otherTag in tag_dict[i]:
-                if tag_matches(tag, otherTag):
-                    matched.append(otherTag)
-                    tag_dict[i].remove(otherTag)
-                    break
-        if len(matched) == numXmls:
-            matched_tags.append(matched)
-        else:
-            unmatched_tags.append(tag)
-    if use_unmatched:
-        for tag in unmatched_tags:
-            matched = [tag]
-            for i in xrange(FIRST + 1, numXmls):
-                matched.append(ET.Element('NONE'))
-            matched_tags.append(matched)
-        for i in xrange(FIRST + 1, numXmls):
-            for tag in tag_dict[i]:
-                matched = []
-                for j in xrange(FIRST, numXmls):
-                    if j == i:
-                        matched.append(tag)
-                    else:
-                        matched.append(ET.Element('NONE'))
-                matched_tags.append(matched)
-        return matched_tags
-    return matched_tags
+    rows = [] #list of lists
+    for xml in tagdict.keys():
+        tags = tagdict[xml]
+        for tag in tags:
+            match = [tag]
+            for otherXml in xrange(0, numXmls):
+                unmatched = True
+                if otherXml == xml:
+                    continue
+                otherTags = tagdict[otherXml]
+                for otherTag in otherTags:
+                    if tag_matches(tag, otherTag):
+                        match.append(otherTag)
+                        otherTags.remove(otherTag)
+                        unmatched = False
+                        break
+                if unmatched and use_unmatched:
+                    match.append(ET.Element('NONE'))
+            if use_unmatched:
+                rows.append(match)
+            elif len(match) == numXmls:
+                rows.append(match)
+    return rows
 
 def get_table(xmls, categories=ISO_CATEGORIES, use_unmatched=True):
     """Builds the table for computing Fleiss' Kappa.
@@ -160,8 +151,3 @@ def get_table(xmls, categories=ISO_CATEGORIES, use_unmatched=True):
 #f = get_table([f1, f2])        
 r = get_rows(test)       
         
-
-
-
-
-
