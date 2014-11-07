@@ -160,7 +160,7 @@ class Fleiss_Table:
         for annotator, xml in enumerate(self.xmls):
             root = ET.parse(xml).getroot()
             #ignores non-consuming tags
-            tagdict[annotator] = [child for child in root.find(TAGS) if child.tag in self.categories and child.attrib['text']]
+            tagdict[annotator] = [child for child in root.find('TAGS') if child.tag in self.categories and child.attrib['text']]
         return tagdict
     
     def _build_token_rows(self):
@@ -306,15 +306,15 @@ def getXmls(path):
             files.append(fpath)
     return files
 
-test = getXmls(TEST_PATH)
+#test = getXmls(TEST_PATH)
     
 #uncomment for a quick test run
 #f = get_table([f1, f2])        
-r = get_rows(test)       
+#r = get_rows(test)       
 
-f = Fleiss_Table(test)
-tokens = f._get_tokens(test[0])
-tagdict = f._get_tagdict()
-tags = tagdict[0]
-tags.sort(key=lambda x: int(x.attrib['start']))
-t = tokens[5]
+#f = Fleiss_Table(test)
+#tokens = f._get_tokens(test[0])
+#tagdict = f._get_tagdict()
+#tags = tagdict[0]
+#tags.sort(key=lambda x: int(x.attrib['start']))
+#t = tokens[5]
