@@ -1,0 +1,216 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{textcomp}
+\usepackage{tikz}
+\geometry{a4paper}
+\usepackage[francais]{babel}
+\title{Translating SPRL to ISO-Space}
+\author{Seth Dworman}
+\date{16 September 2014}
+
+\begin{document}
+\maketitle
+$_{}$
+\def\checkmark{\tikz\fill[scale=0.4](0,.35) -- (.25,0) -- (1,.7) -- (.25,.15) -- cycle;}
+\newenvironment{attributes}
+{\medskip\medskip
+ \begin{tabular}{|l|l|}
+ \hline} 
+{\hline
+ \end{tabular}
+ \medskip\medskip}
+\\
+{\large {\bf 1.0 Task Description}}
+\\
+\\
+The current task is to find a way to translate SPRL (spatial role labeling) into the ISO-Space annotation schema.  I have done little research as to whether this sort of annotation scheme translation task has be done before.  The likelihood is it probably has not, as most annotation schemes go through a MAMA cycle, and therefore there is generally some kind of isomorphism between different \emph{dialects} of the same annotation mark up language.  Thus this case is different in that SPRL and ISO-Space are not different versions of the same underlying annotation language but instead separate \emph{languages}.  What makes a translation possible is that both of them attempt to model the same information: spatial relations in natural language text (and images).  Finding an effective mapping between SPRL and ISO-Space would be useful if there were a large number of documents annotated in the (now deprecated?) SPRL language, but which had not yet been annotated for ISO-Space.  This would provide more training data.  The question is, can this be done, and if so, how?  
+\\
+\\
+One way to approach translating SPRL into ISO-Space is to view the SPRL tags as not necessarily isomorphic to those of an ISO-Space annotation on the same document, but rather as simply providing additional information that would prove useful in attempting automatic machine learning based annotation of a document.  Assuming that the SPRL annotated documents are correctly annotated, it should be {\bf easier} to generate ISO-Space tags from an SPRL document than a completely unannotated document (which is one of the goals of ISO-Space).  Thus this task is not fundamentally different from the general problem at hand: given an unannotated document, generate the ISO-Space tags.  Given this, one assumption is that the extra information given by SPRL documents should make machine based annotation easier.  Thus, translating between these documents can provide a useful data point to compare with efforts on completely unannotated text.  On the other hand, a negative result, i.e. SPRL markup does not markedly improve the machine based annotation, might suggest that SPRL does not actually add a lot of useful information for determining the spatial relations, or that the information SPRL captures can be easily gathered automatically with a clever learner / algorithm.    
+\\
+\\
+In the first section I give a brief but comprehensive description of the overall state of both SPRL tags and ISO-Space tags.  This is followed by a comparison of the two, where it shown that ISO-Space is semantically richer and more verbose, in that it captures more spatial information and requires detailed typing and specification of participants and signals, whereas SPRL is much sparser and generic in its spatial relation language.  This is important because of the implications it has for a direct (isomorphic) translation of SPRL to ISO-Space (i.e. it is not an \emph{easy} problem).  
+\\
+\\
+{\large {\bf 2.0 SPRL}}
+\\
+\\
+SPRL's tag set, like ISO-Space, is divided between extents and relations (or links).  Extents always have a presence in the document, in that they are tied to specific text.  Relations, on the other hand, are formed by the composition of tagged extents in the form of a $n$-tuple.  SPRL provides 7 extent tags: {\sc trajector}, {\sc landmark}, {\sc spatial\_indicator}, {\sc motion\_indicator}, {\sc path}, {\sc direction}, and {\sc distance}.  These are each described in more detail below.  
+\\
+\\
+{\bf Trajector Tag}: The entity whose location is being described (e.g. the figure).  This tag can include agents (humans, animals), objects, and events.  The {\sc trajector} tag itself does not include any additional information, other than which text is considered a {\sc trajector}.  
+
+\begin{attributes}
+{\tt id} 			&	\texttt{T0, T1, T2},\ldots\\
+\hline
+{\tt text}	&	\emph{Daniel and I, we, the motorcycles},\ldots \\
+\end{attributes}
+\\
+\\
+{\bf Landmark Tag}: The entity which is being referenced to describe the location / position of a {\sc trajector} (e.g. the ground).  This can include places, paths, agents, objects, and events.  Like {\sc trajector}, {\sc landmark} does not include any information besides the text corresponding to that tag.
+
+\begin{attributes}
+{\tt id} 			&	\texttt{L0, L1, L2},\ldots\\
+\hline
+{\tt text}	&	\emph{Romania, the forest, the street},\ldots \\
+\end{attributes}
+\\
+\\
+{\bf Path Tag}: A schematic characterization of the minimal path (per cognitive semantics): it describes the trajector's motion in relation to a region / landmark.  It has a \emph{beginning, middle} and \emph{end}.  The tag itself only includes the text extent.  
+
+\begin{attributes}
+{\tt id} 			&	\texttt{P0, P1, P2},\ldots\\
+\hline
+{\tt text}	&	\emph{the forest road, through this road section, into the hardwood forest },\ldots \\
+\end{attributes}
+\\
+\\
+{\bf Spatial Indicator Tag}: Generally this correspond to a preposition that provides spatial information.  It can also include verbs, nouns, and adverbs or a combination of them.  The tag itself only includes the extent text.
+
+\begin{attributes}
+{\tt id} 			&	\texttt{S0, S1, S2},\ldots\\
+\hline
+{\tt text}	&	\emph{to, lie on, is },\ldots \\
+\end{attributes}
+\\
+\\
+{\bf Motion Indicator Tag}: These are mostly prepositional verbs but other categories are possible.  Eventually these should be mapped to verb motion classes.  The tag itself only includes the extent text.
+
+\begin{attributes}
+{\tt id} 			&	\texttt{M0, M1, M2},\ldots\\
+\hline
+{\tt text}	&	\emph{drove, bend off, take the way back},\ldots \\
+\end{attributes}
+\\
+\\
+\newpage
+$_{}$
+\\
+{\bf Direction Tag}: Used to denote direction along some axes depending on the frame of reference.  These are used when the trajector is not in a spatial relation with an actual, overt landmark.  The tag itself only includes the extent text.
+
+\begin{attributes}
+{\tt id} 			&	\texttt{DIR0, DIR1, DIR2},\ldots\\
+\hline
+{\tt text}	&	\emph{southwest, right, south},\ldots \\
+\end{attributes}
+\\
+\\
+{\bf Distance Tag}: A scalar entity that can be qualitative as in \emph{close} or \emph{far away}, but also quantitative as in \emph{five miles down the road}.  This should be classified as either \emph{absolute} or \emph{relative}, but this attribute is not present in the actual tag; the tag itself only includes the extent text.
+
+\begin{attributes}
+{\tt id} 			&	\texttt{DIS0, DIS1, DIS2},\ldots\\
+\hline
+{\tt text}	&	\emph{some thousand off road kilometers, very near, within 530 meters},\ldots \\
+\end{attributes}
+\\
+\\
+SPRL only offers a single link, called {\sc relation}, to encode all the spatial information between the various extents  
+\\
+\\
+{\bf Spatial Relation Link}: {\sc relation}
+\\
+{\sc relation}s, \emph{spatial relations}, or SRs in the most simple descriptions are composed of a {\sc trajector}, {\sc landmark}, and {\sc spatial\_indicator}, e.g. \emph{She is at school}.  They also have other fields for tags when relevant: {\tt path\_id}, {\tt direction\_id},  and {\tt motion\_id}.  These correspond to the tags described above.  Additionally, SRs also provide attributes for information about the kind of spatial relation.  This information does not always have a direct presence in the text, so in some sense it is provided by the annotator's understanding of language.  These are {\tt FoR}, {\tt relative\_value}, {\tt absolute\_value}, {\tt RCC8\_value}, {\tt specific\_type}, {\tt general\_type}, {\tt qualitative\_value}, and {\tt quantitative\_value}.  
+
+\begin{attributes}
+{\tt id} 			&	\texttt{SR0, SR1, SR2, }\ldots\\
+\hline
+{\tt FoR} &				{\sc relative, intrinsic, absolute} \\
+\hline
+{\tt relative\_value} & 		{\sc right, behind, front, below, above, other, }\ldots \\
+\hline
+{\tt absolute\_value} & 		{\sc north, west, sw, ne, se, east, south, nw, }\ldots \\
+\hline
+{\tt RCC8\_value} & 		{\sc dc, ec, po, eq, tpp, tppi, nttp, nttpi, in } \\
+\hline
+{\tt specific\_type} &		{\sc relative, quantitative, qualitative, rcc8, absolute} \\
+\hline
+{\tt general\_type} &		{\sc distance, direction, region} \\
+\hline
+{\tt qualitative\_value} & 	Identifier of the qualitative {\sc distance} tag used \\
+\hline
+{\tt quantitative\_value} & 	Identifier of the quantitative {\sc distance} tag used \\
+\hline
+{\tt path\_id} & 	Identifier of the {\sc path} tag used \\
+\hline
+{\tt direction\_id} & 	Identifier of the {\sc direction} tag used \\
+\hline
+{\tt motion\_id} & 	Identifier of the {\sc motion} tag used \\
+\hline
+{\tt spatial\_indicator\_id} & 	Identifier of the {\sc spatial\_indicator} tag used \\
+\hline
+{\tt landmark\_id} & 	Identifier of the {\sc landmark} tag used \\
+\hline
+{\tt trajector\_id} & 	Identifier of the {\sc trajector} tag used \\
+\hline
+\end{attributes}
+%\footnote{in CP.gold only {\sc NTPP-1, NTPP, DC, EC, EQ, and PO show up}}
+\newpage
+$_{}$
+{\large {\bf 3.0 ISO-Space}}
+\\
+\\
+The full specification of ISO-Space will not be reproduced, since it is readily available.  Instead, each extent and link tag is summarized below in a tuple notation.    
+\\
+\\
+{\bf Place Tag}: (\texttt{id} = [\texttt{pl0, pl1, pl2, }\ldots], \texttt{dimensionality} = [{\sc area, point, line, volume}], \texttt{form} = [{\sc nom, nam}], \texttt{dcl} = [{\sc true, false}]\footnote{\texttt{dcl} is almost always {\sc false}}, \texttt{countable} = [{\sc true, false}])
+\\
+\\
+{\bf Path Tag}: (\texttt{id} = [\texttt{p0, p1, p2, }\ldots], \texttt{dimensionality} = [{\sc area, point, line, volume}], \texttt{form} = [{\sc nom, nam}], \texttt{dcl} = [{\sc true, false}, \texttt{countable} = [{\sc true, false}])
+\\
+\\
+{\bf Spatial Entity Tag}: (\texttt{id} = [\texttt{se0, se1, se2, }\ldots], \texttt{dimensionality} = [{\sc area, point, line, volume}], \texttt{form} = [{\sc nom, nam}], \texttt{dcl} = [{\sc true, false}], \texttt{countable} = [{\sc true, false}])
+\\
+\\
+{\bf Motion Tag}: (\texttt{id} = [\texttt{m0, m1, m2 }\ldots], \texttt{motion\_type} = [{\sc compound, manner, path}],\\\texttt{motion\_class} = [{\sc move, move\_external, move\_internal, leave, reach, cross, detach, hit, follow, deviate, stay}], \texttt{motion\_sense} = [{\sc literal, fictive, intrinsic\_change}])
+\\
+\\
+{\bf Spatial Signal Tag}: (\texttt{id} = [\texttt{s0, s1, s2, }\ldots], \texttt{semantic\_type} = [{\sc topological, directional, dir\_top}])
+\\
+\\
+{\bf Motion Signal Tag}: (\texttt{id} = [\texttt{ms0, ms1, ms2, }\ldots])
+\\
+\\
+{\bf Measure Tag}: (\texttt{id} = [\texttt{me0, me1, me2, }\ldots], \texttt{value} = [\emph{NEAR, lte530, few, }\ldots], \texttt{unit} = [\texttt{meters, kilometers, steps, }\ldots)
+\\
+\\
+{\bf Qualitative Link (QSLINK)}: (\texttt{id} = [\texttt{qsl0, qsl1, qsl2, }\ldots], \texttt{fromID}\footnote{\texttt{fromID} denotes the figure} = [\texttt{pl0, se5, p3, }\ldots], \texttt{toID}\footnote{\texttt{toID} denotes the ground} = [\texttt{pl7, se13, p9, }\ldots], \texttt{relType} = [{\sc rcc8}+], \texttt{trigger} = [\texttt{s0, s1, s2, }\ldots])
+\\
+\\
+{\bf Orientation Link (OLINK)}: (\texttt{id} = [\texttt{ol0, ol1, ol2, }\ldots], \texttt{fromID} = [\texttt{pl0, se5, p3, }\ldots], \texttt{toID} = [\texttt{pl7, se13, p9, }\ldots], \texttt{relType} = [{\sc toward, southwest, }\ldots], \texttt{trigger} = [\texttt{s0, s1, s2, }\ldots], \texttt{frame\_type} = [{\sc relative, absolute, intrinsic}], \texttt{referencePt} = [{\sc viewer, southwest, }\ldots], \texttt{projective} = [{\sc true, false}])
+\\
+\\
+{\bf Move Link (MOVELINK)}: (\texttt{id} = [\texttt{mvl0, mvl1, mvl2, }\ldots], \texttt{fromID}\footnote{\texttt{fromID} denotes the motion} = [\texttt{m0, m1, m2, }\ldots], \texttt{toID}\footnote{\texttt{toID} denotes the mover} = [\texttt{se0, se1, se2, }\ldots], \texttt{trigger} = [\texttt{m0, m1, m2, } \ldots], \texttt{source} = [\texttt{p12, pl35, }\ldots], \texttt{goal} = [\texttt{pl10, p9, }\ldots], \texttt{midPoint} = [\texttt{p9, pl10, }\ldots], \texttt{goal} = [\texttt{pl10, p9, }\ldots], \texttt{goal\_reached} = [{\sc yes, uncertain, no}], \texttt{pathID} = [\texttt{p0, p1, p2, }\ldots], \texttt{motion\_signal} = [\texttt{ms0, ms1, ms2, }\ldots])
+\newpage
+$_{}$
+\\
+\\
+{\bf Measure Link (MEASURELINK)}: (\texttt{id} = [\texttt{ml0, ml1, ml2, }\ldots], \texttt{fromID}\footnote{denotes the extent being measured (from)} = [\texttt{m0, pl17, p5, }\ldots], \texttt{toID}\footnote{denotes the extent being measured (to)} = [\texttt{p8, pl9, m22, }\ldots], \texttt{retype} = [{\sc distance, width, length, height, general\_dimension}], \texttt{val} = [\texttt{me0, me1, me2, }\ldots])
+\\
+\\
+{\bf Meta Link (METALINK)}: (\texttt{id} = [\texttt{metal0, metal1, metal2, }\ldots], \texttt{fromID}  = [\texttt{pl2, p5, se6, } \ldots], \texttt{toID} = [\texttt{pl0, p4, se1, }\ldots], \texttt{relType} = [{\sc coreference, subcoreference, splitcoreference}])
+\\
+\\
+{\large {\bf 3.0 SPRL and ISO-Space}}
+\\
+\\
+Given the tag and link sets for each mark up language, is there a way to map SPRL to ISO-Space?  It appears that a direct, deterministic mapping without machine learning and/or human annotation is not possible.  
+\\
+\\
+For the SPRL tag {\sc trajector}, there is not a clear ISO-Space equivalent.  This is because ISO-Space classifies extents based on what semantic class they belong to, and not necessarily their semantic role in a spatial relation.   In ISO-Space, places, entities, paths, motions, and events can all be trajectors.  Thus in order to turn each {\sc trajector} into an ISO-Space tag, a classifier will be needed to determine this (or human annotation).  However, because the {\sc trajector} refers to a well defined semantic role, we always know what will be the figure when creating an ISO-Space link, at least for {\sc qslink} and {\sc olink}.  ISO-Space tags themselves do not indicate what their semantic role is.  In general it appears a large amount of {\sc trajector}s are {\sc spatial\_entities}: from CP.gold, $37.74\%$ of {\sc trajector}s have \emph{we, us, I, you} as their extents.  Other statistics include: $14.28\%$ of {\sc trajector}s are non-consuming and $9.65\%$ are non-animate pronouns \emph{which, that, where, it}.  Because SPRL does not have any {\sc metalink}s, dereferencing these pronouns will be quite tricky.  The same issues also apply for the {\sc landmark} tag, since it is just a semantic role for a spatial relationship.  However, a quick scanning of the most frequent {\sc landmark} tokens seems to suggest most {\sc landmark}s are ISO-Space {\sc place}s or {\sc path}s.  The first 60 most frequent tags are themselves places/paths, which is $50.09\%$ of the {\sc landmark}s found in CP.gold.  
+\\
+\\
+The SPRL {\sc path} tag, however, seems to directly correspond to ISO-Space's notion of paths, and thus has a direct equivalent in the ISO-Space {\sc path}.  The same is also true for the {\sc spatial\_indicator} tag, which seems to have a direct correspondence with the ISO-Space {\sc spatial\_signal} tag.  
+\\
+\\
+The SPRL {\sc motion\_indicator} tag, however, is very confused.  In some instances it is actually a verb and thus is like the ISO-Space {\sc motion} tag: at least $68.7\%$ of SPRL {\sc motion\_indicator} tags are actually verbs or verb phrases: \emph{reached}, \emph{took the road}, \emph{entered}, etc.  In other instances it is more like the ISO-Space {\sc motion\_signal} tag. 
+\\
+\\
+Finally, the SPRL {\sc distance} tag seems to correspond to the ISO-Space {\sc measure} tag.  However, by itself it is devoid of attributes; information from an SPRL {\sc relation} link would be needed to know if the {\sc distance} is quantitative or qualitative.  SPRL also has a {\sc direction} tag, which has no ISO-Space equivalent tag.  It simply denotes an absolute or relative direction, and should be relatively easy to translate into an ISO-Space tag set.  
+
+
+\end{document}

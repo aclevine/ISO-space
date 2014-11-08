@@ -1,0 +1,143 @@
+# -*- coding: utf-8 -*-
+
+"""
+Functions that compute the semantic similarity between sets of words.
+
+"""
+
+import stopwords as sw
+from nltk.corpus import wordnet as wn
+
+NOUN = wn.NOUN
+VERB = wn.VERB
+
+def max_wup_similarity(word1, word2, pos=NOUN):
+    """
+    Computes the maximum Wu-Palmer Similarity between two words.
+    Returns the highest similarity score between the words' synsets
+
+    Args:
+    word1: A string denoting a lexical item in English.
+    word2: A string denoting a lexical item in English.
+    pos: A WordNet part-of-speech.  By default it only considers nouns.
+
+    Returns:
+    maxScore: a real number between [0,1.0]
+
+    If maxScore == 0, at least one of the words does not exist in WordNet.
+    """
+    #grab the synsets of each word
+    word1Synsets = wn.synsets(word1, pos)
+    word2Synsets = wn.synsets(word2, pos)
+    maxScore = 0
+    #find the pair (synset1, synset2) which maximizes the wup metric
+    for synset1 in word1Synsets:
+        for synset2 in word2Synsets:
+            currScore = wn.wup_similarity(synset1, synset2)
+            if currScore > maxScore:
+                maxScore = currScore
+    return maxScore
+
+def _max_wup_macro_average(word1, words2, pos=NOUN):
+    """
+    Computes the maximized average Wu-Palmer Similarity between a word
+    and a list of words.  The list of words should generally represent
+    a homogeneous semantic type.  This can be used to test a given word's
+    similarity to a(n) (arbitrary) semantic type.
+
+    Args:
+    word1: A string denoting a lexical item in English.
+    word2: A list of strings which belong to a homogenous semantic type.
+    pos: A WordNet part-of-speech.  By default it only considers nouns.
+
+    Returns:
+    averageWup: a real number between [0,1.0]
+    
+    Note that scores which are 0 are not computed in the average,
+    since all lexical items have some similarity.
+    """
+    totalWup = 0
+    totalScores = 0
+    for word in words2:
+        currWup = max_wup_similarity(word1, word)
+        if currWup > 0:
+            totalWup += currWup
+            totalScores += 1
+    if totalScores == 0:
+        return 0
+    averageWup = totalWup / totalScores
+    return averageWup
+
+def max_wup_macro_average(words1, words2, pos=NOUN):
+    """
+    Computes the maximized average Wu-Palmer Similarity between a phrase
+    and a list of words.  The list of words should generally represent
+    a homogeneous semantic type.  This can be used to test a given word's
+    similarity to a(n) (arbitrary) semantic type.
+
+    Args:
+    words1: A list of strings which linearlly denote a phrase/constituent
+    words2: A list of strings which belong to a homogenous semantic type.
+    pos: A WordNet part-of-speech.  By default it only considers nouns.
+
+    Returns:
+    averageWup: a real number between [0,1.0]
+    
+    Note that scores which are 0 are not computed in the average,
+    since all lexical items have some similarity.
+    """
+    totalWup = 0
+    totalScores = 0
+    for word1 in words1:
+        currWup = _max_wup_macro_average(word1, words2, pos)
+        if currWup > 0:
+            totalWup += currWup
+            totalScores += 1
+    if totalScores == 0:
+        return 0
+    averageWup = totalWup / totalScores
+    return averageWup
+
+def wup_macro_average(phrase1, phrases2, pos=NOUN):
+    """
+    Computes the maximized average Wu-Palmer Similarity between a phrase
+    and a list of phrases.  The list of phrases should generally represent
+    a homogeneous semantic type.  This can be used to test a given phrase's
+    similarity to a(n) (arbitrary) semantic type.
+
+    Args:
+    pharae1: A list of strings which linearlly denote a phrase/constituent
+    phrases2: A list of phrases which belong to a homogenous semantic type.
+    pos: A WordNet part-of-speech.  By default it only considers nouns.
+
+    Returns:
+    avgWup: a real number between [0,1.0]
+    
+    Note that scores which are 0 are not computed in the average,
+    since all lexical items have some similarity.
+    """
+    wupScore = 0
+    wupCount = 0
+    for word in phrase1:
+        avg = 0
+        count = 0
+        score = 0
+        for phrase2 in phrases2:
+            avg = max_wup_macro_average(word, phrase2, pos)
+            if avg > 0:
+                count += 1
+                score += avg
+        if count > 0:
+            wupScore += score / count
+            wupCount += 1
+    if wupCount == 0:
+        return 0
+    avgWup = wupScore / wupCount
+    return avgWup
+    
+    
+
+    
+    
+    
+    
