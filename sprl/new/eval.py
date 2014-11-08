@@ -16,11 +16,18 @@ import classify as c
 TAG = 0
 LABEL = 1
 
-def eval1(tagname='TRAJECTOR', sprl=td.TagDoc(td.SPRL_FILE), iso=td.TagDoc(td.ISO_FILE)):
+iso = td.TagDoc(td.ISO_FILE)
+sne = iso.tagDict['SPATIAL_ENTITY']
+place = iso.tagDict['PLACE']
+path = iso.tagDict['PATH']
+
+def eval1(tagnames=['TRAJECTOR', 'LANDMARK'], sprl=td.TagDoc(td.SPRL_FILE), iso=td.TagDoc(td.ISO_FILE)):
     """
     Evaluates classification of trajector and landmark tags.
     """
-    tags = sprl.tagDict[tagname]
+    tags = []
+    for tagname in tagnames:
+        tags += sprl.tagDict[tagname]
     classified = [(tag, c.classify(tag)[LABEL]) for tag in tags]
     iso_tags = {c[LABEL]: iso.tagDict[c[LABEL]] for c in classified}
     stats = {label: [] for label in iso_tags.keys()}
@@ -46,13 +53,22 @@ def eval1(tagname='TRAJECTOR', sprl=td.TagDoc(td.SPRL_FILE), iso=td.TagDoc(td.IS
     return stats
                     
                     
-                
+def summary(stats, isoDoc=td.TagDoc(td.ISO_FILE)):
+    totals = {}
+    score = {}
+    for key in stats.keys():
+        totals[key] = 0
+        score[key] = 0
+        for item in stats[key]:
+            totals[key] += 1
+            score[key] += float(item[-2])
+    return (totals, score)
                 
 
 
                     
-                    
-                
+
+
         
         
     
