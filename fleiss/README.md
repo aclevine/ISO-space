@@ -16,6 +16,7 @@ the highest agreement overall.  It certainly does help most tokens are assigned 
 across all raters (spatial objects are 'sparse').
 
 > python fleiss_main.py /path/to/Adjudication/47_N_27_E
+
 0.805336480521
 
 The -x flag tells the algorithm to only consider tag extents rather than tokens.  This results
@@ -24,6 +25,7 @@ annotator's, then it is considered its own object and hence brings down the scor
 annotators did not have that exact extent.
 
 >python fleiss_main.py -x /users/sethmachine/desktop/Adjudication/47_N_27_E
+
 0.657599059806
 
 The -m flag tells the algorithm to only consider tag extents which matched exactly across
@@ -37,6 +39,7 @@ ill-defined for the annotators.  If this score was exceptionally low, it could c
 the categories in their current understanding are difficult to separate.
 
 >python fleiss_main.py -m -x /users/sethmachine/desktop/Adjudication/47_N_27_E
+
 0.886386837207
 
 To deal with arbitrary amounts of XMLs / annotation tasks, the -r flag can be specified to inform
@@ -44,9 +47,15 @@ the script to search all directories exhausitvely and calculate the kappa for ea
 found.  This flag will also print the average agreement over all tasks.
 
 >python fleiss_main.py -r /users/sethmachine/desktop/Adjudication
+
 46_N_21_E : 0.848039752399
+
 48_N_27_E : 0.767482328789
+
 ...
+
 47_N_22_E : 0.822032183289
+
 48_N_8_E : 0.793415272094
+
 Average: 0.799632416455
