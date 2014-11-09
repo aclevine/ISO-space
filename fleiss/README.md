@@ -11,8 +11,7 @@ By default the algorithm considers all tokens (from the Lexer) to be objects eac
 has assigned a label.  The label is determined by whether that token is part of a tag extent.
 Otherwise the rater has assigned it the 'None' category.
 
-Computes Fleiss' Kappa for a single task, outputting the score.  This will result in
-the highest agreement overall.  It certainly does help most tokens are assigned 'None'
+Computes Fleiss' Kappa for a single task, outputting the score.  It certainly does help most tokens are assigned 'None'
 across all raters (spatial objects are 'sparse').
 
 > python fleiss_main.py /path/to/Adjudication/47_N_27_E
