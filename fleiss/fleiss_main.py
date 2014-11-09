@@ -15,10 +15,11 @@ python fleiss_main.py -r /users/sethmachine/desktop/Adjudication > fleiss.txt
 
 """
 
-import re
-import os
-import sys
 import getopt
+import os
+import re
+import sys
+
 import fleiss as fl
 import fleiss_table as fl_table
 
@@ -107,9 +108,9 @@ def fleiss(xmls = getXmlDict(), unmatch=True, rowType=fl_table.TOKEN):
     return fl.fleiss_wikpedia(f.table)
             
 def usage():
-    print "Usage: [-r] [-u] [-x] path/to/directory"
+    print "Usage: [-r] [-m] [-x] path/to/directory"
     print "Specify the -r flag if the directory is recursive."
-    print "Specify the -u flag to only consider exact matches."
+    print "Specify the -m flag to only consider exact matches."
     print "Specify the -x flag to consider extents instead of tokens."
 
 def main(argv):
