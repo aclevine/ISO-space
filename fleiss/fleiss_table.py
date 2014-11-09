@@ -19,6 +19,7 @@ cmd_subfolder = cmd_subfolder.replace('fleiss/', '')
 if cmd_subfolder not in sys.path:
     sys.path.insert(0, cmd_subfolder)
 import re
+
 import numpy
 import tokenizer
 import xml.etree.ElementTree as ET
@@ -222,7 +223,7 @@ class Fleiss_Table:
                         continue
                     otherTags = tagdict[otherXml]
                     for otherTag in otherTags:
-                        if tag_matches(tag, otherTag):
+                        if self._is_tag_match(tag, otherTag):
                             match.append(otherTag)
                             otherTags.remove(otherTag)
                             unmatched = False
