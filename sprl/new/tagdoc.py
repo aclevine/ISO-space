@@ -43,6 +43,7 @@ class TagDoc:
     def __init__(self, filepath=SPRL_FILE):
         self.tree = ET.parse(filepath)
         self.root = self.tree.getroot()
+        self.sentences = [child for child in self.root.find('TOKENS')]
         self.text = self.root.find(TEXT).text
         self.tags = [Tag(child.tag, child.attrib) for child in self.root.find(TAGS)]
         self.tagDict = getTagDict(self.tags)
@@ -53,8 +54,7 @@ class TagDoc:
         return [tag for tag in self.tagDict[name] if len(tag.attrib['text'].split()) > 1]
     
 class TagDir:
-    """
-    A wrapper around a directory of xml annotated documents.
+    """A wrapper around a directory of xml annotated documents.
     """
     def __init__(self, dirpath=ISO_GOLD_DIR):
         self.files = getXML(dirpath)
@@ -89,5 +89,6 @@ def flatten(l):
     return [item for sublist in l for item in sublist]
 
 
-t = TagDir(SPRL_DIR)
-tr = t.tagDict['TRAJECTOR']
+t = TagDir(ISO_GOLD_DIR)
+z = t.docs[0]
+#tr = t.tagDict['TRAJECTOR']
