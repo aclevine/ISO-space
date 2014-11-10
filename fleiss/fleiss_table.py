@@ -13,6 +13,7 @@ module to take the table as input.
 
 """
 
+import xml.etree.ElementTree as ET
 import os, sys, inspect
 cmd_subfolder = os.path.realpath(os.path.abspath(os.path.join(os.path.split(inspect.getfile( inspect.currentframe() ))[0],"parser/Corpora")))
 cmd_subfolder = cmd_subfolder.replace('fleiss/', '')
@@ -22,7 +23,6 @@ import re
 
 import numpy
 import tokenizer
-import xml.etree.ElementTree as ET
 
 xml_pattern = re.compile(r'[0-9]+_[a-z]+_[0-9]+_[a-z]+\-[a-z][0-9]+\-p[0-9]+\.xml', re.IGNORECASE)
 
@@ -48,7 +48,7 @@ START = 0
 END = 1
 
 def binary_search(token, sorted_tags, counter=1):
-    """A simple binary search to determine which tag contains the token
+    """A simple binary search to determine which tag contains the token.
 
     Performs a binary search across all sorted_tags, sorted by start spans
     from least to greatest.  A tag matches a given token if the token's
@@ -188,7 +188,7 @@ class Fleiss_Table:
                 tags = tagdict[xml]
                 tags.sort(key=lambda x: int(x.attrib['start']))
                 tag = binary_search(token, tags)
-                if tag != None:
+                if tag != None: #interestingly we can't do "if tag:"
                     match.append(tag)
                 else:
                     match.append(ET.Element('NONE'))
