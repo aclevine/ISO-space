@@ -9,7 +9,7 @@ from bs4 import BeautifulSoup
 dummy_tag = bs4.element.Tag(name='NULL')
 
 # Classes
-class Extent:
+class Extent(object):
     """A class for loading tagged data from XML doc 
     with surrounding token and tag data"""
     def __init__(self, sent, tag_dict, front, back):
@@ -64,9 +64,16 @@ class Document(BeautifulSoup):
         
         Used for matching tags to tokens using offsets"""
         tag_dict = {}
-        tags = self.consuming_tags()
+        tags = self.tags()
         for t in tags:
-            tag_dict[int(t.attrs['start'])] = t.attrs # {start offset: xml tokens, offsets, spatial data}    
+            # load entity / event / signal tags
+            if 'start' in t.attrs:
+                tag_dict[int(t.attrs['start'])] = t.attrs # {start offset: xml tokens, offsets, spatial data}    
+            # load movelink tags
+            if 'trigger' in t.attrs:
+                tag_dict[t.attrs['trigger']] = t.attrs
+            # load qslinks
+            # load olinks
         return tag_dict
 
     def extents(self, indices_function, extent_class=Extent):

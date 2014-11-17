@@ -18,7 +18,7 @@ class Demo(object):
         self.label_function = self.get_label_function()
         self.feature_functions = self.get_feature_functions()
 
-    @abstractmethod        
+    @abstractmethod
     def get_label_function(self):
         return None
     
@@ -50,3 +50,6 @@ class Demo(object):
             print "model trained"
         pred = clf.classify(test_data)
         clf.evaluate(pred, [self.label_function(x) for x in test_data])
+        
+        # TODO Return precision / recall / f-measure for averaging?
+        

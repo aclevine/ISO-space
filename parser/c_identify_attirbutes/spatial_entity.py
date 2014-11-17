@@ -25,7 +25,6 @@ def get_entity_tag_indices(sentence, tag_dict):
     return get_tag_and_no_tag_indices(sentence, tag_dict, is_entity_tag)
 
 # DEMO
-
 class EntityDemo(Demo):
     def __init__(self, doc_path = '../training', split=0.8):
         super(EntityDemo, self).__init__(doc_path, split)

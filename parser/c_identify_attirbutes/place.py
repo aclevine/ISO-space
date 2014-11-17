@@ -6,12 +6,11 @@ Created on Oct 27, 2014
 from path import PathTag
 from b_identify_types.identify_types import get_tag_and_no_tag_indices
 from util.demo import Demo
-
 import re
 
 class PlaceTag(PathTag):
     # LABEL EXTRACT
-
+    
     # FEATURE EXTRACT
     def test(self):
         return

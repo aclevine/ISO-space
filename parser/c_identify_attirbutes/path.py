@@ -13,7 +13,14 @@ import re
 # check with Zach about what we're actually covering
 class PathTag(Tag):
     # LABEL EXTRACT
+    def begin_id(self):
+        '''beginID IDREFS'''
+        return self.tag['beginID']
 
+    '''midIDs IDREFS'''
+    def mid_ids(self):
+        return self.tag['midIDs']
+        
     def form(self):
         '''form ( NAM | NOM )'''
         return self.tag['form']
@@ -21,6 +28,10 @@ class PathTag(Tag):
     def countable(self):
         '''countable ( TRUE | FALSE )'''
         return self.tag['countable']
+
+    def elevation(self):
+        ''' evelation <OPEN_CLASS>'''
+        return self.tag['elevation']
 
     # USUALLY BLANK
     def dimensionality(self):
@@ -31,8 +42,7 @@ class PathTag(Tag):
     def mod(self):
         '''mod <OPEN_CLASS>'''
         return self.tag['mod']
-        # this really needs to be tagged data if we every seriously want to use it.
-
+        # this really needs to be tagged data if we want to use it.
     
 # TAG TYPE FILTER
 def is_path_tag(tag):
@@ -74,6 +84,14 @@ class PathCountableDemo(PathDemo):
         return [lambda x: x.curr_token(),
                 ]
 
+class PathElevationDemo(PathDemo):
+    def get_label_function(self):
+        return  lambda x: str(x.elevation())
+
+    def get_elevation_functions(self):
+        return [lambda x: x.curr_token(),
+                ]
+
 class PathModDemo(PathDemo):
     def get_label_function(self):
         return  lambda x: str(x.mod())
@@ -91,7 +109,10 @@ if __name__ == "__main__":
     
     d = PathCountableDemo()
     d.run_demo()
-    
+
+    d = PathElevationDemo()
+    d.run_demo()
+
     d = PathModDemo()
     d.run_demo()
-    
+   

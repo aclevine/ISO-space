@@ -70,11 +70,12 @@ class MotionSenseDemo(MotionDemo):
 
 
 if __name__ == "__main__":
+
     d = MotionTypeDemo()
     d.run_demo()
-     
-#     d = MotionClassDemo()
-#     d.run_demo()
-#       
-#     d = MotionSenseDemo()
-#     d.run_demo()
+      
+    d = MotionClassDemo()
+    d.run_demo()
+        
+    d = MotionSenseDemo()
+    d.run_demo()
