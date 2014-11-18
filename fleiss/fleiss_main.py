@@ -25,13 +25,13 @@ import fleiss_table as fl_table
 
 #path to folder containing all xmls to be adjudicated
 ADJUDICATED_PATH = '/users/sethmachine/desktop/Adjudication'
-TEST_PATH = os.path.join(ADJUDICATED_PATH, '47_N_27_E')
+TEST_PATH = '/users/sethmachine/desktop/Adjudication/47_N_27_E'
 
 #regex to collect only certain xml/dir names
 dir_pattern = re.compile(r'[0-9]+_[a-z]+_[0-9]+_[a-z]+', re.IGNORECASE)
 xml_pattern = re.compile(r'[0-9]+_[a-z]+_[0-9]+_[a-z]+\-[a-z][0-9]+\-p[0-9]+\.xml', re.IGNORECASE)
 
-def getXmls(path):
+def getXmls(path, phase='p2'):
     """Finds all xml files in a flat directory.
 
     Collects all xml files which match the xml_pattern.
@@ -39,19 +39,22 @@ def getXmls(path):
 
     Args:
         path: A string absolute path for the directory.
+        phase: A suffix on the xml file name used to discriminate
+            between tag annotation and link annotation.
 
     Returns:
         A list of all xml files matching xml_pattern.
     """
     files = []
+    phase_pattern = re.compile(phase + '\.xml$')
     for f in os.listdir(path):
         fpath = os.path.join(path, f)
-        if xml_pattern.match(f):
+        if phase_pattern.search(f):
             files.append(fpath)
     return files
 
-def getXmlDict(path=ADJUDICATED_PATH, d={}, dname='', use_pattern=True):
-    """Finds all xml files recursively in a directory.
+def getXmlDict(path, d={}, dname='', phase='p2'):
+    """Finds all xml files recursively in a directory, storing them in a dictionary.
 
     Searches recursively from the top directory for all xml files.
     For each directory that it passes, a dictionary entry is made
@@ -61,23 +64,25 @@ def getXmlDict(path=ADJUDICATED_PATH, d={}, dname='', use_pattern=True):
         path: A string absolute path for the directory.
         d: A dictionary object (ignore this argument).
         dname: A dictionary key (ignore this argument).
-        use_pattern: A flag to switch off a regex pattern (not in use yet).
+        phase: A suffix on the xml file name used to discriminate
+            between tag annotation and link annotation.
 
     Returns:
         A dictionary mapping each directory name to a list of xmls inside it.
     """
+    phase_pattern = re.compile(phase + '\.xml$')
     if dname:
         d[dname] = []
     for f in os.listdir(path):
         fpath = os.path.join(path, f)
         if os.path.isfile(fpath):
-            if xml_pattern.match(f):
+            if phase_pattern.search(f):
                 d[dname].append(fpath)
-        elif os.path.isdir(fpath) and dir_pattern.match(f):
-            d = dict(d.items() + getXmlDict(fpath, d, f).items())
-    return d
+        elif os.path.isdir(fpath): #and dir_pattern.match(f):
+            d = dict(d.items() + getXmlDict(fpath, d, f, phase).items())
+    return {x:d[x] for x in d.keys() if d[x] and len(d[x]) > 1}
 
-def fleiss(xmls = getXmlDict(), unmatch=True, rowType=fl_table.TOKEN):
+def fleiss(xmls, unmatch=True, rowType=fl_table.TOKEN):
     """Computes Fleiss' Kappa between lists of xmls.
 
     Calculates Fleiss' Kappa given a list of xmls.  If the xmls
@@ -140,6 +145,8 @@ def main(argv):
         if recursive:
             avg = 0.0
             f = fleiss(getXmlDict(source), unmatch, rowType)
+            if not f: #dictionary is empty
+                raise ValueError, "No xml files could be found matching the pattern."
             for key in f.keys():
                 print key, ':', f[key]
                 avg += f[key]
@@ -148,6 +155,7 @@ def main(argv):
             print fleiss(getXmls(source), unmatch, rowType)
     except OSError:
         print "The directory " + source + " does not exist."
+        usage()
         sys.exit(2)
         
 if __name__ == '__main__':
