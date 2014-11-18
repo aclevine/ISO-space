@@ -30,6 +30,8 @@ xml_pattern = re.compile(r'[0-9]+_[a-z]+_[0-9]+_[a-z]+\-[a-z][0-9]+\-p[0-9]+\.xm
 ISO_CATEGORIES = ['PLACE', 'PATH', 'SPATIAL_ENTITY', 'NONMOTION_EVENT',
                   'MOTION', 'SPATIAL_SIGNAL', 'MOTION_SIGNAL', 'MEASURE', 'NONE']
 
+ISO_LINKS = ['QSLINK', 'NONE']
+
 #example files, change these according to location on computer
 ISO_FILE = "/users/sethmachine/desktop/iso-space2/sprl_to_iso-space/CP/45_N_22_E.xml"
 f1 = '/users/sethmachine/desktop/WhereToLosAngeles_HOLLYWOOD-MS-p1.xml'
@@ -39,9 +41,13 @@ f2 = '/users/sethmachine/desktop/WhereToLosAngeles_HOLLYWOOD-AB-p1.xml'
 ADJUDICATED_PATH = '/users/sethmachine/desktop/Adjudication'
 TEST_PATH = os.path.join(ADJUDICATED_PATH, '47_N_27_E')
 
+#p2 for tags
+#p4 for extents
+
 #row types
 EXTENT = 0
 TOKEN = 1
+LINK = 2 #for links
 
 #token spans
 START = 0
@@ -104,7 +110,7 @@ class Fleiss_Table:
     def __init__(self, xmls, categories=ISO_CATEGORIES):
         self.xmls = xmls
         self.numXmls = len(xmls)
-        self.categories = ISO_CATEGORIES
+        self.categories = categories
         self.rows = []
         self.table = None
         
@@ -235,6 +241,47 @@ class Fleiss_Table:
                 elif len(match) == self.numXmls:
                     rows.append(match)
         return rows
+
+    def _build_link_rows(self, use_unmatched=True):
+        """Creates rows based on links.
+
+        Each tag is associated with a link.
+
+        Args:
+            use_unmatched: If True, every unique tag extent is given its
+                own row.  If False, only extents whose exact span is assigned
+                a label across all annotators are considered for the rows.
+
+        Returns:
+            A list of rows, where for each extent there is a row
+            of the form: [a_1, ..., a_n] where a_i is the number of raters
+            who assigned that extent the ith label/tag type.
+            
+        """                
+        tagdict = self._get_tagdict()
+        rows = [] #list of lists
+        for xml in tagdict.keys():
+            tags = tagdict[xml]
+            for tag in tags:
+                match = [tag]
+                for otherXml in xrange(0, self.numXmls):
+                    unmatched = True
+                    if otherXml == xml:
+                        continue
+                    otherTags = tagdict[otherXml]
+                    for otherTag in otherTags:
+                        if self._is_tag_match(tag, otherTag):
+                            match.append(otherTag)
+                            otherTags.remove(otherTag)
+                            unmatched = False
+                            break
+                    if unmatched and use_unmatched:
+                        match.append(ET.Element('NONE'))
+                if use_unmatched:
+                    rows.append(match)
+                elif len(match) == self.numXmls:
+                    rows.append(match)
+        return rows
         
     def build_rows(self, rowType=EXTENT, use_unmatched=True):
         """Fills in the rows attribute.
@@ -257,6 +304,8 @@ class Fleiss_Table:
         """
         if rowType == EXTENT:
             self.rows = self._build_extent_rows(use_unmatched)
+        elif rowType == LINK:
+            self.rows = self._build_link_rows()
         elif rowType == TOKEN:
             self.rows = self._build_token_rows()
 
