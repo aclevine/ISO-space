@@ -1,117 +1,87 @@
+# -*- coding: utf-8 -*-
+
+"""Script to compute Fleiss' Kappa for inter-annotator agreement
+
+This module computes Fleiss' Kappa score between a group of annotators over
+the same document and its extents.  This module can be run in the commandline and either passed
+a flat directory (i.e. a single document to check IAA) or a recursive directory (multiple documents).
+
+Here is a sample line that computes Fleiss' Kappa for all annotated xmls in Adjudication
+and saves it to a local text file.
+
+python fleiss_main.py -r /users/sethmachine/desktop/Adjudication > fleiss.txt
+
+.. moduleauthor:: Seth-David Donald Dworman <sdworman@brandeis.edu>
+
 """
-fleiss.py by Marco Lui, Dec 2010
 
-Based on
-  http://en.wikipedia.org/wiki/Fleiss'_kappa
-and
-  Cardillo G. (2007) Fleisses kappa: compute the Fleiss'es kappa for multiple raters.
-  http://www.mathworks.com/matlabcentral/fileexchange/15426
-"""
-import numpy
-from scipy.special import erfc
+import getopt
+import os
+import re
+import sys
 
-def fleiss_wikpedia(data):
-    if not len(data.shape) == 2:
-        raise ValueError, 'input must be 2-dimensional array'
-    if not issubclass(data.dtype.type, numpy.integer):
-        raise TypeError, 'expected integer type'
-    if not numpy.isfinite(data).all():
-        raise ValueError, 'all data must be finite'
-  
-    raters = data.sum(axis=1)
-    if (raters - raters.max()).any():
-        raise ValueError, 'inconsistent number of raters'
-  
-    num_raters = raters[0]
-    num_subjects, num_category = data.shape
-    total_ratings = num_subjects * num_raters
+import fleiss_alg as fl
+import fleiss_table as fl_table
+from fleiss_util import *
 
-    pj = data.sum(axis=0) / float(total_ratings)
-    pi = ((data * data).sum(axis=1) - num_raters).astype(float) / (num_raters * (num_raters - 1))
-    pbar = pi.sum() / num_subjects
-    pebar = (pj * pj).sum()
+#path to folder containing all xmls to be adjudicated
+ADJUDICATED_PATH = '/users/sethmachine/desktop/Adjudication'
+TEST_PATH = '/users/sethmachine/desktop/Adjudication/47_N_27_E'
 
-    kappa = (pbar - pebar) / (1 - pebar)
-    return kappa
+#regex to collect only certain xml/dir names
+dir_pattern = re.compile(r'[0-9]+_[a-z]+_[0-9]+_[a-z]+', re.IGNORECASE)
+xml_pattern = re.compile(r'[0-9]+_[a-z]+_[0-9]+_[a-z]+\-[a-z][0-9]+\-p[0-9]+\.xml', re.IGNORECASE)
 
-def fleiss(data):
-    if not len(data.shape) == 2:
-        raise ValueError, 'input must be 2-dimensional array'
-    if not issubclass(data.dtype.type, numpy.integer):
-        raise TypeError, 'expected integer type'
-    if not numpy.isfinite(data).all():
-        raise ValueError, 'all data must be finite'
-  
-    raters = data.sum(axis=1)
-    if (raters - raters.max()).any():
-        raise ValueError, 'inconsistent number of raters'
-  
-    n, num_category = data.shape
-    # m=sum(x(1,:)); %raters
-    m = data[0].sum(axis=0)
-    
-    # a=n*m;
-    a = n * m
-    
-    # pj=(sum(x)./(a)); %overall proportion of ratings in category j
-    pj = data.sum(axis=0) / float(a)
-    
-    # b=pj.*(1-pj);
-    b = pj * (1-pj)
-    
-    # c=a*(m-1);
-    c = a * (m-1)
-    
-    # d=sum(b);
-    d = numpy.sum(b, axis=0)
-    
-    # kj=1-(sum((x.*(m-x)))./(c.*b)); %the value of kappa for the j-th category
-    kj = 1 - ((data * (m - data)).sum(axis=0) / (c*b))
-    
-    # sekj=realsqrt(2/c); %kj standar error
-    sekj = numpy.sqrt(2/c)
-    
-    # zkj=kj./sekj;
-    zkj = kj / sekj
-    
-    # pkj=(1-0.5*erfc(-abs(zkj)/realsqrt(2)))*2;
-    pkj = (1 - 0.5 * erfc(-numpy.abs(zkj) / numpy.sqrt(2))) * 2
-    
-    # k=sum(b.*kj)/d; %Fleiss'es (overall) kappa
-    k = (b * kj).sum(axis=0) / d
-    
-    # sek=realsqrt(2*(d^2-sum(b.*(1-2.*pj))))/sum(b.*realsqrt(c)); %kappa standard error
-    sek = numpy.sqrt(2 * (d * d - (b * (1 - 2 * pj)).sum(axis=0))) / (b * numpy.sqrt(c)).sum(axis=0)
-    
-    # ci=k+([-1 1].*(abs(0.5*erfc(-alpha/2/realsqrt(2)))*sek)); %k confidence interval
-    # omitted as we are not working out the ci
-    
-    # z=k/sek; %normalized kappa
-    z = k/sek
-    
-    # p=(1-0.5*erfc(-abs(z)/realsqrt(2)))*2;
-    p = (1 - 0.5 * erfc(-numpy.abs(z) / numpy.sqrt(2))) * 2
-    
-    subjects_count, raters_count = data.shape
-    labels = 'Raters', 'Subjects', "Fleiss' Kappa"
-    data = subjects_count, raters_count, k
-    info_format = '{10>0} : {1}'
-    print '\n'.join(map(lambda x : info_format.format(x), zip(labels, data)))
-    
-    return k, p
 
-if __name__ == "__main__":
-    data = numpy.array([
-        [0,0,0,0,14],
-        [0,2,6,4,2],
-        [0,0,3,5,6],
-        [0,3,9,2,0],
-        [2,2,8,1,1],
-        [7,7,0,0,0],
-        [3,2,6,3,0],
-        [2,5,3,2,2],
-        [6,5,2,1,0],
-        [0,2,2,3,7],
-    ])
+def usage():
+    print "Usage: [-r] [-m] [-x] path/to/directory"
+    print "Specify the -r flag if the directory is recursive."
+    print "Specify the -m flag to only consider exact matches."
+    print "Specify the -x flag to consider extents instead of tokens."
+
+def main(argv):
+    recursive = False
+    unmatch = True
+    rowType = fl_table.TOKEN
+    try:
+        opts, args = getopt.getopt(argv, 'hrmxd', ['help', 'recursive', 'match', 'extents'])
+    except getopt.GetoptError:
+        usage()
+        sys.exit(2)
+    for opt, arg in opts:
+        if opt in ('-h', '--help'):
+            usage()
+            sys.exit()
+        elif opt == '-d':
+            global _debug
+            _debug = 1
+        elif opt in ('-r', '--recursive'):
+            recursive = True
+        elif opt in ('-m', '--match'):
+            unmatch = False
+        elif opt in ('-x', '--extents'):
+            rowType = fl_table.EXTENT
+    source = "".join(args)
+    try:
+        if recursive:
+            avg = 0.0
+            f = fleiss(getXmlDict(source), unmatch, rowType)
+            if not f: #dictionary is empty
+                raise ValueError, "No xml files could be found matching the pattern."
+            for key in f.keys():
+                print key, ':', f[key]
+                avg += f[key]
+            print "Average: " + str((avg / len(f.keys())))
+        else:
+            print fleiss(getXmls(source), unmatch, rowType)
+    except OSError:
+        print "The directory " + source + " does not exist."
+        usage()
+        sys.exit(2)
+        
+if __name__ == '__main__':
+    main(sys.argv[1:])
     
-    print fleiss_wikpedia(data)
+    
+
+        
