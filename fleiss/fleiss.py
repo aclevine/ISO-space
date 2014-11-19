@@ -38,13 +38,15 @@ def usage():
     print "Specify the -r flag if the directory is recursive."
     print "Specify the -m flag to only consider exact matches."
     print "Specify the -x flag to consider extents instead of tokens."
+    print "Specify the -l flag to consider links instead of tokens."
 
 def main(argv):
     recursive = False
     unmatch = True
     rowType = fl_table.TOKEN
+    phase = 'p2'
     try:
-        opts, args = getopt.getopt(argv, 'hrmxd', ['help', 'recursive', 'match', 'extents'])
+        opts, args = getopt.getopt(argv, 'hrmxld', ['help', 'recursive', 'match', 'extents', 'links'])
     except getopt.GetoptError:
         usage()
         sys.exit(2)
@@ -61,11 +63,14 @@ def main(argv):
             unmatch = False
         elif opt in ('-x', '--extents'):
             rowType = fl_table.EXTENT
+        elif opt in ('-l', '--links'):
+            rowType = fl_table.LINK
+            phase = 'p4'
     source = "".join(args)
     try:
         if recursive:
             avg = 0.0
-            f = fleiss(getXmlDict(source), unmatch, rowType)
+            f = fleiss(getXmlDict(source, phase=phase), unmatch, rowType)
             if not f: #dictionary is empty
                 raise ValueError, "No xml files could be found matching the pattern."
             for key in f.keys():
@@ -73,7 +78,7 @@ def main(argv):
                 avg += f[key]
             print "Average: " + str((avg / len(f.keys())))
         else:
-            print fleiss(getXmls(source), unmatch, rowType)
+            print fleiss(getXmls(source, phase=phase), unmatch, rowType)
     except OSError:
         print "The directory " + source + " does not exist."
         usage()
