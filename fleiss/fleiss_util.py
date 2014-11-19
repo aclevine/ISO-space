@@ -12,6 +12,11 @@ import re
 import fleiss_alg as fl
 import fleiss_table as fl_table
 
+#row types
+EXTENT = 0
+TOKEN = 1
+LINK = 2 #for links
+
 #path to folder containing all xmls to be adjudicated
 ADJUDICATED_PATH = '/users/sethmachine/desktop/Adjudication'
 TEST_PATH = '/users/sethmachine/desktop/Adjudication/47_N_27_E'
@@ -71,7 +76,7 @@ def getXmlDict(path, d={}, dname='', phase='p2'):
             d = dict(d.items() + getXmlDict(fpath, d, f, phase).items())
     return {x:d[x] for x in d.keys() if d[x] and len(d[x]) > 1}
 
-def fleiss(xmls, unmatch=True, rowType=fl_table.TOKEN):
+def fleiss(xmls, unmatch=True, rowType=TOKEN):
     """Computes Fleiss' Kappa between lists of xmls.
 
     Calculates Fleiss' Kappa given a list of xmls.  If the xmls
@@ -87,16 +92,19 @@ def fleiss(xmls, unmatch=True, rowType=fl_table.TOKEN):
         Else:
             Fleiss' Kappa score for the single task.
     """
+    useLinks = False
+    if rowType == LINK:
+        useLinks = True
     if type(xmls) == dict:
         fleiss_scores = {}
         for key in xmls.keys():
-            f = fl_table.Fleiss_Table(xmls[key])
+            f = fl_table.Fleiss_Table(xmls[key], isLinks=useLinks)
             f.build_rows(rowType, unmatch)
             f.build_table()
             score = fl.fleiss_wikpedia(f.table)
             fleiss_scores[key] = score
         return fleiss_scores
-    f = fl_table.Fleiss_Table(xmls)
+    f = fl_table.Fleiss_Table(xmls, isLinks=useLinks)
     f.build_rows(rowType, unmatch)
     f.build_table()
     return fl.fleiss_wikpedia(f.table)
