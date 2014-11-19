@@ -17,17 +17,16 @@ class MoveLinkTag(PathTag):
         super(MoveLinkTag, self).__init__(sent, tag_dict, front, back)
         head = tag_dict.get(self.lex[0].begin, {})
         self.tag = tag_dict.get(head['id'], {})
-        if self.tag == {}:
-            print sent 
-    
+
     # LABEL EXTRACT
-    def trigger(self):
-        '''trigger IDREF'''
-        return self.tag.get('trigger', '')
+    # Want to select position of tag in surrounding sentence, not tag itself.
     
+    # skip trigger and from_id - move-links were identified using them
+            
     def source(self):
         '''source IDREF'''
-        return self.tag['source']
+        target = self.tag['source']
+        
 
     def goal(self):
         '''goal IDREF'''
@@ -47,8 +46,8 @@ class MoveLinkTag(PathTag):
 
     def goal_reached(self):
         '''goal_reached ( YES | NO | UNCERTAIN )'''
-        return self.tag['goal_reached']
-
+        return self.tag.get('goal_reached', '')
+    
     def path_id(self):
         '''pathID IDREF'''
         return self.tag['pathID']
@@ -58,9 +57,6 @@ class MoveLinkTag(PathTag):
         return self.tag['motion_signalID']
 
     # FEATURE EXTRACT
-    
-    # get setence extents
-    
 
 # DEMO
 class MoveLinkDemo(Demo):
@@ -134,10 +130,8 @@ class MoveLinkGoalPathIdDemo(MoveLinkDemo):
                 ]
 
 if __name__ == "__main__":
-        
-    trigger = MoveLinkTriggerDemo()
-    trigger.run_demo()
 
+    
 #     source = MoveLinkSourceDemo()  
 #     source.run_demo()
 # 
@@ -153,8 +147,8 @@ if __name__ == "__main__":
 #     d = MoveLinkLandmarkDemo()  
 #     d.run_demo()
 # 
-#     d = MoveLinkGoalReachedDemo()  
-#     d.run_demo()
+    d = MoveLinkGoalReachedDemo()  
+    d.run_demo()
 
 
     
