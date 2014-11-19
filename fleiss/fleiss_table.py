@@ -13,21 +13,23 @@ module to take the table as input.
 
 """
 
-import xml.etree.ElementTree as ET
 import os, sys, inspect
 cmd_subfolder = os.path.realpath(os.path.abspath(os.path.join(os.path.split(inspect.getfile( inspect.currentframe() ))[0],"parser/Corpora")))
 cmd_subfolder = cmd_subfolder.replace('fleiss/', '')
 if cmd_subfolder not in sys.path:
     sys.path.insert(0, cmd_subfolder)
 import re
+import xml.etree.ElementTree as ET
 
+from fleiss_util import *
+from link_semantics import INT_LINKS
 import numpy
 import tokenizer
 
 xml_pattern = re.compile(r'[0-9]+_[a-z]+_[0-9]+_[a-z]+\-[a-z][0-9]+\-p[0-9]+\.xml', re.IGNORECASE)
 
 #global list of ISO-Space tags which have extents, i.e. not relations.
-ISO_CATEGORIES = ['PLACE', 'PATH', 'SPATIAL_ENTITY', 'NONMOTION_EVENT',
+ISO_CATEGORIES = ['PLACE', 'PATH', 'SPATIAL_ENTITY', 'NONMOTION_EVENT', 'EVENT',
                   'MOTION', 'SPATIAL_SIGNAL', 'MOTION_SIGNAL', 'MEASURE', 'NONE']
 
 ISO_LINKS = ['QSLINK', 'NONE']
@@ -52,6 +54,59 @@ LINK = 2 #for links
 #token spans
 START = 0
 END = 1
+
+def perm(keys, keyValues):
+    """Returns a list of all permutations of a sequence of keys
+
+    Given a sequence of keys and a corresponding dictionary for
+    their values, this function uses a dynamic programming approach
+    to iteratively compute all possible permutations of the key values
+    in order of the list of keys given.
+
+    Args:
+        keys: A list of keys for the dictionary keyValues.
+        keyValues: A dictionary which has defined values for all keys.
+
+    Returns:
+        List of all permutations of keys and their associated key values.
+
+    """
+    n = len(keys)
+    trellis = {}
+    trellis[0] = [[x] for x in keyValues[keys[0]]]
+    for x in xrange(0 + 1, n):
+        trellis[x] = []
+        for value in keyValues[keys[x]]:
+            l = [value]
+            for entry in trellis[x - 1]:
+                trellis[x].append(entry + l)
+    return trellis[n - 1]
+
+def permute(tags, linktype, semantics):
+    """Returns a list of all tag relations for that linktype
+
+    Generates a list of all possible relations between a given set
+    of tags, where each relation matches the semantics of that linktype.
+    The semantics is an n-tuple, where each element contains the possible
+    tag types corresponding to that link attribute.
+
+    Args:
+        tags: A list of ElementTree.Element tags.
+        linktype: A string denoting the link type, e.g. 'QSLINK'.
+        semantics: A list mapping each link attribute to its possible tag types.
+                The length of the list indicates the valency of the relation.
+
+    Returns:
+        A list of all possible tag relations for the linktype.
+
+    """
+    keyTags = {} #all tags which match a given key
+    keys = semantics.keys()
+    keySize = len(keys)
+    for key in keys:
+        keyTags[key] = [tag for tag in tags if tag.tag in semantics[key] and tag.attrib['text']]
+    trellis = {}
+    return perm(keys, keyTags)
 
 def binary_search(token, sorted_tags, counter=1):
     """A simple binary search to determine which tag contains the token.
@@ -107,10 +162,13 @@ class Fleiss_Table:
         table: A 2D numpy.zeros array used to compute Fleiss' Kappa
         
     """
-    def __init__(self, xmls, categories=ISO_CATEGORIES):
+    def __init__(self, xmls, categories=ISO_CATEGORIES, isLinks=False):
         self.xmls = xmls
         self.numXmls = len(xmls)
         self.categories = categories
+        self.links = ISO_LINKS
+        self.isLinks = isLinks
+        self.semantics = INT_LINKS['QSLINK']
         self.rows = []
         self.table = None
         
@@ -132,6 +190,16 @@ class Fleiss_Table:
                 return True
         return False
 
+    def _is_link_match(self, relation, link):
+        """Determines if a relation of tags and a link match.            
+        """
+        keys = self.semantics.keys()
+        for x in xrange(0, len(keys)):
+            if relation[x].attrib['id'] != link.attrib[keys[x]]:
+                return False
+        return True
+            
+
     def _get_tokens(self, xml):
         """Gets lex tokens for an xml.
 
@@ -148,6 +216,27 @@ class Fleiss_Table:
         tk = tokenizer.Tokenizer(text)
         tk.tokenize_text()
         return [token[1][0] for token in tk.tokens]
+    
+    def _get_linkdict(self):
+        """Returns a dictionary mapping each xml to its links
+
+        Args:
+            None
+
+        Returns:
+            A dictionary where dict[n] = all links in xml #n
+
+        """
+        if not self.xmls:
+            raise ValueError, "xmls input must contain at least one element"
+        if not self.categories:
+            raise ValueError, "categories must contain at least one element"
+        linkdict = {} #tagdict[n] = tags for annotator #n
+        for annotator, xml in enumerate(self.xmls):
+            root = ET.parse(xml).getroot()
+            #ignores non-consuming tags
+            linkdict[annotator] = [child for child in root.find('TAGS') if child.tag in self.links]
+        return linkdict
         
     def _get_tagdict(self):
         """Returns a dictionary mapping each xml to its tags.
@@ -259,28 +348,23 @@ class Fleiss_Table:
             
         """                
         tagdict = self._get_tagdict()
+        linkdict = self._get_linkdict()
+        tags = tagdict[0] #all tags should be the same
+        permutations = permute(tags, 'QSLINK', INT_LINKS['QSLINK'])
         rows = [] #list of lists
-        for xml in tagdict.keys():
-            tags = tagdict[xml]
-            for tag in tags:
-                match = [tag]
-                for otherXml in xrange(0, self.numXmls):
-                    unmatched = True
-                    if otherXml == xml:
-                        continue
-                    otherTags = tagdict[otherXml]
-                    for otherTag in otherTags:
-                        if self._is_tag_match(tag, otherTag):
-                            match.append(otherTag)
-                            otherTags.remove(otherTag)
-                            unmatched = False
-                            break
-                    if unmatched and use_unmatched:
-                        match.append(ET.Element('NONE'))
-                if use_unmatched:
-                    rows.append(match)
-                elif len(match) == self.numXmls:
-                    rows.append(match)
+        for relation in permutations:
+            row = []
+            for xml in tagdict.keys():
+                unmatched=True
+                links = linkdict[xml]
+                for link in links:
+                    if self._is_link_match(relation, link):
+                        row.append(ET.Element('QSLINK'))
+                        unmatched=False
+                        break
+                if unmatched:
+                    row.append(ET.Element('NONE'))
+            rows.append(row)
         return rows
         
     def build_rows(self, rowType=EXTENT, use_unmatched=True):
@@ -330,6 +414,8 @@ class Fleiss_Table:
         """
         if not self.rows:
             raise ValueError, "call build_rows before building table"
+        if self.isLinks:
+            self.categories = ISO_LINKS
         self.table = numpy.zeros((len(self.rows), len(self.categories)), dtype=int)
         for row, matched in enumerate(self.rows):
             for tag in matched:
@@ -337,7 +423,7 @@ class Fleiss_Table:
                 self.table[row][column] += 1
         
 
-def getXmls(path):
+def getXmls2(path):
     """Finds all xml files in a flat directory.
 
     Collects all xml files which match the xml_pattern.
@@ -356,7 +442,11 @@ def getXmls(path):
             files.append(fpath)
     return files
 
-#test = getXmls(TEST_PATH)
+def yo():
+    return getXmls('/users/sethmachine/desktop/test', 'p4')
+
+#test = Fleiss_Table(yo())
+#f = test._get_linkdict()
     
 #uncomment for a quick test run
 #f = get_table([f1, f2])        
