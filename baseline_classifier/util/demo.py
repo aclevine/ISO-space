@@ -27,6 +27,7 @@ class Demo(object):
         return []
          
     def run_demo(self, verbose=0):
+        # build extents
         c = Corpus(self.doc_path)
         extents = list(c.extents(self.indices_function, 
                                  self.extent_class))
@@ -41,6 +42,7 @@ class Demo(object):
             for l in labels:
                 fd[l] = fd.get(l, 1) + 1
             print fd
+        # pull desired features and labels for training
         clf = SKClassifier(LogisticRegression(), 
                            self.label_function, 
                            self.feature_functions)
@@ -48,8 +50,10 @@ class Demo(object):
         clf.train(train_data)
         if verbose >= 1:
             print "model trained"
+        # classify and evaluate
         pred = clf.classify(test_data)
         clf.evaluate(pred, [self.label_function(x) for x in test_data])
-        
+        return pred 
+    
         # TODO Return precision / recall / f-measure for averaging?
         

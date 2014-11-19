@@ -16,6 +16,17 @@ class SignalTag(Tag):
     #semantic_type ( DIRECTIONAL | TOPOLOGICAL | DIR_TOP ) 
         return self.tag['semantic_type']
 
+    def is_directional(self):
+        if self.tag['semantic_type'] in ['DIR_TOP', 'TOPOLOGICAL']:
+            return 'TOPOLOGICAL'
+        else:
+            return 'NOT_TOPOLOGICAL'
+            
+    def is_topological(self):
+        if self.tag['semantic_type'] in ['DIR_TOP', 'DIRECTIONAL']:
+            return 'DIRECTIONAL'
+        else:
+            return 'NOT_DIRECTIONAL'
     
 # DEMO
 def is_signal_tag(tag):
@@ -37,9 +48,34 @@ class MotionSemanticTypeDemo(SignalDemo):
 
     def get_feature_functions(self):
         return [lambda x: x.curr_token(),
-                ]        
+                ]
     
+# subdivide MotionSemanticTypeDemo() into 2 tasks  
+class MotionDirectionalDemo(SignalDemo):
+    def get_label_function(self):
+        return  lambda x: str(x.is_directional())
 
+    def get_feature_functions(self):
+        return [lambda x: x.curr_token(),
+                ]
+
+class MotionTopologicalDemo(SignalDemo):
+    def get_label_function(self):
+        return  lambda x: str(x.is_topological())
+
+    def get_feature_functions(self):
+        return [lambda x: x.curr_token(),
+                ]
+        
+
+    
 if __name__ == "__main__":
-    d = MotionSemanticTypeDemo()
+
+#     d = MotionSemanticTypeDemo()
+#     d.run_demo()
+
+    d = MotionDirectionalDemo()
+    d.run_demo()
+
+    d = MotionTopologicalDemo()
     d.run_demo()

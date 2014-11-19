@@ -17,7 +17,7 @@ class MoveLinkTag(PathTag):
         super(MoveLinkTag, self).__init__(sent, tag_dict, front, back)
         head = tag_dict.get(self.lex[0].begin, {})
         self.tag = tag_dict.get(head['id'], {})
-
+        
     # LABEL EXTRACT
     # Want to select position of tag in surrounding sentence, not tag itself.
     
@@ -26,11 +26,24 @@ class MoveLinkTag(PathTag):
     def source(self):
         '''source IDREF'''
         target = self.tag['source']
-        
+        i = -1
+        for tag in reversed(self.prev_tags):
+            if tag == target:
+                print "huzzah!"
+                return i
+            i -= 1
+        i =  1
+        for tag in self.next_tags:
+            i += 1
+            if tag == target:
+                print "huzzah!"
+                return i        
+        return 0
 
     def goal(self):
         '''goal IDREF'''
         return self.tag['goal']
+        
 
     def mid_point(self):
         '''midPoint IDREF'''
@@ -46,6 +59,8 @@ class MoveLinkTag(PathTag):
 
     def goal_reached(self):
         '''goal_reached ( YES | NO | UNCERTAIN )'''
+        if self.tag.get('goal_reached', '') == '':
+            print self.tag.get('id', 'no_tag')
         return self.tag.get('goal_reached', '')
     
     def path_id(self):
@@ -146,7 +161,7 @@ if __name__ == "__main__":
 # 
 #     d = MoveLinkLandmarkDemo()  
 #     d.run_demo()
-# 
+
     d = MoveLinkGoalReachedDemo()  
     d.run_demo()
 
