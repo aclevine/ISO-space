@@ -20,13 +20,8 @@ import os
 import re
 import sys
 
-import main.fleiss_alg as fl
-import main.fleiss_table as fl_table
-from main.fleiss_util import *
-
-#path to folder containing all xmls to be adjudicated
-ADJUDICATED_PATH = '/users/sethmachine/desktop/Adjudication'
-TEST_PATH = '/users/sethmachine/desktop/Adjudication/47_N_27_E'
+import main.algorithm as fl
+from main.main import *
 
 #regex to collect only certain xml/dir names
 dir_pattern = re.compile(r'[0-9]+_[a-z]+_[0-9]+_[a-z]+', re.IGNORECASE)
@@ -43,7 +38,7 @@ def usage():
 def main(argv):
     recursive = False
     unmatch = True
-    rowType = fl_table.TOKEN
+    rowType = TOKEN
     phase = 'p2'
     try:
         opts, args = getopt.getopt(argv, 'hrmxld', ['help', 'recursive', 'match', 'extents', 'links'])
@@ -62,9 +57,9 @@ def main(argv):
         elif opt in ('-m', '--match'):
             unmatch = False
         elif opt in ('-x', '--extents'):
-            rowType = fl_table.EXTENT
+            rowType = EXTENT
         elif opt in ('-l', '--links'):
-            rowType = fl_table.LINK
+            rowType = LINK
             phase = 'p4'
     source = "".join(args)
     try:
