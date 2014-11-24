@@ -9,7 +9,7 @@ a flat directory (i.e. a single document to check IAA) or a recursive directory 
 Here is a sample line that computes Fleiss' Kappa for all annotated xmls in Adjudication
 and saves it to a local text file.
 
-python fleiss_main.py -r /users/sethmachine/desktop/Adjudication > fleiss.txt
+python fleiss.py /users/sethmachine/desktop/Adjudication --recursive --type tokens --suffix p2 > fleiss.txt
 
 .. moduleauthor:: Seth-David Donald Dworman <sdworman@brandeis.edu>
 
@@ -46,6 +46,10 @@ parser.add_argument('--exact', dest='exact', action='store_const',
 parser.add_argument('--recursive', dest='search', action='store_const',
                     const=getXmlDict, default=getXmls,
                     help='specify to search top directory recursively')
+
+parser.add_argument('--plot', dest='plot', action='store_const',
+                    const=True, default=False,
+                    help='generates a plot in LaTeX')
                     
 args = parser.parse_args()
 tableType = 0
@@ -56,17 +60,33 @@ elif args.type == 'extents':
     tableType = EXTENT
 elif args.type == 'links':
     tableType = LINK
-scores = fleiss(args.search(args.source, phase=args.suffix), args.exact, tableType, linkType=args.linkType)
 
-if isinstance(scores, dict):
-    avg = 0.0
-    for key in scores.keys():
-        avg += scores[key]
-        print key + ": " + str(scores[key])
-    print "Average: " + str((avg / len(scores.keys())))
-else:
-    print scores
-
+if not args.plot: #we aren't building any plots
+    scores = fleiss(args.search(args.source, phase=args.suffix), args.exact, tableType, linkType=args.linkType)
+    if isinstance(scores, dict):
+        avg = 0.0
+        for key in scores.keys():
+            avg += scores[key]
+            print key + ": " + str(scores[key])
+        print "Average: " + str((avg / len(scores.keys())))
+    else:
+        print scores
+elif args.plot: #let's build a plot
+    scoreDict = {}
+    scoreDict['tokens'] = fleiss(args.search(args.source, phase=args.suffix), args.exact, TOKEN, linkType=args.linkType)
+    scoreDict['extents'] = fleiss(args.search(args.source, phase=args.suffix), True, EXTENT, linkType=args.linkType)
+    scoreDict['match extents'] = fleiss(args.search(args.source, phase=args.suffix), False, EXTENT, linkType=args.linkType)
+    sym = 'symbolic x coords={'
+    for num,key in enumerate(scoreDict['tokens'].keys()):
+        sym += str(num) + ','
+    print sym[:-1] + '},\n'
+    for key in scoreDict.keys():
+        string = '\\addplot coordinates {'
+        for num, task in enumerate(scoreDict[key].keys()):
+            string += '(' + str(num) + ',' + str(scoreDict[key][task]) + ') '
+        string += '};\n'
+        print string
+        
     
     
 
