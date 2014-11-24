@@ -15,7 +15,7 @@ python fleiss_main.py -r /users/sethmachine/desktop/Adjudication > fleiss.txt
 
 """
 
-import getopt
+import argparse
 import os
 import re
 import sys
@@ -23,64 +23,50 @@ import sys
 import main.algorithm as fl
 from main.main import *
 
-#regex to collect only certain xml/dir names
-dir_pattern = re.compile(r'[0-9]+_[a-z]+_[0-9]+_[a-z]+', re.IGNORECASE)
-xml_pattern = re.compile(r'[0-9]+_[a-z]+_[0-9]+_[a-z]+\-[a-z][0-9]+\-p[0-9]+\.xml', re.IGNORECASE)
 
 
-def usage():
-    print "Usage: [-r] [-m] [-x] path/to/directory"
-    print "Specify the -r flag if the directory is recursive."
-    print "Specify the -m flag to only consider exact matches."
-    print "Specify the -x flag to consider extents instead of tokens."
-    print "Specify the -l flag to consider links instead of tokens."
+parser = argparse.ArgumentParser(description='Compute Fleiss\' Kappa.')
 
-def main(argv):
-    recursive = False
-    unmatch = True
-    rowType = TOKEN
-    phase = 'p2'
-    try:
-        opts, args = getopt.getopt(argv, 'hrmxld', ['help', 'recursive', 'match', 'extents', 'links'])
-    except getopt.GetoptError:
-        usage()
-        sys.exit(2)
-    for opt, arg in opts:
-        if opt in ('-h', '--help'):
-            usage()
-            sys.exit()
-        elif opt == '-d':
-            global _debug
-            _debug = 1
-        elif opt in ('-r', '--recursive'):
-            recursive = True
-        elif opt in ('-m', '--match'):
-            unmatch = False
-        elif opt in ('-x', '--extents'):
-            rowType = EXTENT
-        elif opt in ('-l', '--links'):
-            rowType = LINK
-            phase = 'p4'
-    source = "".join(args)
-    try:
-        if recursive:
-            avg = 0.0
-            f = fleiss(getXmlDict(source, phase=phase), unmatch, rowType)
-            if not f: #dictionary is empty
-                raise ValueError, "No xml files could be found matching the pattern."
-            for key in f.keys():
-                print key, ':', f[key]
-                avg += f[key]
-            print "Average: " + str((avg / len(f.keys())))
-        else:
-            print fleiss(getXmls(source, phase=phase), unmatch, rowType)
-    except OSError:
-        print "The directory " + source + " does not exist."
-        usage()
-        sys.exit(2)
-        
-if __name__ == '__main__':
-    main(sys.argv[1:])
+parser.add_argument('source', metavar='S', type=str,
+                    help='source directory for computing IAA')
+
+parser.add_argument('--type', type=str, dest='type', choices=['tokens', 'extents', 'links'],
+                    default='tokens', help='specify the object to check IAA for: tokens, extents, or links')
+
+parser.add_argument('--linkType', dest='linkType', default='QSLINK', type=str,
+                    help='link type to check IAA for')
+
+parser.add_argument('--suffix', default='', type=str,
+                    help='only collects xmls whose file name ends in suffix')
+
+parser.add_argument('--exact', dest='exact', action='store_const',
+                    const=True, default=False,
+                    help='only considers extents across all annotators')
+
+parser.add_argument('--recursive', dest='search', action='store_const',
+                    const=getXmlDict, default=getXmls,
+                    help='specify to search top directory recursively')
+                    
+args = parser.parse_args()
+tableType = 0
+print args
+if args.type == 'tokens':
+    tableType = TOKEN
+elif args.type == 'extents':
+    tableType = EXTENT
+elif args.type == 'links':
+    tableType = LINK
+scores = fleiss(args.search(args.source, phase=args.suffix), args.exact, tableType, linkType=args.linkType)
+
+if isinstance(scores, dict):
+    avg = 0.0
+    for key in scores.keys():
+        avg += scores[key]
+        print key + ": " + str(scores[key])
+    print "Average: " + str((avg / len(scores.keys())))
+else:
+    print scores
+
     
     
 
