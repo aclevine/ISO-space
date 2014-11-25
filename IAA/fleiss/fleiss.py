@@ -21,6 +21,8 @@ import re
 import sys
 
 import main.algorithm as fl
+import plot.line_plot as lp
+import plot.task_legend as lg
 from main.main import *
 
 
@@ -63,29 +65,20 @@ elif args.type == 'links':
 
 if not args.plot: #we aren't building any plots
     scores = fleiss(args.search(args.source, phase=args.suffix), args.exact, tableType, linkType=args.linkType)
-    if isinstance(scores, dict):
-        avg = 0.0
-        for key in scores.keys():
-            avg += scores[key]
-            print key + ": " + str(scores[key])
-        print "Average: " + str((avg / len(scores.keys())))
-    else:
-        print scores
+    print_fleiss(scores)
+
 elif args.plot: #let's build a plot
     scoreDict = {}
-    scoreDict['tokens'] = fleiss(args.search(args.source, phase=args.suffix), args.exact, TOKEN, linkType=args.linkType)
-    scoreDict['extents'] = fleiss(args.search(args.source, phase=args.suffix), True, EXTENT, linkType=args.linkType)
-    scoreDict['match extents'] = fleiss(args.search(args.source, phase=args.suffix), False, EXTENT, linkType=args.linkType)
-    sym = 'symbolic x coords={'
-    for num,key in enumerate(scoreDict['tokens'].keys()):
-        sym += str(num) + ','
-    print sym[:-1] + '},\n'
-    for key in scoreDict.keys():
-        string = '\\addplot coordinates {'
-        for num, task in enumerate(scoreDict[key].keys()):
-            string += '(' + str(num) + ',' + str(scoreDict[key][task]) + ') '
-        string += '};\n'
-        print string
+    #scoreDict['tokens'] = fleiss(args.search(args.source, phase=args.suffix), args.exact, TOKEN, linkType=args.linkType)
+    #scoreDict['extents'] = fleiss(args.search(args.source, phase=args.suffix), True, EXTENT, linkType=args.linkType)
+    #scoreDict['match extents'] = fleiss(args.search(args.source, phase=args.suffix), False, EXTENT, linkType=args.linkType)
+    scoreDict['QSLINK'] = fleiss(args.search(args.source, phase=args.suffix), args.exact, LINK, linkType='QSLINK')
+    scoreDict['OLINK'] = fleiss(args.search(args.source, phase=args.suffix), True, LINK, linkType='OLINK')
+    #scoreDict['match extents'] = fleiss(args.search(args.source, phase=args.suffix), False, EXTENT, linkType=args.linkType)
+    z = lp.Line_Plot(scoreDict, 'Yo')
+    z.make_tex()
+    print z.tex
+    
         
     
     
