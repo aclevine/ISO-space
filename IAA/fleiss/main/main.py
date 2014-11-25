@@ -40,7 +40,7 @@ def getTable(xmls, tableType=TOKEN, unmatch=True, linkType='METALINK'):
         f = table.links.Table(xmls, linkType=linkType)
     f.build_rows()
     f.build_table()
-    return f.table
+    return f
         
 def getXmls(path, phase='p2'):
     """Finds all xml files in a flat directory.
@@ -114,11 +114,55 @@ def fleiss(xmls, unmatch=True, rowType=TOKEN, linkType='QSLINK'):
     if rowType == LINK:
         useLinks = True
     if type(xmls) == dict:
+        #w = open('/users/sethmachine/desktop/lenn.txt', 'w')
+        #u = open('/users/sethmachine/desktop/len2.txt', 'w')
+        coord = '\\addplot[color=red,mark=x] coordinates{'
+        data = []
+        s = '['
+        z = '['
         fleiss_scores = {}
+        #tags.sort(key=lambda x: int(x.attrib['start']))
         for key in xmls.keys():
             table = getTable(xmls[key], rowType, unmatch, linkType)
-            score = fl.fleiss_wikpedia(table)
+            s += str(table.docLen) + ', '
+            score = fl.fleiss_wikpedia(table.table)
+            z += str(score) + ', '
             fleiss_scores[key] = score
+            data.append((table.docLen, score))
+        s += ']'
+        z += ']'
+        #print>>w, s
+        #print>>w, z
+        data.sort(key=lambda x: x[0])
+        for (x,y) in data:
+            coord += '(' + str(x) + ',' + str(y) + ')'
+        coord += '};'
+        #print>>u, coord
+        #w.close()
+        #u.close()
         return fleiss_scores
     table = getTable(xmls, rowType, unmatch, linkType)
     return fl.fleiss_wikpedia(table)
+
+def print_fleiss(scores):
+    """Prints Fleiss' Kappa scores for each task.
+
+    Use this to print the scores for Fleiss' Kappa.
+    This will also compute the average kappa for a given set of tasks.
+
+    Args:
+        scores: A dictionary of xml keys to Fleiss' Kappas
+            or simply Fleiss' Kappa for a single task.
+
+    Returns:
+        None.  Use this to get output for command line script.
+
+    """
+    if isinstance(scores, dict):
+        avg = 0.0
+        for key in scores.keys():
+            avg += scores[key]
+            print key + ": " + str(scores[key])
+        print "Average: " + str((avg / len(scores.keys())))
+    else:
+        print scores
