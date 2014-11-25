@@ -54,6 +54,7 @@ class Table(object):
         self.categories = []
         self.rows = []
         self.table = None
+        self.docLen = 0
                     
     def _get_tagdict(self):
         """Returns a dictionary mapping each xml to its tags.
@@ -71,6 +72,7 @@ class Table(object):
         categories = []
         for annotator, xml in enumerate(self.xmls):
             root = ET.parse(xml).getroot()
+            self.docLen = len(root.find('TEXT').text)
             tags = []
             for child in root.find('TAGS'):
                 if 'text' in child.attrib.keys(): #make sure it's not a link
