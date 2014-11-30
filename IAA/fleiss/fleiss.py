@@ -9,16 +9,14 @@ a flat directory (i.e. a single document to check IAA) or a recursive directory 
 Here is a sample line that computes Fleiss' Kappa for all annotated xmls in Adjudication
 and saves it to a local text file.
 
-python fleiss.py /users/sethmachine/desktop/Adjudication --recursive --type tokens --suffix p2 > fleiss.txt
+python fleiss.py /users/sethmachine/desktop/adj_extent --recursive --type tokens --suffix p2 > results.txt
 
 .. moduleauthor:: Seth-David Donald Dworman <sdworman@brandeis.edu>
 
 """
 
 import argparse
-import os
-import re
-import sys
+import os, re, sys
 
 import main.algorithm as fl
 import plot.line_plot as lp
