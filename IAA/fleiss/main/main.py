@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-"""Code to compute Fleiss' Kappa
+"""Code to compute Fleiss' Kappa.
 
 .. moduleauthor:: Seth-David Donald Dworman <sdworman@brandeis.edu>
 
@@ -32,6 +32,21 @@ dir_pattern = re.compile(r'[0-9]+_[a-z]+_[0-9]+_[a-z]+', re.IGNORECASE)
 xml_pattern = re.compile(r'[0-9]+_[a-z]+_[0-9]+_[a-z]+\-[a-z][0-9]+\-p[0-9]+\.xml', re.IGNORECASE)
 
 def getTable(xmls, tableType=TOKEN, unmatch=True, linkType='METALINK'):
+    """Returns a Table used to compute Fleiss' Kappa.
+
+    This function returns a Table object based on the tableType argument.
+
+    Args:
+        xmls: A list of paths to annotated xmls for the same task.
+        tableType: What we are scoring for agreement:
+            tokens, extents, or links.
+        unmatch: Whether to consider only exact matches for extents.
+        linkType: The link type we are checking IAA for.
+
+    Returns:
+        A Table object used to compute Fleiss' Kappa.
+
+    """
     if tableType == TOKEN:
         f = table.tokens.Table(xmls)
     elif tableType == EXTENT:
@@ -123,12 +138,15 @@ def fleiss(xmls, unmatch=True, rowType=TOKEN, linkType='QSLINK'):
         fleiss_scores = {}
         #tags.sort(key=lambda x: int(x.attrib['start']))
         for key in xmls.keys():
-            table = getTable(xmls[key], rowType, unmatch, linkType)
-            s += str(table.docLen) + ', '
-            score = fl.fleiss_wikpedia(table.table)
-            z += str(score) + ', '
-            fleiss_scores[key] = score
-            data.append((table.docLen, score))
+            try: #crashes if a table doesn't have any instances of a linkType
+                table = getTable(xmls[key], rowType, unmatch, linkType)
+                s += str(table.docLen) + ', '
+                score = fl.fleiss_wikpedia(table.table)
+                z += str(score) + ', '
+                fleiss_scores[key] = score
+                data.append((table.docLen, score))
+            except:
+                pass
         s += ']'
         z += ']'
         #print>>w, s
