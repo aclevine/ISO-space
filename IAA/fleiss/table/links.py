@@ -25,7 +25,6 @@ import re
 import xml.etree.ElementTree as ET
 
 import util.util
-from util.link_semantics import INT_LINKS
 import numpy
 import tokenizer
 import table
@@ -51,6 +50,8 @@ LINK = 2 #for links
 START = 0
 END = 1
 
+link_pattern = re.compile(r'LINK$')
+
 class Table(table.Table):
     """Wrapper for building a table for Fleiss' Kappa.
 
@@ -70,17 +71,22 @@ class Table(table.Table):
         super(Table, self).__init__(xmls)
         self.linkType = linkType
         self.links = [linkType, 'NONE']
-        self.semantics = INT_LINKS[linkType]
 
-    def _is_link_match(self, relation, link):
-        """Determines if a relation of tags and a link match.            
+    def _is_link_equal(self, link1, link2):
+        """Returns True if the attributes of both links match.
+
+        Args:
+            link1: An ISO-Space link represented as a ElementTree Element.
+            link2: An ISO-Space link represented as a ElementTree Element.
+
+        Returns:
+            True if both attributes of link1 and link2 match exactly,
+            False otherwise.
+
         """
-        keys = self.semantics.keys()
-        for x in xrange(0, len(keys)):
-            if relation[x].attrib['id'] != link.attrib[keys[x]]:
-                return False
-        return True
-            
+        return link1.attrib['toID'] == link2.attrib['toID'] and link1.attrib['fromID'] == link2.attrib['fromID']
+        #return link1.attrib == link2.attrib
+        
     def _get_linkdict(self):
         """Returns a dictionary mapping each xml to its links
 
@@ -93,15 +99,23 @@ class Table(table.Table):
         """
         if not self.xmls:
             raise ValueError, "xmls input must contain at least one element"
-        if not self.categories:
-            raise ValueError, "categories must contain at least one element"
+        #if not self.categories:
+            #raise ValueError, "categories must contain at least one element"
         linkdict = {} #tagdict[n] = tags for annotator #n
+        links = ['NONE']
         for annotator, xml in enumerate(self.xmls):
             root = ET.parse(xml).getroot()
+            linkdict[annotator] = []
             #ignores non-consuming tags
-            linkdict[annotator] = [child for child in root.find('TAGS') if child.tag in self.links]
+            for child in root.find('TAGS'):
+                if link_pattern.search(child.tag):
+                    if child.tag == self.linkType or self.linkType == 'all':
+                        linkdict[annotator].append(child)
+                        if child.tag not in links:
+                            links.append(child.tag)
+        self.links = links
         return linkdict
-        
+    
     def build_rows(self):
         """Creates rows based on links.
 
@@ -117,28 +131,30 @@ class Table(table.Table):
             of the form: [a_1, ..., a_n] where a_i is the number of raters
             who assigned that extent the ith label/tag type.
             
-        """                
-        tagdict = self._get_tagdict()
+        """ 
         linkdict = self._get_linkdict()
-        tags = tagdict[0] #all tags should be the same
-        permutations = util.util.permute(tags, self.linkType, self.semantics)
-        rows = [] #list of lists
-        for relation in permutations:
-            row = []
-            for xml in tagdict.keys():
-                unmatched=True
-                links = linkdict[xml]
-                for link in links:
-                    if self._is_link_match(relation, link):
-                        #print relation, link, xml
-                        row.append(ET.Element(self.linkType))
-                        unmatched=False
-                        break
-                if unmatched:
-                    row.append(ET.Element('NONE'))
-            rows.append(row)
+        print self.links
+        rows = []
+        for xml in linkdict.keys():
+            links = linkdict[xml]
+            for link in links:
+                row = [link]
+                for otherXml in range(0, self.numXmls):
+                    no_match = True
+                    if otherXml == xml:
+                        continue
+                    otherLinks = linkdict[otherXml]
+                    for otherLink in otherLinks:
+                        if self._is_link_equal(link, otherLink):
+                            row.append(otherLink)
+                            otherLinks.remove(otherLink)
+                            no_match = False
+                            break
+                    if no_match:
+                        row.append(ET.Element('NONE'))
+                rows.append(row)
         self.rows = rows
-
+                        
     def build_table(self):
         """Constructs the table for computing Fleiss' Kappa
 
