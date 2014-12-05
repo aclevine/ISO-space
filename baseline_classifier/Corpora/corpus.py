@@ -3,10 +3,10 @@ __email__  = "zyocum@brandeis.edu"
 
 import os
 from warnings import warn
-import bs4
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup as BS, CData
+from bs4.element import Tag
 
-dummy_tag = bs4.element.Tag(name='NULL')
+dummy_tag = Tag(name='NULL')
 
 # Classes
 class Extent(object):
@@ -23,11 +23,13 @@ class Extent(object):
         self.next_tags = [tag_dict.get(l.begin, {}) for t, l in self.next_tokens 
                      if l.begin in tag_dict.keys()]
 
-class Document(BeautifulSoup):
+class Document(BS):
     """A class for working with MAE annotation XMLs."""
     def __init__(self, doc_file):
         super(Document, self).__init__(doc_file.read(), "xml")
         from tokenizer import Tokenizer
+        self.root = self.children.next()
+        self.task = self.root.name
         self.name = doc_file.name
         self.basename = os.path.basename(self.name)
         self.dirname = os.path.dirname(self.name)
@@ -37,26 +39,42 @@ class Document(BeautifulSoup):
     def __repr__(self):
         return "Document:{d}".format(d=os.path.basename(self.name))
     
-    def root(self):
-        return self.children.next()
-    
-    def task(self):
-        return self.root().name
-    
     def text(self):
-        return u''.join(self.find('TEXT').contents)
+        return u''.join(map(lambda t : t.decode_contents(), self('TEXT')))
     
     def tags(self, ttypes=None):
-        from bs4.element import Tag
+        """Return all annotation tags whose type is in ttypes (if ttypes is unspecified, all tags are returned)."""
         is_tag = lambda item : isinstance(item, Tag)
         tags = filter(is_tag, self.find('TAGS').children)
         if ttypes:
             tags = filter(lambda tag : tag.name in ttypes, tags)
         return tags
-        
+    
+    def add_attribute(self, attribute, value=u'', ttypes=None):
+        """Add an attribute to a tag (and possibly specify it's value)."""
+        for tag in self.tags(ttypes):
+            if not attribute in tag.attrs.keys():
+                tag[attribute] = value
+    
+    def rename_attribute(self, old_ttype, new_ttype, ttypes=None):
+        """Change the name of attributes for all tags with the given ttypes."""
+        for tag in self.tags(ttypes):
+            if tag.attrs.get(old_ttype):
+                tag.attrs[new_ttype] = tag.attrs.pop(old_ttype)
+    
+    def rename_tag(self, old_ttype, new_ttype):
+        """Rename a tag."""
+        for tag in self.tags([old_ttype]):
+            tag.name = new_ttype
+    
+    def rename_task(self, new_task):
+        """Rename the document task (the XML root tag type)."""
+        self.task = new_task
+    
     def consuming_tags(self):
+        """Return extent annotation tags with non-negative starting offsets."""
         is_extent_tag = lambda t : t.attrs.has_key('start')
-        is_consuming = lambda t : int(t.attrs['start']) >= 0
+        is_consuming = lambda t : int(t['start']) >= 0
         return filter(is_consuming, filter(is_extent_tag, self.tags()))
 
     def sort_tags_by_begin_offset(self):
@@ -68,10 +86,10 @@ class Document(BeautifulSoup):
         for t in tags:
             # load entity / event / signal tags
             if 'start' in t.attrs:
-                tag_dict[int(t.attrs['start'])] = t.attrs # {start offset: xml tokens, offsets, spatial data}    
+                tag_dict[int(t['start'])] = t.attrs # {start offset: xml tokens, offsets, spatial data}    
             # load movelink tags
             if 'trigger' in t.attrs:
-                tag_dict[t.attrs['trigger']] = t.attrs
+                tag_dict[t['trigger']] = t.attrs
             # load qslinks
             # load olinks
         return tag_dict
@@ -93,9 +111,9 @@ class Document(BeautifulSoup):
             warning = '\n\t'.join(['No tag elements found', "File : '{doc}'"])
             warn(warning, RuntimeWarning)
         for tag in self.consuming_tags():
-            start, end = int(tag.attrs['start']), int(tag.attrs['end'])
+            start, end = int(tag['start']), int(tag['end'])
             extent = slice(start, end)
-            text_attribute = tag.attrs['text'].encode('utf-8')
+            text_attribute = tag['text'].encode('utf-8')
             text_slice = self.text()[extent].encode('utf-8').replace('\n', ' ')
             if text_attribute != text_slice:
                 is_valid = False
@@ -109,39 +127,34 @@ class Document(BeautifulSoup):
                     doc=self.name,
                     start=start,
                     end=end,
-                    id=tag.attrs['id'],
+                    id=tag['id'],
                     text=text_attribute,
                     slice=text_slice
                 )
                 warn(warning, RuntimeWarning)
         return is_valid
     
-    def make_xml(self):
-        # XML tag elements
-        header_tag = '<?xml version="1.0" encoding="UTF-8" ?>'
-        root_tag = '<' + self.task() + '>'
-        text_tag = '<TEXT>'
-        tags_tag = '<TAGS>'
-        text_content = '<![CDATA[' + self.text().encode('utf-8') + ']]>'
-        tags_content = '\n'.join(
-            [tag.encode('utf-8') for tag in self.tags()]
-        )
-        # Make the XML DOM tree by joining all the tag elements
-        return '\n'.join(
-            [
-                header_tag,
-                wrap(
-                    root_tag,
-                    '\n'.join(
-                        [
-                            wrap(text_tag, text_content, sep=''),
-                            wrap(tags_tag, tags_content),
-                            self.tokenizer.get_tokenized_as_xml().encode('utf-8')
-                        ]
-                    )
-                )
-            ]
-        )
+    def get_xml(self):
+        root = Tag(name=self.task)
+        text = Tag(name='TEXT')
+        text.append(CData(self.text()))
+        tags = self.TAGS
+        tokens = (BS(
+            self.tokenizer.get_tokenized_as_xml().encode('utf-8'), 
+            'xml'
+        )).TOKENS
+        elements = [u'\n', text, u'\n', tags, u'\n', tokens, u'\n']
+        for element in elements:
+            root.append(element)
+        return unicode(root)
+    
+    def save_xml(self, file):
+        if isinstance(file, basestring):
+            with open(file, 'wb') as file:
+                file.write(u'<?xml version="1.0" encoding="UTF-8" ?>\n')
+                file.write(self.get_xml().encode('utf-8'))
+        else:
+            file.write(self.get_xml().encode('utf-8'))
 
 class Corpus(object):
     """A class for working with collections of Documents."""
@@ -167,8 +180,7 @@ class Corpus(object):
                 for begin, end in offsets:
                     extent = extent_class(sent, tag_dict, begin, end)
                     yield extent
-
-              
+    
     def validate(self):
         map(Document.validate, self.documents())
 
