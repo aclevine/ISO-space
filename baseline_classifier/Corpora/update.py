@@ -1,8 +1,17 @@
+import os
 from corpus import *
 
 """A script to update XMLs annotated under ISO-Space-1.11 DTD to the SpaceEvalTask1.2 DTD."""
 
-corpus_dir = '/Users/zach/Dropbox/ISO-Space/SemEval/Test/update/RFC'
+corpus_dir = os.path.join(
+    os.environ['HOME'], 
+    'Dropbox/ISO-Space/SemEval/Test/update/RFC.ISOSpaceTaskv1.11'
+)
+
+update_dir = os.path.join(
+    os.environ['HOME'],
+    'Dropbox/ISO-Space/SemEval/Test/update/RFC.SpaceEvalTaskv1.2'
+)
 
 def main():
     for document in list(Corpus(corpus_dir).documents()):
@@ -46,7 +55,7 @@ def main():
                     new,
                     ttypes=['MEASURELINK','MOVELINK','OLINK','QSLINK']
                 )
-            document.save_xml(document.name)
+            document.save_xml(os.path.join(update_dir, document.basename))
 
 if __name__ == '__main__':
     main()
