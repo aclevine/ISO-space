@@ -18,6 +18,8 @@ def main():
         if document.task == 'ISOSpaceTaskv1.11':
             print document.basename
             document.rename_task('SpaceEvalTaskv1.2')
+            # EVENT -> NONMOTION_EVENT
+            document.rename_tag('EVENT', 'NONMOTION_EVENT')
             # PLACE, PATH, SPATIAL_ENTITY, NONMOTION_EVENT, MOTION :
             #   +attr : domain
             document.add_attribute(

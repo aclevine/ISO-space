@@ -135,6 +135,7 @@ class Document(BS):
         return is_valid
     
     def get_xml(self):
+        xml = u'<?xml version="1.0" encoding="UTF-8" ?>\n'
         root = Tag(name=self.task)
         text = Tag(name='TEXT')
         text.append(CData(self.text()))
@@ -146,12 +147,12 @@ class Document(BS):
         elements = [u'\n', text, u'\n', tags, u'\n', tokens, u'\n']
         for element in elements:
             root.append(element)
-        return unicode(root)
+        xml += unicode(root)
+        return xml
     
     def save_xml(self, file):
         if isinstance(file, basestring):
             with open(file, 'wb') as file:
-                file.write(u'<?xml version="1.0" encoding="UTF-8" ?>\n')
                 file.write(self.get_xml().encode('utf-8'))
         else:
             file.write(self.get_xml().encode('utf-8'))
