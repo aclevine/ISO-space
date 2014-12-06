@@ -18,10 +18,14 @@ class Extent(object):
         self.prev_tokens = sent[:front]
         self.next_tokens = sent [back:] 
         self.tag = tag_dict.get(self.lex[0].begin, {})
-        self.prev_tags = [tag_dict.get(l.begin, {}) for t, l in self.prev_tokens 
-                     if l.begin in tag_dict.keys()]
-        self.next_tags = [tag_dict.get(l.begin, {}) for t, l in self.next_tokens 
-                     if l.begin in tag_dict.keys()]
+        self.prev_tags = [
+            tag_dict.get(l.begin, {}) for t, l in self.prev_tokens 
+            if l.begin in tag_dict.keys()
+        ]
+        self.next_tags = [
+            tag_dict.get(l.begin, {}) for t, l in self.next_tokens 
+            if l.begin in tag_dict.keys()
+        ]
 
 class Document(BS):
     """A class for working with MAE annotation XMLs."""
@@ -86,7 +90,8 @@ class Document(BS):
         for t in tags:
             # load entity / event / signal tags
             if 'start' in t.attrs:
-                tag_dict[int(t['start'])] = t.attrs # {start offset: xml tokens, offsets, spatial data}    
+                # { start offset: xml tokens, offsets, spatial data }
+                tag_dict[int(t['start'])] = t.attrs
             # load movelink tags
             if 'trigger' in t.attrs:
                 tag_dict[t['trigger']] = t.attrs
@@ -97,7 +102,8 @@ class Document(BS):
     def extents(self, indices_function, extent_class=Extent):
         tag_dict = self.sort_tags_by_begin_offset()
         for s in self.tokenizer.tokenize_text().sentences:
-            sent = s.as_pairs() # [ (token, lexeme obj), (token, lexeme obj), ...]
+            # [ (token, lexeme obj), (token, lexeme obj), ... ]
+            sent = s.as_pairs()
             offsets = indices_function(sent, tag_dict)
             for begin, end in offsets:
                 extent = extent_class(sent, tag_dict, begin, end)
@@ -106,9 +112,12 @@ class Document(BS):
     def validate(self):
         is_valid = True
         tag_count = len(self.tags())
-        if tag_count <= 0:
+        if not (tag_count > 0):
             is_valid = False
-            warning = '\n\t'.join(['No tag elements found', "File : '{doc}'"])
+            warning = '\n'.join([
+                'No tag elements found',
+                "\tFile : '{doc}'"
+            ]).format(doc=self.name)
             warn(warning, RuntimeWarning)
         for tag in self.consuming_tags():
             start, end = int(tag['start']), int(tag['end'])
@@ -117,12 +126,13 @@ class Document(BS):
             text_slice = self.text()[extent].encode('utf-8').replace('\n', ' ')
             if text_attribute != text_slice:
                 is_valid = False
-                warning = 'Misaligned extent tag' + '\n\t'.join([
-                    "File : '{doc}'"
-                    'Span  : [{start}:{end}]',
-                    "Tag   : '{id}'",
-                    "Text  : '{text}'",
-                    "Slice : '{slice}'"
+                warning = '\n'.join([
+                    'Misaligned extent tag',
+                    "\tFile : '{doc}'"
+                    '\tSpan  : [{start}:{end}]',
+                    "\tTag   : '{id}'",
+                    "\tText  : '{text}'",
+                    "\tSlice : '{slice}'"
                 ]).format(
                     doc=self.name,
                     start=start,
