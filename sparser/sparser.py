@@ -12,10 +12,15 @@ import re
 currdir = os.path.split(inspect.getfile( inspect.currentframe() ))[0]
 SPARSER = os.path.join(currdir, 'sparser')
 
+test = "Biking south from Salta, green forest eventually gave away to desert landscape, and I again found myself biking long stretches of desert between small towns."
+
 #gets all the sparser edges from a formatted string
 edges_pattern = re.compile(r'e[0-9]+[^\n]+', re.DOTALL)
 #parse each edge into its attributes
 edge_value_pattern = re.compile(r'(?P<edge>(e[0-9]+ )+) +(?P<label1>[^" ]*)[^"]+"(?P<word>[^"]+)"(?P<colon> :: )?(?P<label2>[^\n]{3,})?')
+
+edge_number_pattern = re.compile(r'#<edge(?P<num>[0-9]+)')
+edge_keyvalue_pattern = re.compile(r'(?P<key>[^:\n]+): (?P<value>[^\n]+)')
 
 def p(string, sparser_path=SPARSER):
     """Calls Sparser's p(arse) function on given string.
@@ -33,7 +38,7 @@ def p(string, sparser_path=SPARSER):
         sparser_path: The path to the Sparser executable.
 
     Returns:
-        out: The output of Sparser's p(arse) function.  Note: this formatted
+        The output of Sparser's p(arse) function.  Note: this formatted
         string needs to be parsed to get meaningful labels out of it.
 
     """
@@ -64,6 +69,10 @@ class Edge(object):
         self.label1 = m.group('label1')
         self.word = m.group('word')
         self.label2 = m.group('label2')
+        self.edgeDict = {x.replace('e', ''):[] for x in self.edges}
+        self.keyvalues = {}
+        #self.keyvalues = {e:{} for e in self.edgeDict}
+        
 
     def __repr__(self):
         return self.edgeStr
@@ -84,6 +93,30 @@ def p2edges(string, sparser_path=SPARSER):
         its corresponding values.
 
     """
-    edgesStr = edges_pattern.findall(p(string, sparser_path))
-    edges = [Edge(edgeStr) for edgeStr in edgesStr]
-    return edges
+    (parse, edges) = p(string, sparser_path).split('BEGIN-EDGES')
+    edges = edges.split('BEGIN-EDGE')[:-1]
+    edges = [(edge_number_pattern.findall(e)[0], edge_keyvalue_pattern.findall(e)) for e in edges]
+    edgesStr = edges_pattern.findall(parse)
+    real_edges = []
+    for edgeStr in edgesStr:
+        new_edge = Edge(edgeStr)
+        edge_keyvalues = {}
+        cached = None
+        for e in new_edge.edgeDict:
+            for i in xrange(0, len(edges)):
+                #print edges[i][0], e
+                if edges[i][0] == e:
+                    edge_keyvalues = {x[0]:x[1] for x in edges[i][1]}
+                    new_edge.keyvalues[e] = edge_keyvalues
+                    cached = edges[i]
+                    break
+            if cached:
+                edges.remove(cached)
+        real_edges.append(new_edge)
+    return real_edges
+            
+    #edges2 = [Edge(edgeStr) for edgeStr in edgesStr]
+    #return edges2
+
+#test case:
+#print p(test)
