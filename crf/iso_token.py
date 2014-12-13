@@ -44,8 +44,9 @@ class Token(object):
                 self.posTokens = pos.tag(sent)
             except:
                 pass
-        self.label = label
+        self.label = label.replace('\n', '')
         self.pos = ''
+        self.posIndex = None
         self.dict = {}
         #self._get_pos()
 
@@ -54,6 +55,14 @@ class Token(object):
             for x,token in enumerate(self.tokens):
                 self.dict[int(token[0])] = x
             self.pos = self.posTokens[self.dict[self.start]][-1]
+            self.posIndex = self.dict[self.start]
+
+    def features(self):
+        s = self.label
+        s += '\t' + self.pos
+        s += '\t' + '__BOS__'
+        s += '\n'
+        return s
                 
     def __repr__(self):
         return self.word
