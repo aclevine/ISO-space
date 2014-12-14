@@ -6,7 +6,7 @@
 import os
 import re
 
-import tagdoc
+import tagdoc as td
 from tagdoc import doc, binary_search
 import tokenizer
 from sparser.sparser import p2edges as p
@@ -15,7 +15,7 @@ import stanford.taggers.ner as ner
 from util.unicode import ureplace as u
 from util.unicode import u2ascii
 
-GOLDDIR = '/users/sethmachine/desktop/Tokenized/'
+GOLDDIR = '/users/sethmachine/desktop/Tokenized'
 NEWDIR = '/users/sethmachine/desktop/TokenizedPlus/'
 
 xml_tokens_pattern = re.compile(r'<TOKENS>.+</TOKENS>', re.DOTALL)
@@ -101,10 +101,13 @@ def test(doc1, doc2):
 sentence_pattern = re.compile(r'<s>.+?</s>', re.DOTALL)
 lex_attrs_pattern = re.compile(r'(?<=<lex)[^>]+')
 
-def process(tagdoc=doc, golddir=GOLDDIR, newdir=NEWDIR):
+def process(tagdoc=doc, golddir=GOLDDIR, newdir=''):
+    if not newdir:
+        newdir = golddir + '++'
     if not os.path.exists(newdir): #if the dir doesn't exist
         os.mkdir(newdir)
-    path = os.path.join(newdir, tagdoc.filename.replace(golddir, ''))
+    path = newdir + tagdoc.filename.replace(golddir, '')
+    #path = os.path.join(newdir, tagdoc.filename.replace(golddir, ''))
     print path
     mkparentdirs(path)
     w = open(tagdoc.filename, 'r')
@@ -118,6 +121,7 @@ def process(tagdoc=doc, golddir=GOLDDIR, newdir=NEWDIR):
         old_lexes = sentence.getchildren()
         raw_sentence = m.group()
         tokens = [''.join([c if ord(c) < 128 else u2ascii[c] for c in x.text]) for x in old_lexes]
+        #tokens = ''.join([c for c in x.text])
         sentIndex = int(tagdoc.tokenizer.sentences[i][0])
         pos_tags = pos.tag(tokens)
         ner_tags = ner.tag(tokens)
@@ -135,100 +139,14 @@ def process(tagdoc=doc, golddir=GOLDDIR, newdir=NEWDIR):
                     #print label, pos_tags[c], ner_tags[c]
                     pos_tags.remove(pos_tags[c])
                     ner_tags.remove(ner_tags[c])
-            print new_lex
+            #print new_lex
             t = t.replace(attributes, str(new_lex))
-        print '\n'
-    w = open('/users/sethmachine/desktop/hioo.txt', 'w')
+        #print '\n'
+    w = open(path, 'w')
     print>>w, t
     w.close()
+    print test(tagdoc, td.TagDoc(path))
         
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            
-"""def newXml(tagDoc=doc, golddir='/users/sethmachine/desktop/Tokenized/', newdir='/users/sethmachine/desktop/TokenizedPlus'):
-    if not os.path.exists(newdir): #if the dir doesn't exist
-        os.mkdir(newdir)
-    path = os.path.join(newdir, tagDoc.filename.replace(golddir, ''))
-    print path
-    mkparentdirs(path)
-    alles = []
-    t = '<TOKENS>\n'
-    oldText = tagDoc.text
-    #grab only tags which have a text extent
-    iso_tags = [x for x in tagDoc.tags if 'start' in x.attribNames]
-    iso_tags.sort(key=lambda x: int(x.attrib['start'])) #sort for binary search
-    for sent in tagDoc.tokenizer.sentences:
-            ss = Sent()
-            sentence = u(oldText[sent[0]:sent[1]])
-            oldSent = oldText[sent[0]:sent[1]]
-            #return (sentence, oldSent)
-            tk = tokenizer.Tokenizer(oldSent)
-            tk.tokenize_text()
-            tokens = [x for y in tk.tokens for x in y if x]
-            tokens = [x for y in tokens for x in y if x]
-            tokens = [x for x in tokens if x[-1]]
-            tokens.sort(key=lambda x: x[0])
-            alles.append((oldSent, tokens, tk.tokens))
-            #tokens = [x[1][0] for x in tk.tokens]#if x[1][0][-1]]
-            #return tokens
-            #return (tokens, edges, sentence)
-            pos_tags = pos.tag(sentence)
-            ner_tags = ner.tag(sentence)
-            for x in xrange(0, len(tokens)):
-                    lex = ''
-                    token = tokens[x]
-                    label = binary_search((token[0] + sent[0], token[1] + sent[0], token[2]), iso_tags)
-                    if type(label) != type(None):
-                        label = label.name
-                    try:
-                        if token[-1] == pos_tags[x][0]:
-                            newLex = Lex(token[-1])
-                            newLex.addAll([('label', label), ('begin', token[0]), ('end', token[1]),
-                                           ('pos', pos_tags[x][1]), ('ner', ner_tags[x][1])])
-                            ss.add(newLex)
-                        else:
-                            if token[-1] in u2ascii:
-                                if u2ascii[token[-1]] == ' ':
-                                    print 'hi'
-                                    break
-                            newLex = Lex(token[-1])
-                            newLex.addAll([('label', label), ('begin', token[0]), ('end', token[1])])
-                            ss.add(newLex)
-                    except IndexError:
-                            break
-            t = ''.join((t, str(ss), '\n'))
-    new_lex = ''.join((t, '</TOKENS>'))
-    w = open(tagDoc.filename, 'r')
-    newText = w.read().decode('utf-8')
-    w.close()
-    w = open(path, 'w')
-    newText = xml_tokens_pattern.sub(new_lex.decode('utf-8'), newText)
-    print>>w, newText.encode('utf-8')
-    w.close()
-    newDoc = tagdoc.TagDoc(path)
-    #return alles
-    return (alles, test(newDoc, tagDoc))
-
 def printchild(s):
-	return ''.join([x.text + ', ' for x in s.getchildren()])"""
+	return ''.join([x.text + ', ' for x in s.getchildren()])
