@@ -7,7 +7,7 @@ import os
 import re
 
 import tagdoc as td
-from tagdoc import doc, binary_search
+from tagdoc import binary_search#,doc
 import tokenizer
 from sparser.sparser import p2edges as p
 import stanford.taggers.pos as pos

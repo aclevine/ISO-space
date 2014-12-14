@@ -231,7 +231,7 @@ class TagDoc:
     """
     A wrapper around an xml annotated document.
     """
-    def __init__(self, filepath=SPRL_FILE):
+    def __init__(self, filepath):
         self.filename = filepath
         self.tree = ET.parse(filepath)
         self.categories = ISO_CATEGORIES
@@ -257,7 +257,7 @@ class TagDir:
     """
     A wrapper around a directory of xml annotated documents.
     """
-    def __init__(self, dirpath=ISO_GOLD_DIR):
+    def __init__(self, dirpath):
         self.files = getXML(dirpath)
         self.docs = [TagDoc(f) for f in self.files]
         self.texts = [doc.text for doc in self.docs]
@@ -328,10 +328,10 @@ def writeTagTypeCounts(tagdocs):
 #gold = TagDir(ISO_GOLD_DIR)
 
 #lazy (1 doc)
-doc = TagDoc("/users/sethmachine/desktop/Tokenized/ANC/WhereToJapan/Asakusa.xml")
-w = open(doc.filename, 'r')
-t = w.read()
-w.close()
+#doc = TagDoc("/users/sethmachine/desktop/Tokenized/ANC/WhereToJapan/Asakusa.xml")
+#w = open(doc.filename, 'r')
+#t = w.read()
+#w.close()
 
 #nineteen examples get the wrong text spans for the tokens
 #something very weird going on
