@@ -101,7 +101,7 @@ def test(doc1, doc2):
 sentence_pattern = re.compile(r'<s>.+?</s>', re.DOTALL)
 lex_attrs_pattern = re.compile(r'(?<=<lex)[^>]+')
 
-def process(tagdoc=doc, golddir=GOLDDIR, newdir=''):
+def process(tagdoc, golddir, newdir=''):
     if not newdir:
         newdir = golddir + '++'
     if not os.path.exists(newdir): #if the dir doesn't exist
