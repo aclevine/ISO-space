@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<SpaceEvalTaskv1.2>
+<TEXT><![CDATA[
+South into Argentina
+Monday, December 11th, 2006
+
+   I spent a week in La Paz, where I talked to almost the entire American School. I also somehow managed to get in two major newspapers, three radio stations, and a morning live interview on national television (the program â€˜Al Despertar,â€™ for those of you who tune into Bolivian television…) 
+ 
+ 
+
+   From La Paz, I basically started biking south as fast as I could, and I am now in Northern Argentina. I have been traveling fast for a few reasons â€“ the end of the school year (southern hemisphere summer) means I canâ€™t give presentations, I have a desire to not be rushed later in the trip, and I made a promise to meet a friend who is flying in to bike with me.
+
+  
+   The terrain has been breathtaking. I crossed the worldâ€™s largest salt flat, and biked across the Atacama Desert, crossing sections of the desert by moonlight. There were few services on these roads – at one point had to carry 30lbs of food and water. Click on the images below to visit the photo albums of the past few weeks.
+
+Southern Bolivia, including the worldâ€™s largest salt flat (biked partially with Wouter):
+
+
+The Atacama Desert of Chile, including some incredible night biking:
+
+
+Northern Argentina, where I am now. I caught up with Brooks and Gregg (and another cyclist Tom). Remember Gregg and Brooks? I biked across sections of Mexico with them, and just ran into them again:
+]]></TEXT>
+<TAGS>
+<PLACE comment="end of 'I biked across sections of Mexicon ...'" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="" domain="" elevation="" end="-1" form="NOM" gazref="" gquant="" id="pl21" latLong="" mod="" scopes="" start="-1" state="" text="" type=""/>
+<PLACE comment="beginning of 'I biked across sections of Mexicon ...'" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="" domain="" elevation="" end="-1" form="NOM" gazref="" gquant="" id="pl20" latLong="" mod="" scopes="" start="-1" state="" text="" type=""/>
+<PLACE comment="end of '... crossing sections of the desert by moonlight.'" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="" domain="" elevation="" end="-1" form="NOM" gazref="" gquant="" id="pl19" latLong="" mod="" scopes="" start="-1" state="" text="" type=""/>
+<PLACE comment="beginning of '... crossing sections of the desert by moonlight.'" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="" domain="" elevation="" end="-1" form="NOM" gazref="" gquant="" id="pl18" latLong="" mod="" scopes="" start="-1" state="" text="" type=""/>
+<PLACE comment="end of '... and biked across the Atacama Desert ...'" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="" domain="" elevation="" end="-1" form="NOM" gazref="" gquant="" id="pl17" latLong="" mod="" scopes="" start="-1" state="" text="" type=""/>
+<PLACE comment="beginning of '... and biked across the Atacama Desert ...'" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="" domain="" elevation="" end="-1" form="NOM" gazref="" gquant="" id="pl16" latLong="" mod="" scopes="" start="-1" state="" text="" type=""/>
+<PLACE comment="end of 'I crossed the world's largest salt flat'" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="" domain="" elevation="" end="-1" form="NOM" gazref="" gquant="" id="pl15" latLong="" mod="" scopes="" start="-1" state="" text="" type=""/>
+<PLACE comment="beginning of 'I crossed the world's largest salt flat'" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="" domain="" elevation="" end="-1" form="NOM" gazref="" gquant="" id="pl14" latLong="" mod="" scopes="" start="-1" state="" text="" type=""/>
+<PLACE comment="goal location for 'a friend ... flying in ...'" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="" domain="" elevation="" end="-1" form="NOM" gazref="" gquant="" id="pl22" latLong="" mod="" scopes="" start="-1" state="" text="" type=""/>
+<PLACE comment="" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="" domain="" elevation="" end="1076" form="NAM" gazref="" gquant="" id="pl7" latLong="" mod="" scopes="" start="1060" state="" text="Southern Bolivia" type=""/>
+<PLACE comment="" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="" domain="" elevation="" end="1119" form="NOM" gazref="" gquant="" id="pl8" latLong="" mod="largest" scopes="" start="1115" state="" text="flat" type=""/>
+<PLACE comment="" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="" domain="" elevation="" end="1171" form="NAM" gazref="" gquant="" id="pl9" latLong="" mod="" scopes="" start="1157" state="" text="Atacama Desert" type=""/>
+<PLACE comment="" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="" domain="" elevation="" end="1180" form="NAM" gazref="" gquant="" id="pl10" latLong="" mod="" scopes="" start="1175" state="" text="Chile" type=""/>
+<PLACE comment="" continent="" countable="TRUE" country="" ctv="" dcl="TRUE" dimensionality="" domain="" elevation="" end="1242" form="NAM" gazref="" gquant="" id="pl11" latLong="" mod="" scopes="" start="1224" state="" text="Northern Argentina" type=""/>
+<PLACE comment="" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="" domain="" elevation="" end="1371" form="NOM" gazref="" gquant="" id="pl12" latLong="" mod="" scopes="" start="1363" state="" text="sections" type=""/>
+<PLACE comment="" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="" domain="" elevation="" end="1381" form="NAM" gazref="" gquant="" id="pl13" latLong="" mod="" scopes="" start="1375" state="" text="Mexico" type=""/>
+<PLACE comment="" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="" domain="" elevation="" end="368" form="NAM" gazref="" gquant="" id="pl1" latLong="" mod="" scopes="" start="362" state="" text="La Paz" type=""/>
+<PLACE comment="" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="" domain="" elevation="" end="457" form="NAM" gazref="" gquant="" id="pl2" latLong="" mod="" scopes="" start="439" state="" text="Northern Argentina" type=""/>
+<PLACE comment="" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="" domain="" elevation="" end="78" form="NAM" gazref="" gquant="" id="pl0" latLong="" mod="" scopes="" start="72" state="" text="La Paz" type=""/>
+<PLACE comment="" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="" domain="" elevation="" end="807" form="NOM" gazref="" gquant="" id="pl3" latLong="" mod="largest" scopes="" start="803" state="" text="flat" type=""/>
+<PLACE comment="" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="" domain="" elevation="" end="844" form="NAM" gazref="" gquant="" id="pl4" latLong="" mod="" scopes="" start="830" state="" text="Atacama Desert" type=""/>
+<PLACE comment="" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="" domain="" elevation="" end="863" form="NOM" gazref="" gquant="" id="pl5" latLong="" mod="" scopes="" start="855" state="" text="sections" type=""/>
+<PLACE comment="" continent="" countable="FALSE" country="" ctv="" dcl="FALSE" dimensionality="" domain="" elevation="" end="877" form="NOM" gazref="" gquant="" id="pl6" latLong="" mod="" scopes="" start="871" state="" text="desert" type=""/>
+<PLACE comment="" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="" domain="" elevation="" end="945" form="NOM" gazref="" gquant="" id="pl23" latLong="" mod="" scopes="" start="940" state="" text="point" type=""/>
+<PATH beginID="" comment="" countable="TRUE" dcl="" dimensionality="" domain="" elevation="" end="930" endID="" form="NOM" gazref="" gquant="" id="p0" latLong="" midIDs="pl23" mod="" scopes="" start="925" text="roads" type=""/>
+<SPATIAL_ENTITY comment="The set subsuming [Brooks,se10], [Gregg,se11], and [Tom,se19] in 'I caught up with Brooks Gregg (and another cyclist Tom).'" countable="TRUE" dcl="" dimensionality="" domain="" elevation="" end="-1" form="NOM" gquant="" id="se17" latLong="" mod="" scopes=" " start="-1" text="" type=""/>
+<SPATIAL_ENTITY comment="The set subsuming only [Gregg,se11] and [Brooks,se10] in 'Remember Gregg and Brooks?'" countable="TRUE" dcl="" dimensionality="" domain="" elevation="" end="-1" form="NOM" gquant="" id="se20" latLong="" mod="" scopes="" start="-1" text="" type=""/>
+<SPATIAL_ENTITY comment="" countable="TRUE" dcl="" dimensionality="" domain="" elevation="" end="1148" form="NAM" gquant="" id="se7" latLong="" mod="" scopes="" start="1142" text="Wouter" type=""/>
+<SPATIAL_ENTITY comment="" countable="TRUE" dcl="" dimensionality="" domain="" elevation="" end="1251" form="NOM" gquant="" id="se18" latLong="" mod="" scopes="" start="1250" text="I" type=""/>
+<SPATIAL_ENTITY comment="" countable="TRUE" dcl="" dimensionality="" domain="" elevation="" end="1261" form="NOM" gquant="" id="se9" latLong="" mod="" scopes="" start="1260" text="I" type=""/>
+<SPATIAL_ENTITY comment="" countable="TRUE" dcl="" dimensionality="" domain="" elevation="" end="1283" form="NAM" gquant="" id="se10" latLong="" mod="" scopes="" start="1277" text="Brooks" type=""/>
+<SPATIAL_ENTITY comment="" countable="TRUE" dcl="" dimensionality="" domain="" elevation="" end="1293" form="NAM" gquant="" id="se11" latLong="" mod="" scopes="" start="1288" text="Gregg" type=""/>
+<SPATIAL_ENTITY comment="" countable="TRUE" dcl="" dimensionality="" domain="" elevation="" end="1314" form="NOM" gquant="" id="se12" latLong="" mod="" scopes="" start="1307" text="cyclist" type=""/>
+<SPATIAL_ENTITY comment="" countable="TRUE" dcl="" dimensionality="" domain="" elevation="" end="1318" form="NAM" gquant="" id="se19" latLong="" mod="" scopes="" start="1315" text="Tom" type=""/>
+<SPATIAL_ENTITY comment="" countable="TRUE" dcl="" dimensionality="" domain="" elevation="" end="1349" form="NOM" gquant="" id="se13" latLong="" mod="" scopes="" start="1348" text="I" type=""/>
+<SPATIAL_ENTITY comment="" countable="TRUE" dcl="" dimensionality="" domain="" elevation="" end="1391" form="NOM" gquant="" id="se14" latLong="" mod="" scopes="" start="1387" text="them" type=""/>
+<SPATIAL_ENTITY comment="" countable="TRUE" dcl="" dimensionality="" domain="" elevation="" end="1415" form="NOM" gquant="" id="se15" latLong="" mod="" scopes="" start="1411" text="them" type=""/>
+<SPATIAL_ENTITY comment="" countable="TRUE" dcl="" dimensionality="" domain="" elevation="" end="371" form="NOM" gquant="" id="se1" latLong="" mod="" scopes="" start="370" text="I" type=""/>
+<SPATIAL_ENTITY comment="" countable="TRUE" dcl="" dimensionality="" domain="" elevation="" end="428" form="NOM" gquant="" id="se16" latLong="" mod="" scopes="" start="427" text="I" type=""/>
+<SPATIAL_ENTITY comment="" countable="TRUE" dcl="" dimensionality="" domain="" elevation="" end="460" form="NOM" gquant="" id="se2" latLong="" mod="" scopes="" start="459" text="I" type=""/>
+<SPATIAL_ENTITY comment="" countable="TRUE" dcl="" dimensionality="" domain="" elevation="" end="55" form="NOM" gquant="" id="se0" latLong="" mod="" scopes="" start="54" text="I" type=""/>
+<SPATIAL_ENTITY comment="" countable="TRUE" dcl="" dimensionality="" domain="" elevation="" end="657" form="NOM" gquant="" id="se3" latLong="" mod="" scopes="" start="656" text="I" type=""/>
+<SPATIAL_ENTITY comment="" countable="TRUE" dcl="" dimensionality="" domain="" elevation="" end="689" form="NOM" gquant="" id="se4" latLong="" mod="" scopes="" start="683" text="friend" type=""/>
+<SPATIAL_ENTITY comment="" countable="TRUE" dcl="" dimensionality="" domain="" elevation="" end="693" form="NOM" gquant="" id="se8" latLong="" mod="" scopes="" start="690" text="who" type=""/>
+<SPATIAL_ENTITY comment="" countable="TRUE" dcl="" dimensionality="" domain="" elevation="" end="722" form="NOM" gquant="" id="se5" latLong="" mod="" scopes="" start="720" text="me" type=""/>
+<SPATIAL_ENTITY comment="" countable="TRUE" dcl="" dimensionality="" domain="" elevation="" end="767" form="NOM" gquant="" id="se6" latLong="" mod="" scopes="" start="766" text="I" type=""/>
+<SPATIAL_ENTITY comment="" countable="TRUE" dcl="" dimensionality="" domain="" elevation="" end="1335" form="NAM" gquant="" id="se21" latLong="" mod="" scopes="" start="1330" text="Gregg" type=""/>
+<SPATIAL_ENTITY comment="" countable="TRUE" dcl="" dimensionality="" domain="" elevation="" end="1346" form="NAM" gquant="" id="se22" latLong="" mod="" scopes="" start="1340" text="Brooks" type=""/>
+<SPATIAL_ENTITY comment="Subsuming mover for 'a friend who is flying in to bike with me'" countable="TRUE" dcl="" dimensionality="" domain="" elevation="" end="-1" form="NOM" gquant="" id="se23" latLong="" mod="" scopes="" start="-1" text="" type=""/>
+<SPATIAL_ENTITY comment="Subsuming mover for 'the worldâ€™s largest salt flat (biked partially with Wouter'" countable="TRUE" dcl="" dimensionality="" domain="" elevation="" end="-1" form="NOM" gquant="" id="se24" latLong="" mod="" scopes="" start="-1" text="" type=""/>
+<SPATIAL_ENTITY comment="" countable="TRUE" dcl="" dimensionality="" domain="" elevation="" end="87" form="NOM" gquant="" id="se25" latLong="" mod="" scopes="" start="86" text="I" type=""/>
+<SPATIAL_ENTITY comment="" countable="TRUE" dcl="" dimensionality="" domain="" elevation="" end="134" form="NOM" gquant="" id="se26" latLong="" mod="" scopes="" start="133" text="I" type=""/>
+<SPATIAL_ENTITY comment="" countable="TRUE" dcl="" dimensionality="" domain="" elevation="" end="415" form="NOM" gquant="" id="se27" latLong="" mod="" scopes="" start="414" text="I" type=""/>
+<SPATIAL_ENTITY comment="" countable="TRUE" dcl="" dimensionality="" domain="" elevation="" end="601" form="NOM" gquant="" id="se28" latLong="" mod="" scopes="" start="600" text="I" type=""/>
+<NONMOTION_EVENT comment="" countable="FALSE" domain="" elevation="" end="1220" gquant="" id="e2" latLong="" mod="" scopes="" start="1214" text="biking"/>
+<NONMOTION_EVENT comment="" countable="" domain="" elevation="" end="61" gquant="" id="e5" latLong="" mod="" scopes="" start="56" text="spent"/>
+<NONMOTION_EVENT comment="" countable="" domain="" elevation="" end="94" gquant="" id="e1" latLong="" mod="" scopes="" start="88" text="talked"/>
+<NONMOTION_EVENT comment="" countable="FALSE" domain="" elevation="" end="915" gquant="" id="e0" latLong="" mod="" scopes="" start="907" text="services"/>
+<NONMOTION_EVENT comment="" countable="" domain="" elevation="" end="958" gquant="" id="e4" latLong="" mod="" scopes="" start="953" text="carry"/>
+<MOTION comment="" countable="" domain="" elevation="" end="1126" gquant="" id="m9" latLong="" mod="" motion_class="MOVE_INTERNAL" motion_sense="LITERAL" motion_type="COMPOUND" scopes="" start="1121" text="biked"/>
+<MOTION comment="" countable="" domain="" elevation="" end="1271" gquant="" id="m13" latLong="" mod="" motion_class="HIT" motion_sense="LITERAL" motion_type="PATH" scopes="" start="1262" text="caught up"/>
+<MOTION comment="" countable="" domain="" elevation="" end="1355" gquant="" id="m11" latLong="" mod="" motion_class="CROSS" motion_sense="LITERAL" motion_type="COMPOUND" scopes="" start="1350" text="biked"/>
+<MOTION comment="" countable="" domain="" elevation="" end="1405" gquant="" id="m12" latLong="" mod="" motion_class="HIT" motion_sense="LITERAL" motion_type="PATH" scopes="" start="1402" text="ran"/>
+<MOTION comment="" countable="" domain="" elevation="" end="389" gquant="" id="m1" latLong="" mod="" motion_class="MOVE" motion_sense="LITERAL" motion_type="COMPOUND" scopes="" start="382" text="started"/>
+<MOTION comment="" countable="" domain="" elevation="" end="480" gquant="" id="m2" latLong="" mod="" motion_class="MOVE" motion_sense="LITERAL" motion_type="PATH" scopes="" start="471" text="traveling"/>
+<MOTION comment="" countable="" domain="" elevation="" end="680" gquant="" id="m3" latLong="" mod="" motion_class="HIT" motion_sense="LITERAL" motion_type="MANNER" scopes="" start="676" text="meet"/>
+<MOTION comment="" countable="" domain="" elevation="" end="703" gquant="" id="m4" latLong="" mod="" motion_class="REACH" motion_sense="LITERAL" motion_type="COMPOUND" scopes="" start="697" text="flying"/>
+<MOTION comment="" countable="" domain="" elevation="" end="714" gquant="" id="m5" latLong="" mod="" motion_class="MOVE" motion_sense="LITERAL" motion_type="MANNER" scopes="" start="710" text="bike"/>
+<MOTION comment="" countable="" domain="" elevation="" end="775" gquant="" id="m6" latLong="" mod="" motion_class="CROSS" motion_sense="LITERAL" motion_type="PATH" scopes="" start="768" text="crossed"/>
+<MOTION comment="" countable="" domain="" elevation="" end="818" gquant="" id="m7" latLong="" mod="" motion_class="CROSS" motion_sense="LITERAL" motion_type="COMPOUND" scopes="" start="813" text="biked"/>
+<MOTION comment="" countable="" domain="" elevation="" end="854" gquant="" id="m8" latLong="" mod="" motion_class="CROSS" motion_sense="LITERAL" motion_type="PATH" scopes="" start="846" text="crossing"/>
+<SPATIAL_SIGNAL cluster="" comment="" end="1087" id="s10" semantic_type="TOPOLOGICAL" start="1078" text="including"/>
+<SPATIAL_SIGNAL cluster="" comment="" end="1174" id="s5" semantic_type="TOPOLOGICAL" start="1172" text="of"/>
+<SPATIAL_SIGNAL cluster="" comment="" end="1191" id="s11" semantic_type="TOPOLOGICAL" start="1182" text="including"/>
+<SPATIAL_SIGNAL cluster="" comment="" end="1249" id="s6" semantic_type="TOPOLOGICAL" start="1244" text="where"/>
+<SPATIAL_SIGNAL cluster="" comment="" end="1374" id="s7" semantic_type="TOPOLOGICAL" start="1372" text="of"/>
+<SPATIAL_SIGNAL cluster="" comment="" end="438" id="s3" semantic_type="TOPOLOGICAL" start="436" text="in"/>
+<SPATIAL_SIGNAL cluster="" comment="" end="71" id="s0" semantic_type="TOPOLOGICAL" start="69" text="in"/>
+<SPATIAL_SIGNAL cluster="" comment="" end="85" id="s1" semantic_type="TOPOLOGICAL" start="80" text="where"/>
+<SPATIAL_SIGNAL cluster="" comment="" end="866" id="s8" semantic_type="TOPOLOGICAL" start="864" text="of"/>
+<SPATIAL_SIGNAL cluster="" comment="" end="918" id="s4" semantic_type="DIRECTIONAL" start="916" text="on"/>
+<SPATIAL_SIGNAL cluster="" comment="" end="935" id="s9" semantic_type="TOPOLOGICAL" start="933" text="at"/>
+<MOTION_SIGNAL comment="" end="1362" id="ms2" motion_signal_type="PATH" start="1356" text="across"/>
+<MOTION_SIGNAL comment="" end="1410" id="ms3" motion_signal_type="PATH" start="1406" text="into"/>
+<MOTION_SIGNAL comment="" end="361" id="ms0" motion_signal_type="PATH" start="357" text="From"/>
+<MOTION_SIGNAL comment="" end="396" id="ms5" motion_signal_type="MANNER" start="390" text="biking"/>
+<MOTION_SIGNAL comment="" end="402" id="ms6" motion_signal_type="PATH" start="397" text="south"/>
+<MOTION_SIGNAL comment="" end="706" id="ms4" motion_signal_type="PATH" start="704" text="in"/>
+<MOTION_SIGNAL comment="" end="825" id="ms1" motion_signal_type="PATH" start="819" text="across"/>
+<QSLINK comment="" fromID="e5" fromText="spent" id="qsl0" landmark="pl0" relType="IN" toID="pl0" toText="La Paz" trajector="e5" trigger="s0"/>
+<QSLINK comment="" fromID="e1" fromText="talked" id="qsl1" landmark="pl0" relType="IN" toID="pl0" toText="La Paz" trajector="e1" trigger="s1"/>
+<QSLINK comment="SPATIAL_FUNCTION" fromID="pl12" fromText="sections" id="qsl10" landmark="pl13" relType="IN" toID="pl13" toText="Mexico" trajector="pl12" trigger="s7"/>
+<QSLINK comment="" fromID="se16" fromText="I" id="qsl2" landmark="pl2" relType="IN" toID="pl2" toText="Northern Argentina" trajector="se16" trigger="s3"/>
+<QSLINK comment="SPATIAL_FUNCTION" fromID="pl5" fromText="sections" id="qsl3" landmark="pl6" relType="IN" toID="pl6" toText="desert" trajector="pl5" trigger="s8"/>
+<QSLINK comment="" fromID="e4" fromText="carry" id="qsl5" landmark="pl23" relType="IN" toID="pl23" toText="point" trajector="e4" trigger="s9"/>
+<QSLINK comment="" fromID="pl8" fromText="flat" id="qsl6" landmark="pl7" relType="IN" toID="pl7" toText="Southern Bolivia" trajector="pl8" trigger="s10"/>
+<QSLINK comment="SPATIAL_FUNCTION" fromID="pl9" fromText="Atacama Desert" id="qsl7" landmark="pl10" relType="IN" toID="pl10" toText="Chile" trajector="pl9" trigger="s5"/>
+<QSLINK comment="" fromID="e2" fromText="biking" id="qsl8" landmark="pl9" relType="IN" toID="pl9" toText="Atacama Desert" trajector="e2" trigger="s11"/>
+<QSLINK comment="" fromID="se18" fromText="I" id="qsl9" landmark="pl11" relType="IN" toID="pl11" toText="Argentina" trajector="se18" trigger="s6"/>
+<QSLINK comment="" fromID="pl20" fromText="" id="qsl4" landmark="pl12" relType="EC" toID="pl12" toText="sections" trajector="pl20" trigger=""/>
+<QSLINK comment="" fromID="pl21" fromText="" id="qsl11" landmark="pl12" relType="EC" toID="pl12" toText="sections" trajector="pl21" trigger=""/>
+<QSLINK comment="" fromID="pl14" fromText="" id="qsl12" landmark="pl3" relType="EC" toID="pl3" toText="flat" trajector="pl14" trigger=""/>
+<QSLINK comment="" fromID="pl15" fromText="" id="qsl13" landmark="pl3" relType="EC" toID="pl3" toText="flat" trajector="pl15" trigger=""/>
+<QSLINK comment="" fromID="pl16" fromText="" id="qsl14" landmark="pl4" relType="EC" toID="pl4" toText="Atacama Desert" trajector="pl16" trigger=""/>
+<QSLINK comment="" fromID="pl17" fromText="" id="qsl15" landmark="pl4" relType="EC" toID="pl4" toText="Atacama Desert" trajector="pl17" trigger=""/>
+<QSLINK comment="" fromID="pl18" fromText="" id="qsl16" landmark="pl5" relType="EC" toID="pl5" toText="sections" trajector="pl18" trigger=""/>
+<QSLINK comment="" fromID="pl19" fromText="" id="qsl17" landmark="pl5" relType="EC" toID="pl5" toText="sections" trajector="pl19" trigger=""/>
+<OLINK comment="" frame_type="INTRINSIC" fromID="e0" fromText="services" id="ol0" landmark="p0" projective="FALSE" referencePt="p0" relType="ALONG" toID="p0" toText="roads" trajector="e0" trigger="s4"/>
+<OLINK comment="" frame_type="RELATIVE" fromID="pl20" fromText="" id="ol1" landmark="pl12" projective="FALSE" referencePt="pl21" relType="ACROSS" toID="pl12" toText="sections" trajector="pl20" trigger=""/>
+<OLINK comment="" frame_type="RELATIVE" fromID="pl14" fromText="" id="ol2" landmark="pl3" projective="FALSE" referencePt="pl15" relType="ACROSS" toID="pl3" toText="flat" trajector="pl14" trigger=""/>
+<OLINK comment="" frame_type="RELATIVE" fromID="pl16" fromText="" id="ol3" landmark="pl4" projective="FALSE" referencePt="pl17" relType="ACROSS" toID="pl4" toText="Atacama Desert" trajector="pl16" trigger=""/>
+<OLINK comment="" frame_type="RELATIVE" fromID="pl18" fromText="" id="ol4" landmark="pl5" projective="FALSE" referencePt="pl19" relType="ACROSS" toID="pl5" toText="sections" trajector="pl18" trigger=""/>
+<MOVELINK comment="" fromID="m1" fromText="started" goal="" goal_reached="" id="mvl0" landmark="" midPoint="" motion_signalID="ms0, ms5, ms6" mover="se1" pathID="" source="pl1" toID="se1" toText="I" trigger="m1"/>
+<MOVELINK comment="" fromID="m2" fromText="traveling" goal="" goal_reached="" id="mvl1" landmark="" midPoint="" motion_signalID="" mover="se2" pathID="" source="" toID="se2" toText="I" trigger="m2"/>
+<MOVELINK comment="" fromID="m11" fromText="biked" goal="pl21" goal_reached="YES" id="mvl10" landmark="" midPoint="pl12" motion_signalID="ms2" mover="se13" pathID="" source="pl20" toID="se13" toText="I" trigger="m11"/>
+<MOVELINK comment="" fromID="m12" fromText="ran" goal="se15" goal_reached="YES" id="mvl11" landmark="" midPoint="" motion_signalID="ms3" mover="se13" pathID="" source="" toID="se13" toText="I" trigger="m12"/>
+<MOVELINK comment="" fromID="m3" fromText="meet" goal="se4" goal_reached="YES" id="mvl2" landmark="" midPoint="" motion_signalID="" mover="se3" pathID="" source="" toID="se3" toText="I" trigger="m3"/>
+<MOVELINK comment="" fromID="m4" fromText="flying" goal="pl22" goal_reached="YES" id="mvl3" landmark="" midPoint="" motion_signalID="ms4" mover="se8" pathID="" source="" toID="se8" toText="who" trigger="m4"/>
+<MOVELINK comment="" fromID="m6" fromText="crossed" goal="pl15" goal_reached="YES" id="mvl5" landmark="" midPoint="pl3" motion_signalID="" mover="se6" pathID="" source="pl14" toID="se6" toText="I" trigger="m6"/>
+<MOVELINK comment="" fromID="m7" fromText="biked" goal="pl17" goal_reached="YES" id="mvl6" landmark="" midPoint="pl4" motion_signalID="ms1" mover="se6" pathID="" source="pl16" toID="se6" toText="I" trigger="m7"/>
+<MOVELINK comment="" fromID="m8" fromText="crossing" goal="pl19" goal_reached="YES" id="mvl7" landmark="" midPoint="pl5" motion_signalID="" mover="se6" pathID="" source="pl18" toID="se6" toText="I" trigger="m8"/>
+<MOVELINK comment="" fromID="m13" fromText="caught up" goal="se17" goal_reached="YES" id="mvl9" landmark="" midPoint="" motion_signalID="" mover="se9" pathID="" source="" toID="se9" toText="I" trigger="m13"/>
+<MOVELINK comment="" fromID="m5" fromText="bike" goal="" goal_reached="" id="mvl12" landmark="" midPoint="" motion_signalID="" mover="se23" pathID="" source="" toID="se23" toText="" trigger="m5"/>
+<MOVELINK comment="" fromID="m9" fromText="biked" goal="" goal_reached="" id="mvl13" landmark="pl8" midPoint="" motion_signalID="" mover="se24" pathID="" source="" toID="se24" toText="" trigger="m9"/>
+<METALINK comment="" fromID="se10" fromText="Brooks" id="metal0" objectID1="se10" objectID2="se17" relType="SUBCOREFERENCE" toID="se17" toText=""/>
+<METALINK comment="" fromID="se11" fromText="Gregg" id="metal1" objectID1="se11" objectID2="se17" relType="SUBCOREFERENCE" toID="se17" toText=""/>
+<METALINK comment="" fromID="se5" fromText="me" id="metal10" objectID1="se5" objectID2="se0" relType="COREFERENCE" toID="se0" toText="I"/>
+<METALINK comment="" fromID="se13" fromText="I" id="metal11" objectID1="se13" objectID2="se0" relType="COREFERENCE" toID="se0" toText="I"/>
+<METALINK comment="" fromID="se3" fromText="I" id="metal12" objectID1="se3" objectID2="se0" relType="COREFERENCE" toID="se0" toText="I"/>
+<METALINK comment="" fromID="se9" fromText="I" id="metal13" objectID1="se9" objectID2="se0" relType="COREFERENCE" toID="se0" toText="I"/>
+<METALINK comment="" fromID="pl1" fromText="La Paz" id="metal14" objectID1="pl1" objectID2="pl0" relType="COREFERENCE" toID="pl0" toText="La Paz"/>
+<METALINK comment="" fromID="pl11" fromText="Northern Argentina" id="metal15" objectID1="pl11" objectID2="pl2" relType="COREFERENCE" toID="pl2" toText="Northern Argentina"/>
+<METALINK comment="" fromID="se8" fromText="who" id="metal16" objectID1="se8" objectID2="se4" relType="COREFERENCE" toID="se4" toText="friend"/>
+<METALINK comment="" fromID="pl9" fromText="Atacama Desert" id="metal17" objectID1="pl9" objectID2="pl4" relType="COREFERENCE" toID="pl4" toText="Atacama Desert"/>
+<METALINK comment="" fromID="pl6" fromText="desert" id="metal18" objectID1="pl6" objectID2="pl4" relType="COREFERENCE" toID="pl4" toText="Atacama Desert"/>
+<METALINK comment="" fromID="se19" fromText="Tom" id="metal2" objectID1="se19" objectID2="se17" relType="SUBCOREFERENCE" toID="se17" toText=""/>
+<METALINK comment="" fromID="se14" fromText="them" id="metal4" objectID1="se14" objectID2="se20" relType="SPLITCOREFERENCE" toID="se20" toText=""/>
+<METALINK comment="" fromID="se15" fromText="them" id="metal5" objectID1="se15" objectID2="se14" relType="COREFERENCE" toID="se14" toText="them"/>
+<METALINK comment="" fromID="se2" fromText="I" id="metal6" objectID1="se2" objectID2="se0" relType="COREFERENCE" toID="se0" toText="I"/>
+<METALINK comment="" fromID="se1" fromText="I" id="metal7" objectID1="se1" objectID2="se0" relType="COREFERENCE" toID="se0" toText="I"/>
+<METALINK comment="" fromID="se6" fromText="I" id="metal8" objectID1="se6" objectID2="se0" relType="COREFERENCE" toID="se0" toText="I"/>
+<METALINK comment="" fromID="se16" fromText="I" id="metal9" objectID1="se16" objectID2="se0" relType="COREFERENCE" toID="se0" toText="I"/>
+<METALINK comment="" fromID="se21" fromText="Gregg" id="metal3" objectID1="se21" objectID2="se11" relType="COREFERENCE" toID="se11" toText="Gregg"/>
+<METALINK comment="" fromID="se22" fromText="Brooks" id="metal19" objectID1="se22" objectID2="se10" relType="COREFERENCE" toID="se10" toText="Brooks"/>
+<METALINK comment="" fromID="se21" fromText="Gregg" id="metal20" objectID1="se21" objectID2="se20" relType="SUBCOREFERENCE" toID="se20" toText=""/>
+<METALINK comment="" fromID="se22" fromText="Brooks" id="metal21" objectID1="se22" objectID2="se20" relType="SUBCOREFERENCE" toID="se20" toText=""/>
+<METALINK comment="" fromID="se19" fromText="Tom" id="metal22" objectID1="se19" objectID2="se12" relType="COREFERENCE" toID="se12" toText="cyclist"/>
+<METALINK comment="" fromID="se4" fromText="friend" id="metal23" objectID1="se4" objectID2="se23" relType="SUBCOREFERENCE" toID="se23" toText=""/>
+<METALINK comment="" fromID="se5" fromText="me" id="metal24" objectID1="se5" objectID2="se23" relType="SUBCOREFERENCE" toID="se23" toText=""/>
+<METALINK comment="" fromID="se7" fromText="Wouter" id="metal25" objectID1="se7" objectID2="se24" relType="SUBCOREFERENCE" toID="se24" toText=""/>
+<METALINK comment="" fromID="se0" fromText="I" id="metal26" objectID1="se0" objectID2="se24" relType="SUBCOREFERENCE" toID="se24" toText=""/>
+<METALINK comment="" fromID="se25" fromText="I" id="metal27" objectID1="se25" objectID2="se0" relType="COREFERENCE" toID="se0" toText="I"/>
+<METALINK comment="" fromID="se26" fromText="I" id="metal28" objectID1="se26" objectID2="se0" relType="COREFERENCE" toID="se0" toText="I"/>
+<METALINK comment="" fromID="se27" fromText="I" id="metal29" objectID1="se27" objectID2="se0" relType="COREFERENCE" toID="se0" toText="I"/>
+<METALINK comment="" fromID="se28" fromText="I" id="metal30" objectID1="se28" objectID2="se0" relType="COREFERENCE" toID="se0" toText="I"/>
+</TAGS>
+<TOKENS>
+<s>
+  <lex ner='O' begin='1' end='6' pos='NNP' label='None'>South</lex>
+  <lex ner='O' begin='7' end='11' pos='IN' label='None'>into</lex>
+  <lex ner='LOCATION' begin='12' end='21' pos='NNP' label='None'>Argentina</lex>
+  <lex ner='O' begin='22' end='28' pos='NNP' label='None'>Monday</lex>
+  <lex begin='28' end='29'>,</lex>
+  <lex ner='O' begin='30' end='38' pos='NNP' label='None'>December</lex>
+  <lex ner='O' begin='39' end='43' pos='JJ' label='None'>11th</lex>
+  <lex begin='43' end='44'>,</lex>
+  <lex ner='O' begin='45' end='49' pos='CD' label='None'>2006</lex>
+  <lex ner='O' begin='54' end='55' pos='PRP' label='SPATIAL_ENTITY'>I</lex>
+  <lex ner='O' begin='56' end='61' pos='VBD' label='NONMOTION_EVENT'>spent</lex>
+  <lex ner='O' begin='62' end='63' pos='DT' label='None'>a</lex>
+  <lex ner='O' begin='64' end='68' pos='NN' label='None'>week</lex>
+  <lex ner='O' begin='69' end='71' pos='IN' label='SPATIAL_SIGNAL'>in</lex>
+  <lex ner='LOCATION' begin='72' end='74' pos='NNP' label='PLACE'>La</lex>
+  <lex ner='LOCATION' begin='75' end='78' pos='NNP' label='PLACE'>Paz</lex>
+  <lex begin='78' end='79'>,</lex>
+  <lex ner='O' begin='80' end='85' pos='WRB' label='SPATIAL_SIGNAL'>where</lex>
+  <lex ner='O' begin='86' end='87' pos='PRP' label='SPATIAL_ENTITY'>I</lex>
+  <lex ner='O' begin='88' end='94' pos='VBD' label='NONMOTION_EVENT'>talked</lex>
+  <lex ner='O' begin='95' end='97' pos='TO' label='None'>to</lex>
+  <lex ner='O' begin='98' end='104' pos='RB' label='None'>almost</lex>
+  <lex ner='O' begin='105' end='108' pos='DT' label='None'>the</lex>
+  <lex ner='O' begin='109' end='115' pos='JJ' label='None'>entire</lex>
+  <lex ner='ORGANIZATION' begin='116' end='124' pos='NNP' label='None'>American</lex>
+  <lex ner='ORGANIZATION' begin='125' end='131' pos='NNP' label='None'>School</lex>
+  <lex begin='131' end='132'>.</lex>
+</s>
+<s>
+  <lex ner='O' begin='133' end='134' pos='PRP' label='SPATIAL_ENTITY'>I</lex>
+  <lex ner='O' begin='135' end='139' pos='RB' label='None'>also</lex>
+  <lex ner='O' begin='140' end='147' pos='RB' label='None'>somehow</lex>
+  <lex ner='O' begin='148' end='155' pos='VBD' label='None'>managed</lex>
+  <lex ner='O' begin='156' end='158' pos='TO' label='None'>to</lex>
+  <lex ner='O' begin='159' end='162' pos='VB' label='None'>get</lex>
+  <lex ner='O' begin='163' end='165' pos='IN' label='None'>in</lex>
+  <lex ner='O' begin='166' end='169' pos='CD' label='None'>two</lex>
+  <lex ner='O' begin='170' end='175' pos='JJ' label='None'>major</lex>
+  <lex ner='O' begin='176' end='186' pos='NNS' label='None'>newspapers</lex>
+  <lex begin='186' end='187'>,</lex>
+  <lex ner='O' begin='188' end='193' pos='CD' label='None'>three</lex>
+  <lex ner='O' begin='194' end='199' pos='NN' label='None'>radio</lex>
+  <lex ner='O' begin='200' end='208' pos='NNS' label='None'>stations</lex>
+  <lex begin='208' end='209'>,</lex>
+  <lex ner='O' begin='210' end='213' pos='CC' label='None'>and</lex>
+  <lex ner='O' begin='214' end='215' pos='DT' label='None'>a</lex>
+  <lex ner='O' begin='216' end='223' pos='NN' label='None'>morning</lex>
+  <lex ner='O' begin='224' end='228' pos='JJ' label='None'>live</lex>
+  <lex ner='O' begin='229' end='238' pos='NN' label='None'>interview</lex>
+  <lex ner='O' begin='239' end='241' pos='IN' label='None'>on</lex>
+  <lex ner='O' begin='242' end='250' pos='JJ' label='None'>national</lex>
+  <lex ner='O' begin='251' end='261' pos='NN' label='None'>television</lex>
+  <lex begin='262' end='263'>(</lex>
+  <lex ner='O' begin='263' end='266' pos='DT' label='None'>the</lex>
+  <lex ner='O' begin='267' end='274' pos='NN' label='None'>program</lex>
+  <lex begin='275' end='280'>â€˜Al</lex>
+  <lex begin='281' end='294'>Despertar,â€™</lex>
+  <lex begin='295' end='298'>for</lex>
+  <lex begin='299' end='304'>those</lex>
+  <lex begin='305' end='307'>of</lex>
+  <lex begin='308' end='311'>you</lex>
+  <lex begin='312' end='315'>who</lex>
+  <lex begin='316' end='320'>tune</lex>
+  <lex begin='321' end='325'>into</lex>
+  <lex begin='326' end='334'>Bolivian</lex>
+  <lex begin='335' end='346'>television…</lex>
+  <lex begin='346' end='347'>)</lex>
+  <lex begin='357' end='361'>From</lex>
+  <lex begin='362' end='364'>La</lex>
+  <lex begin='365' end='368'>Paz</lex>
+  <lex begin='368' end='369'>,</lex>
+  <lex begin='370' end='371'>I</lex>
+  <lex begin='372' end='381'>basically</lex>
+  <lex begin='382' end='389'>started</lex>
+  <lex begin='390' end='396'>biking</lex>
+  <lex begin='397' end='402'>south</lex>
+  <lex begin='403' end='405'>as</lex>
+  <lex begin='406' end='410'>fast</lex>
+  <lex begin='411' end='413'>as</lex>
+  <lex begin='414' end='415'>I</lex>
+  <lex begin='416' end='421'>could</lex>
+  <lex begin='421' end='422'>,</lex>
+  <lex begin='423' end='426'>and</lex>
+  <lex begin='427' end='428'>I</lex>
+  <lex begin='429' end='431'>am</lex>
+  <lex begin='432' end='435'>now</lex>
+  <lex begin='436' end='438'>in</lex>
+  <lex begin='439' end='447'>Northern</lex>
+  <lex begin='448' end='457'>Argentina</lex>
+  <lex begin='457' end='458'>.</lex>
+</s>
+<s>
+  <lex ner='O' begin='459' end='460' pos='PRP' label='SPATIAL_ENTITY'>I</lex>
+  <lex ner='O' begin='461' end='465' pos='VBP' label='None'>have</lex>
+  <lex ner='O' begin='466' end='470' pos='VBN' label='None'>been</lex>
+  <lex ner='O' begin='471' end='480' pos='VBG' label='MOTION'>traveling</lex>
+  <lex ner='O' begin='481' end='485' pos='RB' label='None'>fast</lex>
+  <lex ner='O' begin='486' end='489' pos='IN' label='None'>for</lex>
+  <lex ner='O' begin='490' end='491' pos='DT' label='None'>a</lex>
+  <lex ner='O' begin='492' end='495' pos='JJ' label='None'>few</lex>
+  <lex ner='O' begin='496' end='503' pos='NNS' label='None'>reasons</lex>
+  <lex ner='O' begin='504' end='505' pos='DT' label='None'>â</lex>
+  <lex begin='505' end='506'>€</lex>
+  <lex begin='506' end='507'>“</lex>
+  <lex ner='O' begin='508' end='511' pos='DT' label='None'>the</lex>
+  <lex ner='O' begin='512' end='515' pos='NN' label='None'>end</lex>
+  <lex ner='O' begin='516' end='518' pos='IN' label='None'>of</lex>
+  <lex ner='O' begin='519' end='522' pos='DT' label='None'>the</lex>
+  <lex ner='O' begin='523' end='529' pos='NN' label='None'>school</lex>
+  <lex ner='O' begin='530' end='534' pos='NN' label='None'>year</lex>
+  <lex begin='535' end='536'>(</lex>
+  <lex ner='O' begin='536' end='544' pos='JJ' label='None'>southern</lex>
+  <lex ner='O' begin='545' end='555' pos='NN' label='None'>hemisphere</lex>
+  <lex ner='O' begin='556' end='562' pos='NN' label='None'>summer</lex>
+  <lex begin='562' end='563'>)</lex>
+  <lex ner='O' begin='564' end='569' pos='VBZ' label='None'>means</lex>
+  <lex ner='O' begin='570' end='571' pos='PRP' label='None'>I</lex>
+  <lex ner='O' begin='572' end='574' pos='MD' label='None'>ca</lex>
+  <lex begin='574' end='579'>nâ€™t</lex>
+  <lex begin='580' end='584'>give</lex>
+  <lex begin='585' end='598'>presentations</lex>
+  <lex begin='598' end='599'>,</lex>
+  <lex begin='600' end='601'>I</lex>
+  <lex begin='602' end='606'>have</lex>
+  <lex begin='607' end='608'>a</lex>
+  <lex begin='609' end='615'>desire</lex>
+  <lex begin='616' end='618'>to</lex>
+  <lex begin='619' end='622'>not</lex>
+  <lex begin='623' end='625'>be</lex>
+  <lex begin='626' end='632'>rushed</lex>
+  <lex begin='633' end='638'>later</lex>
+  <lex begin='639' end='641'>in</lex>
+  <lex begin='642' end='645'>the</lex>
+  <lex begin='646' end='650'>trip</lex>
+  <lex begin='650' end='651'>,</lex>
+  <lex begin='652' end='655'>and</lex>
+  <lex begin='656' end='657'>I</lex>
+  <lex begin='658' end='662'>made</lex>
+  <lex begin='663' end='664'>a</lex>
+  <lex begin='665' end='672'>promise</lex>
+  <lex begin='673' end='675'>to</lex>
+  <lex begin='676' end='680'>meet</lex>
+  <lex begin='681' end='682'>a</lex>
+  <lex begin='683' end='689'>friend</lex>
+  <lex begin='690' end='693'>who</lex>
+  <lex begin='694' end='696'>is</lex>
+  <lex begin='697' end='703'>flying</lex>
+  <lex begin='704' end='706'>in</lex>
+  <lex begin='707' end='709'>to</lex>
+  <lex begin='710' end='714'>bike</lex>
+  <lex begin='715' end='719'>with</lex>
+  <lex begin='720' end='722'>me</lex>
+  <lex begin='722' end='723'>.</lex>
+</s>
+<s>
+  <lex ner='O' begin='731' end='734' pos='DT' label='None'>The</lex>
+  <lex ner='O' begin='735' end='742' pos='NN' label='None'>terrain</lex>
+  <lex ner='O' begin='743' end='746' pos='VBZ' label='None'>has</lex>
+  <lex ner='O' begin='747' end='751' pos='VBN' label='None'>been</lex>
+  <lex ner='O' begin='752' end='764' pos='JJ' label='None'>breathtaking</lex>
+  <lex begin='764' end='765'>.</lex>
+</s>
+<s>
+  <lex ner='O' begin='766' end='767' pos='PRP' label='SPATIAL_ENTITY'>I</lex>
+  <lex ner='O' begin='768' end='775' pos='VBD' label='MOTION'>crossed</lex>
+  <lex ner='O' begin='776' end='779' pos='DT' label='None'>the</lex>
+  <lex ner='O' begin='780' end='785' pos='NN' label='None'>world</lex>
+  <lex begin='785' end='789'>â€™s</lex>
+  <lex begin='790' end='797'>largest</lex>
+  <lex begin='798' end='802'>salt</lex>
+  <lex begin='803' end='807'>flat</lex>
+  <lex begin='807' end='808'>,</lex>
+  <lex begin='809' end='812'>and</lex>
+  <lex begin='813' end='818'>biked</lex>
+  <lex begin='819' end='825'>across</lex>
+  <lex begin='826' end='829'>the</lex>
+  <lex begin='830' end='837'>Atacama</lex>
+  <lex begin='838' end='844'>Desert</lex>
+  <lex begin='844' end='845'>,</lex>
+  <lex begin='846' end='854'>crossing</lex>
+  <lex begin='855' end='863'>sections</lex>
+  <lex begin='864' end='866'>of</lex>
+  <lex begin='867' end='870'>the</lex>
+  <lex begin='871' end='877'>desert</lex>
+  <lex begin='878' end='880'>by</lex>
+  <lex begin='881' end='890'>moonlight</lex>
+  <lex begin='890' end='891'>.</lex>
+</s>
+<s>
+  <lex ner='O' begin='892' end='897' pos='EX' label='None'>There</lex>
+  <lex ner='O' begin='898' end='902' pos='VBD' label='None'>were</lex>
+  <lex ner='O' begin='903' end='906' pos='JJ' label='None'>few</lex>
+  <lex ner='O' begin='907' end='915' pos='NNS' label='NONMOTION_EVENT'>services</lex>
+  <lex ner='O' begin='916' end='918' pos='IN' label='SPATIAL_SIGNAL'>on</lex>
+  <lex ner='O' begin='919' end='924' pos='DT' label='None'>these</lex>
+  <lex ner='O' begin='925' end='930' pos='NNS' label='PATH'>roads</lex>
+  <lex ner='O' begin='931' end='932' pos=':' label='None'>–</lex>
+  <lex ner='O' begin='933' end='935' pos='IN' label='SPATIAL_SIGNAL'>at</lex>
+  <lex ner='O' begin='936' end='939' pos='CD' label='None'>one</lex>
+  <lex ner='O' begin='940' end='945' pos='NN' label='PLACE'>point</lex>
+  <lex ner='O' begin='946' end='949' pos='VBD' label='None'>had</lex>
+  <lex ner='O' begin='950' end='952' pos='TO' label='None'>to</lex>
+  <lex ner='O' begin='953' end='958' pos='VB' label='NONMOTION_EVENT'>carry</lex>
+  <lex ner='O' begin='959' end='964' pos='NNS' label='None'>30lbs</lex>
+  <lex ner='O' begin='965' end='967' pos='IN' label='None'>of</lex>
+  <lex ner='O' begin='968' end='972' pos='NN' label='None'>food</lex>
+  <lex ner='O' begin='973' end='976' pos='CC' label='None'>and</lex>
+  <lex ner='O' begin='977' end='982' pos='NN' label='None'>water</lex>
+  <lex begin='982' end='983'>.</lex>
+</s>
+<s>
+  <lex ner='O' begin='984' end='989' pos='VB' label='None'>Click</lex>
+  <lex ner='O' begin='990' end='992' pos='IN' label='None'>on</lex>
+  <lex ner='O' begin='993' end='996' pos='DT' label='None'>the</lex>
+  <lex ner='O' begin='997' end='1003' pos='NNS' label='None'>images</lex>
+  <lex ner='O' begin='1004' end='1009' pos='IN' label='None'>below</lex>
+  <lex ner='O' begin='1010' end='1012' pos='TO' label='None'>to</lex>
+  <lex ner='O' begin='1013' end='1018' pos='VB' label='None'>visit</lex>
+  <lex ner='O' begin='1019' end='1022' pos='DT' label='None'>the</lex>
+  <lex ner='O' begin='1023' end='1028' pos='JJ' label='None'>photo</lex>
+  <lex ner='O' begin='1029' end='1035' pos='NNS' label='None'>albums</lex>
+  <lex ner='O' begin='1036' end='1038' pos='IN' label='None'>of</lex>
+  <lex ner='O' begin='1039' end='1042' pos='DT' label='None'>the</lex>
+  <lex ner='O' begin='1043' end='1047' pos='JJ' label='None'>past</lex>
+  <lex ner='O' begin='1048' end='1051' pos='JJ' label='None'>few</lex>
+  <lex ner='O' begin='1052' end='1057' pos='NNS' label='None'>weeks</lex>
+  <lex begin='1057' end='1058'>.</lex>
+</s>
+<s>
+  <lex ner='O' begin='1060' end='1068' pos='NNP' label='PLACE'>Southern</lex>
+  <lex ner='LOCATION' begin='1069' end='1076' pos='NNP' label='PLACE'>Bolivia</lex>
+  <lex begin='1076' end='1077'>,</lex>
+  <lex ner='O' begin='1078' end='1087' pos='VBG' label='SPATIAL_SIGNAL'>including</lex>
+  <lex ner='O' begin='1088' end='1091' pos='DT' label='None'>the</lex>
+  <lex ner='O' begin='1092' end='1097' pos='NN' label='None'>world</lex>
+  <lex begin='1097' end='1101'>â€™s</lex>
+  <lex begin='1102' end='1109'>largest</lex>
+  <lex begin='1110' end='1114'>salt</lex>
+  <lex begin='1115' end='1119'>flat</lex>
+  <lex begin='1120' end='1121'>(</lex>
+  <lex begin='1121' end='1126'>biked</lex>
+  <lex begin='1127' end='1136'>partially</lex>
+  <lex begin='1137' end='1141'>with</lex>
+  <lex begin='1142' end='1148'>Wouter</lex>
+  <lex begin='1148' end='1149'>)</lex>
+  <lex begin='1149' end='1150'>:</lex>
+  <lex begin='1153' end='1156'>The</lex>
+  <lex begin='1157' end='1164'>Atacama</lex>
+  <lex begin='1165' end='1171'>Desert</lex>
+  <lex begin='1172' end='1174'>of</lex>
+  <lex begin='1175' end='1180'>Chile</lex>
+  <lex begin='1180' end='1181'>,</lex>
+  <lex begin='1182' end='1191'>including</lex>
+  <lex begin='1192' end='1196'>some</lex>
+  <lex begin='1197' end='1207'>incredible</lex>
+  <lex begin='1208' end='1213'>night</lex>
+  <lex begin='1214' end='1220'>biking</lex>
+  <lex begin='1220' end='1221'>:</lex>
+  <lex begin='1224' end='1232'>Northern</lex>
+  <lex begin='1233' end='1242'>Argentina</lex>
+  <lex begin='1242' end='1243'>,</lex>
+  <lex begin='1244' end='1249'>where</lex>
+  <lex begin='1250' end='1251'>I</lex>
+  <lex begin='1252' end='1254'>am</lex>
+  <lex begin='1255' end='1258'>now</lex>
+  <lex begin='1258' end='1259'>.</lex>
+</s>
+<s>
+  <lex ner='O' begin='1260' end='1261' pos='PRP' label='SPATIAL_ENTITY'>I</lex>
+  <lex ner='O' begin='1262' end='1268' pos='VBD' label='MOTION'>caught</lex>
+  <lex ner='O' begin='1269' end='1271' pos='RP' label='MOTION'>up</lex>
+  <lex ner='O' begin='1272' end='1276' pos='IN' label='None'>with</lex>
+  <lex ner='PERSON' begin='1277' end='1283' pos='NNP' label='SPATIAL_ENTITY'>Brooks</lex>
+  <lex ner='O' begin='1284' end='1287' pos='CC' label='None'>and</lex>
+  <lex ner='PERSON' begin='1288' end='1293' pos='NNP' label='SPATIAL_ENTITY'>Gregg</lex>
+  <lex begin='1294' end='1295'>(</lex>
+  <lex ner='O' begin='1295' end='1298' pos='CC' label='None'>and</lex>
+  <lex ner='O' begin='1299' end='1306' pos='DT' label='None'>another</lex>
+  <lex ner='O' begin='1307' end='1314' pos='NN' label='SPATIAL_ENTITY'>cyclist</lex>
+  <lex ner='PERSON' begin='1315' end='1318' pos='NNP' label='SPATIAL_ENTITY'>Tom</lex>
+  <lex begin='1318' end='1319'>)</lex>
+  <lex begin='1319' end='1320'>.</lex>
+</s>
+<s>
+  <lex ner='O' begin='1321' end='1329' pos='VB' label='None'>Remember</lex>
+  <lex ner='PERSON' begin='1330' end='1335' pos='NNP' label='SPATIAL_ENTITY'>Gregg</lex>
+  <lex ner='O' begin='1336' end='1339' pos='CC' label='None'>and</lex>
+  <lex ner='PERSON' begin='1340' end='1346' pos='NNP' label='SPATIAL_ENTITY'>Brooks</lex>
+  <lex begin='1346' end='1347'>?</lex>
+</s>
+<lex begin='1348' end='1349'>I</lex>
+<lex begin='1350' end='1355'>biked</lex>
+<lex begin='1356' end='1362'>across</lex>
+<lex begin='1363' end='1371'>sections</lex>
+<lex begin='1372' end='1374'>of</lex>
+<lex begin='1375' end='1381'>Mexico</lex>
+<lex begin='1382' end='1386'>with</lex>
+<lex begin='1387' end='1391'>them</lex>
+<lex begin='1391' end='1392'>,</lex>
+<lex begin='1393' end='1396'>and</lex>
+<lex begin='1397' end='1401'>just</lex>
+<lex begin='1402' end='1405'>ran</lex>
+<lex begin='1406' end='1410'>into</lex>
+<lex begin='1411' end='1415'>them</lex>
+<lex begin='1416' end='1421'>again</lex>
+<lex begin='1421' end='1422'>:</lex>
+</TOKENS>
+
+</SpaceEvalTaskv1.2>

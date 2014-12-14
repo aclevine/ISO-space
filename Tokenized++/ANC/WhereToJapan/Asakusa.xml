@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<SpaceEvalTaskv1.2>
+<TEXT><![CDATA[        Asakusa
+        Asakusa is the heart of Shitamachi, the quarter
+        best-beloved of that fractious, gossipy, prodigal population called the
+        Edokko, who trace their “downtown” roots back at least three
+        generations. Edokko are suckers for sentimentality and for ninjo: the
+        web of small favors and kindnesses that bind them together. Sneeze in
+        the middle of the night and your Edokko neighbor will demand the next
+        morning that you take better care of yourself; stay home with a fever
+        and she will be over by noon with a bowl of soup. An Edokko craftsman
+        would rather lose a commission than take any guff from a customer who
+        doesn’t know good work when he sees it. Edokko quarrel in a language
+        all their own, an earthy local dialect as profane and expressive as
+        Brooklynese. Ignore the proprieties — or offend the pride of an
+        Edokko — and he will let you know about it, in no uncertain terms;
+        respect his sense of values and you make a friend for life.
+        The heart of Asakusa, in turn, is Sensoji (also known as
+        the Asakusa Kannon temple). According to legend, the temple houses a
+        small statue of the Buddhist goddess of mercy, found in the Sumida
+        River by two local fishermen in the year 628 — but in fact not even the
+        temple priests have ever seen it. When Edo became the capital of the
+        Tokugawa shogunate, Asakusa began to flourish as an entertainment
+        quarter. In the early-19th century even the kabuki theaters were
+        located here. The Meiji Restoration and the opening of Japan to exotic
+        new Western-style amusements further enhanced Asakusa’s reputation as
+        Fun City. The first place in Japan to call itself a “bar” opened in
+        Asakusa in 1880 (and is still doing business); the first movie theater
+        opened here in 1903. Before long, the streets and alleys around the
+        temple were filled with music halls, burlesque theaters, cabarets,
+        gambling dens, and watering holes of every description.
+        Most of the temple quarter was firebombed to ashes in 1945,
+        but by 1958 the people of the area had raised enough money to rebuild
+        Sensoji and all of the important structures around it. So what if the
+        restorations were in concrete? The original is still there in
+        spirit — and no visitor should neglect it.
+]]></TEXT>
+<TAGS>
+<PLACE comment="" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="1074" form="NOM" gazref="" gquant="" id="pl2681" latLong="" mod="" scopes="" start="1069" state="" text="heart" type=""/>
+<PLACE comment="" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="1085" form="NOM" gazref="" gquant="" id="pl94" latLong="" mod="" scopes="" start="1078" state="" text="Asakusa" type=""/>
+<PLACE comment="" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="1106" form="NAM" gazref="" gquant="" id="pl143" latLong="" mod="" scopes="" start="1099" state="" text="Sensoji" type=""/>
+<PLACE comment="" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="1155" form="NAM" gazref="" gquant="" id="pl144" latLong="" mod="" scopes="" start="1134" state="" text="Asakusa Kannon temple" type=""/>
+<PLACE comment="" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="1189" form="NOM" gazref="" gquant="" id="pl145" latLong="" mod="" scopes="" start="1183" state="" text="temple" type=""/>
+<PLACE comment="" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="1404" form="NAM" gazref="" gquant="" id="pl146" latLong="" mod="" scopes="" start="1401" state="" text="Edo" type=""/>
+<PLACE comment="" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="1466" form="NAM" gazref="" gquant="" id="pl147" latLong="" mod="" scopes="" start="1459" state="" text="Asakusa" type=""/>
+<PLACE comment="" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="1572" form="NOM" gazref="" gquant="" id="pl148" latLong="" mod="" scopes="" start="1564" state="" text="theaters" type=""/>
+<PLACE comment="" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="1598" form="NOM" gazref="" gquant="" id="pl149" latLong="" mod="" scopes="" start="1594" state="" text="here" type=""/>
+<PLACE comment="" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="POINT" domain="" elevation="" end="1646" form="NAM" gazref="" gquant="" id="pl150" latLong="" mod="" scopes="" start="1641" state="" text="Japan" type=""/>
+<PLACE comment="" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="POINT" domain="" elevation="" end="1718" form="NAM" gazref="" gquant="" id="pl2" latLong="" mod="" scopes="" start="1711" state="" text="Asakusa" type=""/>
+<PLACE comment="" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="POINT" domain="" elevation="" end="1751" form="NAM" gazref="" gquant="" id="pl3" latLong="" mod="" scopes="" start="1743" state="" text="Fun City" type=""/>
+<PLACE comment="" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="1768" form="NOM" gazref="" gquant="" id="pl151" latLong="" mod="" scopes="" start="1763" state="" text="place" type=""/>
+<PLACE comment="" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="1777" form="NAM" gazref="" gquant="" id="pl152" latLong="" mod="" scopes="" start="1772" state="" text="Japan" type=""/>
+<PLACE comment="" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="1799" form="NOM" gazref="" gquant="" id="pl153" latLong="" mod="" scopes="" start="1796" state="" text="bar" type=""/>
+<PLACE comment="" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="1826" form="NAM" gazref="" gquant="" id="pl154" latLong="" mod="" scopes="" start="1819" state="" text="Asakusa" type=""/>
+<PLACE comment="" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="1909" form="NOM" gazref="" gquant="" id="pl156" latLong="" mod="" scopes="" start="1905" state="" text="here" type=""/>
+<PLACE comment="" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="VOLUME" domain="" elevation="" end="1980" form="NOM" gazref="" gquant="" id="pl157" latLong="" mod="" scopes="" start="1974" state="" text="temple" type=""/>
+<PLACE comment="" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="VOLUME" domain="" elevation="" end="2009" form="NOM" gazref="" gquant="" id="pl158" latLong="" mod="" scopes="" start="2004" state="" text="halls" type=""/>
+<PLACE comment="" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="VOLUME" domain="" elevation="" end="2029" form="NOM" gazref="" gquant="" id="pl159" latLong="" mod="" scopes="" start="2021" state="" text="theaters" type=""/>
+<PLACE comment="" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="VOLUME" domain="" elevation="" end="2039" form="NOM" gazref="" gquant="" id="pl160" latLong="" mod="" scopes="" start="2031" state="" text="cabarets" type=""/>
+<PLACE comment="" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="VOLUME" domain="" elevation="" end="2062" form="NOM" gazref="" gquant="" id="pl161" latLong="" mod="" scopes="" start="2058" state="" text="dens" type=""/>
+<PLACE comment="" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="VOLUME" domain="" elevation="" end="2082" form="NOM" gazref="" gquant="" id="pl162" latLong="" mod="" scopes="" start="2077" state="" text="holes" type=""/>
+<PLACE comment="" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="VOLUME" domain="" elevation="" end="2266" form="NAM" gazref="" gquant="" id="pl163" latLong="" mod="" scopes="" start="2259" state="" text="Sensoji" type=""/>
+<PLACE comment="" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="VOLUME" domain="" elevation="" end="2312" form="NOM" gazref="" gquant="" id="pl164" latLong="" mod="" scopes="" start="2310" state="" text="it" type=""/>
+<PLACE comment="" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="2395" form="NOM" gazref="" gquant="" id="pl166" latLong="" mod="" scopes="" start="2390" state="" text="there" type=""/>
+<PLACE comment="" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="31" form="NAM" gazref="" gquant="" id="pl138" latLong="" mod="" scopes="" start="24" state="" text="Asakusa" type=""/>
+<PLACE comment="" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="44" form="NOM" gazref="" gquant="" id="pl142" latLong="" mod="" scopes="" start="39" state="" text="heart" type=""/>
+<PLACE comment="" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="58" form="NAM" gazref="" gquant="" id="pl139" latLong="" mod="" scopes="" start="48" state="" text="Shitamachi" type=""/>
+<PLACE comment="" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="519" form="NOM" gazref="" gquant="" id="pl141" latLong="" mod="" scopes="" start="515" state="" text="home" type=""/>
+<PLACE comment="" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="71" form="NOM" gazref="" gquant="" id="pl140" latLong="" mod="" scopes="" start="64" state="" text="quarter" type=""/>
+<PLACE comment="" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="POINT" domain="" elevation="" end="15" form="NAM" gazref="" gquant="" id="pl137" latLong="" mod="" scopes="" start="8" state="" text="Asakusa" type=""/>
+<PLACE comment="The set subsuming [halls, pl158], [theaters, pl159], [cabarets, pl160], [dens, pl161], and [holes, pl162] in 'Before long, the streets and alleys around the         temple were filled with music halls, burlesque theaters, cabarets,         gambling dens, and watering holes of every description.'" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="-1" form="NOM" gazref="" gquant="" id="pl4" latLong="" mod="" scopes="" start="-1" state="" text="" type=""/>
+<PATH beginID="" comment="" countable="TRUE" dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="1287" endID="" form="NAM" gazref="" gquant="" id="p9" latLong="" midIDs="" mod="" scopes="" start="1267" text="Sumida         River" type=""/>
+<PATH beginID="" comment="" countable="TRUE" dcl="FALSE" dimensionality="VOLUME" domain="" elevation="" end="1943" endID="" form="NOM" gazref="" gquant="" id="p10" latLong="" midIDs="" mod="" scopes="" start="1936" text="streets" type=""/>
+<PATH beginID="" comment="" countable="TRUE" dcl="FALSE" dimensionality="VOLUME" domain="" elevation="" end="1954" endID="" form="NOM" gazref="" gquant="" id="p11" latLong="" midIDs="" mod="" scopes="" start="1948" text="alleys" type=""/>
+<PATH beginID="" comment="The set subsuming [streets, p10] and [alleys, p11] in 'Before long, the streets and alleys around the         temple were filled with music halls, burlesque theaters, cabarets,         gambling dens, and watering holes of every description.'" countable="TRUE" dcl="FALSE" dimensionality="LINE" domain="" elevation="" end="-1" endID="" form="NOM" gazref="" gquant="" id="p0" latLong="" midIDs="" mod="" scopes="" start="-1" text="" type=""/>
+<SPATIAL_ENTITY comment="" countable="TRUE" dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="1219" form="NOM" gquant="" id="se39" latLong="" mod="small" scopes="" start="1213" text="statue" type=""/>
+<SPATIAL_ENTITY comment="" countable="TRUE" dcl="FALSE" dimensionality="VOLUME" domain="" elevation="" end="2302" form="NOM" gquant="" id="se45" latLong="" mod="" scopes="" start="2292" text="structures" type=""/>
+<SPATIAL_ENTITY comment="" countable="TRUE" dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="548" form="NOM" gquant="" id="se41" latLong="" mod="" scopes="" start="545" text="she" type=""/>
+<NONMOTION_EVENT comment="" countable="" domain="" elevation="" end="1259" gquant="" id="e11" latLong="" mod="" scopes="" start="1254" text="found"/>
+<NONMOTION_EVENT comment="" countable="" domain="" elevation="" end="1807" gquant="" id="e320" latLong="" mod="" scopes="" start="1801" text="opened"/>
+<NONMOTION_EVENT comment="" countable="" domain="" elevation="" end="1904" gquant="" id="e321" latLong="" mod="" scopes="" start="1898" text="opened"/>
+<NONMOTION_EVENT comment="" countable="" domain="" elevation="" end="514" gquant="" id="e10" latLong="" mod="" scopes="" start="510" text="stay"/>
+<MOTION comment="" countable="" domain="" elevation="" end="556" gquant="" id="m0" latLong="" mod="" motion_class="REACH" motion_sense="LITERAL" motion_type="PATH" scopes="" start="554" text="be"/>
+<SPATIAL_SIGNAL cluster="" comment="" end="1196" id="s1034" semantic_type="TOPOLOGICAL" start="1190" text="houses"/>
+<SPATIAL_SIGNAL cluster="" comment="" end="1262" id="s41" semantic_type="TOPOLOGICAL" start="1260" text="in"/>
+<SPATIAL_SIGNAL cluster="" comment="" end="1771" id="s43" semantic_type="TOPOLOGICAL" start="1769" text="in"/>
+<SPATIAL_SIGNAL cluster="" comment="" end="1810" id="s44" semantic_type="TOPOLOGICAL" start="1808" text="in"/>
+<SPATIAL_SIGNAL cluster="" comment="" end="1961" id="s45" semantic_type="DIRECTIONAL" start="1955" text="around"/>
+<SPATIAL_SIGNAL cluster="" comment="" end="1992" id="s46" semantic_type="TOPOLOGICAL" start="1986" text="filled"/>
+<MOTION_SIGNAL comment="" end="561" id="ms0" motion_signal_type="PATH" start="557" text="over"/>
+<MEASURE comment="" end="2309" id="me0" start="2303" text="around" unit="" value="NEAR"/>
+<QSLINK comment="" fromID="pl142" fromText="heart" id="qsl0" landmark="pl139" relType="NTPP" toID="pl139" toText="Shitamachi" trajector="pl142" trigger=""/>
+<QSLINK comment="" fromID="e10" fromText="stay" id="qsl1" landmark="pl141" relType="IN" toID="pl141" toText="home" trajector="e10" trigger=""/>
+<QSLINK comment="" fromID="pl2681" fromText="heart" id="qsl2" landmark="pl94" relType="NTPP" toID="pl94" toText="Asakusa" trajector="pl2681" trigger=""/>
+<QSLINK comment="" fromID="se39" fromText="statue" id="qsl3" landmark="pl145" relType="IN" toID="pl145" toText="temple" trajector="se39" trigger="s1034"/>
+<QSLINK comment="" fromID="e11" fromText="found" id="qsl4" landmark="p9" relType="IN" toID="p9" toText="Sumida         River" trajector="e11" trigger="s41"/>
+<QSLINK comment="" fromID="pl148" fromText="theaters" id="qsl5" landmark="pl149" relType="IN" toID="pl149" toText="here" trajector="pl148" trigger=""/>
+<QSLINK comment="" fromID="pl151" fromText="place" id="qsl6" landmark="pl152" relType="IN" toID="pl152" toText="Japan" trajector="pl151" trigger="s43"/>
+<QSLINK comment="" fromID="e320" fromText="opened" id="qsl7" landmark="pl154" relType="IN" toID="pl154" toText="Asakusa" trajector="e320" trigger="s44"/>
+<QSLINK comment="" fromID="e321" fromText="opened" id="qsl8" landmark="pl156" relType="IN" toID="pl156" toText="here" trajector="e321" trigger=""/>
+<QSLINK comment="" fromID="pl4" fromText="" id="qsl9" landmark="p0" relType="EC" toID="p0" toText="" trajector="pl4" trigger="s46"/>
+<OLINK comment="" frame_type="INTRINSIC" fromID="p0" fromText="" id="ol0" landmark="pl157" projective="FALSE" referencePt="pl157" relType="SURROUND" toID="pl157" toText="temple" trajector="p0" trigger="s45"/>
+<MOVELINK comment="" fromID="m0" fromText="be" goal="pl141" goal_reached="YES" id="mvl1" landmark="" midPoint="" motion_signalID="ms0" mover="se41" pathID="" source="" toID="se41" toText="she" trigger="m0"/>
+<MEASURELINK comment="" endPoint1="" endPoint2="" fromID="se45" fromText="structures" id="ml0" landmark="pl164" relType="DISTANCE" toID="pl164" toText="it" trajector="se45" val="me0"/>
+<METALINK comment="" fromID="pl138" fromText="Asakusa" id="metal0" objectID1="pl138" objectID2="pl137" relType="COREFERENCE" toID="pl137" toText="Asakusa"/>
+<METALINK comment="" fromID="pl142" fromText="heart" id="metal1" objectID1="pl142" objectID2="pl137" relType="COREFERENCE" toID="pl137" toText="Asakusa"/>
+<METALINK comment="" fromID="pl143" fromText="Sensoji" id="metal2" objectID1="pl143" objectID2="pl2681" relType="COREFERENCE" toID="pl2681" toText="heart"/>
+<METALINK comment="" fromID="pl144" fromText="Asakusa Kannon temple" id="metal3" objectID1="pl144" objectID2="pl2681" relType="COREFERENCE" toID="pl2681" toText="heart"/>
+<METALINK comment="" fromID="pl147" fromText="Asakusa" id="metal5" objectID1="pl147" objectID2="pl137" relType="COREFERENCE" toID="pl137" toText="Asakusa"/>
+<METALINK comment="" fromID="pl2" fromText="Asakusa" id="metal6" objectID1="pl2" objectID2="pl137" relType="COREFERENCE" toID="pl137" toText="Asakusa"/>
+<METALINK comment="" fromID="pl3" fromText="Fun City" id="metal7" objectID1="pl3" objectID2="pl137" relType="COREFERENCE" toID="pl137" toText="Asakusa"/>
+<METALINK comment="" fromID="pl152" fromText="Japan" id="metal8" objectID1="pl152" objectID2="pl150" relType="COREFERENCE" toID="pl150" toText="Japan"/>
+<METALINK comment="" fromID="pl153" fromText="bar" id="metal9" objectID1="pl153" objectID2="pl151" relType="COREFERENCE" toID="pl151" toText="place"/>
+<METALINK comment="" fromID="pl154" fromText="Asakusa" id="metal10" objectID1="pl154" objectID2="pl137" relType="COREFERENCE" toID="pl137" toText="Asakusa"/>
+<METALINK comment="" fromID="pl156" fromText="here" id="metal11" objectID1="pl156" objectID2="pl137" relType="COREFERENCE" toID="pl137" toText="Asakusa"/>
+<METALINK comment="" fromID="pl166" fromText="there" id="metal12" objectID1="pl166" objectID2="pl163" relType="COREFERENCE" toID="pl163" toText="Sensoji"/>
+<METALINK comment="" fromID="pl164" fromText="it" id="metal13" objectID1="pl163" objectID2="pl164" relType="COREFERENCE" toID="pl163" toText="Sensoji"/>
+</TAGS>
+<TOKENS>
+<s>
+  <lex ner='PERSON' begin='8' end='15' pos='NNP' label='PLACE'>Asakusa</lex>
+  <lex ner='PERSON' begin='24' end='31' pos='NNP' label='PLACE'>Asakusa</lex>
+  <lex ner='O' begin='32' end='34' pos='VBZ' label='None'>is</lex>
+  <lex ner='O' begin='35' end='38' pos='DT' label='None'>the</lex>
+  <lex ner='O' begin='39' end='44' pos='NN' label='PLACE'>heart</lex>
+  <lex ner='O' begin='45' end='47' pos='IN' label='None'>of</lex>
+  <lex ner='O' begin='48' end='58' pos='NNP' label='PLACE'>Shitamachi</lex>
+  <lex begin='58' end='59'>,</lex>
+  <lex ner='O' begin='60' end='63' pos='DT' label='None'>the</lex>
+  <lex ner='O' begin='64' end='71' pos='NN' label='PLACE'>quarter</lex>
+  <lex ner='O' begin='80' end='92' pos='JJ' label='None'>best-beloved</lex>
+  <lex ner='O' begin='93' end='95' pos='IN' label='None'>of</lex>
+  <lex ner='O' begin='96' end='100' pos='DT' label='None'>that</lex>
+  <lex ner='O' begin='101' end='110' pos='JJ' label='None'>fractious</lex>
+  <lex begin='110' end='111'>,</lex>
+  <lex ner='O' begin='112' end='119' pos='JJ' label='None'>gossipy</lex>
+  <lex begin='119' end='120'>,</lex>
+  <lex ner='O' begin='121' end='129' pos='JJ' label='None'>prodigal</lex>
+  <lex ner='O' begin='130' end='140' pos='NN' label='None'>population</lex>
+  <lex ner='O' begin='141' end='147' pos='VBN' label='None'>called</lex>
+  <lex ner='O' begin='148' end='151' pos='DT' label='None'>the</lex>
+  <lex ner='O' begin='160' end='166' pos='NNP' label='None'>Edokko</lex>
+  <lex begin='166' end='167'>,</lex>
+  <lex ner='O' begin='168' end='171' pos='WP' label='None'>who</lex>
+  <lex ner='O' begin='172' end='177' pos='VBP' label='None'>trace</lex>
+  <lex ner='O' begin='178' end='183' pos='PRP$' label='None'>their</lex>
+  <lex begin='184' end='185'>“</lex>
+  <lex ner='O' begin='185' end='193' pos='NN' label='None'>downtown</lex>
+  <lex begin='193' end='194'>”</lex>
+  <lex ner='O' begin='195' end='200' pos='NNS' label='None'>roots</lex>
+  <lex ner='O' begin='201' end='205' pos='RB' label='None'>back</lex>
+  <lex ner='O' begin='206' end='208' pos='IN' label='None'>at</lex>
+  <lex ner='O' begin='209' end='214' pos='JJS' label='None'>least</lex>
+  <lex ner='O' begin='215' end='220' pos='CD' label='None'>three</lex>
+  <lex ner='O' begin='229' end='240' pos='NNS' label='None'>generations</lex>
+  <lex begin='240' end='241'>.</lex>
+</s>
+<s>
+  <lex ner='O' begin='242' end='248' pos='NNP' label='None'>Edokko</lex>
+  <lex ner='O' begin='249' end='252' pos='VBP' label='None'>are</lex>
+  <lex ner='O' begin='253' end='260' pos='NNS' label='None'>suckers</lex>
+  <lex ner='O' begin='261' end='264' pos='IN' label='None'>for</lex>
+  <lex ner='O' begin='265' end='279' pos='NN' label='None'>sentimentality</lex>
+  <lex ner='O' begin='280' end='283' pos='CC' label='None'>and</lex>
+  <lex ner='O' begin='284' end='287' pos='IN' label='None'>for</lex>
+  <lex ner='O' begin='288' end='293' pos='NN' label='None'>ninjo</lex>
+  <lex begin='293' end='294'>:</lex>
+  <lex ner='O' begin='295' end='298' pos='DT' label='None'>the</lex>
+  <lex ner='O' begin='307' end='310' pos='NN' label='None'>web</lex>
+  <lex ner='O' begin='311' end='313' pos='IN' label='None'>of</lex>
+  <lex ner='O' begin='314' end='319' pos='JJ' label='None'>small</lex>
+  <lex ner='O' begin='320' end='326' pos='NNS' label='None'>favors</lex>
+  <lex ner='O' begin='327' end='330' pos='CC' label='None'>and</lex>
+  <lex ner='O' begin='331' end='341' pos='NNS' label='None'>kindnesses</lex>
+  <lex ner='O' begin='342' end='346' pos='IN' label='None'>that</lex>
+  <lex ner='O' begin='347' end='351' pos='NN' label='None'>bind</lex>
+  <lex ner='O' begin='352' end='356' pos='PRP' label='None'>them</lex>
+  <lex ner='O' begin='357' end='365' pos='RB' label='None'>together</lex>
+  <lex begin='365' end='366'>.</lex>
+</s>
+<s>
+  <lex ner='O' begin='367' end='373' pos='VB' label='None'>Sneeze</lex>
+  <lex ner='O' begin='374' end='376' pos='IN' label='None'>in</lex>
+  <lex ner='O' begin='385' end='388' pos='DT' label='None'>the</lex>
+  <lex ner='O' begin='389' end='395' pos='NN' label='None'>middle</lex>
+  <lex ner='O' begin='396' end='398' pos='IN' label='None'>of</lex>
+  <lex ner='O' begin='399' end='402' pos='DT' label='None'>the</lex>
+  <lex ner='O' begin='403' end='408' pos='NN' label='None'>night</lex>
+  <lex ner='O' begin='409' end='412' pos='CC' label='None'>and</lex>
+  <lex ner='O' begin='413' end='417' pos='PRP$' label='None'>your</lex>
+  <lex ner='O' begin='418' end='424' pos='NNP' label='None'>Edokko</lex>
+  <lex ner='O' begin='425' end='433' pos='NN' label='None'>neighbor</lex>
+  <lex ner='O' begin='434' end='438' pos='MD' label='None'>will</lex>
+  <lex ner='O' begin='439' end='445' pos='VB' label='None'>demand</lex>
+  <lex ner='O' begin='446' end='449' pos='DT' label='None'>the</lex>
+  <lex ner='O' begin='450' end='454' pos='JJ' label='None'>next</lex>
+  <lex ner='O' begin='463' end='470' pos='NN' label='None'>morning</lex>
+  <lex ner='O' begin='471' end='475' pos='IN' label='None'>that</lex>
+  <lex ner='O' begin='476' end='479' pos='PRP' label='None'>you</lex>
+  <lex ner='O' begin='480' end='484' pos='VBP' label='None'>take</lex>
+  <lex ner='O' begin='485' end='491' pos='JJR' label='None'>better</lex>
+  <lex ner='O' begin='492' end='496' pos='NN' label='None'>care</lex>
+  <lex ner='O' begin='497' end='499' pos='IN' label='None'>of</lex>
+  <lex ner='O' begin='500' end='508' pos='PRP' label='None'>yourself</lex>
+  <lex begin='508' end='509'>;</lex>
+  <lex ner='O' begin='510' end='514' pos='VBP' label='NONMOTION_EVENT'>stay</lex>
+  <lex ner='O' begin='515' end='519' pos='NN' label='PLACE'>home</lex>
+  <lex ner='O' begin='520' end='524' pos='IN' label='None'>with</lex>
+  <lex ner='O' begin='525' end='526' pos='DT' label='None'>a</lex>
+  <lex ner='O' begin='527' end='532' pos='NN' label='None'>fever</lex>
+  <lex ner='O' begin='541' end='544' pos='CC' label='None'>and</lex>
+  <lex ner='O' begin='545' end='548' pos='PRP' label='SPATIAL_ENTITY'>she</lex>
+  <lex ner='O' begin='549' end='553' pos='MD' label='None'>will</lex>
+  <lex ner='O' begin='554' end='556' pos='VB' label='MOTION'>be</lex>
+  <lex ner='O' begin='557' end='561' pos='RP' label='MOTION_SIGNAL'>over</lex>
+  <lex ner='O' begin='562' end='564' pos='IN' label='None'>by</lex>
+  <lex ner='O' begin='565' end='569' pos='NN' label='None'>noon</lex>
+  <lex ner='O' begin='570' end='574' pos='IN' label='None'>with</lex>
+  <lex ner='O' begin='575' end='576' pos='DT' label='None'>a</lex>
+  <lex ner='O' begin='577' end='581' pos='NN' label='None'>bowl</lex>
+  <lex ner='O' begin='582' end='584' pos='IN' label='None'>of</lex>
+  <lex ner='O' begin='585' end='589' pos='NN' label='None'>soup</lex>
+  <lex begin='589' end='590'>.</lex>
+</s>
+<s>
+  <lex ner='O' begin='591' end='593' pos='DT' label='None'>An</lex>
+  <lex ner='O' begin='594' end='600' pos='NNP' label='None'>Edokko</lex>
+  <lex ner='O' begin='601' end='610' pos='NN' label='None'>craftsman</lex>
+  <lex ner='O' begin='619' end='624' pos='MD' label='None'>would</lex>
+  <lex ner='O' begin='625' end='631' pos='RB' label='None'>rather</lex>
+  <lex ner='O' begin='632' end='636' pos='VB' label='None'>lose</lex>
+  <lex ner='O' begin='637' end='638' pos='DT' label='None'>a</lex>
+  <lex ner='O' begin='639' end='649' pos='NN' label='None'>commission</lex>
+  <lex ner='O' begin='650' end='654' pos='IN' label='None'>than</lex>
+  <lex ner='O' begin='655' end='659' pos='VB' label='None'>take</lex>
+  <lex ner='O' begin='660' end='663' pos='DT' label='None'>any</lex>
+  <lex ner='O' begin='664' end='668' pos='NN' label='None'>guff</lex>
+  <lex ner='O' begin='669' end='673' pos='IN' label='None'>from</lex>
+  <lex ner='O' begin='674' end='675' pos='DT' label='None'>a</lex>
+  <lex ner='O' begin='676' end='684' pos='NN' label='None'>customer</lex>
+  <lex ner='O' begin='685' end='688' pos='WP' label='None'>who</lex>
+  <lex ner='O' begin='697' end='701' pos='VBZ' label='None'>does</lex>
+  <lex begin='701' end='704'>n’t</lex>
+  <lex begin='705' end='709'>know</lex>
+  <lex begin='710' end='714'>good</lex>
+  <lex begin='715' end='719'>work</lex>
+  <lex begin='720' end='724'>when</lex>
+  <lex begin='725' end='727'>he</lex>
+  <lex begin='728' end='732'>sees</lex>
+  <lex begin='733' end='735'>it</lex>
+  <lex begin='735' end='736'>.</lex>
+</s>
+<s>
+  <lex ner='O' begin='737' end='743' pos='NNP' label='None'>Edokko</lex>
+  <lex ner='O' begin='744' end='751' pos='VBP' label='None'>quarrel</lex>
+  <lex ner='O' begin='752' end='754' pos='IN' label='None'>in</lex>
+  <lex ner='O' begin='755' end='756' pos='DT' label='None'>a</lex>
+  <lex ner='O' begin='757' end='765' pos='NN' label='None'>language</lex>
+  <lex ner='O' begin='774' end='777' pos='DT' label='None'>all</lex>
+  <lex ner='O' begin='778' end='783' pos='PRP$' label='None'>their</lex>
+  <lex ner='O' begin='784' end='787' pos='JJ' label='None'>own</lex>
+  <lex begin='787' end='788'>,</lex>
+  <lex ner='O' begin='789' end='791' pos='DT' label='None'>an</lex>
+  <lex ner='O' begin='792' end='798' pos='JJ' label='None'>earthy</lex>
+  <lex ner='O' begin='799' end='804' pos='JJ' label='None'>local</lex>
+  <lex ner='O' begin='805' end='812' pos='NN' label='None'>dialect</lex>
+  <lex ner='O' begin='813' end='815' pos='IN' label='None'>as</lex>
+  <lex ner='O' begin='816' end='823' pos='JJ' label='None'>profane</lex>
+  <lex ner='O' begin='824' end='827' pos='CC' label='None'>and</lex>
+  <lex ner='O' begin='828' end='838' pos='JJ' label='None'>expressive</lex>
+  <lex ner='O' begin='839' end='841' pos='IN' label='None'>as</lex>
+  <lex ner='LOCATION' begin='850' end='861' pos='NN' label='None'>Brooklynese</lex>
+  <lex begin='861' end='862'>.</lex>
+</s>
+<s>
+  <lex ner='O' begin='863' end='869' pos='VB' label='None'>Ignore</lex>
+  <lex ner='O' begin='870' end='873' pos='DT' label='None'>the</lex>
+  <lex ner='O' begin='874' end='885' pos='NNS' label='None'>proprieties</lex>
+  <lex ner='O' begin='886' end='887' pos=':' label='None'>—</lex>
+  <lex ner='O' begin='888' end='890' pos='CC' label='None'>or</lex>
+  <lex ner='O' begin='891' end='897' pos='VB' label='None'>offend</lex>
+  <lex ner='O' begin='898' end='901' pos='DT' label='None'>the</lex>
+  <lex ner='O' begin='902' end='907' pos='NN' label='None'>pride</lex>
+  <lex ner='O' begin='908' end='910' pos='IN' label='None'>of</lex>
+  <lex ner='O' begin='911' end='913' pos='DT' label='None'>an</lex>
+  <lex ner='LOCATION' begin='922' end='928' pos='NNP' label='None'>Edokko</lex>
+  <lex ner='O' begin='929' end='930' pos=':' label='None'>—</lex>
+  <lex ner='O' begin='931' end='934' pos='CC' label='None'>and</lex>
+  <lex ner='O' begin='935' end='937' pos='PRP' label='None'>he</lex>
+  <lex ner='O' begin='938' end='942' pos='MD' label='None'>will</lex>
+  <lex ner='O' begin='943' end='946' pos='VB' label='None'>let</lex>
+  <lex ner='O' begin='947' end='950' pos='PRP' label='None'>you</lex>
+  <lex ner='O' begin='951' end='955' pos='VB' label='None'>know</lex>
+  <lex ner='O' begin='956' end='961' pos='IN' label='None'>about</lex>
+  <lex ner='O' begin='962' end='964' pos='PRP' label='None'>it</lex>
+  <lex begin='964' end='965'>,</lex>
+  <lex ner='O' begin='966' end='968' pos='IN' label='None'>in</lex>
+  <lex ner='O' begin='969' end='971' pos='DT' label='None'>no</lex>
+  <lex ner='O' begin='972' end='981' pos='JJ' label='None'>uncertain</lex>
+  <lex ner='O' begin='982' end='987' pos='NNS' label='None'>terms</lex>
+  <lex begin='987' end='988'>;</lex>
+  <lex ner='O' begin='997' end='1004' pos='VBP' label='None'>respect</lex>
+  <lex ner='O' begin='1005' end='1008' pos='PRP$' label='None'>his</lex>
+  <lex ner='O' begin='1009' end='1014' pos='NN' label='None'>sense</lex>
+  <lex ner='O' begin='1015' end='1017' pos='IN' label='None'>of</lex>
+  <lex ner='O' begin='1018' end='1024' pos='NNS' label='None'>values</lex>
+  <lex ner='O' begin='1025' end='1028' pos='CC' label='None'>and</lex>
+  <lex ner='O' begin='1029' end='1032' pos='PRP' label='None'>you</lex>
+  <lex ner='O' begin='1033' end='1037' pos='VBP' label='None'>make</lex>
+  <lex ner='O' begin='1038' end='1039' pos='DT' label='None'>a</lex>
+  <lex ner='O' begin='1040' end='1046' pos='NN' label='None'>friend</lex>
+  <lex ner='O' begin='1047' end='1050' pos='IN' label='None'>for</lex>
+  <lex ner='O' begin='1051' end='1055' pos='NN' label='None'>life</lex>
+  <lex begin='1055' end='1056'>.</lex>
+</s>
+<s>
+  <lex ner='O' begin='1065' end='1068' pos='DT' label='None'>The</lex>
+  <lex ner='O' begin='1069' end='1074' pos='NN' label='PLACE'>heart</lex>
+  <lex ner='O' begin='1075' end='1077' pos='IN' label='None'>of</lex>
+  <lex ner='LOCATION' begin='1078' end='1085' pos='NNP' label='PLACE'>Asakusa</lex>
+  <lex begin='1085' end='1086'>,</lex>
+  <lex ner='O' begin='1087' end='1089' pos='IN' label='None'>in</lex>
+  <lex ner='O' begin='1090' end='1094' pos='NN' label='None'>turn</lex>
+  <lex begin='1094' end='1095'>,</lex>
+  <lex ner='O' begin='1096' end='1098' pos='VBZ' label='None'>is</lex>
+  <lex ner='PERSON' begin='1099' end='1106' pos='NNP' label='PLACE'>Sensoji</lex>
+  <lex begin='1107' end='1108'>(</lex>
+  <lex ner='O' begin='1108' end='1112' pos='RB' label='None'>also</lex>
+  <lex ner='O' begin='1113' end='1118' pos='VBN' label='None'>known</lex>
+  <lex ner='O' begin='1119' end='1121' pos='IN' label='None'>as</lex>
+  <lex ner='O' begin='1130' end='1133' pos='DT' label='None'>the</lex>
+  <lex ner='O' begin='1134' end='1141' pos='NNP' label='PLACE'>Asakusa</lex>
+  <lex ner='O' begin='1142' end='1148' pos='NNP' label='PLACE'>Kannon</lex>
+  <lex ner='O' begin='1149' end='1155' pos='NN' label='PLACE'>temple</lex>
+  <lex begin='1155' end='1156'>)</lex>
+  <lex begin='1156' end='1157'>.</lex>
+</s>
+<s>
+  <lex ner='O' begin='1158' end='1167' pos='VBG' label='None'>According</lex>
+  <lex ner='O' begin='1168' end='1170' pos='TO' label='None'>to</lex>
+  <lex ner='O' begin='1171' end='1177' pos='NN' label='None'>legend</lex>
+  <lex begin='1177' end='1178'>,</lex>
+  <lex ner='O' begin='1179' end='1182' pos='DT' label='None'>the</lex>
+  <lex ner='O' begin='1183' end='1189' pos='NN' label='PLACE'>temple</lex>
+  <lex ner='O' begin='1190' end='1196' pos='VBZ' label='SPATIAL_SIGNAL'>houses</lex>
+  <lex ner='O' begin='1197' end='1198' pos='DT' label='None'>a</lex>
+  <lex ner='O' begin='1207' end='1212' pos='JJ' label='None'>small</lex>
+  <lex ner='O' begin='1213' end='1219' pos='NN' label='SPATIAL_ENTITY'>statue</lex>
+  <lex ner='O' begin='1220' end='1222' pos='IN' label='None'>of</lex>
+  <lex ner='O' begin='1223' end='1226' pos='DT' label='None'>the</lex>
+  <lex ner='ORGANIZATION' begin='1227' end='1235' pos='JJ' label='None'>Buddhist</lex>
+  <lex ner='O' begin='1236' end='1243' pos='NN' label='None'>goddess</lex>
+  <lex ner='O' begin='1244' end='1246' pos='IN' label='None'>of</lex>
+  <lex ner='O' begin='1247' end='1252' pos='NN' label='None'>mercy</lex>
+  <lex begin='1252' end='1253'>,</lex>
+  <lex ner='O' begin='1254' end='1259' pos='VBN' label='NONMOTION_EVENT'>found</lex>
+  <lex ner='O' begin='1260' end='1262' pos='IN' label='SPATIAL_SIGNAL'>in</lex>
+  <lex ner='O' begin='1263' end='1266' pos='DT' label='None'>the</lex>
+  <lex ner='LOCATION' begin='1267' end='1273' pos='NNP' label='PATH'>Sumida</lex>
+  <lex ner='LOCATION' begin='1282' end='1287' pos='NNP' label='PATH'>River</lex>
+  <lex ner='O' begin='1288' end='1290' pos='IN' label='None'>by</lex>
+  <lex ner='O' begin='1291' end='1294' pos='CD' label='None'>two</lex>
+  <lex ner='O' begin='1295' end='1300' pos='JJ' label='None'>local</lex>
+  <lex ner='O' begin='1301' end='1310' pos='NNS' label='None'>fishermen</lex>
+  <lex ner='O' begin='1311' end='1313' pos='IN' label='None'>in</lex>
+  <lex ner='O' begin='1314' end='1317' pos='DT' label='None'>the</lex>
+  <lex ner='O' begin='1318' end='1322' pos='NN' label='None'>year</lex>
+  <lex ner='O' begin='1323' end='1326' pos='CD' label='None'>628</lex>
+  <lex ner='O' begin='1327' end='1328' pos=':' label='None'>—</lex>
+  <lex ner='O' begin='1329' end='1332' pos='CC' label='None'>but</lex>
+  <lex ner='O' begin='1333' end='1335' pos='IN' label='None'>in</lex>
+  <lex ner='O' begin='1336' end='1340' pos='NN' label='None'>fact</lex>
+  <lex ner='O' begin='1341' end='1344' pos='RB' label='None'>not</lex>
+  <lex ner='O' begin='1345' end='1349' pos='RB' label='None'>even</lex>
+  <lex ner='O' begin='1350' end='1353' pos='DT' label='None'>the</lex>
+  <lex ner='O' begin='1362' end='1368' pos='NN' label='None'>temple</lex>
+  <lex ner='O' begin='1369' end='1376' pos='NNS' label='None'>priests</lex>
+  <lex ner='O' begin='1377' end='1381' pos='VBP' label='None'>have</lex>
+  <lex ner='O' begin='1382' end='1386' pos='RB' label='None'>ever</lex>
+  <lex ner='O' begin='1387' end='1391' pos='VBN' label='None'>seen</lex>
+  <lex ner='O' begin='1392' end='1394' pos='PRP' label='None'>it</lex>
+  <lex begin='1394' end='1395'>.</lex>
+</s>
+<s>
+  <lex ner='O' begin='1396' end='1400' pos='WRB' label='None'>When</lex>
+  <lex ner='PERSON' begin='1401' end='1404' pos='NNP' label='PLACE'>Edo</lex>
+  <lex ner='O' begin='1405' end='1411' pos='VBD' label='None'>became</lex>
+  <lex ner='O' begin='1412' end='1415' pos='DT' label='None'>the</lex>
+  <lex ner='O' begin='1416' end='1423' pos='NN' label='None'>capital</lex>
+  <lex ner='O' begin='1424' end='1426' pos='IN' label='None'>of</lex>
+  <lex ner='O' begin='1427' end='1430' pos='DT' label='None'>the</lex>
+  <lex ner='O' begin='1439' end='1447' pos='NNP' label='None'>Tokugawa</lex>
+  <lex ner='O' begin='1448' end='1457' pos='NN' label='None'>shogunate</lex>
+  <lex begin='1457' end='1458'>,</lex>
+  <lex ner='LOCATION' begin='1459' end='1466' pos='NNP' label='PLACE'>Asakusa</lex>
+  <lex ner='O' begin='1467' end='1472' pos='VBD' label='None'>began</lex>
+  <lex ner='O' begin='1473' end='1475' pos='TO' label='None'>to</lex>
+  <lex ner='O' begin='1476' end='1484' pos='VB' label='None'>flourish</lex>
+  <lex ner='O' begin='1485' end='1487' pos='IN' label='None'>as</lex>
+  <lex ner='O' begin='1488' end='1490' pos='DT' label='None'>an</lex>
+  <lex ner='O' begin='1491' end='1504' pos='NN' label='None'>entertainment</lex>
+  <lex ner='O' begin='1513' end='1520' pos='NN' label='None'>quarter</lex>
+  <lex begin='1520' end='1521'>.</lex>
+</s>
+<s>
+  <lex ner='O' begin='1522' end='1524' pos='IN' label='None'>In</lex>
+  <lex ner='O' begin='1525' end='1528' pos='DT' label='None'>the</lex>
+  <lex ner='O' begin='1529' end='1539' pos='JJ' label='None'>early-19th</lex>
+  <lex ner='O' begin='1540' end='1547' pos='NN' label='None'>century</lex>
+  <lex ner='O' begin='1548' end='1552' pos='RB' label='None'>even</lex>
+  <lex ner='O' begin='1553' end='1556' pos='DT' label='None'>the</lex>
+  <lex ner='O' begin='1557' end='1563' pos='NN' label='None'>kabuki</lex>
+  <lex ner='O' begin='1564' end='1572' pos='NNS' label='PLACE'>theaters</lex>
+  <lex ner='O' begin='1573' end='1577' pos='VBD' label='None'>were</lex>
+  <lex ner='O' begin='1586' end='1593' pos='VBN' label='None'>located</lex>
+  <lex ner='O' begin='1594' end='1598' pos='RB' label='PLACE'>here</lex>
+  <lex begin='1598' end='1599'>.</lex>
+</s>
+<s>
+  <lex ner='O' begin='1600' end='1603' pos='DT' label='None'>The</lex>
+  <lex ner='O' begin='1604' end='1609' pos='NNP' label='None'>Meiji</lex>
+  <lex ner='O' begin='1610' end='1621' pos='NNP' label='None'>Restoration</lex>
+  <lex ner='O' begin='1622' end='1625' pos='CC' label='None'>and</lex>
+  <lex ner='O' begin='1626' end='1629' pos='DT' label='None'>the</lex>
+  <lex ner='O' begin='1630' end='1637' pos='NN' label='None'>opening</lex>
+  <lex ner='O' begin='1638' end='1640' pos='IN' label='None'>of</lex>
+  <lex ner='LOCATION' begin='1641' end='1646' pos='NNP' label='PLACE'>Japan</lex>
+  <lex ner='O' begin='1647' end='1649' pos='TO' label='None'>to</lex>
+  <lex ner='O' begin='1650' end='1656' pos='JJ' label='None'>exotic</lex>
+  <lex ner='O' begin='1665' end='1668' pos='JJ' label='None'>new</lex>
+  <lex ner='O' begin='1669' end='1682' pos='JJ' label='None'>Western-style</lex>
+  <lex ner='O' begin='1683' end='1693' pos='NNS' label='None'>amusements</lex>
+  <lex ner='O' begin='1694' end='1701' pos='RBR' label='None'>further</lex>
+  <lex ner='O' begin='1702' end='1710' pos='JJ' label='None'>enhanced</lex>
+  <lex ner='PERSON' begin='1711' end='1718' pos='NNP' label='PLACE'>Asakusa</lex>
+  <lex begin='1718' end='1720'>’s</lex>
+  <lex begin='1721' end='1731'>reputation</lex>
+  <lex begin='1732' end='1734'>as</lex>
+  <lex begin='1743' end='1746'>Fun</lex>
+  <lex begin='1747' end='1751'>City</lex>
+  <lex begin='1751' end='1752'>.</lex>
+</s>
+<s>
+  <lex ner='O' begin='1753' end='1756' pos='DT' label='None'>The</lex>
+  <lex ner='O' begin='1757' end='1762' pos='JJ' label='None'>first</lex>
+  <lex ner='O' begin='1763' end='1768' pos='NN' label='PLACE'>place</lex>
+  <lex ner='O' begin='1769' end='1771' pos='IN' label='SPATIAL_SIGNAL'>in</lex>
+  <lex ner='LOCATION' begin='1772' end='1777' pos='NNP' label='PLACE'>Japan</lex>
+  <lex ner='O' begin='1778' end='1780' pos='TO' label='None'>to</lex>
+  <lex ner='O' begin='1781' end='1785' pos='VB' label='None'>call</lex>
+  <lex ner='O' begin='1786' end='1792' pos='PRP' label='None'>itself</lex>
+  <lex ner='O' begin='1793' end='1794' pos='DT' label='None'>a</lex>
+  <lex begin='1795' end='1796'>“</lex>
+  <lex ner='O' begin='1796' end='1799' pos='NN' label='PLACE'>bar</lex>
+  <lex begin='1799' end='1800'>”</lex>
+  <lex ner='O' begin='1801' end='1807' pos='VBN' label='NONMOTION_EVENT'>opened</lex>
+  <lex ner='O' begin='1808' end='1810' pos='IN' label='SPATIAL_SIGNAL'>in</lex>
+  <lex ner='LOCATION' begin='1819' end='1826' pos='NNP' label='PLACE'>Asakusa</lex>
+  <lex ner='O' begin='1827' end='1829' pos='IN' label='None'>in</lex>
+  <lex ner='O' begin='1830' end='1834' pos='CD' label='None'>1880</lex>
+  <lex begin='1835' end='1836'>(</lex>
+  <lex ner='O' begin='1836' end='1839' pos='CC' label='None'>and</lex>
+  <lex ner='O' begin='1840' end='1842' pos='VBZ' label='None'>is</lex>
+  <lex ner='O' begin='1843' end='1848' pos='RB' label='None'>still</lex>
+  <lex ner='O' begin='1849' end='1854' pos='VBG' label='None'>doing</lex>
+  <lex ner='O' begin='1855' end='1863' pos='NN' label='None'>business</lex>
+  <lex begin='1863' end='1864'>)</lex>
+  <lex begin='1864' end='1865'>;</lex>
+  <lex ner='O' begin='1866' end='1869' pos='DT' label='None'>the</lex>
+  <lex ner='O' begin='1870' end='1875' pos='JJ' label='None'>first</lex>
+  <lex ner='O' begin='1876' end='1881' pos='NN' label='None'>movie</lex>
+  <lex ner='O' begin='1882' end='1889' pos='NN' label='None'>theater</lex>
+  <lex ner='O' begin='1898' end='1904' pos='VBD' label='NONMOTION_EVENT'>opened</lex>
+  <lex ner='O' begin='1905' end='1909' pos='RB' label='PLACE'>here</lex>
+  <lex ner='O' begin='1910' end='1912' pos='IN' label='None'>in</lex>
+  <lex ner='O' begin='1913' end='1917' pos='CD' label='None'>1903</lex>
+  <lex begin='1917' end='1918'>.</lex>
+</s>
+<s>
+  <lex ner='O' begin='1919' end='1925' pos='IN' label='None'>Before</lex>
+  <lex ner='O' begin='1926' end='1930' pos='RB' label='None'>long</lex>
+  <lex begin='1930' end='1931'>,</lex>
+  <lex ner='O' begin='1932' end='1935' pos='DT' label='None'>the</lex>
+  <lex ner='O' begin='1936' end='1943' pos='NNS' label='PATH'>streets</lex>
+  <lex ner='O' begin='1944' end='1947' pos='CC' label='None'>and</lex>
+  <lex ner='O' begin='1948' end='1954' pos='NNS' label='PATH'>alleys</lex>
+  <lex ner='O' begin='1955' end='1961' pos='IN' label='SPATIAL_SIGNAL'>around</lex>
+  <lex ner='O' begin='1962' end='1965' pos='DT' label='None'>the</lex>
+  <lex ner='O' begin='1974' end='1980' pos='NN' label='PLACE'>temple</lex>
+  <lex ner='O' begin='1981' end='1985' pos='VBD' label='None'>were</lex>
+  <lex ner='O' begin='1986' end='1992' pos='VBN' label='SPATIAL_SIGNAL'>filled</lex>
+  <lex ner='O' begin='1993' end='1997' pos='IN' label='None'>with</lex>
+  <lex ner='O' begin='1998' end='2003' pos='NN' label='None'>music</lex>
+  <lex ner='O' begin='2004' end='2009' pos='NNS' label='PLACE'>halls</lex>
+  <lex begin='2009' end='2010'>,</lex>
+  <lex ner='O' begin='2011' end='2020' pos='JJ' label='None'>burlesque</lex>
+  <lex ner='O' begin='2021' end='2029' pos='NNS' label='PLACE'>theaters</lex>
+  <lex begin='2029' end='2030'>,</lex>
+  <lex ner='O' begin='2031' end='2039' pos='NNS' label='PLACE'>cabarets</lex>
+  <lex begin='2039' end='2040'>,</lex>
+  <lex ner='O' begin='2049' end='2057' pos='VBG' label='None'>gambling</lex>
+  <lex ner='O' begin='2058' end='2062' pos='NNS' label='PLACE'>dens</lex>
+  <lex begin='2062' end='2063'>,</lex>
+  <lex ner='O' begin='2064' end='2067' pos='CC' label='None'>and</lex>
+  <lex ner='O' begin='2068' end='2076' pos='VBG' label='None'>watering</lex>
+  <lex ner='O' begin='2077' end='2082' pos='NNS' label='PLACE'>holes</lex>
+  <lex ner='O' begin='2083' end='2085' pos='IN' label='None'>of</lex>
+  <lex ner='O' begin='2086' end='2091' pos='DT' label='None'>every</lex>
+  <lex ner='O' begin='2092' end='2103' pos='NN' label='None'>description</lex>
+  <lex begin='2103' end='2104'>.</lex>
+</s>
+<s>
+  <lex ner='O' begin='2113' end='2117' pos='JJS' label='None'>Most</lex>
+  <lex ner='O' begin='2118' end='2120' pos='IN' label='None'>of</lex>
+  <lex ner='O' begin='2121' end='2124' pos='DT' label='None'>the</lex>
+  <lex ner='O' begin='2125' end='2131' pos='NN' label='None'>temple</lex>
+  <lex ner='O' begin='2132' end='2139' pos='NN' label='None'>quarter</lex>
+  <lex ner='O' begin='2140' end='2143' pos='VBD' label='None'>was</lex>
+  <lex ner='O' begin='2144' end='2154' pos='VBN' label='None'>firebombed</lex>
+  <lex ner='O' begin='2155' end='2157' pos='TO' label='None'>to</lex>
+  <lex ner='O' begin='2158' end='2163' pos='NNS' label='None'>ashes</lex>
+  <lex ner='O' begin='2164' end='2166' pos='IN' label='None'>in</lex>
+  <lex ner='O' begin='2167' end='2171' pos='CD' label='None'>1945</lex>
+  <lex begin='2171' end='2172'>,</lex>
+  <lex ner='O' begin='2181' end='2184' pos='CC' label='None'>but</lex>
+  <lex ner='O' begin='2185' end='2187' pos='IN' label='None'>by</lex>
+  <lex ner='O' begin='2188' end='2192' pos='CD' label='None'>1958</lex>
+  <lex ner='O' begin='2193' end='2196' pos='DT' label='None'>the</lex>
+  <lex ner='O' begin='2197' end='2203' pos='NNS' label='None'>people</lex>
+  <lex ner='O' begin='2204' end='2206' pos='IN' label='None'>of</lex>
+  <lex ner='O' begin='2207' end='2210' pos='DT' label='None'>the</lex>
+  <lex ner='O' begin='2211' end='2215' pos='NN' label='None'>area</lex>
+  <lex ner='O' begin='2216' end='2219' pos='VBD' label='None'>had</lex>
+  <lex ner='O' begin='2220' end='2226' pos='VBN' label='None'>raised</lex>
+  <lex ner='O' begin='2227' end='2233' pos='JJ' label='None'>enough</lex>
+  <lex ner='O' begin='2234' end='2239' pos='NN' label='None'>money</lex>
+  <lex ner='O' begin='2240' end='2242' pos='TO' label='None'>to</lex>
+  <lex ner='O' begin='2243' end='2250' pos='VB' label='None'>rebuild</lex>
+  <lex ner='PERSON' begin='2259' end='2266' pos='NNP' label='PLACE'>Sensoji</lex>
+  <lex ner='O' begin='2267' end='2270' pos='CC' label='None'>and</lex>
+  <lex ner='O' begin='2271' end='2274' pos='DT' label='None'>all</lex>
+  <lex ner='O' begin='2275' end='2277' pos='IN' label='None'>of</lex>
+  <lex ner='O' begin='2278' end='2281' pos='DT' label='None'>the</lex>
+  <lex ner='O' begin='2282' end='2291' pos='JJ' label='None'>important</lex>
+  <lex ner='O' begin='2292' end='2302' pos='NNS' label='SPATIAL_ENTITY'>structures</lex>
+  <lex ner='O' begin='2303' end='2309' pos='IN' label='MEASURE'>around</lex>
+  <lex ner='O' begin='2310' end='2312' pos='PRP' label='PLACE'>it</lex>
+  <lex begin='2312' end='2313'>.</lex>
+</s>
+<s>
+  <lex ner='O' begin='2314' end='2316' pos='RB' label='None'>So</lex>
+  <lex ner='O' begin='2317' end='2321' pos='WP' label='None'>what</lex>
+  <lex ner='O' begin='2322' end='2324' pos='IN' label='None'>if</lex>
+  <lex ner='O' begin='2325' end='2328' pos='DT' label='None'>the</lex>
+  <lex ner='O' begin='2337' end='2349' pos='NNS' label='None'>restorations</lex>
+  <lex ner='O' begin='2350' end='2354' pos='VBD' label='None'>were</lex>
+  <lex ner='O' begin='2355' end='2357' pos='IN' label='None'>in</lex>
+  <lex ner='O' begin='2358' end='2366' pos='NN' label='None'>concrete</lex>
+  <lex begin='2366' end='2367'>?</lex>
+</s>
+<s>
+  <lex ner='O' begin='2368' end='2371' pos='DT' label='None'>The</lex>
+  <lex ner='O' begin='2372' end='2380' pos='NN' label='None'>original</lex>
+  <lex ner='O' begin='2381' end='2383' pos='VBZ' label='None'>is</lex>
+  <lex ner='O' begin='2384' end='2389' pos='RB' label='None'>still</lex>
+  <lex ner='O' begin='2390' end='2395' pos='RB' label='PLACE'>there</lex>
+  <lex ner='O' begin='2396' end='2398' pos='IN' label='None'>in</lex>
+  <lex ner='O' begin='2407' end='2413' pos='NN' label='None'>spirit</lex>
+  <lex ner='O' begin='2414' end='2415' pos=':' label='None'>—</lex>
+  <lex ner='O' begin='2416' end='2419' pos='CC' label='None'>and</lex>
+  <lex ner='O' begin='2420' end='2422' pos='DT' label='None'>no</lex>
+  <lex ner='O' begin='2423' end='2430' pos='NN' label='None'>visitor</lex>
+  <lex ner='O' begin='2431' end='2437' pos='MD' label='None'>should</lex>
+  <lex ner='O' begin='2438' end='2445' pos='NN' label='None'>neglect</lex>
+  <lex ner='O' begin='2446' end='2448' pos='PRP' label='None'>it</lex>
+  <lex begin='2448' end='2449'>.</lex>
+</s>
+</TOKENS>
+
+</SpaceEvalTaskv1.2>

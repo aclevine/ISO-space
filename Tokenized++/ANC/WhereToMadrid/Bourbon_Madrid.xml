@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<SpaceEvalTaskv1.2>
+<TEXT><![CDATA[
+        Bourbon Madrid
+        West of Puerta del Sol is the city’s 18th-century expansion
+        engineered by the Bourbon monarchs. Calle de Alcalá merges with Gran
+        Vía and leads to the Plaza de la Cibeles and the Paseo del Prado,with
+        its trio of art museums. The area’s spacious boulevards, grand plazas,
+        and fountains are interspersed with densely populated 18th-century
+        apartment buildings. After hitting the art world’s Big Three, visitors
+        can repair to Retiro Park, where kings once found respite from the
+        demands of hectic city life.
+        Except for the traffic spitting out noise and air
+        pollution, the ample Plaza de la Cibeles is splendid. The central
+        fountain depicts Cybele, a controversial Greek fertility goddess,
+        serenely settled in a chariot pulled by two lions. The sculptural
+        ensemble is probably the best-known fountain in all Spain. The most
+        unavoidable building on the plaza is the cathedral-like Palacio de
+        Comunicaciones, teasingly nicknamed Nuestra Señora de las
+        Comunicaciones (Our Lady of Communications). Inaugurated in 1919, the
+        building is the quite remarkable central post office, with high
+        ceilings and overhead walkways.
+        Also facing Plaza de la Cibeles, the Banco de España (Bank
+        of Spain) headquarters combines Neo-classical, Baroque, and rococo
+        styles. The financial district, Madrid’s Wall Street, begins here on
+        calle de Alcalá. Imposing buildings in this high-rent district contain
+        the head offices or branches of more than 100 banks, plus insurance
+        companies, the finance ministry, and on nearby Plaza de la Lealtad, the
+        Bolsa de Comercio (Stock E xchange). Heading down leafy Paseo del Prado
+        you’ll find the first, and greatest, of the art museums here.
+]]></TEXT>
+<TAGS>
+<PLACE comment="" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="1045" form="NAM" gazref="" gquant="" id="pl14" latLong="" mod="" scopes="" start="1012" state="" text="Palacio de         Comunicaciones" type=""/>
+<PLACE comment="" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="1111" form="NAM" gazref="" gquant="" id="pl15" latLong="" mod="" scopes="" start="1067" state="" text="Nuestra Señora de las         Comunicaciones" type=""/>
+<PLACE comment="" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="1139" form="NAM" gazref="" gquant="" id="pl16" latLong="" mod="" scopes="" start="1113" state="" text="Our Lady of Communications" type=""/>
+<PLACE comment="" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="1183" form="NOM" gazref="" gquant="" id="pl17" latLong="" mod="" scopes="" start="1175" state="" text="building" type=""/>
+<PLACE comment="" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="VOLUME" domain="" elevation="" end="1227" form="NOM" gazref="" gquant="" id="pl18" latLong="" mod="" scopes="" start="1221" state="" text="office" type=""/>
+<PLACE comment="" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="1318" form="NAM" gazref="" gquant="" id="pl19" latLong="" mod="" scopes="" start="1299" state="" text="Plaza de la Cibeles" type=""/>
+<PLACE comment="" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="1376" form="NOM" gazref="" gquant="" id="pl20" latLong="" mod="" scopes="" start="1364" state="" text="headquarters" type=""/>
+<PLACE comment="" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="1459" form="NOM" gazref="" gquant="" id="pl21" latLong="" mod="" scopes="" start="1451" state="" text="district" type=""/>
+<PLACE comment="" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="1467" form="NAM" gazref="" gquant="" id="pl22" latLong="" mod="" scopes="" start="1461" state="" text="Madrid" type=""/>
+<PLACE comment="" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="1494" form="NOM" gazref="" gquant="" id="pl23" latLong="" mod="" scopes="" start="1490" state="" text="here" type=""/>
+<PLACE comment="" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="1568" form="NOM" gazref="" gquant="" id="pl24" latLong="" mod="" scopes="" start="1560" state="" text="district" type=""/>
+<PLACE comment="" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="1601" form="NOM" gazref="" gquant="" id="pl25" latLong="" mod="" scopes="" start="1594" state="" text="offices" type=""/>
+<PLACE comment="" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="1613" form="NOM" gazref="" gquant="" id="pl26" latLong="" mod="" scopes="" start="1605" state="" text="branches" type=""/>
+<PLACE comment="" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="1670" form="NOM" gazref="" gquant="" id="pl34" latLong="" mod="" scopes="" start="1661" state="" text="companies" type=""/>
+<PLACE comment="" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="1692" form="NOM" gazref="" gquant="" id="pl33" latLong="" mod="" scopes="" start="1684" state="" text="ministry" type=""/>
+<PLACE comment="" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="1727" form="NAM" gazref="" gquant="" id="pl27" latLong="" mod="" scopes="" start="1708" state="" text="Plaza de la Lealtad" type=""/>
+<PLACE comment="" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="1758" form="NAM" gazref="" gquant="" id="pl28" latLong="" mod="" scopes="" start="1741" state="" text="Bolsa de Comercio" type=""/>
+<PLACE comment="" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="POINT" domain="" elevation="" end="1775" form="NAM" gazref="" gquant="" id="pl29" latLong="" mod="" scopes="" start="1760" state="" text="Stock E xchange" type=""/>
+<PLACE comment="" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="1842" form="NOM" gazref="" gquant="" id="pl31" latLong="" mod="" scopes="" start="1837" state="" text="first" type=""/>
+<PLACE comment="" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="POINT" domain="" elevation="" end="1876" form="NOM" gazref="" gquant="" id="pl32" latLong="" mod="" scopes="" start="1869" state="" text="museums" type=""/>
+<PLACE comment="" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="1881" form="NOM" gazref="" gquant="" id="pl30" latLong="" mod="" scopes="" start="1877" state="" text="here" type=""/>
+<PLACE comment="" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="217" form="NAM" gazref="" gquant="" id="pl3" latLong="" mod="" scopes="" start="198" state="" text="Plaza de la Cibeles" type=""/>
+<PLACE comment="" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="263" form="NOM" gazref="" gquant="" id="pl35" latLong="" mod="" scopes="" start="259" state="" text="trio" type=""/>
+<PLACE comment="" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="278" form="NOM" gazref="" gquant="" id="pl4" latLong="" mod="" scopes="" start="271" state="" text="museums" type=""/>
+<PLACE comment="" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="288" form="NOM" gazref="" gquant="" id="pl5" latLong="" mod="" scopes="" start="284" state="" text="area" type=""/>
+<PLACE comment="" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="324" form="NOM" gazref="" gquant="" id="pl6" latLong="" mod="" scopes="" start="318" state="" text="plazas" type=""/>
+<PLACE comment="" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="54" form="NAM" gazref="" gquant="" id="pl0" latLong="" mod="" scopes="" start="40" state="" text="Puerta del Sol" type=""/>
+<PLACE comment="" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="469" form="NOM" gazref="" gquant="" id="pl8" latLong="" mod="" scopes="" start="460" state="" text="Big Three" type=""/>
+<PLACE comment="" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="513" form="NOM" gazref="" gquant="" id="pl9" latLong="" mod="" scopes="" start="502" state="" text="Retiro Park" type=""/>
+<PLACE comment="" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="66" form="NOM" gazref="" gquant="" id="pl1" latLong="" mod="" scopes="" start="62" state="" text="city" type=""/>
+<PLACE comment="" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="698" form="NAM" gazref="" gquant="" id="pl10" latLong="" mod="ample" scopes="" start="679" state="" text="Plaza de la Cibeles" type=""/>
+<PLACE comment="" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="91" form="NOM" gazref="" gquant="" id="pl2" latLong="" mod="" scopes="" start="82" state="" text="expansion" type=""/>
+<PLACE comment="" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="937" form="NAM" gazref="" gquant="" id="pl11" latLong="" mod="" scopes="" start="932" state="" text="Spain" type=""/>
+<PLACE comment="" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="VOLUME" domain="" elevation="" end="976" form="NOM" gazref="" gquant="" id="pl12" latLong="" mod="" scopes="" start="968" state="" text="building" type=""/>
+<PLACE comment="" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="989" form="NOM" gazref="" gquant="" id="pl13" latLong="" mod="" scopes="" start="984" state="" text="plaza" type=""/>
+<PATH beginID="" comment="" countable="TRUE" dcl="FALSE" dimensionality="VOLUME" domain="" elevation="" end="1255" endID="" form="NOM" gazref="" gquant="" id="p5" latLong="" midIDs="" mod="high" scopes="" start="1247" text="ceilings" type=""/>
+<PATH beginID="" comment="" countable="TRUE" dcl="FALSE" dimensionality="VOLUME" domain="" elevation="" end="1277" endID="" form="NOM" gazref="" gquant="" id="p6" latLong="" midIDs="" mod="" scopes="" start="1269" text="walkways" type=""/>
+<PATH beginID="" comment="" countable="TRUE" dcl="FALSE" dimensionality="LINE" domain="" elevation="" end="151" endID="" form="NAM" gazref="" gquant="" id="p3" latLong="" midIDs="" mod="" scopes="" start="136" text="Calle de Alcalá" type=""/>
+<PATH beginID="" comment="" countable="TRUE" dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="1521" endID="" form="NAM" gazref="" gquant="" id="p7" latLong="" midIDs="" mod="" scopes="" start="1506" text="calle de Alcalá" type=""/>
+<PATH beginID="" comment="" countable="TRUE" dcl="FALSE" dimensionality="LINE" domain="" elevation="" end="180" endID="" form="NAM" gazref="" gquant="" id="p4" latLong="" midIDs="" mod="" scopes="" start="164" text="Gran         Vía" type=""/>
+<PATH beginID="" comment="" countable="TRUE" dcl="FALSE" dimensionality="LINE" domain="" elevation="" end="1812" endID="" form="NAM" gazref="" gquant="" id="p8" latLong="" midIDs="" mod="" scopes="" start="1797" text="Paseo del Prado" type=""/>
+<PATH beginID="" comment="" countable="TRUE" dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="241" endID="" form="NAM" gazref="" gquant="" id="p0" latLong="" midIDs="" mod="" scopes="" start="226" text="Paseo del Prado" type=""/>
+<PATH beginID="" comment="" countable="TRUE" dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="257" endID="" form="NOM" gazref="" gquant="" id="p1" latLong="" midIDs="" mod="" scopes="" start="255" text="it" type=""/>
+<PATH beginID="" comment="" countable="TRUE" dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="310" endID="" form="NOM" gazref="" gquant="" id="p2" latLong="" midIDs="" mod="spacious" scopes="" start="300" text="boulevards" type=""/>
+<SPATIAL_ENTITY comment="" countable="TRUE" dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="1541" form="NOM" gquant="" id="se5" latLong="" mod="" scopes="" start="1532" text="buildings" type=""/>
+<SPATIAL_ENTITY comment="" countable="TRUE" dcl="FALSE" dimensionality="POINT" domain="" elevation="" end="1824" form="NOM" gquant="" id="se6" latLong="" mod="" scopes="" start="1821" text="you" type=""/>
+<SPATIAL_ENTITY comment="" countable="TRUE" dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="347" form="NOM" gquant="" id="se0" latLong="" mod="" scopes="" start="338" text="fountains" type=""/>
+<SPATIAL_ENTITY comment="" countable="TRUE" dcl="FALSE" dimensionality="POINT" domain="" elevation="" end="479" form="NOM" gquant="" id="se1" latLong="" mod="" scopes="" start="471" text="visitors" type=""/>
+<SPATIAL_ENTITY comment="" countable="TRUE" dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="740" form="NOM" gquant="" id="se2" latLong="" mod="" scopes="" start="732" text="fountain" type=""/>
+<SPATIAL_ENTITY comment="" countable="TRUE" dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="835" form="NOM" gquant="" id="se4" latLong="" mod="" scopes="" start="828" text="chariot" type=""/>
+<SPATIAL_ENTITY comment="" countable="TRUE" dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="888" form="NOM" gquant="" id="se7" latLong="" mod="" scopes="" start="880" text="ensemble" type=""/>
+<SPATIAL_ENTITY comment="" countable="TRUE" dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="924" form="NOM" gquant="" id="se3" latLong="" mod="" scopes="" start="916" text="fountain" type=""/>
+<NONMOTION_EVENT comment="" countable="FALSE" domain="" elevation="" end="622" gquant="" id="e0" latLong="" mod="" scopes="" start="615" text="traffic"/>
+<NONMOTION_EVENT comment="" countable="" domain="" elevation="" end="822" gquant="" id="e1" latLong="" mod="" scopes="" start="815" text="settled"/>
+<MOTION comment="" countable="" domain="" elevation="" end="158" gquant="" id="m0" latLong="" mod="" motion_class="REACH" motion_sense="FICTIVE" motion_type="PATH" scopes="" start="152" text="merges"/>
+<MOTION comment="" countable="" domain="" elevation="" end="1785" gquant="" id="m5" latLong="" mod="" motion_class="FOLLOW" motion_sense="LITERAL" motion_type="PATH" scopes="" start="1778" text="Heading"/>
+<MOTION comment="" countable="" domain="" elevation="" end="190" gquant="" id="m1" latLong="" mod="" motion_class="REACH" motion_sense="FICTIVE" motion_type="PATH" scopes="" start="185" text="leads"/>
+<MOTION comment="" countable="" domain="" elevation="" end="443" gquant="" id="m2" latLong="" mod="" motion_class="REACH" motion_sense="LITERAL" motion_type="PATH" scopes="" start="436" text="hitting"/>
+<MOTION comment="" countable="" domain="" elevation="" end="498" gquant="" id="m3" latLong="" mod="" motion_class="REACH" motion_sense="LITERAL" motion_type="PATH" scopes="" start="492" text="repair"/>
+<MOTION comment="" countable="" domain="" elevation="" end="842" gquant="" id="m4" latLong="" mod="" motion_class="MOVE" motion_sense="FICTIVE" motion_type="MANNER" scopes="" start="836" text="pulled"/>
+<SPATIAL_SIGNAL cluster="" comment="" end="1233" id="s3" semantic_type="TOPOLOGICAL" start="1229" text="with"/>
+<SPATIAL_SIGNAL cluster="" comment="" end="1268" id="s4" semantic_type="DIRECTIONAL" start="1260" text="overhead"/>
+<SPATIAL_SIGNAL cluster="" comment="" end="1298" id="s6" semantic_type="DIRECTIONAL" start="1292" text="facing"/>
+<SPATIAL_SIGNAL cluster="" comment="" end="1497" id="s5" semantic_type="TOPOLOGICAL" start="1495" text="on"/>
+<SPATIAL_SIGNAL cluster="" comment="" end="1544" id="s7" semantic_type="TOPOLOGICAL" start="1542" text="in"/>
+<SPATIAL_SIGNAL cluster="" comment="" end="1576" id="s8" semantic_type="TOPOLOGICAL" start="1569" text="contain"/>
+<SPATIAL_SIGNAL cluster="" comment="" end="1700" id="s9" semantic_type="TOPOLOGICAL" start="1698" text="on"/>
+<SPATIAL_SIGNAL cluster="" comment="" end="246" id="s10" semantic_type="TOPOLOGICAL" start="242" text="with"/>
+<SPATIAL_SIGNAL cluster="" comment="" end="39" id="s0" semantic_type="DIRECTIONAL" start="32" text="West of"/>
+<SPATIAL_SIGNAL cluster="" comment="" end="825" id="s1" semantic_type="TOPOLOGICAL" start="823" text="in"/>
+<SPATIAL_SIGNAL cluster="" comment="" end="927" id="s11" semantic_type="TOPOLOGICAL" start="925" text="in"/>
+<SPATIAL_SIGNAL cluster="" comment="" end="979" id="s2" semantic_type="TOPOLOGICAL" start="977" text="on"/>
+<MOTION_SIGNAL comment="" end="163" id="ms0" motion_signal_type="PATH" start="159" text="with"/>
+<MOTION_SIGNAL comment="" end="1790" id="ms4" motion_signal_type="PATH" start="1786" text="down"/>
+<MOTION_SIGNAL comment="" end="193" id="ms1" motion_signal_type="PATH" start="191" text="to"/>
+<MOTION_SIGNAL comment="" end="501" id="ms2" motion_signal_type="PATH" start="499" text="to"/>
+<MOTION_SIGNAL comment="" end="855" id="ms3" motion_signal_type="MANNER" start="843" text="by two lions"/>
+<MEASURE comment="" end="1707" id="me0" start="1701" text="nearby" unit="" value="NEAR"/>
+<QSLINK comment="" fromID="pl18" fromText="office" id="qsl0" landmark="pl17" relType="EQ" toID="pl17" toText="building" trajector="pl18" trigger=""/>
+<QSLINK comment="" fromID="pl4" fromText="museums" id="qsl1" landmark="p1" relType="EC" toID="p1" toText="it" trajector="pl4" trigger=""/>
+<QSLINK comment="" fromID="p2" fromText="boulevards" id="qsl2" landmark="pl5" relType="IN" toID="pl5" toText="area" trajector="p2" trigger=""/>
+<QSLINK comment="" fromID="pl6" fromText="plazas" id="qsl3" landmark="pl5" relType="IN" toID="pl5" toText="area" trajector="pl6" trigger=""/>
+<QSLINK comment="" fromID="se0" fromText="fountains" id="qsl4" landmark="pl5" relType="IN" toID="pl5" toText="area" trajector="se0" trigger=""/>
+<QSLINK comment="" fromID="e1" fromText="settled" id="qsl5" landmark="se4" relType="IN" toID="se4" toText="chariot" trajector="e1" trigger="s1"/>
+<QSLINK comment="" fromID="se3" fromText="fountain" id="qsl6" landmark="pl11" relType="IN" toID="pl11" toText="Spain" trajector="se3" trigger="s11"/>
+<QSLINK comment="" fromID="pl12" fromText="building" id="qsl7" landmark="pl13" relType="EC" toID="pl13" toText="plaza" trajector="pl12" trigger="s2"/>
+<QSLINK comment="" fromID="p5" fromText="ceilings" id="qsl8" landmark="pl18" relType="NTPP" toID="pl18" toText="office" trajector="p5" trigger="s3"/>
+<QSLINK comment="" fromID="p6" fromText="walkways" id="qsl9" landmark="pl18" relType="TPP" toID="pl18" toText="office" trajector="p6" trigger="s3"/>
+<QSLINK comment="" fromID="pl23" fromText="here" id="qsl10" landmark="p7" relType="EC" toID="p7" toText="calle de Alcalá" trajector="pl12" trigger="s5"/>
+<QSLINK comment="" fromID="se5" fromText="buildings" id="qsl11" landmark="pl24" relType="IN" toID="pl24" toText="district" trajector="se5" trigger="s7"/>
+<QSLINK comment="" fromID="pl25" fromText="offices" id="qsl12" landmark="se5" relType="IN" toID="se5" toText="buildings" trajector="pl25" trigger="s8"/>
+<QSLINK comment="" fromID="pl26" fromText="branches" id="qsl13" landmark="se5" relType="IN" toID="se5" toText="buildings" trajector="pl26" trigger="s8"/>
+<QSLINK comment="" fromID="pl34" fromText="companies" id="qsl14" landmark="se5" relType="IN" toID="se5" toText="buildings" trajector="pl34" trigger="s8"/>
+<QSLINK comment="" fromID="pl33" fromText="ministry" id="qsl15" landmark="se5" relType="IN" toID="se5" toText="buildings" trajector="pl33" trigger="s8"/>
+<QSLINK comment="" fromID="pl28" fromText="Bolsa de Comercio" id="qsl16" landmark="pl27" relType="EC" toID="pl27" toText="Plaza de la Lealtad" trajector="pl28" trigger="s9"/>
+<QSLINK comment="" fromID="pl4" fromText="museums" id="qsl17" landmark="p0" relType="EC" toID="p0" toText="Paseo del Prado" trajector="pl4" trigger="s10"/>
+<QSLINK comment="" fromID="pl32" fromText="museums" id="qsl18" landmark="pl30" relType="IN" toID="pl30" toText="here" trajector="pl32" trigger=""/>
+<OLINK comment="" frame_type="ABSOLUTE" fromID="pl2" fromText="expansion" id="ol0" landmark="pl0" projective="FALSE" referencePt="WEST" relType="WEST" toID="pl0" toText="Puerta del Sol" trajector="pl2" trigger="s0"/>
+<OLINK comment="" frame_type="INTRINSIC" fromID="pl19" fromText="Plaza de la Cibeles" id="ol1" landmark="pl20" projective="FALSE" referencePt="pl20" relType="FRONT_FACE" toID="pl20" toText="headquarters" trajector="pl19" trigger="s6"/>
+<MOVELINK comment="" fromID="m0" fromText="merges" goal="p4" goal_reached="YES" id="mvl0" landmark="" midPoint="" motion_signalID="ms0" mover="p3" pathID="" source="" toID="p3" toText="Calle de Alcalá" trigger="m0"/>
+<MOVELINK comment="" fromID="m5" fromText="Heading" goal="" goal_reached="" id="mvl1" landmark="" midPoint="" motion_signalID="ms4" mover="se6" pathID="p8" source="" toID="se6" toText="you" trigger="m5"/>
+<MOVELINK comment="" fromID="m1" fromText="leads" goal="pl3" goal_reached="YES" id="mvl2" landmark="" midPoint="" motion_signalID="ms1" mover="p3" pathID="" source="" toID="p3" toText="Calle de Alcalá" trigger="m1"/>
+<MOVELINK comment="" fromID="m1" fromText="leads" goal="p0" goal_reached="YES" id="mvl3" landmark="" midPoint="" motion_signalID="ms1" mover="p3" pathID="" source="" toID="p3" toText="Calle de Alcalá" trigger="m1"/>
+<MOVELINK comment="" fromID="m2" fromText="hitting" goal="pl8" goal_reached="YES" id="mvl4" landmark="" midPoint="" motion_signalID="" mover="se1" pathID="" source="" toID="se1" toText="visitors" trigger="m2"/>
+<MOVELINK comment="" fromID="m3" fromText="repair" goal="pl9" goal_reached="YES" id="mvl5" landmark="" midPoint="" motion_signalID="ms2" mover="se1" pathID="" source="" toID="se1" toText="visitors" trigger="m3"/>
+<MOVELINK comment="" fromID="m4" fromText="pulled" goal="" goal_reached="" id="mvl6" landmark="" midPoint="" motion_signalID="ms3" mover="se4" pathID="" source="" toID="se4" toText="chariot" trigger="m4"/>
+<MEASURELINK comment="Maybe the landmark should be a PATH representing the 'calle de Alcalá'?" endPoint1="" endPoint2="" fromID="pl27" fromText="Plaza de la Lealtad" id="ml0" landmark="pl24" relType="DISTANCE" toID="pl24" toText="district" trajector="pl27" val="me0"/>
+<METALINK comment="" fromID="pl4" fromText="museums" id="metal0" objectID1="pl4" objectID2="pl35" relType="COREFERENCE" toID="pl35" toText="trio"/>
+<METALINK comment="" fromID="pl5" fromText="area" id="metal1" objectID1="pl5" objectID2="pl2" relType="COREFERENCE" toID="pl2" toText="expansion"/>
+<METALINK comment="" fromID="pl8" fromText="Big Three" id="metal2" objectID1="pl8" objectID2="pl35" relType="COREFERENCE" toID="pl35" toText="trio"/>
+<METALINK comment="" fromID="pl19" fromText="Plaza de la Cibeles" id="metal3" objectID1="pl19" objectID2="pl3" relType="COREFERENCE" toID="pl3" toText="Plaza de la Cibeles"/>
+<METALINK comment="" fromID="pl10" fromText="Plaza de la Cibeles" id="metal4" objectID1="pl10" objectID2="pl3" relType="COREFERENCE" toID="pl3" toText="Plaza de la Cibeles"/>
+<METALINK comment="" fromID="pl14" fromText="Palacio de         Comunicaciones" id="metal5" objectID1="pl14" objectID2="pl12" relType="COREFERENCE" toID="pl12" toText="building"/>
+<METALINK comment="" fromID="pl15" fromText="Nuestra Señora de las         Comunicaciones" id="metal6" objectID1="pl15" objectID2="pl12" relType="COREFERENCE" toID="pl12" toText="building"/>
+<METALINK comment="" fromID="pl16" fromText="Our Lady of Communications" id="metal7" objectID1="pl16" objectID2="pl12" relType="COREFERENCE" toID="pl12" toText="building"/>
+<METALINK comment="" fromID="pl17" fromText="building" id="metal8" objectID1="pl17" objectID2="pl12" relType="COREFERENCE" toID="pl12" toText="building"/>
+<METALINK comment="" fromID="pl24" fromText="district" id="metal9" objectID1="pl24" objectID2="pl21" relType="COREFERENCE" toID="pl21" toText="district"/>
+<METALINK comment="" fromID="pl22" fromText="Madrid" id="metal10" objectID1="pl22" objectID2="pl1" relType="COREFERENCE" toID="pl1" toText="city"/>
+<METALINK comment="" fromID="pl23" fromText="here" id="metal11" objectID1="pl23" objectID2="pl20" relType="COREFERENCE" toID="pl20" toText="headquarters"/>
+<METALINK comment="" fromID="pl29" fromText="Stock E xchange" id="metal12" objectID1="pl29" objectID2="pl28" relType="COREFERENCE" toID="pl28" toText="Bolsa de Comercio"/>
+<METALINK comment="" fromID="pl31" fromText="first" id="metal13" objectID1="pl31" objectID2="pl32" relType="SUBCOREFERENCE" toID="pl32" toText="museums"/>
+<METALINK comment="" fromID="pl30" fromText="here" id="metal14" objectID1="pl30" objectID2="pl2" relType="COREFERENCE" toID="pl2" toText="expansion"/>
+<METALINK comment="" fromID="p7" fromText="calle de Alcalá" id="metal15" objectID1="p7" objectID2="p3" relType="COREFERENCE" toID="p3" toText="Calle de Alcalá"/>
+<METALINK comment="" fromID="p8" fromText="Paseo del Prado" id="metal16" objectID1="p8" objectID2="p0" relType="COREFERENCE" toID="p0" toText="Paseo del Prado"/>
+<METALINK comment="" fromID="p1" fromText="it" id="metal17" objectID1="p1" objectID2="p0" relType="COREFERENCE" toID="p0" toText="Paseo del Prado"/>
+<METALINK comment="" fromID="se7" fromText="ensemble" id="metal18" objectID1="se7" objectID2="se2" relType="COREFERENCE" toID="se2" toText="fountain"/>
+<METALINK comment="" fromID="se3" fromText="fountain" id="metal19" objectID1="se3" objectID2="se2" relType="COREFERENCE" toID="se2" toText="fountain"/>
+</TAGS>
+<TOKENS>
+<s>
+  <lex ner='ORGANIZATION' begin='9' end='16' pos='NN' label='None'>Bourbon</lex>
+  <lex ner='ORGANIZATION' begin='17' end='23' pos='NNP' label='None'>Madrid</lex>
+  <lex ner='ORGANIZATION' begin='32' end='36' pos='NNP' label='SPATIAL_SIGNAL'>West</lex>
+  <lex ner='ORGANIZATION' begin='37' end='39' pos='IN' label='SPATIAL_SIGNAL'>of</lex>
+  <lex ner='ORGANIZATION' begin='40' end='46' pos='NNP' label='PLACE'>Puerta</lex>
+  <lex ner='O' begin='47' end='50' pos='NNP' label='PLACE'>del</lex>
+  <lex ner='O' begin='51' end='54' pos='NNP' label='PLACE'>Sol</lex>
+  <lex ner='O' begin='55' end='57' pos='VBZ' label='None'>is</lex>
+  <lex ner='O' begin='58' end='61' pos='DT' label='None'>the</lex>
+  <lex ner='O' begin='62' end='66' pos='NN' label='PLACE'>city</lex>
+  <lex begin='66' end='68'>’s</lex>
+  <lex begin='69' end='81'>18th-century</lex>
+  <lex begin='82' end='91'>expansion</lex>
+  <lex begin='100' end='110'>engineered</lex>
+  <lex begin='111' end='113'>by</lex>
+  <lex begin='114' end='117'>the</lex>
+  <lex begin='118' end='125'>Bourbon</lex>
+  <lex begin='126' end='134'>monarchs</lex>
+  <lex begin='134' end='135'>.</lex>
+</s>
+<s>
+  <lex ner='O' begin='136' end='141' pos='NNP' label='PATH'>Calle</lex>
+  <lex ner='O' begin='142' end='144' pos='NNP' label='PATH'>de</lex>
+  <lex begin='145' end='151'>Alcalá</lex>
+  <lex begin='152' end='158'>merges</lex>
+  <lex begin='159' end='163'>with</lex>
+  <lex begin='164' end='168'>Gran</lex>
+  <lex begin='177' end='180'>Vía</lex>
+  <lex begin='181' end='184'>and</lex>
+  <lex begin='185' end='190'>leads</lex>
+  <lex begin='191' end='193'>to</lex>
+  <lex begin='194' end='197'>the</lex>
+  <lex begin='198' end='203'>Plaza</lex>
+  <lex begin='204' end='206'>de</lex>
+  <lex begin='207' end='209'>la</lex>
+  <lex begin='210' end='217'>Cibeles</lex>
+  <lex begin='218' end='221'>and</lex>
+  <lex begin='222' end='225'>the</lex>
+  <lex begin='226' end='231'>Paseo</lex>
+  <lex begin='232' end='235'>del</lex>
+  <lex begin='236' end='246'>Prado,with</lex>
+  <lex begin='255' end='258'>its</lex>
+  <lex begin='259' end='263'>trio</lex>
+  <lex begin='264' end='266'>of</lex>
+  <lex begin='267' end='270'>art</lex>
+  <lex begin='271' end='278'>museums</lex>
+  <lex begin='278' end='279'>.</lex>
+</s>
+<s>
+  <lex ner='O' begin='280' end='283' pos='DT' label='None'>The</lex>
+  <lex ner='O' begin='284' end='288' pos='NN' label='PLACE'>area</lex>
+  <lex begin='288' end='290'>’s</lex>
+  <lex begin='291' end='299'>spacious</lex>
+  <lex begin='300' end='310'>boulevards</lex>
+  <lex begin='310' end='311'>,</lex>
+  <lex begin='312' end='317'>grand</lex>
+  <lex begin='318' end='324'>plazas</lex>
+  <lex begin='324' end='325'>,</lex>
+  <lex begin='334' end='337'>and</lex>
+  <lex begin='338' end='347'>fountains</lex>
+  <lex begin='348' end='351'>are</lex>
+  <lex begin='352' end='364'>interspersed</lex>
+  <lex begin='365' end='369'>with</lex>
+  <lex begin='370' end='377'>densely</lex>
+  <lex begin='378' end='387'>populated</lex>
+  <lex begin='388' end='400'>18th-century</lex>
+  <lex begin='409' end='418'>apartment</lex>
+  <lex begin='419' end='428'>buildings</lex>
+  <lex begin='428' end='429'>.</lex>
+</s>
+<s>
+  <lex ner='O' begin='430' end='435' pos='IN' label='None'>After</lex>
+  <lex ner='O' begin='436' end='443' pos='VBG' label='MOTION'>hitting</lex>
+  <lex ner='O' begin='444' end='447' pos='DT' label='None'>the</lex>
+  <lex ner='O' begin='448' end='451' pos='NN' label='None'>art</lex>
+  <lex ner='O' begin='452' end='457' pos='NN' label='None'>world</lex>
+  <lex begin='457' end='459'>’s</lex>
+  <lex begin='460' end='463'>Big</lex>
+  <lex begin='464' end='469'>Three</lex>
+  <lex begin='469' end='470'>,</lex>
+  <lex begin='471' end='479'>visitors</lex>
+  <lex begin='488' end='491'>can</lex>
+  <lex begin='492' end='498'>repair</lex>
+  <lex begin='499' end='501'>to</lex>
+  <lex begin='502' end='508'>Retiro</lex>
+  <lex begin='509' end='513'>Park</lex>
+  <lex begin='513' end='514'>,</lex>
+  <lex begin='515' end='520'>where</lex>
+  <lex begin='521' end='526'>kings</lex>
+  <lex begin='527' end='531'>once</lex>
+  <lex begin='532' end='537'>found</lex>
+  <lex begin='538' end='545'>respite</lex>
+  <lex begin='546' end='550'>from</lex>
+  <lex begin='551' end='554'>the</lex>
+  <lex begin='563' end='570'>demands</lex>
+  <lex begin='571' end='573'>of</lex>
+  <lex begin='574' end='580'>hectic</lex>
+  <lex begin='581' end='585'>city</lex>
+  <lex begin='586' end='590'>life</lex>
+  <lex begin='590' end='591'>.</lex>
+</s>
+<s>
+  <lex ner='O' begin='600' end='606' pos='IN' label='None'>Except</lex>
+  <lex ner='O' begin='607' end='610' pos='IN' label='None'>for</lex>
+  <lex ner='O' begin='611' end='614' pos='DT' label='None'>the</lex>
+  <lex ner='O' begin='615' end='622' pos='NN' label='NONMOTION_EVENT'>traffic</lex>
+  <lex ner='O' begin='623' end='631' pos='VBG' label='None'>spitting</lex>
+  <lex ner='O' begin='632' end='635' pos='RP' label='None'>out</lex>
+  <lex ner='O' begin='636' end='641' pos='NN' label='None'>noise</lex>
+  <lex ner='O' begin='642' end='645' pos='CC' label='None'>and</lex>
+  <lex ner='O' begin='646' end='649' pos='NN' label='None'>air</lex>
+  <lex ner='O' begin='658' end='667' pos='NN' label='None'>pollution</lex>
+  <lex begin='667' end='668'>,</lex>
+  <lex ner='O' begin='669' end='672' pos='DT' label='None'>the</lex>
+  <lex ner='O' begin='673' end='678' pos='JJ' label='None'>ample</lex>
+  <lex ner='O' begin='679' end='684' pos='NNP' label='PLACE'>Plaza</lex>
+  <lex ner='O' begin='685' end='687' pos='IN' label='PLACE'>de</lex>
+  <lex ner='O' begin='688' end='690' pos='NNP' label='PLACE'>la</lex>
+  <lex ner='O' begin='691' end='698' pos='NNP' label='PLACE'>Cibeles</lex>
+  <lex ner='O' begin='699' end='701' pos='VBZ' label='None'>is</lex>
+  <lex ner='O' begin='702' end='710' pos='JJ' label='None'>splendid</lex>
+  <lex begin='710' end='711'>.</lex>
+</s>
+<s>
+  <lex ner='O' begin='712' end='715' pos='DT' label='None'>The</lex>
+  <lex ner='O' begin='716' end='723' pos='JJ' label='None'>central</lex>
+  <lex ner='O' begin='732' end='740' pos='NN' label='SPATIAL_ENTITY'>fountain</lex>
+  <lex ner='O' begin='741' end='748' pos='VBZ' label='None'>depicts</lex>
+  <lex ner='PERSON' begin='749' end='755' pos='NNP' label='None'>Cybele</lex>
+  <lex begin='755' end='756'>,</lex>
+  <lex ner='O' begin='757' end='758' pos='DT' label='None'>a</lex>
+  <lex ner='O' begin='759' end='772' pos='JJ' label='None'>controversial</lex>
+  <lex ner='O' begin='773' end='778' pos='JJ' label='None'>Greek</lex>
+  <lex ner='O' begin='779' end='788' pos='NN' label='None'>fertility</lex>
+  <lex ner='O' begin='789' end='796' pos='NN' label='None'>goddess</lex>
+  <lex begin='796' end='797'>,</lex>
+  <lex ner='O' begin='806' end='814' pos='RB' label='None'>serenely</lex>
+  <lex ner='O' begin='815' end='822' pos='VBN' label='NONMOTION_EVENT'>settled</lex>
+  <lex ner='O' begin='823' end='825' pos='IN' label='SPATIAL_SIGNAL'>in</lex>
+  <lex ner='O' begin='826' end='827' pos='DT' label='None'>a</lex>
+  <lex ner='O' begin='828' end='835' pos='NN' label='SPATIAL_ENTITY'>chariot</lex>
+  <lex ner='O' begin='836' end='842' pos='VBN' label='MOTION'>pulled</lex>
+  <lex ner='O' begin='843' end='845' pos='IN' label='MOTION_SIGNAL'>by</lex>
+  <lex ner='O' begin='846' end='849' pos='CD' label='MOTION_SIGNAL'>two</lex>
+  <lex ner='O' begin='850' end='855' pos='NNS' label='MOTION_SIGNAL'>lions</lex>
+  <lex begin='855' end='856'>.</lex>
+</s>
+<s>
+  <lex ner='O' begin='857' end='860' pos='DT' label='None'>The</lex>
+  <lex ner='O' begin='861' end='871' pos='JJ' label='None'>sculptural</lex>
+  <lex ner='O' begin='880' end='888' pos='NN' label='SPATIAL_ENTITY'>ensemble</lex>
+  <lex ner='O' begin='889' end='891' pos='VBZ' label='None'>is</lex>
+  <lex ner='O' begin='892' end='900' pos='RB' label='None'>probably</lex>
+  <lex ner='O' begin='901' end='904' pos='DT' label='None'>the</lex>
+  <lex ner='O' begin='905' end='915' pos='JJ' label='None'>best-known</lex>
+  <lex ner='O' begin='916' end='924' pos='NN' label='SPATIAL_ENTITY'>fountain</lex>
+  <lex ner='O' begin='925' end='927' pos='IN' label='SPATIAL_SIGNAL'>in</lex>
+  <lex ner='O' begin='928' end='931' pos='DT' label='None'>all</lex>
+  <lex ner='LOCATION' begin='932' end='937' pos='NNP' label='PLACE'>Spain</lex>
+  <lex begin='937' end='938'>.</lex>
+</s>
+<s>
+  <lex ner='O' begin='939' end='942' pos='DT' label='None'>The</lex>
+  <lex ner='O' begin='943' end='947' pos='RBS' label='None'>most</lex>
+  <lex ner='O' begin='956' end='967' pos='JJ' label='None'>unavoidable</lex>
+  <lex ner='O' begin='968' end='976' pos='NN' label='PLACE'>building</lex>
+  <lex ner='O' begin='977' end='979' pos='IN' label='SPATIAL_SIGNAL'>on</lex>
+  <lex ner='O' begin='980' end='983' pos='DT' label='None'>the</lex>
+  <lex ner='O' begin='984' end='989' pos='NN' label='PLACE'>plaza</lex>
+  <lex ner='O' begin='990' end='992' pos='VBZ' label='None'>is</lex>
+  <lex ner='O' begin='993' end='996' pos='DT' label='None'>the</lex>
+  <lex ner='O' begin='997' end='1011' pos='JJ' label='None'>cathedral-like</lex>
+  <lex ner='ORGANIZATION' begin='1012' end='1019' pos='NNP' label='PLACE'>Palacio</lex>
+  <lex ner='ORGANIZATION' begin='1020' end='1022' pos='IN' label='PLACE'>de</lex>
+  <lex ner='ORGANIZATION' begin='1031' end='1045' pos='NNP' label='PLACE'>Comunicaciones</lex>
+  <lex begin='1045' end='1046'>,</lex>
+  <lex ner='O' begin='1047' end='1056' pos='RB' label='None'>teasingly</lex>
+  <lex ner='O' begin='1057' end='1066' pos='VBD' label='None'>nicknamed</lex>
+  <lex ner='O' begin='1067' end='1074' pos='NNP' label='PLACE'>Nuestra</lex>
+  <lex begin='1075' end='1081'>Señora</lex>
+  <lex begin='1082' end='1084'>de</lex>
+  <lex begin='1085' end='1088'>las</lex>
+  <lex begin='1097' end='1111'>Comunicaciones</lex>
+  <lex begin='1112' end='1113'>(</lex>
+  <lex begin='1113' end='1116'>Our</lex>
+  <lex begin='1117' end='1121'>Lady</lex>
+  <lex begin='1122' end='1124'>of</lex>
+  <lex begin='1125' end='1139'>Communications</lex>
+  <lex begin='1139' end='1140'>)</lex>
+  <lex begin='1140' end='1141'>.</lex>
+</s>
+<s>
+  <lex ner='O' begin='1142' end='1153' pos='VBN' label='None'>Inaugurated</lex>
+  <lex ner='O' begin='1154' end='1156' pos='IN' label='None'>in</lex>
+  <lex ner='O' begin='1157' end='1161' pos='CD' label='None'>1919</lex>
+  <lex begin='1161' end='1162'>,</lex>
+  <lex ner='O' begin='1163' end='1166' pos='DT' label='None'>the</lex>
+  <lex ner='O' begin='1175' end='1183' pos='NN' label='PLACE'>building</lex>
+  <lex ner='O' begin='1184' end='1186' pos='VBZ' label='None'>is</lex>
+  <lex ner='O' begin='1187' end='1190' pos='DT' label='None'>the</lex>
+  <lex ner='O' begin='1191' end='1196' pos='RB' label='None'>quite</lex>
+  <lex ner='O' begin='1197' end='1207' pos='JJ' label='None'>remarkable</lex>
+  <lex ner='O' begin='1208' end='1215' pos='JJ' label='None'>central</lex>
+  <lex ner='O' begin='1216' end='1220' pos='NN' label='None'>post</lex>
+  <lex ner='O' begin='1221' end='1227' pos='NN' label='PLACE'>office</lex>
+  <lex begin='1227' end='1228'>,</lex>
+  <lex ner='O' begin='1229' end='1233' pos='IN' label='SPATIAL_SIGNAL'>with</lex>
+  <lex ner='O' begin='1234' end='1238' pos='JJ' label='None'>high</lex>
+  <lex ner='O' begin='1247' end='1255' pos='NNS' label='PATH'>ceilings</lex>
+  <lex ner='O' begin='1256' end='1259' pos='CC' label='None'>and</lex>
+  <lex ner='O' begin='1260' end='1268' pos='JJ' label='SPATIAL_SIGNAL'>overhead</lex>
+  <lex ner='O' begin='1269' end='1277' pos='NNS' label='PATH'>walkways</lex>
+  <lex begin='1277' end='1278'>.</lex>
+</s>
+<s>
+  <lex ner='O' begin='1287' end='1291' pos='RB' label='None'>Also</lex>
+  <lex ner='O' begin='1292' end='1298' pos='VBG' label='SPATIAL_SIGNAL'>facing</lex>
+  <lex ner='O' begin='1299' end='1304' pos='NNP' label='PLACE'>Plaza</lex>
+  <lex ner='O' begin='1305' end='1307' pos='IN' label='PLACE'>de</lex>
+  <lex ner='O' begin='1308' end='1310' pos='NNP' label='PLACE'>la</lex>
+  <lex ner='O' begin='1311' end='1318' pos='NNP' label='PLACE'>Cibeles</lex>
+  <lex begin='1318' end='1319'>,</lex>
+  <lex ner='O' begin='1320' end='1323' pos='DT' label='None'>the</lex>
+  <lex ner='ORGANIZATION' begin='1324' end='1329' pos='NNP' label='None'>Banco</lex>
+  <lex ner='ORGANIZATION' begin='1330' end='1332' pos='NNP' label='None'>de</lex>
+  <lex begin='1333' end='1339'>España</lex>
+  <lex begin='1340' end='1341'>(</lex>
+  <lex begin='1341' end='1345'>Bank</lex>
+  <lex begin='1354' end='1356'>of</lex>
+  <lex begin='1357' end='1362'>Spain</lex>
+  <lex begin='1362' end='1363'>)</lex>
+  <lex begin='1364' end='1376'>headquarters</lex>
+  <lex begin='1377' end='1385'>combines</lex>
+  <lex begin='1386' end='1399'>Neo-classical</lex>
+  <lex begin='1399' end='1400'>,</lex>
+  <lex begin='1401' end='1408'>Baroque</lex>
+  <lex begin='1408' end='1409'>,</lex>
+  <lex begin='1410' end='1413'>and</lex>
+  <lex begin='1414' end='1420'>rococo</lex>
+  <lex begin='1429' end='1435'>styles</lex>
+  <lex begin='1435' end='1436'>.</lex>
+</s>
+<s>
+  <lex ner='O' begin='1437' end='1440' pos='DT' label='None'>The</lex>
+  <lex ner='O' begin='1441' end='1450' pos='JJ' label='None'>financial</lex>
+  <lex ner='O' begin='1451' end='1459' pos='NN' label='PLACE'>district</lex>
+  <lex begin='1459' end='1460'>,</lex>
+  <lex ner='LOCATION' begin='1461' end='1467' pos='NNP' label='PLACE'>Madrid</lex>
+  <lex begin='1467' end='1469'>’s</lex>
+  <lex begin='1470' end='1474'>Wall</lex>
+  <lex begin='1475' end='1481'>Street</lex>
+  <lex begin='1481' end='1482'>,</lex>
+  <lex begin='1483' end='1489'>begins</lex>
+  <lex begin='1490' end='1494'>here</lex>
+  <lex begin='1495' end='1497'>on</lex>
+  <lex begin='1506' end='1511'>calle</lex>
+  <lex begin='1512' end='1514'>de</lex>
+  <lex begin='1515' end='1521'>Alcalá</lex>
+  <lex begin='1521' end='1522'>.</lex>
+</s>
+<s>
+  <lex ner='O' begin='1523' end='1531' pos='VBG' label='None'>Imposing</lex>
+  <lex ner='O' begin='1532' end='1541' pos='NNS' label='SPATIAL_ENTITY'>buildings</lex>
+  <lex ner='O' begin='1542' end='1544' pos='IN' label='SPATIAL_SIGNAL'>in</lex>
+  <lex ner='O' begin='1545' end='1549' pos='DT' label='None'>this</lex>
+  <lex ner='O' begin='1550' end='1559' pos='JJ' label='None'>high-rent</lex>
+  <lex ner='O' begin='1560' end='1568' pos='NN' label='PLACE'>district</lex>
+  <lex ner='O' begin='1569' end='1576' pos='VBP' label='SPATIAL_SIGNAL'>contain</lex>
+  <lex ner='O' begin='1585' end='1588' pos='DT' label='None'>the</lex>
+  <lex ner='O' begin='1589' end='1593' pos='NN' label='None'>head</lex>
+  <lex ner='O' begin='1594' end='1601' pos='NNS' label='PLACE'>offices</lex>
+  <lex ner='O' begin='1602' end='1604' pos='CC' label='None'>or</lex>
+  <lex ner='O' begin='1605' end='1613' pos='NNS' label='PLACE'>branches</lex>
+  <lex ner='O' begin='1614' end='1616' pos='IN' label='None'>of</lex>
+  <lex ner='O' begin='1617' end='1621' pos='JJR' label='None'>more</lex>
+  <lex ner='O' begin='1622' end='1626' pos='IN' label='None'>than</lex>
+  <lex ner='O' begin='1627' end='1630' pos='CD' label='None'>100</lex>
+  <lex ner='O' begin='1631' end='1636' pos='NNS' label='None'>banks</lex>
+  <lex begin='1636' end='1637'>,</lex>
+  <lex ner='O' begin='1638' end='1642' pos='CC' label='None'>plus</lex>
+  <lex ner='O' begin='1643' end='1652' pos='NN' label='None'>insurance</lex>
+  <lex ner='O' begin='1661' end='1670' pos='NNS' label='PLACE'>companies</lex>
+  <lex begin='1670' end='1671'>,</lex>
+  <lex ner='O' begin='1672' end='1675' pos='DT' label='None'>the</lex>
+  <lex ner='ORGANIZATION' begin='1676' end='1683' pos='NN' label='None'>finance</lex>
+  <lex ner='ORGANIZATION' begin='1684' end='1692' pos='NN' label='PLACE'>ministry</lex>
+  <lex begin='1692' end='1693'>,</lex>
+  <lex ner='O' begin='1694' end='1697' pos='CC' label='None'>and</lex>
+  <lex ner='O' begin='1698' end='1700' pos='IN' label='SPATIAL_SIGNAL'>on</lex>
+  <lex ner='O' begin='1701' end='1707' pos='JJ' label='MEASURE'>nearby</lex>
+  <lex ner='O' begin='1708' end='1713' pos='NNP' label='PLACE'>Plaza</lex>
+  <lex ner='O' begin='1714' end='1716' pos='IN' label='PLACE'>de</lex>
+  <lex ner='O' begin='1717' end='1719' pos='NNP' label='PLACE'>la</lex>
+  <lex ner='O' begin='1720' end='1727' pos='NNP' label='PLACE'>Lealtad</lex>
+  <lex begin='1727' end='1728'>,</lex>
+  <lex ner='O' begin='1729' end='1732' pos='DT' label='None'>the</lex>
+  <lex ner='O' begin='1741' end='1746' pos='NNP' label='PLACE'>Bolsa</lex>
+  <lex ner='O' begin='1747' end='1749' pos='IN' label='PLACE'>de</lex>
+  <lex ner='O' begin='1750' end='1758' pos='NNP' label='PLACE'>Comercio</lex>
+  <lex begin='1759' end='1760'>(</lex>
+  <lex ner='O' begin='1760' end='1765' pos='NNP' label='PLACE'>Stock</lex>
+  <lex ner='O' begin='1766' end='1767' pos='NNP' label='PLACE'>E</lex>
+  <lex ner='O' begin='1768' end='1775' pos='NN' label='PLACE'>xchange</lex>
+  <lex begin='1775' end='1776'>)</lex>
+  <lex begin='1776' end='1777'>.</lex>
+</s>
+<s>
+  <lex ner='O' begin='1778' end='1785' pos='VBG' label='MOTION'>Heading</lex>
+  <lex ner='O' begin='1786' end='1790' pos='RP' label='MOTION_SIGNAL'>down</lex>
+  <lex ner='O' begin='1791' end='1796' pos='FW' label='None'>leafy</lex>
+  <lex ner='PERSON' begin='1797' end='1802' pos='FW' label='PATH'>Paseo</lex>
+  <lex ner='PERSON' begin='1803' end='1806' pos='FW' label='PATH'>del</lex>
+  <lex ner='PERSON' begin='1807' end='1812' pos='FW' label='PATH'>Prado</lex>
+  <lex ner='O' begin='1821' end='1824' pos='PRP' label='SPATIAL_ENTITY'>you</lex>
+  <lex begin='1824' end='1827'>’ll</lex>
+  <lex begin='1828' end='1832'>find</lex>
+  <lex begin='1833' end='1836'>the</lex>
+  <lex begin='1837' end='1842'>first</lex>
+  <lex begin='1842' end='1843'>,</lex>
+  <lex begin='1844' end='1847'>and</lex>
+  <lex begin='1848' end='1856'>greatest</lex>
+  <lex begin='1856' end='1857'>,</lex>
+  <lex begin='1858' end='1860'>of</lex>
+  <lex begin='1861' end='1864'>the</lex>
+  <lex begin='1865' end='1868'>art</lex>
+  <lex begin='1869' end='1876'>museums</lex>
+  <lex begin='1877' end='1881'>here</lex>
+  <lex begin='1881' end='1882'>.</lex>
+</s>
+</TOKENS>
+
+</SpaceEvalTaskv1.2>
