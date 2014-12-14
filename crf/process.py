@@ -18,6 +18,9 @@ from util.unicode import u2ascii
 GOLDDIR = '/users/sethmachine/desktop/Tokenized'
 NEWDIR = '/users/sethmachine/desktop/TokenizedPlus/'
 
+#tokenization mistake in this file: line 171 has 2 sentences in 1 sentence
+#t = td.TagDoc('/users/sethmachine/desktop/Tokenized/RFC/Hollywood.xml')
+
 xml_tokens_pattern = re.compile(r'<TOKENS>.+</TOKENS>', re.DOTALL)
 whitespace_pattern = re.compile(r' {2,}')
 quote_pattern = re.compile(r'["\']')
@@ -109,6 +112,9 @@ def process(tagdoc, golddir, newdir=''):
     path = newdir + tagdoc.filename.replace(golddir, '')
     #path = os.path.join(newdir, tagdoc.filename.replace(golddir, ''))
     print path
+    if os.path.exists(path): #don't redo our existing work :]
+        print test(tagdoc, td.TagDoc(path))
+        return
     mkparentdirs(path)
     w = open(tagdoc.filename, 'r')
     t = w.read()
@@ -122,7 +128,7 @@ def process(tagdoc, golddir, newdir=''):
         raw_sentence = m.group()
         tokens = [''.join([c if ord(c) < 128 else u2ascii[c] for c in x.text]) for x in old_lexes]
         #tokens = ''.join([c for c in x.text])
-        sentIndex = int(tagdoc.tokenizer.sentences[i][0])
+        #sentIndex = int(tagdoc.tokenizer.sentences[i][0])
         pos_tags = pos.tag(tokens)
         ner_tags = ner.tag(tokens)
         c = 0
@@ -134,6 +140,9 @@ def process(tagdoc, golddir, newdir=''):
             if type(label) != type(None):
                 label = label.name
             if pos_tags:
+                if not ner_tags:
+                    return (tokens, pos_tags, ner_tags)
+                #print pos_tags, ner_tags
                 if tokens[j] == pos_tags[c][0]:
                     new_lex.addAll([('label', label), ('pos', pos_tags[c][1]), ('ner', ner_tags[c][1])])
                     #print label, pos_tags[c], ner_tags[c]
