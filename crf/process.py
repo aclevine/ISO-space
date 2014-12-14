@@ -51,7 +51,10 @@ class Lex(object):
         self.keyvalues[str(key)] = str(value)
 
     def addAll(self, keyvalues):
-        self.keyvalues = dict(self.keyvalues.items() + {str(key):str(value) for (key, value) in keyvalues}.items())
+        #self.keyvalues = dict(self.keyvalues.items() + {str(key):str(value) for (key, value) in keyvalues}.items())
+        for x in keyvalues:
+            if x not in self.keyvalues:
+                self.keyvalues[x] = keyvalues[x]
 
     def __repr__(self):
         attrs = ''.join([' ' + x + '=\'' + self.keyvalues[x] + '\'' for x in self.keyvalues])
