@@ -100,7 +100,6 @@ def test(doc1, doc2):
                 return (sent1, sent2)
     return True
         
-
 sentence_pattern = re.compile(r'<s>.+?</s>', re.DOTALL)
 lex_attrs_pattern = re.compile(r'(?<=<lex)[^>]+')
 
@@ -110,7 +109,6 @@ def process(tagdoc, golddir, newdir=''):
     if not os.path.exists(newdir): #if the dir doesn't exist
         os.mkdir(newdir)
     path = newdir + tagdoc.filename.replace(golddir, '')
-    #path = os.path.join(newdir, tagdoc.filename.replace(golddir, ''))
     print path
     if os.path.exists(path): #don't redo our existing work :]
         print test(tagdoc, td.TagDoc(path))
@@ -126,9 +124,7 @@ def process(tagdoc, golddir, newdir=''):
         sentence = tagdoc.sentences[i]
         old_lexes = sentence.getchildren()
         raw_sentence = m.group()
-        tokens = [''.join([c if ord(c) < 128 else u2ascii[c] for c in x.text]) for x in old_lexes]
-        #tokens = ''.join([c for c in x.text])
-        #sentIndex = int(tagdoc.tokenizer.sentences[i][0])
+        tokens = [''.join([c if ord(c) < 128 else u2ascii[c] for c in x.text]).encode('utf-8') for x in old_lexes]
         pos_tags = pos.tag(tokens)
         ner_tags = ner.tag(tokens)
         c = 0
@@ -142,15 +138,11 @@ def process(tagdoc, golddir, newdir=''):
             if pos_tags:
                 if not ner_tags:
                     return (tokens, pos_tags, ner_tags)
-                #print pos_tags, ner_tags
                 if tokens[j] == pos_tags[c][0]:
                     new_lex.addAll([('label', label), ('pos', pos_tags[c][1]), ('ner', ner_tags[c][1])])
-                    #print label, pos_tags[c], ner_tags[c]
                     pos_tags.remove(pos_tags[c])
                     ner_tags.remove(ner_tags[c])
-            #print new_lex
             t = t.replace(attributes, str(new_lex))
-        #print '\n'
     w = open(path, 'w')
     print>>w, t
     w.close()
