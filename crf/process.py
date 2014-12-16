@@ -20,6 +20,7 @@ NEWDIR = '/users/sethmachine/desktop/TokenizedPlus/'
 
 #tokenization mistake in this file: line 171 has 2 sentences in 1 sentence
 #t = td.TagDoc('/users/sethmachine/desktop/Tokenized/CP/46_N_22_E.xml')
+#t = td.TagDoc('/users/sethmachine/desktop/Tokenized/CP/46_N_23_E.xml')
 
 xml_tokens_pattern = re.compile(r'<TOKENS>.+</TOKENS>', re.DOTALL)
 whitespace_pattern = re.compile(r' {2,}')
@@ -57,7 +58,7 @@ class Lex(object):
         self.keyvalues = dict(self.keyvalues.items() + {str(key):str(value) for (key, value) in keyvalues}.items())
 
     def __repr__(self):
-        attrs = ''.join([' ' + x + '=\'' + self.keyvalues[x] + '\'' for x in self.keyvalues])
+        attrs = ''.join([' ' + x + '=\'' + self.keyvalues[x].replace("'", '') + '\'' for x in self.keyvalues])
         return attrs.encode('utf-8')
         return ''.join(['<lex', attrs, '>', self.text, '</lex>']).encode('utf-8')
         
@@ -216,4 +217,11 @@ AttributeError: 'NoneType' object has no attribute 'group'
 >        unexpected type: WORD
 >        #<word "5">
 > While executing: SPARSER::VALUE-OF, in process toplevel(2).
+"""
+
+#sparser parses this incorrectly
+#edge: "gps '"
+#which causes the string delimiter to overflow, making the xml formatted wrong
+"""
+The GPS 'said' that from here till the point we had 200 meters left (Point).
 """
