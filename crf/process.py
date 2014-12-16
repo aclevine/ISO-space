@@ -20,7 +20,7 @@ NEWDIR = '/users/sethmachine/desktop/TokenizedPlus/'
 
 #tokenization mistake in this file: line 171 has 2 sentences in 1 sentence
 #t = td.TagDoc('/users/sethmachine/desktop/Tokenized/CP/46_N_22_E.xml')
-#t = td.TagDoc('/users/sethmachine/desktop/Tokenized/CP/47_N_25_E.xml')
+#t = td.TagDoc('/users/sethmachine/desktop/Tokenized/RFC/Bogota.xml')
 
 xml_tokens_pattern = re.compile(r'<TOKENS>.+</TOKENS>', re.DOTALL)
 whitespace_pattern = re.compile(r' {2,}')
@@ -250,4 +250,18 @@ Fortunately Eastern Europe - even outside the EU is easy travelling for EU citiz
 > Type :GO to continue, :POP to abort, :R for a list of available restarts.
 > If continued: Return from BREAK.
 > Type :? for other options.
+"""
+
+"""
+/home/u/fall11/sdworman/iso-space/Tokenized++/RFC/Bogota.xml
+> Break: Another case of a category for the region: #<ref-category TOWN>
+> While executing: SPARSER::GIVE-KIND-ITS-NAME, in process toplevel(2).
+> Break: new case for :all-caps SINGLE-CAPITALIZED-LETTER
+> While executing: SUBSUMING-VARIANT, in process listener(1).
+> Type :GO to continue, :POP to abort, :R for a list of available restarts.
+> If continued: Return from BREAK.
+> Type :? for other options.
+1 > :q
+? (p "But , while most families I see seem to have good family and community lives , the health care is poor and they have nowhere near the options that or my friends have a $  minimum wage her is $ 200 a month .")
+but , while [ most families][ i][ see seem] to [ have][ good family] and [ community][ lives] , [ the health care][ is poor] and [ they][ have nowhere] near [ the options][ that] or [ my friends][ have][ a $  minimum wage][ her][ is][ $ 200][ a month][ .]
 """

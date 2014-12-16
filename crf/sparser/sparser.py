@@ -98,7 +98,7 @@ def split_edge(edge):
             
         
 
-vill_pattern = re.compile(r'the village of')
+vill_pattern = re.compile(r'(the )?(village|town) of')
 comm_pattern = re.compile(r'(?P<l>[0-9]+),(?P<r>[0-9]+)')
 
 def p2edges(string, sparser_path=SPARSER, split=False):
@@ -117,6 +117,8 @@ def p2edges(string, sparser_path=SPARSER, split=False):
         its corresponding values.
 
     """
+    string = string.replace('the options that I or my', 'the options that or my')
+    string = string.replace('$ " ', '') 
     string = string.replace('two ( ', 'two ')
     string = vill_pattern.sub('the city of', string)
     string = comm_pattern.sub('\g<l>.\g<r>', string) #handle european format
