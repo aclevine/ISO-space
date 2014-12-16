@@ -148,7 +148,7 @@ def process(tagdoc, golddir, newdir='', renew=False):
         #print ' '.join([x for x in tokens])
         edges = []
         try:
-            print ' '.join([x for x in tokens])
+            #print ' '.join([x for x in tokens])
             edges = p(' '.join([x for x in tokens]), split=True)
         except:
             pass
