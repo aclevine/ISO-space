@@ -19,7 +19,7 @@ GOLDDIR = '/users/sethmachine/desktop/Tokenized'
 NEWDIR = '/users/sethmachine/desktop/TokenizedPlus/'
 
 #tokenization mistake in this file: line 171 has 2 sentences in 1 sentence
-#t = td.TagDoc('/users/sethmachine/desktop/Tokenized/RFC/Hollywood.xml')
+#t = td.TagDoc('/users/sethmachine/desktop/Tokenized/CP/46_N_21_E.xml')
 
 xml_tokens_pattern = re.compile(r'<TOKENS>.+</TOKENS>', re.DOTALL)
 whitespace_pattern = re.compile(r' {2,}')
@@ -127,9 +127,11 @@ def process(tagdoc, golddir, newdir=''):
         os.mkdir(newdir)
     path = newdir + tagdoc.filename.replace(golddir, '')
     print path
+    """
     if os.path.exists(path): #don't redo our existing work :]
         print test(tagdoc, td.TagDoc(path))
         return
+    """
     mkparentdirs(path)
     w = open(tagdoc.filename, 'r')
     t = w.read()
@@ -147,6 +149,7 @@ def process(tagdoc, golddir, newdir=''):
         #print ' '.join([x for x in tokens])
         edges = []
         try:
+            print ' '.join([x for x in tokens])
             edges = p(' '.join([x for x in tokens]), split=True)
         except:
             pass
@@ -180,3 +183,30 @@ def process(tagdoc, golddir, newdir=''):
 
 def printchild(s):
 	return ''.join([x.text + ', ' for x in s.getchildren()])
+
+
+#an odd error with sparser
+"""
+/home/u/fall11/sdworman/iso-space/Tokenized++/CP/45_N_23_E.xml
+Traceback (most recent call last):
+  File "script.py", line 52, in <module>
+    process.process(doc, golddir=args.source)
+  File "/home/u/fall11/sdworman/iso-space/ISO-space/crf/process.py", line 148, in process
+    edges = p(' '.join([x for x in tokens]), split=True)
+  File "/home/u/fall11/sdworman/iso-space/ISO-space/crf/sparser/sparser.py", line 126, in p2edges
+    new_edge = Edge(edgeStr)
+  File "/home/u/fall11/sdworman/iso-space/ISO-space/crf/sparser/sparser.py", line 70, in __init__
+    self.edges = [x for x in m.group('edge').split(' ') if x]
+AttributeError: 'NoneType' object has no attribute 'group'
+"""
+
+#another odd error
+#breaks on this sentence:
+#Using field tracks we needed plenty of time to reach the village of Sinpetru German , where we met several very friendly women , who told us some interesting historical facts of their village .
+#breaks at this spot on the word village/town: the [village] of Sinpetru German
+"""
+(p "(p "Using field tracks we needed plenty of time to reach the town of Sinpetru German , where we met several very friendly women , who told us some interesting historical facts of their town .")
+/home/u/fall11/sdworman/iso-space/Tokenized++/CP/46_N_21_E.xml
+> Break: Another case of a category for the region: #<ref-category VILLAGE>
+> While executing: SPARSER::GIVE-KIND-ITS-NAME, in process toplevel(2).
+"""

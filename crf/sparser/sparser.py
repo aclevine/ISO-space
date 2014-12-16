@@ -98,6 +98,8 @@ def split_edge(edge):
             
         
 
+vill_pattern = re.compile(r'the village of')
+
 def p2edges(string, sparser_path=SPARSER, split=False):
     """Wrapper around p(arse) to get actual edges output.
 
@@ -114,6 +116,7 @@ def p2edges(string, sparser_path=SPARSER, split=False):
         its corresponding values.
 
     """
+    string = vill_pattern.sub('the city of', string)
     out = p(string, sparser_path)
     if not b.search(out):
         return None
