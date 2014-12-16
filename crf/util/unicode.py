@@ -7,6 +7,7 @@
 """
 
 u2ascii = {}
+ureverse = {}
 
 u2ascii[u'\u0103'] = 'a' #'ă'
 u2ascii[u'\u2002'] = ' ' #unknown white space character
@@ -70,5 +71,8 @@ u2ascii[u'\xf6'] = 'o' #'ö'
 
 u2ascii[u'\xfc'] = 'u' #'ü'
 
-def ureplace(text):
+ureverse = {u2ascii[key]:key for key in u2ascii}
+
+def ureplace(text, reverse=False):
     return ''.join([char if ord(char) < 128 else u2ascii[char] for char in text])
+
