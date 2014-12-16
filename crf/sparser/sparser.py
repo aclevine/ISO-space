@@ -117,6 +117,7 @@ def p2edges(string, sparser_path=SPARSER, split=False):
         its corresponding values.
 
     """
+    string = string.replace('two ( ', 'two ')
     string = vill_pattern.sub('the city of', string)
     string = comm_pattern.sub('\g<l>.\g<r>', string) #handle european format
     #string = string.replace('a 3,5 hour wait', 'a 3 hour wait')

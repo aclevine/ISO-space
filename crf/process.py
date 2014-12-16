@@ -20,7 +20,7 @@ NEWDIR = '/users/sethmachine/desktop/TokenizedPlus/'
 
 #tokenization mistake in this file: line 171 has 2 sentences in 1 sentence
 #t = td.TagDoc('/users/sethmachine/desktop/Tokenized/CP/46_N_22_E.xml')
-#t = td.TagDoc('/users/sethmachine/desktop/Tokenized/CP/46_N_26_E.xml')
+#t = td.TagDoc('/users/sethmachine/desktop/Tokenized/CP/47_N_25_E.xml')
 
 xml_tokens_pattern = re.compile(r'<TOKENS>.+</TOKENS>', re.DOTALL)
 whitespace_pattern = re.compile(r' {2,}')
@@ -236,4 +236,18 @@ The GPS 'said' that from here till the point we had 200 meters left (Point).
 >        unexpected type: WORD
 >        #<word "5">
 > While executing: SPARSER::VALUE-OF, in process toplevel(2).
+"""
+
+#another error!
+#the problem is here:
+#( after printing some multimaps and a visit report or two ( always the optimist )
+#there's an open paren inside but it has no matching close! haha
+"""
+Tokenized++/CP/47_N_25_E.xml
+Fortunately Eastern Europe - even outside the EU is easy travelling for EU citizens and I was able to jump in the car ( after printing some multimaps and a visit report or two ( always the optimist ) and drive across Serbia , and Bulgaria to Romania with few hassles ( those there were concentrated on car insurance ) .
+> Break: double parens
+> While executing: MARK-OPEN-PAREN, in process listener(1).
+> Type :GO to continue, :POP to abort, :R for a list of available restarts.
+> If continued: Return from BREAK.
+> Type :? for other options.
 """
