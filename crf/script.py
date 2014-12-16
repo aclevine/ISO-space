@@ -49,7 +49,7 @@ print args.source
 gold = process.td.TagDir(args.source)
 
 for doc in gold.docs:
-    process.process(doc, golddir=args.source)
+    process.process(doc, golddir=args.source, renew=True)
 
 print 'Done!'
 quit()
