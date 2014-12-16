@@ -265,3 +265,11 @@ Fortunately Eastern Europe - even outside the EU is easy travelling for EU citiz
 ? (p "But , while most families I see seem to have good family and community lives , the health care is poor and they have nowhere near the options that or my friends have a $  minimum wage her is $ 200 a month .")
 but , while [ most families][ i][ see seem] to [ have][ good family] and [ community][ lives] , [ the health care][ is poor] and [ they][ have nowhere] near [ the options][ that] or [ my friends][ have][ a $  minimum wage][ her][ is][ $ 200][ a month][ .]
 """
+
+#close paren error (again)
+"""
+/home/u/fall11/sdworman/iso-space/Tokenized++/RFC/Ensenada.xml
+> Break: new case for single-quote while looking to extend a capitalized sequence.
+>        The next word is #<word CLOSE-PAREN> at position 21
+> While executing: SPARSER::CHECKOUT-SINGLE-QUOTE-FOR-CAPSEQ, in process toplevel(2).
+"""
