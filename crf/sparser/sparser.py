@@ -99,6 +99,7 @@ def split_edge(edge):
         
 
 vill_pattern = re.compile(r'the village of')
+comm_pattern = re.compile(r'(?P<l>[0-9]+),(?P<r>[0-9]+)')
 
 def p2edges(string, sparser_path=SPARSER, split=False):
     """Wrapper around p(arse) to get actual edges output.
@@ -117,7 +118,8 @@ def p2edges(string, sparser_path=SPARSER, split=False):
 
     """
     string = vill_pattern.sub('the city of', string)
-    string = string.replace('a 3,5 hour wait', 'a 3 hour wait')
+    string = comm_pattern.sub('\g<l>.\g<r>', string) #handle european format
+    #string = string.replace('a 3,5 hour wait', 'a 3 hour wait')
     out = p(string, sparser_path)
     if not b.search(out):
         return None

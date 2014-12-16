@@ -20,7 +20,7 @@ NEWDIR = '/users/sethmachine/desktop/TokenizedPlus/'
 
 #tokenization mistake in this file: line 171 has 2 sentences in 1 sentence
 #t = td.TagDoc('/users/sethmachine/desktop/Tokenized/CP/46_N_22_E.xml')
-#t = td.TagDoc('/users/sethmachine/desktop/Tokenized/CP/46_N_23_E.xml')
+#t = td.TagDoc('/users/sethmachine/desktop/Tokenized/CP/46_N_26_E.xml')
 
 xml_tokens_pattern = re.compile(r'<TOKENS>.+</TOKENS>', re.DOTALL)
 whitespace_pattern = re.compile(r' {2,}')
@@ -121,7 +121,7 @@ def ledge(edges, token):
 sentence_pattern = re.compile(r'<s>.+?</s>', re.DOTALL)
 lex_attrs_pattern = re.compile(r'(?<=<lex)[^>]+')
 
-def process(tagdoc, golddir, newdir='', renew=False):
+def process(tagdoc, golddir, newdir='', renew=False, debug=False):
     if not newdir:
         newdir = golddir + '++'
     if not os.path.exists(newdir): #if the dir doesn't exist
@@ -149,7 +149,8 @@ def process(tagdoc, golddir, newdir='', renew=False):
         #print ' '.join([x for x in tokens])
         edges = []
         try:
-            #print ' '.join([x for x in tokens])
+            if debug:
+                print ' '.join([x for x in tokens])
             edges = p(' '.join([x for x in tokens]), split=True)
         except:
             pass
@@ -224,4 +225,15 @@ AttributeError: 'NoneType' object has no attribute 'group'
 #which causes the string delimiter to overflow, making the xml formatted wrong
 """
 The GPS 'said' that from here till the point we had 200 meters left (Point).
+"""
+
+#really?!
+#26-Dec-2002 -- This confluence can be found 1,5 km to the west from Icafalau ( Ikafalva ) in Covasna county , Romania .
+#sparser messes up on european style of measurements: x,y [measurement]
+"""
+/home/u/fall11/sdworman/iso-space/Tokenized++/CP/46_N_26_E.xml
+> Break: Object passed in as 'individual' parameter is of
+>        unexpected type: WORD
+>        #<word "5">
+> While executing: SPARSER::VALUE-OF, in process toplevel(2).
 """
