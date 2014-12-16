@@ -145,7 +145,11 @@ def process(tagdoc, golddir, newdir=''):
         pos_tags = pos.tag(tokens)
         ner_tags = ner.tag(tokens)
         #print ' '.join([x for x in tokens])
-        edges = p(' '.join([x for x in tokens]), split=True)
+        edges = []
+        try:
+            edges = p(' '.join([x for x in tokens]), split=True)
+        except:
+            pass
         c = 0
         for (j, n) in enumerate(re.finditer(lex_attrs_pattern, raw_sentence)):
             old_lex = old_lexes[j]
