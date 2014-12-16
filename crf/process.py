@@ -127,11 +127,9 @@ def process(tagdoc, golddir, newdir=''):
         os.mkdir(newdir)
     path = newdir + tagdoc.filename.replace(golddir, '')
     print path
-    """
     if os.path.exists(path): #don't redo our existing work :]
         print test(tagdoc, td.TagDoc(path))
         return
-    """
     mkparentdirs(path)
     w = open(tagdoc.filename, 'r')
     t = w.read()
