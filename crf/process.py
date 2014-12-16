@@ -99,6 +99,23 @@ def test(doc1, doc2):
             if child1.text != child2.text:
                 return (sent1, sent2)
     return True
+
+def ledges(edges, tokens):
+	l = []
+	for token in tokens:
+		for edge in edges:
+			if token.lower() in edge.word.split(' '):
+				l.append((token, edge))
+				edges.remove(edge)
+				break
+	return l
+
+def ledge(edges, token):
+    for edge in edges:
+        if token.lower() in edge.word.split(' '):
+            edges.remove(edge)
+            return edge
+            
         
 sentence_pattern = re.compile(r'<s>.+?</s>', re.DOTALL)
 lex_attrs_pattern = re.compile(r'(?<=<lex)[^>]+')
@@ -127,6 +144,8 @@ def process(tagdoc, golddir, newdir=''):
         tokens = [''.join([c if ord(c) < 128 else u2ascii[c] for c in x.text]).encode('utf-8') for x in old_lexes]
         pos_tags = pos.tag(tokens)
         ner_tags = ner.tag(tokens)
+        #print ' '.join([x for x in tokens])
+        edges = p(' '.join([x for x in tokens]), split=True)
         c = 0
         for (j, n) in enumerate(re.finditer(lex_attrs_pattern, raw_sentence)):
             old_lex = old_lexes[j]
@@ -140,6 +159,12 @@ def process(tagdoc, golddir, newdir=''):
                     return (tokens, pos_tags, ner_tags)
                 if tokens[j] == pos_tags[c][0]:
                     new_lex.addAll([('label', label), ('pos', pos_tags[c][1]), ('ner', ner_tags[c][1])])
+                    if edges:
+                        sparser_edge = ledge(edges, tokens[j])
+                        if sparser_edge:
+                            if sparser_edge.keyvalues:
+                                keyvalues = sparser_edge.keyvalues[sparser_edge.keyvalues.keys()[0]]
+                                new_lex.addAll([(key, keyvalues[key]) for key in keyvalues])
                     pos_tags.remove(pos_tags[c])
                     ner_tags.remove(ner_tags[c])
             t = t.replace(attributes, str(new_lex))

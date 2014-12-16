@@ -22,6 +22,7 @@ edge_value_pattern = re.compile(r'(?P<edge>(e[0-9]+ )+) +(?P<label1>[^" ]*)[^"]+
 edge_number_pattern = re.compile(r'#<edge(?P<num>[0-9]+)')
 edge_keyvalue_pattern = re.compile(r'(?P<key>[^:\n]+): (?P<value>[^\n]+)')
 arrows_pattern = re.compile(r'[<>]')
+b = re.compile(r'BEGIN-EDGES')
 
 def p(string, sparser_path=SPARSER):
     """Calls Sparser's p(arse) function on given string.
@@ -77,7 +78,27 @@ class Edge(object):
     def __repr__(self):
         return self.edgeStr
 
-def p2edges(string, sparser_path=SPARSER):
+def split_edge(edge):
+    """Splits an edge into n edges.
+
+    """
+    words = edge.word.split(' ')
+    if len(words) > 1:
+        new_edges = []
+        #note that the edgeStrs will be the same!
+        #but the actually `word` attribute will be different
+        for word in words:
+            e = Edge(edge.edgeStr)
+            e.word = word
+            #e.edgeStr = word
+            e.keyvalues = edge.keyvalues
+            new_edges.append(e)
+        return new_edges
+    return None
+            
+        
+
+def p2edges(string, sparser_path=SPARSER, split=False):
     """Wrapper around p(arse) to get actual edges output.
 
     This function calls Sparser's p(arse) function on a string,
@@ -94,7 +115,7 @@ def p2edges(string, sparser_path=SPARSER):
 
     """
     out = p(string, sparser_path)
-    if not p.search(out):
+    if not b.search(out):
         return None
     (parse, edges) = p(string, sparser_path).split('BEGIN-EDGES')
     edges = edges.split('BEGIN-EDGE')[:-1]
@@ -116,6 +137,16 @@ def p2edges(string, sparser_path=SPARSER):
             if cached:
                 edges.remove(cached)
         real_edges.append(new_edge)
+    if split:
+        l = []
+        for x in real_edges:
+            s = split_edge(x)
+            if s:
+                l += [y for y in s]
+            else:
+                l.append(x)
+        return l
+        #return [e for edges in real_edges for e in split_edge(edges)]
     return real_edges
 
 
