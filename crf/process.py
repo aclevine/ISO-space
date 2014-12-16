@@ -19,7 +19,7 @@ GOLDDIR = '/users/sethmachine/desktop/Tokenized'
 NEWDIR = '/users/sethmachine/desktop/TokenizedPlus/'
 
 #tokenization mistake in this file: line 171 has 2 sentences in 1 sentence
-#t = td.TagDoc('/users/sethmachine/desktop/Tokenized/CP/46_N_21_E.xml')
+#t = td.TagDoc('/users/sethmachine/desktop/Tokenized/CP/46_N_22_E.xml')
 
 xml_tokens_pattern = re.compile(r'<TOKENS>.+</TOKENS>', re.DOTALL)
 whitespace_pattern = re.compile(r' {2,}')
@@ -120,16 +120,17 @@ def ledge(edges, token):
 sentence_pattern = re.compile(r'<s>.+?</s>', re.DOTALL)
 lex_attrs_pattern = re.compile(r'(?<=<lex)[^>]+')
 
-def process(tagdoc, golddir, newdir=''):
+def process(tagdoc, golddir, newdir='', renew=False):
     if not newdir:
         newdir = golddir + '++'
     if not os.path.exists(newdir): #if the dir doesn't exist
         os.mkdir(newdir)
     path = newdir + tagdoc.filename.replace(golddir, '')
     print path
-    if os.path.exists(path): #don't redo our existing work :]
-        print test(tagdoc, td.TagDoc(path))
-        return
+    if not renew:
+        if os.path.exists(path): #don't redo our existing work :]
+            print test(tagdoc, td.TagDoc(path))
+            return
     mkparentdirs(path)
     w = open(tagdoc.filename, 'r')
     t = w.read()
@@ -147,7 +148,7 @@ def process(tagdoc, golddir, newdir=''):
         #print ' '.join([x for x in tokens])
         edges = []
         try:
-            #print ' '.join([x for x in tokens])
+            print ' '.join([x for x in tokens])
             edges = p(' '.join([x for x in tokens]), split=True)
         except:
             pass
@@ -207,4 +208,12 @@ AttributeError: 'NoneType' object has no attribute 'group'
 /home/u/fall11/sdworman/iso-space/Tokenized++/CP/46_N_21_E.xml
 > Break: Another case of a category for the region: #<ref-category VILLAGE>
 > While executing: SPARSER::GIVE-KIND-ITS-NAME, in process toplevel(2).
+"""
+
+"""
+/home/u/fall11/sdworman/iso-space/Tokenized++/CP/46_N_22_E.xml
+> Break: Object passed in as 'individual' parameter is of
+>        unexpected type: WORD
+>        #<word "5">
+> While executing: SPARSER::VALUE-OF, in process toplevel(2).
 """

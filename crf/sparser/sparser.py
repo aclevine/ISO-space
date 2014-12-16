@@ -117,6 +117,7 @@ def p2edges(string, sparser_path=SPARSER, split=False):
 
     """
     string = vill_pattern.sub('the city of', string)
+    string = string.replace('a 3,5 hour wait', 'a 3 hour wait')
     out = p(string, sparser_path)
     if not b.search(out):
         return None
