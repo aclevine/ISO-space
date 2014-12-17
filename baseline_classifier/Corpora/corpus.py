@@ -12,7 +12,7 @@ dummy_tag = Tag(name='NULL')
 class Extent(object):
     """A class for loading tagged data from XML doc 
     with surrounding token and tag data"""
-    def __init__(self, sent, tag_dict, front, back):
+    def __init__(self, sent, tag_dict, movelink_tag_dict, olink_tag_dict, qslink_tag_dict, front, back, basename):
         self.token = [t for t, l in sent[front:back]]
         self.lex = [l for t, l in sent[front:back]]
         self.prev_tokens = sent[:front]
@@ -26,6 +26,8 @@ class Extent(object):
             tag_dict.get(l.begin, {}) for t, l in self.next_tokens 
             if l.begin in tag_dict.keys()
         ]
+        self.basename = basename
+
 
 class Document(BS):
     """A class for working with MAE annotation XMLs."""
@@ -86,27 +88,40 @@ class Document(BS):
         
         Used for matching tags to tokens using offsets"""
         tag_dict = {}
+        movelink_tag_dict = {} 
+        olink_tag_dict = {} 
+        qslink_tag_dict = {}  
+                    
         tags = self.tags()
         for t in tags:
             # load entity / event / signal tags
             if 'start' in t.attrs:
-                # { start offset: xml tokens, offsets, spatial data }
-                tag_dict[int(t['start'])] = t.attrs
+                tag_dict[int(t.attrs['start'])] = t.attrs # {start offset: xml tokens, offsets, spatial data}
             # load movelink tags
-            if 'trigger' in t.attrs:
-                tag_dict[t['trigger']] = t.attrs
+            if t.attrs.get('id', '').startswith('mvl'):
+                movelink_tag_dict[t.attrs['trigger']] = t.attrs
             # load qslinks
+            if t.attrs.get('id', '').startswith('qs'):
+                if t.attrs['fromText']:
+                    qslink_tag_dict[t.attrs['fromID']] = t.attrs
+                elif t.attrs['toText']:
+                    qslink_tag_dict[t.attrs['toID']] = t.attrs
             # load olinks
-        return tag_dict
+            if t.attrs.get('id', '').startswith('ol'):
+                if t.attrs['fromText']:
+                    tag_dict[t.attrs['fromID']] = t.attrs
+                elif t.attrs['toText']:
+                    tag_dict[t.attrs['toID']] = t.attrs
+        return tag_dict, movelink_tag_dict, olink_tag_dict, qslink_tag_dict
 
     def extents(self, indices_function, extent_class=Extent):
-        tag_dict = self.sort_tags_by_begin_offset()
+        tag_dict, movelink_tag_dict, olink_tag_dict, qslink_tag_dict = self.sort_tags_by_begin_offset()
         for s in self.tokenizer.tokenize_text().sentences:
-            # [ (token, lexeme obj), (token, lexeme obj), ... ]
-            sent = s.as_pairs()
+            sent = s.as_pairs() # [ (token, lexeme obj), (token, lexeme obj), ...]
             offsets = indices_function(sent, tag_dict)
             for begin, end in offsets:
-                extent = extent_class(sent, tag_dict, begin, end)
+                extent = extent_class(sent, tag_dict, movelink_tag_dict, olink_tag_dict, 
+                                      qslink_tag_dict, begin, end, self.basename)
                 yield extent
     
     def validate(self):
@@ -184,12 +199,13 @@ class Corpus(object):
     
     def extents(self, indices_function, extent_class=Extent):
         for doc in self.documents():
-            tag_dict = doc.sort_tags_by_begin_offset()
+            tag_dict, movelink_tag_dict, olink_tag_dict, qslink_tag_dict = doc.sort_tags_by_begin_offset()
             for s in doc.tokenizer.tokenize_text().sentences:
                 sent = s.as_pairs() # [ (token, lexeme obj), (token, lexeme obj), ...]
                 offsets = indices_function(sent, tag_dict)
                 for begin, end in offsets:
-                    extent = extent_class(sent, tag_dict, begin, end)
+                    extent = extent_class(sent, tag_dict, movelink_tag_dict, olink_tag_dict, 
+                                          qslink_tag_dict, begin, end, doc.basename)
                     yield extent
     
     def validate(self):
