@@ -117,8 +117,11 @@ def p2edges(string, sparser_path=SPARSER, split=False):
         its corresponding values.
 
     """
+    string = string.replace('\' Baja California Sur \'', 'Baja California Sur')
     string = string.replace('the options that I or my', 'the options that or my')
-    string = string.replace('$ " ', '') 
+    string = string.replace('$ " ', '')
+    string = string.replace('a $ " the end', 'a $ the end')
+    string = string.replace('means I ca na$t', 'means i ca na$t')
     string = string.replace('two ( ', 'two ')
     string = vill_pattern.sub('the city of', string)
     string = comm_pattern.sub('\g<l>.\g<r>', string) #handle european format

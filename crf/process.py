@@ -20,7 +20,7 @@ NEWDIR = '/users/sethmachine/desktop/TokenizedPlus/'
 
 #tokenization mistake in this file: line 171 has 2 sentences in 1 sentence
 #t = td.TagDoc('/users/sethmachine/desktop/Tokenized/CP/46_N_22_E.xml')
-#t = td.TagDoc('/users/sethmachine/desktop/Tokenized/RFC/Bogota.xml')
+t = td.TagDoc('/users/sethmachine/desktop/Tokenized/RFC/LaPaz.xml')
 
 xml_tokens_pattern = re.compile(r'<TOKENS>.+</TOKENS>', re.DOTALL)
 whitespace_pattern = re.compile(r' {2,}')
@@ -266,10 +266,28 @@ Fortunately Eastern Europe - even outside the EU is easy travelling for EU citiz
 but , while [ most families][ i][ see seem] to [ have][ good family] and [ community][ lives] , [ the health care][ is poor] and [ they][ have nowhere] near [ the options][ that] or [ my friends][ have][ a $  minimum wage][ her][ is][ $ 200][ a month][ .]
 """
 
+#another possible error:
+#/home/u/fall11/sdworman/iso-space/Tokenized++/RFC/Durango.xml
+
 #close paren error (again)
+#error is single quotation around a NNP
+#"I am now in Guerrero Negro , in the state of southern Baja California
+#here: ( ' Baja California Sur ' ) ,
+#where I have just washed my clothes and enjoyed a shower ."
 """
 /home/u/fall11/sdworman/iso-space/Tokenized++/RFC/Ensenada.xml
 > Break: new case for single-quote while looking to extend a capitalized sequence.
 >        The next word is #<word CLOSE-PAREN> at position 21
 > While executing: SPARSER::CHECKOUT-SINGLE-QUOTE-FOR-CAPSEQ, in process toplevel(2).
+"""
+
+
+#two errors:
+#double quote mark
+#a few reasons a $ " the end of the school year
+#means I ca na$t give presentations
+"""
+/home/u/fall11/sdworman/iso-space/Tokenized++/RFC/LaPaz.xml
+> Break: new case for :all-caps SINGLE-CAPITALIZED-LETTER
+> While executing: SPARSER::SUBSUMING-VARIANT, in process toplevel(2).
 """
