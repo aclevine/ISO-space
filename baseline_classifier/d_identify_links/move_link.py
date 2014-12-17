@@ -13,9 +13,9 @@ import re
 
 class MoveLinkTag(PathTag):
 
-    def __init__(self, sent, tag_dict, movelink_tag_dict, olink_tag_dict, qslink_tag_dict, front, back):
+    def __init__(self, sent, tag_dict, movelink_tag_dict, olink_tag_dict, qslink_tag_dict, front, back, basename):
         ''' use motion tags as a head to associate move-links with sentences'''
-        super(MoveLinkTag, self).__init__(sent, tag_dict, movelink_tag_dict, olink_tag_dict, qslink_tag_dict, front, back)
+        super(MoveLinkTag, self).__init__(sent, tag_dict, movelink_tag_dict, olink_tag_dict, qslink_tag_dict, front, back, basename)
         head = tag_dict.get(self.lex[0].begin, {})
         self.tag = movelink_tag_dict.get(head['id'], {})
         
