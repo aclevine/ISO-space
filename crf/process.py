@@ -20,7 +20,7 @@ NEWDIR = '/users/sethmachine/desktop/TokenizedPlus/'
 
 #tokenization mistake in this file: line 171 has 2 sentences in 1 sentence
 #t = td.TagDoc('/users/sethmachine/desktop/Tokenized/CP/46_N_22_E.xml')
-t = td.TagDoc('/users/sethmachine/desktop/Tokenized/RFC/LaPaz.xml')
+#t = td.TagDoc('/users/sethmachine/desktop/Tokenized/RFC/LaPaz.xml')
 
 xml_tokens_pattern = re.compile(r'<TOKENS>.+</TOKENS>', re.DOTALL)
 whitespace_pattern = re.compile(r' {2,}')
