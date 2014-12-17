@@ -28,7 +28,6 @@ class Extent(object):
         ]
         self.basename = basename
 
-
 class Document(BS):
     """A class for working with MAE annotation XMLs."""
     def __init__(self, doc_file):
@@ -88,9 +87,9 @@ class Document(BS):
         
         Used for matching tags to tokens using offsets"""
         tag_dict = {}
-        movelink_tag_dict = {} 
-        olink_tag_dict = {} 
-        qslink_tag_dict = {}  
+        movelink_tag_dict = {}
+        olink_tag_dict = {}
+        qslink_tag_dict = {}
                     
         tags = self.tags()
         for t in tags:
@@ -108,10 +107,12 @@ class Document(BS):
                     qslink_tag_dict[t.attrs['toID']] = t.attrs
             # load olinks
             if t.attrs.get('id', '').startswith('ol'):
-                if t.attrs['fromText']:
-                    tag_dict[t.attrs['fromID']] = t.attrs
+                if t.attrs['trigger']:
+                    olink_tag_dict[t.attrs['trigger']] = t.attrs                    
+                elif t.attrs['fromText']:
+                    olink_tag_dict[t.attrs['fromID']] = t.attrs
                 elif t.attrs['toText']:
-                    tag_dict[t.attrs['toID']] = t.attrs
+                    olink_tag_dict[t.attrs['toID']] = t.attrs
         return tag_dict, movelink_tag_dict, olink_tag_dict, qslink_tag_dict
 
     def extents(self, indices_function, extent_class=Extent):

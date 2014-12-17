@@ -62,7 +62,7 @@ class Demo(object):
         # classify and evaluate
         pred = clf.classify(test_data)
         clf.evaluate(pred, [self.label_function(x) for x in test_data])
-        return pred 
+        return pred
     
         # TODO Return precision / recall / f-measure for averaging?
         

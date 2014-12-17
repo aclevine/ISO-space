@@ -66,8 +66,6 @@ class MoveLinkTag(PathTag):
 
     def goal_reached(self):
         '''goal_reached ( YES | NO | UNCERTAIN )'''
-        if self.tag.get('goal_reached', '') == '':
-            print self.tag.get('id', 'no_tag')
         return self.tag.get('goal_reached', '')
     
     def path_id(self):

@@ -3,7 +3,6 @@ Created on Nov 13, 2014
 
 @author: Aaron Levine
 
-
 if signal: 
     dir_top = olink + qslink
     top = qslink
@@ -17,9 +16,11 @@ import re
 from b_identify_types import get_tag_and_no_tag_indices
 
 class OLinkTag(PathTag):
-    def __init__(self, sent, tag_dict, movelink_tag_dict, olink_tag_dict, qslink_tag_dict, front, back):
+    def __init__(self, sent, tag_dict, movelink_tag_dict, olink_tag_dict, 
+                 qslink_tag_dict, front, back, basename):
         ''' use c_motion tags as a head to associate move-links with sentences'''
-        super(OLinkTag, self).__init__(sent, tag_dict, movelink_tag_dict, olink_tag_dict, qslink_tag_dict, front, back)
+        super(OLinkTag, self).__init__(sent, tag_dict, movelink_tag_dict, olink_tag_dict, 
+                                       qslink_tag_dict, front, back, basename)
         head = tag_dict.get(self.lex[0].begin, {})
         self.tag = olink_tag_dict.get(head['id'], {})
 
@@ -40,7 +41,7 @@ class OLinkTag(PathTag):
             for tag in self.next_tags:
                 if tag['id'] == target:
                     return i
-                i += 1
+                i += 1    
         return 0
    
     def is_olink(self):
@@ -48,6 +49,14 @@ class OLinkTag(PathTag):
             return {'is_OLink': True}
         else:
             return {'is_OLink': False}
+
+    def from_id(self):
+        '''fromID IDREF'''
+        return self.tag_position('fromID')
+
+    def to_id(self):
+        '''toID IDREF'''
+        return self.tag_position('toID')
         
     def rel_type(self):
         ''' relType CDATA '''
@@ -70,22 +79,37 @@ class OLinkTag(PathTag):
         '''frame_type ( ABSOLUTE | INTRINSIC | RELATIVE )'''
         return self.tag.get('frame_type', 'NOT_OLINK')
 
-    def referencePt(self):
+    def reference_pt(self):
         '''referencePt IDREF'''
         return self.tag_position('referencePt')
 
-    def project(self):
+    def projective(self):
         '''projective ( TRUE | FALSE )'''
         return
     
 # TAG TYPE FILTER
+
+def is_dir_tag(tag):
+    ''' load c_path / pu / spatial entity / c_spatial_signal / c_nonmotion_event / c_motion heads'''
+    tag_id = tag.get('id', '')
+    if bool(re.findall('^s\d+', tag_id)):
+        sem_type = tag.get('semantic_type', '')
+        if sem_type == 'DIRECTIONAL' or sem_type == 'DIR_TOP':
+            return True
+    return False    
+    
+def get_dir_tag_indices(sentence, tag_dict):
+    return get_tag_and_no_tag_indices(sentence, tag_dict, is_dir_tag)
+
+# alternate, didn't work
 def is_tag(tag):
     ''' load c_path / pu / spatial entity / c_spatial_signal / c_nonmotion_event / c_motion heads'''
     tag_id = tag.get('id', '')
-    return any([bool(re.findall('^p\d+', tag_id)),
+    return any([
+                bool(re.findall('^s\d+', tag_id)),
+                bool(re.findall('^p\d+', tag_id)),
                 bool(re.findall('^pl\d+', tag_id)),
                 bool(re.findall('^se\d+', tag_id)),
-                bool(re.findall('^s\d+', tag_id)),
                 bool(re.findall('^e\d+', tag_id)),
                 bool(re.findall('^m\d+', tag_id))
                 ])
@@ -93,22 +117,39 @@ def is_tag(tag):
 def get_tag_indices(sentence, tag_dict):
     return get_tag_and_no_tag_indices(sentence, tag_dict, is_tag)
 
-
 # test variables
+
+
 class OLinkDemo(Demo):
     def __init__(self, doc_path='./training', split=0.8):
         super(OLinkDemo, self).__init__(doc_path, split)
-        self.indices_function = get_tag_indices
+        self.indices_function = get_dir_tag_indices
         self.extent_class = OLinkTag
-
 
 class OLinkIsLinkDemo(OLinkDemo):      
     def get_label_function(self):
-        return  lambda x: str(x.is_o_link())
+        return  lambda x: str(x.is_olink())
 
     def get_feature_functions(self):
         return [lambda x: x.curr_token(),
                 ]
+
+class OLinkFromIDDemo(OLinkDemo):      
+    def get_label_function(self):
+        return  lambda x: str(x.from_id())
+
+    def get_feature_functions(self):
+        return [lambda x: x.curr_token(),
+                ]
+
+class OLinkToIDDemo(OLinkDemo):      
+    def get_label_function(self):
+        return  lambda x: str(x.to_id())
+
+    def get_feature_functions(self):
+        return [lambda x: x.curr_token(),
+                ]
+
         
 class OLinkRelTypeDemo(OLinkDemo):      
     def get_label_function(self):
@@ -150,18 +191,27 @@ class OLinkFrameTypeDemo(OLinkDemo):
         return [lambda x: x.curr_token(),
                 ]
 
+class OLinkReferencePtDemo(OLinkDemo):      
+    def get_label_function(self):
+        return  lambda x: str(x.reference_pt())
 
-    def referencePt(self):
-        '''referencePt IDREF'''
-        return self.tag_position('referencePt')
+    def get_feature_functions(self):
+        return [lambda x: x.curr_token(),
+                ]
 
-    def project(self):
-        '''projective ( TRUE | FALSE )'''
-        return
+class OLinkProjectiveDemo(OLinkDemo): 
+    def get_label_function(self):
+        return  lambda x: str(x.projective())
+
+    def get_feature_functions(self):
+        return [lambda x: x.curr_token(),
+                ]
 
 
 if __name__ == "__main__":
-
-    frame_type = OLinkFrameTypeDemo()
-    frame_type.run_demo()
     
+    x = OLinkFromIDDemo()
+    x.run_demo()
+
+    y = OLinkToIDDemo()
+    x.run_demo()

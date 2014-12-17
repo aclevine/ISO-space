@@ -6,7 +6,8 @@ Created on July 30, 2014
 @email: aclevine@brandeis.edu
 
 b) Classify spatial elements according to type: 
-PATH, PLACE, MOTION, NONMOTION_EVENT, SPATIAL_ENTITY.    
+PATH, PLACE, MOTION, NONMOTION_EVENT, SPATIAL_ENTITY,
+'MOTION_SIGNAL', 'SPATIAL_SIGNAL'
 '''
 
 #===============================================================================
@@ -169,7 +170,8 @@ if __name__ == "__main__":
 
     for type_name in ['PATH',
                       'PLACE', 'MOTION', 'NONMOTION_EVENT',
-                      'SPATIAL_ENTITY', 'MOTION_SIGNAL', 'HAS_TAG']:
+                      'SPATIAL_ENTITY', 'MOTION_SIGNAL', 
+                      'SPATIAL_SIGNAL', 'HAS_TAG']:
         print type_name
         d = Types_Demo(type_name)
         d.run_demo()

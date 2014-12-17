@@ -20,6 +20,7 @@ def is_motion_tag(tag):
 def get_motion_signal_tag_indices(sentence, tag_dict):
     return get_tag_and_no_tag_indices(sentence, tag_dict, is_motion_tag)
 
+
 class MotionSignalDemo(Demo):
     def __init__(self, doc_path='./training', split=0.8):
         super(MotionSignalDemo, self).__init__(doc_path, split)
