@@ -123,6 +123,7 @@ def p2edges(string, sparser_path=SPARSER, split=False):
     string = string.replace('a $ " the end', 'a $ the end')
     string = string.replace('means I ca na$t', 'means i ca na$t')
     string = string.replace('two ( ', 'two ')
+    string = string.replace('pre-Colombian', 'preColombian')
     string = vill_pattern.sub('the city of', string)
     string = comm_pattern.sub('\g<l>.\g<r>', string) #handle european format
     #string = string.replace('a 3,5 hour wait', 'a 3 hour wait')

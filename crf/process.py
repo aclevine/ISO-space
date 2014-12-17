@@ -20,7 +20,7 @@ NEWDIR = '/users/sethmachine/desktop/TokenizedPlus/'
 
 #tokenization mistake in this file: line 171 has 2 sentences in 1 sentence
 #t = td.TagDoc('/users/sethmachine/desktop/Tokenized/CP/46_N_22_E.xml')
-#t = td.TagDoc('/users/sethmachine/desktop/Tokenized/RFC/LaPaz.xml')
+#t = td.TagDoc('/users/sethmachine/desktop/Tokenized/RFC/MexicoCity.xml')
 
 xml_tokens_pattern = re.compile(r'<TOKENS>.+</TOKENS>', re.DOTALL)
 whitespace_pattern = re.compile(r' {2,}')
@@ -164,7 +164,9 @@ def process(tagdoc, golddir, newdir='', renew=False, debug=False):
                 label = label.name
             if pos_tags:
                 if not ner_tags:
-                    return (tokens, pos_tags, ner_tags)
+                    #this error case comes up for RFC/Durango.xml
+                    #return (tokens, pos_tags, ner_tags)
+                    break
                 if tokens[j] == pos_tags[c][0]:
                     new_lex.addAll([('label', label), ('pos', pos_tags[c][1]), ('ner', ner_tags[c][1])])
                     if edges:
@@ -268,6 +270,10 @@ but , while [ most families][ i][ see seem] to [ have][ good family] and [ commu
 
 #another possible error:
 #/home/u/fall11/sdworman/iso-space/Tokenized++/RFC/Durango.xml
+#it breaks on this sentence:
+#No , we are not racing , as the movie on the right suggests
+#.(I say this only because it looks like they will beat me ) .
+#it's not a sparser error, but rather ner error
 
 #close paren error (again)
 #error is single quotation around a NNP
@@ -290,4 +296,13 @@ but , while [ most families][ i][ see seem] to [ have][ good family] and [ commu
 /home/u/fall11/sdworman/iso-space/Tokenized++/RFC/LaPaz.xml
 > Break: new case for :all-caps SINGLE-CAPITALIZED-LETTER
 > While executing: SPARSER::SUBSUMING-VARIANT, in process toplevel(2).
+"""
+
+#another error
+#it's this hyphen:
+#(p "and the site of a major pre-Colombian city .")
+"""
+/home/u/fall11/sdworman/iso-space/Tokenized++/RFC/MexicoCity.xml
+> Break: check args
+> While executing: SPARSER::START-PRESERVE-SPACING-SECTION, in process toplevel(2).
 """
