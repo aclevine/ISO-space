@@ -22,7 +22,7 @@ class EventTag(PathTag):
 
 def is_event_tag(tag):
     tag_id = tag.get('id', '')
-    return re.findall('^e\d+', tag_id)
+    return bool(re.findall('^e\d+', tag_id))
 
 def get_event_tag_indices(sentence, tag_dict):
     return get_tag_and_no_tag_indices(sentence, tag_dict, is_event_tag)

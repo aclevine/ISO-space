@@ -10,6 +10,3 @@ if signal:
     
 build dictionary of "trigger entities" for qslinks without signal triggers?
 '''
-
-
-

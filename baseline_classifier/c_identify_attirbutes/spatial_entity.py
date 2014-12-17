@@ -18,7 +18,7 @@ class EntityTag(PathTag):
     
 def is_entity_tag(tag):
     tag_id = tag.get('id', '')
-    return re.findall('^pl\d+', tag_id)
+    return bool(re.findall('^se\d+', tag_id))
 
 
 def get_entity_tag_indices(sentence, tag_dict):

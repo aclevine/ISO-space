@@ -80,7 +80,6 @@ class Token(Extent):
         return {'prev_simple_tag': 'None'}
 
 #===============================================================================
-
 def get_token_indices(sentence, tag_dict):
     indices = []
     for i in range(len(sentence)):
@@ -89,11 +88,9 @@ def get_token_indices(sentence, tag_dict):
         indices.append( (start, end) )
     return indices
 
-
 class Spans_Demo(Demo):
-    def __init__(self, doc_path = '../training', split=0.8):
-        self.doc_path = doc_path
-        self.split = split
+    def __init__(self, train_path = '../test_dev', split=0.8):
+        super(Spans_Demo, self).__init__(train_path, '', 0.8)
         self.feature_functions = [lambda x: x.upper_case(),
                                   lambda x: x.next_upper_case(),
                                   lambda x: x.prev_upper_case(),

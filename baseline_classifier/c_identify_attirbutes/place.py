@@ -12,12 +12,12 @@ class PlaceTag(PathTag):
     # LABEL EXTRACT
     
     # FEATURE EXTRACT
-    def test(self):
+    def dummy(self):
         return
     
 def is_place_tag(tag):
     tag_id = tag.get('id', '')
-    return re.findall('^pl\d+', tag_id)
+    return bool(re.findall('^pl\d+', tag_id))
 
 def get_place_tag_indices(sentence, tag_dict):
     return get_tag_and_no_tag_indices(sentence, tag_dict, is_place_tag)

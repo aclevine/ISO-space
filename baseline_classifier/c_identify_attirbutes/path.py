@@ -47,7 +47,7 @@ class PathTag(Tag):
 # TAG TYPE FILTER
 def is_path_tag(tag):
     tag_id = tag.get('id', '')
-    return re.findall('^p\d+', tag_id)
+    return bool(re.findall('^p\d+', tag_id))
 
 def get_path_tag_indices(sentence, tag_dict):
     return get_tag_and_no_tag_indices(sentence, tag_dict, is_path_tag)

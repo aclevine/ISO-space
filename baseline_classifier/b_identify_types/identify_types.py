@@ -19,7 +19,7 @@ type_keys = {'PATH': ['p'], 'PLACE': ['pl'], 'MOTION': ['m'], 'NONMOTION_EVENT':
              'SPATIAL_ENTITY': ['se'], # spatial elements
              'SPATIAL_SIGNAL': ['s'], # spatial signal
              'MOTION_SIGNAL': ['ms'], # motion signal
-             #'HAS_TAG': ['p', 'pl', 'm', 'e', 'se', 's', 'ms']
+             'HAS_TAG': ['p', 'pl', 'm', 'e', 'se', 's', 'ms']
              }
 
 class Tag(Extent):
@@ -155,14 +155,13 @@ def get_tag_only_indices(sentence, tag_dict):
     return get_tag_and_no_tag_indices(sentence, tag_dict, has_tag)
 
 class Types_Demo(Demo):
-    def __init__(self, type_name, doc_path = '../training', split=0.8):
-        self.doc_path = doc_path
-        self.split = split
+    def __init__(self, type_name, train_path = '../training', split=0.8):
+        super(Types_Demo, self).__init__(train_path, '', 0.8)
         self.feature_functions = [lambda x: x.curr_token(),
                                   lambda x: x.prev_n_bag_of_words(3),
                                   lambda x: x.next_n_bag_of_words(3)]
         self.label_function = lambda x: str(x.is_type(type_name))
-        self.indices_function = get_tag_and_no_tag_indices
+        self.indices_function = get_tag_only_indices #get_tag_and_no_tag_indices
         self.extent_class = Tag
 
 # TESTING
@@ -170,6 +169,8 @@ if __name__ == "__main__":
 
     for type_name in ['PATH', 
                       'PLACE', 'MOTION', 'NONMOTION_EVENT', 
-                      'SPATIAL_ENTITY', 'MOTION_SIGNAL' 'HAS_TAG']:
+                      'SPATIAL_ENTITY', 'MOTION_SIGNAL', 'HAS_TAG']:
+        print type_name
         d = Types_Demo(type_name)
         d.run_demo()
+        print '\n'
