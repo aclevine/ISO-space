@@ -12,7 +12,7 @@ from SKClassifier import SKClassifier
 from abc import abstractmethod
 
 class Demo(object):
-    def __init__(self, train_path = './training', test_path = None, split=0.8):
+    def __init__(self, train_path='./training', test_path=None, split=0.8):
         self.train_path = train_path
         self.test_path = test_path
         self.split = split
@@ -30,13 +30,13 @@ class Demo(object):
     def run_demo(self, verbose=0):
         # build extents
         c = Corpus(self.train_path)
-        extents = list(c.extents(self.indices_function, 
+        extents = list(c.extents(self.indices_function,
                                  self.extent_class))
 
         if self.test_path:
             train_data = extents
             c_test = Corpus(self.train_path)
-            extents_test = list(c.extents(self.indices_function, 
+            extents_test = list(c.extents(self.indices_function,
                                 self.extent_class))
             test_data = extents_test
         else:
@@ -52,8 +52,8 @@ class Demo(object):
                 fd[l] = fd.get(l, 1) + 1
             print fd
         # pull desired features and labels for training
-        clf = SKClassifier(LogisticRegression(), 
-                           self.label_function, 
+        clf = SKClassifier(LogisticRegression(),
+                           self.label_function,
                            self.feature_functions)
         clf.add_labels(set(labels))
         clf.train(train_data)

@@ -1,5 +1,5 @@
 __author__ = "Zachary Yocum"
-__email__  = "zyocum@brandeis.edu"
+__email__ = "zyocum@brandeis.edu"
 
 import os
 from warnings import warn
@@ -96,7 +96,7 @@ class Document(BS):
         for t in tags:
             # load entity / event / signal tags
             if 'start' in t.attrs:
-                tag_dict[int(t.attrs['start'])] = t.attrs # {start offset: xml tokens, offsets, spatial data}
+                tag_dict[int(t.attrs['start'])] = t.attrs  # {start offset: xml tokens, offsets, spatial data}
             # load movelink tags
             if t.attrs.get('id', '').startswith('mvl'):
                 movelink_tag_dict[t.attrs['trigger']] = t.attrs
@@ -117,10 +117,10 @@ class Document(BS):
     def extents(self, indices_function, extent_class=Extent):
         tag_dict, movelink_tag_dict, olink_tag_dict, qslink_tag_dict = self.sort_tags_by_begin_offset()
         for s in self.tokenizer.tokenize_text().sentences:
-            sent = s.as_pairs() # [ (token, lexeme obj), (token, lexeme obj), ...]
+            sent = s.as_pairs()  # [ (token, lexeme obj), (token, lexeme obj), ...]
             offsets = indices_function(sent, tag_dict)
             for begin, end in offsets:
-                extent = extent_class(sent, tag_dict, movelink_tag_dict, olink_tag_dict, 
+                extent = extent_class(sent, tag_dict, movelink_tag_dict, olink_tag_dict,
                                       qslink_tag_dict, begin, end, self.basename)
                 yield extent
     
@@ -166,7 +166,7 @@ class Document(BS):
         text.append(CData(self.text()))
         tags = self.TAGS
         tokens = (BS(
-            self.tokenizer.get_tokenized_as_xml().encode('utf-8'), 
+            self.tokenizer.get_tokenized_as_xml().encode('utf-8'),
             'xml'
         )).TOKENS
         elements = [u'\n', text, u'\n', tags, u'\n', tokens, u'\n']
@@ -201,10 +201,10 @@ class Corpus(object):
         for doc in self.documents():
             tag_dict, movelink_tag_dict, olink_tag_dict, qslink_tag_dict = doc.sort_tags_by_begin_offset()
             for s in doc.tokenizer.tokenize_text().sentences:
-                sent = s.as_pairs() # [ (token, lexeme obj), (token, lexeme obj), ...]
+                sent = s.as_pairs()  # [ (token, lexeme obj), (token, lexeme obj), ...]
                 offsets = indices_function(sent, tag_dict)
                 for begin, end in offsets:
-                    extent = extent_class(sent, tag_dict, movelink_tag_dict, olink_tag_dict, 
+                    extent = extent_class(sent, tag_dict, movelink_tag_dict, olink_tag_dict,
                                           qslink_tag_dict, begin, end, doc.basename)
                     yield extent
     
@@ -226,7 +226,7 @@ def validate_mime_type(file_path, valid_mime_types):
     if not valid:
         warning = '\n\t'.join([
             'Invalid MIME type',
-            'File : {path}',
+            'File : {c_path}',
             'Type : {type}'
         ])
         warn(warning.format(path=file_path, type=mime_type), RuntimeWarning)

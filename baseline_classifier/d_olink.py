@@ -10,15 +10,15 @@ if signal:
     dir = olink
 
 '''
-from c_identify_attirbutes.path import PathTag
+from c_path import PathTag
 from util.demo import Demo
 from Corpora.corpus import Corpus
 import re
-from b_identify_types.identify_types import get_tag_and_no_tag_indices
+from b_identify_types import get_tag_and_no_tag_indices
 
 class OLinkTag(PathTag):
     def __init__(self, sent, tag_dict, movelink_tag_dict, olink_tag_dict, qslink_tag_dict, front, back):
-        ''' use motion tags as a head to associate move-links with sentences'''
+        ''' use c_motion tags as a head to associate move-links with sentences'''
         super(OLinkTag, self).__init__(sent, tag_dict, movelink_tag_dict, olink_tag_dict, qslink_tag_dict, front, back)
         head = tag_dict.get(self.lex[0].begin, {})
         self.tag = olink_tag_dict.get(head['id'], {})
@@ -26,8 +26,8 @@ class OLinkTag(PathTag):
     def tag_position(self, attribute_key):
         '''
         0 = empty field for movelink attribute
-        +n = movelink attribute is n tags right of motion tag
-        -n = movelink attribute is n tags left of motion tag
+        +n = movelink attribute is n tags right of c_motion tag
+        -n = movelink attribute is n tags left of c_motion tag
         '''
         if attribute_key in self.tag:
             target = self.tag[attribute_key]
@@ -36,7 +36,7 @@ class OLinkTag(PathTag):
                 if tag['id'] == target:
                     return i
                 i -= 1
-            i =  1
+            i = 1
             for tag in self.next_tags:
                 if tag['id'] == target:
                     return i
@@ -80,10 +80,10 @@ class OLinkTag(PathTag):
     
 # TAG TYPE FILTER
 def is_tag(tag):
-    ''' load path / place / spatial entity / spatial_signal / nonmotion_event / motion heads'''
+    ''' load c_path / pu / spatial entity / c_spatial_signal / c_nonmotion_event / c_motion heads'''
     tag_id = tag.get('id', '')
-    return any([bool(re.findall('^p\d+', tag_id)), 
-                bool(re.findall('^pl\d+', tag_id)), 
+    return any([bool(re.findall('^p\d+', tag_id)),
+                bool(re.findall('^pl\d+', tag_id)),
                 bool(re.findall('^se\d+', tag_id)),
                 bool(re.findall('^s\d+', tag_id)),
                 bool(re.findall('^e\d+', tag_id)),
@@ -96,7 +96,7 @@ def get_tag_indices(sentence, tag_dict):
 
 # test variables
 class OLinkDemo(Demo):
-    def __init__(self, doc_path = '../training', split=0.8):
+    def __init__(self, doc_path='./training', split=0.8):
         super(OLinkDemo, self).__init__(doc_path, split)
         self.indices_function = get_tag_indices
         self.extent_class = OLinkTag

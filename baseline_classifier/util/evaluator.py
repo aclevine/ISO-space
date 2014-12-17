@@ -28,7 +28,7 @@ class ConfusionMatrix(object):
         """Returns a numpy.array where recall[i] = recall for class i""" 
         recall = numpy.zeros(self.label_codebook.size())
         for i in xrange(self.label_codebook.size()):
-            #Denominator here is sum over y-axis, returning as many sums as x-dim so get ith element.
+            # Denominator here is sum over y-axis, returning as many sums as x-dim so get ith element.
             denominator = numpy.sum(self.matrix, axis=0)[i]
             if denominator != 0:
                 recall[i] = self.matrix[i][i] / denominator
@@ -60,12 +60,12 @@ class ConfusionMatrix(object):
 
     def print_out(self):
         """Print out confusion matrix along with Macro-F1 score """
-        #header for the confusion matrix
+        # header for the confusion matrix
         header = [' '] + [self.label_codebook.get_label(i) for i in xrange(self.label_codebook.size())]
         rows = []
-        #putting labels to the first column of rhw matrix
+        # putting labels to the first column of rhw matrix
         for i in xrange(self.label_codebook.size()):
-            row = [self.label_codebook.get_label(i)] + [str(self.matrix[i,j]) for j in xrange(len(self.matrix[i,]))]
+            row = [self.label_codebook.get_label(i)] + [str(self.matrix[i, j]) for j in xrange(len(self.matrix[i, ]))]
             rows.append(row)
         print "row = predicted, column = actual"
         print matrix_to_string(rows, header)
@@ -95,7 +95,7 @@ def matrix_to_string(matrix, header=None):
     if header:
         lengths = [len(column) for column in header]
 
-    #finding the max length of each column
+    # finding the max length of each column
     for row in matrix:
         for column in row:
             i = row.index(column)
@@ -108,14 +108,14 @@ def matrix_to_string(matrix, header=None):
             except IndexError:
                 lengths.append(column_length)
 
-    #use the lengths to derive a formatting string
+    # use the lengths to derive a formatting string
     lengths = tuple(lengths)
     format_string = ""
     for length in lengths:
         format_string += "%-" + str(length) + "s "
     format_string += "\n"
 
-    #applying formatting string to get matrix string
+    # applying formatting string to get matrix string
     matrix_str = ""
     if header:
         matrix_str += format_string % header

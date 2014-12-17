@@ -4,9 +4,9 @@ Created on Nov 13, 2014
 @author: Aaron Levine
 
 if signal: 
-    dir_top = olink + qslink
+    dir_top = d_olink + qslink
     top = qslink
-    dir = olink
+    dir = d_olink
     
 build dictionary of "trigger entities" for qslinks without signal triggers?
 '''

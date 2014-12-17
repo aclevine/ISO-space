@@ -6,7 +6,7 @@ Created on Oct 27, 2014
 
 c. Identify their attributes according to type.
 '''
-from b_identify_types.identify_types import get_tag_and_no_tag_indices, Tag
+from b_identify_types import get_tag_and_no_tag_indices, Tag
 from util.demo import Demo
 import re
 
@@ -54,7 +54,7 @@ def get_path_tag_indices(sentence, tag_dict):
 
 # DEMOS
 class PathDemo(Demo):
-    def __init__(self, doc_path = '../training', split=0.8):
+    def __init__(self, doc_path='./training', split=0.8):
         super(PathDemo, self).__init__(doc_path, split)
         self.indices_function = get_path_tag_indices
         self.extent_class = PathTag

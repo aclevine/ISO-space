@@ -3,8 +3,8 @@ Created on Nov 3, 2014
 
 @author: ACL73
 '''
-from c_identify_attirbutes.path import PathTag
-from b_identify_types.identify_types import get_tag_and_no_tag_indices
+from c_path import PathTag
+from b_identify_types import get_tag_and_no_tag_indices
 from util.demo import Demo
 import re
 
@@ -28,7 +28,7 @@ def get_event_tag_indices(sentence, tag_dict):
     return get_tag_and_no_tag_indices(sentence, tag_dict, is_event_tag)
 
 class EventDemo(Demo):
-    def __init__(self, doc_path = '../training', split=0.8):
+    def __init__(self, doc_path='./training', split=0.8):
         super(EventDemo, self).__init__(doc_path, split)
         self.indices_function = get_event_tag_indices
         self.extent_class = EventTag

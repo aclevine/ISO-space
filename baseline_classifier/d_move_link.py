@@ -4,17 +4,17 @@ Created on Nov 13, 2014
 @author: Aaron Levine
 '''
 
-from c_identify_attirbutes.path import PathTag
+from c_path import PathTag
 from util.demo import Demo
 from Corpora.corpus import Corpus
-from c_identify_attirbutes.motion import get_motion_tag_indices
+from c_motion import get_motion_tag_indices
 import re
 
 
 class MoveLinkTag(PathTag):
 
     def __init__(self, sent, tag_dict, movelink_tag_dict, olink_tag_dict, qslink_tag_dict, front, back, basename):
-        ''' use motion tags as a head to associate move-links with sentences'''
+        ''' use c_motion tags as a head to associate move-links with sentences'''
         super(MoveLinkTag, self).__init__(sent, tag_dict, movelink_tag_dict, olink_tag_dict, qslink_tag_dict, front, back, basename)
         head = tag_dict.get(self.lex[0].begin, {})
         self.tag = movelink_tag_dict.get(head['id'], {})
@@ -26,8 +26,8 @@ class MoveLinkTag(PathTag):
     def tag_position(self, attribute_key):
         '''
         0 = empty field for movelink attribute
-        +n = movelink attribute is n tags right of motion tag
-        -n = movelink attribute is n tags left of motion tag
+        +n = movelink attribute is n tags right of c_motion tag
+        -n = movelink attribute is n tags left of c_motion tag
         '''
         if attribute_key in self.tag:
             target = self.tag[attribute_key]
@@ -36,10 +36,10 @@ class MoveLinkTag(PathTag):
                 if tag['id'] == target:
                     return i
                 i -= 1
-            i =  1
+            i = 1
             for tag in self.next_tags:
                 if tag['id'] == target:
-                    #print tag['id']
+                    # print tag['id']
                     return i
                 i += 1
         return 0
@@ -94,7 +94,7 @@ class MoveLinkTag(PathTag):
         return feat_dict
             
     def next_tag_types(self):
-        i =  1
+        i = 1
         feat_dict = {}
         for tag in self.next_tags:
             feat_dict['next_tag_%d_type' % i] = re.findall('[a-z]+', tag['id'])[0]
@@ -103,7 +103,7 @@ class MoveLinkTag(PathTag):
 
 # DEMO
 class MoveLinkDemo(Demo):
-    def __init__(self, doc_path = '../training', split=0.8):
+    def __init__(self, doc_path='./training', split=0.8):
         super(MoveLinkDemo, self).__init__(doc_path, split)
         self.indices_function = get_motion_tag_indices
         self.extent_class = MoveLinkTag
@@ -195,4 +195,3 @@ if __name__ == "__main__":
     
     d = MoveLinkGoalReachedDemo()  
     d.run_demo()
-

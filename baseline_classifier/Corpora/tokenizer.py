@@ -47,7 +47,7 @@ punctuation_pattern = re.compile(u"[.,!?'‛‘’`\"‟“”;:\]\[\(\)\{\}\<\>
 contraction_pattern1 = re.compile(u"(\w+)(n['’]t|nâ€™t)$", re.IGNORECASE)
 contraction_pattern2 = re.compile(u"(\w+)('|’|â€™)(t|d|s|m|re|ll|ve)$", re.IGNORECASE)
 
-apostrophe_pattern   = re.compile(u"('|’|â€™)", re.IGNORECASE)
+apostrophe_pattern = re.compile(u"('|’|â€™)", re.IGNORECASE)
 
 
 def test_space(char):
@@ -129,7 +129,7 @@ class Tokenizer:
                 return (begin, end, self.unicode_text[begin:end])
         return (begin, end, self.unicode_text[begin:end])
     
-    def _set_lexes(self, ):
+    def _set_lexes(self,):
         """Set lexes list by flattening self.tokens. Sometimes empty core tokens are
         created, filter those out at this step."""
         for (p1, ct, p2) in self.tokens:
@@ -142,7 +142,7 @@ class Tokenizer:
     def _set_sentences(self):
 
         def is_sentence_final_abbrev(tok, puncts2):
-            #if not puncts2 and tok[2] in dict_end_abbrevs:
+            # if not puncts2 and tok[2] in dict_end_abbrevs:
             if tok[2] in dict_end_abbrevs:
                 (space, next_token) = self.slurp_token(tok[1])
                 return next_token[2] in dict_initial_tokens
@@ -262,7 +262,7 @@ class Tokenizer:
     def _split_contraction(self, puncts1, tok, puncts2):
 
         def split(tok, i):
-            return [(tok[0], tok[0]+i, tok[2][:i]), (tok[0]+i, tok[1], tok[2][i:])]
+            return [(tok[0], tok[0] + i, tok[2][:i]), (tok[0] + i, tok[1], tok[2][i:])]
         
         found_apostrophe = apostrophe_pattern.search(tok[2])
         if not found_apostrophe:
@@ -284,23 +284,23 @@ class Tokenizer:
         only work for lex and s tags. Need to eventually use a method on TarsqiDocument
         (now there is a method on DocSource that probably needs to be moved."""
         lex_open_function = lambda lex: u"<lex begin='%s' end='%s'>" % (lex[0], lex[1])
-        return self.get_tokenized( xml = True,
-                                   s_open = u"<s>\n",
-                                   s_close = u"</s>\n",
-                                   lex_open = lex_open_function,
-                                   lex_close = u"</lex>\n",
-                                   lexindent = u"  ")
+        return self.get_tokenized(xml=True,
+                                   s_open=u"<s>\n",
+                                   s_close=u"</s>\n",
+                                   lex_open=lex_open_function,
+                                   lex_close=u"</lex>\n",
+                                   lexindent=u"  ")
     
     def get_tokenized_as_string(self):
         """Return the tokenized text as a string where sentences are on one line and
         tokens are separated by spaces. Not that each sentence ends in a space."""
         lex_open_function = (lambda lex: u'')
-        return self.get_tokenized( xml = False,
-                                   s_open = u'',
-                                   s_close = u"\n",
-                                   lex_open = lex_open_function,
-                                   lex_close = u' ',
-                                   lexindent = u'')
+        return self.get_tokenized(xml=False,
+                                   s_open=u'',
+                                   s_close=u"\n",
+                                   lex_open=lex_open_function,
+                                   lex_close=u' ',
+                                   lexindent=u'')
 
     
     def get_tokenized(self, xml, s_open, s_close, lex_open, lex_close, lexindent):
@@ -388,17 +388,17 @@ class TokenizedText:
             while lexes:
                 lex = lexes[0]
                 if lex[0] < first:
-                    self.sentences.append( TokenizedLex(lex[0], lex[1], lex[2]) )
+                    self.sentences.append(TokenizedLex(lex[0], lex[1], lex[2]))
                     lexes.pop(0)
                 else:
                     break
                 
-            self.sentences.append( TokenizedSentence(first, last) )
+            self.sentences.append(TokenizedSentence(first, last))
 
             while lexes:
                 lex = lexes[0]
                 if lex[0] >= first and lex[1] <= last:
-                    self.sentences[-1].append( TokenizedLex(lex[0], lex[1], lex[2]) )
+                    self.sentences[-1].append(TokenizedLex(lex[0], lex[1], lex[2]))
                     lexes.pop(0)
                 else:
                     break
@@ -407,10 +407,10 @@ class TokenizedText:
         # sentences
         if lexes:
             (first, last) = (lexes[0][0], lexes[-1][1])
-            self.sentences.append( TokenizedSentence(first, last) )
+            self.sentences.append(TokenizedSentence(first, last))
             while lexes:
                 lex = lexes[0]
-                self.sentences[-1].append( TokenizedLex(lex[0], lex[1], lex[2]) )
+                self.sentences[-1].append(TokenizedLex(lex[0], lex[1], lex[2]))
                 lexes.pop(0)
 
 
@@ -512,19 +512,19 @@ if __name__ == '__main__':
 
     in_file = sys.argv[1]
     t1 = time()
-    tk = Tokenizer( codecs.open(in_file, encoding="utf-8").read() )
+    tk = Tokenizer(codecs.open(in_file, encoding="utf-8").read())
     for i in range(1):
         text = tk.tokenize_text()
-    #print tk.sentences
-    #print tk.lexes
+    # print tk.sentences
+    # print tk.lexes
     print tk.get_tokenized_as_xml()
-    #print tk.get_tokenized_as_string()
+    # print tk.get_tokenized_as_string()
     print "\nDONE, processing time was %.3f seconds\n" % (time() - t1)
 
 
-    #tk = Tokenizer(u"This is some text.")
-    #tk.tokenize_text()
-    #print tk.sentences
-    #print tk.lexes
-    #print tk.get_tokenized_as_xml()
-    #print tk.get_tokenized_as_string()
+    # tk = Tokenizer(u"This is some text.")
+    # tk.tokenize_text()
+    # print tk.sentences
+    # print tk.lexes
+    # print tk.get_tokenized_as_xml()
+    # print tk.get_tokenized_as_string()

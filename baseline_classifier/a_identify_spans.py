@@ -8,9 +8,6 @@ a) Identify spans of spatial elements including locations, paths, events and oth
 '''
 #===============================================================================
 from Corpora.corpus import Extent
-# from Corpora.corpus import Corpus 
-# from sklearn.linear_model import LogisticRegression 
-# from SKClassifier import SKClassifier
 import nltk
 from util.demo import Demo
 #===============================================================================
@@ -84,12 +81,12 @@ def get_token_indices(sentence, tag_dict):
     indices = []
     for i in range(len(sentence)):
         start = i
-        end = i+1
-        indices.append( (start, end) )
+        end = i + 1
+        indices.append((start, end))
     return indices
 
 class Spans_Demo(Demo):
-    def __init__(self, train_path = '../test_dev', split=0.8):
+    def __init__(self, train_path='./training', split=0.8):
         super(Spans_Demo, self).__init__(train_path, '', 0.8)
         self.feature_functions = [lambda x: x.upper_case(),
                                   lambda x: x.next_upper_case(),

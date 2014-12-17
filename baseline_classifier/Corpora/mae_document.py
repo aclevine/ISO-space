@@ -6,7 +6,7 @@ from nltk.corpus import wordnet
 from tokenizer import *
 
 class MAE_Document:
-    """A document object is constructed from an XML document file whose path is supplied as an initialization parameter. The XML DOM tree is expected to have the form of a MAE/MAI annotation (MAE is written by Amber Stubbs (astubbs@cs.brandeis.edu) and its documentation can be downloaded from http://code.google.com/p/mae-annotation/). The document should contain text within a <TEXT></TEXT> element whose content is CDATA[[]], and a <TAGS></TAGS> element containing offset annotations referring to the text. The document also instantiates a tokenizer for itself so that the document's text content may be tokenized for further processing."""
+    """A document object is constructed from an XML document file whose c_path is supplied as an initialization parameter. The XML DOM tree is expected to have the form of a MAE/MAI annotation (MAE is written by Amber Stubbs (astubbs@cs.brandeis.edu) and its documentation can be downloaded from http://code.google.com/p/mae-annotation/). The document should contain text within a <TEXT></TEXT> element whose content is CDATA[[]], and a <TAGS></TAGS> element containing offset annotations referring to the text. The document also instantiates a tokenizer for itself so that the document's text content may be tokenized for further processing."""
     def __init__(self, path):
         self.path = path
         self.supported_doc_types = ['application/xml', 'text/plain']
@@ -34,7 +34,7 @@ class MAE_Document:
         """Returns the document's text as a string. If the document is determined to be an XML, the text is taken from <TEXT></TEXT> element if the document is an XML."""
         doc_text = ""
         if self.doc_type == 'application/xml':
-            #doc_text = fix(ET.parse(self.path).findall('TEXT')[0].text)
+            # doc_text = fix(ET.parse(self.c_path).findall('TEXT')[0].text)
             doc_text = ET.parse(self.path).findall('TEXT')[0].text
         if self.doc_type[0] == 'text/plain':
             file = open(self.path, 'r')
@@ -115,27 +115,27 @@ class MAE_Document:
                         # features = ['start', 'end', 'text', 'orth', 'textlc', 'stem', 'pos', 'lemma', 'tag', ...]
                         feature_dict = {}
                         feature_dict['doc_id'] = self.doc_id
-                        feature_dict['start'] = lex[0] # start offset
-                        feature_dict['end'] = lex[1] # end offset
-                        text = unicode(lex[2]) # unicode
-                        feature_dict['text'] = text # token text
-                        feature_dict['orth'] = orth(text) # orthographic
-                        feature_dict['textlc'] = text.lower() # lowercase
+                        feature_dict['start'] = lex[0]  # start offset
+                        feature_dict['end'] = lex[1]  # end offset
+                        text = unicode(lex[2])  # unicode
+                        feature_dict['text'] = text  # token text
+                        feature_dict['orth'] = orth(text)  # orthographic
+                        feature_dict['textlc'] = text.lower()  # lowercase
                         feature_dict['stem'] = stemmer.stem(
                             feature_dict['textlc']
-                        ) # stemmed text
-                        feature_dict['pos'] = None # part of speech
-                        feature_dict['lemma'] = None # lemmatized token string
+                        )  # stemmed text
+                        feature_dict['pos'] = None  # part of speech
+                        feature_dict['lemma'] = None  # lemmatized token string
                         if pos and (lex[-1] == pos[0]):
-                            feature_dict['pos'] = pos[1] # NLTK tagger's PoS
+                            feature_dict['pos'] = pos[1]  # NLTK tagger's PoS
                             word_net_pos = get_wordnet_pos(feature_dict['pos'])
                             lemma = wordnet.morphy(
                                 feature_dict['textlc'],
                                 word_net_pos
                             )
                         if lemma and word_net_pos:
-                            feature_dict['lemma'] = unicode(lemma) # lemmatized text
-                        feature_dict['tag'] = None # Default to no tag type
+                            feature_dict['lemma'] = unicode(lemma)  # lemmatized text
+                        feature_dict['tag'] = None  # Default to no tag type
                         # Populate extra features based on annotation (if any)
                         # Loop over annotated tags
                         for tag in tags:
@@ -248,7 +248,7 @@ def get_wordnet_pos(treebank_tag):
     else:
         return None
 
-### Exceptions
+# ## Exceptions
 class UnsupportedMIMETypeError(Exception):
     """An exception to be raised if an unsupported MIME type is encountered."""
     def __init__(self, doc_type):

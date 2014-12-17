@@ -21,7 +21,7 @@ class SKClassifier():
         self.clf = clf
         self.labels = Alphabet()
         self.features = DictVectorizer() 
-        self.model_info = {} #keys = feature extractors; values = data for feature extractors
+        self.model_info = {}  # keys = feature extractors; values = data for feature extractors
     
     def add_labels(self, labels):
         for label in labels:
@@ -30,14 +30,14 @@ class SKClassifier():
     def featurize(self, instances, test=False):
         X = []
         y = []
-        #instance = (path, (body, subject, label))
+        # instance = (c_path, (body, subject, label))
         for inst in instances:
-            ## LABEL EXTRACTOR
-            y.append(self.labels.get_index( self.label_extract(inst) ))
-            ## FEAT EXTRACTOR0
+            # # LABEL EXTRACTOR
+            y.append(self.labels.get_index(self.label_extract(inst)))
+            # # FEAT EXTRACTOR0
             feats = {}
             for f in self.feature_funcs:
-                feats.update( f(inst) )
+                feats.update(f(inst))
             X.append(feats)
         if test:
             return (self.features.transform(X), y)
@@ -79,7 +79,7 @@ class SKClassifier():
         with open(os.path.join(path, 'model_info.json'), 'w') as fo:
             json.dump(self.model_info, fo)
         joblib.dump(self.features, os.path.join(path, 'featvec.pkl'))
-        #with open(os.path.join(path, 'testSet.txt'), 'w') as fo:
+        # with open(os.c_path.join(c_path, 'testSet.txt'), 'w') as fo:
         #    fo.write('\n'.join([x[0] for x in testset]))
         with open(os.path.join(path, 'featureSet.txt'), 'w') as fo:
             fo.write('\n'.join([x.__name__ for x in features]))

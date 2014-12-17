@@ -4,7 +4,7 @@ from corpus import *
 """A script to update XMLs annotated under ISO-Space-1.11 DTD to the SpaceEvalTask1.2 DTD."""
 
 corpus_dir = os.path.join(
-    os.environ['HOME'], 
+    os.environ['HOME'],
     'Dropbox/ISO-Space/SemEval/Test/update/RFC.ISOSpaceTaskv1.11'
 )
 
@@ -55,7 +55,7 @@ def main():
                 document.rename_attribute(
                     old,
                     new,
-                    ttypes=['MEASURELINK','MOVELINK','OLINK','QSLINK']
+                    ttypes=['MEASURELINK', 'MOVELINK', 'OLINK', 'QSLINK']
                 )
             document.save_xml(os.path.join(update_dir, document.basename))
 

@@ -4,17 +4,17 @@ class Corpus:
     """A collection of MAE annotation documents."""
     
     def __init__(self, directory, files):
-        self.paths          = [directory + file for file in files]
-        self.documents      = self.collect_documents()
-        self.sentences      = self.collect_sentences()
+        self.paths = [directory + file for file in files]
+        self.documents = self.collect_documents()
+        self.sentences = self.collect_sentences()
         self.tag_dictionary = self.tag_dict()
-        self.tags           = self.collect_tags()
-        self.tag_types      = self.tag_set()
+        self.tags = self.collect_tags()
+        self.tag_types = self.tag_set()
     
     def collect_documents(self):
         """Returns a list of documents in the corpus."""
         documents = []
-        ignored   = []
+        ignored = []
         for path in self.paths:
             try:
                 current_document = MAE_Document(path)
@@ -60,7 +60,7 @@ class Corpus:
                 tag_dict[tag_type] = tag_dict.get(tag_type, []) + [tag]
         return tag_dict
     
-    def tag_counts(self, types = []):
+    def tag_counts(self, types=[]):
         """Prints a list of tag counts from the tag dictionary"""
         if not types:
             types = self.tag_types

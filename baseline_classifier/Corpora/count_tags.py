@@ -58,7 +58,7 @@ tag_set = [rfc_corpus.tag_types, cp_corpus.tag_types, clef_corpus.tag_types]
 
 tag_types = set.union(*tag_set)
 
-#tag_types_header = str([e.strip("'") for e in tag_types]).strip("[]").replace(",", "\t")
+# tag_types_header = str([e.strip("'") for e in tag_types]).strip("[]").replace(",", "\t")
 
 
 #    output = label + "\t"
@@ -79,6 +79,6 @@ for (label, corpus) in corpora:
         data.append(datum)
     print (label, data)
 
-#for (name, corpus) in corpora:
+# for (name, corpus) in corpora:
 #    print name
 #    corpus.tag_counts()
