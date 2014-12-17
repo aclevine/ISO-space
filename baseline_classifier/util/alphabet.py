@@ -36,7 +36,7 @@ class Alphabet(object):
         """Get index from label"""
         return self._label_to_index[label]
 
-    def add(self,label):
+    def add(self, label):
         """Add an index for the label if it's a new label"""
         if label not in self._label_to_index:
             self._label_to_index[label] = self.num_labels

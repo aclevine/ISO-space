@@ -6,7 +6,8 @@ Created on July 30, 2014
 @email: aclevine@brandeis.edu
 
 b) Classify spatial elements according to type: 
-PATH, PLACE, MOTION, NONMOTION_EVENT, SPATIAL_ENTITY.    
+PATH, PLACE, MOTION, NONMOTION_EVENT, SPATIAL_ENTITY,
+'MOTION_SIGNAL', 'SPATIAL_SIGNAL'
 '''
 
 #===============================================================================
@@ -15,11 +16,11 @@ from util.demo import Demo
 import re
 import nltk
 #===============================================================================
-type_keys = {'PATH': ['p'], 'PLACE': ['pl'], 'MOTION': ['m'], 'NONMOTION_EVENT': ['e'], 
-             'SPATIAL_ENTITY': ['se'], # spatial elements
-             'SPATIAL_SIGNAL': ['s'], # spatial signal
-             'MOTION_SIGNAL': ['ms'], # motion signal
-             #'HAS_TAG': ['p', 'pl', 'm', 'e', 'se', 's', 'ms']
+type_keys = {'PATH': ['p'], 'PLACE': ['pl'], 'MOTION': ['m'], 'NONMOTION_EVENT': ['e'],
+             'SPATIAL_ENTITY': ['se'],  # spatial elements
+             'SPATIAL_SIGNAL': ['s'],  # spatial signal
+             'MOTION_SIGNAL': ['ms'],  # c_motion signal
+             'HAS_TAG': ['p', 'pl', 'm', 'e', 'se', 's', 'ms']
              }
 
 class Tag(Extent):
@@ -33,7 +34,7 @@ class Tag(Extent):
                 return True
         return False
 
-    ## c) Identify their attributes according to type.
+    # # c) Identify their attributes according to type.
     def has_attribute(self, attribute_name):
         ''' check tag dictionary of instance for attribute. '''
         if self.tag.has_key(attribute_name) and self.tag[attribute_name] != '':
@@ -52,7 +53,7 @@ class Tag(Extent):
     def bag_of_words(self, n):
         """ returns 2n+1 words surrounding target"""
         tokens = self.token
-        tokens.extend([tok for tok, lex in self.prev_tokens[len(self.prev_tokens)-n:]])
+        tokens.extend([tok for tok, lex in self.prev_tokens[len(self.prev_tokens) - n:]])
         tokens.extend([tok for tok, lex in self.next_tokens[:n]])
         return {'bag_' + tok:True for tok in tokens}
 
@@ -74,15 +75,15 @@ class Tag(Extent):
         ''' pull prev n tokens in sentence before target word.'''
         if n > len(self.next_tokens):
             n = len(self.next_tokens)
-        return {'prev_' + str(n) +
+        return {'prev_' + str(n) + 
                 '_' + tok:True for tok, lex 
-                in self.prev_tokens[len(self.prev_tokens)-n:]}
+                in self.prev_tokens[len(self.prev_tokens) - n:]}
 
     def next_n_bag_of_words(self, n):
         ''' pull next n tokens in sentence after target word.'''
         if n > len(self.next_tokens):
             n = len(self.next_tokens)
-        return {'next_' + str(n) +
+        return {'next_' + str(n) + 
                 '_' + tok:True for tok, lex 
                 in self.next_tokens[:n]}
 
@@ -90,15 +91,15 @@ class Tag(Extent):
         ''' pull prev n tokens in sentence before target word.'''
         if n > len(self.next_tokens):
             n = len(self.next_tokens)
-        return {'prev_tag_' + str(n) +
+        return {'prev_tag_' + str(n) + 
                 '_' + nltk.pos_tag(tok)[0][1]:True for tok, lex 
-                in self.prev_tokens[len(self.prev_tokens)-n:]}
+                in self.prev_tokens[len(self.prev_tokens) - n:]}
 
     def next_n_bag_of_pos_tags(self, n):
         ''' pull next n tokens in sentence after target word.'''
         if n > len(self.next_tokens):
             n = len(self.next_tokens)
-        return {'next_tag_' + str(n) +
+        return {'next_tag_' + str(n) + 
                 '_' + nltk.pos_tag(tok)[0][1]:True for tok, lex 
                 in self.next_tokens[:n]}
     
@@ -106,15 +107,15 @@ class Tag(Extent):
         ''' pull prev n tokens in sentence before target word.'''
         if n > len(self.next_tokens):
             n = len(self.next_tokens)
-        return {str(i) + 'prev_' + str(n) +
+        return {str(i) + 'prev_' + str(n) + 
                 '_' + tok:True for i, (tok, lex)
-                in enumerate(self.prev_tokens[len(self.prev_tokens)-n:])}
+                in enumerate(self.prev_tokens[len(self.prev_tokens) - n:])}
 
     def ordered_next_n_bag_of_words(self, n):
         ''' pull next n tokens in sentence after target word.'''
         if n > len(self.next_tokens):
             n = len(self.next_tokens)
-        return {str(i) + 'next_' + str(n) +
+        return {str(i) + 'next_' + str(n) + 
                 '_' + tok:True for i, (tok, lex) 
                 in enumerate(self.next_tokens[:n])}
 
@@ -132,7 +133,7 @@ def get_tag_and_no_tag_indices(sentence, tag_dict, tag_filter=no_filter):
     done = False
     indices = []
     for i in range(len(sentence)):
-        token, lex = sentence[i] # (token, lexeme obj)
+        token, lex = sentence[i]  # (token, lexeme obj)
         tag = tag_dict.get(lex.begin, {})
         if tag_filter(tag):
             if unconsumed_tag == {}:
@@ -146,8 +147,8 @@ def get_tag_and_no_tag_indices(sentence, tag_dict, tag_filter=no_filter):
                     done = True
                     unconsumed_tag = {}
             if done:
-                end = i+1
-                indices.append( (start, end) ) 
+                end = i + 1
+                indices.append((start, end)) 
                 done = False
     return indices
 
@@ -155,21 +156,23 @@ def get_tag_only_indices(sentence, tag_dict):
     return get_tag_and_no_tag_indices(sentence, tag_dict, has_tag)
 
 class Types_Demo(Demo):
-    def __init__(self, type_name, doc_path = '../training', split=0.8):
-        self.doc_path = doc_path
-        self.split = split
+    def __init__(self, type_name, train_path='./training', split=0.8):
+        super(Types_Demo, self).__init__(train_path, '', 0.8)
         self.feature_functions = [lambda x: x.curr_token(),
                                   lambda x: x.prev_n_bag_of_words(3),
                                   lambda x: x.next_n_bag_of_words(3)]
         self.label_function = lambda x: str(x.is_type(type_name))
-        self.indices_function = get_tag_and_no_tag_indices
+        self.indices_function = get_tag_only_indices  # get_tag_and_no_tag_indices
         self.extent_class = Tag
 
 # TESTING
 if __name__ == "__main__":
 
-    for type_name in ['PATH', 
-                      'PLACE', 'MOTION', 'NONMOTION_EVENT', 
-                      'SPATIAL_ENTITY', 'MOTION_SIGNAL' 'HAS_TAG']:
+    for type_name in ['PATH',
+                      'PLACE', 'MOTION', 'NONMOTION_EVENT',
+                      'SPATIAL_ENTITY', 'MOTION_SIGNAL', 
+                      'SPATIAL_SIGNAL', 'HAS_TAG']:
+        print type_name
         d = Types_Demo(type_name)
         d.run_demo()
+        print '\n'

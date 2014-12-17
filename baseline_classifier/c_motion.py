@@ -6,22 +6,22 @@ Created on Oct 27, 2014
 
 c. Identify their attributes according to type.
 '''
-from b_identify_types.identify_types import Tag, get_tag_and_no_tag_indices
+from b_identify_types import Tag, get_tag_and_no_tag_indices
 from util.demo import Demo
 import re
 
 class MotionTag(Tag):
     # LABEL EXTRACT
     def motion_type(self):
-        #motion_type ( MANNER | PATH | COMPOUND )
+        # motion_type ( MANNER | PATH | COMPOUND )
         return self.tag['motion_type']
  
     def motion_class(self):
-        #motion_class ( MOVE | MOVE_EXTERNAL | MOVE_INTERNAL | LEAVE | REACH | CROSS | DETACH | HIT | FOLLOW | DEVIATE | STAY )
+        # motion_class ( MOVE | MOVE_EXTERNAL | MOVE_INTERNAL | LEAVE | REACH | CROSS | DETACH | HIT | FOLLOW | DEVIATE | STAY )
         return self.tag['motion_class']
      
     def motion_sense(self):
-        #motion_sense ( LITERAL | FICTIVE | INTRINSIC_CHANGE )
+        # motion_sense ( LITERAL | FICTIVE | INTRINSIC_CHANGE )
         return self.tag['motion_sense']
 
 # TAG TYPE FILTER
@@ -34,7 +34,7 @@ def get_motion_tag_indices(sentence, tag_dict):
 
 # DEMOS
 class MotionDemo(Demo):
-    def __init__(self, doc_path = '../training', split=0.8):
+    def __init__(self, doc_path='./training', split=0.8):
         super(MotionDemo, self).__init__(doc_path, split)
         self.indices_function = get_motion_tag_indices
         self.extent_class = MotionTag
@@ -79,3 +79,4 @@ if __name__ == "__main__":
         
     d = MotionSenseDemo()
     d.run_demo()
+

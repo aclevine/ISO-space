@@ -1,5 +1,5 @@
 __author__ = "Zachary Yocum"
-__email__  = "zyocum@brandeis.edu"
+__email__ = "zyocum@brandeis.edu"
 
 import corpus, re, shutil
 from warnings import warn
@@ -50,7 +50,7 @@ def run(annotators=annotators, path=path, pattern=pattern):
         xmls = filter(
             lambda f : re.match(
                 re.compile(pattern, re.U), unicode(f, encoding='utf-8')
-            ), 
+            ),
             os.listdir(annotator_dir)
         )
         # loop over each of the xml annotation file names

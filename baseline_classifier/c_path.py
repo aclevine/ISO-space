@@ -6,7 +6,7 @@ Created on Oct 27, 2014
 
 c. Identify their attributes according to type.
 '''
-from b_identify_types.identify_types import get_tag_and_no_tag_indices, Tag
+from b_identify_types import get_tag_and_no_tag_indices, Tag
 from util.demo import Demo
 import re
 
@@ -47,14 +47,14 @@ class PathTag(Tag):
 # TAG TYPE FILTER
 def is_path_tag(tag):
     tag_id = tag.get('id', '')
-    return re.findall('^p\d+', tag_id)
+    return bool(re.findall('^p\d+', tag_id))
 
 def get_path_tag_indices(sentence, tag_dict):
     return get_tag_and_no_tag_indices(sentence, tag_dict, is_path_tag)
 
 # DEMOS
 class PathDemo(Demo):
-    def __init__(self, doc_path = '../training', split=0.8):
+    def __init__(self, doc_path='./training', split=0.8):
         super(PathDemo, self).__init__(doc_path, split)
         self.indices_function = get_path_tag_indices
         self.extent_class = PathTag

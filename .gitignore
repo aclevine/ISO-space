@@ -1,6 +1,6 @@
 .metadata/
-.project
 .settings/
 .pydevproject
 .DS_store
 *.pyc
+.project

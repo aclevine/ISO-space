@@ -3,33 +3,35 @@ Created on Oct 27, 2014
 
 @author: ACL73
 '''
-from path import PathTag
-from b_identify_types.identify_types import get_tag_and_no_tag_indices
+from c_path import PathTag
+from b_identify_types import get_tag_and_no_tag_indices
 from util.demo import Demo
+
 import re
 
-class PlaceTag(PathTag):
+class EntityTag(PathTag):
     # LABEL EXTRACT
-    
+
     # FEATURE EXTRACT
     def test(self):
         return
     
-def is_place_tag(tag):
+def is_entity_tag(tag):
     tag_id = tag.get('id', '')
-    return re.findall('^pl\d+', tag_id)
+    return bool(re.findall('^se\d+', tag_id))
 
-def get_place_tag_indices(sentence, tag_dict):
-    return get_tag_and_no_tag_indices(sentence, tag_dict, is_place_tag)
+
+def get_entity_tag_indices(sentence, tag_dict):
+    return get_tag_and_no_tag_indices(sentence, tag_dict, is_entity_tag)
 
 # DEMO
-class PlaceDemo(Demo):
-    def __init__(self, doc_path = '../training', split=0.8):
-        super(PlaceDemo, self).__init__(doc_path, split)
-        self.indices_function = get_place_tag_indices
-        self.extent_class = PlaceTag
+class EntityDemo(Demo):
+    def __init__(self, doc_path='./training', split=0.8):
+        super(EntityDemo, self).__init__(doc_path, split)
+        self.indices_function = get_entity_tag_indices
+        self.extent_class = EntityTag
 
-class PlaceDimensionalityDemo(PlaceDemo):  
+class EntityDimensionalityDemo(EntityDemo):  
     def get_label_function(self):
         return  lambda x: str(x.dimensionality())
 
@@ -37,7 +39,7 @@ class PlaceDimensionalityDemo(PlaceDemo):
         return [lambda x: x.curr_token(),
                 ]
 
-class PlaceFormDemo(PlaceDemo):
+class EntityFormDemo(EntityDemo):
     def get_label_function(self):
         return  lambda x: str(x.form())
 
@@ -45,7 +47,7 @@ class PlaceFormDemo(PlaceDemo):
         return [lambda x: x.curr_token(),
                 ]
 
-class PlaceCountableDemo(PlaceDemo):
+class EntityCountableDemo(EntityDemo):
     def get_label_function(self):
         return  lambda x: str(x.countable())
 
@@ -53,7 +55,7 @@ class PlaceCountableDemo(PlaceDemo):
         return [lambda x: x.curr_token(),
                 ]
 
-class PlaceModDemo(PlaceDemo):
+class EntityModDemo(EntityDemo):
     def get_label_function(self):
         return  lambda x: str(x.mod())
 
@@ -62,15 +64,14 @@ class PlaceModDemo(PlaceDemo):
                 ]
 
 if __name__ == "__main__":
-    d = PlaceDimensionalityDemo()
-    d.run_demo(verbose=2)
-     
-    d = PlaceFormDemo()
+    d = EntityDimensionalityDemo()
     d.run_demo()
      
-    d = PlaceCountableDemo()
+    d = EntityFormDemo()
     d.run_demo()
      
-    d = PlaceModDemo()
+    d = EntityCountableDemo()
     d.run_demo()
-
+     
+    d = EntityModDemo()
+    d.run_demo()

@@ -12,8 +12,9 @@ from SKClassifier import SKClassifier
 from abc import abstractmethod
 
 class Demo(object):
-    def __init__(self, doc_path = './training', split=0.8):
-        self.doc_path = doc_path
+    def __init__(self, train_path='./training', test_path=None, split=0.8):
+        self.train_path = train_path
+        self.test_path = test_path
         self.split = split
         self.label_function = self.get_label_function()
         self.feature_functions = self.get_feature_functions()
@@ -28,12 +29,20 @@ class Demo(object):
          
     def run_demo(self, verbose=0):
         # build extents
-        c = Corpus(self.doc_path)
-        extents = list(c.extents(self.indices_function, 
+        c = Corpus(self.train_path)
+        extents = list(c.extents(self.indices_function,
                                  self.extent_class))
-        i = int(len(extents) * self.split)
-        train_data = extents[:i]
-        test_data = extents[i:]
+
+        if self.test_path:
+            train_data = extents
+            c_test = Corpus(self.train_path)
+            extents_test = list(c.extents(self.indices_function,
+                                self.extent_class))
+            test_data = extents_test
+        else:
+            i = int(len(extents) * self.split)
+            train_data = extents[:i]
+            test_data = extents[i:]
         if verbose >= 1:
             print "data loaded"
         labels = [self.label_function(x) for x in extents]
@@ -43,8 +52,8 @@ class Demo(object):
                 fd[l] = fd.get(l, 1) + 1
             print fd
         # pull desired features and labels for training
-        clf = SKClassifier(LogisticRegression(), 
-                           self.label_function, 
+        clf = SKClassifier(LogisticRegression(),
+                           self.label_function,
                            self.feature_functions)
         clf.add_labels(set(labels))
         clf.train(train_data)
@@ -53,7 +62,7 @@ class Demo(object):
         # classify and evaluate
         pred = clf.classify(test_data)
         clf.evaluate(pred, [self.label_function(x) for x in test_data])
-        return pred 
+        return pred
     
         # TODO Return precision / recall / f-measure for averaging?
         

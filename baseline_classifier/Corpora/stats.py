@@ -1,6 +1,6 @@
 ################################################################################
 __author__ = "Zachary Yocum"
-__email__  = "zyocum@brandeis.edu"
+__email__ = "zyocum@brandeis.edu"
 ################################################################################
 from itertools import chain
 from tokenizer import *
