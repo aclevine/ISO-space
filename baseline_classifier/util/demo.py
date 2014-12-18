@@ -12,9 +12,11 @@ from SKClassifier import SKClassifier
 from abc import abstractmethod
 
 class Demo(object):
-    def __init__(self, train_path='./training', test_path=None, split=0.8):
+    '''specify where system should pull training and test data from'''
+    def __init__(self, train_path='./training', test_path=None, gold_path=None, split=0.8):
         self.train_path = train_path
         self.test_path = test_path
+        self.gold_path = gold_path
         self.split = split
         self.label_function = self.get_label_function()
         self.feature_functions = self.get_feature_functions()
@@ -28,21 +30,21 @@ class Demo(object):
         return []
          
     def run_demo(self, verbose=0):
-        # build extents
-        c = Corpus(self.train_path)
-        extents = list(c.extents(self.indices_function,
-                                 self.extent_class))
-
+        # load training data
+        c_train = Corpus(self.train_path)
+        extents = list(c_train.extents(self.indices_function,
+                                       self.extent_class))
+        # load test data
         if self.test_path:
             train_data = extents
-            c_test = Corpus(self.train_path)
-            extents_test = list(c.extents(self.indices_function,
-                                self.extent_class))
-            test_data = extents_test
+            c_test = Corpus(self.test_path)
+            test_data = list(c_test.extents(self.indices_function,
+                                            self.extent_class))
         else:
             i = int(len(extents) * self.split)
             train_data = extents[:i]
             test_data = extents[i:]
+        # verbosity functionality
         if verbose >= 1:
             print "data loaded"
         labels = [self.label_function(x) for x in extents]
@@ -51,7 +53,7 @@ class Demo(object):
             for l in labels:
                 fd[l] = fd.get(l, 1) + 1
             print fd
-        # pull desired features and labels for training
+        # train model
         clf = SKClassifier(LogisticRegression(),
                            self.label_function,
                            self.feature_functions)
@@ -59,10 +61,28 @@ class Demo(object):
         clf.train(train_data)
         if verbose >= 1:
             print "model trained"
-        # classify and evaluate
-        pred = clf.classify(test_data)
-        clf.evaluate(pred, [self.label_function(x) for x in test_data])
-        return pred
-    
-        # TODO Return precision / recall / f-measure for averaging?
+        # classify
+        pred = clf.classify(test_data, 
+                            keys = ["{a},{b},{c}".format(a=extent.basename,
+                                                         b=extent.lex[0].begin, 
+                                                         c=extent.lex[-1].end) 
+                                    for extent in test_data]
+                            )
         
+        if self.gold_path:
+            c_gold = Corpus(self.gold_path)
+            gold_data = list(c_gold.extents(self.indices_function,
+                                            self.extent_class))
+        else:
+            gold_data = test_data
+        # evaluate
+        gold_labels = dict([
+                            ("{a},{b},{c}".format(a=extent.basename,
+                                                  b=extent.lex[0].begin, 
+                                                  c=extent.lex[-1].end),  
+                            self.label_function(extent)) 
+                        for extent in gold_data])        
+        clf.evaluate(pred, gold_labels)
+        return pred, test_data
+        
+        # TODO Return precision / recall / f-measure for averaging?

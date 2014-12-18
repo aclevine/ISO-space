@@ -1,0 +1,672 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<SpaceEvalTaskv1.2>
+<TEXT><![CDATA[
+Peru
+Monday, October 16th, 2006
+
+   As I said in the last entry, Peru’s coast is home to one of the driest deserts in the world. Despite the constant fog, it almost never rains â€“ my tour guide for an exhibit in Lima told me that the last time there was heavy rain was 35 years ago.
+
+   All of the water for the city comes from the mountains, where it falls as rain or snow and then melts, filling the rivers. During the dry season, half of the year, almost all of the water is from melting snow and ice. Unfortuantely, almost all of these glaciers are going to melt and dissapear in the next 50 years. It is unclear where Peruvians will get their water from when the glaciers are gone.
+
+ 
+   The countryâ€™s energy supply is also at risk. According to people I talked to at PROCLIM, a project aimed at preparing Peru for global warming, 80% of Peruâ€™s electricity is hydroelectric, and, during the dry season, 80% of the water in the dams is from glacial runoff. Unless investment for huge new dams is found, Peru might have to switch to using fossil fuels to produce its electricity.
+
+ 
+   All of this will take place in a country where I have already seen many water problems. Most of the towns and cities I have been in (including parts of Lima) have certain hours of the day when the city does not provide water. In one rural area east of the Cordillera Blanca, I met a man working for the government whose job it is to resolve water disputes. â€˜It is a big problem here. I have to make sure that each day the water goes to a different house.â€™ A farmer I stayed with near the coast pointed to a number of his crops and said that they would be twice as high if not for a shortage of water. And every person who lives near a stream tells me the same story: the streams are more variable than they used to be. In the dry season there is less water, and in the rainy season there is more â€“ just as one would expect from a decreasing snow pack. (To be fair, this is also due to deforestation as well as loss of snow and ice.)
+
+   Loosing the glaciers and snow of the mountains will be a major loss for Peru. The only solution may be to build many new resivours in the mountains. But, what valleys will they choose to flood? What will happen to the people living in these valleys? And, how will Peru, a poor country, find the investment for such expensive projects?
+]]></TEXT>
+<TAGS>
+<PLACE comment="'... where it falls as rain ...'" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="" domain="" elevation="" end="-1" form="NOM" gazref="" gquant="" id="pl3" latLong="" mod="" scopes="" start="-1" state="" text="" type=""/>
+<PLACE comment="" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="" domain="" elevation="" end="1017" form="NAM" gazref="" gquant="" id="pl6" latLong="" mod="" scopes="" start="1013" state="" text="Peru" type=""/>
+<PLACE comment="" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="" domain="" elevation="" end="115" form="NOM" gazref="" gquant="" id="pl0" latLong="" mod="" scopes="" start="108" state="" text="deserts" type=""/>
+<PLACE comment="amount=most;" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="" domain="" elevation="" end="1200" form="NOM" gazref="" gquant="" id="pl8" latLong="" mod="" scopes="" start="1195" state="" text="towns" type=""/>
+<PLACE comment="amount=most" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="" domain="" elevation="" end="1211" form="NOM" gazref="" gquant="" id="pl9" latLong="" mod="" scopes="" start="1205" state="" text="cities" type=""/>
+<PLACE comment="" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="" domain="" elevation="" end="128" form="NOM" gazref="" gquant="" id="pl1" latLong="" mod="" scopes="" start="123" state="" text="world" type=""/>
+<PLACE comment="" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="" domain="" elevation="" end="1243" form="NOM" gazref="" gquant="" id="pl10" latLong="" mod="" scopes="" start="1238" state="" text="parts" type=""/>
+<PLACE comment="" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="" domain="" elevation="" end="1251" form="NAM" gazref="" gquant="" id="pl11" latLong="" mod="" scopes="" start="1247" state="" text="Lima" type=""/>
+<PLACE comment="" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="" domain="" elevation="" end="1338" form="NOM" gazref="" gquant="" id="pl12" latLong="" mod="" scopes="" start="1334" state="" text="area" type=""/>
+<PLACE comment="" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="" domain="" elevation="" end="1550" form="NOM" gazref="" gquant="" id="pl13" latLong="" mod="" scopes="" start="1545" state="" text="house" type=""/>
+<PLACE comment="" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="" domain="" elevation="" end="2114" form="NAM" gazref="" gquant="" id="pl14" latLong="" mod="" scopes="" start="2110" state="" text="Peru" type=""/>
+<PLACE comment="" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="" domain="" elevation="" end="218" form="NAM" gazref="" gquant="" id="pl2" latLong="" mod="" scopes="" start="214" state="" text="Lima" type=""/>
+<PLACE comment="amount=many" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="" domain="" elevation="" end="2168" form="NOM" gazref="" gquant="" id="pl15" latLong="" mod="" scopes="" start="2159" state="" text="resivours" type=""/>
+<PLACE comment="" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="" domain="" elevation="" end="2185" form="NOM" gazref="" gquant="" id="pl17" latLong="" mod="" scopes="" start="2176" state="" text="mountains" type=""/>
+<PLACE comment="" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="" domain="" elevation="" end="2306" form="NAM" gazref="" gquant="" id="pl18" latLong="" mod="" scopes="" start="2302" state="" text="Peru" type=""/>
+<PLACE comment="" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="" domain="" elevation="" end="318" form="NOM" gazref="" gquant="" id="pl21" latLong="" mod="" scopes="" start="314" state="" text="city" type=""/>
+<PLACE comment="" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="" domain="" elevation="" end="343" form="NOM" gazref="" gquant="" id="pl4" latLong="" mod="" scopes="" start="334" state="" text="mountains" type=""/>
+<PLACE comment="" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="" domain="" elevation="" end="819" form="NAM" gazref="" gquant="" id="pl5" latLong="" mod="" scopes="" start="815" state="" text="Peru" type=""/>
+<PLACE comment="" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="" domain="" elevation="" end="93" form="NOM" gazref="" gquant="" id="pl16" latLong="" mod="" scopes="" start="90" state="" text="one" type=""/>
+<PLACE comment="" continent="" countable="TRUE" country="" ctv="" dcl="FALSE" dimensionality="" domain="" elevation="" end="2286" form="NOM" gazref="" gquant="" id="pl19" latLong="" mod="" scopes="" start="2279" state="" text="valleys" type=""/>
+<PATH beginID="" comment="" countable="TRUE" dcl="FALSE" dimensionality="" domain="" elevation="" end="1368" endID="" form="NAM" gazref="" gquant="" id="p2" latLong="" midIDs="" mod="" scopes="" start="1351" text="Cordillera Blanca" type=""/>
+<PATH beginID="" comment="" countable="TRUE" dcl="FALSE" dimensionality="" domain="" elevation="" end="1592" endID="" form="NOM" gazref="" gquant="" id="p3" latLong="" midIDs="" mod="" scopes="" start="1587" text="coast" type=""/>
+<PATH beginID="" comment="" countable="TRUE" dcl="FALSE" dimensionality="" domain="" elevation="" end="1740" endID="" form="NOM" gazref="" gquant="" id="p4" latLong="" midIDs="" mod="" scopes="" start="1734" text="stream" type=""/>
+<PATH beginID="" comment="" countable="TRUE" dcl="FALSE" dimensionality="" domain="" elevation="" end="410" endID="" form="NOM" gazref="" gquant="" id="p1" latLong="" midIDs="" mod="" scopes="" start="404" text="rivers" type=""/>
+<PATH beginID="" comment="" countable="TRUE" dcl="FALSE" dimensionality="" domain="" elevation="" end="78" endID="" form="NOM" gazref="" gquant="" id="p0" latLong="" midIDs="" mod="" scopes="" start="73" text="coast" type=""/>
+<SPATIAL_ENTITY comment="" countable="TRUE" dimensionality="" domain="" elevation="" end="1213" form="NOM" gquant="" id="se3" latLong="" mod="" scopes="" start="1212" text="I" type=""/>
+<SPATIAL_ENTITY comment="" countable="TRUE" dimensionality="" domain="" elevation="" end="1371" form="NOM" gquant="" id="se4" latLong="" mod="" scopes="" start="1370" text="I" type=""/>
+<SPATIAL_ENTITY comment="" countable="TRUE" dimensionality="" domain="" elevation="" end="1381" form="NOM" gquant="" id="se5" latLong="" mod="" scopes="" start="1378" text="man" type=""/>
+<SPATIAL_ENTITY comment="" countable="FALSE" dimensionality="" domain="" elevation="" end="1524" form="NOM" gquant="" id="se6" latLong="" mod="" scopes="" start="1519" text="water" type=""/>
+<SPATIAL_ENTITY comment="" countable="TRUE" dimensionality="" domain="" elevation="" end="1565" form="NOM" gquant="" id="se7" latLong="" mod="" scopes="" start="1564" text="I" type=""/>
+<SPATIAL_ENTITY comment="quant=all;" countable="FALSE" dimensionality="" domain="" elevation="" end="305" form="NOM" gquant="" id="se0" latLong="" mod="" scopes="" start="300" text="water" type=""/>
+<SPATIAL_ENTITY comment="" countable="TRUE" dimensionality="" domain="" elevation="" end="353" form="NOM" gquant="" id="se1" latLong="" mod="" scopes="" start="351" text="it" type=""/>
+<SPATIAL_ENTITY comment="" countable="TRUE" dimensionality="" domain="" elevation="" end="41" form="NOM" gquant="" id="se2" latLong="" mod="" scopes="" start="40" text="I" type=""/>
+<SPATIAL_ENTITY comment="" countable="TRUE" dimensionality="" domain="" elevation="" end="226" form="NOM" gquant="" id="se8" latLong="" mod="" scopes="" start="224" text="me" type=""/>
+<SPATIAL_ENTITY comment="" countable="TRUE" dimensionality="" domain="" elevation="" end="763" form="NOM" gquant="" id="se9" latLong="" mod="" scopes="" start="762" text="I" type=""/>
+<SPATIAL_ENTITY comment="" countable="FALSE" dimensionality="" domain="" elevation="" end="930" form="NOM" gquant="" id="se10" latLong="" mod="" scopes="" start="925" text="water" type=""/>
+<SPATIAL_ENTITY comment="" countable="TRUE" dimensionality="" domain="" elevation="" end="942" form="NOM" gquant="" id="se12" latLong="" mod="" scopes="" start="938" text="dams" type=""/>
+<SPATIAL_ENTITY comment="" countable="TRUE" dimensionality="" domain="" elevation="" end="1143" form="NOM" gquant="" id="se13" latLong="" mod="" scopes="" start="1142" text="I" type=""/>
+<SPATIAL_ENTITY comment="" countable="TRUE" dimensionality="" domain="" elevation="" end="1482" form="NOM" gquant="" id="se14" latLong="" mod="" scopes="" start="1481" text="I" type=""/>
+<SPATIAL_ENTITY comment="" countable="TRUE" dimensionality="" domain="" elevation="" end="1749" form="NOM" gquant="" id="se15" latLong="" mod="" scopes="" start="1747" text="me" type=""/>
+<NONMOTION_EVENT comment="" countable="" domain="" elevation="" end="1572" gquant="" id="e1" latLong="" mod="" scopes="" start="1566" text="stayed"/>
+<NONMOTION_EVENT comment="" countable="" domain="" elevation="" end="1726" gquant="" id="e2" latLong="" mod="" scopes="" start="1721" text="lives"/>
+<NONMOTION_EVENT comment="" countable="TRUE" domain="" elevation="" end="210" gquant="" id="e0" latLong="" mod="" scopes="" start="203" text="exhibit"/>
+<NONMOTION_EVENT comment="" countable="" domain="" elevation="" end="390" gquant="" id="e3" latLong="" mod="" scopes="" start="385" text="melts"/>
+<NONMOTION_EVENT comment="" countable="" domain="" elevation="" end="2269" gquant="" id="e4" latLong="" mod="" scopes="" start="2263" text="living"/>
+<MOTION comment="" countable="" domain="" elevation="" end="1375" gquant="" id="m4" latlong="" mod="" motion_class="HIT" motion_sense="LITERAL" motion_type="PATH" scopes="" start="1372" text="met"/>
+<MOTION comment="" countable="" domain="" elevation="" end="1529" gquant="" id="m2" latlong="" mod="" motion_class="REACH" motion_sense="LITERAL" motion_type="PATH" scopes="" start="1525" text="goes"/>
+<MOTION comment="" countable="" domain="" elevation="" end="324" gquant="" id="m0" latlong="" mod="" motion_class="MOVE" motion_sense="LITERAL" motion_type="PATH" scopes="" start="319" text="comes"/>
+<MOTION comment="" countable="" domain="" elevation="" end="359" gquant="" id="m1" latlong="" mod="" motion_class="HIT" motion_sense="LITERAL" motion_type="COMPOUND" scopes="" start="354" text="falls"/>
+<MOTION comment="" countable="" domain="" elevation="" end="399" gquant="" id="m5" latlong="" mod="" motion_class="REACH" motion_sense="LITERAL" motion_type="PATH" scopes="" start="392" text="filling"/>
+<SPATIAL_SIGNAL cluster="" comment="" end="118" id="s0" semantic_type="TOPOLOGICAL" start="116" text="in"/>
+<SPATIAL_SIGNAL cluster="" comment="" end="1226" id="s5" semantic_type="TOPOLOGICAL" start="1224" text="in"/>
+<SPATIAL_SIGNAL cluster="" comment="" end="1246" id="s6" semantic_type="TOPOLOGICAL" start="1244" text="of"/>
+<SPATIAL_SIGNAL cluster="" comment="" end="1323" id="s7" semantic_type="TOPOLOGICAL" start="1321" text="In"/>
+<SPATIAL_SIGNAL cluster="" comment="" end="1346" id="s8" semantic_type="DIRECTIONAL" start="1339" text="east of"/>
+<SPATIAL_SIGNAL cluster="" comment="" end="213" id="s1" semantic_type="TOPOLOGICAL" start="211" text="in"/>
+<SPATIAL_SIGNAL cluster="" comment="" end="2171" id="s10" semantic_type="TOPOLOGICAL" start="2169" text="in"/>
+<SPATIAL_SIGNAL cluster="" comment="" end="350" id="s2" semantic_type="TOPOLOGICAL" start="345" text="where"/>
+<SPATIAL_SIGNAL cluster="" comment="" end="933" id="s3" semantic_type="TOPOLOGICAL" start="931" text="in"/>
+<SPATIAL_SIGNAL cluster="" comment="" end="2272" id="s4" semantic_type="TOPOLOGICAL" start="2270" text="in"/>
+<MOTION_SIGNAL comment="" end="1532" id="a1" motion_signal_type="PATH" start="1530" text="to"/>
+<MOTION_SIGNAL comment="" end="309" id="a2" motion_signal_type="PATH" start="306" text="for"/>
+<MOTION_SIGNAL comment="" end="329" id="a0" motion_signal_type="PATH" start="325" text="from"/>
+<MEASURE comment="" end="1582" id="me0" start="1578" text="near" unit="" value="NEAR"/>
+<MEASURE comment="" end="1731" id="me1" start="1727" text="near" unit="" value="NEAR"/>
+<QSLINK comment="" fromID="pl16" fromText="one" id="qsl0" landmark="p0" relType="IN" toID="p0" toText="coast" trajector="pl16" trigger=""/>
+<QSLINK comment="" fromID="e0" fromText="exhibit" id="qsl1" landmark="pl2" relType="IN" toID="pl2" toText="Lima" trajector="e0" trigger="s1"/>
+<QSLINK comment="" fromID="m1" fromText="falls" id="qsl2" landmark="pl4" relType="IN" toID="pl4" toText="mountains" trajector="m1" trigger="s2"/>
+<QSLINK comment="" fromID="se3" fromText="I" id="qsl3" landmark="pl8" relType="IN" toID="pl8" toText="towns" trajector="se3" trigger="s5"/>
+<QSLINK comment="" fromID="se3" fromText="I" id="qsl4" landmark="pl9" relType="IN" toID="pl9" toText="cities" trajector="se3" trigger="s5"/>
+<QSLINK comment="" fromID="se3" fromText="I" id="qsl5" landmark="pl10" relType="IN" toID="pl10" toText="parts" trajector="se3" trigger="s5"/>
+<QSLINK comment="SPATIAL_FUNCTION" fromID="pl10" fromText="parts" id="qsl6" landmark="pl11" relType="IN" toID="pl11" toText="Lima" trajector="pl10" trigger="s6"/>
+<QSLINK comment="" fromID="m4" fromText="met" id="qsl7" landmark="pl12" relType="IN" toID="pl12" toText="area" trajector="m4" trigger="s7"/>
+<QSLINK comment="" fromID="pl15" fromText="resivours" id="qsl8" landmark="pl17" relType="IN" toID="pl17" toText="mountains" trajector="pl15" trigger="s10"/>
+<QSLINK comment="" fromID="e3" fromText="melts" id="qsl9" landmark="pl4" relType="IN" toID="pl4" toText="mountains" trajector="e3" trigger="s2"/>
+<QSLINK comment="" fromID="se10" fromText="water" id="qsl10" landmark="se12" relType="IN" toID="se12" toText="dams" trajector="se10" trigger="s3"/>
+<QSLINK comment="" fromID="e4" fromText="living" id="qsl11" landmark="pl19" relType="IN" toID="pl19" toText="valleys" trajector="e4" trigger="s4"/>
+<OLINK comment="" frame_type="ABSOLUTE" fromID="pl12" fromText="area" id="ol0" landmark="p2" projective="TRUE" referencePt="EAST" relType="EAST" toID="p2" toText="Cordillera Blanca" trajector="pl12" trigger="s8"/>
+<MOVELINK adjunctID="a0,a2" comment="" fromID="m0" fromText="comes" goal="pl21" goal_reached="YES" ground="" id="mvl0" midPoint="" mover="se0" pathID="" source="pl4" toID="se0" toText="water" trigger="m0"/>
+<MOVELINK adjunctID="" comment="" fromID="m1" fromText="falls" goal="pl3" goal_reached="YES" ground="" id="mvl1" midPoint="" mover="se1" pathID="" source="" toID="se1" toText="it" trigger="m1"/>
+<MOVELINK adjunctID="" comment="" fromID="m5" fromText="filling" goal="p1" goal_reached="YES" ground="" id="mvl2" midPoint="" mover="se0" pathID="" source="pl4" toID="se0" toText="water" trigger="m5"/>
+<MOVELINK adjunctID="" comment="" fromID="m4" fromText="met" goal="se5" goal_reached="YES" ground="" id="mvl3" midPoint="" mover="se4" pathID="" source="" toID="se4" toText="I" trigger="m4"/>
+<MOVELINK adjunctID="a1" comment="" fromID="m2" fromText="goes" goal="pl13" goal_reached="YES" ground="" id="mvl4" midPoint="" mover="se6" pathID="" source="" toID="se6" toText="water" trigger="m2"/>
+<MEASURELINK comment="" endPoint1="" endPoint2="" fromID="e1" fromText="stayed" id="ml0" landmark="p3" relType="DISTANCE" toID="p3" toText="coast" trajector="e1" val="me0"/>
+<MEASURELINK comment="" endPoint1="" endPoint2="" fromID="e2" fromText="lives" id="ml1" landmark="p4" relType="DISTANCE" toID="p4" toText="stream" trajector="e2" val="me1"/>
+<METALINK comment="" fromID="pl16" fromText="one" id="metal0" objectID1="pl16" objectID2="pl0" relType="SUBCOREFERENCE" toID="pl0" toText="deserts"/>
+<METALINK comment="" fromID="p3" fromText="coast" id="metal1" objectID1="p3" objectID2="p0" relType="COREFERENCE" toID="p0" toText="coast"/>
+<METALINK comment="" fromID="pl11" fromText="Lima" id="metal2" objectID1="pl11" objectID2="pl2" relType="COREFERENCE" toID="pl2" toText="Lima"/>
+<METALINK comment="" fromID="pl6" fromText="Peru" id="metal3" objectID1="pl6" objectID2="pl5" relType="COREFERENCE" toID="pl5" toText="Peru"/>
+<METALINK comment="" fromID="pl18" fromText="Peru" id="metal4" objectID1="pl18" objectID2="pl5" relType="COREFERENCE" toID="pl5" toText="Peru"/>
+<METALINK comment="" fromID="pl14" fromText="Peru" id="metal5" objectID1="pl14" objectID2="pl5" relType="COREFERENCE" toID="pl5" toText="Peru"/>
+<METALINK comment="" fromID="pl17" fromText="mountains" id="metal6" objectID1="pl17" objectID2="pl4" relType="COREFERENCE" toID="pl4" toText="mountains"/>
+<METALINK comment="" fromID="se3" fromText="I" id="metal9" objectID1="se3" objectID2="se2" relType="COREFERENCE" toID="se2" toText="I"/>
+<METALINK comment="" fromID="se4" fromText="I" id="metal10" objectID1="se4" objectID2="se2" relType="COREFERENCE" toID="se2" toText="I"/>
+<METALINK comment="" fromID="se7" fromText="I" id="metal11" objectID1="se7" objectID2="se2" relType="COREFERENCE" toID="se2" toText="I"/>
+<METALINK comment="" fromID="se8" fromText="me" id="metal12" objectID1="se8" objectID2="se2" relType="COREFERENCE" toID="se2" toText="I"/>
+<METALINK comment="" fromID="se9" fromText="I" id="metal13" objectID1="se9" objectID2="se2" relType="COREFERENCE" toID="se2" toText="I"/>
+<METALINK comment="" fromID="se13" fromText="I" id="metal14" objectID1="se13" objectID2="se2" relType="COREFERENCE" toID="se2" toText="I"/>
+<METALINK comment="" fromID="se14" fromText="I" id="metal15" objectID1="se14" objectID2="se2" relType="COREFERENCE" toID="se2" toText="I"/>
+<METALINK comment="" fromID="se15" fromText="me" id="metal16" objectID1="se15" objectID2="se2" relType="COREFERENCE" toID="se2" toText="I"/>
+</TAGS>
+<TOKENS>
+<s>
+<lex begin="1" end="5">Peru</lex>
+<lex begin="6" end="12">Monday</lex>
+<lex begin="12" end="13">,</lex>
+<lex begin="14" end="21">October</lex>
+<lex begin="22" end="26">16th</lex>
+<lex begin="26" end="27">,</lex>
+<lex begin="28" end="32">2006</lex>
+<lex begin="37" end="39">As</lex>
+<lex begin="40" end="41">I</lex>
+<lex begin="42" end="46">said</lex>
+<lex begin="47" end="49">in</lex>
+<lex begin="50" end="53">the</lex>
+<lex begin="54" end="58">last</lex>
+<lex begin="59" end="64">entry</lex>
+<lex begin="64" end="65">,</lex>
+<lex begin="66" end="70">Peru</lex>
+<lex begin="70" end="72">’s</lex>
+<lex begin="73" end="78">coast</lex>
+<lex begin="79" end="81">is</lex>
+<lex begin="82" end="86">home</lex>
+<lex begin="87" end="89">to</lex>
+<lex begin="90" end="93">one</lex>
+<lex begin="94" end="96">of</lex>
+<lex begin="97" end="100">the</lex>
+<lex begin="101" end="107">driest</lex>
+<lex begin="108" end="115">deserts</lex>
+<lex begin="116" end="118">in</lex>
+<lex begin="119" end="122">the</lex>
+<lex begin="123" end="128">world</lex>
+<lex begin="128" end="129">.</lex>
+</s>
+<s>
+<lex begin="130" end="137">Despite</lex>
+<lex begin="138" end="141">the</lex>
+<lex begin="142" end="150">constant</lex>
+<lex begin="151" end="154">fog</lex>
+<lex begin="154" end="155">,</lex>
+<lex begin="156" end="158">it</lex>
+<lex begin="159" end="165">almost</lex>
+<lex begin="166" end="171">never</lex>
+<lex begin="172" end="177">rains</lex>
+<lex begin="178" end="179">â</lex>
+<lex begin="179" end="180">€</lex>
+<lex begin="180" end="181">“</lex>
+<lex begin="182" end="184">my</lex>
+<lex begin="185" end="189">tour</lex>
+<lex begin="190" end="195">guide</lex>
+<lex begin="196" end="199">for</lex>
+<lex begin="200" end="202">an</lex>
+<lex begin="203" end="210">exhibit</lex>
+<lex begin="211" end="213">in</lex>
+<lex begin="214" end="218">Lima</lex>
+<lex begin="219" end="223">told</lex>
+<lex begin="224" end="226">me</lex>
+<lex begin="227" end="231">that</lex>
+<lex begin="232" end="235">the</lex>
+<lex begin="236" end="240">last</lex>
+<lex begin="241" end="245">time</lex>
+<lex begin="246" end="251">there</lex>
+<lex begin="252" end="255">was</lex>
+<lex begin="256" end="261">heavy</lex>
+<lex begin="262" end="266">rain</lex>
+<lex begin="267" end="270">was</lex>
+<lex begin="271" end="273">35</lex>
+<lex begin="274" end="279">years</lex>
+<lex begin="280" end="283">ago</lex>
+<lex begin="283" end="284">.</lex>
+</s>
+<s>
+<lex begin="289" end="292">All</lex>
+<lex begin="293" end="295">of</lex>
+<lex begin="296" end="299">the</lex>
+<lex begin="300" end="305">water</lex>
+<lex begin="306" end="309">for</lex>
+<lex begin="310" end="313">the</lex>
+<lex begin="314" end="318">city</lex>
+<lex begin="319" end="324">comes</lex>
+<lex begin="325" end="329">from</lex>
+<lex begin="330" end="333">the</lex>
+<lex begin="334" end="343">mountains</lex>
+<lex begin="343" end="344">,</lex>
+<lex begin="345" end="350">where</lex>
+<lex begin="351" end="353">it</lex>
+<lex begin="354" end="359">falls</lex>
+<lex begin="360" end="362">as</lex>
+<lex begin="363" end="367">rain</lex>
+<lex begin="368" end="370">or</lex>
+<lex begin="371" end="375">snow</lex>
+<lex begin="376" end="379">and</lex>
+<lex begin="380" end="384">then</lex>
+<lex begin="385" end="390">melts</lex>
+<lex begin="390" end="391">,</lex>
+<lex begin="392" end="399">filling</lex>
+<lex begin="400" end="403">the</lex>
+<lex begin="404" end="410">rivers</lex>
+<lex begin="410" end="411">.</lex>
+</s>
+<s>
+<lex begin="412" end="418">During</lex>
+<lex begin="419" end="422">the</lex>
+<lex begin="423" end="426">dry</lex>
+<lex begin="427" end="433">season</lex>
+<lex begin="433" end="434">,</lex>
+<lex begin="435" end="439">half</lex>
+<lex begin="440" end="442">of</lex>
+<lex begin="443" end="446">the</lex>
+<lex begin="447" end="451">year</lex>
+<lex begin="451" end="452">,</lex>
+<lex begin="453" end="459">almost</lex>
+<lex begin="460" end="463">all</lex>
+<lex begin="464" end="466">of</lex>
+<lex begin="467" end="470">the</lex>
+<lex begin="471" end="476">water</lex>
+<lex begin="477" end="479">is</lex>
+<lex begin="480" end="484">from</lex>
+<lex begin="485" end="492">melting</lex>
+<lex begin="493" end="497">snow</lex>
+<lex begin="498" end="501">and</lex>
+<lex begin="502" end="505">ice</lex>
+<lex begin="505" end="506">.</lex>
+</s>
+<s>
+<lex begin="507" end="520">Unfortuantely</lex>
+<lex begin="520" end="521">,</lex>
+<lex begin="522" end="528">almost</lex>
+<lex begin="529" end="532">all</lex>
+<lex begin="533" end="535">of</lex>
+<lex begin="536" end="541">these</lex>
+<lex begin="542" end="550">glaciers</lex>
+<lex begin="551" end="554">are</lex>
+<lex begin="555" end="560">going</lex>
+<lex begin="561" end="563">to</lex>
+<lex begin="564" end="568">melt</lex>
+<lex begin="569" end="572">and</lex>
+<lex begin="573" end="582">dissapear</lex>
+<lex begin="583" end="585">in</lex>
+<lex begin="586" end="589">the</lex>
+<lex begin="590" end="594">next</lex>
+<lex begin="595" end="597">50</lex>
+<lex begin="598" end="603">years</lex>
+<lex begin="603" end="604">.</lex>
+</s>
+<s>
+<lex begin="605" end="607">It</lex>
+<lex begin="608" end="610">is</lex>
+<lex begin="611" end="618">unclear</lex>
+<lex begin="619" end="624">where</lex>
+<lex begin="625" end="634">Peruvians</lex>
+<lex begin="635" end="639">will</lex>
+<lex begin="640" end="643">get</lex>
+<lex begin="644" end="649">their</lex>
+<lex begin="650" end="655">water</lex>
+<lex begin="656" end="660">from</lex>
+<lex begin="661" end="665">when</lex>
+<lex begin="666" end="669">the</lex>
+<lex begin="670" end="678">glaciers</lex>
+<lex begin="679" end="682">are</lex>
+<lex begin="683" end="687">gone</lex>
+<lex begin="687" end="688">.</lex>
+</s>
+<s>
+<lex begin="695" end="698">The</lex>
+<lex begin="699" end="706">country</lex>
+<lex begin="706" end="710">â€™s</lex>
+<lex begin="711" end="717">energy</lex>
+<lex begin="718" end="724">supply</lex>
+<lex begin="725" end="727">is</lex>
+<lex begin="728" end="732">also</lex>
+<lex begin="733" end="735">at</lex>
+<lex begin="736" end="740">risk</lex>
+<lex begin="740" end="741">.</lex>
+</s>
+<s>
+<lex begin="742" end="751">According</lex>
+<lex begin="752" end="754">to</lex>
+<lex begin="755" end="761">people</lex>
+<lex begin="762" end="763">I</lex>
+<lex begin="764" end="770">talked</lex>
+<lex begin="771" end="773">to</lex>
+<lex begin="774" end="776">at</lex>
+<lex begin="777" end="784">PROCLIM</lex>
+<lex begin="784" end="785">,</lex>
+<lex begin="786" end="787">a</lex>
+<lex begin="788" end="795">project</lex>
+<lex begin="796" end="801">aimed</lex>
+<lex begin="802" end="804">at</lex>
+<lex begin="805" end="814">preparing</lex>
+<lex begin="815" end="819">Peru</lex>
+<lex begin="820" end="823">for</lex>
+<lex begin="824" end="830">global</lex>
+<lex begin="831" end="838">warming</lex>
+<lex begin="838" end="839">,</lex>
+<lex begin="840" end="842">80</lex>
+<lex begin="842" end="843">%</lex>
+<lex begin="844" end="846">of</lex>
+<lex begin="847" end="851">Peru</lex>
+<lex begin="851" end="855">â€™s</lex>
+<lex begin="856" end="867">electricity</lex>
+<lex begin="868" end="870">is</lex>
+<lex begin="871" end="884">hydroelectric</lex>
+<lex begin="884" end="885">,</lex>
+<lex begin="886" end="889">and</lex>
+<lex begin="889" end="890">,</lex>
+<lex begin="891" end="897">during</lex>
+<lex begin="898" end="901">the</lex>
+<lex begin="902" end="905">dry</lex>
+<lex begin="906" end="912">season</lex>
+<lex begin="912" end="913">,</lex>
+<lex begin="914" end="916">80</lex>
+<lex begin="916" end="917">%</lex>
+<lex begin="918" end="920">of</lex>
+<lex begin="921" end="924">the</lex>
+<lex begin="925" end="930">water</lex>
+<lex begin="931" end="933">in</lex>
+<lex begin="934" end="937">the</lex>
+<lex begin="938" end="942">dams</lex>
+<lex begin="943" end="945">is</lex>
+<lex begin="946" end="950">from</lex>
+<lex begin="951" end="958">glacial</lex>
+<lex begin="959" end="965">runoff</lex>
+<lex begin="965" end="966">.</lex>
+</s>
+<s>
+<lex begin="967" end="973">Unless</lex>
+<lex begin="974" end="984">investment</lex>
+<lex begin="985" end="988">for</lex>
+<lex begin="989" end="993">huge</lex>
+<lex begin="994" end="997">new</lex>
+<lex begin="998" end="1002">dams</lex>
+<lex begin="1003" end="1005">is</lex>
+<lex begin="1006" end="1011">found</lex>
+<lex begin="1011" end="1012">,</lex>
+<lex begin="1013" end="1017">Peru</lex>
+<lex begin="1018" end="1023">might</lex>
+<lex begin="1024" end="1028">have</lex>
+<lex begin="1029" end="1031">to</lex>
+<lex begin="1032" end="1038">switch</lex>
+<lex begin="1039" end="1041">to</lex>
+<lex begin="1042" end="1047">using</lex>
+<lex begin="1048" end="1054">fossil</lex>
+<lex begin="1055" end="1060">fuels</lex>
+<lex begin="1061" end="1063">to</lex>
+<lex begin="1064" end="1071">produce</lex>
+<lex begin="1072" end="1075">its</lex>
+<lex begin="1076" end="1087">electricity</lex>
+<lex begin="1087" end="1088">.</lex>
+</s>
+<s>
+<lex begin="1095" end="1098">All</lex>
+<lex begin="1099" end="1101">of</lex>
+<lex begin="1102" end="1106">this</lex>
+<lex begin="1107" end="1111">will</lex>
+<lex begin="1112" end="1116">take</lex>
+<lex begin="1117" end="1122">place</lex>
+<lex begin="1123" end="1125">in</lex>
+<lex begin="1126" end="1127">a</lex>
+<lex begin="1128" end="1135">country</lex>
+<lex begin="1136" end="1141">where</lex>
+<lex begin="1142" end="1143">I</lex>
+<lex begin="1144" end="1148">have</lex>
+<lex begin="1149" end="1156">already</lex>
+<lex begin="1157" end="1161">seen</lex>
+<lex begin="1162" end="1166">many</lex>
+<lex begin="1167" end="1172">water</lex>
+<lex begin="1173" end="1181">problems</lex>
+<lex begin="1181" end="1182">.</lex>
+</s>
+<s>
+<lex begin="1183" end="1187">Most</lex>
+<lex begin="1188" end="1190">of</lex>
+<lex begin="1191" end="1194">the</lex>
+<lex begin="1195" end="1200">towns</lex>
+<lex begin="1201" end="1204">and</lex>
+<lex begin="1205" end="1211">cities</lex>
+<lex begin="1212" end="1213">I</lex>
+<lex begin="1214" end="1218">have</lex>
+<lex begin="1219" end="1223">been</lex>
+<lex begin="1224" end="1226">in</lex>
+<lex begin="1227" end="1228">(</lex>
+<lex begin="1228" end="1237">including</lex>
+<lex begin="1238" end="1243">parts</lex>
+<lex begin="1244" end="1246">of</lex>
+<lex begin="1247" end="1251">Lima</lex>
+<lex begin="1251" end="1252">)</lex>
+<lex begin="1253" end="1257">have</lex>
+<lex begin="1258" end="1265">certain</lex>
+<lex begin="1266" end="1271">hours</lex>
+<lex begin="1272" end="1274">of</lex>
+<lex begin="1275" end="1278">the</lex>
+<lex begin="1279" end="1282">day</lex>
+<lex begin="1283" end="1287">when</lex>
+<lex begin="1288" end="1291">the</lex>
+<lex begin="1292" end="1296">city</lex>
+<lex begin="1297" end="1301">does</lex>
+<lex begin="1302" end="1305">not</lex>
+<lex begin="1306" end="1313">provide</lex>
+<lex begin="1314" end="1319">water</lex>
+<lex begin="1319" end="1320">.</lex>
+</s>
+<s>
+<lex begin="1321" end="1323">In</lex>
+<lex begin="1324" end="1327">one</lex>
+<lex begin="1328" end="1333">rural</lex>
+<lex begin="1334" end="1338">area</lex>
+<lex begin="1339" end="1343">east</lex>
+<lex begin="1344" end="1346">of</lex>
+<lex begin="1347" end="1350">the</lex>
+<lex begin="1351" end="1361">Cordillera</lex>
+<lex begin="1362" end="1368">Blanca</lex>
+<lex begin="1368" end="1369">,</lex>
+<lex begin="1370" end="1371">I</lex>
+<lex begin="1372" end="1375">met</lex>
+<lex begin="1376" end="1377">a</lex>
+<lex begin="1378" end="1381">man</lex>
+<lex begin="1382" end="1389">working</lex>
+<lex begin="1390" end="1393">for</lex>
+<lex begin="1394" end="1397">the</lex>
+<lex begin="1398" end="1408">government</lex>
+<lex begin="1409" end="1414">whose</lex>
+<lex begin="1415" end="1418">job</lex>
+<lex begin="1419" end="1421">it</lex>
+<lex begin="1422" end="1424">is</lex>
+<lex begin="1425" end="1427">to</lex>
+<lex begin="1428" end="1435">resolve</lex>
+<lex begin="1436" end="1441">water</lex>
+<lex begin="1442" end="1450">disputes</lex>
+<lex begin="1450" end="1451">.</lex>
+</s>
+<s>
+<lex begin="1452" end="1457">â€˜It</lex>
+<lex begin="1458" end="1460">is</lex>
+<lex begin="1461" end="1462">a</lex>
+<lex begin="1463" end="1466">big</lex>
+<lex begin="1467" end="1474">problem</lex>
+<lex begin="1475" end="1479">here</lex>
+<lex begin="1479" end="1480">.</lex>
+</s>
+<s>
+<lex begin="1481" end="1482">I</lex>
+<lex begin="1483" end="1487">have</lex>
+<lex begin="1488" end="1490">to</lex>
+<lex begin="1491" end="1495">make</lex>
+<lex begin="1496" end="1500">sure</lex>
+<lex begin="1501" end="1505">that</lex>
+<lex begin="1506" end="1510">each</lex>
+<lex begin="1511" end="1514">day</lex>
+<lex begin="1515" end="1518">the</lex>
+<lex begin="1519" end="1524">water</lex>
+<lex begin="1525" end="1529">goes</lex>
+<lex begin="1530" end="1532">to</lex>
+<lex begin="1533" end="1534">a</lex>
+<lex begin="1535" end="1544">different</lex>
+<lex begin="1545" end="1554">house.â€™</lex>
+<lex begin="1555" end="1556">A</lex>
+<lex begin="1557" end="1563">farmer</lex>
+<lex begin="1564" end="1565">I</lex>
+<lex begin="1566" end="1572">stayed</lex>
+<lex begin="1573" end="1577">with</lex>
+<lex begin="1578" end="1582">near</lex>
+<lex begin="1583" end="1586">the</lex>
+<lex begin="1587" end="1592">coast</lex>
+<lex begin="1593" end="1600">pointed</lex>
+<lex begin="1601" end="1603">to</lex>
+<lex begin="1604" end="1605">a</lex>
+<lex begin="1606" end="1612">number</lex>
+<lex begin="1613" end="1615">of</lex>
+<lex begin="1616" end="1619">his</lex>
+<lex begin="1620" end="1625">crops</lex>
+<lex begin="1626" end="1629">and</lex>
+<lex begin="1630" end="1634">said</lex>
+<lex begin="1635" end="1639">that</lex>
+<lex begin="1640" end="1644">they</lex>
+<lex begin="1645" end="1650">would</lex>
+<lex begin="1651" end="1653">be</lex>
+<lex begin="1654" end="1659">twice</lex>
+<lex begin="1660" end="1662">as</lex>
+<lex begin="1663" end="1667">high</lex>
+<lex begin="1668" end="1670">if</lex>
+<lex begin="1671" end="1674">not</lex>
+<lex begin="1675" end="1678">for</lex>
+<lex begin="1679" end="1680">a</lex>
+<lex begin="1681" end="1689">shortage</lex>
+<lex begin="1690" end="1692">of</lex>
+<lex begin="1693" end="1698">water</lex>
+<lex begin="1698" end="1699">.</lex>
+</s>
+<s>
+<lex begin="1700" end="1703">And</lex>
+<lex begin="1704" end="1709">every</lex>
+<lex begin="1710" end="1716">person</lex>
+<lex begin="1717" end="1720">who</lex>
+<lex begin="1721" end="1726">lives</lex>
+<lex begin="1727" end="1731">near</lex>
+<lex begin="1732" end="1733">a</lex>
+<lex begin="1734" end="1740">stream</lex>
+<lex begin="1741" end="1746">tells</lex>
+<lex begin="1747" end="1749">me</lex>
+<lex begin="1750" end="1753">the</lex>
+<lex begin="1754" end="1758">same</lex>
+<lex begin="1759" end="1764">story</lex>
+<lex begin="1764" end="1765">:</lex>
+<lex begin="1766" end="1769">the</lex>
+<lex begin="1770" end="1777">streams</lex>
+<lex begin="1778" end="1781">are</lex>
+<lex begin="1782" end="1786">more</lex>
+<lex begin="1787" end="1795">variable</lex>
+<lex begin="1796" end="1800">than</lex>
+<lex begin="1801" end="1805">they</lex>
+<lex begin="1806" end="1810">used</lex>
+<lex begin="1811" end="1813">to</lex>
+<lex begin="1814" end="1816">be</lex>
+<lex begin="1816" end="1817">.</lex>
+</s>
+<s>
+<lex begin="1818" end="1820">In</lex>
+<lex begin="1821" end="1824">the</lex>
+<lex begin="1825" end="1828">dry</lex>
+<lex begin="1829" end="1835">season</lex>
+<lex begin="1836" end="1841">there</lex>
+<lex begin="1842" end="1844">is</lex>
+<lex begin="1845" end="1849">less</lex>
+<lex begin="1850" end="1855">water</lex>
+<lex begin="1855" end="1856">,</lex>
+<lex begin="1857" end="1860">and</lex>
+<lex begin="1861" end="1863">in</lex>
+<lex begin="1864" end="1867">the</lex>
+<lex begin="1868" end="1873">rainy</lex>
+<lex begin="1874" end="1880">season</lex>
+<lex begin="1881" end="1886">there</lex>
+<lex begin="1887" end="1889">is</lex>
+<lex begin="1890" end="1894">more</lex>
+<lex begin="1895" end="1896">â</lex>
+<lex begin="1896" end="1897">€</lex>
+<lex begin="1897" end="1898">“</lex>
+<lex begin="1899" end="1903">just</lex>
+<lex begin="1904" end="1906">as</lex>
+<lex begin="1907" end="1910">one</lex>
+<lex begin="1911" end="1916">would</lex>
+<lex begin="1917" end="1923">expect</lex>
+<lex begin="1924" end="1928">from</lex>
+<lex begin="1929" end="1930">a</lex>
+<lex begin="1931" end="1941">decreasing</lex>
+<lex begin="1942" end="1946">snow</lex>
+<lex begin="1947" end="1951">pack</lex>
+<lex begin="1951" end="1952">.</lex>
+</s>
+<s>
+<lex begin="1953" end="1954">(</lex>
+<lex begin="1954" end="1956">To</lex>
+<lex begin="1957" end="1959">be</lex>
+<lex begin="1960" end="1964">fair</lex>
+<lex begin="1964" end="1965">,</lex>
+<lex begin="1966" end="1970">this</lex>
+<lex begin="1971" end="1973">is</lex>
+<lex begin="1974" end="1978">also</lex>
+<lex begin="1979" end="1982">due</lex>
+<lex begin="1983" end="1985">to</lex>
+<lex begin="1986" end="1999">deforestation</lex>
+<lex begin="2000" end="2002">as</lex>
+<lex begin="2003" end="2007">well</lex>
+<lex begin="2008" end="2010">as</lex>
+<lex begin="2011" end="2015">loss</lex>
+<lex begin="2016" end="2018">of</lex>
+<lex begin="2019" end="2023">snow</lex>
+<lex begin="2024" end="2027">and</lex>
+<lex begin="2028" end="2031">ice</lex>
+<lex begin="2031" end="2032">.</lex>
+<lex begin="2032" end="2033">)</lex>
+</s>
+<s>
+<lex begin="2038" end="2045">Loosing</lex>
+<lex begin="2046" end="2049">the</lex>
+<lex begin="2050" end="2058">glaciers</lex>
+<lex begin="2059" end="2062">and</lex>
+<lex begin="2063" end="2067">snow</lex>
+<lex begin="2068" end="2070">of</lex>
+<lex begin="2071" end="2074">the</lex>
+<lex begin="2075" end="2084">mountains</lex>
+<lex begin="2085" end="2089">will</lex>
+<lex begin="2090" end="2092">be</lex>
+<lex begin="2093" end="2094">a</lex>
+<lex begin="2095" end="2100">major</lex>
+<lex begin="2101" end="2105">loss</lex>
+<lex begin="2106" end="2109">for</lex>
+<lex begin="2110" end="2114">Peru</lex>
+<lex begin="2114" end="2115">.</lex>
+</s>
+<s>
+<lex begin="2116" end="2119">The</lex>
+<lex begin="2120" end="2124">only</lex>
+<lex begin="2125" end="2133">solution</lex>
+<lex begin="2134" end="2137">may</lex>
+<lex begin="2138" end="2140">be</lex>
+<lex begin="2141" end="2143">to</lex>
+<lex begin="2144" end="2149">build</lex>
+<lex begin="2150" end="2154">many</lex>
+<lex begin="2155" end="2158">new</lex>
+<lex begin="2159" end="2168">resivours</lex>
+<lex begin="2169" end="2171">in</lex>
+<lex begin="2172" end="2175">the</lex>
+<lex begin="2176" end="2185">mountains</lex>
+<lex begin="2185" end="2186">.</lex>
+</s>
+<s>
+<lex begin="2187" end="2190">But</lex>
+<lex begin="2190" end="2191">,</lex>
+<lex begin="2192" end="2196">what</lex>
+<lex begin="2197" end="2204">valleys</lex>
+<lex begin="2205" end="2209">will</lex>
+<lex begin="2210" end="2214">they</lex>
+<lex begin="2215" end="2221">choose</lex>
+<lex begin="2222" end="2224">to</lex>
+<lex begin="2225" end="2230">flood</lex>
+<lex begin="2230" end="2231">?</lex>
+</s>
+<s>
+<lex begin="2232" end="2236">What</lex>
+<lex begin="2237" end="2241">will</lex>
+<lex begin="2242" end="2248">happen</lex>
+<lex begin="2249" end="2251">to</lex>
+<lex begin="2252" end="2255">the</lex>
+<lex begin="2256" end="2262">people</lex>
+<lex begin="2263" end="2269">living</lex>
+<lex begin="2270" end="2272">in</lex>
+<lex begin="2273" end="2278">these</lex>
+<lex begin="2279" end="2286">valleys</lex>
+<lex begin="2286" end="2287">?</lex>
+</s>
+<s>
+<lex begin="2288" end="2291">And</lex>
+<lex begin="2291" end="2292">,</lex>
+<lex begin="2293" end="2296">how</lex>
+<lex begin="2297" end="2301">will</lex>
+<lex begin="2302" end="2306">Peru</lex>
+<lex begin="2306" end="2307">,</lex>
+<lex begin="2308" end="2309">a</lex>
+<lex begin="2310" end="2314">poor</lex>
+<lex begin="2315" end="2322">country</lex>
+<lex begin="2322" end="2323">,</lex>
+<lex begin="2324" end="2328">find</lex>
+<lex begin="2329" end="2332">the</lex>
+<lex begin="2333" end="2343">investment</lex>
+<lex begin="2344" end="2347">for</lex>
+<lex begin="2348" end="2352">such</lex>
+<lex begin="2353" end="2362">expensive</lex>
+<lex begin="2363" end="2371">projects</lex>
+<lex begin="2371" end="2372">?</lex>
+</s>
+</TOKENS>
+</SpaceEvalTaskv1.2>

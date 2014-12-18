@@ -86,9 +86,10 @@ def get_token_indices(sentence, tag_dict):
     return indices
 
 class Spans_Demo(Demo):
-    def __init__(self, train_path='./training', split=0.8):
-        super(Spans_Demo, self).__init__(train_path, '', 0.8)
-        self.feature_functions = [lambda x: x.upper_case(),
+    def __init__(self, train_path='./training', test_path = ''):
+        super(Spans_Demo, self).__init__(train_path = train_path, test_path = test_path)
+        self.feature_functions = [
+                                  lambda x: x.upper_case(),
                                   lambda x: x.next_upper_case(),
                                   lambda x: x.prev_upper_case(),
                                   lambda x: x.pos_tag(),
@@ -97,11 +98,31 @@ class Spans_Demo(Demo):
                                   lambda x: x.simple_tag(),
                                   lambda x: x.next_simple_tag(),
                                   lambda x: x.prev_simple_tag()
-                                  ] 
+                                 ] 
         self.label_function = lambda x: str(x.unconsumed_tag())
         self.indices_function = get_token_indices
         self.extent_class = Token
 
 if __name__ == "__main__":
-    d = Spans_Demo()
-    d.run_demo()
+    d = Spans_Demo(train_path = './test_dev', test_path = './test_dev')
+    pred, test_data = d.run_demo(2)
+    
+    #print pred
+    ongoing = False
+    for extent in test_data:
+        offsets = "{a},{b},{c}".format(a=extent.basename,
+                                       b=extent.lex[0].begin, 
+                                       c=extent.lex[-1].end)
+        if pred[offsets] == 'True':
+            if not ongoing:
+                start = extent.lex[0].begin
+                ongoing = True
+        else:
+            if ongoing:
+                ongoing = False
+            else:
+                start = extent.lex[0].begin
+            print extent.document.basename
+            print start, extent.lex[-1].end
+            blah = {'start': start, 'end': extent.lex[-1].end}
+

@@ -12,7 +12,7 @@ dummy_tag = Tag(name='NULL')
 class Extent(object):
     """A class for loading tagged data from XML doc 
     with surrounding token and tag data"""
-    def __init__(self, sent, tag_dict, movelink_tag_dict, olink_tag_dict, qslink_tag_dict, front, back, basename):
+    def __init__(self, sent, tag_dict, movelink_tag_dict, olink_tag_dict, qslink_tag_dict, front, back, basename, document):
         self.token = [t for t, l in sent[front:back]]
         self.lex = [l for t, l in sent[front:back]]
         self.prev_tokens = sent[:front]
@@ -27,6 +27,7 @@ class Extent(object):
             if l.begin in tag_dict.keys()
         ]
         self.basename = basename
+        self.document = document
 
 class Document(BS):
     """A class for working with MAE annotation XMLs."""
@@ -122,7 +123,7 @@ class Document(BS):
             offsets = indices_function(sent, tag_dict)
             for begin, end in offsets:
                 extent = extent_class(sent, tag_dict, movelink_tag_dict, olink_tag_dict,
-                                      qslink_tag_dict, begin, end, self.basename)
+                                      qslink_tag_dict, begin, end, self.basename, self)
                 yield extent
     
     def validate(self):
@@ -206,7 +207,7 @@ class Corpus(object):
                 offsets = indices_function(sent, tag_dict)
                 for begin, end in offsets:
                     extent = extent_class(sent, tag_dict, movelink_tag_dict, olink_tag_dict,
-                                          qslink_tag_dict, begin, end, doc.basename)
+                                          qslink_tag_dict, begin, end, doc.basename, doc)
                     yield extent
     
     def validate(self):

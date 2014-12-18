@@ -48,20 +48,42 @@ class SKClassifier():
         X, y = self.featurize(instances)
         self.clf.fit(X, y)
     
-    def classify(self, instances, probs=False):
-        X, y = self.featurize(instances, test=True)
+    def classify(self, instances, probs=False, keys=[]):
+        X, y = self.featurize(instances, test=True)        
         if probs:
             pred = self.clf.predict_proba(X)
-            return [(self.labels.get_label(np.argmax(pred[i:])), np.max(pred[i:])) for i in xrange(len(pred))]
+            if keys:
+                keyed_pred = {}
+                for i in range(len(keys)):
+                    keyed_pred[keys[i]] = self.labels.get_label(pred[i])
+                return keyed_pred
+            else:
+                return [(self.labels.get_label(np.argmax(pred[i:])), 
+                         np.max(pred[i:])) 
+                        for i in xrange(len(pred))]
         else:
             pred = self.clf.predict(X)
-            return [self.labels.get_label(i) for i in pred]
-    
+            if keys:
+                keyed_pred = {}
+                for i in range(len(keys)):
+                    keyed_pred[keys[i]] = self.labels.get_label(pred[i])
+                return keyed_pred
+            else:
+                return [self.labels.get_label(i) for i in pred]
+        
     def evaluate(self, pred, actual):
         cm = ConfusionMatrix(self.labels)
-        cm.add_data([self.labels.get_index(x) for x in pred], [self.labels.get_index(x) for x in actual])
+        if type(pred) == dict:
+            prediction_list = []
+            true_answer_list = []
+            for offsets, pred in pred.iteritems():
+                prediction_list.append(self.labels.get_index(pred))
+                true_answer_list.append(self.labels.get_index(actual.get(offsets, 'False')))
+                cm.add_data(prediction_list, true_answer_list)                
+        else:
+            cm.add_data([self.labels.get_index(x) for x in pred], [self.labels.get_index(x) for x in actual])
         cm.print_out()
-    
+        
     def load_model(self, path):
         self.clf = joblib.load(os.path.join(path, 'model.pkl'))
         with open(os.path.join(path, 'labels.json'), 'r') as fo:

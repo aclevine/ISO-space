@@ -11,7 +11,6 @@ if signal:
 '''
 from c_path import PathTag
 from util.demo import Demo
-from Corpora.corpus import Corpus
 import re
 from b_identify_types import get_tag_and_no_tag_indices
 
@@ -60,7 +59,7 @@ class OLinkTag(PathTag):
         
     def rel_type(self):
         ''' relType CDATA '''
-        return self.tag.get('frame_type', 'NOT_OLINK')
+        return self.tag.get('relType', 'NOT_OLINK')
 
     def trajector(self):
         '''trajector IDREF'''
@@ -70,10 +69,9 @@ class OLinkTag(PathTag):
         '''landmark IDREF'''
         return self.tag_position('landmark')
     
-    # trigger IDREF 
-    def trigger(self):
-        '''source IDREF'''
-        return self.tag_position('trigger')
+#     def trigger(self):
+#         '''source IDREF'''
+#         return self.tag_position('trigger')
     
     def frame_type(self):
         '''frame_type ( ABSOLUTE | INTRINSIC | RELATIVE )'''
@@ -85,10 +83,9 @@ class OLinkTag(PathTag):
 
     def projective(self):
         '''projective ( TRUE | FALSE )'''
-        return
+        return self.tag.get('projective', '')
     
 # TAG TYPE FILTER
-
 def is_dir_tag(tag):
     ''' load c_path / pu / spatial entity / c_spatial_signal / c_nonmotion_event / c_motion heads'''
     tag_id = tag.get('id', '')
@@ -101,25 +98,24 @@ def is_dir_tag(tag):
 def get_dir_tag_indices(sentence, tag_dict):
     return get_tag_and_no_tag_indices(sentence, tag_dict, is_dir_tag)
 
-# alternate, didn't work
-def is_tag(tag):
-    ''' load c_path / pu / spatial entity / c_spatial_signal / c_nonmotion_event / c_motion heads'''
-    tag_id = tag.get('id', '')
-    return any([
-                bool(re.findall('^s\d+', tag_id)),
-                bool(re.findall('^p\d+', tag_id)),
-                bool(re.findall('^pl\d+', tag_id)),
-                bool(re.findall('^se\d+', tag_id)),
-                bool(re.findall('^e\d+', tag_id)),
-                bool(re.findall('^m\d+', tag_id))
-                ])
-
-def get_tag_indices(sentence, tag_dict):
-    return get_tag_and_no_tag_indices(sentence, tag_dict, is_tag)
-
-# test variables
+# # alternate method of selecting olinks, didn't work
+# def is_tag(tag):
+#     ''' load c_path / pu / spatial entity / c_spatial_signal / c_nonmotion_event / c_motion heads'''
+#     tag_id = tag.get('id', '')
+#     return any([
+#                 bool(re.findall('^s\d+', tag_id)),
+#                 bool(re.findall('^p\d+', tag_id)),
+#                 bool(re.findall('^pl\d+', tag_id)),
+#                 bool(re.findall('^se\d+', tag_id)),
+#                 bool(re.findall('^e\d+', tag_id)),
+#                 bool(re.findall('^m\d+', tag_id))
+#                 ])
+# 
+# def get_tag_indices(sentence, tag_dict):
+#     return get_tag_and_no_tag_indices(sentence, tag_dict, is_tag)
 
 
+# TEST
 class OLinkDemo(Demo):
     def __init__(self, doc_path='./training', split=0.8):
         super(OLinkDemo, self).__init__(doc_path, split)
@@ -150,7 +146,6 @@ class OLinkToIDDemo(OLinkDemo):
         return [lambda x: x.curr_token(),
                 ]
 
-        
 class OLinkRelTypeDemo(OLinkDemo):      
     def get_label_function(self):
         return  lambda x: str(x.rel_type())
@@ -210,8 +205,23 @@ class OLinkProjectiveDemo(OLinkDemo):
 
 if __name__ == "__main__":
     
-    x = OLinkFromIDDemo()
-    x.run_demo()
+    from_id = OLinkFromIDDemo()
+    from_id.run_demo()
 
-    y = OLinkToIDDemo()
-    x.run_demo()
+    to_id = OLinkToIDDemo()
+    from_id.run_demo()
+
+    rel_type = OLinkRelTypeDemo()
+    rel_type.run_demo()
+
+    trajector = OLinkTrajectorDemo()
+    trajector.run_demo()
+
+    landmark = OLinkLandmarkDemo()
+    landmark.run_demo()
+        
+    reference = OLinkReferencePtDemo()
+    reference.run_demo()
+
+    projective = OLinkProjectiveDemo()
+    projective.run_demo()

@@ -34,8 +34,8 @@ def get_motion_tag_indices(sentence, tag_dict):
 
 # DEMOS
 class MotionDemo(Demo):
-    def __init__(self, doc_path='./training', split=0.8):
-        super(MotionDemo, self).__init__(doc_path, split)
+    def __init__(self, train_path='./training'):
+        super(MotionDemo, self).__init__(train_path)
         self.indices_function = get_motion_tag_indices
         self.extent_class = MotionTag
 
@@ -76,7 +76,8 @@ if __name__ == "__main__":
       
     d = MotionClassDemo()
     d.run_demo()
-        
+         
     d = MotionSenseDemo()
     d.run_demo()
 
+    

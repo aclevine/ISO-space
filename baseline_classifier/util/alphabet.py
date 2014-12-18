@@ -16,9 +16,9 @@ class Alphabet(object):
     instead of label string space.
     """
     def __init__(self):
-        self._index_to_label = {}
-        self._label_to_index = {}
-        self.num_labels = 0
+        self._index_to_label = {0: 'False'}
+        self._label_to_index = {'False': 0}
+        self.num_labels = 1
 
     def size(self):
         return self.num_labels
@@ -34,7 +34,10 @@ class Alphabet(object):
 
     def get_index(self, label):
         """Get index from label"""
-        return self._label_to_index[label]
+        if label in self._label_to_index:
+            return self._label_to_index[label]
+        else:
+            return 
 
     def add(self, label):
         """Add an index for the label if it's a new label"""
