@@ -213,12 +213,27 @@ class Corpus(object):
     def validate(self):
         map(Document.validate, self.documents())
 
-# Helper functions for generating XML
-def wrap(tag, content, sep='\n'):
-    return sep.join([tag, content, close_tag(tag)])
+class HypotheticalDocument(Document):
+    """docstring for HypotheticalDocument"""
+    def __init__(self, arg):
+        super(HypotheticalDocument, self).__init__()
+    
+    def insert_tag(self, tag_dict):
+        """docstring for insert_tag"""
+        tag = Tag(name=tag_dict.pop('name'))
+        tag.attrs = tag_dict
+        self.TAGS.append(tag)
 
-def close_tag(tag):
-    return tag.replace('<', '</', 1)
+class HypotheticalCorpus(Corpus):
+    """docstring for HypotheticalCorpus"""
+    def __init__(self, *args, **kwargs):
+        super(HypotheticalCorpus, self).__init__(*args, **kwargs)
+    
+    def documents(self):
+        candidates = find_files(self.directory, self.pattern, self.recursive)
+        for xml_path in file_path(is_xml, candidates):
+            with open(xml_path, 'rb') as file:
+                yield HypotheticalDocument(file)
 
 # General functions
 def validate_mime_type(file_path, valid_mime_types):
