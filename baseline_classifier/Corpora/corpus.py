@@ -222,6 +222,8 @@ class HypotheticalDocument(Document):
         """docstring for insert_tag"""
         tag = Tag(name=tag_dict.pop('name'))
         tag.attrs = tag_dict
+        if not self.findAll('TAGS'):
+            self.append(Tag('TAGS'))
         self.TAGS.append(tag)
 
 class HypotheticalCorpus(Corpus):
