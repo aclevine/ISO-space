@@ -4,3 +4,6 @@
 .DS_store
 *.pyc
 .project
+.aux
+.log
+.synctex.gz
