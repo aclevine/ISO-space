@@ -51,10 +51,26 @@ class Document(BS):
     def tags(self, ttypes=None):
         """Return all annotation tags whose type is in ttypes (if ttypes is unspecified, all tags are returned)."""
         is_tag = lambda item : isinstance(item, Tag)
-        tags = filter(is_tag, self.find('TAGS').children)
+        if not self.find('TAGS'):
+            tags = []
+        else:
+            tags = filter(is_tag, self.find('TAGS').children)
         if ttypes:
             tags = filter(lambda tag : tag.name in ttypes, tags)
         return tags
+    
+    def query_extents(self, ttypes, start, end):
+        """Return a list of extent tags whose types are in the list of ttypes 
+        and whose start and end attributes match the given start and end."""
+        matches = lambda t : \
+            map(int, (t['start'], t['end'])) == map(int, (start, end))
+        return filter(matches, self.tags(ttypes=ttypes))
+    
+    def query_links(self, ttypes, trigger_id):
+        """Return a list of link tags whose types are in the list of ttypes
+        and whose trigger has the specified trigger id."""
+        matches = lambda t : unicode(t['trigger']) == unicode(trigger_id)
+        return filter(matches, self.tags(ttypes=ttypes))
     
     def add_attribute(self, attribute, value=u'', ttypes=None):
         """Add an attribute to a tag (and possibly specify it's value)."""
@@ -145,7 +161,7 @@ class Document(BS):
                 is_valid = False
                 warning = '\n'.join([
                     'Misaligned extent tag',
-                    "\tFile : '{doc}'"
+                    "\tFile : '{doc}'",
                     '\tSpan  : [{start}:{end}]',
                     "\tTag   : '{id}'",
                     "\tText  : '{text}'",
@@ -196,7 +212,7 @@ class Corpus(object):
     def documents(self):
         candidates = find_files(self.directory, self.pattern, self.recursive)
         for xml_path in filter(is_xml, candidates):
-            with open(xml_path, 'r') as file:
+            with open(xml_path, 'rb') as file:
                 yield Document(file)
     
     def extents(self, indices_function, extent_class=Extent):
@@ -215,25 +231,25 @@ class Corpus(object):
 
 class HypotheticalDocument(Document):
     """docstring for HypotheticalDocument"""
-    def __init__(self, arg):
-        super(HypotheticalDocument, self).__init__()
     
     def insert_tag(self, tag_dict):
         """docstring for insert_tag"""
         tag = Tag(name=tag_dict.pop('name'))
         tag.attrs = tag_dict
         if not self.findAll('TAGS'):
-            self.append(Tag('TAGS'))
+            self.root.append(Tag(name='TAGS'))
         self.TAGS.append(tag)
+        self.TAGS.append('\n')
+
+    def remove_tags(self):
+        """empty out the tags in the current document"""
+        self.TAGS = []
 
 class HypotheticalCorpus(Corpus):
     """docstring for HypotheticalCorpus"""
-    def __init__(self, *args, **kwargs):
-        super(HypotheticalCorpus, self).__init__(*args, **kwargs)
-    
     def documents(self):
         candidates = find_files(self.directory, self.pattern, self.recursive)
-        for xml_path in file_path(is_xml, candidates):
+        for xml_path in filter(is_xml, candidates):
             with open(xml_path, 'rb') as file:
                 yield HypotheticalDocument(file)
 

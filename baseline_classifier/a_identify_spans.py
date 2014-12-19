@@ -7,9 +7,11 @@ Created on Sep 19, 2014
 a) Identify spans of spatial elements including locations, paths, events and other spatial entities.    
 '''
 #===============================================================================
-from Corpora.corpus import Extent
+from util.Corpora.corpus import Extent
 import nltk
 from util.demo import Demo
+import os
+import re
 #===============================================================================
 
 class Token(Extent):
@@ -90,25 +92,31 @@ class Spans_Demo(Demo):
         super(Spans_Demo, self).__init__(train_path = train_path, test_path = test_path)
         self.feature_functions = [
                                   lambda x: x.upper_case(),
-                                  lambda x: x.next_upper_case(),
-                                  lambda x: x.prev_upper_case(),
-                                  lambda x: x.pos_tag(),
-                                  lambda x: x.next_pos_tag(),
-                                  lambda x: x.prev_pos_tag(),
-                                  lambda x: x.simple_tag(),
-                                  lambda x: x.next_simple_tag(),
-                                  lambda x: x.prev_simple_tag()
+#                                   lambda x: x.next_upper_case(),
+#                                   lambda x: x.prev_upper_case(),
+#                                   lambda x: x.pos_tag(),
+#                                   lambda x: x.next_pos_tag(),
+#                                   lambda x: x.prev_pos_tag(),
+#                                   lambda x: x.simple_tag(),
+#                                   lambda x: x.next_simple_tag(),
+#                                   lambda x: x.prev_simple_tag()
                                  ] 
         self.label_function = lambda x: str(x.unconsumed_tag())
         self.indices_function = get_token_indices
         self.extent_class = Token
 
 if __name__ == "__main__":
-    d = Spans_Demo(train_path = './test_dev', test_path = './test_dev')
-    pred, test_data = d.run_demo(2)
     
-    #print pred
+    # SINGLE STAGE
+#     d = Spans_Demo(train_path = './test_dev', test_path = './test_dev')
+#     pred, test_data = d.run_demo(2)
+    
+    # FULL RUNTHROUGH
+    d = Spans_Demo(train_path = './train_dev', test_path = './test_dev/a')
+    pred, test_data, test_corpus = d.run_demo()
+    
     ongoing = False
+    doc_name = test_data[0].document.basename
     for extent in test_data:
         offsets = "{a},{b},{c}".format(a=extent.basename,
                                        b=extent.lex[0].begin, 
@@ -122,7 +130,11 @@ if __name__ == "__main__":
                 ongoing = False
             else:
                 start = extent.lex[0].begin
-            print extent.document.basename
-            print start, extent.lex[-1].end
-            blah = {'start': start, 'end': extent.lex[-1].end}
-
+            tag = {'name': 'SPATIAL_EXTENT', 'start': start, 'end': extent.lex[-1].end}
+            extent.document.insert_tag(tag)
+            if doc_name != extent.document.basename:
+                print extent.document
+                doc_name = extent.document.basename
+                extent.document.save_xml(doc_name)
+    print extent.document
+    extent.document.save_xml(r)

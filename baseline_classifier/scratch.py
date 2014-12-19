@@ -4,7 +4,7 @@ Created on Sep 9, 2014
 @author: Aaron Levine
 '''
 import numpy
-import Corpora.corpus as xml
+import util.Corpora.corpus as xml
 import nltk
 
 
