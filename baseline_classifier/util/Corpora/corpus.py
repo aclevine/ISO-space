@@ -72,6 +72,15 @@ class Document(BS):
         matches = lambda t : unicode(t['trigger']) == unicode(trigger_id)
         return filter(matches, self.tags(ttypes=ttypes))
     
+    def query(self, tag_id):
+        """Return the tag whose identifier matches the specified id."""
+        matches = lambda t : t.attrs['id'] == unicode(tag_id)
+        results = filter(matches, self.tags())
+        if any(results):
+            return results[0]
+        else:
+            return None
+        
     def add_attribute(self, attribute, value=u'', ttypes=None):
         """Add an attribute to a tag (and possibly specify it's value)."""
         for tag in self.tags(ttypes):
