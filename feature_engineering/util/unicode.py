@@ -71,6 +71,8 @@ u2ascii[u'\xf6'] = 'o' #'ö'
 
 u2ascii[u'\xfc'] = 'u' #'ü'
 
+u2ascii[u'\xb4'] = '\'' #´
+
 ureverse = {u2ascii[key]:key for key in u2ascii}
 
 def ureplace(text, reverse=False):
