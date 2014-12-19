@@ -15,6 +15,8 @@ from util.Corpora.corpus import Extent
 from util.demo import Demo
 import re
 import nltk
+import os
+from a_identify_spans import Spans_Demo
 #===============================================================================
 type_keys = {'PATH': ['p'], 'PLACE': ['pl'], 'MOTION': ['m'], 'NONMOTION_EVENT': ['e'],
              'SPATIAL_ENTITY': ['se'],  # spatial elements
@@ -156,8 +158,8 @@ def get_tag_only_indices(sentence, tag_dict):
     return get_tag_and_no_tag_indices(sentence, tag_dict, has_tag)
 
 class Types_Demo(Demo):
-    def __init__(self, type_name, train_path='./training', split=0.8):
-        super(Types_Demo, self).__init__(train_path, '', 0.8)
+    def __init__(self, type_name, train_path='./data/train_dev', test_path = './data/test_dev_b', split=0.8):
+        super(Types_Demo, self).__init__(train_path = train_path, test_path = test_path, split = split)
         self.feature_functions = [lambda x: x.curr_token(),
                                   lambda x: x.prev_n_bag_of_words(3),
                                   lambda x: x.next_n_bag_of_words(3)]
@@ -166,24 +168,47 @@ class Types_Demo(Demo):
         self.extent_class = Tag
 
 # TESTING
+def generate_documents():
+    return
+
 if __name__ == "__main__":
 
     tag_types = ['PATH', 'PLACE', 
-                 'MOTION', 'NONMOTION_EVENT',
-                 'SPATIAL_ENTITY', 'MOTION_SIGNAL', 
-                 'SPATIAL_SIGNAL', 'HAS_TAG']
+                 #'MOTION', 'NONMOTION_EVENT',
+                 #'SPATIAL_ENTITY', 'MOTION_SIGNAL', 
+                 #'SPATIAL_SIGNAL', 'HAS_TAG'
+                 ]
+
+    demo = Spans_Demo('./data/train_dev', './data/test_dev_a')
+    _, clean_data = demo.generate_labels()
+    
     for type_name in tag_types:
-        print type_name
-        d = Types_Demo(type_name)
-        pred, test_data = d.run_demo()
-        print '\n'
+        # generate labels
+        demo = Types_Demo(type_name)
+        pred, test_data = demo.generate_labels()
         
-        for extent in test_data:
+        # generate tags
+        doc_name = test_data[0].document.basename
+        id_number = 0
+        for i, extent in enumerate(test_data):
             offsets = "{a},{b},{c}".format(a=extent.basename,
                                            b=extent.lex[0].begin, 
                                            c=extent.lex[-1].end)
             if pred[offsets] == 'True':
-                tag = {'name': type_name, 'start': extent.tag['start'], 'end': extent.tag['end']}
+                tag = {'name': type_name, 
+                       'start': extent.tag['start'], 
+                       'end': extent.tag['end'],
+                       'text': extent.tag['text'],
+                       'id': '{}{}'.format(type_keys[type_name][0], id_number)
+                       }
+                clean_data[i].document.insert_tag(tag)
+            id_number += 1
+            if doc_name != extent.document.basename:
+                id_number = 0
 
-    
-    
+    # generate xml docs
+    for extent in clean_data:
+        if doc_name != extent.document.basename:
+            doc_name = extent.document.basename
+            extent.document.save_xml(os.path.join('data', 'test_dev_c', doc_name))
+    extent.document.save_xml(os.path.join('data', 'test_dev_c', doc_name))

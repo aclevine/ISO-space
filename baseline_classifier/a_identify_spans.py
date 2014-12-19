@@ -11,7 +11,6 @@ from util.Corpora.corpus import Extent
 import nltk
 from util.demo import Demo
 import os
-import re
 #===============================================================================
 
 class Token(Extent):
@@ -105,18 +104,17 @@ class Spans_Demo(Demo):
         self.indices_function = get_token_indices
         self.extent_class = Token
 
-if __name__ == "__main__":
+
+def generate_doc(train_path, test_path, out_path):
     
-    # SINGLE STAGE
-#     d = Spans_Demo(train_path = './test_dev', test_path = './test_dev')
-#     pred, test_data = d.run_demo(2)
-    
-    # FULL RUNTHROUGH
-    d = Spans_Demo(train_path = './train_dev', test_path = './test_dev/a')
-    pred, test_data, test_corpus = d.run_demo()
-    
+    #classify test_data
+    d = Spans_Demo(train_path, test_path)
+    pred, test_data = d.generate_labels()
+
+    #parse into XML tags    
     ongoing = False
     doc_name = test_data[0].document.basename
+    id_number = 0
     for extent in test_data:
         offsets = "{a},{b},{c}".format(a=extent.basename,
                                        b=extent.lex[0].begin, 
@@ -130,11 +128,25 @@ if __name__ == "__main__":
                 ongoing = False
             else:
                 start = extent.lex[0].begin
-            tag = {'name': 'SPATIAL_EXTENT', 'start': start, 'end': extent.lex[-1].end}
+            tag = {'name': 'SPATIAL_EXTENT', 
+                   'start': start, 
+                   'end': extent.lex[-1].end,
+                   'text': extent.document.text()[start: extent.lex[-1].end],
+                   'id': 'sx{}'.format(id_number)}
             extent.document.insert_tag(tag)
+            id_number += 1
             if doc_name != extent.document.basename:
-                print extent.document
+                id_number = 0
                 doc_name = extent.document.basename
-                extent.document.save_xml(doc_name)
-    print extent.document
-    extent.document.save_xml(r)
+                extent.document.save_xml(os.path.join(out_path, doc_name))
+    extent.document.save_xml(os.path.join(out_path, doc_name))
+
+
+if __name__ == "__main__":
+    
+    # SINGLE STAGE
+#     d = Spans_Demo(train_path = './test_dev', test_path = './test_dev')
+#     d.run_demo(2)
+    
+    # FULL RUNTHROUGH
+    generate_doc('./data/train_dev', './data/test_dev_a', './data/test_dev_b')

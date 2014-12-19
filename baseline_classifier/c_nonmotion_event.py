@@ -13,6 +13,7 @@ import re
 <!ATTLIST NONMOTION_EVENT mod CDATA #IMPLIED >
 <!ATTLIST NONMOTION_EVENT countable ( TRUE | FALSE ) #IMPLIED >
 '''
+
 class EventTag(PathTag):
     # LABEL EXTRACT
     
@@ -28,8 +29,8 @@ def get_event_tag_indices(sentence, tag_dict):
     return get_tag_and_no_tag_indices(sentence, tag_dict, is_event_tag)
 
 class EventDemo(Demo):
-    def __init__(self, doc_path='./training', split=0.8):
-        super(EventDemo, self).__init__(doc_path, split)
+    def __init__(self, train_path='./data/train_dev', test_path = './data/test_dev'):
+        super(EventDemo, self).__init__(train_path = train_path, test_path = test_path)
         self.indices_function = get_event_tag_indices
         self.extent_class = EventTag
 

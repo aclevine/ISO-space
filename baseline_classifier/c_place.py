@@ -24,8 +24,8 @@ def get_place_tag_indices(sentence, tag_dict):
 
 # DEMO
 class PlaceDemo(Demo):
-    def __init__(self, doc_path='./training', split=0.8):
-        super(PlaceDemo, self).__init__(doc_path, split)
+    def __init__(self, train_path='./data/train_dev', test_path = './data/test_dev'):
+        super(PlaceDemo, self).__init__(train_path = train_path, test_path = test_path)
         self.indices_function = get_place_tag_indices
         self.extent_class = PlaceTag
 
