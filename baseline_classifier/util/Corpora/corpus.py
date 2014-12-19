@@ -228,9 +228,12 @@ class HypotheticalDocument(Document):
         self.TAGS.append(tag)
         self.TAGS.append('\n')
 
+    def remove_tags(self):
+        """empty out the tags in the current document"""
+        self.TAGS = []
+
 class HypotheticalCorpus(Corpus):
     """docstring for HypotheticalCorpus"""
-    
     def documents(self):
         candidates = find_files(self.directory, self.pattern, self.recursive)
         for xml_path in filter(is_xml, candidates):
