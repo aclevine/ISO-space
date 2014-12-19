@@ -325,8 +325,8 @@ def writeTagTypeCounts(tagdocs):
     w.close()
             
 
-gold = TagDir(ISO_GOLD_DIR)
-goldplus = TagDir('/users/sethmachine/desktop/Tokenized++')
+#gold = TagDir(ISO_GOLD_DIR)
+#goldplus = TagDir('/users/sethmachine/desktop/Tokenized++')
 
 #lazy (1 doc)
 #doc = TagDoc("/users/sethmachine/desktop/Tokenized/ANC/WhereToJapan/Asakusa.xml")
