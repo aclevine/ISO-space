@@ -224,8 +224,9 @@ class HypotheticalDocument(Document):
         tag = Tag(name=tag_dict.pop('name'))
         tag.attrs = tag_dict
         if not self.findAll('TAGS'):
-            self.append(Tag(name='TAGS'))
+            self.root.append(Tag(name='TAGS'))
         self.TAGS.append(tag)
+        self.TAGS.append('\n')
 
 class HypotheticalCorpus(Corpus):
     """docstring for HypotheticalCorpus"""

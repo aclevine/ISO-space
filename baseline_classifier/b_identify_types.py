@@ -183,7 +183,7 @@ if __name__ == "__main__":
                                            b=extent.lex[0].begin, 
                                            c=extent.lex[-1].end)
             if pred[offsets] == 'True':
-                SEND_TO_DOC = {'name': type_name}
+                tag = {'name': type_name, 'start': extent.tag['start'], 'end': extent.tag['end']}
 
     
     

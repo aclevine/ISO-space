@@ -6,7 +6,7 @@ Created on Oct 31, 2014
 @author: Aaron Levine
 @email: aclevine@brandeis.edu
 '''
-from util.Corpora.corpus import Corpus, Extent
+from util.Corpora.corpus import Corpus, HypotheticalCorpus
 from sklearn.linear_model import LogisticRegression 
 from SKClassifier import SKClassifier
 from abc import abstractmethod
@@ -31,14 +31,14 @@ class Demo(object):
          
     def run_demo(self, verbose=0):
         # load training data
-        c_train = Corpus(self.train_path)
-        extents = list(c_train.extents(self.indices_function,
+        train_corpus = Corpus(self.train_path)
+        extents = list(train_corpus.extents(self.indices_function,
                                        self.extent_class))
         # load test data
         if self.test_path:
             train_data = extents
-            c_test = Corpus(self.test_path)
-            test_data = list(c_test.extents(self.indices_function,
+            test_corpus = HypotheticalCorpus(self.test_path)
+            test_data = list(test_corpus.extents(self.indices_function,
                                             self.extent_class))
         else:
             i = int(len(extents) * self.split)
@@ -70,8 +70,8 @@ class Demo(object):
                             )
         
         if self.gold_path:
-            c_gold = Corpus(self.gold_path)
-            gold_data = list(c_gold.extents(self.indices_function,
+            gold_corpus = Corpus(self.gold_path)
+            gold_data = list(gold_corpus.extents(self.indices_function,
                                             self.extent_class))
         else:
             gold_data = test_data
@@ -83,7 +83,7 @@ class Demo(object):
                             self.label_function(extent)) 
                         for extent in gold_data])        
         clf.evaluate(pred, gold_labels)
-        return pred, test_data
+        return pred, test_data, test_corpus
         
         # TODO Return precision / recall / f-measure for averaging?
         
