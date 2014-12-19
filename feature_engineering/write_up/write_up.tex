@@ -1,0 +1,205 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{textcomp}
+\usepackage{tikz}
+\geometry{a4paper}
+\usepackage[francais]{babel}
+\title{Feature Engineering for SpaceEval}
+\author{Seth Dworman}
+\date{17 December 2014}
+
+\begin{document}
+\maketitle
+$_{}$
+\def\checkmark{\tikz\fill[scale=0.4](0,.35) -- (.25,0) -- (1,.7) -- (.25,.15) -- cycle;}
+\newenvironment{attributes}
+{\medskip\medskip
+ \begin{tabular}{|l|l|}
+ \hline} 
+{\hline
+ \end{tabular}
+ \medskip\medskip}
+ \newenvironment{zattributes}
+{\medskip\medskip
+ \begin{tabular}{|l|l|l|l|l|}
+ \hline} 
+{\hline
+ \end{tabular}
+ \medskip\medskip}
+\\
+{\large {\bf 1.0 Task Description}}
+\\
+\\
+ISO-Space is a rich annotation markup language for capturing spatial and motion based information in natural language text.  One of the overarching goals in creating the ISO-Space gold standard is to provide supervised data for machine learning of annotation language.  That is, given unstructured natural language text, an algorithm should generate the ISO-Space markup automatically.  This task by itself is rather difficult due to the diversity of spatial language, the richness of the ISO-Space specification, and the quality, nature, and distributions of the gold standard data.  Simple bag-of-word approaches are not sufficient as spatial language is itself relatively sparse even in the gold standard.  In addition, identification of spatial mentions (=text extents which should be classified into an ISO-Space tag) is not sufficient for generating the full ISO-Space markup, as each tag itself has its own attribute values, some of which are not trivial and must also be inferred by an algorithm.  Lastly, once all mentions are determined, it is necessary to link them correctly via the ISO-Space links.  
+\\
+\\
+{\large {\bf 2.0 Feature Engineering}}
+\\ \\
+We propose that bag-of-word approaches will not suffice for learning the ISO-Space language or developing a suitable generalized algorithm.  To get a reasonable algorithm, we suggest several features to supplement a bag-of-words approach.  We follow the {\bf statistical language model representation hypothesis} (known as LMRH), which claims that features that are informative for one NLP task are also informative on others (Huang, Ahuja, Downey, Yang, Guo, and Yates 2014).  The features we choose to select for are part-of-speech tags (POS tags), named-entity recognition tags (NER tags), and semantic labels (Sparser labels) from Sparser, a handwritten shallow semantic based parser (McDonald).  
+\\ \\ \newpage
+$_{}$
+\\
+{\large {\bf 3.0 Training Instances}}
+\\ \\
+The ISO-Space specification works at the sentential level, with only possibly  {\sc metalink}s being intersential relations, as they are essentially coreference links limited to spatial mentions.  We will ignore this for now and assume that an algorithm generating ISO-Space markup would operate with a single sentence as its input (with larger documents simply iterated over).  Below we have reproduced an example sentence, \emph{I have taken a boat up Amazon, crossed dirt roads over 15,000 ft Andean passes, luckily escaped bandits in southern Mexico, felt the wind and rain of of Patagonia, and dodged buses in the capital cities of nearly every country.}, already tokenized for us from the gold standard set.  The column named {\bf Label} represents the token's ISO-Space tag value, with {\sc None} indicating it is not a spatial mention.  We interpret {\bf Label} as the true class label $y$ we wish to predict given a token.  This example is taken from {\tt Tokenized/RFC/BuenosAires.xml}.  
+\\ \\
+\begin{attributes}
+Token & Label \\
+\hline
+I & {\sc spatial\_entity}\\
+\hline
+have & {\sc none}\\
+\hline
+taken & {\sc motion}\\
+\hline
+a & {\sc motion\_signal}\\
+\hline
+boat & {\sc motion\_signal}\\
+\hline
+up & {\sc motion\_signal}\\
+\hline
+the & {\sc none}\\
+\hline
+Amazon & {\sc path}\\
+\hline
+, & {\sc None}\\
+\hline
+crossed & {\sc motion}\\
+\hline
+dirt & {\sc none}\\
+\hline
+roads & {\sc path}\\
+\hline
+over & {\sc motion\_signal}\\
+\hline
+15,000 & {\sc measure}\\
+\hline
+ft & {\sc measure}\\
+\hline
+Andean & {\sc none}\\
+\hline
+passes & {\sc path}\\
+\hline
+, & {\sc None}\\
+\hline
+luckily & {\sc none}\\
+\hline
+escaped & {\sc nonmotion\_event}\\
+\hline
+bandits & {\sc none}\\
+\hline
+in & {\sc spatial\_signal}\\
+\end{attributes}
+\begin{attributes}
+Token & Label \\
+\hline
+southern & {\sc none}\\
+\hline
+Mexico & {\sc place}\\
+\hline
+, & {\sc None}\\
+\hline
+felt & {\sc none}\\
+\hline
+the & {\sc none}\\
+\hline
+wind & {\sc spatial\_entity}\\
+\hline
+and & {\sc none}\\
+\hline
+rain & {\sc spatial\_entity}\\
+\hline
+of & {\sc spatial\_signal}\\
+\hline
+Patagonia & {\sc place}\\
+\hline
+, & {\sc None}\\
+\hline
+and & {\sc none}\\
+\hline
+dodged & {\sc motion}\\
+\hline
+buses & {\sc spatial\_entity}\\
+\hline
+in & {\sc spatial\_signal}\\
+\hline
+the & {\sc none}\\
+\hline
+capital & {\sc none}\\
+\hline
+cities & {\sc place}\\
+\hline
+of & {\sc spatial\_signal}\\
+\hline
+nearly & {\sc none}\\
+\hline
+every & {\sc none}\\
+\hline
+country & {\sc place}\\
+\hline
+. & {\sc None}\\
+\end{attributes}
+\newpage
+$_{}$
+\\
+We consider each token from a sentence to be a possible spatial mention, and augment a simple bag-of-words approach with POS tags, NER tags, and Sparser labels.  POS tags are relatively straightforward and come from Stanford NLP's POS tagger (Toutanova, Klein, Manning, and Singer 2003), which achieves a state-of-the-art performance using the Penn TreeBank POS labels.  NER tags come from a small set of labels: {\tt O(utside)}, {\tt person}, {\tt organization}, and {\tt location}.  We also make use of Stanford NLP's NER tagger (Finkel, Grenager, and Manning 2005).  Our intuition is that tokens which are identified as a NER label are more likely to be involved in some kind of spatial relation (especially NER {\tt location}), given that the domain of the gold standard is travel blogs.  Finally, we use Sparser edge labels, which come from Sparser, a shallow semantic parser (McDonald).  Sparser's labels are semantics based and form an open set.  We believe that Sparser's labels can be useful for finding spatial mentions which are places, paths, measurements, and spatial signals, whose correct identification can bootstrap finding other spatial mentions (e.g. spatial named entities).  Below we reproduce part of the original sentence (the first two clauses), augmented with POS, NER, and primary Sparser labels.  Recall that the {\bf Label} column should be interpreted as the class label $y$ we wish to predict given a token.  
+
+\begin{zattributes}
+Token & POS & NER & Sparser & Label \\
+\hline
+I & {\sc PRP} & {\sc O} & {\sc single-capitalized-letter} & {\sc spatial\_entity}\\
+\hline
+have & {\sc VBP} & {\sc O} & {\sc have} & {\sc none}\\
+\hline
+taken & {\sc VBN} & {\sc O} & {\sc None} & {\sc motion}\\
+\hline
+a & {\sc DT} & {\sc O} & {\sc individual} & {\sc motion\_signal}\\
+\hline
+boat & {\sc NN} & {\sc O} & {\sc individual} & {\sc motion\_signal}\\
+\hline
+up & {\sc RP} & {\sc O} & {\sc up} & {\sc motion\_signal}\\
+\hline
+the & {\sc DT} & {\sc O} & {\sc name} & {\sc none}\\
+\hline
+Amazon & {\sc NNP} & {\sc LOCATION} & {\sc name} & {\sc path}\\
+\hline
+, & {\sc None} & {\sc O} & {\sc None} & {\sc None}\\
+\hline
+crossed & {\sc VBD} & {\sc O} & {\sc cross} & {\sc motion}\\
+\hline
+dirt & {\sc NN} & {\sc O} & {\sc dirt} & {\sc none}\\
+\hline
+roads & {\sc NNS} & {\sc O} & {\sc path-type} & {\sc path}\\
+\hline
+over & {\sc IN} & {\sc O} & {\sc over} & {\sc motion\_signal}\\
+\hline
+15,000 & {\sc CD} & {\sc O} & {\sc None} & {\sc measure}\\
+\hline
+ft & {\sc JJ} & {\sc O} & {\sc None} & {\sc measure}\\
+\hline
+Andean & {\sc JJ} & {\sc O} & {\sc name} & {\sc none}\\
+\hline
+passes & {\sc NNS} & {\sc O} & {\sc pass-kind} & {\sc path}\\
+\hline
+, & {\sc None} & {\sc O} & {\sc None} & {\sc None}\\
+\hline
+luckily & {\sc RB} & {\sc O} & {\sc luckily} & {\sc none}\\
+\hline
+escaped & {\sc VBD} & {\sc O} & {\sc escape-event} & {\sc nonmotion\_event}\\
+\hline
+bandits & {\sc NNS} & {\sc O} & {\sc bandit} & {\sc none}\\
+\hline
+in & {\sc IN} & {\sc O} & {\sc in} & {\sc spatial\_signal}\\
+\hline
+southern & {\sc JJ} & {\sc O} & {\sc direction} & {\sc none}\\
+\hline
+Mexico & {\sc NNP} & {\sc LOCATION} & {\sc country} & {\sc place}\\
+\end{zattributes}
+\\ \\
+We note that Sparser also provides other labels besides the primary label shown; in fact all the field values of the Sparser {\tt Edge} data structure are available as features, though some of these may not turn out to be useful.  
+\end{document}
