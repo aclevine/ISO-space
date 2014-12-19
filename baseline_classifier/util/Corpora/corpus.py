@@ -60,13 +60,15 @@ class Document(BS):
         return tags
     
     def query_extents(self, ttypes, start, end):
-        """Return a list of tags whose types are in the list of ttypes and 
-        whose start and end attributes match the given start and end."""
+        """Return a list of extent tags whose types are in the list of ttypes 
+        and whose start and end attributes match the given start and end."""
         matches = lambda t : \
             map(int, (t['start'], t['end'])) == map(int, (start, end))
         return filter(matches, self.tags(ttypes=ttypes))
     
     def query_links(self, ttypes, trigger_id):
+        """Return a list of link tags whose types are in the list of ttypes
+        and whose trigger has the specified trigger id."""
         matches = lambda t : unicode(t['trigger']) == unicode(trigger_id)
         return filter(matches, self.tags(ttypes=ttypes))
     
