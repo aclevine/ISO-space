@@ -59,6 +59,17 @@ class Document(BS):
             tags = filter(lambda tag : tag.name in ttypes, tags)
         return tags
     
+    def query_extents(self, ttypes, start, end):
+        """Return a list of tags whose types are in the list of ttypes and 
+        whose start and end attributes match the given start and end."""
+        matches = lambda t : \
+            map(int, (t['start'], t['end'])) == map(int, (start, end))
+        return filter(matches, self.tags(ttypes=ttypes))
+    
+    def query_links(self, ttypes, trigger_id):
+        matches = lambda t : unicode(t['trigger']) == unicode(trigger_id)
+        return filter(matches, self.tags(ttypes=ttypes))
+    
     def add_attribute(self, attribute, value=u'', ttypes=None):
         """Add an attribute to a tag (and possibly specify it's value)."""
         for tag in self.tags(ttypes):
