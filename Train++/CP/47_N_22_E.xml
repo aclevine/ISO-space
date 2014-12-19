@@ -1,0 +1,2895 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<SpaceEvalTaskv1.2>
+	<TEXT><![CDATA[
+
+06-May-2002 -- We, eastern christians (orthodox christians) celebrated Easter this year on May 5th. So, on this short holiday, we went to Oradea where part of my girlfriend’s family lives. Oradea is 600 km (about 380 miles) from Bucharest, in the northwestern part of Romania, only 10 km from the border with Hungary. It is a big city (more than 220,000 population) that lies exactly where the hills end and the Pannonia Plains begin, on the river Crisul Repede (the Fast Cris), that crosses exactly the centre of the city. Oradea is a medieval city, with baroque and gothic buildings, and also with lots of clubs and cafes and very nice people. For some photos go here http://www.oradea-online.ro/oradea/2/galeria_oradea1.htm (unfortunately I couldn’t find a website with photos in english, so click on 'Albumul urmator >>' below right to get to the next gallery). Another link would be www.oradea.ro, which contains some english text, but few photos. Ok, back to confluence hunting.
+
+On May 6th we decided to visit N47E22. We were a pretty large group: myself, my girlfriend Andra, her brother Mihnea, their cousins from Oradea and a friend of them. We took road 76/E79 to Deva, crossed the village of Sanmartin and turned left to Baile 1 Mai (1 Mai Spa). Baile 1 Mai is known for its hot-water springs (lots of swimming-pools there). Same for Baile Felix (Felix Spa) nearby. In fact the city of Oradea is heated with thermal water, which is plenty around these parts, you just have to dig for it. At the sign that says Baile 1 Mai (just half a mile after turning left from road 76/E79) we turned again left and entered the village of Rontau. We were already in the hilly region, so the road climbed up to Rontau, which lies on top of a hill. While driving along the village’s main road the GPS showed us the direction right ahead, and after two minutes, just few hundred meters from the end of the village, we reached the spot (photo #3).
+
+The confluence lies right on the main road of Rontau, just in front of the pentecostal church (in fact the pentecostal church lies inside of a house, probably the pentecostal community isn’t too large – photo #4). On both sides there were houses, backwards we could see the road, only in front of us another forested hill could be seen, as the main road climbes down the hill, exiting the village. The elevation was 179 meters.
+
+You can see the view eastwards in the main picture (photo #1). The road exits Rontau and climbs down the hill, so we could see another hill. Down in the valley you can see some buildings from Baile 1 Mai. Photo #2 needs no explanation. Photo #5 looks south-eastwards and shows two Rontau houses: a typical one and a new built one (the house with 2 storeys). Photo #7 shows the way we got there, along the main road. You can see some more houses. The local 'food source' is shown in photo #6.
+
+Next day we left for Bucharest and on the way we visited N47E23. 
+
+]]></TEXT>
+	<TAGS>
+		<PLACE comment="Goal for 'crossed the village of Sanmartin'"
+			continent="" countable="TRUE" country="" ctv="" dcl="FALSE"
+			dimensionality="AREA" domain="" elevation="" end="-1" form="NOM"
+			gazref="" gquant="" id="pl19" latLong="" mod="" scopes="" start="-1"
+			state="" text="" type="" />
+		<PLACE comment="Source for 'crossed the village of Sanmartin'"
+			continent="" countable="TRUE" country="" ctv="" dcl="FALSE"
+			dimensionality="AREA" domain="" elevation="" end="-1" form="NOM"
+			gazref="" gquant="" id="pl18" latLong="" mod="" scopes="" start="-1"
+			state="" text="" type="" />
+		<PLACE comment="Goal for 'crosses exactly the centre of the city'"
+			continent="" countable="TRUE" country="" ctv="" dcl="FALSE"
+			dimensionality="AREA" domain="" elevation="" end="-1" form="NOM"
+			gazref="" gquant="" id="pl17" latLong="" mod="" scopes="" start="-1"
+			state="" text="" type="" />
+		<PLACE comment="Source for 'crosses exactly the centre of the city'"
+			continent="" countable="TRUE" country="" ctv="" dcl="FALSE"
+			dimensionality="AREA" domain="" elevation="" end="-1" form="NOM"
+			gazref="" gquant="" id="pl16" latLong="" mod="" scopes="" start="-1"
+			state="" text="" type="" />
+		<PLACE
+			comment="Place being related to in 'Same for Baile Felix (Felix Spa) nearby.'"
+			continent="" countable="TRUE" country="" ctv="" dcl="FALSE"
+			dimensionality="AREA" domain="" elevation="" end="-1" form="NOM"
+			gazref="" gquant="" id="pl15" latLong="" mod="" scopes="" start="-1"
+			state="" text="" type="" />
+		<PLACE
+			comment="'The elevation was 179 meters.'  Refers to the confluence point"
+			continent="" countable="TRUE" country="" ctv="" dcl="FALSE"
+			dimensionality="POINT" domain="" elevation="me6" end="-1" form="NOM"
+			gazref="" gquant="" id="pl14" latLong="" mod="" scopes="" start="-1"
+			state="" text="" type="" />
+		<PLACE comment="Source for 'Next day we left for Bucharest'"
+			continent="" countable="TRUE" country="" ctv="" dcl="FALSE"
+			dimensionality="AREA" domain="" elevation="" end="-1" form="NOM"
+			gazref="" gquant="" id="pl58" latLong="" mod="" scopes="" start="-1"
+			state="" text="" type="" />
+		<PLACE comment="place where 'the hills end and the Pannonia Plains begin'"
+			continent="" countable="TRUE" country="" ctv="" dcl="FALSE"
+			dimensionality="AREA" domain="" elevation="" end="-1" form="NOM"
+			gazref="" gquant="" id="pl8" latLong="" mod="" scopes="" start="-1"
+			state="" text="" type="" />
+		<PLACE
+			comment="ground for 'down in the valley you can see some buildings from Baile 1 Mai'"
+			continent="" countable="TRUE" country="" ctv="" dcl="FALSE"
+			dimensionality="VOLUME" domain="" elevation="" end="-1" form="NOM"
+			gazref="" gquant="" id="pl53" latLong="" mod="" scopes="" start="-1"
+			state="" text="" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="POINT" domain="" elevation="" end="1025"
+			form="NAM" gazref="" gquant="" id="pl20" latLong="" mod="" scopes=""
+			start="1019" state="" text="N47E22" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="1131"
+			form="NAM" gazref="" gquant="" id="pl23" latLong="" mod="" scopes=""
+			start="1125" state="" text="Oradea" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="1181"
+			form="NAM" gazref="" gquant="" id="pl21" latLong="" mod="" scopes=""
+			start="1177" state="" text="Deva" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="1202"
+			form="NOM" gazref="" gquant="" id="pl22" latLong="" mod="" scopes=""
+			start="1195" state="" text="village" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="1215"
+			form="NAM" gazref="" gquant="" id="pl24" latLong="" mod="" scopes=""
+			start="1206" state="" text="Sanmartin" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="1246"
+			form="NAM" gazref="" gquant="" id="pl25" latLong="" mod="" scopes=""
+			start="1235" state="" text="Baile 1 Mai" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="1257"
+			form="NAM" gazref="" gquant="" id="pl26" latLong="" mod="" scopes=""
+			start="1248" state="" text="1 Mai Spa" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="1271"
+			form="NAM" gazref="" gquant="" id="pl27" latLong="" mod="" scopes=""
+			start="1260" state="" text="Baile 1 Mai" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="1336"
+			form="NOM" gazref="" gquant="" id="pl28" latLong="" mod="" scopes=""
+			start="1331" state="" text="there" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="1359"
+			form="NAM" gazref="" gquant="" id="pl29" latLong="" mod="" scopes=""
+			start="1348" state="" text="Baile Felix" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="1370"
+			form="NAM" gazref="" gquant="" id="pl30" latLong="" mod="" scopes=""
+			start="1361" state="" text="Felix Spa" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="1396"
+			form="NOM" gazref="" gquant="" id="pl31" latLong="" mod="" scopes=""
+			start="1392" state="" text="city" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="146"
+			form="NAM" gazref="" gquant="" id="pl0" latLong="" mod="" scopes=""
+			start="140" state="" text="Oradea" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="1406"
+			form="NAM" gazref="" gquant="" id="pl32" latLong="" mod="" scopes=""
+			start="1400" state="" text="Oradea" type="" />
+		<PLACE comment="" continent="" countable="FALSE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="1471"
+			form="NOM" gazref="" gquant="" id="pl33" latLong="" mod="" scopes=""
+			start="1466" state="" text="parts" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="1635"
+			form="NOM" gazref="" gquant="" id="pl34" latLong="" mod="" scopes=""
+			start="1628" state="" text="village" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="1645"
+			form="NAM" gazref="" gquant="" id="pl35" latLong="" mod="" scopes=""
+			start="1639" state="" text="Rontau" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="VOLUME" domain="" elevation="" end="1682"
+			form="NOM" gazref="" gquant="" id="pl36" latLong="" mod="hilly"
+			scopes="" start="1676" state="" text="region" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="VOLUME" domain="" elevation="" end="1716"
+			form="NAM" gazref="" gquant="" id="pl37" latLong="" mod="" scopes=""
+			start="1710" state="" text="Rontau" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="VOLUME" domain="" elevation="" end="1745"
+			form="NOM" gazref="" gquant="" id="pl38" latLong="" mod="" scopes=""
+			start="1741" state="" text="hill" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="1895"
+			form="NOM" gazref="" gquant="" id="pl40" latLong="" mod="" scopes=""
+			start="1892" state="" text="end" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="1910"
+			form="NOM" gazref="" gquant="" id="pl41" latLong="" mod="" scopes=""
+			start="1903" state="" text="village" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="197"
+			form="NAM" gazref="" gquant="" id="pl1" latLong="" mod="" scopes=""
+			start="191" state="" text="Oradea" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="1931"
+			form="NOM" gazref="" gquant="" id="pl42" latLong="" mod="" scopes=""
+			start="1927" state="" text="spot" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="POINT" domain="" elevation="" end="1959"
+			form="NOM" gazref="" gquant="" id="pl43" latLong="" mod="" scopes=""
+			start="1949" state="" text="confluence" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="VOLUME" domain="" elevation="" end="1997"
+			form="NAM" gazref="" gquant="" id="pl44" latLong="" mod="" scopes=""
+			start="1991" state="" text="Rontau" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="VOLUME" domain="" elevation="" end="2038"
+			form="NOM" gazref="" gquant="" id="pl45" latLong="" mod="" scopes=""
+			start="2032" state="" text="church" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="2070"
+			form="NOM" gazref="" gquant="" id="pl46" latLong="" mod="" scopes=""
+			start="2064" state="" text="church" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="2093"
+			form="NOM" gazref="" gquant="" id="pl47" latLong="" mod="" scopes=""
+			start="2088" state="" text="house" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="2172"
+			form="NOM" gazref="" gquant="" id="pl48" latLong="" mod="" scopes=""
+			start="2167" state="" text="sides" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="VOLUME" domain="" elevation="" end="2266"
+			form="NOM" gazref="" gquant="" id="pl49" latLong="" mod="" scopes=""
+			start="2262" state="" text="hill" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="240"
+			form="NAM" gazref="" gquant="" id="pl2" latLong="" mod="" scopes=""
+			start="231" state="" text="Bucharest" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="VOLUME" domain="" elevation="" end="2341"
+			form="NOM" gazref="" gquant="" id="pl50" latLong="" mod="" scopes=""
+			start="2334" state="" text="village" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="VOLUME" domain="" elevation="" end="2458"
+			form="NAM" gazref="" gquant="" id="pl51" latLong="" mod="" scopes=""
+			start="2452" state="" text="Rontau" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="VOLUME" domain="" elevation="" end="2577"
+			form="NAM" gazref="" gquant="" id="pl52" latLong="" mod="" scopes=""
+			start="2566" state="" text="Baile 1 Mai" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="266"
+			form="NOM" gazref="" gquant="" id="pl3" latLong="" mod="northwestern"
+			scopes="" start="262" state="" text="part" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="277"
+			form="NAM" gazref="" gquant="" id="pl4" latLong="" mod="" scopes=""
+			start="270" state="" text="Romania" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="2767"
+			form="NOM" gazref="" gquant="" id="pl55" latLong="" mod="" scopes=""
+			start="2762" state="" text="there" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="2897"
+			form="NAM" gazref="" gquant="" id="pl56" latLong="" mod="" scopes=""
+			start="2888" state="" text="Bucharest" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="2930"
+			form="NAM" gazref="" gquant="" id="pl57" latLong="" mod="" scopes=""
+			start="2924" state="" text="N47E23" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="318"
+			form="NAM" gazref="" gquant="" id="pl5" latLong="" mod="" scopes=""
+			start="311" state="" text="Hungary" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="322"
+			form="NOM" gazref="" gquant="" id="pl6" latLong="" mod="" scopes=""
+			start="320" state="" text="It" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="336"
+			form="NOM" gazref="" gquant="" id="pl7" latLong="" mod="big" scopes=""
+			start="332" state="" text="city" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="512"
+			form="NOM" gazref="" gquant="" id="pl9" latLong="" mod="" scopes=""
+			start="506" state="" text="centre" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="524"
+			form="NOM" gazref="" gquant="" id="pl10" latLong="" mod="" scopes=""
+			start="520" state="" text="city" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="532"
+			form="NAM" gazref="" gquant="" id="pl11" latLong="" mod="" scopes=""
+			start="526" state="" text="Oradea" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="551"
+			form="NOM" gazref="" gquant="" id="pl12" latLong="" mod="" scopes=""
+			start="547" state="" text="city" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="POINT" domain="" elevation="" end="977"
+			form="NOM" gazref="" gquant="" id="pl13" latLong="" mod="" scopes=""
+			start="967" state="" text="confluence" type="" />
+		<PATH beginID=""
+			comment="The source for 'turned' in 'we turned again left and entered the village of Rontau'"
+			countable="TRUE" dcl="FALSE" dimensionality="AREA" domain=""
+			elevation="" end="-1" endID="" form="NOM" gazref="" gquant="" id="p15"
+			latLong="" midIDs="" mod="" scopes="" start="-1" text="" type="" />
+		<PATH beginID="" comment="" countable="TRUE" dcl="FALSE"
+			dimensionality="AREA" domain="" elevation="" end="1173" endID=""
+			form="NAM" gazref="" gquant="" id="p14" latLong="" midIDs="" mod=""
+			scopes="" start="1162" text="road 76/E79" type="" />
+		<PATH beginID="" comment="" countable="TRUE" dcl="FALSE"
+			dimensionality="AREA" domain="" elevation="" end="1589" endID=""
+			form="NAM" gazref="" gquant="" id="p11" latLong="" midIDs="" mod=""
+			scopes="" start="1578" text="road 76/E79" type="" />
+		<PATH beginID="" comment="" countable="TRUE" dcl="FALSE"
+			dimensionality="VOLUME" domain="" elevation="" end="1695" endID=""
+			form="NOM" gazref="" gquant="" id="p12" latLong="" midIDs="" mod=""
+			scopes="" start="1691" text="road" type="" />
+		<PATH beginID="" comment="" countable="TRUE" dcl="FALSE"
+			dimensionality="AREA" domain="" elevation="" end="1790" endID=""
+			form="NOM" gazref="" gquant="" id="p13" latLong="" midIDs="" mod=""
+			scopes="" start="1786" text="road" type="" />
+		<PATH beginID="" comment="" countable="TRUE" dcl="FALSE"
+			dimensionality="VOLUME" domain="" elevation="" end="1987" endID=""
+			form="NOM" gazref="" gquant="" id="p16" latLong="" midIDs="" mod="main"
+			scopes="" start="1983" text="road" type="" />
+		<PATH beginID="" comment="" countable="TRUE" dcl="FALSE"
+			dimensionality="AREA" domain="" elevation="" end="2223" endID=""
+			form="NOM" gazref="" gquant="" id="p19" latLong="" midIDs="" mod=""
+			scopes="" start="2219" text="road" type="" />
+		<PATH beginID="" comment="" countable="TRUE" dcl="FALSE"
+			dimensionality="VOLUME" domain="" elevation="" end="2298" endID=""
+			form="NOM" gazref="" gquant="" id="p17" latLong="" midIDs="" mod="main"
+			scopes="" start="2294" text="road" type="" />
+		<PATH beginID="" comment="" countable="TRUE" dcl="FALSE"
+			dimensionality="VOLUME" domain="" elevation="" end="2320" endID=""
+			form="NOM" gazref="" gquant="" id="p18" latLong="" midIDs="" mod=""
+			scopes="" start="2316" text="hill" type="" />
+		<PATH beginID="" comment="" countable="TRUE" dcl="FALSE"
+			dimensionality="VOLUME" domain="" elevation="" end="2445" endID=""
+			form="NOM" gazref="" gquant="" id="p21" latLong="" midIDs="" mod=""
+			scopes="" start="2441" text="road" type="" />
+		<PATH beginID="" comment="" countable="TRUE" dcl="FALSE"
+			dimensionality="VOLUME" domain="" elevation="" end="2483" endID=""
+			form="NOM" gazref="" gquant="" id="p20" latLong="" midIDs="" mod=""
+			scopes="" start="2479" text="hill" type="" />
+		<PATH beginID="" comment="" countable="TRUE" dcl="FALSE"
+			dimensionality="VOLUME" domain="" elevation="" end="2533" endID=""
+			form="NOM" gazref="" gquant="" id="p22" latLong="" midIDs="" mod=""
+			scopes="" start="2527" text="valley" type="" />
+		<PATH beginID="" comment="" countable="TRUE" dcl="FALSE"
+			dimensionality="AREA" domain="" elevation="" end="2754" endID=""
+			form="NOM" gazref="" gquant="" id="p23" latLong="" midIDs="" mod=""
+			scopes="" start="2751" text="way" type="" />
+		<PATH beginID="" comment="" countable="TRUE" dcl="FALSE"
+			dimensionality="AREA" domain="" elevation="" end="2788" endID=""
+			form="NOM" gazref="" gquant="" id="p24" latLong="" midIDs="" mod=""
+			scopes="" start="2784" text="road" type="" />
+		<PATH beginID="" comment="" countable="TRUE" dcl="FALSE"
+			dimensionality="AREA" domain="" elevation="" end="2912" endID=""
+			form="NOM" gazref="" gquant="" id="p25" latLong="" midIDs="" mod=""
+			scopes="" start="2909" text="way" type="" />
+		<PATH beginID="" comment="" countable="TRUE" dcl="FALSE"
+			dimensionality="AREA" domain="" elevation="" end="305" endID="" form="NOM"
+			gazref="" gquant="" id="p0" latLong="" midIDs="" mod="" scopes=""
+			start="299" text="border" type="" />
+		<PATH beginID="" comment="" countable="FALSE" dcl="FALSE"
+			dimensionality="AREA" domain="" elevation="" end="401" endID="pl8"
+			form="NOM" gazref="" gquant="" id="p9" latLong="" midIDs="" mod=""
+			scopes="" start="396" text="hills" type="" />
+		<PATH beginID="pl8" comment="" countable="TRUE" dcl="FALSE"
+			dimensionality="AREA" domain="" elevation="" end="429" endID="" form="NAM"
+			gazref="" gquant="" id="p10" latLong="" midIDs="" mod="" scopes=""
+			start="414" text="Pannonia Plains" type="" />
+		<PATH beginID="" comment="" countable="TRUE" dcl="FALSE"
+			dimensionality="AREA" domain="" elevation="" end="449" endID="" form="NOM"
+			gazref="" gquant="" id="p3" latLong="" midIDs="" mod="" scopes=""
+			start="444" text="river" type="" />
+		<PATH beginID="" comment="" countable="TRUE" dcl="FALSE"
+			dimensionality="AREA" domain="" elevation="" end="463" endID="" form="NAM"
+			gazref="" gquant="" id="p4" latLong="" midIDs="" mod="" scopes=""
+			start="450" text="Crisul Repede" type="" />
+		<PATH beginID="" comment="" countable="TRUE" dcl="FALSE"
+			dimensionality="LINE" domain="" elevation="" end="478" endID="" form="NAM"
+			gazref="" gquant="" id="p5" latLong="" midIDs="" mod="" scopes=""
+			start="469" text="Fast Cris" type="" />
+		<SPATIAL_ENTITY comment="" countable="TRUE" dcl="FALSE"
+			dimensionality="POINT" domain="" elevation="" end="1029" form="NOM"
+			gquant="" id="se8" latLong="" mod="" scopes="" start="1027" text="We"
+			type="" />
+		<SPATIAL_ENTITY comment="" countable="TRUE" dcl="FALSE"
+			dimensionality="AREA" domain="" elevation="" end="1055" form="NOM"
+			gquant="" id="se9" latLong="" mod="pretty large" scopes="" start="1050"
+			text="group" type="" />
+		<SPATIAL_ENTITY comment="" countable="TRUE" dcl="FALSE"
+			dimensionality="POINT" domain="" elevation="" end="1063" form="NOM"
+			gquant="" id="se10" latLong="" mod="" scopes="" start="1057" text="myself"
+			type="" />
+		<SPATIAL_ENTITY comment="" countable="TRUE" dcl="FALSE"
+			dimensionality="POINT" domain="" elevation="" end="1078" form="NOM"
+			gquant="" id="se11" latLong="" mod="" scopes="" start="1068" text="girlfriend"
+			type="" />
+		<SPATIAL_ENTITY comment="" countable="TRUE" dcl="FALSE"
+			dimensionality="POINT" domain="" elevation="" end="1084" form="NAM"
+			gquant="" id="se12" latLong="" mod="" scopes="" start="1079" text="Andra"
+			type="" />
+		<SPATIAL_ENTITY comment="" countable="TRUE" dcl="FALSE"
+			dimensionality="POINT" domain="" elevation="" end="1097" form="NOM"
+			gquant="" id="se13" latLong="" mod="" scopes="" start="1090" text="brother"
+			type="" />
+		<SPATIAL_ENTITY comment="" countable="TRUE" dcl="FALSE"
+			dimensionality="POINT" domain="" elevation="" end="1104" form="NAM"
+			gquant="" id="se14" latLong="" mod="" scopes="" start="1098" text="Mihnea"
+			type="" />
+		<SPATIAL_ENTITY comment="" countable="TRUE" dcl="FALSE"
+			dimensionality="POINT" domain="" elevation="" end="1119" form="NOM"
+			gquant="" id="se15" latLong="" mod="" scopes="" start="1112" text="cousins"
+			type="" />
+		<SPATIAL_ENTITY comment="" countable="TRUE" dcl="FALSE"
+			dimensionality="POINT" domain="" elevation="" end="1144" form="NOM"
+			gquant="" id="se16" latLong="" mod="" scopes="" start="1138" text="friend"
+			type="" />
+		<SPATIAL_ENTITY comment="" countable="TRUE" dcl="FALSE"
+			dimensionality="POINT" domain="" elevation="" end="1152" form="NOM"
+			gquant="" id="se17" latLong="" mod="" scopes="" start="1148" text="them"
+			type="" />
+		<SPATIAL_ENTITY comment="" countable="TRUE" dcl="FALSE"
+			dimensionality="AREA" domain="" elevation="" end="1156" form="NOM"
+			gquant="" id="se22" latLong="" mod="" scopes="" start="1154" text="We"
+			type="" />
+		<SPATIAL_ENTITY comment="" countable="TRUE" dcl="FALSE"
+			dimensionality="AREA" domain="" elevation="" end="131" form="NOM"
+			gquant="" id="se0" latLong="" mod="" scopes="" start="129" text="we"
+			type="" />
+		<SPATIAL_ENTITY comment="" countable="TRUE" dcl="FALSE"
+			dimensionality="AREA" domain="" elevation="" end="1306" form="NOM"
+			gquant="" id="se18" latLong="" mod="" scopes="" start="1299" text="springs"
+			type="" />
+		<SPATIAL_ENTITY comment="" countable="TRUE" dcl="FALSE"
+			dimensionality="AREA" domain="" elevation="" end="1330" form="NOM"
+			gquant="" id="se19" latLong="" mod="" scopes="" start="1316"
+			text="swimming-pools" type="" />
+		<SPATIAL_ENTITY comment="" countable="FALSE" dcl="FALSE"
+			dimensionality="AREA" domain="" elevation="" end="1435" form="NOM"
+			gquant="" id="se23" latLong="" mod="" scopes="" start="1430" text="water"
+			type="" />
+		<SPATIAL_ENTITY comment="" countable="FALSE" dcl="FALSE"
+			dimensionality="AREA" domain="" elevation="" end="1500" form="NOM"
+			gquant="" id="se24" latLong="" mod="" scopes="" start="1498" text="it"
+			type="" />
+		<SPATIAL_ENTITY comment="" countable="TRUE" dcl="FALSE"
+			dimensionality="AREA" domain="" elevation="" end="1513" form="NOM"
+			gquant="" id="se20" latLong="" mod="" scopes="" start="1509" text="sign"
+			type="" />
+		<SPATIAL_ENTITY comment="" countable="TRUE" dcl="FALSE"
+			dimensionality="AREA" domain="" elevation="" end="1593" form="NOM"
+			gquant="" id="se25" latLong="" mod="" scopes="" start="1591" text="we"
+			type="" />
+		<SPATIAL_ENTITY comment="" countable="TRUE" dcl="FALSE"
+			dimensionality="VOLUME" domain="" elevation="" end="1649" form="NOM"
+			gquant="" id="se21" latLong="" mod="" scopes="" start="1647" text="We"
+			type="" />
+		<SPATIAL_ENTITY comment="" countable="TRUE" dcl="FALSE"
+			dimensionality="POINT" domain="" elevation="" end="19" form="NOM"
+			gquant="" id="se5" latLong="" mod="" scopes="" start="17" text="We"
+			type="" />
+		<SPATIAL_ENTITY comment="" countable="TRUE" dcl="FALSE"
+			dimensionality="AREA" domain="" elevation="" end="1808" form="NOM"
+			gquant="" id="se26" latLong="" mod="" scopes="" start="1806" text="us"
+			type="" />
+		<SPATIAL_ENTITY comment="" countable="TRUE" dcl="FALSE"
+			dimensionality="AREA" domain="" elevation="" end="1914" form="NOM"
+			gquant="" id="se27" latLong="" mod="" scopes="" start="1912" text="we"
+			type="" />
+		<SPATIAL_ENTITY comment="" countable="TRUE" dcl="FALSE"
+			dimensionality="AREA" domain="" elevation="" end="2190" form="NOM"
+			gquant="" id="se28" latLong="" mod="" scopes="" start="2184" text="houses"
+			type="" />
+		<SPATIAL_ENTITY comment="" countable="TRUE" dcl="FALSE"
+			dimensionality="AREA" domain="" elevation="" end="2204" form="NOM"
+			gquant="" id="se30" latLong="" mod="" scopes="" start="2202" text="we"
+			type="" />
+		<SPATIAL_ENTITY comment="" countable="TRUE" dcl="FALSE"
+			dimensionality="VOLUME" domain="" elevation="" end="2244" form="NOM"
+			gquant="" id="se29" latLong="" mod="" scopes="" start="2242" text="us"
+			type="" />
+		<SPATIAL_ENTITY comment="" countable="TRUE" dcl="FALSE"
+			dimensionality="POINT" domain="" elevation="" end="2490" form="NOM"
+			gquant="" id="se37" latLong="" mod="" scopes="" start="2488" text="we"
+			type="" />
+		<SPATIAL_ENTITY comment="" countable="TRUE" dcl="FALSE"
+			dimensionality="VOLUME" domain="" elevation="" end="2560" form="NOM"
+			gquant="" id="se31" latLong="" mod="" scopes="" start="2551" text="buildings"
+			type="" />
+		<SPATIAL_ENTITY comment="" countable="TRUE" dcl="FALSE"
+			dimensionality="VOLUME" domain="" elevation="" end="2668" form="NOM"
+			gquant="" id="se32" latLong="" mod="" scopes="" start="2662" text="houses"
+			type="" />
+		<SPATIAL_ENTITY comment="" countable="TRUE" dcl="FALSE"
+			dimensionality="VOLUME" domain="" elevation="" end="2683" form="NOM"
+			gquant="" id="se33" latLong="" mod="" scopes="" start="2680" text="one"
+			type="" />
+		<SPATIAL_ENTITY comment="" countable="TRUE" dcl="FALSE"
+			dimensionality="VOLUME" domain="" elevation="" end="2703" form="NOM"
+			gquant="" id="se34" latLong="" mod="" scopes="" start="2700" text="one"
+			type="" />
+		<SPATIAL_ENTITY comment="" countable="TRUE" dcl="FALSE"
+			dimensionality="VOLUME" domain="" elevation="" end="2714" form="NOM"
+			gquant="" id="se35" latLong="" mod="" scopes="" start="2709" text="house"
+			type="" />
+		<SPATIAL_ENTITY comment="" countable="TRUE" dcl="FALSE"
+			dimensionality="AREA" domain="" elevation="" end="2757" form="NOM"
+			gquant="" id="se38" latLong="" mod="" scopes="" start="2755" text="we"
+			type="" />
+		<SPATIAL_ENTITY comment="" countable="TRUE" dcl="FALSE"
+			dimensionality="VOLUME" domain="" elevation="" end="2818" form="NOM"
+			gquant="" id="se39" latLong="" mod="" scopes="" start="2812" text="houses"
+			type="" />
+		<SPATIAL_ENTITY comment="" countable="TRUE" dcl="FALSE"
+			dimensionality="VOLUME" domain="" elevation="" end="2842" form="NOM"
+			gquant="" id="se40" latLong="" mod="" scopes="" start="2836" text="source"
+			type="" />
+		<SPATIAL_ENTITY comment="" countable="TRUE" dcl="FALSE"
+			dimensionality="AREA" domain="" elevation="" end="2878" form="NOM"
+			gquant="" id="se41" latLong="" mod="" scopes="" start="2876" text="we"
+			type="" />
+		<SPATIAL_ENTITY comment="" countable="TRUE" dcl="FALSE"
+			dimensionality="AREA" domain="" elevation="" end="2915" form="NOM"
+			gquant="" id="se36" latLong="" mod="" scopes="" start="2913" text="we"
+			type="" />
+		<SPATIAL_ENTITY comment="" countable="TRUE" dcl="FALSE"
+			dimensionality="AREA" domain="" elevation="" end="586" form="NOM"
+			gquant="" id="se1" latLong="" mod="" scopes="" start="577" text="buildings"
+			type="" />
+		<SPATIAL_ENTITY comment="" countable="TRUE" dcl="FALSE"
+			dimensionality="AREA" domain="" elevation="" end="615" form="NOM"
+			gquant="" id="se2" latLong="" mod="" scopes="" start="610" text="clubs"
+			type="" />
+		<SPATIAL_ENTITY comment="" countable="TRUE" dcl="FALSE"
+			dimensionality="AREA" domain="" elevation="" end="625" form="NOM"
+			gquant="" id="se3" latLong="" mod="" scopes="" start="620" text="cafes"
+			type="" />
+		<SPATIAL_ENTITY comment="" countable="TRUE" dcl="FALSE"
+			dimensionality="AREA" domain="" elevation="" end="646" form="NOM"
+			gquant="" id="se4" latLong="" mod="" scopes="" start="640" text="people"
+			type="" />
+		<SPATIAL_ENTITY comment="" countable="TRUE" dcl="FALSE"
+			dimensionality="POINT" domain="" elevation="" end="745" form="NOM"
+			gquant="" id="se6" latLong="" mod="" scopes="" start="744" text="I"
+			type="" />
+		<SPATIAL_ENTITY comment="" countable="TRUE" dcl="FALSE"
+			dimensionality="POINT" domain="" elevation="" end="1001" form="NOM"
+			gquant="" id="se7" latLong="" mod="" scopes="" start="999" text="we"
+			type="" />
+		<NONMOTION_EVENT comment="" countable="" domain=""
+			elevation="" end="1728" gquant="" id="e5" latLong="" mod="" scopes=""
+			start="1724" text="lies" />
+		<NONMOTION_EVENT comment="" countable="" domain=""
+			elevation="" end="189" gquant="" id="e0" latLong="" mod="" scopes=""
+			start="184" text="lives" />
+		<NONMOTION_EVENT comment="" countable="" domain=""
+			elevation="" end="1964" gquant="" id="e6" latLong="" mod="" scopes=""
+			start="1960" text="lies" />
+		<NONMOTION_EVENT comment="" countable="" domain=""
+			elevation="" end="2075" gquant="" id="e7" latLong="" mod="" scopes=""
+			start="2071" text="lies" />
+		<NONMOTION_EVENT comment="" countable="" domain=""
+			elevation="" end="377" gquant="" id="e1" latLong="" mod="" scopes=""
+			start="373" text="lies" />
+		<NONMOTION_EVENT comment="" countable="" domain=""
+			elevation="" end="405" gquant="" id="e2" latLong="" mod="" scopes=""
+			start="402" text="end" />
+		<NONMOTION_EVENT comment="" countable="" domain=""
+			elevation="" end="435" gquant="" id="e3" latLong="" mod="" scopes=""
+			start="430" text="begin" />
+		<MOTION comment="" countable="" domain="" elevation="" end="1018"
+			gquant="" id="m3" latLong="" mod="" motion_class="REACH"
+			motion_sense="LITERAL" motion_type="PATH" scopes="" start="1013"
+			text="visit" />
+		<MOTION comment="" countable="" domain="" elevation="" end="1161"
+			gquant="" id="m4" latLong="" mod="" motion_class="FOLLOW"
+			motion_sense="LITERAL" motion_type="PATH" scopes="" start="1157"
+			text="took" />
+		<MOTION comment="" countable="" domain="" elevation="" end="1190"
+			gquant="" id="m5" latLong="" mod="" motion_class="CROSS"
+			motion_sense="LITERAL" motion_type="PATH" scopes="" start="1183"
+			text="crossed" />
+		<MOTION comment="" countable="" domain="" elevation="" end="1226"
+			gquant="" id="m6" latLong="" mod="" motion_class="DEVIATE"
+			motion_sense="LITERAL" motion_type="PATH" scopes="" start="1220"
+			text="turned" />
+		<MOTION comment="" countable="" domain="" elevation="" end="136"
+			gquant="" id="m0" latLong="" mod="" motion_class="REACH"
+			motion_sense="LITERAL" motion_type="PATH" scopes="" start="132" text="went" />
+		<MOTION comment="" countable="" domain="" elevation="" end="1567"
+			gquant="" id="m7" latLong="" mod="" motion_class="DEVIATE"
+			motion_sense="LITERAL" motion_type="PATH" scopes="" start="1560"
+			text="turning" />
+		<MOTION comment="" countable="" domain="" elevation="" end="1600"
+			gquant="" id="m8" latLong="" mod="" motion_class="DEVIATE"
+			motion_sense="LITERAL" motion_type="PATH" scopes="" start="1594"
+			text="turned" />
+		<MOTION comment="" countable="" domain="" elevation="" end="1623"
+			gquant="" id="m9" latLong="" mod="" motion_class="REACH"
+			motion_sense="LITERAL" motion_type="PATH" scopes="" start="1616"
+			text="entered" />
+		<MOTION comment="" countable="" domain="" elevation="" end="1703"
+			gquant="" id="m10" latLong="" mod="" motion_class="REACH"
+			motion_sense="FICTIVE" motion_type="COMPOUND" scopes="" start="1696"
+			text="climbed" />
+		<MOTION comment="" countable="" domain="" elevation="" end="1760"
+			gquant="" id="m11" latLong="" mod="" motion_class="FOLLOW"
+			motion_sense="LITERAL" motion_type="COMPOUND" scopes="" start="1753"
+			text="driving" />
+		<MOTION comment="" countable="" domain="" elevation="" end="1922"
+			gquant="" id="m12" latLong="" mod="" motion_class="REACH"
+			motion_sense="LITERAL" motion_type="PATH" scopes="" start="1915"
+			text="reached" />
+		<MOTION comment="" countable="" domain="" elevation="" end="2306"
+			gquant="" id="m14" latLong="" mod="" motion_class="FOLLOW"
+			motion_sense="FICTIVE" motion_type="COMPOUND" scopes="" start="2299"
+			text="climbes" />
+		<MOTION comment="" countable="" domain="" elevation="" end="2329"
+			gquant="" id="m15" latLong="" mod="" motion_class="LEAVE"
+			motion_sense="FICTIVE" motion_type="PATH" scopes="" start="2322"
+			text="exiting" />
+		<MOTION comment="" countable="" domain="" elevation="" end="2451"
+			gquant="" id="m16" latLong="" mod="" motion_class="LEAVE"
+			motion_sense="FICTIVE" motion_type="PATH" scopes="" start="2446"
+			text="exits" />
+		<MOTION comment="" countable="" domain="" elevation="" end="2469"
+			gquant="" id="m17" latLong="" mod="" motion_class="FOLLOW"
+			motion_sense="FICTIVE" motion_type="COMPOUND" scopes="" start="2463"
+			text="climbs" />
+		<MOTION comment="" countable="" domain="" elevation="" end="2761"
+			gquant="" id="m18" latLong="" mod="" motion_class="REACH"
+			motion_sense="LITERAL" motion_type="PATH" scopes="" start="2758"
+			text="got" />
+		<MOTION comment="" countable="" domain="" elevation="" end="2883"
+			gquant="" id="m19" latLong="" mod="" motion_class="LEAVE"
+			motion_sense="LITERAL" motion_type="PATH" scopes="" start="2879"
+			text="left" />
+		<MOTION comment="" countable="" domain="" elevation="" end="2923"
+			gquant="" id="m20" latLong="" mod="" motion_class="REACH"
+			motion_sense="LITERAL" motion_type="PATH" scopes="" start="2916"
+			text="visited" />
+		<MOTION comment="" countable="" domain="" elevation="" end="493"
+			gquant="" id="m1" latLong="" mod="" motion_class="CROSS"
+			motion_sense="FICTIVE" motion_type="PATH" scopes="" start="486" text="crosses" />
+		<MOTION comment="" countable="FALSE" domain="" elevation=""
+			end="985" gquant="" id="m2" latLong="" mod="" motion_class="REACH"
+			motion_sense="LITERAL" motion_type="PATH" scopes="" start="978" text="hunting" />
+		<SPATIAL_SIGNAL cluster="" comment="" end="1459" id="s10"
+			semantic_type="TOPOLOGICAL" start="1453" text="around" />
+		<SPATIAL_SIGNAL cluster="" comment="" end="152" id="s0"
+			semantic_type="TOPOLOGICAL" start="147" text="where" />
+		<SPATIAL_SIGNAL cluster="" comment="" end="1504" id="s12"
+			semantic_type="TOPOLOGICAL" start="1502" text="At" />
+		<SPATIAL_SIGNAL cluster="" comment="" end="1559" id="s13"
+			semantic_type="TOPOLOGICAL" start="1554" text="after" />
+		<SPATIAL_SIGNAL cluster="" comment="" end="1665" id="s14"
+			semantic_type="TOPOLOGICAL" start="1663" text="in" />
+		<SPATIAL_SIGNAL cluster="" comment="" end="1738" id="s11"
+			semantic_type="DIR_TOP" start="1729" text="on top of" />
+		<SPATIAL_SIGNAL cluster="" comment="" end="1973" id="s20"
+			semantic_type="DIR_TOP" start="1971" text="on" />
+		<SPATIAL_SIGNAL cluster="" comment="" end="2015" id="s22"
+			semantic_type="DIRECTIONAL" start="2004" text="in front of" />
+		<SPATIAL_SIGNAL cluster="" comment="" end="2085" id="s23"
+			semantic_type="TOPOLOGICAL" start="2076" text="inside of" />
+		<SPATIAL_SIGNAL cluster="" comment="" end="2161" id="s17"
+			semantic_type="DIR_TOP" start="2159" text="On" />
+		<SPATIAL_SIGNAL cluster="" comment="" end="2201" id="s19"
+			semantic_type="DIRECTIONAL" start="2192" text="backwards" />
+		<SPATIAL_SIGNAL cluster="" comment="" end="2241" id="s24"
+			semantic_type="DIR_TOP" start="2230" text="in front of" />
+		<SPATIAL_SIGNAL cluster="" comment="" end="244" id="s2"
+			semantic_type="TOPOLOGICAL" start="242" text="in" />
+		<SPATIAL_SIGNAL cluster="" comment="" end="2519" id="s25"
+			semantic_type="DIRECTIONAL" start="2515" text="Down" />
+		<SPATIAL_SIGNAL cluster="" comment="" end="2522" id="s26"
+			semantic_type="TOPOLOGICAL" start="2520" text="in" />
+		<SPATIAL_SIGNAL cluster="" comment="" end="2774" id="s28"
+			semantic_type="TOPOLOGICAL" start="2769" text="along" />
+		<SPATIAL_SIGNAL cluster="" comment="" end="2904" id="s27"
+			semantic_type="TOPOLOGICAL" start="2902" text="on" />
+		<SPATIAL_SIGNAL cluster="" comment="" end="391" id="s5"
+			semantic_type="TOPOLOGICAL" start="386" text="where" />
+		<SPATIAL_SIGNAL cluster="" comment="" end="439" id="s6"
+			semantic_type="TOPOLOGICAL" start="437" text="on" />
+		<MOTION_SIGNAL comment="" end="1176" id="ms9"
+			motion_signal_type="PATH" start="1174" text="to" />
+		<MOTION_SIGNAL comment="" end="1231" id="ms10"
+			motion_signal_type="PATH" start="1227" text="left" />
+		<MOTION_SIGNAL comment="" end="1234" id="ms11"
+			motion_signal_type="PATH" start="1232" text="to" />
+		<MOTION_SIGNAL comment="" end="139" id="ms0"
+			motion_signal_type="PATH" start="137" text="to" />
+		<MOTION_SIGNAL comment="" end="1572" id="ms4"
+			motion_signal_type="PATH" start="1568" text="left" />
+		<MOTION_SIGNAL comment="" end="1577" id="ms5"
+			motion_signal_type="PATH" start="1573" text="from" />
+		<MOTION_SIGNAL comment="" end="1611" id="ms6"
+			motion_signal_type="PATH" start="1607" text="left" />
+		<MOTION_SIGNAL comment="" end="1706" id="ms1"
+			motion_signal_type="PATH" start="1704" text="up" />
+		<MOTION_SIGNAL comment="" end="1709" id="ms2"
+			motion_signal_type="PATH" start="1707" text="to" />
+		<MOTION_SIGNAL comment="" end="1766" id="ms3"
+			motion_signal_type="PATH" start="1761" text="along" />
+		<MOTION_SIGNAL comment="" end="2311" id="ms7"
+			motion_signal_type="PATH" start="2307" text="down" />
+		<MOTION_SIGNAL comment="" end="2474" id="ms12"
+			motion_signal_type="PATH" start="2470" text="down" />
+		<MOTION_SIGNAL comment="" end="2887" id="ms13"
+			motion_signal_type="PATH" start="2884" text="for" />
+		<MEASURE comment="" end="1378" id="me3" start="1372" text="nearby"
+			unit="" value="NEAR" />
+		<MEASURE comment="" end="1553" id="me4" start="1542" text="half a mile"
+			unit="miles" value="0.5" />
+		<MEASURE comment="" end="1882" id="me5" start="1864"
+			text="few hundred meters" unit="meters" value="gt100, lt1000" />
+		<MEASURE comment="" end="207" id="me0" start="201" text="600 km"
+			unit="kilometers" value="600" />
+		<MEASURE comment="" end="224" id="me1" start="209" text="about 380 miles"
+			unit="miles" value="~380" />
+		<MEASURE comment="" end="2371" id="me6" start="2361" text="179 meters"
+			unit="meters" value="179" />
+		<MEASURE comment="" end="2729" id="me7" start="2720" text="2 storeys"
+			unit="stories" value="2" />
+		<MEASURE comment="" end="289" id="me2" start="284" text="10 km"
+			unit="kilometers" value="10" />
+		<QSLINK comment="" fromID="e0" fromText="lives" id="qsl0"
+			landmark="pl0" relType="IN" toID="pl0" toText="Oradea" trajector="e0"
+			trigger="s0" />
+		<QSLINK comment="" fromID="se4" fromText="people" id="qsl10"
+			landmark="pl11" relType="IN" toID="pl11" toText="Oradea" trajector="se4"
+			trigger="" />
+		<QSLINK comment="" fromID="se18" fromText="springs" id="qsl11"
+			landmark="pl27" relType="IN" toID="pl27" toText="Baile 1 Mai"
+			trajector="se18" trigger="" />
+		<QSLINK comment="" fromID="se19" fromText="swimming-pools" id="qsl12"
+			landmark="pl28" relType="IN" toID="pl28" toText="there" trajector="se19"
+			trigger="" />
+		<QSLINK comment="" fromID="se23" fromText="water" id="qsl13"
+			landmark="pl33" relType="IN" toID="pl33" toText="parts" trajector="se23"
+			trigger="s10" />
+		<QSLINK comment="" fromID="m8" fromText="turned" id="qsl14"
+			landmark="se20" relType="DC" toID="se20" toText="sign" trajector="m8"
+			trigger="s12" />
+		<QSLINK comment="" fromID="se20" fromText="sign" id="qsl15"
+			landmark="m7" relType="DC" toID="m7" toText="turning" trajector="se20"
+			trigger="s13" />
+		<QSLINK comment="" fromID="se21" fromText="We" id="qsl16"
+			landmark="pl36" relType="IN" toID="pl36" toText="region" trajector="se21"
+			trigger="s14" />
+		<QSLINK comment="" fromID="e5" fromText="lies" id="qsl17"
+			landmark="pl38" relType="EC" toID="pl38" toText="hill" trajector="e5"
+			trigger="s11" />
+		<QSLINK comment="" fromID="pl40" fromText="end" id="qsl18"
+			landmark="pl41" relType="TPP" toID="pl41" toText="village" trajector="pl40"
+			trigger="" />
+		<QSLINK comment="" fromID="pl1" fromText="Oradea" id="qsl2"
+			landmark="pl3" relType="IN" toID="pl3" toText="part" trajector="pl1"
+			trigger="s2" />
+		<QSLINK comment="" fromID="e6" fromText="lies" id="qsl20"
+			landmark="p16" relType="EC" toID="p16" toText="road" trajector="e6"
+			trigger="s20" />
+		<QSLINK comment="" fromID="p16" fromText="road" id="qsl21"
+			landmark="pl44" relType="IN" toID="pl44" toText="Rontau" trajector="p16"
+			trigger="" />
+		<QSLINK comment="" fromID="e7" fromText="lies" id="qsl22"
+			landmark="pl47" relType="IN" toID="pl47" toText="house" trajector="e7"
+			trigger="s23" />
+		<QSLINK comment="" fromID="se28" fromText="houses" id="qsl23"
+			landmark="pl48" relType="EC" toID="pl48" toText="sides" trajector="se28"
+			trigger="s17" />
+		<QSLINK comment="" fromID="pl49" fromText="hill" id="qsl24"
+			landmark="se29" relType="DC" toID="se29" toText="us" trajector="pl49"
+			trigger="s24" />
+		<QSLINK comment="" fromID="se31" fromText="buildings" id="qsl25"
+			landmark="p22" relType="IN" toID="p22" toText="valley" trajector="se31"
+			trigger="s26" />
+		<QSLINK comment="" fromID="se31" fromText="buildings" id="qsl26"
+			landmark="pl52" relType="IN" toID="pl52" toText="Baile 1 Mai"
+			trajector="se31" trigger="" />
+		<QSLINK comment="" fromID="m20" fromText="visited" id="qsl27"
+			landmark="p25" relType="IN" toID="p25" toText="way" trajector="m20"
+			trigger="s27" />
+		<QSLINK comment="" fromID="e1" fromText="lies" id="qsl30"
+			landmark="pl8" relType="IN" toID="pl8" toText="" trajector="e1"
+			trigger="s5" />
+		<QSLINK comment="" fromID="pl19" fromText="" id="qsl31"
+			landmark="pl22" relType="EC" toID="pl22" toText="village" trajector="pl19"
+			trigger="" />
+		<QSLINK comment="" fromID="pl18" fromText="" id="qsl32"
+			landmark="pl22" relType="EC" toID="pl22" toText="village" trajector="pl18"
+			trigger="" />
+		<QSLINK comment="" fromID="pl16" fromText="" id="qsl33"
+			landmark="pl9" relType="EC" toID="pl9" toText="centre" trajector="pl16"
+			trigger="" />
+		<QSLINK comment="" fromID="pl17" fromText="" id="qsl34"
+			landmark="pl9" relType="EC" toID="pl9" toText="centre" trajector="pl17"
+			trigger="" />
+		<QSLINK comment="" fromID="p0" fromText="border" id="qsl35"
+			landmark="pl5" relType="EC" toID="pl5" toText="Hungary" trajector="p0"
+			trigger="" />
+		<QSLINK comment="" fromID="p0" fromText="border" id="qsl36"
+			landmark="pl4" relType="EC" toID="pl4" toText="Romania" trajector="p0"
+			trigger="" />
+		<QSLINK comment="" fromID="p23" fromText="way" id="qsl37"
+			landmark="p24" relType="IN" toID="p24" toText="road" trajector="p23"
+			trigger="s28" />
+		<QSLINK comment="" fromID="pl3" fromText="part" id="qsl4"
+			landmark="pl4" relType="TPP" toID="pl4" toText="Romania" trajector="pl3"
+			trigger="" />
+		<QSLINK comment="" fromID="pl9" fromText="centre" id="qsl5"
+			landmark="pl10" relType="NTPP" toID="pl10" toText="city" trajector="pl9"
+			trigger="s7" />
+		<QSLINK comment="" fromID="e1" fromText="lies" id="qsl6"
+			landmark="p3" relType="EC" toID="p3" toText="river" trajector="e1"
+			trigger="s6" />
+		<QSLINK comment="" fromID="se1" fromText="buildings" id="qsl7"
+			landmark="pl11" relType="IN" toID="pl11" toText="Oradea" trajector="se1"
+			trigger="" />
+		<QSLINK comment="" fromID="se2" fromText="clubs" id="qsl8"
+			landmark="pl11" relType="IN" toID="pl11" toText="Oradea" trajector="se2"
+			trigger="" />
+		<QSLINK comment="" fromID="se3" fromText="cafes" id="qsl9"
+			landmark="pl11" relType="IN" toID="pl11" toText="Oradea" trajector="se3"
+			trigger="" />
+		<OLINK comment="" frame_type="INTRINSIC" fromID="e5" fromText="lies"
+			id="ol0" landmark="pl38" projective="FALSE" referencePt="pl38"
+			relType="ABOVE" toID="pl38" toText="hill" trajector="e5" trigger="s11" />
+		<OLINK comment="" frame_type="INTRINSIC" fromID="e6" fromText="lies"
+			id="ol1" landmark="p16" projective="FALSE" referencePt="p16" relType="ABOVE"
+			toID="p16" toText="road" trajector="e6" trigger="s20" />
+		<OLINK comment="" frame_type="INTRINSIC" fromID="e6" fromText="lies"
+			id="ol2" landmark="pl45" projective="FALSE" referencePt="pl45"
+			relType="FRONT" toID="pl45" toText="church" trajector="e6" trigger="s22" />
+		<OLINK comment="" frame_type="INTRINSIC" fromID="se28" fromText="houses"
+			id="ol3" landmark="pl48" projective="FALSE" referencePt="pl48"
+			relType="ABOVE" toID="pl48" toText="sides" trajector="se28" trigger="s17" />
+		<OLINK comment="" frame_type="INTRINSIC" fromID="p19" fromText="road"
+			id="ol4" landmark="se30" projective="FALSE" referencePt="se30"
+			relType="BEHIND" toID="se30" toText="we" trajector="p19" trigger="s19" />
+		<OLINK comment="" frame_type="INTRINSIC" fromID="pl49" fromText="hill"
+			id="ol5" landmark="se29" projective="FALSE" referencePt="se29"
+			relType="FRONT" toID="se29" toText="us" trajector="pl49" trigger="s24" />
+		<OLINK comment="" frame_type="RELATIVE" fromID="p0" fromText="border"
+			id="ol6" landmark="pl5" projective="FALSE" referencePt="pl4" relType="ACROSS"
+			toID="pl5" toText="Hungary" trajector="p0" trigger="" />
+		<OLINK comment="" frame_type="INTRINSIC" fromID="p22" fromText="valley"
+			id="ol7" landmark="pl53" projective="TRUE" referencePt="pl53"
+			relType="BELOW" toID="pl53" toText="" trajector="p22" trigger="s25" />
+		<MOVELINK comment="" fromID="m0" fromText="went" goal="pl0"
+			goal_reached="YES" id="mvl0" landmark="" midPoint="" motion_signalID="ms0"
+			mover="se0" pathID="" source="" toID="se0" toText="we" trigger="m0" />
+		<MOVELINK comment="" fromID="m1" fromText="crosses" goal="pl17"
+			goal_reached="YES" id="mvl1" landmark="" midPoint="pl9"
+			motion_signalID="" mover="p3" pathID="" source="pl16" toID="p3"
+			toText="river" trigger="m1" />
+		<MOVELINK comment="" fromID="m10" fromText="climbed" goal="pl37"
+			goal_reached="YES" id="mvl10" landmark="" midPoint=""
+			motion_signalID="ms1, ms2" mover="p12" pathID="" source="" toID="p12"
+			toText="road" trigger="m10" />
+		<MOVELINK comment="" fromID="m11" fromText="driving" goal=""
+			goal_reached="" id="mvl11" landmark="" midPoint="" motion_signalID="ms3"
+			mover="se26" pathID="p13" source="" toID="se26" toText="us" trigger="m11" />
+		<MOVELINK comment="" fromID="m12" fromText="reached" goal="pl42"
+			goal_reached="YES" id="mvl12" landmark="" midPoint=""
+			motion_signalID="" mover="se27" pathID="" source="" toID="se27"
+			toText="we" trigger="m12" />
+		<MOVELINK comment="" fromID="m14" fromText="climbes" goal=""
+			goal_reached="" id="mvl13" landmark="" midPoint="" motion_signalID="ms7"
+			mover="p17" pathID="p18" source="" toID="p17" toText="road" trigger="m14" />
+		<MOVELINK comment="" fromID="m15" fromText="exiting" goal=""
+			goal_reached="" id="mvl14" landmark="" midPoint="" motion_signalID=""
+			mover="p17" pathID="" source="pl50" toID="p17" toText="road" trigger="m15" />
+		<MOVELINK comment="" fromID="m16" fromText="exits" goal=""
+			goal_reached="" id="mvl15" landmark="" midPoint="" motion_signalID=""
+			mover="p21" pathID="" source="pl51" toID="p21" toText="road" trigger="m16" />
+		<MOVELINK comment="" fromID="m17" fromText="climbs" goal=""
+			goal_reached="" id="mvl16" landmark="" midPoint="" motion_signalID="ms12"
+			mover="p21" pathID="p20" source="" toID="p21" toText="road" trigger="m17" />
+		<MOVELINK comment="" fromID="m18" fromText="got" goal="pl55"
+			goal_reached="YES" id="mvl17" landmark="" midPoint=""
+			motion_signalID="" mover="se38" pathID="p24" source="" toID="se38"
+			toText="we" trigger="m18" />
+		<MOVELINK comment="" fromID="m19" fromText="left" goal="pl56"
+			goal_reached="UNCERTAIN" id="mvl18" landmark="" midPoint=""
+			motion_signalID="ms13" mover="se41" pathID="p25" source="pl58" toID="se41"
+			toText="we" trigger="m19" />
+		<MOVELINK comment="" fromID="m20" fromText="visited" goal="pl57"
+			goal_reached="YES" id="mvl19" landmark="" midPoint=""
+			motion_signalID="" mover="se36" pathID="" source="" toID="se36"
+			toText="we" trigger="m20" />
+		<MOVELINK comment="Generic motion" fromID="m2" fromText="hunting"
+			goal="pl13" goal_reached="UNCERTAIN" id="mvl2" landmark="" midPoint=""
+			motion_signalID="" mover="" pathID="" source="" toID="m2" toText="hunting"
+			trigger="m2" />
+		<MOVELINK comment="" fromID="m3" fromText="visit" goal="pl20"
+			goal_reached="UNCERTAIN" id="mvl3" landmark="" midPoint=""
+			motion_signalID="" mover="se7" pathID="" source="" toID="se7" toText="we"
+			trigger="m3" />
+		<MOVELINK comment="" fromID="m4" fromText="took" goal="pl21"
+			goal_reached="YES" id="mvl4" landmark="" midPoint="" motion_signalID="ms9"
+			mover="se22" pathID="p14" source="" toID="se22" toText="We" trigger="m4" />
+		<MOVELINK comment="" fromID="m5" fromText="crossed" goal="pl19"
+			goal_reached="YES" id="mvl5" landmark="" midPoint="pl22"
+			motion_signalID="" mover="se22" pathID="" source="pl18" toID="se22"
+			toText="We" trigger="m5" />
+		<MOVELINK comment="" fromID="m6" fromText="turned" goal="pl25"
+			goal_reached="YES" id="mvl6" landmark="" midPoint="" motion_signalID="ms10, ms11"
+			mover="se22" pathID="" source="p14" toID="se22" toText="We" trigger="m6" />
+		<MOVELINK comment="" fromID="m7" fromText="turning" goal=""
+			goal_reached="" id="mvl7" landmark="" midPoint="" motion_signalID="ms4, ms5"
+			mover="se25" pathID="" source="p11" toID="se25" toText="we" trigger="m7" />
+		<MOVELINK comment="" fromID="m8" fromText="turned" goal=""
+			goal_reached="" id="mvl8" landmark="" midPoint="" motion_signalID="ms6"
+			mover="se25" pathID="" source="p15" toID="se25" toText="we" trigger="m8" />
+		<MOVELINK comment="" fromID="m9" fromText="entered" goal="pl34"
+			goal_reached="YES" id="mvl9" landmark="" midPoint="" motion_signalID=""
+			mover="se25" pathID="" source="" toID="se25" toText="we" trigger="m9" />
+		<MEASURELINK comment="" endPoint1="" endPoint2="" fromID="pl1"
+			fromText="Oradea" id="ml0" landmark="pl2" relType="DISTANCE" toID="pl2"
+			toText="Bucharest" trajector="pl1" val="me1" />
+		<MEASURELINK comment="" endPoint1="" endPoint2="" fromID="pl1"
+			fromText="Oradea" id="ml1" landmark="pl2" relType="DISTANCE" toID="pl2"
+			toText="Bucharest" trajector="pl1" val="me0" />
+		<MEASURELINK comment="" endPoint1="" endPoint2="" fromID="pl1"
+			fromText="Oradea" id="ml2" landmark="p0" relType="DISTANCE" toID="p0"
+			toText="border" trajector="pl1" val="me2" />
+		<MEASURELINK comment="" endPoint1="" endPoint2="" fromID="se20"
+			fromText="sign" id="ml4" landmark="m7" relType="DISTANCE" toID="m7"
+			toText="turning" trajector="se20" val="me4" />
+		<MEASURELINK comment="" endPoint1="" endPoint2="" fromID="m12"
+			fromText="reached" id="ml5" landmark="pl40" relType="DISTANCE" toID="pl40"
+			toText="end" trajector="m12" val="me5" />
+		<MEASURELINK comment="" endPoint1="" endPoint2="" fromID="se35"
+			fromText="house" id="ml6" landmark="se35" relType="HEIGHT" toID="se35"
+			toText="house" trajector="se35" val="me7" />
+		<MEASURELINK comment="" endPoint1="" endPoint2="" fromID="pl29"
+			fromText="Baile Felix" id="ml7" landmark="pl15" relType="DISTANCE"
+			toID="pl15" toText="" trajector="pl29" val="me3" />
+		<METALINK comment="" fromID="pl1" fromText="Oradea" id="metal0"
+			objectID1="pl1" objectID2="pl0" relType="COREFERENCE" toID="pl0"
+			toText="Oradea" />
+		<METALINK comment="" fromID="pl11" fromText="Oradea" id="metal1"
+			objectID1="pl11" objectID2="pl0" relType="COREFERENCE" toID="pl0"
+			toText="Oradea" />
+		<METALINK comment="" fromID="pl10" fromText="city" id="metal10"
+			objectID1="pl10" objectID2="pl0" relType="COREFERENCE" toID="pl0"
+			toText="Oradea" />
+		<METALINK comment="" fromID="pl24" fromText="Sanmartin" id="metal11"
+			objectID1="pl24" objectID2="pl22" relType="COREFERENCE" toID="pl22"
+			toText="village" />
+		<METALINK comment="" fromID="pl26" fromText="1 Mai Spa" id="metal12"
+			objectID1="pl26" objectID2="pl25" relType="COREFERENCE" toID="pl25"
+			toText="Baile 1 Mai" />
+		<METALINK comment="" fromID="pl27" fromText="Baile 1 Mai" id="metal13"
+			objectID1="pl27" objectID2="pl25" relType="COREFERENCE" toID="pl25"
+			toText="Baile 1 Mai" />
+		<METALINK comment="" fromID="pl28" fromText="there" id="metal14"
+			objectID1="pl28" objectID2="pl25" relType="COREFERENCE" toID="pl25"
+			toText="Baile 1 Mai" />
+		<METALINK comment="" fromID="pl30" fromText="Felix Spa" id="metal15"
+			objectID1="pl30" objectID2="pl29" relType="COREFERENCE" toID="pl29"
+			toText="Baile Felix" />
+		<METALINK comment="" fromID="se24" fromText="it" id="metal16"
+			objectID1="se24" objectID2="se23" relType="COREFERENCE" toID="se23"
+			toText="water" />
+		<METALINK comment="" fromID="pl35" fromText="Rontau" id="metal17"
+			objectID1="pl35" objectID2="pl34" relType="COREFERENCE" toID="pl34"
+			toText="village" />
+		<METALINK comment="" fromID="pl37" fromText="Rontau" id="metal18"
+			objectID1="pl37" objectID2="pl34" relType="COREFERENCE" toID="pl34"
+			toText="village" />
+		<METALINK comment="" fromID="pl41" fromText="village" id="metal19"
+			objectID1="pl41" objectID2="pl34" relType="COREFERENCE" toID="pl34"
+			toText="village" />
+		<METALINK comment="" fromID="pl12" fromText="city" id="metal2"
+			objectID1="pl12" objectID2="pl0" relType="COREFERENCE" toID="pl0"
+			toText="Oradea" />
+		<METALINK comment="" fromID="pl44" fromText="Rontau" id="metal20"
+			objectID1="pl44" objectID2="pl34" relType="COREFERENCE" toID="pl34"
+			toText="village" />
+		<METALINK comment="" fromID="pl50" fromText="village" id="metal21"
+			objectID1="pl50" objectID2="pl34" relType="COREFERENCE" toID="pl34"
+			toText="village" />
+		<METALINK comment="" fromID="pl51" fromText="Rontau" id="metal22"
+			objectID1="pl51" objectID2="pl34" relType="COREFERENCE" toID="pl34"
+			toText="village" />
+		<METALINK comment="" fromID="pl52" fromText="Baile 1 Mai" id="metal23"
+			objectID1="pl52" objectID2="pl25" relType="COREFERENCE" toID="pl25"
+			toText="Baile 1 Mai" />
+		<METALINK comment="" fromID="pl46" fromText="church" id="metal24"
+			objectID1="pl46" objectID2="pl45" relType="COREFERENCE" toID="pl45"
+			toText="church" />
+		<METALINK comment="" fromID="p16" fromText="road" id="metal25"
+			objectID1="p16" objectID2="p13" relType="COREFERENCE" toID="p13"
+			toText="road" />
+		<METALINK comment="" fromID="p19" fromText="road" id="metal26"
+			objectID1="p19" objectID2="p13" relType="COREFERENCE" toID="p13"
+			toText="road" />
+		<METALINK comment="" fromID="p17" fromText="road" id="metal27"
+			objectID1="p17" objectID2="p13" relType="COREFERENCE" toID="p13"
+			toText="road" />
+		<METALINK comment="" fromID="p21" fromText="road" id="metal28"
+			objectID1="p21" objectID2="p13" relType="COREFERENCE" toID="p13"
+			toText="road" />
+		<METALINK comment="" fromID="p24" fromText="road" id="metal29"
+			objectID1="p24" objectID2="p13" relType="COREFERENCE" toID="p13"
+			toText="road" />
+		<METALINK comment="" fromID="pl31" fromText="city" id="metal3"
+			objectID1="pl31" objectID2="pl0" relType="COREFERENCE" toID="pl0"
+			toText="Oradea" />
+		<METALINK comment="" fromID="pl42" fromText="spot" id="metal30"
+			objectID1="pl42" objectID2="pl20" relType="COREFERENCE" toID="pl20"
+			toText="N47E22" />
+		<METALINK comment="" fromID="pl43" fromText="confluence" id="metal31"
+			objectID1="pl43" objectID2="pl20" relType="COREFERENCE" toID="pl20"
+			toText="N47E22" />
+		<METALINK comment="" fromID="pl55" fromText="there" id="metal32"
+			objectID1="pl55" objectID2="pl20" relType="COREFERENCE" toID="pl20"
+			toText="N47E22" />
+		<METALINK comment="" fromID="se0" fromText="we" id="metal33"
+			objectID1="se0" objectID2="se5" relType="SUBCOREFERENCE" toID="se5"
+			toText="We" />
+		<METALINK comment="" fromID="se7" fromText="we" id="metal34"
+			objectID1="se7" objectID2="se0" relType="COREFERENCE" toID="se0"
+			toText="we" />
+		<METALINK comment="" fromID="se8" fromText="We" id="metal35"
+			objectID1="se8" objectID2="se0" relType="COREFERENCE" toID="se0"
+			toText="we" />
+		<METALINK comment="" fromID="se10" fromText="myself" id="metal36"
+			objectID1="se10" objectID2="se9" relType="SUBCOREFERENCE" toID="se9"
+			toText="group" />
+		<METALINK comment="" fromID="se12" fromText="Andra" id="metal38"
+			objectID1="se12" objectID2="se11" relType="COREFERENCE" toID="se11"
+			toText="girlfriend" />
+		<METALINK comment="" fromID="se14" fromText="Mihnea" id="metal39"
+			objectID1="se14" objectID2="se13" relType="COREFERENCE" toID="se13"
+			toText="brother" />
+		<METALINK comment="" fromID="pl32" fromText="Oradea" id="metal4"
+			objectID1="pl32" objectID2="pl0" relType="COREFERENCE" toID="pl0"
+			toText="Oradea" />
+		<METALINK comment="" fromID="pl23" fromText="Oradea" id="metal41"
+			objectID1="pl23" objectID2="pl0" relType="COREFERENCE" toID="pl0"
+			toText="Oradea" />
+		<METALINK comment="" fromID="se11" fromText="girlfriend" id="metal42"
+			objectID1="se11" objectID2="se9" relType="SUBCOREFERENCE" toID="se9"
+			toText="group" />
+		<METALINK comment="" fromID="se13" fromText="brother" id="metal43"
+			objectID1="se13" objectID2="se9" relType="SUBCOREFERENCE" toID="se9"
+			toText="group" />
+		<METALINK comment="" fromID="se15" fromText="cousins" id="metal44"
+			objectID1="se15" objectID2="se9" relType="SUBCOREFERENCE" toID="se9"
+			toText="group" />
+		<METALINK comment="" fromID="se16" fromText="friend" id="metal45"
+			objectID1="se16" objectID2="se9" relType="SUBCOREFERENCE" toID="se9"
+			toText="group" />
+		<METALINK comment="" fromID="se9" fromText="group" id="metal46"
+			objectID1="se9" objectID2="se0" relType="COREFERENCE" toID="se0"
+			toText="we" />
+		<METALINK comment="" fromID="se22" fromText="We" id="metal47"
+			objectID1="se22" objectID2="se0" relType="COREFERENCE" toID="se0"
+			toText="we" />
+		<METALINK comment="" fromID="se25" fromText="we" id="metal48"
+			objectID1="se25" objectID2="se0" relType="COREFERENCE" toID="se0"
+			toText="we" />
+		<METALINK comment="" fromID="se21" fromText="We" id="metal49"
+			objectID1="se21" objectID2="se0" relType="COREFERENCE" toID="se0"
+			toText="we" />
+		<METALINK comment="" fromID="pl56" fromText="Bucharest" id="metal5"
+			objectID1="pl56" objectID2="pl2" relType="COREFERENCE" toID="pl2"
+			toText="Bucharest" />
+		<METALINK comment="" fromID="se26" fromText="us" id="metal50"
+			objectID1="se26" objectID2="se0" relType="COREFERENCE" toID="se0"
+			toText="we" />
+		<METALINK comment="" fromID="se27" fromText="we" id="metal51"
+			objectID1="se27" objectID2="se0" relType="COREFERENCE" toID="se0"
+			toText="we" />
+		<METALINK comment="" fromID="se30" fromText="we" id="metal52"
+			objectID1="se30" objectID2="se0" relType="COREFERENCE" toID="se0"
+			toText="we" />
+		<METALINK comment="" fromID="p18" fromText="hill" id="metal53"
+			objectID1="p18" objectID2="pl38" relType="COREFERENCE" toID="pl38"
+			toText="hill" />
+		<METALINK comment="" fromID="p20" fromText="hill" id="metal54"
+			objectID1="p20" objectID2="pl38" relType="COREFERENCE" toID="pl38"
+			toText="hill" />
+		<METALINK comment="" fromID="se35" fromText="house" id="metal55"
+			objectID1="se35" objectID2="se34" relType="COREFERENCE" toID="se34"
+			toText="one" />
+		<METALINK comment="" fromID="pl6" fromText="It" id="metal6"
+			objectID1="pl6" objectID2="pl0" relType="COREFERENCE" toID="pl0"
+			toText="Oradea" />
+		<METALINK comment="" fromID="se29" fromText="us" id="metal60"
+			objectID1="se29" objectID2="se0" relType="COREFERENCE" toID="se0"
+			toText="we" />
+		<METALINK comment="" fromID="pl14" fromText="" id="metal64"
+			objectID1="pl14" objectID2="pl20" relType="COREFERENCE" toID="pl20"
+			toText="N47E22" />
+		<METALINK comment="" fromID="se17" fromText="them" id="metal65"
+			objectID1="se17" objectID2="se15" relType="COREFERENCE" toID="se15"
+			toText="cousins" />
+		<METALINK comment="" fromID="se37" fromText="we" id="metal66"
+			objectID1="se37" objectID2="se0" relType="COREFERENCE" toID="se0"
+			toText="we" />
+		<METALINK comment="" fromID="se38" fromText="we" id="metal67"
+			objectID1="se38" objectID2="se0" relType="COREFERENCE" toID="se0"
+			toText="we" />
+		<METALINK comment="" fromID="se41" fromText="we" id="metal68"
+			objectID1="se41" objectID2="se0" relType="COREFERENCE" toID="se0"
+			toText="we" />
+		<METALINK comment="" fromID="se36" fromText="we" id="metal69"
+			objectID1="se36" objectID2="se0" relType="COREFERENCE" toID="se0"
+			toText="we" />
+		<METALINK comment="" fromID="pl7" fromText="city" id="metal7"
+			objectID1="pl7" objectID2="pl0" relType="COREFERENCE" toID="pl0"
+			toText="Oradea" />
+		<METALINK comment="" fromID="se10" fromText="myself" id="metal71"
+			objectID1="se10" objectID2="se6" relType="COREFERENCE" toID="se6"
+			toText="I" />
+		<METALINK comment="" fromID="p4" fromText="Crisul Repede" id="metal8"
+			objectID1="p4" objectID2="p3" relType="COREFERENCE" toID="p3" toText="river" />
+		<METALINK comment="" fromID="p5" fromText="Fast Cris" id="metal9"
+			objectID1="p5" objectID2="p3" relType="COREFERENCE" toID="p3" toText="river" />
+		<METALINK comment="" fromID="e2" fromText="end" id="metal37"
+			objectID1="e2" objectID2="pl8" relType="SUBCOREFERENCE" toID="pl8"
+			toText="" />
+		<METALINK comment="" fromID="e3" fromText="begin" id="metal40"
+			objectID1="e3" objectID2="pl8" relType="SUBCOREFERENCE" toID="pl8"
+			toText="" />
+		<CP>47N22E</CP>
+		<URL>http://confluence.org/confluence.php?id=9786</URL>
+	</TAGS>
+	<TOKENS>
+		<s>
+			<lex ner='O' begin='2' end='13' pos='NN' label='None'>06-May-2002</lex>
+			<lex ner='O' begin='14' end='16' pos=':' label='None'>--</lex>
+			<lex ner='O' begin='17' end='19' pos='PRP' label='SPATIAL_ENTITY'>We</lex>
+			<lex begin='19' end='20'>,</lex>
+			<lex ner='O' begin='21' end='28' pos='JJ' label='None'>eastern</lex>
+			<lex ner='O' begin='29' end='39' pos='NNS' label='None'>christians</lex>
+			<lex begin='40' end='41'>(</lex>
+			<lex ner='O' begin='41' end='49' pos='NN' label='None'>orthodox</lex>
+			<lex ner='O' begin='50' end='60' pos='NNS' label='None'>christians</lex>
+			<lex begin='60' end='61'>)</lex>
+			<lex ner='O' begin='62' end='72' pos='VBD' label='None'>celebrated</lex>
+			<lex ner='O' begin='73' end='79' pos='NNP' label='None'>Easter</lex>
+			<lex ner='O' begin='80' end='84' pos='DT' label='None'>this</lex>
+			<lex ner='O' begin='85' end='89' pos='NN' label='None'>year</lex>
+			<lex ner='O' begin='90' end='92' pos='IN' label='None'>on</lex>
+			<lex ner='O' begin='93' end='96' pos='NNP' label='None'>May</lex>
+			<lex ner='O' begin='97' end='100' pos='JJ' label='None'>5th</lex>
+			<lex begin='100' end='101'>.</lex>
+		</s>
+		<s>
+			<lex CATEGORY='#word "so"' begin='102' end='104'
+				FORM='#ref-category SUBORDINATE-CONJUNCTION' ENDS-AT='#edges ending at 2'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "so"'
+				pos='RB' RULE='(1695744)' label='None' REFERENT='#word "so"'
+				POSITION-IN-RESOURCE-ARRAY='0' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':LITERAL-IN-A-RULE'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 1'>So</lex>
+			<lex begin='104' end='105'>,</lex>
+			<lex CATEGORY='#ref-category ON' begin='106' end='108'
+				FORM='#ref-category PREPOSITION' ENDS-AT='#edges ending at 4'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "on"'
+				pos='IN' RULE='#PSR251  on -  "on"' label='None' REFERENT='#ref-category ON'
+				POSITION-IN-RESOURCE-ARRAY='3' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 3'>on</lex>
+			<lex CATEGORY='#word "this"' begin='109' end='113' FORM='#ref-category DET'
+				ENDS-AT='#edges ending at 5' CONSTITUENTS='NIL' USED-IN='NIL'
+				Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "this"' pos='DT'
+				RULE='(135168 . 294912)' label='None' REFERENT='#word "this"'
+				POSITION-IN-RESOURCE-ARRAY='4' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':LITERAL-IN-A-RULE'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 4'>this</lex>
+			<lex ner='O' begin='114' end='119' pos='JJ' label='None'>short</lex>
+			<lex ner='O' begin='120' end='127' pos='NN' label='None'>holiday</lex>
+			<lex begin='127' end='128'>,</lex>
+			<lex CATEGORY='#ref-category PRONOUN/FIRST/PLURAL' begin='129'
+				end='131' FORM='#ref-category PRONOUN' ENDS-AT='#edges ending at 9'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "we"'
+				pos='PRP' RULE='#PSR810  pronoun/first/plural -  "we"' label='SPATIAL_ENTITY'
+				REFERENT='#pronoun/first/plural "we" 1' POSITION-IN-RESOURCE-ARRAY='6'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 8'>we</lex>
+			<lex CATEGORY='#ref-category go' begin='132' end='136'
+				FORM='#ref-category VERB+ED' ENDS-AT='#edges ending at 10'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "went"'
+				pos='VBD' RULE='#PSR1267  go -  "went"' label='MOTION' REFERENT='#go 1'
+				POSITION-IN-RESOURCE-ARRAY='7' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 9'>went</lex>
+			<lex CATEGORY='#ref-category TO' begin='137' end='139'
+				FORM='#ref-category PREPOSITION' ENDS-AT='#edges ending at 11'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "to"'
+				pos='TO' RULE='#PSR260  to -  "to"' label='MOTION_SIGNAL' REFERENT='#ref-category TO'
+				POSITION-IN-RESOURCE-ARRAY='9' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 10'>to</lex>
+			<lex CATEGORY='#ref-category NAME' begin='140' end='146'
+				FORM='#ref-category PROPER-NAME' ENDS-AT='#edges ending at 12'
+				CONSTITUENTS='(#word "oradea")' USED-IN='NIL' Type='SPARSER::EDGE'
+				LEFT-DAUGHTER='#word "oradea"' pos='NNP'
+				RULE=':SINGLE-UNKNOWN-CAPITALIZED-WORD' label='PLACE'
+				REFERENT='#uncategorized-name Oradea' POSITION-IN-RESOURCE-ARRAY='10'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':PROPER-NAME' ner='LOCATION'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 11'>Oradea</lex>
+			<lex CATEGORY='#word "where"' begin='147' end='152'
+				FORM='#ref-category WH-PRONOUN' ENDS-AT='#edges ending at 13'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "where"'
+				pos='WRB' RULE='(970752)' label='SPATIAL_SIGNAL' REFERENT='#word "where"'
+				POSITION-IN-RESOURCE-ARRAY='11' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':LITERAL-IN-A-RULE'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 12'>where</lex>
+			<lex CATEGORY='#ref-category PART-EVENT' begin='153' end='157'
+				FORM='#ref-category VERB+PRESENT' ENDS-AT='#edges ending at 14'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "part"'
+				pos='NN' RULE='#PSR3536  part-event -  "part"' label='None'
+				REFERENT='#ref-category PART-EVENT' POSITION-IN-RESOURCE-ARRAY='13'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 13'>part</lex>
+			<lex CATEGORY='#ref-category OF' begin='158' end='160'
+				FORM='#ref-category PREPOSITION' ENDS-AT='#edges ending at 15'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "of"'
+				pos='IN' RULE='#PSR252  of -  "of"' label='None' REFERENT='#ref-category OF'
+				POSITION-IN-RESOURCE-ARRAY='17' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 14'>of</lex>
+			<lex CATEGORY='#ref-category PRONOUN/FIRST/SINGULAR' begin='161'
+				end='163' FORM='#ref-category POSSESSIVE' ENDS-AT='#edges ending at 16'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "my"'
+				pos='PRP$' RULE='#PSR817  pronoun/first/singular -  "my"' label='None'
+				REFERENT='#pronoun/first/singular "my" 3'
+				POSITION-IN-RESOURCE-ARRAY='19' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 15'>my</lex>
+			<lex ner='O' begin='164' end='174' pos='NN' label='None'>girlfriend</lex>
+			<lex begin='174' end='176'>’s</lex>
+			<lex begin='177' end='183'>family</lex>
+			<lex begin='184' end='189'>lives</lex>
+			<lex begin='189' end='190'>.</lex>
+		</s>
+		<s>
+			<lex CATEGORY='#ref-category NAME' begin='191' end='197'
+				FORM='#ref-category PROPER-NAME' ENDS-AT='#edges ending at 2'
+				CONSTITUENTS='(#word "oradea")' USED-IN='NIL' Type='SPARSER::EDGE'
+				LEFT-DAUGHTER='#word "oradea"' pos='NNP'
+				RULE=':SINGLE-UNKNOWN-CAPITALIZED-WORD' label='PLACE'
+				REFERENT='#uncategorized-name Oradea' POSITION-IN-RESOURCE-ARRAY='0'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':PROPER-NAME' ner='LOCATION'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 1'>Oradea</lex>
+			<lex CATEGORY='#word "is"' begin='198' end='200' FORM='NIL'
+				ENDS-AT='#edges ending at 3' CONSTITUENTS='NIL' USED-IN='NIL'
+				Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "is"' pos='VBZ' RULE='(187)'
+				label='None' REFERENT='#word "is"' POSITION-IN-RESOURCE-ARRAY='1'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':LITERAL-IN-A-RULE' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 2'>is</lex>
+			<lex CATEGORY='#ref-category MEASUREMENT' begin='201' end='204'
+				FORM='#ref-category NP' ENDS-AT='#edges ending at 5' CONSTITUENTS='NIL'
+				USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge4 3 number 4'
+				pos='CD' RULE='#PSR537  measurement -  number unit-of-measure'
+				label='MEASURE' REFERENT='#measurement 1'
+				POSITION-IN-RESOURCE-ARRAY='6' SPANNED-WORDS='NIL'
+				RIGHT-DAUGHTER='#edge5 4 unit-of-measure 5' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 3'>600</lex>
+			<lex CATEGORY='#ref-category MEASUREMENT' begin='205' end='207'
+				FORM='#ref-category NP' ENDS-AT='#edges ending at 5' CONSTITUENTS='NIL'
+				USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge4 3 number 4'
+				pos='NN' RULE='#PSR537  measurement -  number unit-of-measure'
+				label='MEASURE' REFERENT='#measurement 1'
+				POSITION-IN-RESOURCE-ARRAY='6' SPANNED-WORDS='NIL'
+				RIGHT-DAUGHTER='#edge5 4 unit-of-measure 5' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 3'>km</lex>
+			<lex begin='208' end='209'>(</lex>
+			<lex ner='O' begin='209' end='214' pos='IN' label='MEASURE'>about</lex>
+			<lex ner='O' begin='215' end='218' pos='CD' label='MEASURE'>380</lex>
+			<lex ner='O' begin='219' end='224' pos='NNS' label='MEASURE'>miles</lex>
+			<lex begin='224' end='225'>)</lex>
+			<lex ner='O' begin='226' end='230' pos='IN' label='None'>from</lex>
+			<lex ner='LOCATION' begin='231' end='240' pos='NNP' label='PLACE'>Bucharest</lex>
+			<lex begin='240' end='241'>,</lex>
+			<lex ner='O' begin='242' end='244' pos='IN' label='SPATIAL_SIGNAL'>in</lex>
+			<lex ner='O' begin='245' end='248' pos='DT' label='None'>the</lex>
+			<lex ner='O' begin='249' end='261' pos='JJ' label='None'>northwestern</lex>
+			<lex ner='O' begin='262' end='266' pos='NN' label='PLACE'>part</lex>
+			<lex ner='O' begin='267' end='269' pos='IN' label='None'>of</lex>
+			<lex ner='LOCATION' begin='270' end='277' pos='NNP' label='PLACE'>Romania</lex>
+			<lex begin='277' end='278'>,</lex>
+			<lex ner='O' begin='279' end='283' pos='RB' label='None'>only</lex>
+			<lex ner='O' begin='284' end='286' pos='CD' label='MEASURE'>10</lex>
+			<lex ner='O' begin='287' end='289' pos='NN' label='MEASURE'>km</lex>
+			<lex ner='O' begin='290' end='294' pos='IN' label='None'>from</lex>
+			<lex ner='O' begin='295' end='298' pos='DT' label='None'>the</lex>
+			<lex ner='O' begin='299' end='305' pos='NN' label='PATH'>border</lex>
+			<lex ner='O' begin='306' end='310' pos='IN' label='None'>with</lex>
+			<lex ner='LOCATION' begin='311' end='318' pos='NNP' label='PLACE'>Hungary</lex>
+			<lex begin='318' end='319'>.</lex>
+		</s>
+		<s>
+			<lex CATEGORY='#ref-category PRONOUN/INANIMATE' begin='320' end='322'
+				FORM='#ref-category PRONOUN' ENDS-AT='#edges ending at 2'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "it"'
+				pos='PRP' RULE='#PSR809  pronoun/inanimate -  "it"' label='PLACE'
+				REFERENT='#pronoun/inanimate "it" 1' POSITION-IN-RESOURCE-ARRAY='0'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 1'>It</lex>
+			<lex ner='O' begin='323' end='325' pos='VBZ' label='None'>is</lex>
+			<lex ner='O' begin='326' end='327' pos='DT' label='None'>a</lex>
+			<lex ner='O' begin='328' end='331' pos='JJ' label='None'>big</lex>
+			<lex ner='O' begin='332' end='336' pos='NN' label='PLACE'>city</lex>
+			<lex begin='337' end='338'>(</lex>
+			<lex ner='O' begin='338' end='342' pos='JJR' label='None'>more</lex>
+			<lex ner='O' begin='343' end='347' pos='IN' label='None'>than</lex>
+			<lex ner='O' begin='348' end='355' pos='CD' label='None'>220,000</lex>
+			<lex ner='O' begin='356' end='366' pos='NN' label='None'>population</lex>
+			<lex begin='366' end='367'>)</lex>
+			<lex ner='O' begin='368' end='372' pos='WDT' label='None'>that</lex>
+			<lex ner='O' begin='373' end='377' pos='VBZ' label='NONMOTION_EVENT'>lies</lex>
+			<lex ner='O' begin='378' end='385' pos='RB' label='None'>exactly</lex>
+			<lex ner='O' begin='386' end='391' pos='WRB' label='SPATIAL_SIGNAL'>where</lex>
+			<lex ner='O' begin='392' end='395' pos='DT' label='None'>the</lex>
+			<lex ner='O' begin='396' end='401' pos='NNS' label='PATH'>hills</lex>
+			<lex ner='O' begin='402' end='405' pos='NN' label='NONMOTION_EVENT'>end</lex>
+			<lex ner='O' begin='406' end='409' pos='CC' label='None'>and</lex>
+			<lex ner='O' begin='410' end='413' pos='DT' label='None'>the</lex>
+			<lex ner='LOCATION' begin='414' end='422' pos='NNP' label='PATH'>Pannonia</lex>
+			<lex ner='LOCATION' begin='423' end='429' pos='NNP' label='PATH'>Plains</lex>
+			<lex ner='O' begin='430' end='435' pos='VB' label='NONMOTION_EVENT'>begin</lex>
+			<lex begin='435' end='436'>,</lex>
+			<lex ner='O' begin='437' end='439' pos='IN' label='SPATIAL_SIGNAL'>on</lex>
+			<lex ner='O' begin='440' end='443' pos='DT' label='None'>the</lex>
+			<lex ner='O' begin='444' end='449' pos='NN' label='PATH'>river</lex>
+			<lex ner='O' begin='450' end='456' pos='NNP' label='PATH'>Crisul</lex>
+			<lex ner='O' begin='457' end='463' pos='NNP' label='PATH'>Repede</lex>
+			<lex begin='464' end='465'>(</lex>
+			<lex ner='O' begin='465' end='468' pos='DT' label='None'>the</lex>
+			<lex ner='O' begin='469' end='473' pos='NNP' label='PATH'>Fast</lex>
+			<lex ner='O' begin='474' end='478' pos='NNP' label='PATH'>Cris</lex>
+			<lex begin='478' end='479'>)</lex>
+			<lex begin='479' end='480'>,</lex>
+			<lex ner='O' begin='481' end='485' pos='WDT' label='None'>that</lex>
+			<lex ner='O' begin='486' end='493' pos='VBZ' label='MOTION'>crosses</lex>
+			<lex ner='O' begin='494' end='501' pos='RB' label='None'>exactly</lex>
+			<lex ner='O' begin='502' end='505' pos='DT' label='None'>the</lex>
+			<lex ner='O' begin='506' end='512' pos='NN' label='PLACE'>centre</lex>
+			<lex ner='O' begin='513' end='515' pos='IN' label='None'>of</lex>
+			<lex ner='O' begin='516' end='519' pos='DT' label='None'>the</lex>
+			<lex ner='O' begin='520' end='524' pos='NN' label='PLACE'>city</lex>
+			<lex begin='524' end='525'>.</lex>
+		</s>
+		<s>
+			<lex CATEGORY='#ref-category NAME' begin='526' end='532'
+				FORM='#ref-category PROPER-NAME' ENDS-AT='#edges ending at 2'
+				CONSTITUENTS='(#word "oradea")' USED-IN='NIL' Type='SPARSER::EDGE'
+				LEFT-DAUGHTER='#word "oradea"' pos='NNP'
+				RULE=':SINGLE-UNKNOWN-CAPITALIZED-WORD' label='PLACE'
+				REFERENT='#uncategorized-name Oradea' POSITION-IN-RESOURCE-ARRAY='0'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':PROPER-NAME' ner='LOCATION'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 1'>Oradea</lex>
+			<lex CATEGORY='#ref-category EVENT' begin='533' end='535'
+				FORM='#ref-category S' ENDS-AT='#edges ending at 6' CONSTITUENTS='NIL'
+				USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge2 2 be 3'
+				pos='VBZ' RULE='#PSR1909  event -  event location' label='None'
+				REFERENT='#be 1' POSITION-IN-RESOURCE-ARRAY='11' SPANNED-WORDS='NIL'
+				RIGHT-DAUGHTER='#edge5 3 region-type 6' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 2'>is</lex>
+			<lex CATEGORY='#ref-category EVENT' begin='536' end='537'
+				FORM='#ref-category S' ENDS-AT='#edges ending at 6' CONSTITUENTS='NIL'
+				USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge2 2 be 3'
+				pos='DT' RULE='#PSR1909  event -  event location' label='None'
+				REFERENT='#be 1' POSITION-IN-RESOURCE-ARRAY='11' SPANNED-WORDS='NIL'
+				RIGHT-DAUGHTER='#edge5 3 region-type 6' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 2'>a</lex>
+			<lex CATEGORY='#ref-category EVENT' begin='538' end='546'
+				FORM='#ref-category S' ENDS-AT='#edges ending at 6' CONSTITUENTS='NIL'
+				USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge2 2 be 3'
+				pos='JJ' RULE='#PSR1909  event -  event location' label='None'
+				REFERENT='#be 1' POSITION-IN-RESOURCE-ARRAY='11' SPANNED-WORDS='NIL'
+				RIGHT-DAUGHTER='#edge5 3 region-type 6' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 2'>medieval</lex>
+			<lex CATEGORY='#ref-category EVENT' begin='547' end='551'
+				FORM='#ref-category S' ENDS-AT='#edges ending at 6' CONSTITUENTS='NIL'
+				USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge2 2 be 3'
+				pos='NN' RULE='#PSR1909  event -  event location' label='PLACE'
+				REFERENT='#be 1' POSITION-IN-RESOURCE-ARRAY='11' SPANNED-WORDS='NIL'
+				RIGHT-DAUGHTER='#edge5 3 region-type 6' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 2'>city</lex>
+			<lex begin='551' end='552'>,</lex>
+			<lex CATEGORY='#ref-category WITH' begin='553' end='557'
+				FORM='#ref-category PREPOSITION' ENDS-AT='#edges ending at 8'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "with"'
+				pos='IN' RULE='#PSR263  with -  "with"' label='None' REFERENT='#ref-category WITH'
+				POSITION-IN-RESOURCE-ARRAY='8' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 7'>with</lex>
+			<lex CATEGORY='#ref-category BAROQUE-KIND' begin='558' end='565'
+				FORM='#ref-category COMMON-NOUN' ENDS-AT='#edges ending at 9'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "baroque"'
+				pos='JJ' RULE='#PSR3535  baroque-kind -  "baroque"' label='None'
+				REFERENT='#ref-category BAROQUE-KIND' POSITION-IN-RESOURCE-ARRAY='9'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 8'>baroque</lex>
+			<lex CATEGORY='#word "and"' begin='566' end='569' FORM='NIL'
+				ENDS-AT='#edges ending at 10' CONSTITUENTS='NIL' USED-IN='NIL'
+				Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "and"' pos='CC' RULE='(319)'
+				label='None' REFERENT='#word "and"' POSITION-IN-RESOURCE-ARRAY='12'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':LITERAL-IN-A-RULE' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 9'>and</lex>
+			<lex ner='O' begin='570' end='576' pos='JJ' label='None'>gothic</lex>
+			<lex ner='O' begin='577' end='586' pos='NNS' label='SPATIAL_ENTITY'>buildings</lex>
+			<lex begin='586' end='587'>,</lex>
+			<lex CATEGORY='#word "and"' begin='588' end='591' FORM='NIL'
+				ENDS-AT='#edges ending at 14' CONSTITUENTS='NIL' USED-IN='NIL'
+				Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "and"' pos='CC' RULE='(319)'
+				label='None' REFERENT='#word "and"' POSITION-IN-RESOURCE-ARRAY='14'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':LITERAL-IN-A-RULE' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 13'>and</lex>
+			<lex CATEGORY='#ref-category ALSO' begin='592' end='596'
+				FORM='#ref-category ADVERB' ENDS-AT='#edges ending at 15'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "also"'
+				pos='RB' RULE='#PSR2502  also -  "also"' label='None' REFERENT='#also 1'
+				POSITION-IN-RESOURCE-ARRAY='15' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 14'>also</lex>
+			<lex CATEGORY='#ref-category WITH' begin='597' end='601'
+				FORM='#ref-category PREPOSITION' ENDS-AT='#edges ending at 16'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "with"'
+				pos='IN' RULE='#PSR263  with -  "with"' label='None' REFERENT='#ref-category WITH'
+				POSITION-IN-RESOURCE-ARRAY='17' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 15'>with</lex>
+			<lex CATEGORY='#ref-category LOT' begin='602' end='606'
+				FORM='#ref-category COMMON-NOUN/PLURAL' ENDS-AT='#edges ending at 17'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "lots"'
+				pos='NNS' RULE='#PSR3538  lot -  "lots"' label='None' REFERENT='#lot 1'
+				POSITION-IN-RESOURCE-ARRAY='18' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 16'>lots</lex>
+			<lex CATEGORY='#word "of"' begin='607' end='609'
+				FORM='#ref-category PREPOSITION' ENDS-AT='#edges ending at 18'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "of"'
+				pos='IN' RULE='((13) 159744)' label='None' REFERENT='#word "of"'
+				POSITION-IN-RESOURCE-ARRAY='19' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':LITERAL-IN-A-RULE'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 17'>of</lex>
+			<lex ner='O' begin='610' end='615' pos='NNS' label='SPATIAL_ENTITY'>clubs</lex>
+			<lex CATEGORY='#word "and"' begin='616' end='619' FORM='NIL'
+				ENDS-AT='#edges ending at 20' CONSTITUENTS='NIL' USED-IN='NIL'
+				Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "and"' pos='CC' RULE='(319)'
+				label='None' REFERENT='#word "and"' POSITION-IN-RESOURCE-ARRAY='21'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':LITERAL-IN-A-RULE' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 19'>and</lex>
+			<lex ner='O' begin='620' end='625' pos='NNS' label='SPATIAL_ENTITY'>cafes</lex>
+			<lex CATEGORY='#word "and"' begin='626' end='629' FORM='NIL'
+				ENDS-AT='#edges ending at 22' CONSTITUENTS='NIL' USED-IN='NIL'
+				Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "and"' pos='CC' RULE='(319)'
+				label='None' REFERENT='#word "and"' POSITION-IN-RESOURCE-ARRAY='22'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':LITERAL-IN-A-RULE' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 21'>and</lex>
+			<lex ner='O' begin='630' end='634' pos='RB' label='None'>very</lex>
+			<lex CATEGORY='#ref-category NICE' begin='635' end='639'
+				FORM='#ref-category ADJECTIVE' ENDS-AT='#edges ending at 24'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "nice"'
+				pos='JJ' RULE='#PSR3539  nice -  "nice"' label='None' REFERENT='#ref-category NICE'
+				POSITION-IN-RESOURCE-ARRAY='23' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 23'>nice</lex>
+			<lex CATEGORY='#ref-category PERSON' begin='640' end='646'
+				FORM='#ref-category COMMON-NOUN/PLURAL' ENDS-AT='#edges ending at 25'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "people"'
+				pos='NNS' RULE='#PSR577  person -  "people"' label='SPATIAL_ENTITY'
+				REFERENT='#people 1' POSITION-IN-RESOURCE-ARRAY='24' SPANNED-WORDS='NIL'
+				RIGHT-DAUGHTER=':SINGLE-TERM' ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE'
+				STARTS-AT='#edges starting at 24'>people</lex>
+			<lex begin='646' end='647'>.</lex>
+		</s>
+		<s>
+			<lex CATEGORY='#ref-category FOR' begin='648' end='651'
+				FORM='#ref-category PREPOSITION' ENDS-AT='#edges ending at 2'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "for"'
+				pos='IN' RULE='#PSR245  for -  "for"' label='None' REFERENT='#ref-category FOR'
+				POSITION-IN-RESOURCE-ARRAY='1' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 1'>For</lex>
+			<lex CATEGORY='#ref-category SOME' begin='652' end='656'
+				FORM='#ref-category QUANTIFIER' ENDS-AT='#edges ending at 3'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "some"'
+				pos='DT' RULE='#PSR43  some -  "some"' label='None' REFERENT='#quantifier "some" 13'
+				POSITION-IN-RESOURCE-ARRAY='3' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 2'>some</lex>
+			<lex CATEGORY='#ref-category PHOTO' begin='657' end='663'
+				FORM='#ref-category COMMON-NOUN/PLURAL' ENDS-AT='#edges ending at 4'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "photos"'
+				pos='NNS' RULE='#PSR3534  photo -  "photos"' label='None' REFERENT='#photo 1'
+				POSITION-IN-RESOURCE-ARRAY='4' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 3'>photos</lex>
+			<lex CATEGORY='#ref-category EVENT' begin='664' end='666'
+				FORM='#ref-category VP' ENDS-AT='#edges ending at 6' CONSTITUENTS='NIL'
+				USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge5 4 go 5'
+				pos='VBP' RULE='#PSR1269  event -  go deictic-location' label='None'
+				REFERENT='#go 1' POSITION-IN-RESOURCE-ARRAY='8' SPANNED-WORDS='NIL'
+				RIGHT-DAUGHTER='#edge7 5 deictic-location 6' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 4'>go</lex>
+			<lex CATEGORY='#ref-category EVENT' begin='667' end='671'
+				FORM='#ref-category VP' ENDS-AT='#edges ending at 6' CONSTITUENTS='NIL'
+				USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge5 4 go 5'
+				pos='RB' RULE='#PSR1269  event -  go deictic-location' label='None'
+				REFERENT='#go 1' POSITION-IN-RESOURCE-ARRAY='8' SPANNED-WORDS='NIL'
+				RIGHT-DAUGHTER='#edge7 5 deictic-location 6' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 4'>here</lex>
+			<lex begin='672' end='728'>http://www.oradea-online.ro/oradea/2/galeria_oradea1.htm</lex>
+			<lex begin='729' end='730'>(</lex>
+			<lex begin='730' end='743'>unfortunately</lex>
+			<lex begin='744' end='745'>I</lex>
+			<lex begin='746' end='751'>could</lex>
+			<lex begin='751' end='754'>n’t</lex>
+			<lex begin='755' end='759'>find</lex>
+			<lex begin='760' end='761'>a</lex>
+			<lex begin='762' end='769'>website</lex>
+			<lex begin='770' end='774'>with</lex>
+			<lex begin='775' end='781'>photos</lex>
+			<lex begin='782' end='784'>in</lex>
+			<lex begin='785' end='792'>english</lex>
+			<lex begin='792' end='793'>,</lex>
+			<lex begin='794' end='796'>so</lex>
+			<lex begin='797' end='802'>click</lex>
+			<lex begin='803' end='805'>on</lex>
+			<lex begin='806' end='807'>'</lex>
+			<lex begin='807' end='814'>Albumul</lex>
+			<lex begin='815' end='822'>urmator</lex>
+			<lex begin='823' end='824'>&gt;</lex>
+			<lex begin='824' end='825'>&gt;</lex>
+			<lex begin='825' end='826'>'</lex>
+			<lex begin='827' end='832'>below</lex>
+			<lex begin='833' end='838'>right</lex>
+			<lex begin='839' end='841'>to</lex>
+			<lex begin='842' end='845'>get</lex>
+			<lex begin='846' end='848'>to</lex>
+			<lex begin='849' end='852'>the</lex>
+			<lex begin='853' end='857'>next</lex>
+			<lex begin='858' end='865'>gallery</lex>
+			<lex begin='865' end='866'>)</lex>
+			<lex begin='866' end='867'>.</lex>
+		</s>
+		<s>
+			<lex CATEGORY='#ref-category ANOTHER' begin='868' end='875'
+				FORM='#ref-category QUANTIFIER' ENDS-AT='#edges ending at 2'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "another"'
+				pos='DT' RULE='#PSR47  another -  "another"' label='None'
+				REFERENT='#quantifier "another" 15' POSITION-IN-RESOURCE-ARRAY='1'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 1'>Another</lex>
+			<lex CATEGORY='#ref-category LINK-KIND' begin='876' end='880'
+				FORM='#ref-category COMMON-NOUN' ENDS-AT='#edges ending at 3'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "link"'
+				pos='NN' RULE='#PSR3533  link-kind -  "link"' label='None' REFERENT='#kind  1'
+				POSITION-IN-RESOURCE-ARRAY='3' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 2'>link</lex>
+			<lex CATEGORY='#ref-category MODAL' begin='881' end='886'
+				FORM='#ref-category VERB' ENDS-AT='#edges ending at 5' CONSTITUENTS='NIL'
+				USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge4 3 modal 4'
+				pos='MD' RULE='#PSR174  {modal} - modal be' label='None' REFERENT='#be 1'
+				POSITION-IN-RESOURCE-ARRAY='6' SPANNED-WORDS='NIL' RIGHT-DAUGHTER='#edge5 4 be 5'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 3'>would</lex>
+			<lex CATEGORY='#ref-category MODAL' begin='887' end='889'
+				FORM='#ref-category VERB' ENDS-AT='#edges ending at 5' CONSTITUENTS='NIL'
+				USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge4 3 modal 4'
+				pos='VB' RULE='#PSR174  {modal} - modal be' label='None' REFERENT='#be 1'
+				POSITION-IN-RESOURCE-ARRAY='6' SPANNED-WORDS='NIL' RIGHT-DAUGHTER='#edge5 4 be 5'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 3'>be</lex>
+			<lex ner='O' begin='890' end='903' pos='NN' label='None'>www.oradea.ro</lex>
+			<lex begin='903' end='904'>,</lex>
+			<lex CATEGORY='#ref-category WHICH' begin='905' end='910'
+				FORM='#ref-category WH-PRONOUN' ENDS-AT='#edges ending at 12'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "which"'
+				pos='WDT' RULE='#PSR194  which -  "which"' label='None'
+				REFERENT='#ref-category WHICH' POSITION-IN-RESOURCE-ARRAY='10'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 11'>which</lex>
+			<lex CATEGORY='#ref-category CONTAIN' begin='911' end='919'
+				FORM='#ref-category VERB+PRESENT' ENDS-AT='#edges ending at 13'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "contains"'
+				pos='VBZ' RULE='#PSR3540  contain -  "contains"' label='None'
+				REFERENT='#event 1' POSITION-IN-RESOURCE-ARRAY='11' SPANNED-WORDS='NIL'
+				RIGHT-DAUGHTER=':SINGLE-TERM' ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE'
+				STARTS-AT='#edges starting at 12'>contains</lex>
+			<lex CATEGORY='#ref-category SOME' begin='920' end='924'
+				FORM='#ref-category QUANTIFIER' ENDS-AT='#edges ending at 14'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "some"'
+				pos='DT' RULE='#PSR43  some -  "some"' label='None' REFERENT='#quantifier "some" 13'
+				POSITION-IN-RESOURCE-ARRAY='13' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 13'>some</lex>
+			<lex ner='O' begin='925' end='932' pos='JJ' label='None'>english</lex>
+			<lex CATEGORY='#ref-category TEXT' begin='933' end='937'
+				FORM='#ref-category COMMON-NOUN' ENDS-AT='#edges ending at 16'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "text"'
+				pos='NN' RULE='#PSR3543  text -  "text"' label='None' REFERENT='#ref-category TEXT'
+				POSITION-IN-RESOURCE-ARRAY='14' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 15'>text</lex>
+			<lex begin='937' end='938'>,</lex>
+			<lex ner='O' begin='939' end='942' pos='CC' label='None'>but</lex>
+			<lex CATEGORY='#ref-category FEW' begin='943' end='946'
+				FORM='#ref-category QUANTIFIER' ENDS-AT='#edges ending at 19'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "few"'
+				pos='JJ' RULE='#PSR25  few -  "few"' label='None' REFERENT='#quantifier "few" 7'
+				POSITION-IN-RESOURCE-ARRAY='17' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 18'>few</lex>
+			<lex CATEGORY='#ref-category PHOTO' begin='947' end='953'
+				FORM='#ref-category COMMON-NOUN/PLURAL' ENDS-AT='#edges ending at 20'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "photos"'
+				pos='NNS' RULE='#PSR3546  photo -  "photos"' label='None' REFERENT='#photo 1'
+				POSITION-IN-RESOURCE-ARRAY='18' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 19'>photos</lex>
+			<lex begin='953' end='954'>.</lex>
+		</s>
+		<s>
+			<lex CATEGORY='#ref-category ACKNOWLEDGEMENT' begin='955' end='957'
+				FORM='#ref-category INTERJECTION' ENDS-AT='#edges ending at 2'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "ok"'
+				pos='VB' RULE='#PSR1226  acknowledgement -  "ok"' label='None'
+				REFERENT='#acknowledgement "ok" 3' POSITION-IN-RESOURCE-ARRAY='1'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 1'>Ok</lex>
+			<lex begin='957' end='958'>,</lex>
+			<lex CATEGORY='#ref-category DIRECTION' begin='959' end='963'
+				FORM='#ref-category NOUN' ENDS-AT='#edges ending at 4' CONSTITUENTS='NIL'
+				USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "back"' pos='RB'
+				RULE='#PSR2573  direction -  "back"' label='None' REFERENT='#direction "back" 6'
+				POSITION-IN-RESOURCE-ARRAY='3' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 3'>back</lex>
+			<lex CATEGORY='#ref-category TO' begin='964' end='966'
+				FORM='#ref-category PREPOSITION' ENDS-AT='#edges ending at 5'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "to"'
+				pos='TO' RULE='#PSR260  to -  "to"' label='None' REFERENT='#ref-category TO'
+				POSITION-IN-RESOURCE-ARRAY='5' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 4'>to</lex>
+			<lex CATEGORY='#ref-category CONFLUENCE' begin='967' end='977'
+				FORM='#ref-category COMMON-NOUN' ENDS-AT='#edges ending at 6'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "confluence"'
+				pos='NN' RULE='#PSR3533  confluence -  "confluence"' label='PLACE'
+				REFERENT='#ref-category CONFLUENCE' POSITION-IN-RESOURCE-ARRAY='6'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 5'>confluence</lex>
+			<lex CATEGORY='#ref-category hunt' begin='978' end='985'
+				FORM='#ref-category VERB+ING' ENDS-AT='#edges ending at 7'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "hunting"'
+				pos='NN' RULE='#PSR3535  hunt -  "hunting"' label='MOTION' REFERENT='#term1 "hunt"'
+				POSITION-IN-RESOURCE-ARRAY='7' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 6'>hunting</lex>
+			<lex begin='985' end='986'>.</lex>
+		</s>
+		<s>
+			<lex ner='O' begin='988' end='990' pos='IN' label='None'>On</lex>
+			<lex ner='O' begin='991' end='994' pos='NNP' label='None'>May</lex>
+			<lex ner='O' begin='995' end='998' pos='CD' label='None'>6th</lex>
+			<lex ner='O' begin='999' end='1001' pos='PRP' label='SPATIAL_ENTITY'>we</lex>
+			<lex ner='O' begin='1002' end='1009' pos='VBD' label='None'>decided</lex>
+			<lex ner='O' begin='1010' end='1012' pos='TO' label='None'>to</lex>
+			<lex ner='O' begin='1013' end='1018' pos='VB' label='MOTION'>visit</lex>
+			<lex ner='O' begin='1019' end='1025' pos='NNP' label='PLACE'>N47E22</lex>
+			<lex begin='1025' end='1026'>.</lex>
+		</s>
+		<s>
+			<lex CATEGORY='#ref-category PRONOUN/FIRST/PLURAL' begin='1027'
+				end='1029' FORM='#ref-category PRONOUN' ENDS-AT='#edges ending at 2'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "we"'
+				pos='PRP' RULE='#PSR810  pronoun/first/plural -  "we"' label='SPATIAL_ENTITY'
+				REFERENT='#pronoun/first/plural "we" 1' POSITION-IN-RESOURCE-ARRAY='0'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 1'>We</lex>
+			<lex CATEGORY='#ref-category BE' begin='1030' end='1034'
+				FORM='#ref-category VERB' ENDS-AT='#edges ending at 3' CONSTITUENTS='NIL'
+				USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "were"' pos='VBD'
+				RULE='#PSR148  be -  "were"' label='None' REFERENT='#be 1'
+				POSITION-IN-RESOURCE-ARRAY='1' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 2'>were</lex>
+			<lex CATEGORY='#ref-category COMPANY-DESCRIPTOR' begin='1035'
+				end='1036' FORM='#ref-category NP' ENDS-AT='#edges ending at 7'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge2 3 "a" 4'
+				pos='DT' RULE='#PSR636  company-descriptor -  "a" kind-of-company'
+				label='None' REFERENT='#group 1' POSITION-IN-RESOURCE-ARRAY='7'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER='#edge5 6 kind-of-company 7' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 3'>a</lex>
+			<lex CATEGORY='#ref-category COMPANY-DESCRIPTOR' begin='1037'
+				end='1043' FORM='#ref-category NP' ENDS-AT='#edges ending at 7'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge2 3 "a" 4'
+				pos='RB' RULE='#PSR636  company-descriptor -  "a" kind-of-company'
+				label='None' REFERENT='#group 1' POSITION-IN-RESOURCE-ARRAY='7'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER='#edge5 6 kind-of-company 7' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 3'>pretty</lex>
+			<lex CATEGORY='#ref-category COMPANY-DESCRIPTOR' begin='1044'
+				end='1049' FORM='#ref-category NP' ENDS-AT='#edges ending at 7'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge2 3 "a" 4'
+				pos='JJ' RULE='#PSR636  company-descriptor -  "a" kind-of-company'
+				label='None' REFERENT='#group 1' POSITION-IN-RESOURCE-ARRAY='7'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER='#edge5 6 kind-of-company 7' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 3'>large</lex>
+			<lex CATEGORY='#ref-category COMPANY-DESCRIPTOR' begin='1050'
+				end='1055' FORM='#ref-category NP' ENDS-AT='#edges ending at 7'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge2 3 "a" 4'
+				pos='NN' RULE='#PSR636  company-descriptor -  "a" kind-of-company'
+				label='SPATIAL_ENTITY' REFERENT='#group 1'
+				POSITION-IN-RESOURCE-ARRAY='7' SPANNED-WORDS='NIL'
+				RIGHT-DAUGHTER='#edge5 6 kind-of-company 7' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 3'>group</lex>
+			<lex begin='1055' end='1056'>:</lex>
+			<lex CATEGORY='#ref-category PRONOUN/FIRST/SINGULAR' begin='1057'
+				end='1063' FORM='#ref-category REFLEXIVE/PRONOUN' ENDS-AT='#edges ending at 9'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "myself"'
+				pos='PRP' RULE='#PSR827  pronoun/first/singular -  "myself"' label='SPATIAL_ENTITY'
+				REFERENT='#pronoun/first/singular "myself" 5'
+				POSITION-IN-RESOURCE-ARRAY='9' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 8'>myself</lex>
+			<lex begin='1063' end='1064'>,</lex>
+			<lex CATEGORY='#word "my"' begin='1065' end='1067' FORM='NIL'
+				ENDS-AT='#edges ending at 11' CONSTITUENTS='NIL' USED-IN='NIL'
+				Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "my"' pos='PRP$' RULE='(819200)'
+				label='None' REFERENT='#word "my"' POSITION-IN-RESOURCE-ARRAY='11'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':LITERAL-IN-A-RULE' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 10'>my</lex>
+			<lex ner='O' begin='1068' end='1078' pos='NN' label='SPATIAL_ENTITY'>girlfriend</lex>
+			<lex CATEGORY='#ref-category NAME' begin='1079' end='1084'
+				FORM='#ref-category PROPER-NAME' ENDS-AT='#edges ending at 13'
+				CONSTITUENTS='(#word "andra")' USED-IN='NIL' Type='SPARSER::EDGE'
+				LEFT-DAUGHTER='#word "andra"' pos='NNP' RULE=':SINGLE-UNKNOWN-CAPITALIZED-WORD'
+				label='SPATIAL_ENTITY' REFERENT='#uncategorized-name Andra'
+				POSITION-IN-RESOURCE-ARRAY='13' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':PROPER-NAME'
+				ner='PERSON' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 12'>Andra</lex>
+			<lex begin='1084' end='1085'>,</lex>
+			<lex CATEGORY='#word "her"' begin='1086' end='1089' FORM='NIL'
+				ENDS-AT='#edges ending at 15' CONSTITUENTS='NIL' USED-IN='NIL'
+				Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "her"' pos='PRP$' RULE='(831488)'
+				label='None' REFERENT='#word "her"' POSITION-IN-RESOURCE-ARRAY='15'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':LITERAL-IN-A-RULE' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 14'>her</lex>
+			<lex ner='O' begin='1090' end='1097' pos='NN' label='SPATIAL_ENTITY'>brother</lex>
+			<lex CATEGORY='#ref-category NAME' begin='1098' end='1104'
+				FORM='#ref-category PROPER-NAME' ENDS-AT='#edges ending at 17'
+				CONSTITUENTS='(#word "mihnea")' USED-IN='NIL' Type='SPARSER::EDGE'
+				LEFT-DAUGHTER='#word "mihnea"' pos='NNP'
+				RULE=':SINGLE-UNKNOWN-CAPITALIZED-WORD' label='SPATIAL_ENTITY'
+				REFERENT='#uncategorized-name Mihnea' POSITION-IN-RESOURCE-ARRAY='17'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':PROPER-NAME' ner='PERSON'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 16'>Mihnea</lex>
+			<lex begin='1104' end='1105'>,</lex>
+			<lex CATEGORY='#word "their"' begin='1106' end='1111' FORM='NIL'
+				ENDS-AT='#edges ending at 19' CONSTITUENTS='NIL' USED-IN='NIL'
+				Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "their"' pos='PRP$' RULE='(843776)'
+				label='None' REFERENT='#word "their"' POSITION-IN-RESOURCE-ARRAY='19'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':LITERAL-IN-A-RULE' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 18'>their</lex>
+			<lex CATEGORY='#ref-category COUSIN' begin='1112' end='1119'
+				FORM='#ref-category COMMON-NOUN/PLURAL' ENDS-AT='#edges ending at 20'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "cousins"'
+				pos='NNS' RULE='#PSR3538  cousin -  "cousins"' label='SPATIAL_ENTITY'
+				REFERENT='#cousin 1' POSITION-IN-RESOURCE-ARRAY='21' SPANNED-WORDS='NIL'
+				RIGHT-DAUGHTER=':SINGLE-TERM' ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE'
+				STARTS-AT='#edges starting at 19'>cousins</lex>
+			<lex CATEGORY='#word "from"' begin='1120' end='1124'
+				FORM='#ref-category PREPOSITION' ENDS-AT='#edges ending at 21'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "from"'
+				pos='IN' RULE='((46) 364544)' label='None' REFERENT='#word "from"'
+				POSITION-IN-RESOURCE-ARRAY='22' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':LITERAL-IN-A-RULE'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 20'>from</lex>
+			<lex CATEGORY='#ref-category NAME' begin='1125' end='1131'
+				FORM='#ref-category PROPER-NAME' ENDS-AT='#edges ending at 22'
+				CONSTITUENTS='(#word "oradea")' USED-IN='NIL' Type='SPARSER::EDGE'
+				LEFT-DAUGHTER='#word "oradea"' pos='NNP'
+				RULE=':SINGLE-UNKNOWN-CAPITALIZED-WORD' label='PLACE'
+				REFERENT='#uncategorized-name Oradea' POSITION-IN-RESOURCE-ARRAY='24'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':PROPER-NAME' ner='LOCATION'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 21'>Oradea</lex>
+			<lex CATEGORY='#word "and"' begin='1132' end='1135' FORM='NIL'
+				ENDS-AT='#edges ending at 23' CONSTITUENTS='NIL' USED-IN='NIL'
+				Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "and"' pos='CC' RULE='(319)'
+				label='None' REFERENT='#word "and"' POSITION-IN-RESOURCE-ARRAY='25'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':LITERAL-IN-A-RULE' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 22'>and</lex>
+			<lex ner='O' begin='1136' end='1137' pos='DT' label='None'>a</lex>
+			<lex ner='O' begin='1138' end='1144' pos='NN' label='SPATIAL_ENTITY'>friend</lex>
+			<lex ner='O' begin='1145' end='1147' pos='IN' label='None'>of</lex>
+			<lex ner='O' begin='1148' end='1152' pos='PRP' label='SPATIAL_ENTITY'>them</lex>
+			<lex begin='1152' end='1153'>.</lex>
+		</s>
+		<s>
+			<lex ner='O' begin='1154' end='1156' pos='PRP' label='SPATIAL_ENTITY'>We</lex>
+			<lex ner='O' begin='1157' end='1161' pos='VBD' label='MOTION'>took</lex>
+			<lex ner='O' begin='1162' end='1166' pos='NN' label='PATH'>road</lex>
+			<lex ner='O' begin='1167' end='1173' pos='CD' label='PATH'>76/E79</lex>
+			<lex ner='O' begin='1174' end='1176' pos='TO' label='MOTION_SIGNAL'>to</lex>
+			<lex ner='PERSON' begin='1177' end='1181' pos='NNP' label='PLACE'>Deva</lex>
+			<lex begin='1181' end='1182'>,</lex>
+			<lex ner='O' begin='1183' end='1190' pos='VBD' label='MOTION'>crossed</lex>
+			<lex ner='O' begin='1191' end='1194' pos='DT' label='None'>the</lex>
+			<lex ner='O' begin='1195' end='1202' pos='NN' label='PLACE'>village</lex>
+			<lex ner='O' begin='1203' end='1205' pos='IN' label='None'>of</lex>
+			<lex ner='LOCATION' begin='1206' end='1215' pos='NNP' label='PLACE'>Sanmartin</lex>
+			<lex ner='O' begin='1216' end='1219' pos='CC' label='None'>and</lex>
+			<lex ner='O' begin='1220' end='1226' pos='VBD' label='MOTION'>turned</lex>
+			<lex ner='O' begin='1227' end='1231' pos='VBN' label='MOTION_SIGNAL'>left</lex>
+			<lex ner='O' begin='1232' end='1234' pos='TO' label='MOTION_SIGNAL'>to</lex>
+			<lex ner='ORGANIZATION' begin='1235' end='1240' pos='NNP' label='PLACE'>Baile</lex>
+			<lex ner='O' begin='1241' end='1242' pos='CD' label='PLACE'>1</lex>
+			<lex ner='ORGANIZATION' begin='1243' end='1246' pos='NNP' label='PLACE'>Mai</lex>
+			<lex begin='1247' end='1248'>(</lex>
+			<lex ner='O' begin='1248' end='1249' pos='CD' label='PLACE'>1</lex>
+			<lex ner='ORGANIZATION' begin='1250' end='1253' pos='NNP' label='PLACE'>Mai</lex>
+			<lex ner='ORGANIZATION' begin='1254' end='1257' pos='NNP' label='PLACE'>Spa</lex>
+			<lex begin='1257' end='1258'>)</lex>
+			<lex begin='1258' end='1259'>.</lex>
+		</s>
+		<s>
+			<lex CATEGORY='#ref-category NAME' begin='1260' end='1265'
+				FORM='#ref-category PROPER-NAME' ENDS-AT='#edges ending at 2'
+				CONSTITUENTS='(#word "baile")' USED-IN='NIL' Type='SPARSER::EDGE'
+				LEFT-DAUGHTER='#word "baile"' pos='NNP' RULE=':SINGLE-UNKNOWN-CAPITALIZED-WORD'
+				label='PLACE' REFERENT='#uncategorized-name Baile'
+				POSITION-IN-RESOURCE-ARRAY='0' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':PROPER-NAME'
+				ner='ORGANIZATION' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 1'>Baile</lex>
+			<lex CATEGORY='#ref-category NUMBER' begin='1266' end='1267'
+				FORM='NIL' ENDS-AT='#edges ending at 3' CONSTITUENTS='NIL' USED-IN='NIL'
+				Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge2 2 digit-sequence 3' pos='CD'
+				RULE=':NUMBER-FSA' label='PLACE' REFERENT='#number "1"'
+				POSITION-IN-RESOURCE-ARRAY='3' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':DIGIT-BASED-NUMBER'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 2'>1</lex>
+			<lex CATEGORY='#ref-category NAME' begin='1268' end='1271'
+				FORM='#ref-category PROPER-NAME' ENDS-AT='#edges ending at 4'
+				CONSTITUENTS='(#word "mai")' USED-IN='NIL' Type='SPARSER::EDGE'
+				LEFT-DAUGHTER='#word "mai"' pos='NNP' RULE=':SINGLE-UNKNOWN-CAPITALIZED-WORD'
+				label='PLACE' REFERENT='#uncategorized-name Mai'
+				POSITION-IN-RESOURCE-ARRAY='4' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':PROPER-NAME'
+				ner='PERSON' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 3'>Mai</lex>
+			<lex CATEGORY='#word "is"' begin='1272' end='1274' FORM='NIL'
+				ENDS-AT='#edges ending at 5' CONSTITUENTS='NIL' USED-IN='NIL'
+				Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "is"' pos='VBZ' RULE='(187)'
+				label='None' REFERENT='#word "is"' POSITION-IN-RESOURCE-ARRAY='5'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':LITERAL-IN-A-RULE' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 4'>is</lex>
+			<lex ner='O' begin='1275' end='1280' pos='VBN' label='None'>known</lex>
+			<lex CATEGORY='#ref-category FOR' begin='1281' end='1284'
+				FORM='#ref-category PREPOSITION' ENDS-AT='#edges ending at 7'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "for"'
+				pos='IN' RULE='#PSR245  for -  "for"' label='None' REFERENT='#ref-category FOR'
+				POSITION-IN-RESOURCE-ARRAY='8' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 6'>for</lex>
+			<lex CATEGORY='#word "its"' begin='1285' end='1288' FORM='NIL'
+				ENDS-AT='#edges ending at 8' CONSTITUENTS='NIL' USED-IN='NIL'
+				Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "its"' pos='PRP$' RULE='(835584)'
+				label='None' REFERENT='#word "its"' POSITION-IN-RESOURCE-ARRAY='9'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':LITERAL-IN-A-RULE' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 7'>its</lex>
+			<lex ner='O' begin='1289' end='1298' pos='NN' label='None'>hot-water</lex>
+			<lex CATEGORY='#ref-category EVENT' begin='1299' end='1306'
+				FORM='#ref-category S' ENDS-AT='#edges ending at 12' CONSTITUENTS='NIL'
+				USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge12 10 water-event 11'
+				pos='VBZ' RULE='#PSR1908  event -  event time' label='SPATIAL_ENTITY'
+				REFERENT='#water-event 1' POSITION-IN-RESOURCE-ARRAY='16'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER='#edge14 11 time 12' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 10'>springs</lex>
+			<lex begin='1307' end='1308'>(</lex>
+			<lex ner='O' begin='1308' end='1312' pos='NNS' label='None'>lots</lex>
+			<lex ner='O' begin='1313' end='1315' pos='IN' label='None'>of</lex>
+			<lex ner='O' begin='1316' end='1330' pos='NNS' label='SPATIAL_ENTITY'>swimming-pools</lex>
+			<lex ner='O' begin='1331' end='1336' pos='RB' label='PLACE'>there</lex>
+			<lex begin='1336' end='1337'>)</lex>
+			<lex begin='1337' end='1338'>.</lex>
+		</s>
+		<s>
+			<lex CATEGORY='#ref-category SAME-MODIFIER' begin='1339' end='1343'
+				FORM='#ref-category ADJECTIVE' ENDS-AT='#edges ending at 2'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "same"'
+				pos='JJ' RULE='#PSR3533  same-modifier -  "same"' label='None'
+				REFERENT='#ref-category SAME-MODIFIER' POSITION-IN-RESOURCE-ARRAY='1'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 1'>Same</lex>
+			<lex CATEGORY='#ref-category FOR' begin='1344' end='1347'
+				FORM='#ref-category PREPOSITION' ENDS-AT='#edges ending at 3'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "for"'
+				pos='IN' RULE='#PSR245  for -  "for"' label='None' REFERENT='#ref-category FOR'
+				POSITION-IN-RESOURCE-ARRAY='3' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 2'>for</lex>
+			<lex CATEGORY='#ref-category NAMED-OBJECT' begin='1348' end='1353'
+				FORM='#ref-category PROPER-NAME' ENDS-AT='#edges ending at 5'
+				CONSTITUENTS='(#word "baile" #word "felix")' USED-IN='NIL' Type='SPARSER::EDGE'
+				LEFT-DAUGHTER='#word "baile"' pos='NNP' RULE=':PNF' label='PLACE'
+				REFERENT='#named-object Baile Felix 1' POSITION-IN-RESOURCE-ARRAY='4'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':PROPER-NAME' ner='ORGANIZATION'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 3'>Baile</lex>
+			<lex CATEGORY='#ref-category NAMED-OBJECT' begin='1354' end='1359'
+				FORM='#ref-category PROPER-NAME' ENDS-AT='#edges ending at 5'
+				CONSTITUENTS='(#word "baile" #word "felix")' USED-IN='NIL' Type='SPARSER::EDGE'
+				LEFT-DAUGHTER='#word "baile"' pos='NNP' RULE=':PNF' label='PLACE'
+				REFERENT='#named-object Baile Felix 1' POSITION-IN-RESOURCE-ARRAY='4'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':PROPER-NAME' ner='ORGANIZATION'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 3'>Felix</lex>
+			<lex begin='1360' end='1361'>(</lex>
+			<lex ner='ORGANIZATION' begin='1361' end='1366' pos='NNP' label='PLACE'>Felix</lex>
+			<lex ner='ORGANIZATION' begin='1367' end='1370' pos='NNP' label='PLACE'>Spa</lex>
+			<lex begin='1370' end='1371'>)</lex>
+			<lex ner='O' begin='1372' end='1378' pos='RB' label='MEASURE'>nearby</lex>
+			<lex begin='1378' end='1379'>.</lex>
+		</s>
+		<s>
+			<lex CATEGORY='#ref-category IN' begin='1380' end='1382'
+				FORM='#ref-category PREPOSITION' ENDS-AT='#edges ending at 2'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "in"'
+				pos='IN' RULE='#PSR247  in -  "in"' label='None' REFERENT='#ref-category IN'
+				POSITION-IN-RESOURCE-ARRAY='1' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 1'>In</lex>
+			<lex ner='O' begin='1383' end='1387' pos='NN' label='None'>fact</lex>
+			<lex CATEGORY='#ref-category REGION' begin='1388' end='1391'
+				FORM='#ref-category NP' ENDS-AT='#edges ending at 7' CONSTITUENTS='NIL'
+				USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge4 3 region-type 5'
+				pos='DT' RULE='#PSR306  region -  region-type of-name-word' label='None'
+				REFERENT='#error printing SPARSER::INDIVIDUAL #x302001487C1D'
+				POSITION-IN-RESOURCE-ARRAY='13' SPANNED-WORDS='NIL' RIGHT-DAUGHTER='#edge12 5 location 7'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 3'>the</lex>
+			<lex CATEGORY='#ref-category REGION' begin='1392' end='1396'
+				FORM='#ref-category NP' ENDS-AT='#edges ending at 7' CONSTITUENTS='NIL'
+				USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge4 3 region-type 5'
+				pos='NN' RULE='#PSR306  region -  region-type of-name-word' label='PLACE'
+				REFERENT='#error printing SPARSER::INDIVIDUAL #x302001487C1D'
+				POSITION-IN-RESOURCE-ARRAY='13' SPANNED-WORDS='NIL' RIGHT-DAUGHTER='#edge12 5 location 7'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 3'>city</lex>
+			<lex CATEGORY='#ref-category REGION' begin='1397' end='1399'
+				FORM='#ref-category NP' ENDS-AT='#edges ending at 7' CONSTITUENTS='NIL'
+				USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge4 3 region-type 5'
+				pos='IN' RULE='#PSR306  region -  region-type of-name-word' label='None'
+				REFERENT='#error printing SPARSER::INDIVIDUAL #x302001487C1D'
+				POSITION-IN-RESOURCE-ARRAY='13' SPANNED-WORDS='NIL' RIGHT-DAUGHTER='#edge12 5 location 7'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 3'>of</lex>
+			<lex CATEGORY='#ref-category REGION' begin='1400' end='1406'
+				FORM='#ref-category NP' ENDS-AT='#edges ending at 7' CONSTITUENTS='NIL'
+				USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge4 3 region-type 5'
+				pos='NNP' RULE='#PSR306  region -  region-type of-name-word' label='PLACE'
+				REFERENT='#error printing SPARSER::INDIVIDUAL #x302001487C1D'
+				POSITION-IN-RESOURCE-ARRAY='13' SPANNED-WORDS='NIL' RIGHT-DAUGHTER='#edge12 5 location 7'
+				ner='LOCATION' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 3'>Oradea</lex>
+			<lex CATEGORY='#ref-category heat' begin='1407' end='1409'
+				FORM='#ref-category VERB+PASSIVE' ENDS-AT='#edges ending at 9'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge9 7 be 8'
+				pos='VBZ' RULE='#PSR154  {verb+ed} - be verb+ed' label='None'
+				REFERENT='#term1 "heat"' POSITION-IN-RESOURCE-ARRAY='11'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER='#edge10 8 heat 9' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 7'>is</lex>
+			<lex CATEGORY='#ref-category heat' begin='1410' end='1416'
+				FORM='#ref-category VERB+PASSIVE' ENDS-AT='#edges ending at 9'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge9 7 be 8'
+				pos='VBN' RULE='#PSR154  {verb+ed} - be verb+ed' label='None'
+				REFERENT='#term1 "heat"' POSITION-IN-RESOURCE-ARRAY='11'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER='#edge10 8 heat 9' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 7'>heated</lex>
+			<lex CATEGORY='#ref-category WITH' begin='1417' end='1421'
+				FORM='#ref-category PREPOSITION' ENDS-AT='#edges ending at 10'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "with"'
+				pos='IN' RULE='#PSR263  with -  "with"' label='None' REFERENT='#ref-category WITH'
+				POSITION-IN-RESOURCE-ARRAY='15' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 9'>with</lex>
+			<lex CATEGORY='#ref-category THERMAL-MODIFIER' begin='1422' end='1429'
+				FORM='#ref-category ADJECTIVE' ENDS-AT='#edges ending at 11'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "thermal"'
+				pos='JJ' RULE='#PSR3535  thermal-modifier -  "thermal"' label='None'
+				REFERENT='#ref-category THERMAL-MODIFIER'
+				POSITION-IN-RESOURCE-ARRAY='17' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 10'>thermal</lex>
+			<lex CATEGORY='#ref-category WATER-KIND' begin='1430' end='1435'
+				FORM='#ref-category COMMON-NOUN' ENDS-AT='#edges ending at 12'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "water"'
+				pos='NN' RULE='#PSR3538  water-kind -  "water"' label='SPATIAL_ENTITY'
+				REFERENT='#kind  1' POSITION-IN-RESOURCE-ARRAY='19' SPANNED-WORDS='NIL'
+				RIGHT-DAUGHTER=':SINGLE-TERM' ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE'
+				STARTS-AT='#edges starting at 11'>water</lex>
+			<lex begin='1435' end='1436'>,</lex>
+			<lex CATEGORY='#ref-category WHICH' begin='1437' end='1442'
+				FORM='#ref-category WH-PRONOUN' ENDS-AT='#edges ending at 14'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "which"'
+				pos='WDT' RULE='#PSR194  which -  "which"' label='None'
+				REFERENT='#ref-category WHICH' POSITION-IN-RESOURCE-ARRAY='21'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 13'>which</lex>
+			<lex CATEGORY='#word "is"' begin='1443' end='1445' FORM='NIL'
+				ENDS-AT='#edges ending at 15' CONSTITUENTS='NIL' USED-IN='NIL'
+				Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "is"' pos='VBZ' RULE='(187)'
+				label='None' REFERENT='#word "is"' POSITION-IN-RESOURCE-ARRAY='22'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':LITERAL-IN-A-RULE' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 14'>is</lex>
+			<lex ner='O' begin='1446' end='1452' pos='JJ' label='None'>plenty</lex>
+			<lex CATEGORY='#ref-category AROUND' begin='1453' end='1459'
+				FORM='#ref-category DET' ENDS-AT='#edges ending at 17' CONSTITUENTS='NIL'
+				USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "around"'
+				pos='IN' RULE='#PSR2289  around -  "around"' label='SPATIAL_SIGNAL'
+				REFERENT='#around 1' POSITION-IN-RESOURCE-ARRAY='24' SPANNED-WORDS='NIL'
+				RIGHT-DAUGHTER=':SINGLE-TERM' ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE'
+				STARTS-AT='#edges starting at 16'>around</lex>
+			<lex ner='O' begin='1460' end='1465' pos='DT' label='None'>these</lex>
+			<lex CATEGORY='#ref-category PART-EVENT' begin='1466' end='1471'
+				FORM='#ref-category VERB+PRESENT' ENDS-AT='#edges ending at 19'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "parts"'
+				pos='NNS' RULE='#PSR3548  part-event -  "parts"' label='PLACE'
+				REFERENT='#ref-category PART-EVENT' POSITION-IN-RESOURCE-ARRAY='25'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 18'>parts</lex>
+			<lex begin='1471' end='1472'>,</lex>
+			<lex CATEGORY='#ref-category PRONOUN/SECOND' begin='1473' end='1476'
+				FORM='#ref-category PRONOUN' ENDS-AT='#edges ending at 21'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "you"'
+				pos='PRP' RULE='#PSR806  pronoun/second -  "you"' label='None'
+				REFERENT='#pronoun/second "you" 1' POSITION-IN-RESOURCE-ARRAY='28'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 20'>you</lex>
+			<lex CATEGORY='#ref-category JUST' begin='1477' end='1481'
+				FORM='#ref-category DET' ENDS-AT='#edges ending at 22' CONSTITUENTS='NIL'
+				USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "just"' pos='RB'
+				RULE='#PSR2322  just -  "just"' label='None' REFERENT='#just 1'
+				POSITION-IN-RESOURCE-ARRAY='29' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 21'>just</lex>
+			<lex CATEGORY='#ref-category HAVE' begin='1482' end='1486'
+				FORM='#ref-category VERB' ENDS-AT='#edges ending at 23'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "have"'
+				pos='VBP' RULE='#PSR131  have -  "have"' label='None' REFERENT='#have 1'
+				POSITION-IN-RESOURCE-ARRAY='30' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 22'>have</lex>
+			<lex CATEGORY='#ref-category TO' begin='1487' end='1489'
+				FORM='#ref-category PREPOSITION' ENDS-AT='#edges ending at 24'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "to"'
+				pos='TO' RULE='#PSR260  to -  "to"' label='None' REFERENT='#ref-category TO'
+				POSITION-IN-RESOURCE-ARRAY='32' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 23'>to</lex>
+			<lex CATEGORY='#ref-category DIG-EVENT' begin='1490' end='1493'
+				FORM='#ref-category VERB+PRESENT' ENDS-AT='#edges ending at 25'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "dig"'
+				pos='VB' RULE='#PSR3553  dig-event -  "dig"' label='None'
+				REFERENT='#ref-category DIG-EVENT' POSITION-IN-RESOURCE-ARRAY='33'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 24'>dig</lex>
+			<lex CATEGORY='#word "for"' begin='1494' end='1497'
+				FORM='#ref-category PREPOSITION' ENDS-AT='#edges ending at 26'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "for"'
+				pos='IN' RULE='(630784)' label='None' REFERENT='#word "for"'
+				POSITION-IN-RESOURCE-ARRAY='35' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':LITERAL-IN-A-RULE'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 25'>for</lex>
+			<lex ner='O' begin='1498' end='1500' pos='PRP' label='SPATIAL_ENTITY'>it</lex>
+			<lex begin='1500' end='1501'>.</lex>
+		</s>
+		<s>
+			<lex ner='O' begin='1502' end='1504' pos='IN' label='SPATIAL_SIGNAL'>At</lex>
+			<lex ner='O' begin='1505' end='1508' pos='DT' label='None'>the</lex>
+			<lex ner='O' begin='1509' end='1513' pos='NN' label='SPATIAL_ENTITY'>sign</lex>
+			<lex ner='O' begin='1514' end='1518' pos='WDT' label='None'>that</lex>
+			<lex ner='O' begin='1519' end='1523' pos='VBZ' label='None'>says</lex>
+			<lex ner='ORGANIZATION' begin='1524' end='1529' pos='NNP' label='None'>Baile</lex>
+			<lex ner='O' begin='1530' end='1531' pos='CD' label='None'>1</lex>
+			<lex ner='PERSON' begin='1532' end='1535' pos='NNP' label='None'>Mai</lex>
+			<lex begin='1536' end='1537'>(</lex>
+			<lex ner='O' begin='1537' end='1541' pos='RB' label='None'>just</lex>
+			<lex ner='O' begin='1542' end='1546' pos='PDT' label='MEASURE'>half</lex>
+			<lex ner='O' begin='1547' end='1548' pos='DT' label='MEASURE'>a</lex>
+			<lex ner='O' begin='1549' end='1553' pos='NN' label='MEASURE'>mile</lex>
+			<lex ner='O' begin='1554' end='1559' pos='IN' label='SPATIAL_SIGNAL'>after</lex>
+			<lex ner='O' begin='1560' end='1567' pos='VBG' label='MOTION'>turning</lex>
+			<lex ner='O' begin='1568' end='1572' pos='VBD' label='MOTION_SIGNAL'>left</lex>
+			<lex ner='O' begin='1573' end='1577' pos='IN' label='MOTION_SIGNAL'>from</lex>
+			<lex ner='O' begin='1578' end='1582' pos='NN' label='PATH'>road</lex>
+			<lex ner='O' begin='1583' end='1589' pos='CD' label='PATH'>76/E79</lex>
+			<lex begin='1589' end='1590'>)</lex>
+			<lex ner='O' begin='1591' end='1593' pos='PRP' label='SPATIAL_ENTITY'>we</lex>
+			<lex ner='O' begin='1594' end='1600' pos='VBD' label='MOTION'>turned</lex>
+			<lex ner='O' begin='1601' end='1606' pos='RB' label='None'>again</lex>
+			<lex ner='O' begin='1607' end='1611' pos='VBN' label='MOTION_SIGNAL'>left</lex>
+			<lex ner='O' begin='1612' end='1615' pos='CC' label='None'>and</lex>
+			<lex ner='O' begin='1616' end='1623' pos='VBN' label='MOTION'>entered</lex>
+			<lex ner='O' begin='1624' end='1627' pos='DT' label='None'>the</lex>
+			<lex ner='O' begin='1628' end='1635' pos='NN' label='PLACE'>village</lex>
+			<lex ner='O' begin='1636' end='1638' pos='IN' label='None'>of</lex>
+			<lex ner='O' begin='1639' end='1645' pos='NNP' label='PLACE'>Rontau</lex>
+			<lex begin='1645' end='1646'>.</lex>
+		</s>
+		<s>
+			<lex CATEGORY='#ref-category PRONOUN/FIRST/PLURAL' begin='1647'
+				end='1649' FORM='#ref-category PRONOUN' ENDS-AT='#edges ending at 2'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "we"'
+				pos='PRP' RULE='#PSR810  pronoun/first/plural -  "we"' label='SPATIAL_ENTITY'
+				REFERENT='#pronoun/first/plural "we" 1' POSITION-IN-RESOURCE-ARRAY='0'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 1'>We</lex>
+			<lex CATEGORY='#ref-category BE' begin='1650' end='1654'
+				FORM='#ref-category VERB' ENDS-AT='#edges ending at 3' CONSTITUENTS='NIL'
+				USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "were"' pos='VBD'
+				RULE='#PSR148  be -  "were"' label='None' REFERENT='#be 1'
+				POSITION-IN-RESOURCE-ARRAY='1' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 2'>were</lex>
+			<lex ner='O' begin='1655' end='1662' pos='RB' label='None'>already</lex>
+			<lex CATEGORY='#ref-category RELATIVE-LOCATION' begin='1663' end='1665'
+				FORM='#ref-category PP' ENDS-AT='#edges ending at 8' CONSTITUENTS='NIL'
+				USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge2 4 "in" 5'
+				pos='IN' RULE='#PSR279  relative-location -  "in" np' label='SPATIAL_SIGNAL'
+				REFERENT='#relative-location 1' POSITION-IN-RESOURCE-ARRAY='12'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER='#edge6 5 region-type 8' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 4'>in</lex>
+			<lex CATEGORY='#ref-category RELATIVE-LOCATION' begin='1666' end='1669'
+				FORM='#ref-category PP' ENDS-AT='#edges ending at 8' CONSTITUENTS='NIL'
+				USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge2 4 "in" 5'
+				pos='DT' RULE='#PSR279  relative-location -  "in" np' label='None'
+				REFERENT='#relative-location 1' POSITION-IN-RESOURCE-ARRAY='12'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER='#edge6 5 region-type 8' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 4'>the</lex>
+			<lex CATEGORY='#ref-category RELATIVE-LOCATION' begin='1670' end='1675'
+				FORM='#ref-category PP' ENDS-AT='#edges ending at 8' CONSTITUENTS='NIL'
+				USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge2 4 "in" 5'
+				pos='JJ' RULE='#PSR279  relative-location -  "in" np' label='None'
+				REFERENT='#relative-location 1' POSITION-IN-RESOURCE-ARRAY='12'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER='#edge6 5 region-type 8' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 4'>hilly</lex>
+			<lex CATEGORY='#ref-category RELATIVE-LOCATION' begin='1676' end='1682'
+				FORM='#ref-category PP' ENDS-AT='#edges ending at 8' CONSTITUENTS='NIL'
+				USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge2 4 "in" 5'
+				pos='NN' RULE='#PSR279  relative-location -  "in" np' label='PLACE'
+				REFERENT='#relative-location 1' POSITION-IN-RESOURCE-ARRAY='12'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER='#edge6 5 region-type 8' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 4'>region</lex>
+			<lex begin='1682' end='1683'>,</lex>
+			<lex CATEGORY='#word "so"' begin='1684' end='1686'
+				FORM='#ref-category SUBORDINATE-CONJUNCTION' ENDS-AT='#edges ending at 10'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "so"'
+				pos='IN' RULE='(1695744)' label='None' REFERENT='#word "so"'
+				POSITION-IN-RESOURCE-ARRAY='8' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':LITERAL-IN-A-RULE'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 9'>so</lex>
+			<lex CATEGORY='#ref-category PATH-TYPE' begin='1687' end='1690'
+				FORM='#ref-category NP' ENDS-AT='#edges ending at 12' CONSTITUENTS='NIL'
+				USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge9 10 "the" 11'
+				pos='DT' RULE='#PSR183  {common-noun} - "the" common-noun' label='None'
+				REFERENT='#ref-category ROAD' POSITION-IN-RESOURCE-ARRAY='11'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER='#edge10 11 path-type 12' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 10'>the</lex>
+			<lex CATEGORY='#ref-category PATH-TYPE' begin='1691' end='1695'
+				FORM='#ref-category NP' ENDS-AT='#edges ending at 12' CONSTITUENTS='NIL'
+				USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge9 10 "the" 11'
+				pos='NN' RULE='#PSR183  {common-noun} - "the" common-noun' label='PATH'
+				REFERENT='#ref-category ROAD' POSITION-IN-RESOURCE-ARRAY='11'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER='#edge10 11 path-type 12' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 10'>road</lex>
+			<lex CATEGORY='#ref-category CLIMB-EVENT' begin='1696' end='1703'
+				FORM='#ref-category VERB+ED' ENDS-AT='#edges ending at 13'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "climbed"'
+				pos='VBD' RULE='#PSR3537  climb-event -  "climbed"' label='MOTION'
+				REFERENT='#event 1' POSITION-IN-RESOURCE-ARRAY='13' SPANNED-WORDS='NIL'
+				RIGHT-DAUGHTER=':SINGLE-TERM' ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE'
+				STARTS-AT='#edges starting at 12'>climbed</lex>
+			<lex CATEGORY='#ref-category DIRECTION' begin='1704' end='1706'
+				FORM='#ref-category NOUN' ENDS-AT='#edges ending at 14'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "up"'
+				pos='RP' RULE='#PSR2570  direction -  "up"' label='MOTION_SIGNAL'
+				REFERENT='#direction "up" 3' POSITION-IN-RESOURCE-ARRAY='15'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 13'>up</lex>
+			<lex CATEGORY='#ref-category TO' begin='1707' end='1709'
+				FORM='#ref-category PREPOSITION' ENDS-AT='#edges ending at 15'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "to"'
+				pos='TO' RULE='#PSR260  to -  "to"' label='MOTION_SIGNAL' REFERENT='#ref-category TO'
+				POSITION-IN-RESOURCE-ARRAY='18' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 14'>to</lex>
+			<lex CATEGORY='#ref-category NAME' begin='1710' end='1716'
+				FORM='#ref-category PROPER-NAME' ENDS-AT='#edges ending at 16'
+				CONSTITUENTS='(#word "rontau")' USED-IN='NIL' Type='SPARSER::EDGE'
+				LEFT-DAUGHTER='#word "rontau"' pos='NNP'
+				RULE=':SINGLE-UNKNOWN-CAPITALIZED-WORD' label='PLACE'
+				REFERENT='#uncategorized-name Rontau' POSITION-IN-RESOURCE-ARRAY='19'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':PROPER-NAME' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 15'>Rontau</lex>
+			<lex begin='1716' end='1717'>,</lex>
+			<lex CATEGORY='#ref-category WHICH' begin='1718' end='1723'
+				FORM='#ref-category WH-PRONOUN' ENDS-AT='#edges ending at 18'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "which"'
+				pos='WDT' RULE='#PSR194  which -  "which"' label='None'
+				REFERENT='#ref-category WHICH' POSITION-IN-RESOURCE-ARRAY='21'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 17'>which</lex>
+			<lex CATEGORY='#ref-category lie/down' begin='1724' end='1728'
+				FORM='#ref-category VERB+PRESENT' ENDS-AT='#edges ending at 19'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "lies"'
+				pos='VBZ' RULE='#PSR1300  lie/down -  "lies"' label='NONMOTION_EVENT'
+				REFERENT='#lie/down 1' POSITION-IN-RESOURCE-ARRAY='22'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 18'>lies</lex>
+			<lex CATEGORY='#ref-category ON' begin='1729' end='1731'
+				FORM='#ref-category PREPOSITION' ENDS-AT='#edges ending at 20'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "on"'
+				pos='IN' RULE='#PSR251  on -  "on"' label='SPATIAL_SIGNAL' REFERENT='#ref-category ON'
+				POSITION-IN-RESOURCE-ARRAY='24' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 19'>on</lex>
+			<lex CATEGORY='#ref-category TOP-EVENT' begin='1732' end='1735'
+				FORM='#ref-category VERB+PRESENT' ENDS-AT='#edges ending at 21'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "top"'
+				pos='NN' RULE='#PSR3543  top-event -  "top"' label='SPATIAL_SIGNAL'
+				REFERENT='#ref-category TOP-EVENT' POSITION-IN-RESOURCE-ARRAY='25'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 20'>top</lex>
+			<lex CATEGORY='#word "of"' begin='1736' end='1738'
+				FORM='#ref-category PREPOSITION' ENDS-AT='#edges ending at 22'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "of"'
+				pos='IN' RULE='((13) 159744)' label='SPATIAL_SIGNAL' REFERENT='#word "of"'
+				POSITION-IN-RESOURCE-ARRAY='28' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':LITERAL-IN-A-RULE'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 21'>of</lex>
+			<lex ner='O' begin='1739' end='1740' pos='DT' label='None'>a</lex>
+			<lex ner='O' begin='1741' end='1745' pos='NN' label='PLACE'>hill</lex>
+			<lex begin='1745' end='1746'>.</lex>
+		</s>
+		<s>
+			<lex ner='O' begin='1747' end='1752' pos='IN' label='None'>While</lex>
+			<lex ner='O' begin='1753' end='1760' pos='VBG' label='MOTION'>driving</lex>
+			<lex ner='O' begin='1761' end='1766' pos='IN' label='MOTION_SIGNAL'>along</lex>
+			<lex ner='O' begin='1767' end='1770' pos='DT' label='None'>the</lex>
+			<lex ner='O' begin='1771' end='1778' pos='NN' label='None'>village</lex>
+			<lex begin='1778' end='1780'>’s</lex>
+			<lex begin='1781' end='1785'>main</lex>
+			<lex begin='1786' end='1790'>road</lex>
+			<lex begin='1791' end='1794'>the</lex>
+			<lex begin='1795' end='1798'>GPS</lex>
+			<lex begin='1799' end='1805'>showed</lex>
+			<lex begin='1806' end='1808'>us</lex>
+			<lex begin='1809' end='1812'>the</lex>
+			<lex begin='1813' end='1822'>direction</lex>
+			<lex begin='1823' end='1828'>right</lex>
+			<lex begin='1829' end='1834'>ahead</lex>
+			<lex begin='1834' end='1835'>,</lex>
+			<lex begin='1836' end='1839'>and</lex>
+			<lex begin='1840' end='1845'>after</lex>
+			<lex begin='1846' end='1849'>two</lex>
+			<lex begin='1850' end='1857'>minutes</lex>
+			<lex begin='1857' end='1858'>,</lex>
+			<lex begin='1859' end='1863'>just</lex>
+			<lex begin='1864' end='1867'>few</lex>
+			<lex begin='1868' end='1875'>hundred</lex>
+			<lex begin='1876' end='1882'>meters</lex>
+			<lex begin='1883' end='1887'>from</lex>
+			<lex begin='1888' end='1891'>the</lex>
+			<lex begin='1892' end='1895'>end</lex>
+			<lex begin='1896' end='1898'>of</lex>
+			<lex begin='1899' end='1902'>the</lex>
+			<lex begin='1903' end='1910'>village</lex>
+			<lex begin='1910' end='1911'>,</lex>
+			<lex begin='1912' end='1914'>we</lex>
+			<lex begin='1915' end='1922'>reached</lex>
+			<lex begin='1923' end='1926'>the</lex>
+			<lex begin='1927' end='1931'>spot</lex>
+			<lex begin='1932' end='1933'>(</lex>
+			<lex begin='1933' end='1938'>photo</lex>
+			<lex begin='1939' end='1940'>#</lex>
+			<lex begin='1940' end='1941'>3</lex>
+			<lex begin='1941' end='1942'>)</lex>
+			<lex begin='1942' end='1943'>.</lex>
+		</s>
+		<s>
+			<lex CATEGORY='#ref-category EVENT' begin='1945' end='1948'
+				FORM='#ref-category S' ENDS-AT='#edges ending at 9' CONSTITUENTS='NIL'
+				USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge10 3 event 5'
+				pos='DT' RULE='#PSR1909  event -  event location' label='None'
+				REFERENT='#lie/down 1' POSITION-IN-RESOURCE-ARRAY='11'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER='#edge9 5 relative-location 9'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 3'>The</lex>
+			<lex CATEGORY='#ref-category CONFLUENCE' begin='1949' end='1959'
+				FORM='#ref-category COMMON-NOUN' ENDS-AT='#edges ending at 3'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "confluence"'
+				pos='NN' RULE='#PSR3533  confluence -  "confluence"' label='PLACE'
+				REFERENT='#ref-category CONFLUENCE' POSITION-IN-RESOURCE-ARRAY='1'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 2'>confluence</lex>
+			<lex CATEGORY='#ref-category EVENT' begin='1960' end='1964'
+				FORM='#ref-category S' ENDS-AT='#edges ending at 9' CONSTITUENTS='NIL'
+				USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge10 3 event 5'
+				pos='VBZ' RULE='#PSR1909  event -  event location' label='NONMOTION_EVENT'
+				REFERENT='#lie/down 1' POSITION-IN-RESOURCE-ARRAY='11'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER='#edge9 5 relative-location 9'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 3'>lies</lex>
+			<lex CATEGORY='#ref-category EVENT' begin='1965' end='1970'
+				FORM='#ref-category S' ENDS-AT='#edges ending at 9' CONSTITUENTS='NIL'
+				USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge10 3 event 5'
+				pos='RB' RULE='#PSR1909  event -  event location' label='None'
+				REFERENT='#lie/down 1' POSITION-IN-RESOURCE-ARRAY='11'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER='#edge9 5 relative-location 9'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 3'>right</lex>
+			<lex CATEGORY='#ref-category EVENT' begin='1971' end='1973'
+				FORM='#ref-category S' ENDS-AT='#edges ending at 9' CONSTITUENTS='NIL'
+				USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge10 3 event 5'
+				pos='IN' RULE='#PSR1909  event -  event location' label='SPATIAL_SIGNAL'
+				REFERENT='#lie/down 1' POSITION-IN-RESOURCE-ARRAY='11'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER='#edge9 5 relative-location 9'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 3'>on</lex>
+			<lex ner='O' begin='1974' end='1977' pos='DT' label='None'>the</lex>
+			<lex CATEGORY='#ref-category EVENT' begin='1978' end='1982'
+				FORM='#ref-category S' ENDS-AT='#edges ending at 9' CONSTITUENTS='NIL'
+				USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge10 3 event 5'
+				pos='JJ' RULE='#PSR1909  event -  event location' label='None'
+				REFERENT='#lie/down 1' POSITION-IN-RESOURCE-ARRAY='11'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER='#edge9 5 relative-location 9'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 3'>main</lex>
+			<lex CATEGORY='#ref-category EVENT' begin='1983' end='1987'
+				FORM='#ref-category S' ENDS-AT='#edges ending at 9' CONSTITUENTS='NIL'
+				USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge10 3 event 5'
+				pos='NN' RULE='#PSR1909  event -  event location' label='PATH'
+				REFERENT='#lie/down 1' POSITION-IN-RESOURCE-ARRAY='11'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER='#edge9 5 relative-location 9'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 3'>road</lex>
+			<lex ner='O' begin='1988' end='1990' pos='IN' label='None'>of</lex>
+			<lex ner='LOCATION' begin='1991' end='1997' pos='NNP' label='PLACE'>Rontau</lex>
+			<lex begin='1997' end='1998'>,</lex>
+			<lex CATEGORY='#ref-category JUST' begin='1999' end='2003'
+				FORM='#ref-category DET' ENDS-AT='#edges ending at 13' CONSTITUENTS='NIL'
+				USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "just"' pos='RB'
+				RULE='#PSR2322  just -  "just"' label='None' REFERENT='#just 1'
+				POSITION-IN-RESOURCE-ARRAY='16' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 12'>just</lex>
+			<lex CATEGORY='#ref-category IN' begin='2004' end='2006'
+				FORM='#ref-category PREPOSITION' ENDS-AT='#edges ending at 14'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "in"'
+				pos='IN' RULE='#PSR247  in -  "in"' label='SPATIAL_SIGNAL' REFERENT='#ref-category IN'
+				POSITION-IN-RESOURCE-ARRAY='18' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 13'>in</lex>
+			<lex CATEGORY='#ref-category DIRECTION' begin='2007' end='2012'
+				FORM='#ref-category NOUN' ENDS-AT='#edges ending at 15'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "front"'
+				pos='NN' RULE='#PSR2572  direction -  "front"' label='SPATIAL_SIGNAL'
+				REFERENT='#direction "front" 5' POSITION-IN-RESOURCE-ARRAY='19'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 14'>front</lex>
+			<lex CATEGORY='#word "of"' begin='2013' end='2015'
+				FORM='#ref-category PREPOSITION' ENDS-AT='#edges ending at 16'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "of"'
+				pos='IN' RULE='((13) 159744)' label='SPATIAL_SIGNAL' REFERENT='#word "of"'
+				POSITION-IN-RESOURCE-ARRAY='20' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':LITERAL-IN-A-RULE'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 15'>of</lex>
+			<lex ner='O' begin='2016' end='2019' pos='DT' label='None'>the</lex>
+			<lex ner='O' begin='2020' end='2031' pos='JJ' label='None'>pentecostal</lex>
+			<lex ner='O' begin='2032' end='2038' pos='NN' label='PLACE'>church</lex>
+			<lex begin='2039' end='2040'>(</lex>
+			<lex ner='O' begin='2040' end='2042' pos='IN' label='None'>in</lex>
+			<lex ner='O' begin='2043' end='2047' pos='NN' label='None'>fact</lex>
+			<lex ner='O' begin='2048' end='2051' pos='DT' label='None'>the</lex>
+			<lex ner='O' begin='2052' end='2063' pos='JJ' label='None'>pentecostal</lex>
+			<lex ner='O' begin='2064' end='2070' pos='NN' label='PLACE'>church</lex>
+			<lex ner='O' begin='2071' end='2075' pos='VBZ' label='NONMOTION_EVENT'>lies</lex>
+			<lex ner='O' begin='2076' end='2082' pos='NN' label='SPATIAL_SIGNAL'>inside</lex>
+			<lex ner='O' begin='2083' end='2085' pos='IN' label='SPATIAL_SIGNAL'>of</lex>
+			<lex ner='O' begin='2086' end='2087' pos='DT' label='None'>a</lex>
+			<lex ner='O' begin='2088' end='2093' pos='NN' label='PLACE'>house</lex>
+			<lex begin='2093' end='2094'>,</lex>
+			<lex ner='O' begin='2095' end='2103' pos='RB' label='None'>probably</lex>
+			<lex ner='O' begin='2104' end='2107' pos='DT' label='None'>the</lex>
+			<lex ner='O' begin='2108' end='2119' pos='JJ' label='None'>pentecostal</lex>
+			<lex ner='O' begin='2120' end='2129' pos='NN' label='None'>community</lex>
+			<lex ner='O' begin='2130' end='2132' pos='VBZ' label='None'>is</lex>
+			<lex begin='2132' end='2135'>n’t</lex>
+			<lex begin='2136' end='2139'>too</lex>
+			<lex begin='2140' end='2145'>large</lex>
+			<lex begin='2146' end='2147'>–</lex>
+			<lex begin='2148' end='2153'>photo</lex>
+			<lex begin='2154' end='2155'>#</lex>
+			<lex begin='2155' end='2156'>4</lex>
+			<lex begin='2156' end='2157'>)</lex>
+			<lex begin='2157' end='2158'>.</lex>
+		</s>
+		<s>
+			<lex CATEGORY='#ref-category ON' begin='2159' end='2161'
+				FORM='#ref-category PREPOSITION' ENDS-AT='#edges ending at 2'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "on"'
+				pos='IN' RULE='#PSR251  on -  "on"' label='SPATIAL_SIGNAL' REFERENT='#ref-category ON'
+				POSITION-IN-RESOURCE-ARRAY='1' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 1'>On</lex>
+			<lex CATEGORY='#ref-category BOTH' begin='2162' end='2166'
+				FORM='#ref-category QUANTIFIER' ENDS-AT='#edges ending at 3'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "both"'
+				pos='DT' RULE='#PSR19  both -  "both"' label='None' REFERENT='#quantifier "both" 3'
+				POSITION-IN-RESOURCE-ARRAY='3' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 2'>both</lex>
+			<lex ner='O' begin='2167' end='2172' pos='NNS' label='PLACE'>sides</lex>
+			<lex ner='O' begin='2173' end='2178' pos='EX' label='None'>there</lex>
+			<lex ner='O' begin='2179' end='2183' pos='VBD' label='None'>were</lex>
+			<lex ner='O' begin='2184' end='2190' pos='NNS' label='SPATIAL_ENTITY'>houses</lex>
+			<lex begin='2190' end='2191'>,</lex>
+			<lex ner='O' begin='2192' end='2201' pos='RB' label='SPATIAL_SIGNAL'>backwards</lex>
+			<lex ner='O' begin='2202' end='2204' pos='PRP' label='SPATIAL_ENTITY'>we</lex>
+			<lex ner='O' begin='2205' end='2210' pos='MD' label='None'>could</lex>
+			<lex ner='O' begin='2211' end='2214' pos='VB' label='None'>see</lex>
+			<lex ner='O' begin='2215' end='2218' pos='DT' label='None'>the</lex>
+			<lex ner='O' begin='2219' end='2223' pos='NN' label='PATH'>road</lex>
+			<lex begin='2223' end='2224'>,</lex>
+			<lex ner='O' begin='2225' end='2229' pos='RB' label='None'>only</lex>
+			<lex ner='O' begin='2230' end='2232' pos='IN' label='SPATIAL_SIGNAL'>in</lex>
+			<lex ner='O' begin='2233' end='2238' pos='NN' label='SPATIAL_SIGNAL'>front</lex>
+			<lex ner='O' begin='2239' end='2241' pos='IN' label='SPATIAL_SIGNAL'>of</lex>
+			<lex ner='O' begin='2242' end='2244' pos='PRP' label='SPATIAL_ENTITY'>us</lex>
+			<lex ner='O' begin='2245' end='2252' pos='DT' label='None'>another</lex>
+			<lex ner='O' begin='2253' end='2261' pos='JJ' label='None'>forested</lex>
+			<lex ner='O' begin='2262' end='2266' pos='NN' label='PLACE'>hill</lex>
+			<lex ner='O' begin='2267' end='2272' pos='MD' label='None'>could</lex>
+			<lex ner='O' begin='2273' end='2275' pos='VB' label='None'>be</lex>
+			<lex ner='O' begin='2276' end='2280' pos='VBN' label='None'>seen</lex>
+			<lex begin='2280' end='2281'>,</lex>
+			<lex ner='O' begin='2282' end='2284' pos='IN' label='None'>as</lex>
+			<lex ner='O' begin='2285' end='2288' pos='DT' label='None'>the</lex>
+			<lex ner='O' begin='2289' end='2293' pos='JJ' label='None'>main</lex>
+			<lex ner='O' begin='2294' end='2298' pos='NN' label='PATH'>road</lex>
+			<lex ner='O' begin='2299' end='2306' pos='NNS' label='MOTION'>climbes</lex>
+			<lex ner='O' begin='2307' end='2311' pos='IN' label='MOTION_SIGNAL'>down</lex>
+			<lex ner='O' begin='2312' end='2315' pos='DT' label='None'>the</lex>
+			<lex ner='O' begin='2316' end='2320' pos='NN' label='PATH'>hill</lex>
+			<lex begin='2320' end='2321'>,</lex>
+			<lex ner='O' begin='2322' end='2329' pos='VBG' label='MOTION'>exiting</lex>
+			<lex ner='O' begin='2330' end='2333' pos='DT' label='None'>the</lex>
+			<lex ner='O' begin='2334' end='2341' pos='NN' label='PLACE'>village</lex>
+			<lex begin='2341' end='2342'>.</lex>
+		</s>
+		<s>
+			<lex ner='O' begin='2343' end='2346' pos='DT' label='None'>The</lex>
+			<lex ner='O' begin='2347' end='2356' pos='NN' label='None'>elevation</lex>
+			<lex CATEGORY='#ref-category BE' begin='2357' end='2360'
+				FORM='#ref-category VERB' ENDS-AT='#edges ending at 4' CONSTITUENTS='NIL'
+				USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "was"' pos='VBD'
+				RULE='#PSR147  be -  "was"' label='None' REFERENT='#be 1'
+				POSITION-IN-RESOURCE-ARRAY='1' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 3'>was</lex>
+			<lex CATEGORY='#ref-category MEASUREMENT' begin='2361' end='2364'
+				FORM='#ref-category NP' ENDS-AT='#edges ending at 6' CONSTITUENTS='NIL'
+				USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge3 4 number 5'
+				pos='CD' RULE='#PSR537  measurement -  number unit-of-measure'
+				label='MEASURE' REFERENT='#measurement 1'
+				POSITION-IN-RESOURCE-ARRAY='6' SPANNED-WORDS='NIL'
+				RIGHT-DAUGHTER='#edge4 5 unit-of-measure 6' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 4'>179</lex>
+			<lex CATEGORY='#ref-category MEASUREMENT' begin='2365' end='2371'
+				FORM='#ref-category NP' ENDS-AT='#edges ending at 6' CONSTITUENTS='NIL'
+				USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge3 4 number 5'
+				pos='NNS' RULE='#PSR537  measurement -  number unit-of-measure'
+				label='MEASURE' REFERENT='#measurement 1'
+				POSITION-IN-RESOURCE-ARRAY='6' SPANNED-WORDS='NIL'
+				RIGHT-DAUGHTER='#edge4 5 unit-of-measure 6' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 4'>meters</lex>
+			<lex begin='2371' end='2372'>.</lex>
+		</s>
+		<s>
+			<lex CATEGORY='#ref-category PRONOUN/SECOND' begin='2374' end='2377'
+				FORM='#ref-category PRONOUN' ENDS-AT='#edges ending at 2'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "you"'
+				pos='PRP' RULE='#PSR806  pronoun/second -  "you"' label='None'
+				REFERENT='#pronoun/second "you" 1' POSITION-IN-RESOURCE-ARRAY='0'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 1'>You</lex>
+			<lex CATEGORY='#ref-category MODAL' begin='2378' end='2381'
+				FORM='#ref-category MODAL' ENDS-AT='#edges ending at 3'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "can"'
+				pos='MD' RULE='#PSR164  modal -  "can"' label='None' REFERENT='#mixin BE-ABLE-TO'
+				POSITION-IN-RESOURCE-ARRAY='1' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 2'>can</lex>
+			<lex ner='O' begin='2382' end='2385' pos='VB' label='None'>see</lex>
+			<lex CATEGORY='#ref-category VIEW-KIND' begin='2386' end='2389'
+				FORM='#ref-category NP' ENDS-AT='#edges ending at 6' CONSTITUENTS='NIL'
+				USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge2 4 "the" 5'
+				pos='DT' RULE='#PSR183  {common-noun} - "the" common-noun' label='None'
+				REFERENT='#ref-category VIEW-KIND' POSITION-IN-RESOURCE-ARRAY='5'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER='#edge4 5 view-kind 6' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 4'>the</lex>
+			<lex CATEGORY='#ref-category VIEW-KIND' begin='2390' end='2394'
+				FORM='#ref-category NP' ENDS-AT='#edges ending at 6' CONSTITUENTS='NIL'
+				USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge2 4 "the" 5'
+				pos='NN' RULE='#PSR183  {common-noun} - "the" common-noun' label='None'
+				REFERENT='#ref-category VIEW-KIND' POSITION-IN-RESOURCE-ARRAY='5'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER='#edge4 5 view-kind 6' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 4'>view</lex>
+			<lex ner='O' begin='2395' end='2404' pos='NNS' label='None'>eastwards</lex>
+			<lex CATEGORY='#ref-category RELATIVE-LOCATION' begin='2405' end='2407'
+				FORM='#ref-category PP' ENDS-AT='#edges ending at 11' CONSTITUENTS='NIL'
+				USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge6 7 "in" 8'
+				pos='IN' RULE='#PSR279  relative-location -  "in" np' label='None'
+				REFERENT='#relative-location 1' POSITION-IN-RESOURCE-ARRAY='12'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER='#edge11 8 picture-kind 11' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 7'>in</lex>
+			<lex CATEGORY='#ref-category RELATIVE-LOCATION' begin='2408' end='2411'
+				FORM='#ref-category PP' ENDS-AT='#edges ending at 11' CONSTITUENTS='NIL'
+				USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge6 7 "in" 8'
+				pos='DT' RULE='#PSR279  relative-location -  "in" np' label='None'
+				REFERENT='#relative-location 1' POSITION-IN-RESOURCE-ARRAY='12'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER='#edge11 8 picture-kind 11' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 7'>the</lex>
+			<lex CATEGORY='#ref-category RELATIVE-LOCATION' begin='2412' end='2416'
+				FORM='#ref-category PP' ENDS-AT='#edges ending at 11' CONSTITUENTS='NIL'
+				USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge6 7 "in" 8'
+				pos='JJ' RULE='#PSR279  relative-location -  "in" np' label='None'
+				REFERENT='#relative-location 1' POSITION-IN-RESOURCE-ARRAY='12'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER='#edge11 8 picture-kind 11' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 7'>main</lex>
+			<lex CATEGORY='#ref-category RELATIVE-LOCATION' begin='2417' end='2424'
+				FORM='#ref-category PP' ENDS-AT='#edges ending at 11' CONSTITUENTS='NIL'
+				USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge6 7 "in" 8'
+				pos='NN' RULE='#PSR279  relative-location -  "in" np' label='None'
+				REFERENT='#relative-location 1' POSITION-IN-RESOURCE-ARRAY='12'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER='#edge11 8 picture-kind 11' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 7'>picture</lex>
+			<lex begin='2425' end='2426'>(</lex>
+			<lex ner='O' begin='2426' end='2431' pos='NN' label='None'>photo</lex>
+			<lex begin='2432' end='2433'>#</lex>
+			<lex ner='O' begin='2433' end='2434' pos='CD' label='None'>1</lex>
+			<lex begin='2434' end='2435'>)</lex>
+			<lex begin='2435' end='2436'>.</lex>
+		</s>
+		<s>
+			<lex ner='O' begin='2437' end='2440' pos='DT' label='None'>The</lex>
+			<lex CATEGORY='#ref-category PATH-TYPE' begin='2441' end='2445'
+				FORM='#ref-category COMMON-NOUN' ENDS-AT='#edges ending at 3'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "road"'
+				pos='NN' RULE='#PSR2613  path-type -  "road"' label='PATH'
+				REFERENT='#ref-category ROAD' POSITION-IN-RESOURCE-ARRAY='1'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 2'>road</lex>
+			<lex CATEGORY='#ref-category LOCATION' begin='2446' end='2451'
+				FORM='#ref-category COMMON-NOUN/PLURAL' ENDS-AT='#edges ending at 4'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "exits"'
+				pos='NNS' RULE='#PSR290  location -  "exits"' label='MOTION'
+				REFERENT='#throughway-exit 1' POSITION-IN-RESOURCE-ARRAY='3'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 3'>exits</lex>
+			<lex CATEGORY='#ref-category NAME' begin='2452' end='2458'
+				FORM='#ref-category PROPER-NAME' ENDS-AT='#edges ending at 5'
+				CONSTITUENTS='(#word "rontau")' USED-IN='NIL' Type='SPARSER::EDGE'
+				LEFT-DAUGHTER='#word "rontau"' pos='NNP'
+				RULE=':SINGLE-UNKNOWN-CAPITALIZED-WORD' label='PLACE'
+				REFERENT='#uncategorized-name Rontau' POSITION-IN-RESOURCE-ARRAY='4'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':PROPER-NAME' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 4'>Rontau</lex>
+			<lex CATEGORY='#word "and"' begin='2459' end='2462' FORM='NIL'
+				ENDS-AT='#edges ending at 6' CONSTITUENTS='NIL' USED-IN='NIL'
+				Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "and"' pos='CC' RULE='(319)'
+				label='None' REFERENT='#word "and"' POSITION-IN-RESOURCE-ARRAY='5'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':LITERAL-IN-A-RULE' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 5'>and</lex>
+			<lex ner='O' begin='2463' end='2469' pos='VBZ' label='MOTION'>climbs</lex>
+			<lex ner='O' begin='2470' end='2474' pos='RP' label='MOTION_SIGNAL'>down</lex>
+			<lex ner='O' begin='2475' end='2478' pos='DT' label='None'>the</lex>
+			<lex ner='O' begin='2479' end='2483' pos='NN' label='PATH'>hill</lex>
+			<lex begin='2483' end='2484'>,</lex>
+			<lex ner='O' begin='2485' end='2487' pos='IN' label='None'>so</lex>
+			<lex ner='O' begin='2488' end='2490' pos='PRP' label='SPATIAL_ENTITY'>we</lex>
+			<lex ner='O' begin='2491' end='2496' pos='MD' label='None'>could</lex>
+			<lex ner='O' begin='2497' end='2500' pos='VB' label='None'>see</lex>
+			<lex ner='O' begin='2501' end='2508' pos='DT' label='None'>another</lex>
+			<lex ner='O' begin='2509' end='2513' pos='NN' label='None'>hill</lex>
+			<lex begin='2513' end='2514'>.</lex>
+		</s>
+		<s>
+			<lex CATEGORY='#ref-category DIRECTION' begin='2515' end='2519'
+				FORM='#ref-category NOUN' ENDS-AT='#edges ending at 2' CONSTITUENTS='NIL'
+				USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "down"' pos='RB'
+				RULE='#PSR2571  direction -  "down"' label='SPATIAL_SIGNAL'
+				REFERENT='#direction "down" 4' POSITION-IN-RESOURCE-ARRAY='1'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 1'>Down</lex>
+			<lex CATEGORY='#ref-category RELATIVE-LOCATION' begin='2520' end='2522'
+				FORM='#ref-category PP' ENDS-AT='#edges ending at 5' CONSTITUENTS='NIL'
+				USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge3 2 "in" 3'
+				pos='IN' RULE='#PSR279  relative-location -  "in" np' label='SPATIAL_SIGNAL'
+				REFERENT='#relative-location 1' POSITION-IN-RESOURCE-ARRAY='8'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER='#edge7 3 valley 5' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 2'>in</lex>
+			<lex CATEGORY='#ref-category RELATIVE-LOCATION' begin='2523' end='2526'
+				FORM='#ref-category PP' ENDS-AT='#edges ending at 5' CONSTITUENTS='NIL'
+				USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge3 2 "in" 3'
+				pos='DT' RULE='#PSR279  relative-location -  "in" np' label='None'
+				REFERENT='#relative-location 1' POSITION-IN-RESOURCE-ARRAY='8'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER='#edge7 3 valley 5' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 2'>the</lex>
+			<lex CATEGORY='#ref-category RELATIVE-LOCATION' begin='2527' end='2533'
+				FORM='#ref-category PP' ENDS-AT='#edges ending at 5' CONSTITUENTS='NIL'
+				USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge3 2 "in" 3'
+				pos='NN' RULE='#PSR279  relative-location -  "in" np' label='PATH'
+				REFERENT='#relative-location 1' POSITION-IN-RESOURCE-ARRAY='8'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER='#edge7 3 valley 5' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 2'>valley</lex>
+			<lex CATEGORY='#ref-category PRONOUN/SECOND' begin='2534' end='2537'
+				FORM='#ref-category PRONOUN' ENDS-AT='#edges ending at 6'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "you"'
+				pos='PRP' RULE='#PSR806  pronoun/second -  "you"' label='None'
+				REFERENT='#pronoun/second "you" 1' POSITION-IN-RESOURCE-ARRAY='9'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 5'>you</lex>
+			<lex CATEGORY='#ref-category MODAL' begin='2538' end='2541'
+				FORM='#ref-category MODAL' ENDS-AT='#edges ending at 7'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "can"'
+				pos='MD' RULE='#PSR164  modal -  "can"' label='None' REFERENT='#mixin BE-ABLE-TO'
+				POSITION-IN-RESOURCE-ARRAY='10' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 6'>can</lex>
+			<lex ner='O' begin='2542' end='2545' pos='VB' label='None'>see</lex>
+			<lex CATEGORY='#word "some"' begin='2546' end='2550'
+				FORM='#ref-category QUANTIFIER' ENDS-AT='#edges ending at 9'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "some"'
+				pos='DT' RULE='(98304)' label='None' REFERENT='#word "some"'
+				POSITION-IN-RESOURCE-ARRAY='11' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':LITERAL-IN-A-RULE'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 8'>some</lex>
+			<lex ner='O' begin='2551' end='2560' pos='NNS' label='SPATIAL_ENTITY'>buildings</lex>
+			<lex CATEGORY='#word "from"' begin='2561' end='2565'
+				FORM='#ref-category PREPOSITION' ENDS-AT='#edges ending at 11'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "from"'
+				pos='IN' RULE='((46) 364544)' label='None' REFERENT='#word "from"'
+				POSITION-IN-RESOURCE-ARRAY='13' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':LITERAL-IN-A-RULE'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 10'>from</lex>
+			<lex CATEGORY='#ref-category NAME' begin='2566' end='2571'
+				FORM='#ref-category PROPER-NAME' ENDS-AT='#edges ending at 12'
+				CONSTITUENTS='(#word "baile")' USED-IN='NIL' Type='SPARSER::EDGE'
+				LEFT-DAUGHTER='#word "baile"' pos='NNP' RULE=':SINGLE-UNKNOWN-CAPITALIZED-WORD'
+				label='PLACE' REFERENT='#uncategorized-name Baile'
+				POSITION-IN-RESOURCE-ARRAY='15' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':PROPER-NAME'
+				ner='ORGANIZATION' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 11'>Baile</lex>
+			<lex CATEGORY='#ref-category NUMBER' begin='2572' end='2573'
+				FORM='NIL' ENDS-AT='#edges ending at 13' CONSTITUENTS='NIL' USED-IN='NIL'
+				Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge17 12 digit-sequence 13'
+				pos='CD' RULE=':NUMBER-FSA' label='PLACE' REFERENT='#number "1"'
+				POSITION-IN-RESOURCE-ARRAY='18' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':DIGIT-BASED-NUMBER'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 12'>1</lex>
+			<lex CATEGORY='#ref-category NAME' begin='2574' end='2577'
+				FORM='#ref-category PROPER-NAME' ENDS-AT='#edges ending at 14'
+				CONSTITUENTS='(#word "mai")' USED-IN='NIL' Type='SPARSER::EDGE'
+				LEFT-DAUGHTER='#word "mai"' pos='NNP' RULE=':SINGLE-UNKNOWN-CAPITALIZED-WORD'
+				label='PLACE' REFERENT='#uncategorized-name Mai'
+				POSITION-IN-RESOURCE-ARRAY='19' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':PROPER-NAME'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 13'>Mai</lex>
+			<lex begin='2577' end='2578'>.</lex>
+		</s>
+		<s>
+			<lex CATEGORY='#ref-category PHOTO' begin='2579' end='2584'
+				FORM='#ref-category COMMON-NOUN' ENDS-AT='#edges ending at 2'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "photo"'
+				pos='NNP' RULE='#PSR3533  photo -  "photo"' label='None'
+				REFERENT='#ref-category PHOTO' POSITION-IN-RESOURCE-ARRAY='0'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 1'>Photo</lex>
+			<lex begin='2585' end='2586'>#</lex>
+			<lex CATEGORY='#ref-category NUMBER' begin='2586' end='2587'
+				FORM='NIL' ENDS-AT='#edges ending at 4' CONSTITUENTS='NIL' USED-IN='NIL'
+				Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge2 3 digit-sequence 4' pos='CD'
+				RULE=':NUMBER-FSA' label='None' REFERENT='#number "2"'
+				POSITION-IN-RESOURCE-ARRAY='3' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':DIGIT-BASED-NUMBER'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 3'>2</lex>
+			<lex CATEGORY='#ref-category NEED-KIND' begin='2588' end='2593'
+				FORM='#ref-category COMMON-NOUN/PLURAL' ENDS-AT='#edges ending at 5'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "needs"'
+				pos='VBZ' RULE='#PSR3537  need-kind -  "needs"' label='None'
+				REFERENT='#need-kind 1' POSITION-IN-RESOURCE-ARRAY='5'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 4'>needs</lex>
+			<lex CATEGORY='#ref-category NO' begin='2594' end='2596'
+				FORM='#ref-category QUANTIFIER' ENDS-AT='#edges ending at 6'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "no"'
+				pos='DT' RULE='#PSR60  no -  "no"' label='None' REFERENT='#quantifier "no" 19'
+				POSITION-IN-RESOURCE-ARRAY='9' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 5'>no</lex>
+			<lex CATEGORY='#ref-category EXPLANATION' begin='2597' end='2608'
+				FORM='#ref-category COMMON-NOUN' ENDS-AT='#edges ending at 7'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "explanation"'
+				pos='NN' RULE='#PSR3542  explanation -  "explanation"' label='None'
+				REFERENT='#ref-category EXPLANATION' POSITION-IN-RESOURCE-ARRAY='10'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 6'>explanation</lex>
+			<lex begin='2608' end='2609'>.</lex>
+		</s>
+		<s>
+			<lex CATEGORY='#ref-category PHOTO' begin='2610' end='2615'
+				FORM='#ref-category COMMON-NOUN' ENDS-AT='#edges ending at 2'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "photo"'
+				pos='NNP' RULE='#PSR3533  photo -  "photo"' label='None'
+				REFERENT='#ref-category PHOTO' POSITION-IN-RESOURCE-ARRAY='0'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 1'>Photo</lex>
+			<lex begin='2616' end='2617'>#</lex>
+			<lex CATEGORY='#ref-category NUMBER' begin='2617' end='2618'
+				FORM='NIL' ENDS-AT='#edges ending at 4' CONSTITUENTS='NIL' USED-IN='NIL'
+				Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge2 3 digit-sequence 4' pos='CD'
+				RULE=':NUMBER-FSA' label='None' REFERENT='#number "5"'
+				POSITION-IN-RESOURCE-ARRAY='3' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':DIGIT-BASED-NUMBER'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 3'>5</lex>
+			<lex CATEGORY='#ref-category EVENT' begin='2619' end='2624'
+				FORM='#ref-category S' ENDS-AT='#edges ending at 6' CONSTITUENTS='NIL'
+				USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge4 4 look-event 5'
+				pos='VBZ' RULE='#PSR1909  event -  event location' label='None'
+				REFERENT='#look-event 1' POSITION-IN-RESOURCE-ARRAY='8'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER='#edge6 5 direction 6' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 4'>looks</lex>
+			<lex ner='O' begin='2625' end='2640' pos='NNS' label='None'>south-eastwards</lex>
+			<lex CATEGORY='#word "and"' begin='2641' end='2644' FORM='NIL'
+				ENDS-AT='#edges ending at 9' CONSTITUENTS='NIL' USED-IN='NIL'
+				Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "and"' pos='CC' RULE='(319)'
+				label='None' REFERENT='#word "and"' POSITION-IN-RESOURCE-ARRAY='9'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':LITERAL-IN-A-RULE' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 8'>and</lex>
+			<lex CATEGORY='#ref-category show' begin='2645' end='2650'
+				FORM='#ref-category VERB+PRESENT' ENDS-AT='#edges ending at 10'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "shows"'
+				pos='NNS' RULE='#PSR1338  show -  "shows"' label='None' REFERENT='#show 1'
+				POSITION-IN-RESOURCE-ARRAY='10' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 9'>shows</lex>
+			<lex CATEGORY='#ref-category ONES-NUMBER' begin='2651' end='2654'
+				FORM='#ref-category NUMBER' ENDS-AT='#edges ending at 11'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "two"'
+				pos='CD' RULE='#PSR427  ones-number -  "two"' label='None' REFERENT='#number "2"'
+				POSITION-IN-RESOURCE-ARRAY='11' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 10'>two</lex>
+			<lex CATEGORY='#ref-category NAME' begin='2655' end='2661'
+				FORM='#ref-category PROPER-NAME' ENDS-AT='#edges ending at 12'
+				CONSTITUENTS='(#word "rontau")' USED-IN='NIL' Type='SPARSER::EDGE'
+				LEFT-DAUGHTER='#word "rontau"' pos='NNP'
+				RULE=':SINGLE-UNKNOWN-CAPITALIZED-WORD' label='None'
+				REFERENT='#uncategorized-name Rontau' POSITION-IN-RESOURCE-ARRAY='12'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':PROPER-NAME' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 11'>Rontau</lex>
+			<lex ner='O' begin='2662' end='2668' pos='NNS' label='SPATIAL_ENTITY'>houses</lex>
+			<lex begin='2668' end='2669'>:</lex>
+			<lex CATEGORY='#word "a"' begin='2670' end='2671' FORM='#ref-category DET'
+				ENDS-AT='#edges ending at 15' CONSTITUENTS='NIL' USED-IN='NIL'
+				Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "a"' pos='DT'
+				RULE='((386) 143360 . 282624)' label='None' REFERENT='#word "a"'
+				POSITION-IN-RESOURCE-ARRAY='14' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':LITERAL-IN-A-RULE'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 14'>a</lex>
+			<lex CATEGORY='#ref-category TYPICAL' begin='2672' end='2679'
+				FORM='#ref-category ADJECTIVE' ENDS-AT='#edges ending at 16'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "typical"'
+				pos='JJ' RULE='#PSR3542  typical -  "typical"' label='None'
+				REFERENT='#ref-category TYPICAL' POSITION-IN-RESOURCE-ARRAY='15'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 15'>typical</lex>
+			<lex CATEGORY='#ref-category NUMBER' begin='2680' end='2683'
+				FORM='#ref-category NUMBER' ENDS-AT='#edges ending at 17'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge17 16 multiplier 17'
+				pos='CD' RULE=':RESPANING-SINGLE-NUMBER-WORD' label='SPATIAL_ENTITY'
+				REFERENT='#multiplier "one" 2' POSITION-IN-RESOURCE-ARRAY='19'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 16'>one</lex>
+			<lex CATEGORY='#word "and"' begin='2684' end='2687' FORM='NIL'
+				ENDS-AT='#edges ending at 18' CONSTITUENTS='NIL' USED-IN='NIL'
+				Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "and"' pos='CC' RULE='(319)'
+				label='None' REFERENT='#word "and"' POSITION-IN-RESOURCE-ARRAY='20'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':LITERAL-IN-A-RULE' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 17'>and</lex>
+			<lex CATEGORY='#word "a"' begin='2688' end='2689' FORM='#ref-category DET'
+				ENDS-AT='#edges ending at 19' CONSTITUENTS='NIL' USED-IN='NIL'
+				Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "a"' pos='DT'
+				RULE='((386) 143360 . 282624)' label='None' REFERENT='#word "a"'
+				POSITION-IN-RESOURCE-ARRAY='21' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':LITERAL-IN-A-RULE'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 18'>a</lex>
+			<lex ner='O' begin='2690' end='2693' pos='JJ' label='None'>new</lex>
+			<lex ner='O' begin='2694' end='2699' pos='VBN' label='None'>built</lex>
+			<lex CATEGORY='#ref-category NUMBER' begin='2700' end='2703'
+				FORM='#ref-category NUMBER' ENDS-AT='#edges ending at 22'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge23 21 multiplier 22'
+				pos='NN' RULE=':RESPANING-SINGLE-NUMBER-WORD' label='SPATIAL_ENTITY'
+				REFERENT='#multiplier "one" 2' POSITION-IN-RESOURCE-ARRAY='25'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 21'>one</lex>
+			<lex begin='2704' end='2705'>(</lex>
+			<lex ner='O' begin='2705' end='2708' pos='DT' label='None'>the</lex>
+			<lex ner='O' begin='2709' end='2714' pos='NN' label='SPATIAL_ENTITY'>house</lex>
+			<lex ner='O' begin='2715' end='2719' pos='IN' label='None'>with</lex>
+			<lex ner='O' begin='2720' end='2721' pos='CD' label='MEASURE'>2</lex>
+			<lex ner='O' begin='2722' end='2729' pos='NNS' label='MEASURE'>storeys</lex>
+			<lex begin='2729' end='2730'>)</lex>
+			<lex begin='2730' end='2731'>.</lex>
+		</s>
+		<s>
+			<lex CATEGORY='#ref-category PHOTO' begin='2732' end='2737'
+				FORM='#ref-category COMMON-NOUN' ENDS-AT='#edges ending at 2'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "photo"'
+				pos='NNP' RULE='#PSR3533  photo -  "photo"' label='None'
+				REFERENT='#ref-category PHOTO' POSITION-IN-RESOURCE-ARRAY='0'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 1'>Photo</lex>
+			<lex begin='2738' end='2739'>#</lex>
+			<lex CATEGORY='#ref-category NUMBER' begin='2739' end='2740'
+				FORM='NIL' ENDS-AT='#edges ending at 4' CONSTITUENTS='NIL' USED-IN='NIL'
+				Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge2 3 digit-sequence 4' pos='CD'
+				RULE=':NUMBER-FSA' label='None' REFERENT='#number "7"'
+				POSITION-IN-RESOURCE-ARRAY='3' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':DIGIT-BASED-NUMBER'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 3'>7</lex>
+			<lex CATEGORY='#ref-category show' begin='2741' end='2746'
+				FORM='#ref-category VERB+PRESENT' ENDS-AT='#edges ending at 5'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "shows"'
+				pos='VBZ' RULE='#PSR1338  show -  "shows"' label='None' REFERENT='#show 1'
+				POSITION-IN-RESOURCE-ARRAY='4' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 4'>shows</lex>
+			<lex CATEGORY='#ref-category WAY-KIND' begin='2747' end='2750'
+				FORM='#ref-category NP' ENDS-AT='#edges ending at 7' CONSTITUENTS='NIL'
+				USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge5 5 "the" 6'
+				pos='DT' RULE='#PSR183  {common-noun} - "the" common-noun' label='None'
+				REFERENT='#ref-category WAY-KIND' POSITION-IN-RESOURCE-ARRAY='8'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER='#edge6 6 way-kind 7' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 5'>the</lex>
+			<lex CATEGORY='#ref-category WAY-KIND' begin='2751' end='2754'
+				FORM='#ref-category NP' ENDS-AT='#edges ending at 7' CONSTITUENTS='NIL'
+				USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge5 5 "the" 6'
+				pos='NN' RULE='#PSR183  {common-noun} - "the" common-noun' label='PATH'
+				REFERENT='#ref-category WAY-KIND' POSITION-IN-RESOURCE-ARRAY='8'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER='#edge6 6 way-kind 7' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 5'>way</lex>
+			<lex CATEGORY='#ref-category PRONOUN/FIRST/PLURAL' begin='2755'
+				end='2757' FORM='#ref-category PRONOUN' ENDS-AT='#edges ending at 8'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "we"'
+				pos='PRP' RULE='#PSR810  pronoun/first/plural -  "we"' label='SPATIAL_ENTITY'
+				REFERENT='#pronoun/first/plural "we" 1' POSITION-IN-RESOURCE-ARRAY='9'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 7'>we</lex>
+			<lex CATEGORY='#ref-category EVENT' begin='2758' end='2761'
+				FORM='#ref-category VP' ENDS-AT='#edges ending at 10' CONSTITUENTS='NIL'
+				USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge10 8 get 9'
+				pos='VBD' RULE='#PSR1263  event -  get deictic-location' label='MOTION'
+				REFERENT='#get 1' POSITION-IN-RESOURCE-ARRAY='19' SPANNED-WORDS='NIL'
+				RIGHT-DAUGHTER='#edge12 9 deictic-location 10' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 8'>got</lex>
+			<lex CATEGORY='#ref-category EVENT' begin='2762' end='2767'
+				FORM='#ref-category VP' ENDS-AT='#edges ending at 10' CONSTITUENTS='NIL'
+				USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge10 8 get 9'
+				pos='RB' RULE='#PSR1263  event -  get deictic-location' label='PLACE'
+				REFERENT='#get 1' POSITION-IN-RESOURCE-ARRAY='19' SPANNED-WORDS='NIL'
+				RIGHT-DAUGHTER='#edge12 9 deictic-location 10' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 8'>there</lex>
+			<lex begin='2767' end='2768'>,</lex>
+			<lex CATEGORY='#ref-category ALONG' begin='2769' end='2774'
+				FORM='#ref-category SPATIAL-PREPOSITION' ENDS-AT='#edges ending at 12'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "along"'
+				pos='IN' RULE='#PSR228  along -  "along"' label='SPATIAL_SIGNAL'
+				REFERENT='#ref-category ALONG' POSITION-IN-RESOURCE-ARRAY='15'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 11'>along</lex>
+			<lex CATEGORY='#ref-category PATH-TYPE' begin='2775' end='2778'
+				FORM='#ref-category NP' ENDS-AT='#edges ending at 15' CONSTITUENTS='NIL'
+				USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge16 12 "the" 13'
+				pos='DT' RULE='#PSR183  {common-noun} - "the" common-noun' label='None'
+				REFERENT='#ref-category ROAD' POSITION-IN-RESOURCE-ARRAY='18'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER='#edge17 14 path-type 15' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 12'>the</lex>
+			<lex CATEGORY='#ref-category PATH-TYPE' begin='2779' end='2783'
+				FORM='#ref-category NP' ENDS-AT='#edges ending at 15' CONSTITUENTS='NIL'
+				USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge16 12 "the" 13'
+				pos='JJ' RULE='#PSR183  {common-noun} - "the" common-noun' label='None'
+				REFERENT='#ref-category ROAD' POSITION-IN-RESOURCE-ARRAY='18'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER='#edge17 14 path-type 15' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 12'>main</lex>
+			<lex CATEGORY='#ref-category PATH-TYPE' begin='2784' end='2788'
+				FORM='#ref-category NP' ENDS-AT='#edges ending at 15' CONSTITUENTS='NIL'
+				USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge16 12 "the" 13'
+				pos='NN' RULE='#PSR183  {common-noun} - "the" common-noun' label='PATH'
+				REFERENT='#ref-category ROAD' POSITION-IN-RESOURCE-ARRAY='18'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER='#edge17 14 path-type 15' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 12'>road</lex>
+			<lex begin='2788' end='2789'>.</lex>
+		</s>
+		<s>
+			<lex CATEGORY='#ref-category PRONOUN/SECOND' begin='2790' end='2793'
+				FORM='#ref-category PRONOUN' ENDS-AT='#edges ending at 2'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "you"'
+				pos='PRP' RULE='#PSR806  pronoun/second -  "you"' label='None'
+				REFERENT='#pronoun/second "you" 1' POSITION-IN-RESOURCE-ARRAY='0'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 1'>You</lex>
+			<lex CATEGORY='#ref-category MODAL' begin='2794' end='2797'
+				FORM='#ref-category MODAL' ENDS-AT='#edges ending at 3'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "can"'
+				pos='MD' RULE='#PSR164  modal -  "can"' label='None' REFERENT='#mixin BE-ABLE-TO'
+				POSITION-IN-RESOURCE-ARRAY='1' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 2'>can</lex>
+			<lex ner='O' begin='2798' end='2801' pos='VB' label='None'>see</lex>
+			<lex CATEGORY='#ref-category SOME' begin='2802' end='2806'
+				FORM='#ref-category QUANTIFIER' ENDS-AT='#edges ending at 5'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "some"'
+				pos='DT' RULE='#PSR43  some -  "some"' label='None' REFERENT='#quantifier "some" 13'
+				POSITION-IN-RESOURCE-ARRAY='3' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 4'>some</lex>
+			<lex CATEGORY='#ref-category COMPARATIVE' begin='2807' end='2811'
+				FORM='#ref-category ADJUNCT' ENDS-AT='#edges ending at 6'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "more"'
+				pos='JJR' RULE='#PSR2354  comparative -  "more"' label='None'
+				REFERENT='#comparative "more" 3' POSITION-IN-RESOURCE-ARRAY='5'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 5'>more</lex>
+			<lex ner='O' begin='2812' end='2818' pos='NNS' label='SPATIAL_ENTITY'>houses</lex>
+			<lex begin='2818' end='2819'>.</lex>
+		</s>
+		<s>
+			<lex ner='O' begin='2820' end='2823' pos='DT' label='None'>The</lex>
+			<lex CATEGORY='#ref-category LOCAL-KIND' begin='2824' end='2829'
+				FORM='#ref-category COMMON-NOUN' ENDS-AT='#edges ending at 3'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "local"'
+				pos='JJ' RULE='#PSR3534  local-kind -  "local"' label='None'
+				REFERENT='#ref-category LOCAL-KIND' POSITION-IN-RESOURCE-ARRAY='1'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 2'>local</lex>
+			<lex begin='2830' end='2831'>'</lex>
+			<lex ner='O' begin='2831' end='2835' pos='NN' label='None'>food</lex>
+			<lex CATEGORY='#ref-category SOURCE' begin='2836' end='2842'
+				FORM='#ref-category COMMON-NOUN' ENDS-AT='#edges ending at 6'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "source"'
+				pos='NN' RULE='#PSR3536  source -  "source"' label='SPATIAL_ENTITY'
+				REFERENT='#ref-category SOURCE' POSITION-IN-RESOURCE-ARRAY='3'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 5'>source</lex>
+			<lex begin='2842' end='2843'>'</lex>
+			<lex CATEGORY='#ref-category BE' begin='2844' end='2846'
+				FORM='#ref-category VERB' ENDS-AT='#edges ending at 8' CONSTITUENTS='NIL'
+				USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "is"' pos='VBZ'
+				RULE='#PSR146  be -  "is"' label='None' REFERENT='#ref-category BE'
+				POSITION-IN-RESOURCE-ARRAY='5' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 7'>is</lex>
+			<lex ner='O' begin='2847' end='2852' pos='VBN' label='None'>shown</lex>
+			<lex CATEGORY='#ref-category IN' begin='2853' end='2855'
+				FORM='#ref-category PREPOSITION' ENDS-AT='#edges ending at 10'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "in"'
+				pos='IN' RULE='#PSR247  in -  "in"' label='None' REFERENT='#ref-category IN'
+				POSITION-IN-RESOURCE-ARRAY='7' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 9'>in</lex>
+			<lex CATEGORY='#ref-category PHOTO' begin='2856' end='2861'
+				FORM='#ref-category COMMON-NOUN' ENDS-AT='#edges ending at 11'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "photo"'
+				pos='NN' RULE='#PSR3538  photo -  "photo"' label='None'
+				REFERENT='#ref-category PHOTO' POSITION-IN-RESOURCE-ARRAY='8'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 10'>photo</lex>
+			<lex begin='2862' end='2863'>#</lex>
+			<lex CATEGORY='#ref-category NUMBER' begin='2863' end='2864'
+				FORM='NIL' ENDS-AT='#edges ending at 13' CONSTITUENTS='NIL' USED-IN='NIL'
+				Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge10 12 digit-sequence 13'
+				pos='CD' RULE=':NUMBER-FSA' label='None' REFERENT='#number "6"'
+				POSITION-IN-RESOURCE-ARRAY='11' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':DIGIT-BASED-NUMBER'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 12'>6</lex>
+			<lex begin='2864' end='2865'>.</lex>
+		</s>
+		<s>
+			<lex ner='O' begin='2867' end='2871' pos='JJ' label='None'>Next</lex>
+			<lex ner='O' begin='2872' end='2875' pos='NN' label='None'>day</lex>
+			<lex ner='O' begin='2876' end='2878' pos='PRP' label='SPATIAL_ENTITY'>we</lex>
+			<lex ner='O' begin='2879' end='2883' pos='VBD' label='MOTION'>left</lex>
+			<lex ner='O' begin='2884' end='2887' pos='IN' label='MOTION_SIGNAL'>for</lex>
+			<lex ner='LOCATION' begin='2888' end='2897' pos='NNP' label='PLACE'>Bucharest</lex>
+			<lex ner='O' begin='2898' end='2901' pos='CC' label='None'>and</lex>
+			<lex ner='O' begin='2902' end='2904' pos='IN' label='SPATIAL_SIGNAL'>on</lex>
+			<lex ner='O' begin='2905' end='2908' pos='DT' label='None'>the</lex>
+			<lex ner='O' begin='2909' end='2912' pos='NN' label='PATH'>way</lex>
+			<lex ner='O' begin='2913' end='2915' pos='PRP' label='SPATIAL_ENTITY'>we</lex>
+			<lex ner='O' begin='2916' end='2923' pos='VBD' label='MOTION'>visited</lex>
+			<lex ner='O' begin='2924' end='2930' pos='NNP' label='PLACE'>N47E23</lex>
+			<lex begin='2930' end='2931'>.</lex>
+		</s>
+	</TOKENS>
+
+</SpaceEvalTaskv1.2>

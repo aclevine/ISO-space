@@ -1,0 +1,2761 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<SpaceEvalTaskv1.2>
+	<TEXT><![CDATA[
+        Modern Madrid
+        Madrid’s third major expansion took place in the 19th
+        century, resulting in the foundations of modern Madrid, a sprawling
+        succession of residential neighborhoods, shops, cinemas, restaurants,
+        banks and smaller museums. Barrio de Salamanca is the most attractive
+        and exclusive of these, and Gran Vía is the great turn-of-the-century
+        avenue that connects east to west, old to new Madrid.
+        Paseo de Recoletos is a continuation of Paseo del Prado
+        that runs from Plaza de la Cibeles to Plaza Colón. A block east is the
+        distinguished Museo Arqueológico (c/ Serrano, 13). The museum’s
+        archaeology collection addresses the art of ancient inhabitants of
+        Spain, with statuettes and jewelry from 2nd-century b.c. Carthaginian
+        settlers and miraculously preserved mosaics from 2nd-century a.d. Roman
+        Spain. An unforgettable item is La Dama de Elche (the Lady of Elche), a
+        stone sculpture found in Alicante province in 1897. This thoroughly
+        noble goddess, with beautiful cheekbones, lips, and eyes, and wearing a
+        fanciful headdress, may be 2,500 years old. On the museum grounds — or,
+        more correctly, under the ground — is a careful reproduction of the
+        painted scenes discovered in a cave in Altamira in northern Spain:
+        prehistoric depictions of animals, dating back 15,000 years and
+        representing man’s first illustrations of the world around him. They
+        are said to be some of the finest prehistoric cave drawings ever
+        discovered.
+        Plaza de Colón is a large open space that has been the
+        recent scene of far-reaching public-works projects. The city airport
+        bus terminal operates below ground, beneath an 1885 statue of
+        Christopher Columbus and a monument to the discovery of the New World.
+        There is also the Centro Cultural de la Villa (City Cultural Center),
+        with facilities for concerts, theatre, art exhibitions, and films.
+        Paseo de la Castellana is Madrid’s principal north-south
+        avenue, running for several miles through the heart of the city and
+        bordering the Salamanca district to its west. In the area north of
+        Plaza de Colón, you come to a newer section of town, where patrician
+        townhouses in the central area give way to luxurious modern apartment
+        blocks with landscaped balconies.
+        Museo Lázaro Galdiano (c/ Serrano, 122) is an astonishingly
+        wide-ranging and priceless private collection. Featured here are
+        ancient jewelry, including a Celtic diadem from the 2nd century b.c. ,
+        medieval and Renaissance masterpieces in ivory and enamel, gold and
+        silver, rare church vestments, and medieval weapons. Its paintings
+        comprise a Rembrandt portrait of Saskia van Uylenburgh, dated the year
+        they were married; Hieronymus Bosch at his most diabolical; a rich
+        repository of Goya official portraits, colorful sketches of real life,
+        and haunting scenes of witches and horrors; El Greco’s sensitive St.
+        Francis of Assisi and an early (1562) picture from his Venetian period;
+        and the English painters Reynolds, Gainsborough, and Constable. But the
+        museum’s greatest pride, spotlighted in its own niche on the ground
+        floor, is a portrait of angelic beauty, painted around 1480 by Leonardo
+        Da Vinci, entitled The Saviour.
+        Another smaller but equally interesting museum is the Museo
+        Sorolla (Paseo del General Martínez Campos, 37). The only Madrid museum
+        devoted to a single painter, this mansion was the hom e and studio of
+        Joaquín Sorolla (1863–1923). It has close to 300 paintings on view,
+        showing the Valencian impressionist’s favorite seaside scenes and
+        landscapes. The house has a charming lived-in feel.
+        Quite a way east of the Salamanca barrio is the Plaza de
+        Toros y Museo Taurino (Bullfighting Ring and Museum), officially called
+        the Plaza de Toros Monumental de Las Ventas. This is where to go to see
+        an authentic bullfight, a seemingly anachronistic pursuit that
+        continues to inspire the passions of so many Madrileños. The small
+        museum houses historic posters, capes, swords, paintings, and photos
+        for aficionados of the corrida, and is perhaps best visited out of
+        bullfighting season for those who want to get a glimpse of the interior
+        of the ring.
+]]></TEXT>
+	<TAGS>
+		<PLACE
+			comment="The reference point in 'A block east is the         distinguished Museo Arqueológico'"
+			continent="" countable="TRUE" country="" ctv="" dcl="FALSE"
+			dimensionality="POINT" domain="" elevation="" end="-1" form="NOM"
+			gazref="" gquant="" id="pl0" latLong="" mod="" scopes="" start="-1"
+			state="" text="" type="" />
+		<PLACE
+			comment="Source for 'running for several miles through the heart of the city'"
+			continent="" countable="TRUE" country="" ctv="" dcl="FALSE"
+			dimensionality="AREA" domain="" elevation="" end="-1" form="NOM"
+			gazref="" gquant="" id="pl47" latLong="" mod="" scopes="" start="-1"
+			state="" text="" type="" />
+		<PLACE
+			comment="Goal for 'running for several miles through the heart of the city'"
+			continent="" countable="TRUE" country="" ctv="" dcl="FALSE"
+			dimensionality="AREA" domain="" elevation="" end="-1" form="NOM"
+			gazref="" gquant="" id="pl48" latLong="" mod="" scopes="" start="-1"
+			state="" text="" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="1035"
+			form="NAM" gazref="" gquant="" id="pl22" latLong="" mod="" scopes=""
+			start="1018" state="" text="Alicante province" type="" />
+		<PLACE comment="" continent="" countable="FALSE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="1214"
+			form="NOM" gazref="" gquant="" id="pl23" latLong="" mod="" scopes=""
+			start="1207" state="" text="grounds" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="1340"
+			form="NOM" gazref="" gquant="" id="pl24" latLong="" mod="" scopes=""
+			start="1336" state="" text="cave" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="147"
+			form="NAM" gazref="" gquant="" id="pl2" latLong="" mod="" scopes=""
+			start="134" state="" text="modern Madrid" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="1352"
+			form="NAM" gazref="" gquant="" id="pl25" latLong="" mod="" scopes=""
+			start="1344" state="" text="Altamira" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="1370"
+			form="NAM" gazref="" gquant="" id="pl26" latLong="" mod="northern"
+			scopes="" start="1365" state="" text="Spain" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="1636"
+			form="NAM" gazref="" gquant="" id="pl27" latLong="" mod="" scopes=""
+			start="1622" state="" text="Plaza de Colón" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="1658"
+			form="NOM" gazref="" gquant="" id="pl28" latLong="" mod="large"
+			scopes="" start="1653" state="" text="space" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="179"
+			form="NOM" gazref="" gquant="" id="pl3" latLong="" mod="sprawling"
+			scopes="" start="169" state="" text="succession" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="1697"
+			form="NOM" gazref="" gquant="" id="pl29" latLong="" mod="" scopes=""
+			start="1692" state="" text="scene" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="1774"
+			form="NOM" gazref="" gquant="" id="pl30" latLong="" mod="" scopes=""
+			start="1766" state="" text="terminal" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="1901"
+			form="NAM" gazref="" gquant="" id="pl31" latLong="" mod="" scopes=""
+			start="1892" state="" text="New World" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="1956"
+			form="NAM" gazref="" gquant="" id="pl32" latLong="" mod="" scopes=""
+			start="1929" state="" text="Centro Cultural de la Villa" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="208"
+			form="NOM" gazref="" gquant="" id="pl4" latLong="" mod="" scopes=""
+			start="195" state="" text="neighborhoods" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="1978"
+			form="NAM" gazref="" gquant="" id="pl33" latLong="" mod="" scopes=""
+			start="1958" state="" text="City Cultural Center" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="2004"
+			form="NOM" gazref="" gquant="" id="pl34" latLong="" mod="" scopes=""
+			start="1994" state="" text="facilities" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="2096"
+			form="NAM" gazref="" gquant="" id="pl35" latLong="" mod="" scopes=""
+			start="2090" state="" text="Madrid" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="215"
+			form="NOM" gazref="" gquant="" id="pl5" latLong="" mod="" scopes=""
+			start="210" state="" text="shops" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="224"
+			form="NOM" gazref="" gquant="" id="pl6" latLong="" mod="" scopes=""
+			start="217" state="" text="cinemas" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="2180"
+			form="NOM" gazref="" gquant="" id="pl36" latLong="" mod="" scopes=""
+			start="2175" state="" text="heart" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="2192"
+			form="NOM" gazref="" gquant="" id="pl37" latLong="" mod="" scopes=""
+			start="2188" state="" text="city" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="2237"
+			form="NAM" gazref="" gquant="" id="pl38" latLong="" mod="" scopes=""
+			start="2219" state="" text="Salamanca district" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="2262"
+			form="NOM" gazref="" gquant="" id="pl40" latLong="" mod="" scopes=""
+			start="2258" state="" text="area" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="237"
+			form="NOM" gazref="" gquant="" id="pl7" latLong="" mod="" scopes=""
+			start="226" state="" text="restaurants" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="2294"
+			form="NAM" gazref="" gquant="" id="pl41" latLong="" mod="" scopes=""
+			start="2280" state="" text="Plaza de Colón" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="2323"
+			form="NOM" gazref="" gquant="" id="pl42" latLong="" mod="" scopes=""
+			start="2316" state="" text="section" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="2331"
+			form="NOM" gazref="" gquant="" id="pl43" latLong="" mod="" scopes=""
+			start="2327" state="" text="town" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="2367"
+			form="NOM" gazref="" gquant="" id="pl44" latLong="" mod="" scopes=""
+			start="2357" state="" text="townhouses" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="2387"
+			form="NOM" gazref="" gquant="" id="pl45" latLong="" mod="central"
+			scopes="" start="2383" state="" text="area" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="2441"
+			form="NOM" gazref="" gquant="" id="pl46" latLong="" mod="" scopes=""
+			start="2435" state="" text="blocks" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="252"
+			form="NOM" gazref="" gquant="" id="pl8" latLong="" mod="" scopes=""
+			start="247" state="" text="banks" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="2498"
+			form="NAM" gazref="" gquant="" id="pl49" latLong="" mod="" scopes=""
+			start="2477" state="" text="Museo Lázaro Galdiano" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="2515"
+			form="NAM" gazref="" gquant="" id="pl50" latLong="" mod="" scopes=""
+			start="2500" state="" text="c/ Serrano, 122" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="2605"
+			form="NOM" gazref="" gquant="" id="pl51" latLong="" mod="" scopes=""
+			start="2601" state="" text="here" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="272"
+			form="NOM" gazref="" gquant="" id="pl9" latLong="" mod="smaller"
+			scopes="" start="265" state="" text="museums" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="293"
+			form="NAM" gazref="" gquant="" id="pl10" latLong="" mod="" scopes=""
+			start="274" state="" text="Barrio de Salamanca" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="2828"
+			form="NOM" gazref="" gquant="" id="pl52" latLong="" mod="" scopes=""
+			start="2826" state="" text="It" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="37"
+			form="NAM" gazref="" gquant="" id="pl1" latLong="" mod="" scopes=""
+			start="31" state="" text="Madrid" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="3324"
+			form="NOM" gazref="" gquant="" id="pl53" latLong="" mod="" scopes=""
+			start="3318" state="" text="museum" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="3371"
+			form="NOM" gazref="" gquant="" id="pl54" latLong="" mod="" scopes=""
+			start="3366" state="" text="niche" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="3399"
+			form="NOM" gazref="" gquant="" id="pl55" latLong="" mod="ground"
+			scopes="" start="3394" state="" text="floor" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="347"
+			form="NOM" gazref="" gquant="" id="pl11" latLong="" mod="" scopes=""
+			start="342" state="" text="these" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="3560"
+			form="NOM" gazref="" gquant="" id="pl56" latLong="" mod="smaller"
+			scopes="" start="3554" state="" text="museum" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="3589"
+			form="NAM" gazref="" gquant="" id="pl57" latLong="" mod="" scopes=""
+			start="3568" state="" text="Museo         Sorolla" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="POINT" domain="" elevation="" end="3628"
+			form="NAM" gazref="" gquant="" id="pl58" latLong="" mod="" scopes=""
+			start="3591" state="" text="Paseo del General Martínez Campos, 37"
+			type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="3646"
+			form="NAM" gazref="" gquant="" id="pl71" latLong="" mod="" scopes=""
+			start="3640" state="" text="Madrid" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="3653"
+			form="NOM" gazref="" gquant="" id="pl59" latLong="" mod="" scopes=""
+			start="3647" state="" text="museum" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="3703"
+			form="NOM" gazref="" gquant="" id="pl60" latLong="" mod="" scopes=""
+			start="3696" state="" text="mansion" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="VOLUME" domain="" elevation="" end="3771"
+			form="NOM" gazref="" gquant="" id="pl61" latLong="" mod="" scopes=""
+			start="3769" state="" text="It" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="3911"
+			form="NOM" gazref="" gquant="" id="pl62" latLong="" mod="" scopes=""
+			start="3906" state="" text="house" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="3990"
+			form="NAM" gazref="" gquant="" id="pl63" latLong="" mod="" scopes=""
+			start="3974" state="" text="Salamanca barrio" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="4036"
+			form="NAM" gazref="" gquant="" id="pl64" latLong="" mod="" scopes=""
+			start="3998" state="" text="Plaza de         Toros y Museo Taurino"
+			type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="4066"
+			form="NAM" gazref="" gquant="" id="pl65" latLong="" mod="" scopes=""
+			start="4038" state="" text="Bullfighting Ring and Museum" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="4138"
+			form="NAM" gazref="" gquant="" id="pl66" latLong="" mod="" scopes=""
+			start="4099" state="" text="Plaza de Toros Monumental de Las Ventas"
+			type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="4144"
+			form="NOM" gazref="" gquant="" id="pl67" latLong="" mod="" scopes=""
+			start="4140" state="" text="This" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="428"
+			form="NOM" gazref="" gquant="" id="pl12" latLong="" mod="" scopes=""
+			start="424" state="" text="east" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="436"
+			form="NOM" gazref="" gquant="" id="pl13" latLong="" mod="" scopes=""
+			start="432" state="" text="west" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="VOLUME" domain="" elevation="" end="4327"
+			form="NOM" gazref="" gquant="" id="pl68" latLong="" mod="small"
+			scopes="" start="4321" state="" text="museum" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="441"
+			form="NAM" gazref="" gquant="" id="pl14" latLong="" mod="" scopes=""
+			start="438" state="" text="old" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="455"
+			form="NAM" gazref="" gquant="" id="pl15" latLong="" mod="" scopes=""
+			start="445" state="" text="new Madrid" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="4544"
+			form="NOM" gazref="" gquant="" id="pl69" latLong="" mod="" scopes=""
+			start="4536" state="" text="interior" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="4564"
+			form="NOM" gazref="" gquant="" id="pl70" latLong="" mod="" scopes=""
+			start="4560" state="" text="ring" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="563"
+			form="NAM" gazref="" gquant="" id="pl16" latLong="" mod="" scopes=""
+			start="544" state="" text="Plaza de la Cibeles" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="578"
+			form="NAM" gazref="" gquant="" id="pl17" latLong="" mod="" scopes=""
+			start="567" state="" text="Plaza Colón" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="640"
+			form="NAM" gazref="" gquant="" id="pl18" latLong="" mod="" scopes=""
+			start="622" state="" text="Museo Arqueológico" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="656"
+			form="NAM" gazref="" gquant="" id="pl19" latLong="" mod="" scopes=""
+			start="642" state="" text="c/ Serrano, 13" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="669"
+			form="NOM" gazref="" gquant="" id="pl20" latLong="" mod="" scopes=""
+			start="663" state="" text="museum" type="" />
+		<PLACE comment="" continent="" countable="TRUE" country="" ctv=""
+			dcl="FALSE" dimensionality="AREA" domain="" elevation="" end="760"
+			form="NAM" gazref="" gquant="" id="pl21" latLong="" mod="" scopes=""
+			start="755" state="" text="Spain" type="" />
+		<PATH beginID="" comment="" countable="TRUE" dcl="FALSE"
+			dimensionality="AREA" domain="" elevation="" end="1261" endID=""
+			form="NOM" gazref="" gquant="" id="p2" latLong="" midIDs="" mod=""
+			scopes="" start="1255" text="ground" type="" />
+		<PATH beginID="" comment="" countable="TRUE" dcl="FALSE"
+			dimensionality="AREA" domain="" elevation="" end="1796" endID=""
+			form="NOM" gazref="" gquant="" id="p5" latLong="" midIDs="" mod=""
+			scopes="" start="1790" text="ground" type="" />
+		<PATH beginID="" comment="" countable="TRUE" dcl="FALSE"
+			dimensionality="AREA" domain="" elevation="" end="2086" endID=""
+			form="NAM" gazref="" gquant="" id="p6" latLong="" midIDs="pl36" mod=""
+			scopes="" start="2064" text="Paseo de la Castellana" type="" />
+		<PATH beginID="" comment="" countable="TRUE" dcl="FALSE"
+			dimensionality="LINE" domain="" elevation="" end="2135" endID=""
+			form="NOM" gazref="" gquant="" id="p7" latLong="" midIDs=""
+			mod="north-south" scopes="" start="2129" text="avenue" type="" />
+		<PATH beginID="" comment="" countable="TRUE" dcl="FALSE"
+			dimensionality="AREA" domain="" elevation="" end="2243" endID=""
+			form="NOM" gazref="" gquant="" id="p8" latLong="" midIDs="" mod=""
+			scopes="" start="2241" text="it" type="" />
+		<PATH beginID="" comment="" countable="TRUE" dcl="FALSE"
+			dimensionality="LINE" domain="" elevation="" end="361" endID="" form="NAM"
+			gazref="" gquant="" id="p0" latLong="" midIDs="" mod="" scopes=""
+			start="353" text="Gran Vía" type="" />
+		<PATH beginID="" comment="" countable="TRUE" dcl="FALSE"
+			dimensionality="LINE" domain="" elevation="" end="409" endID="" form="NOM"
+			gazref="" gquant="" id="p1" latLong="" midIDs="" mod="" scopes=""
+			start="403" text="avenue" type="" />
+		<PATH beginID="pl16" comment="" countable="TRUE" dcl="FALSE"
+			dimensionality="AREA" domain="" elevation="" end="483" endID="pl17"
+			form="NAM" gazref="" gquant="" id="p3" latLong="" midIDs="" mod=""
+			scopes="" start="465" text="Paseo de Recoletos" type="" />
+		<PATH beginID="" comment="" countable="TRUE" dcl="FALSE"
+			dimensionality="LINE" domain="" elevation="" end="520" endID="" form="NAM"
+			gazref="" gquant="" id="p4" latLong="" midIDs="" mod="" scopes=""
+			start="505" text="Paseo del Prado" type="" />
+		<SPATIAL_ENTITY comment="" countable="TRUE" dcl="FALSE"
+			dimensionality="VOLUME" domain="" elevation="" end="1289" form="NOM"
+			gquant="" id="se3" latLong="" mod="" scopes="" start="1277" text="reproduction"
+			type="" />
+		<SPATIAL_ENTITY comment="" countable="TRUE" dcl="FALSE"
+			dimensionality="AREA" domain="" elevation="" end="1820" form="NOM"
+			gquant="" id="se4" latLong="" mod="" scopes="" start="1814" text="statue"
+			type="" />
+		<SPATIAL_ENTITY comment="" countable="TRUE" dcl="FALSE"
+			dimensionality="AREA" domain="" elevation="" end="1867" form="NOM"
+			gquant="" id="se5" latLong="" mod="" scopes="" start="1859" text="monument"
+			type="" />
+		<SPATIAL_ENTITY comment="" countable="TRUE" dcl="FALSE"
+			dimensionality="POINT" domain="" elevation="" end="2299" form="NOM"
+			gquant="" id="se6" latLong="" mod="" scopes="" start="2296" text="you"
+			type="" />
+		<SPATIAL_ENTITY comment="" countable="TRUE" dcl="FALSE"
+			dimensionality="AREA" domain="" elevation="" end="2467" form="NOM"
+			gquant="" id="se7" latLong="" mod="" scopes="" start="2458" text="balconies"
+			type="" />
+		<SPATIAL_ENTITY comment="" countable="TRUE" dcl="FALSE"
+			dimensionality="AREA" domain="" elevation="" end="3341" form="NOM"
+			gquant="" id="se8" latLong="" mod="" scopes="" start="3336" text="pride"
+			type="" />
+		<SPATIAL_ENTITY comment="" countable="TRUE" dcl="FALSE"
+			dimensionality="AREA" domain="" elevation="" end="3360" form="NOM"
+			gquant="" id="se9" latLong="" mod="" scopes="" start="3358" text="it"
+			type="" />
+		<SPATIAL_ENTITY comment="" countable="TRUE" dcl="FALSE"
+			dimensionality="AREA" domain="" elevation="" end="3414" form="NOM"
+			gquant="" id="se10" latLong="" mod="" scopes="" start="3406" text="portrait"
+			type="" />
+		<SPATIAL_ENTITY comment="" countable="TRUE" dcl="FALSE"
+			dimensionality="AREA" domain="" elevation="" end="3504" form="NAM"
+			gquant="" id="se11" latLong="" mod="" scopes="" start="3493" text="The Saviour"
+			type="" />
+		<SPATIAL_ENTITY comment="" countable="TRUE" dcl="FALSE"
+			dimensionality="AREA" domain="" elevation="" end="3798" form="NOM"
+			gquant="" id="se12" latLong="" mod="" scopes="" start="3789" text="paintings"
+			type="" />
+		<SPATIAL_ENTITY comment="" countable="TRUE" dcl="FALSE"
+			dimensionality="AREA" domain="" elevation="" end="4351" form="NOM"
+			gquant="" id="se13" latLong="" mod="" scopes="" start="4344" text="posters"
+			type="" />
+		<SPATIAL_ENTITY comment="" countable="TRUE" dcl="FALSE"
+			dimensionality="AREA" domain="" elevation="" end="4358" form="NOM"
+			gquant="" id="se14" latLong="" mod="" scopes="" start="4353" text="capes"
+			type="" />
+		<SPATIAL_ENTITY comment="" countable="TRUE" dcl="FALSE"
+			dimensionality="AREA" domain="" elevation="" end="4366" form="NOM"
+			gquant="" id="se15" latLong="" mod="" scopes="" start="4360" text="swords"
+			type="" />
+		<SPATIAL_ENTITY comment="" countable="TRUE" dcl="FALSE"
+			dimensionality="AREA" domain="" elevation="" end="4377" form="NOM"
+			gquant="" id="se16" latLong="" mod="" scopes="" start="4368" text="paintings"
+			type="" />
+		<SPATIAL_ENTITY comment="" countable="TRUE" dcl="FALSE"
+			dimensionality="AREA" domain="" elevation="" end="4389" form="NOM"
+			gquant="" id="se17" latLong="" mod="" scopes="" start="4383" text="photos"
+			type="" />
+		<SPATIAL_ENTITY comment="" countable="TRUE" dcl="FALSE"
+			dimensionality="AREA" domain="" elevation="" end="777" form="NOM"
+			gquant="" id="se0" latLong="" mod="" scopes="" start="767" text="statuettes"
+			type="" />
+		<SPATIAL_ENTITY comment="" countable="FALSE" dcl="FALSE"
+			dimensionality="AREA" domain="" elevation="" end="789" form="NOM"
+			gquant="" id="se1" latLong="" mod="" scopes="" start="782" text="jewelry"
+			type="" />
+		<SPATIAL_ENTITY comment="" countable="TRUE" dcl="FALSE"
+			dimensionality="AREA" domain="" elevation="" end="876" form="NOM"
+			gquant="" id="se2" latLong="" mod="" scopes="" start="869" text="mosaics"
+			type="" />
+		<NONMOTION_EVENT comment="" countable="" domain=""
+			elevation="" end="1014" gquant="" id="e0" latLong="" mod="" scopes=""
+			start="1009" text="found" />
+		<NONMOTION_EVENT comment="" countable="" domain=""
+			elevation="" end="1330" gquant="" id="e1" latLong="" mod="" scopes=""
+			start="1320" text="discovered" />
+		<NONMOTION_EVENT comment="" countable="TRUE" domain=""
+			elevation="" end="1735" gquant="" id="e2" latLong="" mod="" scopes=""
+			start="1727" text="projects" />
+		<NONMOTION_EVENT comment="" countable="" domain=""
+			elevation="" end="1783" gquant="" id="e3" latLong="" mod="" scopes=""
+			start="1775" text="operates" />
+		<NONMOTION_EVENT comment="" countable="" domain=""
+			elevation="" end="2600" gquant="" id="e4" latLong="" mod="" scopes=""
+			start="2592" text="Featured" />
+		<MOTION comment="" countable="" domain="" elevation="" end="2144"
+			gquant="" id="m2" latLong="" mod="" motion_class="CROSS"
+			motion_sense="FICTIVE" motion_type="PATH" scopes="" start="2137"
+			text="running" />
+		<MOTION comment="" countable="" domain="" elevation="" end="2304"
+			gquant="" id="m3" latLong="" mod="" motion_class="REACH"
+			motion_sense="LITERAL" motion_type="PATH" scopes="" start="2300"
+			text="come" />
+		<MOTION comment="" countable="" domain="" elevation="" end="4159"
+			gquant="" id="m4" latLong="" mod="" motion_class="REACH"
+			motion_sense="LITERAL" motion_type="PATH" scopes="" start="4157"
+			text="go" />
+		<MOTION comment="" countable="" domain="" elevation="" end="4457"
+			gquant="" id="m5" latLong="" mod="" motion_class="REACH"
+			motion_sense="LITERAL" motion_type="PATH" scopes="" start="4450"
+			text="visited" />
+		<MOTION comment="" countable="TRUE" domain="" elevation="" end="61"
+			gquant="" id="m0" latLong="" mod="major" motion_class="MOVE"
+			motion_sense="INTRINSIC_CHANGE" motion_type="MANNER" scopes="" start="52"
+			text="expansion" />
+		<MOTION comment="" countable="" domain="" elevation="" end="538"
+			gquant="" id="m1" latLong="" mod="" motion_class="MOVE" motion_sense="FICTIVE"
+			motion_type="PATH" scopes="" start="534" text="runs" />
+		<SPATIAL_SIGNAL cluster="" comment="" end="1017" id="s3"
+			semantic_type="TOPOLOGICAL" start="1015" text="in" />
+		<SPATIAL_SIGNAL cluster="" comment="" end="1195" id="s4"
+			semantic_type="TOPOLOGICAL" start="1193" text="On" />
+		<SPATIAL_SIGNAL cluster="" comment="" end="1250" id="s5"
+			semantic_type="DIRECTIONAL" start="1245" text="under" />
+		<SPATIAL_SIGNAL cluster="" comment="" end="1333" id="s6"
+			semantic_type="TOPOLOGICAL" start="1331" text="in" />
+		<SPATIAL_SIGNAL cluster="" comment="" end="1343" id="s7"
+			semantic_type="TOPOLOGICAL" start="1341" text="in" />
+		<SPATIAL_SIGNAL cluster="" comment="" end="1355" id="s8"
+			semantic_type="TOPOLOGICAL" start="1353" text="in" />
+		<SPATIAL_SIGNAL cluster="" comment="" end="1789" id="s9"
+			semantic_type="DIRECTIONAL" start="1784" text="below" />
+		<SPATIAL_SIGNAL cluster="" comment="" end="1805" id="s10"
+			semantic_type="DIRECTIONAL" start="1798" text="beneath" />
+		<SPATIAL_SIGNAL cluster="" comment="" end="1993" id="s11"
+			semantic_type="TOPOLOGICAL" start="1989" text="with" />
+		<SPATIAL_SIGNAL cluster="" comment="" end="2214" id="s12"
+			semantic_type="TOPOLOGICAL" start="2205" text="bordering" />
+		<SPATIAL_SIGNAL cluster="" comment="" end="2249" id="s21"
+			semantic_type="DIRECTIONAL" start="2245" text="west" />
+		<SPATIAL_SIGNAL cluster="" comment="" end="2253" id="s13"
+			semantic_type="TOPOLOGICAL" start="2251" text="In" />
+		<SPATIAL_SIGNAL cluster="" comment="" end="2271" id="s14"
+			semantic_type="DIRECTIONAL" start="2263" text="north of" />
+		<SPATIAL_SIGNAL cluster="" comment="" end="2370" id="s15"
+			semantic_type="TOPOLOGICAL" start="2368" text="in" />
+		<SPATIAL_SIGNAL cluster="" comment="" end="2446" id="s16"
+			semantic_type="TOPOLOGICAL" start="2442" text="with" />
+		<SPATIAL_SIGNAL cluster="" comment="" end="3357" id="s17"
+			semantic_type="TOPOLOGICAL" start="3355" text="in" />
+		<SPATIAL_SIGNAL cluster="" comment="" end="3374" id="s18"
+			semantic_type="TOPOLOGICAL" start="3372" text="on" />
+		<SPATIAL_SIGNAL cluster="" comment="" end="3969" id="s19"
+			semantic_type="DIRECTIONAL" start="3962" text="east of" />
+		<SPATIAL_SIGNAL cluster="" comment="" end="423" id="s0"
+			semantic_type="TOPOLOGICAL" start="415" text="connects" />
+		<SPATIAL_SIGNAL cluster="" comment="" end="4334" id="s20"
+			semantic_type="TOPOLOGICAL" start="4328" text="houses" />
+		<SPATIAL_SIGNAL cluster="" comment="" end="592" id="s1"
+			semantic_type="DIRECTIONAL" start="588" text="east" />
+		<SPATIAL_SIGNAL cluster="" comment="" end="766" id="s2"
+			semantic_type="TOPOLOGICAL" start="762" text="with" />
+		<MOTION_SIGNAL comment="" end="2170" id="ms2"
+			motion_signal_type="PATH" start="2163" text="through" />
+		<MOTION_SIGNAL comment="" end="2253" id="ms3"
+			motion_signal_type="PATH" start="2251" text="In" />
+		<MOTION_SIGNAL comment="" end="2307" id="ms4"
+			motion_signal_type="PATH" start="2305" text="to" />
+		<MOTION_SIGNAL comment="" end="543" id="ms0"
+			motion_signal_type="PATH" start="539" text="from" />
+		<MOTION_SIGNAL comment="" end="566" id="ms1"
+			motion_signal_type="PATH" start="564" text="to" />
+		<MEASURE comment="" end="2162" id="me1" start="2149" text="several miles"
+			unit="miles" value="gt2" />
+		<MEASURE comment="" end="3961" id="me2" start="3950" text="Quite a way"
+			unit="" value="FAR" />
+		<MEASURE comment="" end="587" id="me0" start="580" text="A block"
+			unit="blocks" value="1" />
+		<QSLINK comment="" fromID="pl47" fromText="" id="qsl0"
+			landmark="pl36" relType="OUT" toID="pl36" toText="heart" trajector="pl47"
+			trigger="" />
+		<QSLINK comment="" fromID="pl48" fromText="" id="qsl1"
+			landmark="pl36" relType="OUT" toID="pl36" toText="heart" trajector="pl48"
+			trigger="" />
+		<QSLINK comment="" fromID="pl4" fromText="neighborhoods" id="qsl2"
+			landmark="pl3" relType="TPP" toID="pl3" toText="succession"
+			trajector="pl4" trigger="" />
+		<QSLINK comment="" fromID="pl5" fromText="shops" id="qsl3"
+			landmark="pl3" relType="IN" toID="pl3" toText="succession" trajector="pl5"
+			trigger="" />
+		<QSLINK comment="" fromID="pl6" fromText="cinemas" id="qsl4"
+			landmark="pl3" relType="IN" toID="pl3" toText="succession" trajector="pl6"
+			trigger="" />
+		<QSLINK comment="" fromID="pl7" fromText="restaurants" id="qsl5"
+			landmark="pl3" relType="IN" toID="pl3" toText="succession" trajector="pl7"
+			trigger="" />
+		<QSLINK comment="" fromID="pl8" fromText="banks" id="qsl6"
+			landmark="pl3" relType="IN" toID="pl3" toText="succession" trajector="pl8"
+			trigger="" />
+		<QSLINK comment="" fromID="pl9" fromText="museums" id="qsl7"
+			landmark="pl3" relType="IN" toID="pl3" toText="succession" trajector="pl9"
+			trigger="" />
+		<QSLINK comment="" fromID="p1" fromText="avenue" id="qsl8"
+			landmark="pl12" relType="PO" toID="pl12" toText="east" trajector="p1"
+			trigger="s0" />
+		<QSLINK comment="" fromID="p1" fromText="avenue" id="qsl9"
+			landmark="pl13" relType="PO" toID="pl13" toText="west" trajector="p1"
+			trigger="s0" />
+		<QSLINK comment="" fromID="p1" fromText="avenue" id="qsl10"
+			landmark="pl14" relType="PO" toID="pl14" toText="old" trajector="p1"
+			trigger="s0" />
+		<QSLINK comment="" fromID="p1" fromText="avenue" id="qsl11"
+			landmark="pl15" relType="PO" toID="pl15" toText="new Madrid"
+			trajector="p1" trigger="s0" />
+		<QSLINK comment="" fromID="pl18" fromText="Museo Arqueológico"
+			id="qsl12" landmark="pl19" relType="IN" toID="pl19" toText="c/ Serrano, 13"
+			trajector="pl18" trigger="" />
+		<QSLINK comment="" fromID="se0" fromText="statuettes" id="qsl13"
+			landmark="pl20" relType="NTPP" toID="pl20" toText="museum" trajector="se0"
+			trigger="s2" />
+		<QSLINK comment="" fromID="se1" fromText="jewelry" id="qsl14"
+			landmark="pl20" relType="NTPP" toID="pl20" toText="museum" trajector="se1"
+			trigger="s2" />
+		<QSLINK comment="" fromID="se2" fromText="mosaics" id="qsl15"
+			landmark="pl20" relType="NTPP" toID="pl20" toText="museum" trajector="se2"
+			trigger="s2" />
+		<QSLINK comment="" fromID="e0" fromText="found" id="qsl16"
+			landmark="pl22" relType="IN" toID="pl22" toText="Alicante province"
+			trajector="e0" trigger="s3" />
+		<QSLINK comment="" fromID="se3" fromText="reproduction" id="qsl17"
+			landmark="pl23" relType="IN" toID="pl23" toText="grounds" trajector="se3"
+			trigger="s4" />
+		<QSLINK comment="" fromID="e1" fromText="discovered" id="qsl18"
+			landmark="pl24" relType="NTPP" toID="pl24" toText="cave" trajector="e1"
+			trigger="s6" />
+		<QSLINK comment="" fromID="pl24" fromText="cave" id="qsl19"
+			landmark="pl25" relType="IN" toID="pl25" toText="Altamira" trajector="pl24"
+			trigger="s7" />
+		<QSLINK comment="" fromID="pl25" fromText="Altamira" id="qsl20"
+			landmark="pl26" relType="IN" toID="pl26" toText="Spain" trajector="pl25"
+			trigger="s8" />
+		<QSLINK comment="" fromID="pl29" fromText="scene" id="qsl21"
+			landmark="pl27" relType="EQ" toID="pl27" toText="Plaza de Colón"
+			trajector="pl29" trigger="" />
+		<QSLINK comment="" fromID="e2" fromText="projects" id="qsl22"
+			landmark="pl29" relType="IN" toID="pl29" toText="scene" trajector="e2"
+			trigger="" />
+		<QSLINK comment="" fromID="pl34" fromText="facilities" id="qsl23"
+			landmark="pl32" relType="IN" toID="pl32" toText="Centro Cultural de la Villa"
+			trajector="pl34" trigger="s11" />
+		<QSLINK comment="" fromID="p7" fromText="avenue" id="qsl24"
+			landmark="pl35" relType="IN" toID="pl35" toText="Madrid" trajector="p7"
+			trigger="" />
+		<QSLINK comment="" fromID="pl36" fromText="heart" id="qsl25"
+			landmark="pl37" relType="NTPP" toID="pl37" toText="city" trajector="pl36"
+			trigger="" />
+		<QSLINK comment="" fromID="p7" fromText="avenue" id="qsl26"
+			landmark="pl38" relType="EC" toID="pl38" toText="Salamanca district"
+			trajector="p7" trigger="s12" />
+		<QSLINK comment="" fromID="m3" fromText="come" id="qsl27"
+			landmark="pl40" relType="IN" toID="pl40" toText="area" trajector="m3"
+			trigger="s13" />
+		<QSLINK comment="" fromID="pl44" fromText="townhouses" id="qsl28"
+			landmark="pl45" relType="IN" toID="pl45" toText="area" trajector="pl44"
+			trigger="s15" />
+		<QSLINK comment="" fromID="se7" fromText="balconies" id="qsl29"
+			landmark="pl46" relType="TPP" toID="pl46" toText="blocks" trajector="se7"
+			trigger="s16" />
+		<QSLINK comment="" fromID="pl49" fromText="Museo Lázaro Galdiano"
+			id="qsl30" landmark="pl50" relType="IN" toID="pl50" toText="c/ Serrano, 122"
+			trajector="pl49" trigger="" />
+		<QSLINK comment="" fromID="e4" fromText="Featured" id="qsl31"
+			landmark="pl51" relType="IN" toID="pl51" toText="here" trajector="e4"
+			trigger="" />
+		<QSLINK comment="" fromID="se8" fromText="pride" id="qsl32"
+			landmark="pl54" relType="IN" toID="pl54" toText="niche" trajector="se8"
+			trigger="s17" />
+		<QSLINK comment="" fromID="pl54" fromText="niche" id="qsl33"
+			landmark="pl55" relType="IN" toID="pl55" toText="floor" trajector="pl54"
+			trigger="s18" />
+		<QSLINK comment="" fromID="pl57" fromText="Museo         Sorolla"
+			id="qsl34" landmark="pl58" relType="IN" toID="pl58"
+			toText="Paseo del General Martínez Campos, 37" trajector="pl57"
+			trigger="" />
+		<QSLINK comment="" fromID="se12" fromText="paintings" id="qsl35"
+			landmark="pl61" relType="IN" toID="pl61" toText="It" trajector="se12"
+			trigger="" />
+		<QSLINK comment="" fromID="se13" fromText="posters" id="qsl36"
+			landmark="pl68" relType="NTPP" toID="pl68" toText="museum" trajector="se13"
+			trigger="s20" />
+		<QSLINK comment="" fromID="se14" fromText="capes" id="qsl37"
+			landmark="pl68" relType="NTPP" toID="pl68" toText="museum" trajector="se14"
+			trigger="s20" />
+		<QSLINK comment="" fromID="se15" fromText="swords" id="qsl38"
+			landmark="pl68" relType="NTPP" toID="pl68" toText="museum" trajector="se15"
+			trigger="s20" />
+		<QSLINK comment="" fromID="se16" fromText="paintings" id="qsl39"
+			landmark="pl68" relType="NTPP" toID="pl68" toText="museum" trajector="se16"
+			trigger="s20" />
+		<QSLINK comment="" fromID="se17" fromText="photos" id="qsl40"
+			landmark="pl68" relType="NTPP" toID="pl68" toText="museum" trajector="se17"
+			trigger="s20" />
+		<QSLINK comment="" fromID="pl69" fromText="interior" id="qsl41"
+			landmark="pl70" relType="NTPP" toID="pl70" toText="ring" trajector="pl69"
+			trigger="" />
+		<OLINK comment="" frame_type="ABSOLUTE" fromID="pl0" fromText=""
+			id="ol0" landmark="pl18" projective="FALSE" referencePt="EAST"
+			relType="EAST" toID="pl18" toText="Museo Arqueológico" trajector="pl0"
+			trigger="s1" />
+		<OLINK comment="" frame_type="INTRINSIC" fromID="se3" fromText="reproduction"
+			id="ol1" landmark="p2" projective="FALSE" referencePt="p2" relType="BELOW"
+			toID="p2" toText="ground" trajector="se3" trigger="s5" />
+		<OLINK comment="" frame_type="INTRINSIC" fromID="e3" fromText="operates"
+			id="ol2" landmark="p5" projective="FALSE" referencePt="p5" relType="BELOW"
+			toID="p5" toText="ground" trajector="e3" trigger="s9" />
+		<OLINK comment="" frame_type="INTRINSIC" fromID="e3" fromText="operates"
+			id="ol3" landmark="se4" projective="FALSE" referencePt="se4" relType="BELOW"
+			toID="se4" toText="statue" trajector="e3" trigger="s10" />
+		<OLINK comment="" frame_type="INTRINSIC" fromID="e3" fromText="operates"
+			id="ol4" landmark="se5" projective="FALSE" referencePt="se5" relType="BELOW"
+			toID="se5" toText="monument" trajector="e3" trigger="s10" />
+		<OLINK comment="" frame_type="ABSOLUTE" fromID="pl38"
+			fromText="Salamanca district" id="ol5" landmark="p7" projective="FALSE"
+			referencePt="WEST" relType="WEST" toID="p7" toText="avenue"
+			trajector="pl38" trigger="s21" />
+		<OLINK comment="" frame_type="ABSOLUTE" fromID="pl40" fromText="area"
+			id="ol6" landmark="pl41" projective="FALSE" referencePt="NORTH"
+			relType="NORTH" toID="pl41" toText="Plaza de Colón" trajector="pl40"
+			trigger="s14" />
+		<OLINK comment="" frame_type="ABSOLUTE" fromID="pl64"
+			fromText="Plaza de         Toros y Museo Taurino" id="ol7" landmark="pl63"
+			projective="FALSE" referencePt="EAST" relType="EAST" toID="pl63"
+			toText="Salamanca barrio" trajector="pl64" trigger="s19" />
+		<MOVELINK comment="" fromID="m2" fromText="running" goal="pl48"
+			goal_reached="YES" id="mvl0" landmark="" midPoint="pl36"
+			motion_signalID="ms2" mover="p6" pathID="" source="pl47" toID="p6"
+			toText="Paseo de la Castellana" trigger="m2" />
+		<MOVELINK comment="" fromID="m3" fromText="come" goal="pl42"
+			goal_reached="YES" id="mvl1" landmark="" midPoint="" motion_signalID="ms4"
+			mover="se6" pathID="" source="" toID="se6" toText="you" trigger="m3" />
+		<MOVELINK comment="Generic mover" fromID="m4" fromText="go"
+			goal="pl67" goal_reached="YES" id="mvl2" landmark="" midPoint=""
+			motion_signalID="" mover="" pathID="" source="" toID="m4" toText="go"
+			trigger="m4" />
+		<MOVELINK comment="Generic mover" fromID="m5" fromText="visited"
+			goal="pl68" goal_reached="YES" id="mvl3" landmark="" midPoint=""
+			motion_signalID="" mover="" pathID="" source="" toID="m5" toText="visited"
+			trigger="m5" />
+		<MOVELINK comment="" fromID="m0" fromText="expansion" goal=""
+			goal_reached="" id="mvl4" landmark="" midPoint="" motion_signalID=""
+			mover="pl1" pathID="" source="" toID="pl1" toText="Madrid" trigger="m0" />
+		<MOVELINK comment="" fromID="m1" fromText="runs" goal="pl17"
+			goal_reached="YES" id="mvl5" landmark="" midPoint="" motion_signalID="ms0, ms1"
+			mover="p3" pathID="" source="pl16" toID="p3" toText="Paseo de Recoletos"
+			trigger="m1" />
+		<MEASURELINK comment="" endPoint1="" endPoint2="" fromID="pl0"
+			fromText="" id="ml0" landmark="pl18" relType="DISTANCE" toID="pl18"
+			toText="Museo Arqueológico" trajector="pl0" val="me0" />
+		<MEASURELINK comment="" endPoint1="" endPoint2="" fromID="m2"
+			fromText="running" id="ml1" landmark="m2" relType="GENERAL_DIMENSION"
+			toID="m2" toText="running" trajector="m2" val="me1" />
+		<MEASURELINK comment="" endPoint1="" endPoint2="" fromID="pl64"
+			fromText="Plaza de         Toros y Museo Taurino" id="ml2" landmark="pl63"
+			relType="DISTANCE" toID="pl63" toText="Salamanca barrio" trajector="pl64"
+			val="me2" />
+		<METALINK comment="" fromID="pl0" fromText="" id="metal0"
+			objectID1="pl0" objectID2="pl17" relType="COREFERENCE" toID="pl17"
+			toText="Plaza Colón" />
+		<METALINK comment="" fromID="pl35" fromText="Madrid" id="metal1"
+			objectID1="pl35" objectID2="pl1" relType="COREFERENCE" toID="pl1"
+			toText="Madrid" />
+		<METALINK comment="" fromID="pl71" fromText="Madrid" id="metal2"
+			objectID1="pl71" objectID2="pl1" relType="COREFERENCE" toID="pl1"
+			toText="Madrid" />
+		<METALINK comment="" fromID="pl3" fromText="succession" id="metal3"
+			objectID1="pl3" objectID2="pl2" relType="COREFERENCE" toID="pl2"
+			toText="modern Madrid" />
+		<METALINK comment="" fromID="pl63" fromText="Salamanca barrio"
+			id="metal4" objectID1="pl63" objectID2="pl10" relType="COREFERENCE"
+			toID="pl10" toText="Barrio de Salamanca" />
+		<METALINK comment="" fromID="pl38" fromText="Salamanca district"
+			id="metal5" objectID1="pl38" objectID2="pl10" relType="COREFERENCE"
+			toID="pl10" toText="Barrio de Salamanca" />
+		<METALINK comment="" fromID="pl10" fromText="Barrio de Salamanca"
+			id="metal6" objectID1="pl10" objectID2="pl11" relType="SUBCOREFERENCE"
+			toID="pl11" toText="these" />
+		<METALINK comment="" fromID="pl11" fromText="these" id="metal7"
+			objectID1="pl11" objectID2="pl4" relType="COREFERENCE" toID="pl4"
+			toText="neighborhoods" />
+		<METALINK comment="" fromID="pl15" fromText="new Madrid" id="metal8"
+			objectID1="pl15" objectID2="pl2" relType="COREFERENCE" toID="pl2"
+			toText="modern Madrid" />
+		<METALINK comment="" fromID="pl27" fromText="Plaza de Colón"
+			id="metal9" objectID1="pl27" objectID2="pl17" relType="COREFERENCE"
+			toID="pl17" toText="Plaza Colón" />
+		<METALINK comment="" fromID="pl41" fromText="Plaza de Colón"
+			id="metal10" objectID1="pl41" objectID2="pl17" relType="COREFERENCE"
+			toID="pl17" toText="Plaza Colón" />
+		<METALINK comment="" fromID="pl20" fromText="museum" id="metal11"
+			objectID1="pl20" objectID2="pl18" relType="COREFERENCE" toID="pl18"
+			toText="Museo Arqueológico" />
+		<METALINK comment="" fromID="pl28" fromText="space" id="metal13"
+			objectID1="pl28" objectID2="pl17" relType="COREFERENCE" toID="pl17"
+			toText="Plaza Colón" />
+		<METALINK comment="" fromID="pl33" fromText="City Cultural Center"
+			id="metal14" objectID1="pl33" objectID2="pl32" relType="COREFERENCE"
+			toID="pl32" toText="Centro Cultural de la Villa" />
+		<METALINK comment="" fromID="pl37" fromText="city" id="metal15"
+			objectID1="pl37" objectID2="pl1" relType="COREFERENCE" toID="pl1"
+			toText="Madrid" />
+		<METALINK comment="" fromID="pl51" fromText="here" id="metal16"
+			objectID1="pl51" objectID2="pl49" relType="COREFERENCE" toID="pl49"
+			toText="Museo Lázaro Galdiano" />
+		<METALINK comment="" fromID="pl52" fromText="It" id="metal17"
+			objectID1="pl52" objectID2="pl49" relType="COREFERENCE" toID="pl49"
+			toText="Museo Lázaro Galdiano" />
+		<METALINK comment="" fromID="pl53" fromText="museum" id="metal18"
+			objectID1="pl53" objectID2="pl49" relType="COREFERENCE" toID="pl49"
+			toText="Museo Lázaro Galdiano" />
+		<METALINK comment="" fromID="pl57" fromText="Museo         Sorolla"
+			id="metal19" objectID1="pl57" objectID2="pl56" relType="COREFERENCE"
+			toID="pl56" toText="museum" />
+		<METALINK comment="" fromID="pl59" fromText="museum" id="metal20"
+			objectID1="pl59" objectID2="pl56" relType="COREFERENCE" toID="pl56"
+			toText="museum" />
+		<METALINK comment="" fromID="pl60" fromText="mansion" id="metal21"
+			objectID1="pl60" objectID2="pl56" relType="COREFERENCE" toID="pl56"
+			toText="museum" />
+		<METALINK comment="" fromID="pl61" fromText="It" id="metal22"
+			objectID1="pl61" objectID2="pl56" relType="COREFERENCE" toID="pl56"
+			toText="museum" />
+		<METALINK comment="" fromID="pl62" fromText="house" id="metal23"
+			objectID1="pl62" objectID2="pl56" relType="COREFERENCE" toID="pl56"
+			toText="museum" />
+		<METALINK comment="" fromID="pl65" fromText="Bullfighting Ring and Museum"
+			id="metal24" objectID1="pl65" objectID2="pl64" relType="COREFERENCE"
+			toID="pl64" toText="Plaza de         Toros y Museo Taurino" />
+		<METALINK comment="" fromID="pl67" fromText="This" id="metal25"
+			objectID1="pl67" objectID2="pl64" relType="COREFERENCE" toID="pl64"
+			toText="Plaza de         Toros y Museo Taurino" />
+		<METALINK comment="" fromID="pl68" fromText="museum" id="metal26"
+			objectID1="pl68" objectID2="pl64" relType="COREFERENCE" toID="pl64"
+			toText="Plaza de         Toros y Museo Taurino" />
+		<METALINK comment="" fromID="p1" fromText="avenue" id="metal27"
+			objectID1="p1" objectID2="p0" relType="COREFERENCE" toID="p0" toText="Gran Vía" />
+		<METALINK comment="" fromID="p7" fromText="avenue" id="metal28"
+			objectID1="p7" objectID2="p6" relType="COREFERENCE" toID="p6"
+			toText="Paseo de la Castellana" />
+		<METALINK comment="" fromID="p8" fromText="it" id="metal29"
+			objectID1="p8" objectID2="p6" relType="COREFERENCE" toID="p6"
+			toText="Paseo de la Castellana" />
+		<METALINK comment="" fromID="se9" fromText="it" id="metal30"
+			objectID1="se9" objectID2="se8" relType="COREFERENCE" toID="se8"
+			toText="pride" />
+		<METALINK comment="" fromID="se10" fromText="portrait" id="metal31"
+			objectID1="se10" objectID2="se8" relType="COREFERENCE" toID="se8"
+			toText="pride" />
+		<METALINK comment="" fromID="se11" fromText="The Saviour" id="metal32"
+			objectID1="se11" objectID2="se8" relType="COREFERENCE" toID="se8"
+			toText="pride" />
+	</TAGS>
+	<TOKENS>
+		<s>
+			<lex ner='ORGANIZATION' begin='9' end='15' pos='NNP' label='None'>Modern</lex>
+			<lex ner='ORGANIZATION' begin='16' end='22' pos='NNP' label='None'>Madrid</lex>
+			<lex ner='ORGANIZATION' begin='31' end='37' pos='NNP' label='PLACE'>Madrid</lex>
+			<lex begin='37' end='39'>’s</lex>
+			<lex begin='40' end='45'>third</lex>
+			<lex begin='46' end='51'>major</lex>
+			<lex begin='52' end='61'>expansion</lex>
+			<lex begin='62' end='66'>took</lex>
+			<lex begin='67' end='72'>place</lex>
+			<lex begin='73' end='75'>in</lex>
+			<lex begin='76' end='79'>the</lex>
+			<lex begin='80' end='84'>19th</lex>
+			<lex begin='93' end='100'>century</lex>
+			<lex begin='100' end='101'>,</lex>
+			<lex begin='102' end='111'>resulting</lex>
+			<lex begin='112' end='114'>in</lex>
+			<lex begin='115' end='118'>the</lex>
+			<lex begin='119' end='130'>foundations</lex>
+			<lex begin='131' end='133'>of</lex>
+			<lex begin='134' end='140'>modern</lex>
+			<lex begin='141' end='147'>Madrid</lex>
+			<lex begin='147' end='148'>,</lex>
+			<lex begin='149' end='150'>a</lex>
+			<lex begin='151' end='160'>sprawling</lex>
+			<lex begin='169' end='179'>succession</lex>
+			<lex begin='180' end='182'>of</lex>
+			<lex begin='183' end='194'>residential</lex>
+			<lex begin='195' end='208'>neighborhoods</lex>
+			<lex begin='208' end='209'>,</lex>
+			<lex begin='210' end='215'>shops</lex>
+			<lex begin='215' end='216'>,</lex>
+			<lex begin='217' end='224'>cinemas</lex>
+			<lex begin='224' end='225'>,</lex>
+			<lex begin='226' end='237'>restaurants</lex>
+			<lex begin='237' end='238'>,</lex>
+			<lex begin='247' end='252'>banks</lex>
+			<lex begin='253' end='256'>and</lex>
+			<lex begin='257' end='264'>smaller</lex>
+			<lex begin='265' end='272'>museums</lex>
+			<lex begin='272' end='273'>.</lex>
+		</s>
+		<s>
+			<lex CATEGORY='#ref-category NAMED-OBJECT' begin='274' end='280'
+				FORM='#ref-category PROPER-NAME' ENDS-AT='#edges ending at 4'
+				CONSTITUENTS='(#word "barrio" #word "de" #word "salamanca")'
+				USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "barrio"'
+				pos='NNP' RULE=':PNF' label='PLACE' REFERENT='#named-object Barrio de Salamanca 1'
+				POSITION-IN-RESOURCE-ARRAY='0' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':PROPER-NAME'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 1'>Barrio</lex>
+			<lex CATEGORY='#ref-category NAMED-OBJECT' begin='281' end='283'
+				FORM='#ref-category PROPER-NAME' ENDS-AT='#edges ending at 4'
+				CONSTITUENTS='(#word "barrio" #word "de" #word "salamanca")'
+				USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "barrio"'
+				pos='NNP' RULE=':PNF' label='PLACE' REFERENT='#named-object Barrio de Salamanca 1'
+				POSITION-IN-RESOURCE-ARRAY='0' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':PROPER-NAME'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 1'>de</lex>
+			<lex CATEGORY='#ref-category NAMED-OBJECT' begin='284' end='293'
+				FORM='#ref-category PROPER-NAME' ENDS-AT='#edges ending at 4'
+				CONSTITUENTS='(#word "barrio" #word "de" #word "salamanca")'
+				USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "barrio"'
+				pos='NNP' RULE=':PNF' label='PLACE' REFERENT='#named-object Barrio de Salamanca 1'
+				POSITION-IN-RESOURCE-ARRAY='0' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':PROPER-NAME'
+				ner='LOCATION' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 1'>Salamanca</lex>
+			<lex CATEGORY='#word "is"' begin='294' end='296' FORM='NIL'
+				ENDS-AT='#edges ending at 5' CONSTITUENTS='NIL' USED-IN='NIL'
+				Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "is"' pos='VBZ' RULE='(187)'
+				label='None' REFERENT='#word "is"' POSITION-IN-RESOURCE-ARRAY='1'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':LITERAL-IN-A-RULE' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 4'>is</lex>
+			<lex CATEGORY='#word "the"' begin='297' end='300' FORM='#ref-category DET'
+				ENDS-AT='#edges ending at 6' CONSTITUENTS='NIL' USED-IN='NIL'
+				Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "the"' pos='DT'
+				RULE='((11) 131072 . 290816)' label='None' REFERENT='#word "the"'
+				POSITION-IN-RESOURCE-ARRAY='3' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':LITERAL-IN-A-RULE'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 5'>the</lex>
+			<lex CATEGORY='#ref-category COMPARATIVE' begin='301' end='305'
+				FORM='#ref-category ADJUNCT' ENDS-AT='#edges ending at 7'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "most"'
+				pos='RBS' RULE='#PSR2355  comparative -  "most"' label='None'
+				REFERENT='#comparative "most" 4' POSITION-IN-RESOURCE-ARRAY='5'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 6'>most</lex>
+			<lex ner='O' begin='306' end='316' pos='JJ' label='None'>attractive</lex>
+			<lex CATEGORY='#word "and"' begin='325' end='328' FORM='NIL'
+				ENDS-AT='#edges ending at 9' CONSTITUENTS='NIL' USED-IN='NIL'
+				Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "and"' pos='CC' RULE='(319)'
+				label='None' REFERENT='#word "and"' POSITION-IN-RESOURCE-ARRAY='7'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':LITERAL-IN-A-RULE' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 8'>and</lex>
+			<lex CATEGORY='#ref-category EXCLUSIVE' begin='329' end='338'
+				FORM='#ref-category ADJECTIVE' ENDS-AT='#edges ending at 10'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "exclusive"'
+				pos='JJ' RULE='#PSR3536  exclusive -  "exclusive"' label='None'
+				REFERENT='#ref-category EXCLUSIVE' POSITION-IN-RESOURCE-ARRAY='8'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 9'>exclusive</lex>
+			<lex CATEGORY='#word "of"' begin='339' end='341'
+				FORM='#ref-category PREPOSITION' ENDS-AT='#edges ending at 11'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "of"'
+				pos='IN' RULE='((13) 159744)' label='None' REFERENT='#word "of"'
+				POSITION-IN-RESOURCE-ARRAY='9' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':LITERAL-IN-A-RULE'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 10'>of</lex>
+			<lex ner='O' begin='342' end='347' pos='DT' label='PLACE'>these</lex>
+			<lex begin='347' end='348'>,</lex>
+			<lex CATEGORY='#word "and"' begin='349' end='352' FORM='NIL'
+				ENDS-AT='#edges ending at 14' CONSTITUENTS='NIL' USED-IN='NIL'
+				Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "and"' pos='CC' RULE='(319)'
+				label='None' REFERENT='#word "and"' POSITION-IN-RESOURCE-ARRAY='12'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':LITERAL-IN-A-RULE' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 13'>and</lex>
+			<lex CATEGORY='#ref-category NAMED-OBJECT' begin='353' end='357'
+				FORM='#ref-category PROPER-NAME' ENDS-AT='#edges ending at 16'
+				CONSTITUENTS='(#word "gran" #edge13 15 via 16)' USED-IN='NIL'
+				Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "gran"' pos='NNP' RULE=':PNF'
+				label='PATH' REFERENT='#named-object Gran Via 2'
+				POSITION-IN-RESOURCE-ARRAY='14' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':PROPER-NAME'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 14'>Gran</lex>
+			<lex CATEGORY='#ref-category NAMED-OBJECT' begin='358' end='361'
+				FORM='#ref-category PROPER-NAME' ENDS-AT='#edges ending at 16'
+				CONSTITUENTS='(#word "gran" #edge13 15 via 16)' USED-IN='NIL'
+				Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "gran"' pos='NNP' RULE=':PNF'
+				label='PATH' REFERENT='#named-object Gran Via 2'
+				POSITION-IN-RESOURCE-ARRAY='14' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':PROPER-NAME'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 14'>Vía</lex>
+			<lex CATEGORY='#word "is"' begin='362' end='364' FORM='NIL'
+				ENDS-AT='#edges ending at 17' CONSTITUENTS='NIL' USED-IN='NIL'
+				Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "is"' pos='VBZ' RULE='(187)'
+				label='None' REFERENT='#word "is"' POSITION-IN-RESOURCE-ARRAY='15'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':LITERAL-IN-A-RULE' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 16'>is</lex>
+			<lex CATEGORY='#word "the"' begin='365' end='368' FORM='#ref-category DET'
+				ENDS-AT='#edges ending at 18' CONSTITUENTS='NIL' USED-IN='NIL'
+				Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "the"' pos='DT'
+				RULE='((11) 131072 . 290816)' label='None' REFERENT='#word "the"'
+				POSITION-IN-RESOURCE-ARRAY='17' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':LITERAL-IN-A-RULE'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 17'>the</lex>
+			<lex CATEGORY='#ref-category GREAT' begin='369' end='374'
+				FORM='#ref-category ADJECTIVE' ENDS-AT='#edges ending at 19'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "great"'
+				pos='JJ' RULE='#PSR3539  great -  "great"' label='None'
+				REFERENT='#ref-category GREAT' POSITION-IN-RESOURCE-ARRAY='18'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 18'>great</lex>
+			<lex ner='O' begin='375' end='394' pos='JJ' label='None'>turn-of-the-century</lex>
+			<lex CATEGORY='#ref-category AVENUE' begin='403' end='409'
+				FORM='#ref-category NP' ENDS-AT='#edges ending at 27' CONSTITUENTS='NIL'
+				USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge24 23 "the" 24'
+				pos='NN' RULE='#PSR183  {common-noun} - "the" common-noun' label='PATH'
+				REFERENT='#ref-category AVENUE' POSITION-IN-RESOURCE-ARRAY='27'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER='#edge26 26 avenue 27' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 23'>avenue</lex>
+			<lex CATEGORY='#word "that"' begin='410' end='414' FORM='#ref-category DET'
+				ENDS-AT='#edges ending at 28' CONSTITUENTS='NIL' USED-IN='NIL'
+				Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "that"' pos='WDT' RULE='((9) 139264)'
+				label='None' REFERENT='#word "that"' POSITION-IN-RESOURCE-ARRAY='28'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':LITERAL-IN-A-RULE' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 27'>that</lex>
+			<lex ner='O' begin='415' end='423' pos='VBZ' label='SPATIAL_SIGNAL'>connects</lex>
+			<lex CATEGORY='#ref-category DIRECTION' begin='424' end='428'
+				FORM='#ref-category NOUN' ENDS-AT='#edges ending at 30'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "east"'
+				pos='JJ' RULE='#PSR2591  direction -  "east"' label='PLACE'
+				REFERENT='#compass-point "east" 3' POSITION-IN-RESOURCE-ARRAY='29'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 29'>east</lex>
+			<lex CATEGORY='#ref-category DIRECTION' begin='429' end='431'
+				FORM='#ref-category NP' ENDS-AT='#edges ending at 32' CONSTITUENTS='NIL'
+				USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge30 30 "to" 31'
+				pos='TO' RULE='#PSR284  direction -  "to" direction' label='None'
+				REFERENT='#compass-point "west" 4' POSITION-IN-RESOURCE-ARRAY='35'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER='#edge32 31 direction 32' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 30'>to</lex>
+			<lex CATEGORY='#ref-category DIRECTION' begin='432' end='436'
+				FORM='#ref-category NP' ENDS-AT='#edges ending at 32' CONSTITUENTS='NIL'
+				USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge30 30 "to" 31'
+				pos='NN' RULE='#PSR284  direction -  "to" direction' label='PLACE'
+				REFERENT='#compass-point "west" 4' POSITION-IN-RESOURCE-ARRAY='35'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER='#edge32 31 direction 32' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 30'>west</lex>
+			<lex begin='436' end='437'>,</lex>
+			<lex CATEGORY='#word "old"' begin='438' end='441' FORM='NIL'
+				ENDS-AT='#edges ending at 34' CONSTITUENTS='NIL' USED-IN='NIL'
+				Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "old"' pos='JJ' RULE='(144)'
+				label='PLACE' REFERENT='#word "old"' POSITION-IN-RESOURCE-ARRAY='34'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':LITERAL-IN-A-RULE' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 33'>old</lex>
+			<lex ner='O' begin='442' end='444' pos='TO' label='None'>to</lex>
+			<lex ner='O' begin='445' end='448' pos='JJ' label='PLACE'>new</lex>
+			<lex ner='LOCATION' begin='449' end='455' pos='NNP' label='PLACE'>Madrid</lex>
+			<lex begin='455' end='456'>.</lex>
+		</s>
+		<s>
+			<lex CATEGORY='#ref-category NAMED-OBJECT' begin='465' end='470'
+				FORM='#ref-category PROPER-NAME' ENDS-AT='#edges ending at 4'
+				CONSTITUENTS='(#word "paseo" #word "de" #word "recoletos")' USED-IN='NIL'
+				Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "paseo"' pos='NNP' RULE=':PNF'
+				label='PATH' REFERENT='#named-object Paseo de Recoletos 1'
+				POSITION-IN-RESOURCE-ARRAY='0' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':PROPER-NAME'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 1'>Paseo</lex>
+			<lex CATEGORY='#ref-category NAMED-OBJECT' begin='471' end='473'
+				FORM='#ref-category PROPER-NAME' ENDS-AT='#edges ending at 4'
+				CONSTITUENTS='(#word "paseo" #word "de" #word "recoletos")' USED-IN='NIL'
+				Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "paseo"' pos='NNP' RULE=':PNF'
+				label='PATH' REFERENT='#named-object Paseo de Recoletos 1'
+				POSITION-IN-RESOURCE-ARRAY='0' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':PROPER-NAME'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 1'>de</lex>
+			<lex CATEGORY='#ref-category NAMED-OBJECT' begin='474' end='483'
+				FORM='#ref-category PROPER-NAME' ENDS-AT='#edges ending at 4'
+				CONSTITUENTS='(#word "paseo" #word "de" #word "recoletos")' USED-IN='NIL'
+				Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "paseo"' pos='NNP' RULE=':PNF'
+				label='PATH' REFERENT='#named-object Paseo de Recoletos 1'
+				POSITION-IN-RESOURCE-ARRAY='0' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':PROPER-NAME'
+				ner='ORGANIZATION' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 1'>Recoletos</lex>
+			<lex CATEGORY='#word "is"' begin='484' end='486' FORM='NIL'
+				ENDS-AT='#edges ending at 5' CONSTITUENTS='NIL' USED-IN='NIL'
+				Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "is"' pos='VBZ' RULE='(187)'
+				label='None' REFERENT='#word "is"' POSITION-IN-RESOURCE-ARRAY='1'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':LITERAL-IN-A-RULE' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 4'>is</lex>
+			<lex CATEGORY='#ref-category CONTINUATION' begin='487' end='488'
+				FORM='#ref-category NP' ENDS-AT='#edges ending at 7' CONSTITUENTS='NIL'
+				USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge3 5 "a" 6'
+				pos='DT' RULE='#PSR175  {common-noun} - "a" common-noun' label='None'
+				REFERENT='#ref-category CONTINUATION' POSITION-IN-RESOURCE-ARRAY='5'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER='#edge4 6 continuation 7' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 5'>a</lex>
+			<lex CATEGORY='#ref-category CONTINUATION' begin='489' end='501'
+				FORM='#ref-category NP' ENDS-AT='#edges ending at 7' CONSTITUENTS='NIL'
+				USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge3 5 "a" 6'
+				pos='NN' RULE='#PSR175  {common-noun} - "a" common-noun' label='None'
+				REFERENT='#ref-category CONTINUATION' POSITION-IN-RESOURCE-ARRAY='5'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER='#edge4 6 continuation 7' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 5'>continuation</lex>
+			<lex CATEGORY='#ref-category OF-NAME-WORD' begin='502' end='504'
+				FORM='NIL' ENDS-AT='#edges ending at 9' CONSTITUENTS='NIL' USED-IN='NIL'
+				Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge6 7 "of" 8' pos='IN'
+				RULE='#PSR3083  of-name-word -  "of" name-word' label='None'
+				REFERENT='#name-word "Paseo"' POSITION-IN-RESOURCE-ARRAY='13'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER='#edge8 8 name-word 9' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 7'>of</lex>
+			<lex CATEGORY='#ref-category OF-NAME-WORD' begin='505' end='510'
+				FORM='NIL' ENDS-AT='#edges ending at 9' CONSTITUENTS='NIL' USED-IN='NIL'
+				Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge6 7 "of" 8' pos='NNP'
+				RULE='#PSR3083  of-name-word -  "of" name-word' label='PATH'
+				REFERENT='#name-word "Paseo"' POSITION-IN-RESOURCE-ARRAY='13'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER='#edge8 8 name-word 9' ner='PERSON'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 7'>Paseo</lex>
+			<lex ner='PERSON' begin='511' end='514' pos='NNP' label='PATH'>del</lex>
+			<lex CATEGORY='#ref-category NAME' begin='515' end='520'
+				FORM='#ref-category PROPER-NAME' ENDS-AT='#edges ending at 11'
+				CONSTITUENTS='(#word "prado")' USED-IN='NIL' Type='SPARSER::EDGE'
+				LEFT-DAUGHTER='#word "prado"' pos='NNP' RULE=':SINGLE-UNKNOWN-CAPITALIZED-WORD'
+				label='PATH' REFERENT='#uncategorized-name Prado'
+				POSITION-IN-RESOURCE-ARRAY='9' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':PROPER-NAME'
+				ner='PERSON' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 10'>Prado</lex>
+			<lex CATEGORY='#word "that"' begin='529' end='533' FORM='#ref-category DET'
+				ENDS-AT='#edges ending at 12' CONSTITUENTS='NIL' USED-IN='NIL'
+				Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "that"' pos='WDT' RULE='((9) 139264)'
+				label='None' REFERENT='#word "that"' POSITION-IN-RESOURCE-ARRAY='10'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':LITERAL-IN-A-RULE' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 11'>that</lex>
+			<lex CATEGORY='#ref-category RUN-EVENT' begin='534' end='538'
+				FORM='#ref-category VERB+PRESENT' ENDS-AT='#edges ending at 13'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "runs"'
+				pos='VBZ' RULE='#PSR3541  run-event -  "runs"' label='MOTION'
+				REFERENT='#ref-category RUN-EVENT' POSITION-IN-RESOURCE-ARRAY='11'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 12'>runs</lex>
+			<lex CATEGORY='#ref-category FROM' begin='539' end='543'
+				FORM='#ref-category PREPOSITION' ENDS-AT='#edges ending at 14'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "from"'
+				pos='IN' RULE='#PSR246  from -  "from"' label='MOTION_SIGNAL'
+				REFERENT='#ref-category FROM' POSITION-IN-RESOURCE-ARRAY='15'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 13'>from</lex>
+			<lex CATEGORY='#ref-category NAME' begin='544' end='549'
+				FORM='#ref-category PROPER-NAME' ENDS-AT='#edges ending at 15'
+				CONSTITUENTS='(#word "plaza")' USED-IN='NIL' Type='SPARSER::EDGE'
+				LEFT-DAUGHTER='#word "plaza"' pos='NNP' RULE=':SINGLE-UNKNOWN-CAPITALIZED-WORD'
+				label='PLACE' REFERENT='#uncategorized-name Plaza'
+				POSITION-IN-RESOURCE-ARRAY='16' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':PROPER-NAME'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 14'>Plaza</lex>
+			<lex CATEGORY='#ref-category NAME-WORD' begin='550' end='552'
+				FORM='#ref-category PROPER-NOUN' ENDS-AT='#edges ending at 16'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "de"'
+				pos='IN' RULE='#PSR3534  name-word -  "de"' label='PLACE' REFERENT='#name-word "de"'
+				POSITION-IN-RESOURCE-ARRAY='17' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 15'>de</lex>
+			<lex ner='O' begin='553' end='555' pos='NNP' label='PLACE'>la</lex>
+			<lex CATEGORY='#ref-category NAME' begin='556' end='563'
+				FORM='#ref-category PROPER-NAME' ENDS-AT='#edges ending at 18'
+				CONSTITUENTS='(#word "cibeles")' USED-IN='NIL' Type='SPARSER::EDGE'
+				LEFT-DAUGHTER='#word "cibeles"' pos='NNP'
+				RULE=':SINGLE-UNKNOWN-CAPITALIZED-WORD' label='PLACE'
+				REFERENT='#uncategorized-name Cibeles' POSITION-IN-RESOURCE-ARRAY='18'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':PROPER-NAME' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 17'>Cibeles</lex>
+			<lex CATEGORY='#word "to"' begin='564' end='566'
+				FORM='#ref-category PREPOSITION' ENDS-AT='#edges ending at 19'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "to"'
+				pos='TO' RULE='((12) 348160 . 208896)' label='MOTION_SIGNAL'
+				REFERENT='#word "to"' POSITION-IN-RESOURCE-ARRAY='19' SPANNED-WORDS='NIL'
+				RIGHT-DAUGHTER=':LITERAL-IN-A-RULE' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 18'>to</lex>
+			<lex CATEGORY='#ref-category NAMED-OBJECT' begin='567' end='572'
+				FORM='#ref-category PROPER-NAME' ENDS-AT='#edges ending at 21'
+				CONSTITUENTS='(#edge21 19 name-word 20 #word "colon")' USED-IN='NIL'
+				Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge21 19 name-word 20' pos='NNP'
+				RULE=':PNF' label='PLACE' REFERENT='#named-object Plaza Colon 2'
+				POSITION-IN-RESOURCE-ARRAY='22' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':PROPER-NAME'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 19'>Plaza</lex>
+			<lex CATEGORY='#ref-category NAMED-OBJECT' begin='573' end='578'
+				FORM='#ref-category PROPER-NAME' ENDS-AT='#edges ending at 21'
+				CONSTITUENTS='(#edge21 19 name-word 20 #word "colon")' USED-IN='NIL'
+				Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge21 19 name-word 20' pos='NN'
+				RULE=':PNF' label='PLACE' REFERENT='#named-object Plaza Colon 2'
+				POSITION-IN-RESOURCE-ARRAY='22' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':PROPER-NAME'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 19'>Colón</lex>
+			<lex begin='578' end='579'>.</lex>
+		</s>
+		<s>
+			<lex CATEGORY='#ref-category SINGLE-CAPITALIZED-LETTER' begin='580'
+				end='581' FORM='#ref-category PROPER-NOUN' ENDS-AT='#edges ending at 2'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "A"'
+				pos='DT' RULE='#PSR71  single-capitalized-letter -  "A"' label='MEASURE'
+				REFERENT='#single-capitalized-letter "A"'
+				POSITION-IN-RESOURCE-ARRAY='1' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 1'>A</lex>
+			<lex ner='O' begin='582' end='587' pos='NN' label='MEASURE'>block</lex>
+			<lex CATEGORY='#ref-category DIRECTION' begin='588' end='592'
+				FORM='#ref-category NOUN' ENDS-AT='#edges ending at 4' CONSTITUENTS='NIL'
+				USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "east"' pos='RB'
+				RULE='#PSR2591  direction -  "east"' label='SPATIAL_SIGNAL'
+				REFERENT='#compass-point "east" 3' POSITION-IN-RESOURCE-ARRAY='2'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 3'>east</lex>
+			<lex CATEGORY='#word "is"' begin='593' end='595' FORM='NIL'
+				ENDS-AT='#edges ending at 5' CONSTITUENTS='NIL' USED-IN='NIL'
+				Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "is"' pos='VBZ' RULE='(187)'
+				label='None' REFERENT='#word "is"' POSITION-IN-RESOURCE-ARRAY='3'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':LITERAL-IN-A-RULE' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 4'>is</lex>
+			<lex CATEGORY='#word "the"' begin='596' end='599' FORM='#ref-category DET'
+				ENDS-AT='#edges ending at 6' CONSTITUENTS='NIL' USED-IN='NIL'
+				Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "the"' pos='DT'
+				RULE='((11) 131072 . 290816)' label='None' REFERENT='#word "the"'
+				POSITION-IN-RESOURCE-ARRAY='5' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':LITERAL-IN-A-RULE'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 5'>the</lex>
+			<lex CATEGORY='#ref-category DISTINGUISH-EVENT' begin='608' end='621'
+				FORM='#ref-category VERB+ED' ENDS-AT='#edges ending at 7'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "distinguished"'
+				pos='JJ' RULE='#PSR3536  distinguish-event -  "distinguished"'
+				label='None' REFERENT='#event 1' POSITION-IN-RESOURCE-ARRAY='6'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 6'>distinguished</lex>
+			<lex CATEGORY='#ref-category NAMED-OBJECT' begin='622' end='627'
+				FORM='#ref-category PROPER-NAME' ENDS-AT='#edges ending at 9'
+				CONSTITUENTS='(#word "museo" #word "arqueologico")' USED-IN='NIL'
+				Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "museo"' pos='NNP' RULE=':PNF'
+				label='PLACE' REFERENT='#named-object Museo Arqueologico 1'
+				POSITION-IN-RESOURCE-ARRAY='7' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':PROPER-NAME'
+				ner='ORGANIZATION' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 7'>Museo</lex>
+			<lex CATEGORY='#ref-category NAMED-OBJECT' begin='628' end='640'
+				FORM='#ref-category PROPER-NAME' ENDS-AT='#edges ending at 9'
+				CONSTITUENTS='(#word "museo" #word "arqueologico")' USED-IN='NIL'
+				Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "museo"' pos='NNP' RULE=':PNF'
+				label='PLACE' REFERENT='#named-object Museo Arqueologico 1'
+				POSITION-IN-RESOURCE-ARRAY='7' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':PROPER-NAME'
+				ner='ORGANIZATION' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 7'>Arqueológico</lex>
+			<lex begin='641' end='642'>(</lex>
+			<lex ner='O' begin='642' end='643' pos='NN' label='PLACE'>c</lex>
+			<lex begin='643' end='644'>/</lex>
+			<lex ner='PERSON' begin='645' end='652' pos='NNP' label='PLACE'>Serrano</lex>
+			<lex begin='652' end='653'>,</lex>
+			<lex ner='O' begin='654' end='656' pos='CD' label='PLACE'>13</lex>
+			<lex begin='656' end='657'>)</lex>
+			<lex begin='657' end='658'>.</lex>
+		</s>
+		<s>
+			<lex ner='O' begin='659' end='662' pos='DT' label='None'>The</lex>
+			<lex ner='O' begin='663' end='669' pos='NN' label='PLACE'>museum</lex>
+			<lex begin='669' end='671'>’s</lex>
+			<lex begin='680' end='691'>archaeology</lex>
+			<lex begin='692' end='702'>collection</lex>
+			<lex begin='703' end='712'>addresses</lex>
+			<lex begin='713' end='716'>the</lex>
+			<lex begin='717' end='720'>art</lex>
+			<lex begin='721' end='723'>of</lex>
+			<lex begin='724' end='731'>ancient</lex>
+			<lex begin='732' end='743'>inhabitants</lex>
+			<lex begin='744' end='746'>of</lex>
+			<lex begin='755' end='760'>Spain</lex>
+			<lex begin='760' end='761'>,</lex>
+			<lex begin='762' end='766'>with</lex>
+			<lex begin='767' end='777'>statuettes</lex>
+			<lex begin='778' end='781'>and</lex>
+			<lex begin='782' end='789'>jewelry</lex>
+			<lex begin='790' end='794'>from</lex>
+			<lex begin='795' end='806'>2nd-century</lex>
+			<lex begin='807' end='810'>b.c</lex>
+			<lex begin='810' end='811'>.</lex>
+		</s>
+		<s>
+			<lex CATEGORY='#ref-category NAME' begin='812' end='824'
+				FORM='#ref-category PROPER-NAME' ENDS-AT='#edges ending at 2'
+				CONSTITUENTS='(#word "carthaginian")' USED-IN='NIL' Type='SPARSER::EDGE'
+				LEFT-DAUGHTER='#word "carthaginian"' pos='JJ'
+				RULE=':SINGLE-UNKNOWN-CAPITALIZED-WORD' label='None'
+				REFERENT='#uncategorized-name Carthaginian'
+				POSITION-IN-RESOURCE-ARRAY='0' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':PROPER-NAME'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 1'>Carthaginian</lex>
+			<lex ner='O' begin='833' end='841' pos='NNS' label='None'>settlers</lex>
+			<lex CATEGORY='#word "and"' begin='842' end='845' FORM='NIL'
+				ENDS-AT='#edges ending at 4' CONSTITUENTS='NIL' USED-IN='NIL'
+				Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "and"' pos='CC' RULE='(319)'
+				label='None' REFERENT='#word "and"' POSITION-IN-RESOURCE-ARRAY='1'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':LITERAL-IN-A-RULE' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 3'>and</lex>
+			<lex ner='O' begin='846' end='858' pos='RB' label='None'>miraculously</lex>
+			<lex CATEGORY='#ref-category preserv' begin='859' end='868'
+				FORM='#ref-category VERB+ED' ENDS-AT='#edges ending at 6'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "preserved"'
+				pos='VBD' RULE='#PSR3534  preserv -  "preserved"' label='None'
+				REFERENT='#term1 "preserv"' POSITION-IN-RESOURCE-ARRAY='2'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 5'>preserved</lex>
+			<lex ner='O' begin='869' end='876' pos='NNS' label='SPATIAL_ENTITY'>mosaics</lex>
+			<lex CATEGORY='#word "from"' begin='877' end='881'
+				FORM='#ref-category PREPOSITION' ENDS-AT='#edges ending at 8'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "from"'
+				pos='IN' RULE='((46) 364544)' label='None' REFERENT='#word "from"'
+				POSITION-IN-RESOURCE-ARRAY='3' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':LITERAL-IN-A-RULE'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 7'>from</lex>
+			<lex ner='O' begin='882' end='893' pos='JJ' label='None'>2nd-century</lex>
+			<lex ner='O' begin='894' end='897' pos='NN' label='None'>a.d</lex>
+			<lex begin='897' end='898'>.</lex>
+		</s>
+		<s>
+			<lex CATEGORY='#ref-category NAME' begin='899' end='904'
+				FORM='#ref-category PROPER-NAME' ENDS-AT='#edges ending at 2'
+				CONSTITUENTS='(#word "roman")' USED-IN='NIL' Type='SPARSER::EDGE'
+				LEFT-DAUGHTER='#word "roman"' pos='NNP' RULE=':SINGLE-UNKNOWN-CAPITALIZED-WORD'
+				label='None' REFERENT='#uncategorized-name Roman'
+				POSITION-IN-RESOURCE-ARRAY='0' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':PROPER-NAME'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 1'>Roman</lex>
+			<lex CATEGORY='#ref-category COUNTRY' begin='913' end='918'
+				FORM='#ref-category PROPER-NOUN' ENDS-AT='#edges ending at 3'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "Spain"'
+				pos='NNP' RULE='#PSR2866  country -  "Spain"' label='None'
+				REFERENT='#country "Spain" 168' POSITION-IN-RESOURCE-ARRAY='1'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM' ner='LOCATION'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 2'>Spain</lex>
+			<lex begin='918' end='919'>.</lex>
+		</s>
+		<s>
+			<lex ner='O' begin='920' end='922' pos='DT' label='None'>An</lex>
+			<lex ner='O' begin='923' end='936' pos='JJ' label='None'>unforgettable</lex>
+			<lex ner='O' begin='937' end='941' pos='NN' label='None'>item</lex>
+			<lex ner='O' begin='942' end='944' pos='VBZ' label='None'>is</lex>
+			<lex ner='LOCATION' begin='945' end='947' pos='NNP' label='None'>La</lex>
+			<lex ner='LOCATION' begin='948' end='952' pos='NNP' label='None'>Dama</lex>
+			<lex ner='LOCATION' begin='953' end='955' pos='IN' label='None'>de</lex>
+			<lex ner='LOCATION' begin='956' end='961' pos='NNP' label='None'>Elche</lex>
+			<lex begin='962' end='963'>(</lex>
+			<lex ner='O' begin='963' end='966' pos='DT' label='None'>the</lex>
+			<lex ner='O' begin='967' end='971' pos='NNP' label='None'>Lady</lex>
+			<lex ner='O' begin='972' end='974' pos='IN' label='None'>of</lex>
+			<lex ner='LOCATION' begin='975' end='980' pos='NNP' label='None'>Elche</lex>
+			<lex begin='980' end='981'>)</lex>
+			<lex begin='981' end='982'>,</lex>
+			<lex ner='O' begin='983' end='984' pos='DT' label='None'>a</lex>
+			<lex ner='O' begin='993' end='998' pos='NN' label='None'>stone</lex>
+			<lex ner='O' begin='999' end='1008' pos='NN' label='None'>sculpture</lex>
+			<lex ner='O' begin='1009' end='1014' pos='VBN' label='NONMOTION_EVENT'>found</lex>
+			<lex ner='O' begin='1015' end='1017' pos='IN' label='SPATIAL_SIGNAL'>in</lex>
+			<lex ner='LOCATION' begin='1018' end='1026' pos='NNP' label='PLACE'>Alicante</lex>
+			<lex ner='O' begin='1027' end='1035' pos='NN' label='PLACE'>province</lex>
+			<lex ner='O' begin='1036' end='1038' pos='IN' label='None'>in</lex>
+			<lex ner='O' begin='1039' end='1043' pos='CD' label='None'>1897</lex>
+			<lex begin='1043' end='1044'>.</lex>
+		</s>
+		<s>
+			<lex CATEGORY='#ref-category GODDESS' begin='1045' end='1049'
+				FORM='#ref-category NP' ENDS-AT='#edges ending at 5' CONSTITUENTS='NIL'
+				USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge0 1 "this" 2'
+				pos='DT' RULE='#PSR188  {common-noun} - "this" common-noun' label='None'
+				REFERENT='#ref-category GODDESS' POSITION-IN-RESOURCE-ARRAY='5'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER='#edge4 4 goddess 5' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 1'>This</lex>
+			<lex CATEGORY='#ref-category GODDESS' begin='1050' end='1060'
+				FORM='#ref-category NP' ENDS-AT='#edges ending at 5' CONSTITUENTS='NIL'
+				USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge0 1 "this" 2'
+				pos='RB' RULE='#PSR188  {common-noun} - "this" common-noun' label='None'
+				REFERENT='#ref-category GODDESS' POSITION-IN-RESOURCE-ARRAY='5'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER='#edge4 4 goddess 5' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 1'>thoroughly</lex>
+			<lex CATEGORY='#ref-category GODDESS' begin='1069' end='1074'
+				FORM='#ref-category NP' ENDS-AT='#edges ending at 5' CONSTITUENTS='NIL'
+				USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge0 1 "this" 2'
+				pos='JJ' RULE='#PSR188  {common-noun} - "this" common-noun' label='None'
+				REFERENT='#ref-category GODDESS' POSITION-IN-RESOURCE-ARRAY='5'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER='#edge4 4 goddess 5' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 1'>noble</lex>
+			<lex CATEGORY='#ref-category GODDESS' begin='1075' end='1082'
+				FORM='#ref-category NP' ENDS-AT='#edges ending at 5' CONSTITUENTS='NIL'
+				USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge0 1 "this" 2'
+				pos='NN' RULE='#PSR188  {common-noun} - "this" common-noun' label='None'
+				REFERENT='#ref-category GODDESS' POSITION-IN-RESOURCE-ARRAY='5'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER='#edge4 4 goddess 5' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 1'>goddess</lex>
+			<lex begin='1082' end='1083'>,</lex>
+			<lex CATEGORY='#ref-category WITH' begin='1084' end='1088'
+				FORM='#ref-category PREPOSITION' ENDS-AT='#edges ending at 7'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "with"'
+				pos='IN' RULE='#PSR263  with -  "with"' label='None' REFERENT='#ref-category WITH'
+				POSITION-IN-RESOURCE-ARRAY='8' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 6'>with</lex>
+			<lex CATEGORY='#ref-category BEAUTIFUL' begin='1089' end='1098'
+				FORM='#ref-category ADJECTIVE' ENDS-AT='#edges ending at 8'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "beautiful"'
+				pos='JJ' RULE='#PSR3539  beautiful -  "beautiful"' label='None'
+				REFERENT='#ref-category BEAUTIFUL' POSITION-IN-RESOURCE-ARRAY='9'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 7'>beautiful</lex>
+			<lex ner='O' begin='1099' end='1109' pos='NNS' label='None'>cheekbones</lex>
+			<lex begin='1109' end='1110'>,</lex>
+			<lex CATEGORY='#ref-category LIP' begin='1111' end='1115'
+				FORM='#ref-category COMMON-NOUN/PLURAL' ENDS-AT='#edges ending at 11'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "lips"'
+				pos='NNS' RULE='#PSR3541  lip -  "lips"' label='None' REFERENT='#lip 1'
+				POSITION-IN-RESOURCE-ARRAY='11' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 10'>lips</lex>
+			<lex begin='1115' end='1116'>,</lex>
+			<lex CATEGORY='#word "and"' begin='1117' end='1120' FORM='NIL'
+				ENDS-AT='#edges ending at 13' CONSTITUENTS='NIL' USED-IN='NIL'
+				Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "and"' pos='CC' RULE='(319)'
+				label='None' REFERENT='#word "and"' POSITION-IN-RESOURCE-ARRAY='13'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':LITERAL-IN-A-RULE' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 12'>and</lex>
+			<lex ner='O' begin='1121' end='1125' pos='NNS' label='None'>eyes</lex>
+			<lex begin='1125' end='1126'>,</lex>
+			<lex CATEGORY='#word "and"' begin='1127' end='1130' FORM='NIL'
+				ENDS-AT='#edges ending at 16' CONSTITUENTS='NIL' USED-IN='NIL'
+				Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "and"' pos='CC' RULE='(319)'
+				label='None' REFERENT='#word "and"' POSITION-IN-RESOURCE-ARRAY='15'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':LITERAL-IN-A-RULE' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 15'>and</lex>
+			<lex CATEGORY='#ref-category WEAR-EVENT' begin='1131' end='1138'
+				FORM='#ref-category VERB+ING' ENDS-AT='#edges ending at 17'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "wearing"'
+				pos='VBG' RULE='#PSR3548  wear-event -  "wearing"' label='None'
+				REFERENT='#event 1' POSITION-IN-RESOURCE-ARRAY='16' SPANNED-WORDS='NIL'
+				RIGHT-DAUGHTER=':SINGLE-TERM' ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE'
+				STARTS-AT='#edges starting at 16'>wearing</lex>
+			<lex ner='O' begin='1139' end='1140' pos='DT' label='None'>a</lex>
+			<lex ner='O' begin='1149' end='1157' pos='JJ' label='None'>fanciful</lex>
+			<lex ner='O' begin='1158' end='1167' pos='NN' label='None'>headdress</lex>
+			<lex begin='1167' end='1168'>,</lex>
+			<lex ner='O' begin='1169' end='1172' pos='MD' label='None'>may</lex>
+			<lex ner='O' begin='1173' end='1175' pos='VB' label='None'>be</lex>
+			<lex ner='O' begin='1176' end='1181' pos='CD' label='None'>2,500</lex>
+			<lex ner='O' begin='1182' end='1187' pos='NNS' label='None'>years</lex>
+			<lex ner='O' begin='1188' end='1191' pos='JJ' label='None'>old</lex>
+			<lex begin='1191' end='1192'>.</lex>
+		</s>
+		<s>
+			<lex ner='O' begin='1193' end='1195' pos='IN' label='SPATIAL_SIGNAL'>On</lex>
+			<lex ner='O' begin='1196' end='1199' pos='DT' label='None'>the</lex>
+			<lex ner='O' begin='1200' end='1206' pos='NN' label='None'>museum</lex>
+			<lex CATEGORY='#word "grounds"' begin='1207' end='1214' FORM='NIL'
+				ENDS-AT='#edges ending at 5' CONSTITUENTS='NIL' USED-IN='NIL'
+				Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "grounds"' pos='NNS' RULE='(10)'
+				label='PLACE' REFERENT='#word "grounds"' POSITION-IN-RESOURCE-ARRAY='3'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':LITERAL-IN-A-RULE' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 4'>grounds</lex>
+			<lex ner='O' begin='1215' end='1216' pos=':' label='None'>—</lex>
+			<lex CATEGORY='#word "or"' begin='1217' end='1219' FORM='NIL'
+				ENDS-AT='#edges ending at 7' CONSTITUENTS='NIL' USED-IN='NIL'
+				Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "or"' pos='CC' RULE='(720896)'
+				label='None' REFERENT='#word "or"' POSITION-IN-RESOURCE-ARRAY='6'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':LITERAL-IN-A-RULE' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 6'>or</lex>
+			<lex begin='1219' end='1220'>,</lex>
+			<lex CATEGORY='#ref-category COMPARATIVE' begin='1229' end='1233'
+				FORM='#ref-category ADJUNCT' ENDS-AT='#edges ending at 9'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "more"'
+				pos='RBR' RULE='#PSR2354  comparative -  "more"' label='None'
+				REFERENT='#comparative "more" 3' POSITION-IN-RESOURCE-ARRAY='9'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 8'>more</lex>
+			<lex CATEGORY='#ref-category CORRECTLY' begin='1234' end='1243'
+				FORM='#ref-category ADVERB' ENDS-AT='#edges ending at 10'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "correctly"'
+				pos='RB' RULE='#PSR3533  correctly -  "correctly"' label='None'
+				REFERENT='#ref-category CORRECTLY' POSITION-IN-RESOURCE-ARRAY='11'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 9'>correctly</lex>
+			<lex begin='1243' end='1244'>,</lex>
+			<lex CATEGORY='#ref-category UNDER' begin='1245' end='1250'
+				FORM='#ref-category SPATIAL-PREPOSITION' ENDS-AT='#edges ending at 12'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "under"'
+				pos='IN' RULE='#PSR262  under -  "under"' label='SPATIAL_SIGNAL'
+				REFERENT='#ref-category UNDER' POSITION-IN-RESOURCE-ARRAY='13'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 11'>under</lex>
+			<lex CATEGORY='#ref-category INDIVIDUAL' begin='1251' end='1254'
+				FORM='#ref-category NP' ENDS-AT='#edges ending at 14' CONSTITUENTS='NIL'
+				USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge14 12 "the" 13'
+				pos='DT' RULE='#PSR1132  individual -  "the" ground' label='None'
+				REFERENT='#ground 2' POSITION-IN-RESOURCE-ARRAY='18' SPANNED-WORDS='NIL'
+				RIGHT-DAUGHTER='#edge16 13 ground 14' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 12'>the</lex>
+			<lex CATEGORY='#ref-category INDIVIDUAL' begin='1255' end='1261'
+				FORM='#ref-category NP' ENDS-AT='#edges ending at 14' CONSTITUENTS='NIL'
+				USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge14 12 "the" 13'
+				pos='NN' RULE='#PSR1132  individual -  "the" ground' label='PATH'
+				REFERENT='#ground 2' POSITION-IN-RESOURCE-ARRAY='18' SPANNED-WORDS='NIL'
+				RIGHT-DAUGHTER='#edge16 13 ground 14' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 12'>ground</lex>
+			<lex ner='O' begin='1262' end='1263' pos=':' label='None'>—</lex>
+			<lex CATEGORY='#word "is"' begin='1264' end='1266' FORM='NIL'
+				ENDS-AT='#edges ending at 16' CONSTITUENTS='NIL' USED-IN='NIL'
+				Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "is"' pos='VBZ' RULE='(187)'
+				label='None' REFERENT='#word "is"' POSITION-IN-RESOURCE-ARRAY='19'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':LITERAL-IN-A-RULE' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 15'>is</lex>
+			<lex ner='O' begin='1267' end='1268' pos='DT' label='None'>a</lex>
+			<lex ner='O' begin='1269' end='1276' pos='JJ' label='None'>careful</lex>
+			<lex ner='O' begin='1277' end='1289' pos='NN' label='SPATIAL_ENTITY'>reproduction</lex>
+			<lex ner='O' begin='1290' end='1292' pos='IN' label='None'>of</lex>
+			<lex ner='O' begin='1293' end='1296' pos='DT' label='None'>the</lex>
+			<lex ner='O' begin='1305' end='1312' pos='JJ' label='None'>painted</lex>
+			<lex ner='O' begin='1313' end='1319' pos='NNS' label='None'>scenes</lex>
+			<lex ner='O' begin='1320' end='1330' pos='VBN' label='NONMOTION_EVENT'>discovered</lex>
+			<lex ner='O' begin='1331' end='1333' pos='IN' label='SPATIAL_SIGNAL'>in</lex>
+			<lex ner='O' begin='1334' end='1335' pos='DT' label='None'>a</lex>
+			<lex ner='O' begin='1336' end='1340' pos='NN' label='PLACE'>cave</lex>
+			<lex ner='O' begin='1341' end='1343' pos='IN' label='SPATIAL_SIGNAL'>in</lex>
+			<lex ner='LOCATION' begin='1344' end='1352' pos='NNP' label='PLACE'>Altamira</lex>
+			<lex ner='O' begin='1353' end='1355' pos='IN' label='SPATIAL_SIGNAL'>in</lex>
+			<lex ner='O' begin='1356' end='1364' pos='JJ' label='None'>northern</lex>
+			<lex ner='LOCATION' begin='1365' end='1370' pos='NNP' label='PLACE'>Spain</lex>
+			<lex begin='1370' end='1371'>:</lex>
+			<lex ner='O' begin='1380' end='1391' pos='JJ' label='None'>prehistoric</lex>
+			<lex ner='O' begin='1392' end='1402' pos='NNS' label='None'>depictions</lex>
+			<lex ner='O' begin='1403' end='1405' pos='IN' label='None'>of</lex>
+			<lex ner='O' begin='1406' end='1413' pos='NNS' label='None'>animals</lex>
+			<lex begin='1413' end='1414'>,</lex>
+			<lex ner='O' begin='1415' end='1421' pos='VBG' label='None'>dating</lex>
+			<lex ner='O' begin='1422' end='1426' pos='RB' label='None'>back</lex>
+			<lex ner='O' begin='1427' end='1433' pos='CD' label='None'>15,000</lex>
+			<lex ner='O' begin='1434' end='1439' pos='NNS' label='None'>years</lex>
+			<lex ner='O' begin='1440' end='1443' pos='CC' label='None'>and</lex>
+			<lex ner='O' begin='1452' end='1464' pos='VBG' label='None'>representing</lex>
+			<lex ner='O' begin='1465' end='1468' pos='NN' label='None'>man</lex>
+			<lex begin='1468' end='1470'>’s</lex>
+			<lex begin='1471' end='1476'>first</lex>
+			<lex begin='1477' end='1490'>illustrations</lex>
+			<lex begin='1491' end='1493'>of</lex>
+			<lex begin='1494' end='1497'>the</lex>
+			<lex begin='1498' end='1503'>world</lex>
+			<lex begin='1504' end='1510'>around</lex>
+			<lex begin='1511' end='1514'>him</lex>
+			<lex begin='1514' end='1515'>.</lex>
+		</s>
+		<s>
+			<lex CATEGORY='#ref-category PRONOUN/PLURAL' begin='1516' end='1520'
+				FORM='#ref-category PRONOUN' ENDS-AT='#edges ending at 2'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "they"'
+				pos='PRP' RULE='#PSR811  pronoun/plural -  "they"' label='None'
+				REFERENT='#pronoun/plural "they" 1' POSITION-IN-RESOURCE-ARRAY='0'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 1'>They</lex>
+			<lex CATEGORY='#ref-category REPORT-VERB' begin='1529' end='1532'
+				FORM='#ref-category VERB+PASSIVE' ENDS-AT='#edges ending at 4'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge1 2 be 3'
+				pos='VBP' RULE='#PSR154  {verb+ed} - be verb+ed' label='None'
+				REFERENT='#report-verb "say" 3' POSITION-IN-RESOURCE-ARRAY='3'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER='#edge2 3 report-verb 4' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 2'>are</lex>
+			<lex CATEGORY='#ref-category REPORT-VERB' begin='1533' end='1537'
+				FORM='#ref-category VERB+PASSIVE' ENDS-AT='#edges ending at 4'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge1 2 be 3'
+				pos='VBN' RULE='#PSR154  {verb+ed} - be verb+ed' label='None'
+				REFERENT='#report-verb "say" 3' POSITION-IN-RESOURCE-ARRAY='3'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER='#edge2 3 report-verb 4' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 2'>said</lex>
+			<lex ner='O' begin='1538' end='1540' pos='TO' label='None'>to</lex>
+			<lex ner='O' begin='1541' end='1543' pos='VB' label='None'>be</lex>
+			<lex ner='O' begin='1544' end='1548' pos='DT' label='None'>some</lex>
+			<lex ner='O' begin='1549' end='1551' pos='IN' label='None'>of</lex>
+			<lex ner='O' begin='1552' end='1555' pos='DT' label='None'>the</lex>
+			<lex ner='O' begin='1556' end='1562' pos='JJS' label='None'>finest</lex>
+			<lex ner='O' begin='1563' end='1574' pos='JJ' label='None'>prehistoric</lex>
+			<lex ner='O' begin='1575' end='1579' pos='NN' label='None'>cave</lex>
+			<lex ner='O' begin='1580' end='1588' pos='NNS' label='None'>drawings</lex>
+			<lex ner='O' begin='1589' end='1593' pos='RB' label='None'>ever</lex>
+			<lex ner='O' begin='1602' end='1612' pos='VBN' label='None'>discovered</lex>
+			<lex begin='1612' end='1613'>.</lex>
+		</s>
+		<s>
+			<lex CATEGORY='#ref-category NAMED-OBJECT' begin='1622' end='1627'
+				FORM='#ref-category PROPER-NAME' ENDS-AT='#edges ending at 4'
+				CONSTITUENTS='(#word "plaza" #word "de" #word "colon")' USED-IN='NIL'
+				Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "plaza"' pos='NNP' RULE=':PNF'
+				label='PLACE' REFERENT='#named-object Plaza de Colon 1'
+				POSITION-IN-RESOURCE-ARRAY='0' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':PROPER-NAME'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 1'>Plaza</lex>
+			<lex CATEGORY='#ref-category NAMED-OBJECT' begin='1628' end='1630'
+				FORM='#ref-category PROPER-NAME' ENDS-AT='#edges ending at 4'
+				CONSTITUENTS='(#word "plaza" #word "de" #word "colon")' USED-IN='NIL'
+				Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "plaza"' pos='NNP' RULE=':PNF'
+				label='PLACE' REFERENT='#named-object Plaza de Colon 1'
+				POSITION-IN-RESOURCE-ARRAY='0' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':PROPER-NAME'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 1'>de</lex>
+			<lex CATEGORY='#ref-category NAMED-OBJECT' begin='1631' end='1636'
+				FORM='#ref-category PROPER-NAME' ENDS-AT='#edges ending at 4'
+				CONSTITUENTS='(#word "plaza" #word "de" #word "colon")' USED-IN='NIL'
+				Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "plaza"' pos='NN' RULE=':PNF'
+				label='PLACE' REFERENT='#named-object Plaza de Colon 1'
+				POSITION-IN-RESOURCE-ARRAY='0' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':PROPER-NAME'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 1'>Colón</lex>
+			<lex CATEGORY='#word "is"' begin='1637' end='1639' FORM='NIL'
+				ENDS-AT='#edges ending at 5' CONSTITUENTS='NIL' USED-IN='NIL'
+				Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "is"' pos='VBZ' RULE='(187)'
+				label='None' REFERENT='#word "is"' POSITION-IN-RESOURCE-ARRAY='1'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':LITERAL-IN-A-RULE' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 4'>is</lex>
+			<lex CATEGORY='#word "a"' begin='1640' end='1641' FORM='#ref-category DET'
+				ENDS-AT='#edges ending at 6' CONSTITUENTS='NIL' USED-IN='NIL'
+				Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "a"' pos='DT'
+				RULE='((386) 143360 . 282624)' label='None' REFERENT='#word "a"'
+				POSITION-IN-RESOURCE-ARRAY='3' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':LITERAL-IN-A-RULE'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 5'>a</lex>
+			<lex CATEGORY='#ref-category LARGE-MODIFIER' begin='1642' end='1647'
+				FORM='#ref-category ADJECTIVE' ENDS-AT='#edges ending at 7'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "large"'
+				pos='JJ' RULE='#PSR3536  large-modifier -  "large"' label='None'
+				REFERENT='#ref-category LARGE-MODIFIER' POSITION-IN-RESOURCE-ARRAY='5'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 6'>large</lex>
+			<lex CATEGORY='#ref-category open' begin='1648' end='1652'
+				FORM='#ref-category VERB' ENDS-AT='#edges ending at 8' CONSTITUENTS='NIL'
+				USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "open"' pos='JJ'
+				RULE='#PSR1319  open -  "open"' label='None' REFERENT='#open 1'
+				POSITION-IN-RESOURCE-ARRAY='7' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 7'>open</lex>
+			<lex CATEGORY='#ref-category SPACE-KIND' begin='1653' end='1658'
+				FORM='#ref-category COMMON-NOUN' ENDS-AT='#edges ending at 9'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "space"'
+				pos='NN' RULE='#PSR3538  space-kind -  "space"' label='PLACE'
+				REFERENT='#ref-category SPACE-KIND' POSITION-IN-RESOURCE-ARRAY='9'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 8'>space</lex>
+			<lex CATEGORY='#word "that"' begin='1659' end='1663' FORM='#ref-category DET'
+				ENDS-AT='#edges ending at 10' CONSTITUENTS='NIL' USED-IN='NIL'
+				Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "that"' pos='WDT' RULE='((9) 139264)'
+				label='None' REFERENT='#word "that"' POSITION-IN-RESOURCE-ARRAY='10'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':LITERAL-IN-A-RULE' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 9'>that</lex>
+			<lex CATEGORY='#ref-category BE' begin='1664' end='1667'
+				FORM='#ref-category VERB' ENDS-AT='#edges ending at 12'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge11 10 have 11'
+				pos='VBZ' RULE='#PSR135  {verb+ed} - have verb+ed' label='None'
+				REFERENT='#be 2' POSITION-IN-RESOURCE-ARRAY='13' SPANNED-WORDS='NIL'
+				RIGHT-DAUGHTER='#edge12 11 be 12' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 10'>has</lex>
+			<lex CATEGORY='#ref-category BE' begin='1668' end='1672'
+				FORM='#ref-category VERB' ENDS-AT='#edges ending at 12'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge11 10 have 11'
+				pos='VBN' RULE='#PSR135  {verb+ed} - have verb+ed' label='None'
+				REFERENT='#be 2' POSITION-IN-RESOURCE-ARRAY='13' SPANNED-WORDS='NIL'
+				RIGHT-DAUGHTER='#edge12 11 be 12' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 10'>been</lex>
+			<lex ner='O' begin='1673' end='1676' pos='DT' label='None'>the</lex>
+			<lex ner='O' begin='1685' end='1691' pos='JJ' label='None'>recent</lex>
+			<lex ner='O' begin='1692' end='1697' pos='NN' label='PLACE'>scene</lex>
+			<lex ner='O' begin='1698' end='1700' pos='IN' label='None'>of</lex>
+			<lex ner='O' begin='1701' end='1713' pos='JJ' label='None'>far-reaching</lex>
+			<lex ner='O' begin='1714' end='1726' pos='NNS' label='None'>public-works</lex>
+			<lex ner='O' begin='1727' end='1735' pos='NNS' label='NONMOTION_EVENT'>projects</lex>
+			<lex begin='1735' end='1736'>.</lex>
+		</s>
+		<s>
+			<lex ner='O' begin='1737' end='1740' pos='DT' label='None'>The</lex>
+			<lex CATEGORY='#ref-category REGION-TYPE' begin='1741' end='1745'
+				FORM='#ref-category COMMON-NOUN' ENDS-AT='#edges ending at 3'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "city"'
+				pos='NN' RULE='#PSR2539  region-type -  "city"' label='None'
+				REFERENT='#ref-category CITY' POSITION-IN-RESOURCE-ARRAY='1'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 2'>city</lex>
+			<lex ner='O' begin='1746' end='1753' pos='NN' label='None'>airport</lex>
+			<lex CATEGORY='#ref-category bus' begin='1762' end='1765'
+				FORM='#ref-category COMMON-NOUN' ENDS-AT='#edges ending at 5'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "bus"'
+				pos='NN' RULE='#PSR962  bus -  "bus"' label='None' REFERENT='#ref-category bus'
+				POSITION-IN-RESOURCE-ARRAY='2' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 4'>bus</lex>
+			<lex CATEGORY='#ref-category TERMINAL-KIND' begin='1766' end='1774'
+				FORM='#ref-category COMMON-NOUN' ENDS-AT='#edges ending at 6'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "terminal"'
+				pos='NN' RULE='#PSR3534  terminal-kind -  "terminal"' label='PLACE'
+				REFERENT='#ref-category TERMINAL-KIND' POSITION-IN-RESOURCE-ARRAY='3'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 5'>terminal</lex>
+			<lex CATEGORY='#ref-category OPERATE' begin='1775' end='1783'
+				FORM='#ref-category VERB+PRESENT' ENDS-AT='#edges ending at 7'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "operates"'
+				pos='VBZ' RULE='#PSR3537  operate -  "operates"' label='NONMOTION_EVENT'
+				REFERENT='#event 1' POSITION-IN-RESOURCE-ARRAY='5' SPANNED-WORDS='NIL'
+				RIGHT-DAUGHTER=':SINGLE-TERM' ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE'
+				STARTS-AT='#edges starting at 6'>operates</lex>
+			<lex CATEGORY='#ref-category BELOW' begin='1784' end='1789'
+				FORM='#ref-category SPATIAL-PREPOSITION' ENDS-AT='#edges ending at 8'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "below"'
+				pos='IN' RULE='#PSR236  below -  "below"' label='SPATIAL_SIGNAL'
+				REFERENT='#ref-category BELOW' POSITION-IN-RESOURCE-ARRAY='6'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 7'>below</lex>
+			<lex CATEGORY='#ref-category ground' begin='1790' end='1796'
+				FORM='#ref-category COMMON-NOUN' ENDS-AT='#edges ending at 9'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "ground"'
+				pos='NN' RULE='#PSR1130  ground -  "ground"' label='PATH'
+				REFERENT='#ref-category ground' POSITION-IN-RESOURCE-ARRAY='8'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 8'>ground</lex>
+			<lex begin='1796' end='1797'>,</lex>
+			<lex CATEGORY='#ref-category BENEATH' begin='1798' end='1805'
+				FORM='#ref-category SPATIAL-PREPOSITION' ENDS-AT='#edges ending at 11'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "beneath"'
+				pos='IN' RULE='#PSR237  beneath -  "beneath"' label='SPATIAL_SIGNAL'
+				REFERENT='#ref-category BENEATH' POSITION-IN-RESOURCE-ARRAY='10'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 10'>beneath</lex>
+			<lex CATEGORY='#ref-category STATUE' begin='1806' end='1808'
+				FORM='#ref-category NP' ENDS-AT='#edges ending at 14' CONSTITUENTS='NIL'
+				USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge11 11 "an" 12'
+				pos='DT' RULE='#PSR176  {common-noun} - "an" common-noun' label='None'
+				REFERENT='#ref-category STATUE' POSITION-IN-RESOURCE-ARRAY='15'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER='#edge14 13 statue 14' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 11'>an</lex>
+			<lex CATEGORY='#ref-category STATUE' begin='1809' end='1813'
+				FORM='#ref-category NP' ENDS-AT='#edges ending at 14' CONSTITUENTS='NIL'
+				USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge11 11 "an" 12'
+				pos='CD' RULE='#PSR176  {common-noun} - "an" common-noun' label='None'
+				REFERENT='#ref-category STATUE' POSITION-IN-RESOURCE-ARRAY='15'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER='#edge14 13 statue 14' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 11'>1885</lex>
+			<lex CATEGORY='#ref-category STATUE' begin='1814' end='1820'
+				FORM='#ref-category NP' ENDS-AT='#edges ending at 14' CONSTITUENTS='NIL'
+				USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge11 11 "an" 12'
+				pos='NN' RULE='#PSR176  {common-noun} - "an" common-noun' label='SPATIAL_ENTITY'
+				REFERENT='#ref-category STATUE' POSITION-IN-RESOURCE-ARRAY='15'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER='#edge14 13 statue 14' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 11'>statue</lex>
+			<lex CATEGORY='#ref-category OF' begin='1821' end='1823'
+				FORM='#ref-category PREPOSITION' ENDS-AT='#edges ending at 15'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "of"'
+				pos='IN' RULE='#PSR252  of -  "of"' label='None' REFERENT='#ref-category OF'
+				POSITION-IN-RESOURCE-ARRAY='17' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 14'>of</lex>
+			<lex CATEGORY='#ref-category NAMED-OBJECT' begin='1832' end='1843'
+				FORM='#ref-category PROPER-NAME' ENDS-AT='#edges ending at 17'
+				CONSTITUENTS='(#word "christopher" #word "columbus")' USED-IN='NIL'
+				Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "christopher"' pos='NNP'
+				RULE=':PNF' label='None' REFERENT='#named-object Christopher Columbus 1'
+				POSITION-IN-RESOURCE-ARRAY='18' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':PROPER-NAME'
+				ner='PERSON' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 15'>Christopher</lex>
+			<lex CATEGORY='#ref-category NAMED-OBJECT' begin='1844' end='1852'
+				FORM='#ref-category PROPER-NAME' ENDS-AT='#edges ending at 17'
+				CONSTITUENTS='(#word "christopher" #word "columbus")' USED-IN='NIL'
+				Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "christopher"' pos='NNP'
+				RULE=':PNF' label='None' REFERENT='#named-object Christopher Columbus 1'
+				POSITION-IN-RESOURCE-ARRAY='18' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':PROPER-NAME'
+				ner='PERSON' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 15'>Columbus</lex>
+			<lex CATEGORY='#word "and"' begin='1853' end='1856' FORM='NIL'
+				ENDS-AT='#edges ending at 18' CONSTITUENTS='NIL' USED-IN='NIL'
+				Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "and"' pos='CC' RULE='(319)'
+				label='None' REFERENT='#word "and"' POSITION-IN-RESOURCE-ARRAY='19'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':LITERAL-IN-A-RULE' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 17'>and</lex>
+			<lex ner='O' begin='1857' end='1858' pos='DT' label='None'>a</lex>
+			<lex ner='O' begin='1859' end='1867' pos='NN' label='SPATIAL_ENTITY'>monument</lex>
+			<lex ner='O' begin='1868' end='1870' pos='TO' label='None'>to</lex>
+			<lex ner='O' begin='1871' end='1874' pos='DT' label='None'>the</lex>
+			<lex ner='O' begin='1875' end='1884' pos='NN' label='None'>discovery</lex>
+			<lex ner='O' begin='1885' end='1887' pos='IN' label='None'>of</lex>
+			<lex ner='O' begin='1888' end='1891' pos='DT' label='None'>the</lex>
+			<lex ner='O' begin='1892' end='1895' pos='NNP' label='PLACE'>New</lex>
+			<lex ner='O' begin='1896' end='1901' pos='NNP' label='PLACE'>World</lex>
+			<lex begin='1901' end='1902'>.</lex>
+		</s>
+		<s>
+			<lex ner='O' begin='1911' end='1916' pos='EX' label='None'>There</lex>
+			<lex ner='O' begin='1917' end='1919' pos='VBZ' label='None'>is</lex>
+			<lex ner='O' begin='1920' end='1924' pos='RB' label='None'>also</lex>
+			<lex CATEGORY='#ref-category NAMED-OBJECT' begin='1925' end='1928'
+				FORM='#ref-category PROPER-NAME' ENDS-AT='#edges ending at 7'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge6 4 "the" 5'
+				pos='DT' RULE='#PSR187  {proper-name} - "the" proper-name' label='None'
+				REFERENT='#named-object Centro Cultural 1'
+				POSITION-IN-RESOURCE-ARRAY='10' SPANNED-WORDS='NIL'
+				RIGHT-DAUGHTER='#edge8 5 named-object 7' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 4'>the</lex>
+			<lex CATEGORY='#ref-category NAMED-OBJECT' begin='1929' end='1935'
+				FORM='#ref-category PROPER-NAME' ENDS-AT='#edges ending at 7'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge6 4 "the" 5'
+				pos='NNP' RULE='#PSR187  {proper-name} - "the" proper-name' label='PLACE'
+				REFERENT='#named-object Centro Cultural 1'
+				POSITION-IN-RESOURCE-ARRAY='10' SPANNED-WORDS='NIL'
+				RIGHT-DAUGHTER='#edge8 5 named-object 7' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 4'>Centro</lex>
+			<lex CATEGORY='#ref-category NAMED-OBJECT' begin='1936' end='1944'
+				FORM='#ref-category PROPER-NAME' ENDS-AT='#edges ending at 7'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge6 4 "the" 5'
+				pos='NNP' RULE='#PSR187  {proper-name} - "the" proper-name' label='PLACE'
+				REFERENT='#named-object Centro Cultural 1'
+				POSITION-IN-RESOURCE-ARRAY='10' SPANNED-WORDS='NIL'
+				RIGHT-DAUGHTER='#edge8 5 named-object 7' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 4'>Cultural</lex>
+			<lex ner='O' begin='1945' end='1947' pos='IN' label='PLACE'>de</lex>
+			<lex ner='O' begin='1948' end='1950' pos='NNP' label='PLACE'>la</lex>
+			<lex CATEGORY='#ref-category VILLA' begin='1951' end='1956'
+				FORM='#ref-category COMMON-NOUN' ENDS-AT='#edges ending at 10'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "villa"'
+				pos='NNP' RULE='#PSR3535  villa -  "villa"' label='PLACE'
+				REFERENT='#ref-category VILLA' POSITION-IN-RESOURCE-ARRAY='9'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 9'>Villa</lex>
+			<lex begin='1957' end='1958'>(</lex>
+			<lex ner='O' begin='1958' end='1962' pos='NNP' label='PLACE'>City</lex>
+			<lex ner='O' begin='1963' end='1971' pos='NNP' label='PLACE'>Cultural</lex>
+			<lex ner='O' begin='1972' end='1978' pos='NNP' label='PLACE'>Center</lex>
+			<lex begin='1978' end='1979'>)</lex>
+			<lex begin='1979' end='1980'>,</lex>
+			<lex ner='O' begin='1989' end='1993' pos='IN' label='SPATIAL_SIGNAL'>with</lex>
+			<lex ner='O' begin='1994' end='2004' pos='NNS' label='PLACE'>facilities</lex>
+			<lex ner='O' begin='2005' end='2008' pos='IN' label='None'>for</lex>
+			<lex ner='O' begin='2009' end='2017' pos='NNS' label='None'>concerts</lex>
+			<lex begin='2017' end='2018'>,</lex>
+			<lex ner='O' begin='2019' end='2026' pos='FW' label='None'>theatre</lex>
+			<lex begin='2026' end='2027'>,</lex>
+			<lex ner='O' begin='2028' end='2031' pos='NN' label='None'>art</lex>
+			<lex ner='O' begin='2032' end='2043' pos='NNS' label='None'>exhibitions</lex>
+			<lex begin='2043' end='2044'>,</lex>
+			<lex ner='O' begin='2045' end='2048' pos='CC' label='None'>and</lex>
+			<lex ner='O' begin='2049' end='2054' pos='NNS' label='None'>films</lex>
+			<lex begin='2054' end='2055'>.</lex>
+		</s>
+		<s>
+			<lex CATEGORY='#ref-category NAME' begin='2064' end='2069'
+				FORM='#ref-category PROPER-NAME' ENDS-AT='#edges ending at 2'
+				CONSTITUENTS='(#word "paseo")' USED-IN='NIL' Type='SPARSER::EDGE'
+				LEFT-DAUGHTER='#word "paseo"' pos='NNP' RULE=':SINGLE-UNKNOWN-CAPITALIZED-WORD'
+				label='PATH' REFERENT='#uncategorized-name Paseo'
+				POSITION-IN-RESOURCE-ARRAY='0' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':PROPER-NAME'
+				ner='LOCATION' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 1'>Paseo</lex>
+			<lex ner='LOCATION' begin='2070' end='2072' pos='NNP' label='PATH'>de</lex>
+			<lex ner='LOCATION' begin='2073' end='2075' pos='NNP' label='PATH'>la</lex>
+			<lex CATEGORY='#ref-category NAME' begin='2076' end='2086'
+				FORM='#ref-category PROPER-NAME' ENDS-AT='#edges ending at 5'
+				CONSTITUENTS='(#word "castellana")' USED-IN='NIL' Type='SPARSER::EDGE'
+				LEFT-DAUGHTER='#word "castellana"' pos='NNP'
+				RULE=':SINGLE-UNKNOWN-CAPITALIZED-WORD' label='PATH'
+				REFERENT='#uncategorized-name Castellana'
+				POSITION-IN-RESOURCE-ARRAY='1' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':PROPER-NAME'
+				ner='LOCATION' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 4'>Castellana</lex>
+			<lex CATEGORY='#ref-category BE' begin='2087' end='2089'
+				FORM='#ref-category VERB' ENDS-AT='#edges ending at 6' CONSTITUENTS='NIL'
+				USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "is"' pos='VBZ'
+				RULE='#PSR146  be -  "is"' label='None' REFERENT='#ref-category BE'
+				POSITION-IN-RESOURCE-ARRAY='3' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 5'>is</lex>
+			<lex ner='LOCATION' begin='2090' end='2096' pos='NNP' label='PLACE'>Madrid</lex>
+			<lex begin='2096' end='2098'>’s</lex>
+			<lex begin='2099' end='2108'>principal</lex>
+			<lex begin='2109' end='2120'>north-south</lex>
+			<lex begin='2129' end='2135'>avenue</lex>
+			<lex begin='2135' end='2136'>,</lex>
+			<lex begin='2137' end='2144'>running</lex>
+			<lex begin='2145' end='2148'>for</lex>
+			<lex begin='2149' end='2156'>several</lex>
+			<lex begin='2157' end='2162'>miles</lex>
+			<lex begin='2163' end='2170'>through</lex>
+			<lex begin='2171' end='2174'>the</lex>
+			<lex begin='2175' end='2180'>heart</lex>
+			<lex begin='2181' end='2183'>of</lex>
+			<lex begin='2184' end='2187'>the</lex>
+			<lex begin='2188' end='2192'>city</lex>
+			<lex begin='2193' end='2196'>and</lex>
+			<lex begin='2205' end='2214'>bordering</lex>
+			<lex begin='2215' end='2218'>the</lex>
+			<lex begin='2219' end='2228'>Salamanca</lex>
+			<lex begin='2229' end='2237'>district</lex>
+			<lex begin='2238' end='2240'>to</lex>
+			<lex begin='2241' end='2244'>its</lex>
+			<lex begin='2245' end='2249'>west</lex>
+			<lex begin='2249' end='2250'>.</lex>
+		</s>
+		<s>
+			<lex CATEGORY='#ref-category RELATIVE-LOCATION' begin='2251' end='2253'
+				FORM='#ref-category PP' ENDS-AT='#edges ending at 5' CONSTITUENTS='NIL'
+				USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge0 1 "in" 2'
+				pos='IN' RULE='#PSR279  relative-location -  "in" np' label='MOTION_SIGNAL'
+				REFERENT='#relative-location 1' POSITION-IN-RESOURCE-ARRAY='15'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER='#edge4 2 direction 5' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 1'>In</lex>
+			<lex CATEGORY='#ref-category RELATIVE-LOCATION' begin='2254' end='2257'
+				FORM='#ref-category PP' ENDS-AT='#edges ending at 5' CONSTITUENTS='NIL'
+				USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge0 1 "in" 2'
+				pos='DT' RULE='#PSR279  relative-location -  "in" np' label='None'
+				REFERENT='#relative-location 1' POSITION-IN-RESOURCE-ARRAY='15'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER='#edge4 2 direction 5' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 1'>the</lex>
+			<lex CATEGORY='#ref-category RELATIVE-LOCATION' begin='2258' end='2262'
+				FORM='#ref-category PP' ENDS-AT='#edges ending at 5' CONSTITUENTS='NIL'
+				USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge0 1 "in" 2'
+				pos='NN' RULE='#PSR279  relative-location -  "in" np' label='PLACE'
+				REFERENT='#relative-location 1' POSITION-IN-RESOURCE-ARRAY='15'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER='#edge4 2 direction 5' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 1'>area</lex>
+			<lex CATEGORY='#ref-category RELATIVE-LOCATION' begin='2263' end='2268'
+				FORM='#ref-category PP' ENDS-AT='#edges ending at 5' CONSTITUENTS='NIL'
+				USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge0 1 "in" 2'
+				pos='NN' RULE='#PSR279  relative-location -  "in" np' label='SPATIAL_SIGNAL'
+				REFERENT='#relative-location 1' POSITION-IN-RESOURCE-ARRAY='15'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER='#edge4 2 direction 5' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 1'>north</lex>
+			<lex CATEGORY='#word "of"' begin='2269' end='2271'
+				FORM='#ref-category PREPOSITION' ENDS-AT='#edges ending at 6'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "of"'
+				pos='IN' RULE='((13) 159744)' label='SPATIAL_SIGNAL' REFERENT='#word "of"'
+				POSITION-IN-RESOURCE-ARRAY='5' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':LITERAL-IN-A-RULE'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 5'>of</lex>
+			<lex CATEGORY='#ref-category NAMED-OBJECT' begin='2280' end='2285'
+				FORM='#ref-category PROPER-NAME' ENDS-AT='#edges ending at 9'
+				CONSTITUENTS='(#word "plaza" #word "de" #word "colon")' USED-IN='NIL'
+				Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "plaza"' pos='NNP' RULE=':PNF'
+				label='PLACE' REFERENT='#named-object Plaza de Colon 1'
+				POSITION-IN-RESOURCE-ARRAY='7' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':PROPER-NAME'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 6'>Plaza</lex>
+			<lex CATEGORY='#ref-category NAMED-OBJECT' begin='2286' end='2288'
+				FORM='#ref-category PROPER-NAME' ENDS-AT='#edges ending at 9'
+				CONSTITUENTS='(#word "plaza" #word "de" #word "colon")' USED-IN='NIL'
+				Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "plaza"' pos='IN' RULE=':PNF'
+				label='PLACE' REFERENT='#named-object Plaza de Colon 1'
+				POSITION-IN-RESOURCE-ARRAY='7' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':PROPER-NAME'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 6'>de</lex>
+			<lex CATEGORY='#ref-category NAMED-OBJECT' begin='2289' end='2294'
+				FORM='#ref-category PROPER-NAME' ENDS-AT='#edges ending at 9'
+				CONSTITUENTS='(#word "plaza" #word "de" #word "colon")' USED-IN='NIL'
+				Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "plaza"' pos='NN' RULE=':PNF'
+				label='PLACE' REFERENT='#named-object Plaza de Colon 1'
+				POSITION-IN-RESOURCE-ARRAY='7' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':PROPER-NAME'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 6'>Colón</lex>
+			<lex begin='2294' end='2295'>,</lex>
+			<lex CATEGORY='#ref-category PRONOUN/SECOND' begin='2296' end='2299'
+				FORM='#ref-category PRONOUN' ENDS-AT='#edges ending at 11'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "you"'
+				pos='PRP' RULE='#PSR806  pronoun/second -  "you"' label='SPATIAL_ENTITY'
+				REFERENT='#pronoun/second "you" 1' POSITION-IN-RESOURCE-ARRAY='9'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 10'>you</lex>
+			<lex CATEGORY='#ref-category come' begin='2300' end='2304'
+				FORM='#ref-category VERB' ENDS-AT='#edges ending at 12'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "come"'
+				pos='VBP' RULE='#PSR1252  come -  "come"' label='MOTION' REFERENT='#come 1'
+				POSITION-IN-RESOURCE-ARRAY='10' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 11'>come</lex>
+			<lex CATEGORY='#word "to"' begin='2305' end='2307'
+				FORM='#ref-category PREPOSITION' ENDS-AT='#edges ending at 13'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "to"'
+				pos='TO' RULE='((12) 348160 . 208896)' label='MOTION_SIGNAL'
+				REFERENT='#word "to"' POSITION-IN-RESOURCE-ARRAY='11' SPANNED-WORDS='NIL'
+				RIGHT-DAUGHTER=':LITERAL-IN-A-RULE' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 12'>to</lex>
+			<lex CATEGORY='#word "a"' begin='2308' end='2309' FORM='#ref-category DET'
+				ENDS-AT='#edges ending at 14' CONSTITUENTS='NIL' USED-IN='NIL'
+				Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "a"' pos='DT'
+				RULE='((386) 143360 . 282624)' label='None' REFERENT='#word "a"'
+				POSITION-IN-RESOURCE-ARRAY='13' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':LITERAL-IN-A-RULE'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 13'>a</lex>
+			<lex ner='O' begin='2310' end='2315' pos='JJR' label='None'>newer</lex>
+			<lex CATEGORY='#word "section"' begin='2316' end='2323' FORM='NIL'
+				ENDS-AT='#edges ending at 16' CONSTITUENTS='NIL' USED-IN='NIL'
+				Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "section"' pos='NN' RULE='(277)'
+				label='PLACE' REFERENT='#word "section"' POSITION-IN-RESOURCE-ARRAY='14'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':LITERAL-IN-A-RULE' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 15'>section</lex>
+			<lex CATEGORY='#ref-category OF-REGION' begin='2324' end='2326'
+				FORM='#ref-category PP' ENDS-AT='#edges ending at 18' CONSTITUENTS='NIL'
+				USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge16 16 "of" 17'
+				pos='IN' RULE='#PSR312  of-region -  "of" region-type' label='None'
+				REFERENT='#ref-category TOWN' POSITION-IN-RESOURCE-ARRAY='24'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER='#edge18 17 region-type 18' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 16'>of</lex>
+			<lex CATEGORY='#ref-category OF-REGION' begin='2327' end='2331'
+				FORM='#ref-category PP' ENDS-AT='#edges ending at 18' CONSTITUENTS='NIL'
+				USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge16 16 "of" 17'
+				pos='NN' RULE='#PSR312  of-region -  "of" region-type' label='PLACE'
+				REFERENT='#ref-category TOWN' POSITION-IN-RESOURCE-ARRAY='24'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER='#edge18 17 region-type 18' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 16'>town</lex>
+			<lex begin='2331' end='2332'>,</lex>
+			<lex CATEGORY='#word "where"' begin='2333' end='2338'
+				FORM='#ref-category WH-PRONOUN' ENDS-AT='#edges ending at 20'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "where"'
+				pos='WRB' RULE='(970752)' label='None' REFERENT='#word "where"'
+				POSITION-IN-RESOURCE-ARRAY='20' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':LITERAL-IN-A-RULE'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 19'>where</lex>
+			<lex CATEGORY='#ref-category PATRICIAN-KIND' begin='2339' end='2348'
+				FORM='#ref-category COMMON-NOUN' ENDS-AT='#edges ending at 21'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "patrician"'
+				pos='JJ' RULE='#PSR3537  patrician-kind -  "patrician"' label='None'
+				REFERENT='#ref-category PATRICIAN-KIND' POSITION-IN-RESOURCE-ARRAY='22'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 20'>patrician</lex>
+			<lex ner='O' begin='2357' end='2367' pos='NNS' label='PLACE'>townhouses</lex>
+			<lex ner='O' begin='2368' end='2370' pos='IN' label='SPATIAL_SIGNAL'>in</lex>
+			<lex ner='O' begin='2371' end='2374' pos='DT' label='None'>the</lex>
+			<lex ner='O' begin='2375' end='2382' pos='JJ' label='None'>central</lex>
+			<lex ner='O' begin='2383' end='2387' pos='NN' label='PLACE'>area</lex>
+			<lex ner='O' begin='2388' end='2392' pos='VBP' label='None'>give</lex>
+			<lex ner='O' begin='2393' end='2396' pos='NN' label='None'>way</lex>
+			<lex ner='O' begin='2397' end='2399' pos='TO' label='None'>to</lex>
+			<lex ner='O' begin='2400' end='2409' pos='JJ' label='None'>luxurious</lex>
+			<lex ner='O' begin='2410' end='2416' pos='JJ' label='None'>modern</lex>
+			<lex ner='O' begin='2417' end='2426' pos='NN' label='None'>apartment</lex>
+			<lex ner='O' begin='2435' end='2441' pos='NNS' label='PLACE'>blocks</lex>
+			<lex ner='O' begin='2442' end='2446' pos='IN' label='SPATIAL_SIGNAL'>with</lex>
+			<lex ner='O' begin='2447' end='2457' pos='JJ' label='None'>landscaped</lex>
+			<lex ner='O' begin='2458' end='2467' pos='NNS' label='SPATIAL_ENTITY'>balconies</lex>
+			<lex begin='2467' end='2468'>.</lex>
+		</s>
+		<s>
+			<lex CATEGORY='#ref-category NAMED-OBJECT' begin='2477' end='2482'
+				FORM='#ref-category PROPER-NAME' ENDS-AT='#edges ending at 4'
+				CONSTITUENTS='(#word "museo" #word "lazaro" #word "galdiano")'
+				USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "museo"'
+				pos='NNP' RULE=':PNF' label='PLACE' REFERENT='#named-object Museo Lazaro Galdiano 1'
+				POSITION-IN-RESOURCE-ARRAY='0' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':PROPER-NAME'
+				ner='PERSON' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 1'>Museo</lex>
+			<lex CATEGORY='#ref-category NAMED-OBJECT' begin='2483' end='2489'
+				FORM='#ref-category PROPER-NAME' ENDS-AT='#edges ending at 4'
+				CONSTITUENTS='(#word "museo" #word "lazaro" #word "galdiano")'
+				USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "museo"'
+				pos='NNP' RULE=':PNF' label='PLACE' REFERENT='#named-object Museo Lazaro Galdiano 1'
+				POSITION-IN-RESOURCE-ARRAY='0' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':PROPER-NAME'
+				ner='PERSON' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 1'>Lázaro</lex>
+			<lex CATEGORY='#ref-category NAMED-OBJECT' begin='2490' end='2498'
+				FORM='#ref-category PROPER-NAME' ENDS-AT='#edges ending at 4'
+				CONSTITUENTS='(#word "museo" #word "lazaro" #word "galdiano")'
+				USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "museo"'
+				pos='NNP' RULE=':PNF' label='PLACE' REFERENT='#named-object Museo Lazaro Galdiano 1'
+				POSITION-IN-RESOURCE-ARRAY='0' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':PROPER-NAME'
+				ner='PERSON' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 1'>Galdiano</lex>
+			<lex begin='2499' end='2500'>(</lex>
+			<lex ner='O' begin='2500' end='2501' pos='NN' label='PLACE'>c</lex>
+			<lex begin='2501' end='2502'>/</lex>
+			<lex ner='PERSON' begin='2503' end='2510' pos='NNP' label='PLACE'>Serrano</lex>
+			<lex begin='2510' end='2511'>,</lex>
+			<lex ner='O' begin='2512' end='2515' pos='CD' label='PLACE'>122</lex>
+			<lex begin='2515' end='2516'>)</lex>
+			<lex ner='O' begin='2517' end='2519' pos='VBZ' label='None'>is</lex>
+			<lex ner='O' begin='2520' end='2522' pos='DT' label='None'>an</lex>
+			<lex ner='O' begin='2523' end='2536' pos='RB' label='None'>astonishingly</lex>
+			<lex ner='O' begin='2545' end='2557' pos='JJ' label='None'>wide-ranging</lex>
+			<lex ner='O' begin='2558' end='2561' pos='CC' label='None'>and</lex>
+			<lex ner='O' begin='2562' end='2571' pos='JJ' label='None'>priceless</lex>
+			<lex ner='O' begin='2572' end='2579' pos='JJ' label='None'>private</lex>
+			<lex ner='O' begin='2580' end='2590' pos='NN' label='None'>collection</lex>
+			<lex begin='2590' end='2591'>.</lex>
+		</s>
+		<s>
+			<lex CATEGORY='#ref-category feature' begin='2592' end='2600'
+				FORM='#ref-category VERB+ED' ENDS-AT='#edges ending at 2'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "featured"'
+				pos='VBN' RULE='#PSR3533  feature -  "featured"' label='NONMOTION_EVENT'
+				REFERENT='#term1 "feature"' POSITION-IN-RESOURCE-ARRAY='0'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 1'>Featured</lex>
+			<lex CATEGORY='#word "here"' begin='2601' end='2605' FORM='NIL'
+				ENDS-AT='#edges ending at 3' CONSTITUENTS='NIL' USED-IN='NIL'
+				Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "here"' pos='RB' RULE='(56)'
+				label='PLACE' REFERENT='#word "here"' POSITION-IN-RESOURCE-ARRAY='1'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':LITERAL-IN-A-RULE' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 2'>here</lex>
+			<lex CATEGORY='#ref-category BE' begin='2606' end='2609'
+				FORM='#ref-category VERB' ENDS-AT='#edges ending at 4' CONSTITUENTS='NIL'
+				USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "are"' pos='VBP'
+				RULE='#PSR145  be -  "are"' label='None' REFERENT='#ref-category BE'
+				POSITION-IN-RESOURCE-ARRAY='3' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 3'>are</lex>
+			<lex ner='O' begin='2618' end='2625' pos='JJ' label='None'>ancient</lex>
+			<lex ner='O' begin='2626' end='2633' pos='NN' label='None'>jewelry</lex>
+			<lex begin='2633' end='2634'>,</lex>
+			<lex CATEGORY='#ref-category includ' begin='2635' end='2644'
+				FORM='#ref-category VERB+ING' ENDS-AT='#edges ending at 8'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "including"'
+				pos='VBG' RULE='#PSR3534  includ -  "including"' label='None'
+				REFERENT='#term2 "includ"' POSITION-IN-RESOURCE-ARRAY='5'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 7'>including</lex>
+			<lex CATEGORY='#word "a"' begin='2645' end='2646' FORM='#ref-category DET'
+				ENDS-AT='#edges ending at 9' CONSTITUENTS='NIL' USED-IN='NIL'
+				Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "a"' pos='DT'
+				RULE='((386) 143360 . 282624)' label='None' REFERENT='#word "a"'
+				POSITION-IN-RESOURCE-ARRAY='6' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':LITERAL-IN-A-RULE'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 8'>a</lex>
+			<lex CATEGORY='#ref-category NAME' begin='2647' end='2653'
+				FORM='#ref-category PROPER-NAME' ENDS-AT='#edges ending at 10'
+				CONSTITUENTS='(#word "celtic")' USED-IN='NIL' Type='SPARSER::EDGE'
+				LEFT-DAUGHTER='#word "celtic"' pos='JJ'
+				RULE=':SINGLE-UNKNOWN-CAPITALIZED-WORD' label='None'
+				REFERENT='#uncategorized-name Celtic' POSITION-IN-RESOURCE-ARRAY='7'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':PROPER-NAME' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 9'>Celtic</lex>
+			<lex CATEGORY='#ref-category DIADEM' begin='2654' end='2660'
+				FORM='#ref-category COMMON-NOUN' ENDS-AT='#edges ending at 11'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "diadem"'
+				pos='NN' RULE='#PSR3535  diadem -  "diadem"' label='None'
+				REFERENT='#ref-category DIADEM' POSITION-IN-RESOURCE-ARRAY='8'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 10'>diadem</lex>
+			<lex CATEGORY='#word "from"' begin='2661' end='2665'
+				FORM='#ref-category PREPOSITION' ENDS-AT='#edges ending at 12'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "from"'
+				pos='IN' RULE='((46) 364544)' label='None' REFERENT='#word "from"'
+				POSITION-IN-RESOURCE-ARRAY='9' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':LITERAL-IN-A-RULE'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 11'>from</lex>
+			<lex CATEGORY='#ref-category NUMERATED-ANAPHOR' begin='2666' end='2669'
+				FORM='#ref-category NP' ENDS-AT='#edges ending at 14' CONSTITUENTS='NIL'
+				USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge11 12 "the" 13'
+				pos='DT' RULE='#PSR1887  numerated-anaphor -  "the" number' label='None'
+				REFERENT='#ref-category SUBSEQUENT-REFERENCE'
+				POSITION-IN-RESOURCE-ARRAY='16' SPANNED-WORDS='NIL' RIGHT-DAUGHTER='#edge14 13 number 14'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 12'>the</lex>
+			<lex ner='O' begin='2670' end='2673' pos='JJ' label='None'>2nd</lex>
+			<lex ner='O' begin='2674' end='2681' pos='NN' label='None'>century</lex>
+			<lex ner='O' begin='2682' end='2685' pos='NN' label='None'>b.c</lex>
+			<lex begin='2685' end='2686'>.</lex>
+		</s>
+		<s>
+			<lex begin='2687' end='2688'>,</lex>
+			<lex ner='O' begin='2697' end='2705' pos='JJ' label='None'>medieval</lex>
+			<lex CATEGORY='#word "and"' begin='2706' end='2709' FORM='NIL'
+				ENDS-AT='#edges ending at 4' CONSTITUENTS='NIL' USED-IN='NIL'
+				Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "and"' pos='CC' RULE='(319)'
+				label='None' REFERENT='#word "and"' POSITION-IN-RESOURCE-ARRAY='1'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':LITERAL-IN-A-RULE' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 3'>and</lex>
+			<lex CATEGORY='#ref-category NAME' begin='2710' end='2721'
+				FORM='#ref-category PROPER-NAME' ENDS-AT='#edges ending at 5'
+				CONSTITUENTS='(#word "renaissance")' USED-IN='NIL' Type='SPARSER::EDGE'
+				LEFT-DAUGHTER='#word "renaissance"' pos='NNP'
+				RULE=':SINGLE-UNKNOWN-CAPITALIZED-WORD' label='None'
+				REFERENT='#uncategorized-name Renaissance'
+				POSITION-IN-RESOURCE-ARRAY='2' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':PROPER-NAME'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 4'>Renaissance</lex>
+			<lex ner='O' begin='2722' end='2734' pos='NNS' label='None'>masterpieces</lex>
+			<lex CATEGORY='#word "in"' begin='2735' end='2737'
+				FORM='#ref-category PREPOSITION' ENDS-AT='#edges ending at 7'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "in"'
+				pos='IN' RULE='(368640)' label='None' REFERENT='#word "in"'
+				POSITION-IN-RESOURCE-ARRAY='3' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':LITERAL-IN-A-RULE'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 6'>in</lex>
+			<lex ner='O' begin='2738' end='2743' pos='NN' label='None'>ivory</lex>
+			<lex CATEGORY='#word "and"' begin='2744' end='2747' FORM='NIL'
+				ENDS-AT='#edges ending at 9' CONSTITUENTS='NIL' USED-IN='NIL'
+				Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "and"' pos='CC' RULE='(319)'
+				label='None' REFERENT='#word "and"' POSITION-IN-RESOURCE-ARRAY='5'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':LITERAL-IN-A-RULE' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 8'>and</lex>
+			<lex ner='O' begin='2748' end='2754' pos='NN' label='None'>enamel</lex>
+			<lex begin='2754' end='2755'>,</lex>
+			<lex CATEGORY='#ref-category GOLD' begin='2756' end='2760'
+				FORM='#ref-category COMMON-NOUN' ENDS-AT='#edges ending at 12'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "gold"'
+				pos='NN' RULE='#PSR3534  gold -  "gold"' label='None' REFERENT='#ref-category GOLD'
+				POSITION-IN-RESOURCE-ARRAY='7' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 11'>gold</lex>
+			<lex CATEGORY='#word "and"' begin='2761' end='2764' FORM='NIL'
+				ENDS-AT='#edges ending at 13' CONSTITUENTS='NIL' USED-IN='NIL'
+				Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "and"' pos='CC' RULE='(319)'
+				label='None' REFERENT='#word "and"' POSITION-IN-RESOURCE-ARRAY='8'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':LITERAL-IN-A-RULE' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 12'>and</lex>
+			<lex ner='O' begin='2773' end='2779' pos='JJ' label='None'>silver</lex>
+			<lex begin='2779' end='2780'>,</lex>
+			<lex CATEGORY='#ref-category RARE' begin='2781' end='2785'
+				FORM='#ref-category ADJECTIVE' ENDS-AT='#edges ending at 16'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "rare"'
+				pos='JJ' RULE='#PSR3536  rare -  "rare"' label='None' REFERENT='#ref-category RARE'
+				POSITION-IN-RESOURCE-ARRAY='10' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 15'>rare</lex>
+			<lex ner='O' begin='2786' end='2792' pos='NN' label='None'>church</lex>
+			<lex CATEGORY='#ref-category VESTMENT' begin='2793' end='2802'
+				FORM='#ref-category COMMON-NOUN/PLURAL' ENDS-AT='#edges ending at 18'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "vestments"'
+				pos='NNS' RULE='#PSR3538  vestment -  "vestments"' label='None'
+				REFERENT='#vestment 1' POSITION-IN-RESOURCE-ARRAY='11'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 17'>vestments</lex>
+			<lex begin='2802' end='2803'>,</lex>
+			<lex CATEGORY='#word "and"' begin='2804' end='2807' FORM='NIL'
+				ENDS-AT='#edges ending at 20' CONSTITUENTS='NIL' USED-IN='NIL'
+				Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "and"' pos='CC' RULE='(319)'
+				label='None' REFERENT='#word "and"' POSITION-IN-RESOURCE-ARRAY='13'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':LITERAL-IN-A-RULE' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 19'>and</lex>
+			<lex ner='O' begin='2808' end='2816' pos='JJ' label='None'>medieval</lex>
+			<lex CATEGORY='#ref-category WEAPON' begin='2817' end='2824'
+				FORM='#ref-category COMMON-NOUN/PLURAL' ENDS-AT='#edges ending at 22'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "weapons"'
+				pos='NNS' RULE='#PSR3540  weapon -  "weapons"' label='None'
+				REFERENT='#weapon 1' POSITION-IN-RESOURCE-ARRAY='14' SPANNED-WORDS='NIL'
+				RIGHT-DAUGHTER=':SINGLE-TERM' ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE'
+				STARTS-AT='#edges starting at 21'>weapons</lex>
+			<lex begin='2824' end='2825'>.</lex>
+		</s>
+		<s>
+			<lex CATEGORY='#ref-category PRONOUN/INANIMATE' begin='2826' end='2829'
+				FORM='#ref-category POSSESSIVE' ENDS-AT='#edges ending at 2'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "its"'
+				pos='PRP$' RULE='#PSR819  pronoun/inanimate -  "its"' label='None'
+				REFERENT='#pronoun/inanimate "its" 2' POSITION-IN-RESOURCE-ARRAY='1'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 1'>Its</lex>
+			<lex ner='O' begin='2830' end='2839' pos='NNS' label='None'>paintings</lex>
+			<lex CATEGORY='#ref-category COMPRISE' begin='2848' end='2856'
+				FORM='#ref-category VERB+PRESENT' ENDS-AT='#edges ending at 4'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "comprise"'
+				pos='VBP' RULE='#PSR3533  comprise -  "comprise"' label='None'
+				REFERENT='#event 1' POSITION-IN-RESOURCE-ARRAY='2' SPANNED-WORDS='NIL'
+				RIGHT-DAUGHTER=':SINGLE-TERM' ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE'
+				STARTS-AT='#edges starting at 3'>comprise</lex>
+			<lex ner='O' begin='2857' end='2858' pos='DT' label='None'>a</lex>
+			<lex ner='O' begin='2859' end='2868' pos='NNP' label='None'>Rembrandt</lex>
+			<lex ner='O' begin='2869' end='2877' pos='NN' label='None'>portrait</lex>
+			<lex ner='O' begin='2878' end='2880' pos='IN' label='None'>of</lex>
+			<lex ner='PERSON' begin='2881' end='2887' pos='NNP' label='None'>Saskia</lex>
+			<lex ner='PERSON' begin='2888' end='2891' pos='NNP' label='None'>van</lex>
+			<lex ner='PERSON' begin='2892' end='2902' pos='NNP' label='None'>Uylenburgh</lex>
+			<lex begin='2902' end='2903'>,</lex>
+			<lex ner='O' begin='2904' end='2909' pos='VBD' label='None'>dated</lex>
+			<lex ner='O' begin='2910' end='2913' pos='DT' label='None'>the</lex>
+			<lex ner='O' begin='2914' end='2918' pos='NN' label='None'>year</lex>
+			<lex ner='O' begin='2927' end='2931' pos='PRP' label='None'>they</lex>
+			<lex ner='O' begin='2932' end='2936' pos='VBD' label='None'>were</lex>
+			<lex ner='O' begin='2937' end='2944' pos='VBN' label='None'>married</lex>
+			<lex begin='2944' end='2945'>;</lex>
+			<lex ner='PERSON' begin='2946' end='2956' pos='NNP' label='None'>Hieronymus</lex>
+			<lex ner='PERSON' begin='2957' end='2962' pos='NNP' label='None'>Bosch</lex>
+			<lex ner='O' begin='2963' end='2965' pos='IN' label='None'>at</lex>
+			<lex ner='O' begin='2966' end='2969' pos='PRP$' label='None'>his</lex>
+			<lex ner='O' begin='2970' end='2974' pos='RBS' label='None'>most</lex>
+			<lex ner='O' begin='2975' end='2985' pos='JJ' label='None'>diabolical</lex>
+			<lex begin='2985' end='2986'>;</lex>
+			<lex ner='O' begin='2987' end='2988' pos='DT' label='None'>a</lex>
+			<lex ner='O' begin='2989' end='2993' pos='JJ' label='None'>rich</lex>
+			<lex ner='O' begin='3002' end='3012' pos='NN' label='None'>repository</lex>
+			<lex ner='O' begin='3013' end='3015' pos='IN' label='None'>of</lex>
+			<lex ner='ORGANIZATION' begin='3016' end='3020' pos='NNP' label='None'>Goya</lex>
+			<lex ner='O' begin='3021' end='3029' pos='NN' label='None'>official</lex>
+			<lex ner='O' begin='3030' end='3039' pos='NNS' label='None'>portraits</lex>
+			<lex begin='3039' end='3040'>,</lex>
+			<lex ner='O' begin='3041' end='3049' pos='JJ' label='None'>colorful</lex>
+			<lex ner='O' begin='3050' end='3058' pos='NNS' label='None'>sketches</lex>
+			<lex ner='O' begin='3059' end='3061' pos='IN' label='None'>of</lex>
+			<lex ner='O' begin='3062' end='3066' pos='JJ' label='None'>real</lex>
+			<lex ner='O' begin='3067' end='3071' pos='NN' label='None'>life</lex>
+			<lex begin='3071' end='3072'>,</lex>
+			<lex ner='O' begin='3081' end='3084' pos='CC' label='None'>and</lex>
+			<lex ner='O' begin='3085' end='3093' pos='VBG' label='None'>haunting</lex>
+			<lex ner='O' begin='3094' end='3100' pos='NNS' label='None'>scenes</lex>
+			<lex ner='O' begin='3101' end='3103' pos='IN' label='None'>of</lex>
+			<lex ner='O' begin='3104' end='3111' pos='NNS' label='None'>witches</lex>
+			<lex ner='O' begin='3112' end='3115' pos='CC' label='None'>and</lex>
+			<lex ner='O' begin='3116' end='3123' pos='NNS' label='None'>horrors</lex>
+			<lex begin='3123' end='3124'>;</lex>
+			<lex ner='PERSON' begin='3125' end='3127' pos='NNP' label='None'>El</lex>
+			<lex ner='PERSON' begin='3128' end='3133' pos='NNP' label='None'>Greco</lex>
+			<lex begin='3133' end='3135'>’s</lex>
+			<lex begin='3136' end='3145'>sensitive</lex>
+			<lex begin='3146' end='3149'>St.</lex>
+			<lex begin='3158' end='3165'>Francis</lex>
+			<lex begin='3166' end='3168'>of</lex>
+			<lex begin='3169' end='3175'>Assisi</lex>
+			<lex begin='3176' end='3179'>and</lex>
+			<lex begin='3180' end='3182'>an</lex>
+			<lex begin='3183' end='3188'>early</lex>
+			<lex begin='3189' end='3190'>(</lex>
+			<lex begin='3190' end='3194'>1562</lex>
+			<lex begin='3194' end='3195'>)</lex>
+			<lex begin='3196' end='3203'>picture</lex>
+			<lex begin='3204' end='3208'>from</lex>
+			<lex begin='3209' end='3212'>his</lex>
+			<lex begin='3213' end='3221'>Venetian</lex>
+			<lex begin='3222' end='3228'>period</lex>
+			<lex begin='3228' end='3229'>;</lex>
+			<lex begin='3238' end='3241'>and</lex>
+			<lex begin='3242' end='3245'>the</lex>
+			<lex begin='3246' end='3253'>English</lex>
+			<lex begin='3254' end='3262'>painters</lex>
+			<lex begin='3263' end='3271'>Reynolds</lex>
+			<lex begin='3271' end='3272'>,</lex>
+			<lex begin='3273' end='3285'>Gainsborough</lex>
+			<lex begin='3285' end='3286'>,</lex>
+			<lex begin='3287' end='3290'>and</lex>
+			<lex begin='3291' end='3300'>Constable</lex>
+			<lex begin='3300' end='3301'>.</lex>
+		</s>
+		<s>
+			<lex ner='O' begin='3302' end='3305' pos='CC' label='None'>But</lex>
+			<lex ner='O' begin='3306' end='3309' pos='DT' label='None'>the</lex>
+			<lex ner='O' begin='3318' end='3324' pos='NN' label='PLACE'>museum</lex>
+			<lex begin='3324' end='3326'>’s</lex>
+			<lex begin='3327' end='3335'>greatest</lex>
+			<lex begin='3336' end='3341'>pride</lex>
+			<lex begin='3341' end='3342'>,</lex>
+			<lex begin='3343' end='3354'>spotlighted</lex>
+			<lex begin='3355' end='3357'>in</lex>
+			<lex begin='3358' end='3361'>its</lex>
+			<lex begin='3362' end='3365'>own</lex>
+			<lex begin='3366' end='3371'>niche</lex>
+			<lex begin='3372' end='3374'>on</lex>
+			<lex begin='3375' end='3378'>the</lex>
+			<lex begin='3379' end='3385'>ground</lex>
+			<lex begin='3394' end='3399'>floor</lex>
+			<lex begin='3399' end='3400'>,</lex>
+			<lex begin='3401' end='3403'>is</lex>
+			<lex begin='3404' end='3405'>a</lex>
+			<lex begin='3406' end='3414'>portrait</lex>
+			<lex begin='3415' end='3417'>of</lex>
+			<lex begin='3418' end='3425'>angelic</lex>
+			<lex begin='3426' end='3432'>beauty</lex>
+			<lex begin='3432' end='3433'>,</lex>
+			<lex begin='3434' end='3441'>painted</lex>
+			<lex begin='3442' end='3448'>around</lex>
+			<lex begin='3449' end='3453'>1480</lex>
+			<lex begin='3454' end='3456'>by</lex>
+			<lex begin='3457' end='3465'>Leonardo</lex>
+			<lex begin='3474' end='3476'>Da</lex>
+			<lex begin='3477' end='3482'>Vinci</lex>
+			<lex begin='3482' end='3483'>,</lex>
+			<lex begin='3484' end='3492'>entitled</lex>
+			<lex begin='3493' end='3496'>The</lex>
+			<lex begin='3497' end='3504'>Saviour</lex>
+			<lex begin='3504' end='3505'>.</lex>
+		</s>
+		<s>
+			<lex CATEGORY='#ref-category ANOTHER' begin='3514' end='3521'
+				FORM='#ref-category QUANTIFIER' ENDS-AT='#edges ending at 2'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "another"'
+				pos='DT' RULE='#PSR47  another -  "another"' label='None'
+				REFERENT='#quantifier "another" 15' POSITION-IN-RESOURCE-ARRAY='1'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 1'>Another</lex>
+			<lex CATEGORY='#ref-category COMPARATIVE' begin='3522' end='3529'
+				FORM='#ref-category ADJUNCT' ENDS-AT='#edges ending at 3'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "smaller"'
+				pos='JJR' RULE='#PSR2369  comparative -  "smaller"' label='None'
+				REFERENT='#comparative "smaller" 14' POSITION-IN-RESOURCE-ARRAY='2'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 2'>smaller</lex>
+			<lex ner='O' begin='3530' end='3533' pos='CC' label='None'>but</lex>
+			<lex CATEGORY='#ref-category EQUALLY' begin='3534' end='3541'
+				FORM='#ref-category ADVERB' ENDS-AT='#edges ending at 5'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "equally"'
+				pos='RB' RULE='#PSR3533  equally -  "equally"' label='None'
+				REFERENT='#ref-category EQUALLY' POSITION-IN-RESOURCE-ARRAY='3'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 4'>equally</lex>
+			<lex CATEGORY='#ref-category interest' begin='3542' end='3553'
+				FORM='#ref-category VERB+ING' ENDS-AT='#edges ending at 6'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "interesting"'
+				pos='JJ' RULE='#PSR3534  interest -  "interesting"' label='None'
+				REFERENT='#term1 "interest"' POSITION-IN-RESOURCE-ARRAY='4'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 5'>interesting</lex>
+			<lex ner='O' begin='3554' end='3560' pos='NN' label='PLACE'>museum</lex>
+			<lex CATEGORY='#word "is"' begin='3561' end='3563' FORM='NIL'
+				ENDS-AT='#edges ending at 8' CONSTITUENTS='NIL' USED-IN='NIL'
+				Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "is"' pos='VBZ' RULE='(187)'
+				label='None' REFERENT='#word "is"' POSITION-IN-RESOURCE-ARRAY='5'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':LITERAL-IN-A-RULE' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 7'>is</lex>
+			<lex CATEGORY='#ref-category NAMED-OBJECT' begin='3564' end='3567'
+				FORM='#ref-category PROPER-NAME' ENDS-AT='#edges ending at 11'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge7 8 "the" 9'
+				pos='DT' RULE='#PSR187  {proper-name} - "the" proper-name' label='None'
+				REFERENT='#named-object Museo Sorolla 1' POSITION-IN-RESOURCE-ARRAY='9'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER='#edge8 9 named-object 11' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 8'>the</lex>
+			<lex CATEGORY='#ref-category NAMED-OBJECT' begin='3568' end='3573'
+				FORM='#ref-category PROPER-NAME' ENDS-AT='#edges ending at 11'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge7 8 "the" 9'
+				pos='NNP' RULE='#PSR187  {proper-name} - "the" proper-name' label='PLACE'
+				REFERENT='#named-object Museo Sorolla 1' POSITION-IN-RESOURCE-ARRAY='9'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER='#edge8 9 named-object 11' ner='PERSON'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 8'>Museo</lex>
+			<lex CATEGORY='#ref-category NAMED-OBJECT' begin='3582' end='3589'
+				FORM='#ref-category PROPER-NAME' ENDS-AT='#edges ending at 11'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge7 8 "the" 9'
+				pos='NNP' RULE='#PSR187  {proper-name} - "the" proper-name' label='PLACE'
+				REFERENT='#named-object Museo Sorolla 1' POSITION-IN-RESOURCE-ARRAY='9'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER='#edge8 9 named-object 11' ner='PERSON'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 8'>Sorolla</lex>
+			<lex begin='3590' end='3591'>(</lex>
+			<lex ner='PERSON' begin='3591' end='3596' pos='NNP' label='PLACE'>Paseo</lex>
+			<lex ner='O' begin='3597' end='3600' pos='NNP' label='PLACE'>del</lex>
+			<lex ner='O' begin='3601' end='3608' pos='NNP' label='PLACE'>General</lex>
+			<lex ner='PERSON' begin='3609' end='3617' pos='NNP' label='PLACE'>Martínez</lex>
+			<lex ner='PERSON' begin='3618' end='3624' pos='NNP' label='PLACE'>Campos</lex>
+			<lex begin='3624' end='3625'>,</lex>
+			<lex ner='O' begin='3626' end='3628' pos='CD' label='PLACE'>37</lex>
+			<lex begin='3628' end='3629'>)</lex>
+			<lex begin='3629' end='3630'>.</lex>
+		</s>
+		<s>
+			<lex ner='O' begin='3631' end='3634' pos='DT' label='None'>The</lex>
+			<lex CATEGORY='#ref-category ONLY' begin='3635' end='3639'
+				FORM='#ref-category ADVERB' ENDS-AT='#edges ending at 3'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "only"'
+				pos='JJ' RULE='#PSR2326  only -  "only"' label='None' REFERENT='#only 1'
+				POSITION-IN-RESOURCE-ARRAY='1' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 2'>only</lex>
+			<lex CATEGORY='#ref-category NAME' begin='3640' end='3646'
+				FORM='#ref-category PROPER-NAME' ENDS-AT='#edges ending at 4'
+				CONSTITUENTS='(#word "madrid")' USED-IN='NIL' Type='SPARSER::EDGE'
+				LEFT-DAUGHTER='#word "madrid"' pos='NNP'
+				RULE=':SINGLE-UNKNOWN-CAPITALIZED-WORD' label='PLACE'
+				REFERENT='#uncategorized-name Madrid' POSITION-IN-RESOURCE-ARRAY='2'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':PROPER-NAME' ner='LOCATION'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 3'>Madrid</lex>
+			<lex ner='O' begin='3647' end='3653' pos='NN' label='PLACE'>museum</lex>
+			<lex CATEGORY='#ref-category DEVOTE-EVENT' begin='3662' end='3669'
+				FORM='#ref-category VERB+ED' ENDS-AT='#edges ending at 6'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "devoted"'
+				pos='VBN' RULE='#PSR3537  devote-event -  "devoted"' label='None'
+				REFERENT='#event 1' POSITION-IN-RESOURCE-ARRAY='3' SPANNED-WORDS='NIL'
+				RIGHT-DAUGHTER=':SINGLE-TERM' ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE'
+				STARTS-AT='#edges starting at 5'>devoted</lex>
+			<lex CATEGORY='#ref-category TO' begin='3670' end='3672'
+				FORM='#ref-category PREPOSITION' ENDS-AT='#edges ending at 7'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "to"'
+				pos='TO' RULE='#PSR260  to -  "to"' label='None' REFERENT='#ref-category TO'
+				POSITION-IN-RESOURCE-ARRAY='5' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 6'>to</lex>
+			<lex ner='O' begin='3673' end='3674' pos='DT' label='None'>a</lex>
+			<lex ner='O' begin='3675' end='3681' pos='JJ' label='None'>single</lex>
+			<lex ner='O' begin='3682' end='3689' pos='NN' label='None'>painter</lex>
+			<lex begin='3689' end='3690'>,</lex>
+			<lex ner='O' begin='3691' end='3695' pos='DT' label='None'>this</lex>
+			<lex ner='O' begin='3696' end='3703' pos='NN' label='PLACE'>mansion</lex>
+			<lex ner='O' begin='3704' end='3707' pos='VBD' label='None'>was</lex>
+			<lex ner='O' begin='3708' end='3711' pos='DT' label='None'>the</lex>
+			<lex ner='O' begin='3712' end='3715' pos='NN' label='None'>hom</lex>
+			<lex ner='O' begin='3716' end='3717' pos='SYM' label='None'>e</lex>
+			<lex ner='O' begin='3718' end='3721' pos='CC' label='None'>and</lex>
+			<lex ner='O' begin='3722' end='3728' pos='NN' label='None'>studio</lex>
+			<lex ner='O' begin='3729' end='3731' pos='IN' label='None'>of</lex>
+			<lex ner='PERSON' begin='3740' end='3747' pos='NNP' label='None'>Joaquín</lex>
+			<lex ner='PERSON' begin='3748' end='3755' pos='NNP' label='None'>Sorolla</lex>
+			<lex begin='3756' end='3757'>(</lex>
+			<lex ner='O' begin='3757' end='3766' pos='CD' label='None'>1863–1923</lex>
+			<lex begin='3766' end='3767'>)</lex>
+			<lex begin='3767' end='3768'>.</lex>
+		</s>
+		<s>
+			<lex CATEGORY='#ref-category PRONOUN/INANIMATE' begin='3769' end='3771'
+				FORM='#ref-category PRONOUN' ENDS-AT='#edges ending at 2'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "it"'
+				pos='PRP' RULE='#PSR809  pronoun/inanimate -  "it"' label='PLACE'
+				REFERENT='#pronoun/inanimate "it" 1' POSITION-IN-RESOURCE-ARRAY='0'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 1'>It</lex>
+			<lex CATEGORY='#ref-category HAVE' begin='3772' end='3775'
+				FORM='#ref-category VERB+S' ENDS-AT='#edges ending at 3'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "has"'
+				pos='VBZ' RULE='#PSR132  have -  "has"' label='None' REFERENT='#ref-category HAVE'
+				POSITION-IN-RESOURCE-ARRAY='1' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 2'>has</lex>
+			<lex CATEGORY='#ref-category close' begin='3776' end='3781'
+				FORM='#ref-category VERB' ENDS-AT='#edges ending at 4' CONSTITUENTS='NIL'
+				USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "close"'
+				pos='RB' RULE='#PSR1325  close -  "close"' label='None'
+				REFERENT='#ref-category close' POSITION-IN-RESOURCE-ARRAY='2'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 3'>close</lex>
+			<lex CATEGORY='#word "to"' begin='3782' end='3784'
+				FORM='#ref-category PREPOSITION' ENDS-AT='#edges ending at 5'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "to"'
+				pos='TO' RULE='((12) 348160 . 208896)' label='None' REFERENT='#word "to"'
+				POSITION-IN-RESOURCE-ARRAY='3' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':LITERAL-IN-A-RULE'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 4'>to</lex>
+			<lex CATEGORY='#ref-category NUMBER' begin='3785' end='3788'
+				FORM='NIL' ENDS-AT='#edges ending at 6' CONSTITUENTS='NIL' USED-IN='NIL'
+				Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge5 5 digit-sequence 6' pos='CD'
+				RULE=':NUMBER-FSA' label='None' REFERENT='#number "300"'
+				POSITION-IN-RESOURCE-ARRAY='6' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':DIGIT-BASED-NUMBER'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 5'>300</lex>
+			<lex ner='O' begin='3789' end='3798' pos='NNS' label='SPATIAL_ENTITY'>paintings</lex>
+			<lex CATEGORY='#ref-category ON' begin='3799' end='3801'
+				FORM='#ref-category PREPOSITION' ENDS-AT='#edges ending at 8'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "on"'
+				pos='IN' RULE='#PSR251  on -  "on"' label='None' REFERENT='#ref-category ON'
+				POSITION-IN-RESOURCE-ARRAY='8' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 7'>on</lex>
+			<lex CATEGORY='#ref-category VIEW-EVENT' begin='3802' end='3806'
+				FORM='#ref-category VERB+PRESENT' ENDS-AT='#edges ending at 9'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "view"'
+				pos='NN' RULE='#PSR3535  view-event -  "view"' label='None'
+				REFERENT='#ref-category VIEW-EVENT' POSITION-IN-RESOURCE-ARRAY='9'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 8'>view</lex>
+			<lex begin='3806' end='3807'>,</lex>
+			<lex CATEGORY='#ref-category show' begin='3816' end='3823'
+				FORM='#ref-category VERB+ING' ENDS-AT='#edges ending at 11'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "showing"'
+				pos='VBG' RULE='#PSR1340  show -  "showing"' label='None' REFERENT='#show 1'
+				POSITION-IN-RESOURCE-ARRAY='12' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 10'>showing</lex>
+			<lex ner='O' begin='3824' end='3827' pos='DT' label='None'>the</lex>
+			<lex ner='O' begin='3828' end='3837' pos='JJ' label='None'>Valencian</lex>
+			<lex ner='O' begin='3838' end='3851' pos='JJ' label='None'>impressionist</lex>
+			<lex begin='3851' end='3853'>’s</lex>
+			<lex begin='3854' end='3862'>favorite</lex>
+			<lex begin='3863' end='3870'>seaside</lex>
+			<lex begin='3871' end='3877'>scenes</lex>
+			<lex begin='3878' end='3881'>and</lex>
+			<lex begin='3890' end='3900'>landscapes</lex>
+			<lex begin='3900' end='3901'>.</lex>
+		</s>
+		<s>
+			<lex ner='O' begin='3902' end='3905' pos='DT' label='None'>The</lex>
+			<lex ner='O' begin='3906' end='3911' pos='NN' label='PLACE'>house</lex>
+			<lex CATEGORY='#ref-category HAVE' begin='3912' end='3915'
+				FORM='#ref-category VERB+S' ENDS-AT='#edges ending at 4'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "has"'
+				pos='VBZ' RULE='#PSR132  have -  "has"' label='None' REFERENT='#have 1'
+				POSITION-IN-RESOURCE-ARRAY='1' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 3'>has</lex>
+			<lex CATEGORY='#word "a"' begin='3916' end='3917' FORM='#ref-category DET'
+				ENDS-AT='#edges ending at 5' CONSTITUENTS='NIL' USED-IN='NIL'
+				Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "a"' pos='DT'
+				RULE='((386) 143360 . 282624)' label='None' REFERENT='#word "a"'
+				POSITION-IN-RESOURCE-ARRAY='2' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':LITERAL-IN-A-RULE'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 4'>a</lex>
+			<lex CATEGORY='#ref-category charm' begin='3918' end='3926'
+				FORM='#ref-category VERB+ING' ENDS-AT='#edges ending at 6'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "charming"'
+				pos='JJ' RULE='#PSR3533  charm -  "charming"' label='None' REFERENT='#term1 "charm"'
+				POSITION-IN-RESOURCE-ARRAY='3' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 5'>charming</lex>
+			<lex ner='O' begin='3927' end='3935' pos='JJ' label='None'>lived-in</lex>
+			<lex ner='O' begin='3936' end='3940' pos='NN' label='None'>feel</lex>
+			<lex begin='3940' end='3941'>.</lex>
+		</s>
+		<s>
+			<lex CATEGORY='#ref-category QUITE' begin='3950' end='3955'
+				FORM='#ref-category ADVERB' ENDS-AT='#edges ending at 2'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "quite"'
+				pos='RB' RULE='#PSR3533  quite -  "quite"' label='MEASURE'
+				REFERENT='#ref-category QUITE' POSITION-IN-RESOURCE-ARRAY='0'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 1'>Quite</lex>
+			<lex CATEGORY='#ref-category WAY-KIND' begin='3956' end='3957'
+				FORM='#ref-category NP' ENDS-AT='#edges ending at 4' CONSTITUENTS='NIL'
+				USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge1 2 "a" 3'
+				pos='DT' RULE='#PSR175  {common-noun} - "a" common-noun' label='MEASURE'
+				REFERENT='#ref-category WAY-KIND' POSITION-IN-RESOURCE-ARRAY='5'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER='#edge2 3 way-kind 4' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 2'>a</lex>
+			<lex CATEGORY='#ref-category WAY-KIND' begin='3958' end='3961'
+				FORM='#ref-category NP' ENDS-AT='#edges ending at 4' CONSTITUENTS='NIL'
+				USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge1 2 "a" 3'
+				pos='NN' RULE='#PSR175  {common-noun} - "a" common-noun' label='MEASURE'
+				REFERENT='#ref-category WAY-KIND' POSITION-IN-RESOURCE-ARRAY='5'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER='#edge2 3 way-kind 4' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 2'>way</lex>
+			<lex CATEGORY='#ref-category DIRECTION' begin='3962' end='3966'
+				FORM='#ref-category NOUN' ENDS-AT='#edges ending at 5' CONSTITUENTS='NIL'
+				USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "east"' pos='JJ'
+				RULE='#PSR2591  direction -  "east"' label='SPATIAL_SIGNAL'
+				REFERENT='#compass-point "east" 3' POSITION-IN-RESOURCE-ARRAY='4'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 4'>east</lex>
+			<lex CATEGORY='#ref-category OF-NAME-WORD' begin='3967' end='3969'
+				FORM='NIL' ENDS-AT='#edges ending at 8' CONSTITUENTS='NIL' USED-IN='NIL'
+				Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge6 5 "of" 6' pos='IN'
+				RULE='#PSR3082  of-name-word -  "of" name' label='SPATIAL_SIGNAL'
+				REFERENT='#uncategorized-name Salamanca' POSITION-IN-RESOURCE-ARRAY='11'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER='#edge10 6 name 8' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 5'>of</lex>
+			<lex CATEGORY='#ref-category OF-NAME-WORD' begin='3970' end='3973'
+				FORM='NIL' ENDS-AT='#edges ending at 8' CONSTITUENTS='NIL' USED-IN='NIL'
+				Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge6 5 "of" 6' pos='DT'
+				RULE='#PSR3082  of-name-word -  "of" name' label='None'
+				REFERENT='#uncategorized-name Salamanca' POSITION-IN-RESOURCE-ARRAY='11'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER='#edge10 6 name 8' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 5'>the</lex>
+			<lex CATEGORY='#ref-category OF-NAME-WORD' begin='3974' end='3983'
+				FORM='NIL' ENDS-AT='#edges ending at 8' CONSTITUENTS='NIL' USED-IN='NIL'
+				Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge6 5 "of" 6' pos='NNP'
+				RULE='#PSR3082  of-name-word -  "of" name' label='PLACE'
+				REFERENT='#uncategorized-name Salamanca' POSITION-IN-RESOURCE-ARRAY='11'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER='#edge10 6 name 8' ner='LOCATION'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 5'>Salamanca</lex>
+			<lex ner='O' begin='3984' end='3990' pos='NN' label='PLACE'>barrio</lex>
+			<lex CATEGORY='#ref-category BE' begin='3991' end='3993'
+				FORM='#ref-category VERB' ENDS-AT='#edges ending at 10'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "is"'
+				pos='VBZ' RULE='#PSR146  be -  "is"' label='None' REFERENT='#be 1'
+				POSITION-IN-RESOURCE-ARRAY='13' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 9'>is</lex>
+			<lex CATEGORY='#ref-category NAMED-OBJECT' begin='3994' end='3997'
+				FORM='#ref-category PROPER-NAME' ENDS-AT='#edges ending at 14'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge14 10 "the" 11'
+				pos='DT' RULE='#PSR187  {proper-name} - "the" proper-name' label='None'
+				REFERENT='#named-object Plaza de Toros 1'
+				POSITION-IN-RESOURCE-ARRAY='17' SPANNED-WORDS='NIL'
+				RIGHT-DAUGHTER='#edge15 11 named-object 14' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 10'>the</lex>
+			<lex CATEGORY='#ref-category NAMED-OBJECT' begin='3998' end='4003'
+				FORM='#ref-category PROPER-NAME' ENDS-AT='#edges ending at 14'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge14 10 "the" 11'
+				pos='NNP' RULE='#PSR187  {proper-name} - "the" proper-name' label='PLACE'
+				REFERENT='#named-object Plaza de Toros 1'
+				POSITION-IN-RESOURCE-ARRAY='17' SPANNED-WORDS='NIL'
+				RIGHT-DAUGHTER='#edge15 11 named-object 14' ner='ORGANIZATION'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 10'>Plaza</lex>
+			<lex CATEGORY='#ref-category NAMED-OBJECT' begin='4004' end='4006'
+				FORM='#ref-category PROPER-NAME' ENDS-AT='#edges ending at 14'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge14 10 "the" 11'
+				pos='FW' RULE='#PSR187  {proper-name} - "the" proper-name' label='PLACE'
+				REFERENT='#named-object Plaza de Toros 1'
+				POSITION-IN-RESOURCE-ARRAY='17' SPANNED-WORDS='NIL'
+				RIGHT-DAUGHTER='#edge15 11 named-object 14' ner='ORGANIZATION'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 10'>de</lex>
+			<lex CATEGORY='#ref-category NAMED-OBJECT' begin='4015' end='4020'
+				FORM='#ref-category PROPER-NAME' ENDS-AT='#edges ending at 14'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge14 10 "the" 11'
+				pos='FW' RULE='#PSR187  {proper-name} - "the" proper-name' label='PLACE'
+				REFERENT='#named-object Plaza de Toros 1'
+				POSITION-IN-RESOURCE-ARRAY='17' SPANNED-WORDS='NIL'
+				RIGHT-DAUGHTER='#edge15 11 named-object 14' ner='ORGANIZATION'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 10'>Toros</lex>
+			<lex ner='O' begin='4021' end='4022' pos='FW' label='PLACE'>y</lex>
+			<lex CATEGORY='#ref-category NAMED-OBJECT' begin='4023' end='4028'
+				FORM='#ref-category PROPER-NAME' ENDS-AT='#edges ending at 17'
+				CONSTITUENTS='(#word "museo" #word "taurino")' USED-IN='NIL'
+				Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "museo"' pos='NNP' RULE=':PNF'
+				label='PLACE' REFERENT='#named-object Museo Taurino 2'
+				POSITION-IN-RESOURCE-ARRAY='16' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':PROPER-NAME'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 15'>Museo</lex>
+			<lex CATEGORY='#ref-category NAMED-OBJECT' begin='4029' end='4036'
+				FORM='#ref-category PROPER-NAME' ENDS-AT='#edges ending at 17'
+				CONSTITUENTS='(#word "museo" #word "taurino")' USED-IN='NIL'
+				Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "museo"' pos='NNP' RULE=':PNF'
+				label='PLACE' REFERENT='#named-object Museo Taurino 2'
+				POSITION-IN-RESOURCE-ARRAY='16' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':PROPER-NAME'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 15'>Taurino</lex>
+			<lex begin='4037' end='4038'>(</lex>
+			<lex ner='O' begin='4038' end='4050' pos='NNP' label='PLACE'>Bullfighting</lex>
+			<lex ner='O' begin='4051' end='4055' pos='NNP' label='PLACE'>Ring</lex>
+			<lex ner='O' begin='4056' end='4059' pos='CC' label='PLACE'>and</lex>
+			<lex ner='O' begin='4060' end='4066' pos='NNP' label='PLACE'>Museum</lex>
+			<lex begin='4066' end='4067'>)</lex>
+			<lex begin='4067' end='4068'>,</lex>
+			<lex ner='O' begin='4069' end='4079' pos='RB' label='None'>officially</lex>
+			<lex ner='O' begin='4080' end='4086' pos='VBD' label='None'>called</lex>
+			<lex ner='O' begin='4095' end='4098' pos='DT' label='None'>the</lex>
+			<lex ner='ORGANIZATION' begin='4099' end='4104' pos='NNP' label='PLACE'>Plaza</lex>
+			<lex ner='ORGANIZATION' begin='4105' end='4107' pos='IN' label='PLACE'>de</lex>
+			<lex ner='ORGANIZATION' begin='4108' end='4113' pos='NNP' label='PLACE'>Toros</lex>
+			<lex ner='ORGANIZATION' begin='4114' end='4124' pos='NNP' label='PLACE'>Monumental</lex>
+			<lex ner='ORGANIZATION' begin='4125' end='4127' pos='IN' label='PLACE'>de</lex>
+			<lex ner='ORGANIZATION' begin='4128' end='4131' pos='NNP' label='PLACE'>Las</lex>
+			<lex ner='ORGANIZATION' begin='4132' end='4138' pos='NNP' label='PLACE'>Ventas</lex>
+			<lex begin='4138' end='4139'>.</lex>
+		</s>
+		<s>
+			<lex ner='O' begin='4140' end='4144' pos='DT' label='PLACE'>This</lex>
+			<lex ner='O' begin='4145' end='4147' pos='VBZ' label='None'>is</lex>
+			<lex CATEGORY='#word "where"' begin='4148' end='4153'
+				FORM='#ref-category WH-PRONOUN' ENDS-AT='#edges ending at 4'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "where"'
+				pos='WRB' RULE='(970752)' label='None' REFERENT='#word "where"'
+				POSITION-IN-RESOURCE-ARRAY='3' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':LITERAL-IN-A-RULE'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 3'>where</lex>
+			<lex CATEGORY='#ref-category go' begin='4154' end='4156'
+				FORM='#ref-category INFINITIVE' ENDS-AT='#edges ending at 6'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge5 4 "to" 5'
+				pos='TO' RULE='#PSR120  {verb} - "to" verb' label='None' REFERENT='#go 1'
+				POSITION-IN-RESOURCE-ARRAY='10' SPANNED-WORDS='NIL' RIGHT-DAUGHTER='#edge7 5 go 6'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 4'>to</lex>
+			<lex CATEGORY='#ref-category go' begin='4157' end='4159'
+				FORM='#ref-category INFINITIVE' ENDS-AT='#edges ending at 6'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#edge5 4 "to" 5'
+				pos='VB' RULE='#PSR120  {verb} - "to" verb' label='MOTION' REFERENT='#go 1'
+				POSITION-IN-RESOURCE-ARRAY='10' SPANNED-WORDS='NIL' RIGHT-DAUGHTER='#edge7 5 go 6'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 4'>go</lex>
+			<lex CATEGORY='#ref-category TO' begin='4160' end='4162'
+				FORM='#ref-category PREPOSITION' ENDS-AT='#edges ending at 7'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "to"'
+				pos='TO' RULE='#PSR260  to -  "to"' label='None' REFERENT='#ref-category TO'
+				POSITION-IN-RESOURCE-ARRAY='9' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 6'>to</lex>
+			<lex ner='O' begin='4163' end='4166' pos='VB' label='None'>see</lex>
+			<lex ner='O' begin='4175' end='4177' pos='DT' label='None'>an</lex>
+			<lex ner='O' begin='4178' end='4187' pos='JJ' label='None'>authentic</lex>
+			<lex ner='O' begin='4188' end='4197' pos='NN' label='None'>bullfight</lex>
+			<lex begin='4197' end='4198'>,</lex>
+			<lex ner='O' begin='4199' end='4200' pos='DT' label='None'>a</lex>
+			<lex ner='O' begin='4201' end='4210' pos='RB' label='None'>seemingly</lex>
+			<lex ner='O' begin='4211' end='4224' pos='JJ' label='None'>anachronistic</lex>
+			<lex ner='O' begin='4225' end='4232' pos='NN' label='None'>pursuit</lex>
+			<lex ner='O' begin='4233' end='4237' pos='WDT' label='None'>that</lex>
+			<lex ner='O' begin='4246' end='4255' pos='VBZ' label='None'>continues</lex>
+			<lex ner='O' begin='4256' end='4258' pos='TO' label='None'>to</lex>
+			<lex ner='O' begin='4259' end='4266' pos='VB' label='None'>inspire</lex>
+			<lex ner='O' begin='4267' end='4270' pos='DT' label='None'>the</lex>
+			<lex ner='O' begin='4271' end='4279' pos='NNS' label='None'>passions</lex>
+			<lex ner='O' begin='4280' end='4282' pos='IN' label='None'>of</lex>
+			<lex ner='O' begin='4283' end='4285' pos='RB' label='None'>so</lex>
+			<lex ner='O' begin='4286' end='4290' pos='JJ' label='None'>many</lex>
+			<lex ner='O' begin='4291' end='4301' pos='NNPS' label='None'>Madrileños</lex>
+			<lex begin='4301' end='4302'>.</lex>
+		</s>
+		<s>
+			<lex ner='O' begin='4303' end='4306' pos='DT' label='None'>The</lex>
+			<lex ner='O' begin='4307' end='4312' pos='JJ' label='None'>small</lex>
+			<lex ner='O' begin='4321' end='4327' pos='NN' label='PLACE'>museum</lex>
+			<lex ner='O' begin='4328' end='4334' pos='NNS' label='SPATIAL_SIGNAL'>houses</lex>
+			<lex ner='O' begin='4335' end='4343' pos='JJ' label='None'>historic</lex>
+			<lex ner='O' begin='4344' end='4351' pos='NNS' label='SPATIAL_ENTITY'>posters</lex>
+			<lex begin='4351' end='4352'>,</lex>
+			<lex ner='O' begin='4353' end='4358' pos='NNS' label='SPATIAL_ENTITY'>capes</lex>
+			<lex begin='4358' end='4359'>,</lex>
+			<lex CATEGORY='#ref-category SWORD' begin='4360' end='4366'
+				FORM='#ref-category COMMON-NOUN/PLURAL' ENDS-AT='#edges ending at 11'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "swords"'
+				pos='VBP' RULE='#PSR3534  sword -  "swords"' label='SPATIAL_ENTITY'
+				REFERENT='#sword 1' POSITION-IN-RESOURCE-ARRAY='3' SPANNED-WORDS='NIL'
+				RIGHT-DAUGHTER=':SINGLE-TERM' ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE'
+				STARTS-AT='#edges starting at 10'>swords</lex>
+			<lex begin='4366' end='4367'>,</lex>
+			<lex ner='O' begin='4368' end='4377' pos='NNS' label='SPATIAL_ENTITY'>paintings</lex>
+			<lex begin='4377' end='4378'>,</lex>
+			<lex CATEGORY='#word "and"' begin='4379' end='4382' FORM='NIL'
+				ENDS-AT='#edges ending at 15' CONSTITUENTS='NIL' USED-IN='NIL'
+				Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "and"' pos='CC' RULE='(319)'
+				label='None' REFERENT='#word "and"' POSITION-IN-RESOURCE-ARRAY='6'
+				SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':LITERAL-IN-A-RULE' ner='O'
+				Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 14'>and</lex>
+			<lex CATEGORY='#ref-category PHOTO' begin='4383' end='4389'
+				FORM='#ref-category COMMON-NOUN/PLURAL' ENDS-AT='#edges ending at 16'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "photos"'
+				pos='NNS' RULE='#PSR3536  photo -  "photos"' label='SPATIAL_ENTITY'
+				REFERENT='#photo 1' POSITION-IN-RESOURCE-ARRAY='7' SPANNED-WORDS='NIL'
+				RIGHT-DAUGHTER=':SINGLE-TERM' ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE'
+				STARTS-AT='#edges starting at 15'>photos</lex>
+			<lex CATEGORY='#ref-category FOR' begin='4398' end='4401'
+				FORM='#ref-category PREPOSITION' ENDS-AT='#edges ending at 17'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "for"'
+				pos='IN' RULE='#PSR245  for -  "for"' label='None' REFERENT='#ref-category FOR'
+				POSITION-IN-RESOURCE-ARRAY='9' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 16'>for</lex>
+			<lex ner='O' begin='4402' end='4413' pos='NNS' label='None'>aficionados</lex>
+			<lex CATEGORY='#ref-category OF' begin='4414' end='4416'
+				FORM='#ref-category PREPOSITION' ENDS-AT='#edges ending at 19'
+				CONSTITUENTS='NIL' USED-IN='NIL' Type='SPARSER::EDGE' LEFT-DAUGHTER='#word "of"'
+				pos='IN' RULE='#PSR252  of -  "of"' label='None' REFERENT='#ref-category OF'
+				POSITION-IN-RESOURCE-ARRAY='11' SPANNED-WORDS='NIL' RIGHT-DAUGHTER=':SINGLE-TERM'
+				ner='O' Class='#STRUCTURE-CLASS SPARSER::EDGE' STARTS-AT='#edges starting at 18'>of</lex>
+			<lex ner='O' begin='4417' end='4420' pos='DT' label='None'>the</lex>
+			<lex ner='O' begin='4421' end='4428' pos='NN' label='None'>corrida</lex>
+			<lex begin='4428' end='4429'>,</lex>
+			<lex ner='O' begin='4430' end='4433' pos='CC' label='None'>and</lex>
+			<lex ner='O' begin='4434' end='4436' pos='VBZ' label='None'>is</lex>
+			<lex ner='O' begin='4437' end='4444' pos='RB' label='None'>perhaps</lex>
+			<lex ner='O' begin='4445' end='4449' pos='RB' label='None'>best</lex>
+			<lex ner='O' begin='4450' end='4457' pos='VBN' label='MOTION'>visited</lex>
+			<lex ner='O' begin='4458' end='4461' pos='IN' label='None'>out</lex>
+			<lex ner='O' begin='4462' end='4464' pos='IN' label='None'>of</lex>
+			<lex ner='O' begin='4473' end='4485' pos='NN' label='None'>bullfighting</lex>
+			<lex ner='O' begin='4486' end='4492' pos='NN' label='None'>season</lex>
+			<lex ner='O' begin='4493' end='4496' pos='IN' label='None'>for</lex>
+			<lex ner='O' begin='4497' end='4502' pos='DT' label='None'>those</lex>
+			<lex ner='O' begin='4503' end='4506' pos='WP' label='None'>who</lex>
+			<lex ner='O' begin='4507' end='4511' pos='VBP' label='None'>want</lex>
+			<lex ner='O' begin='4512' end='4514' pos='TO' label='None'>to</lex>
+			<lex ner='O' begin='4515' end='4518' pos='VB' label='None'>get</lex>
+			<lex ner='O' begin='4519' end='4520' pos='DT' label='None'>a</lex>
+			<lex ner='O' begin='4521' end='4528' pos='NN' label='None'>glimpse</lex>
+			<lex ner='O' begin='4529' end='4531' pos='IN' label='None'>of</lex>
+			<lex ner='O' begin='4532' end='4535' pos='DT' label='None'>the</lex>
+			<lex ner='O' begin='4536' end='4544' pos='NN' label='PLACE'>interior</lex>
+			<lex ner='O' begin='4553' end='4555' pos='IN' label='None'>of</lex>
+			<lex ner='O' begin='4556' end='4559' pos='DT' label='None'>the</lex>
+			<lex ner='O' begin='4560' end='4564' pos='NN' label='PLACE'>ring</lex>
+			<lex begin='4564' end='4565'>.</lex>
+		</s>
+	</TOKENS>
+
+</SpaceEvalTaskv1.2>
