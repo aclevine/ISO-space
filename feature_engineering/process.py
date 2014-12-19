@@ -3,8 +3,13 @@
 """Code to reprocess ISO-Space xmls and add new features
 """
 
-import os
+import os, sys, inspect
 import re
+
+cmd_subfolder = os.path.realpath(os.path.abspath(os.path.join(os.path.split(inspect.getfile( inspect.currentframe() ))[0],"baseline_classifier/Corpora")))
+cmd_subfolder = cmd_subfolder.replace('/feature_engineering', '')
+if cmd_subfolder not in sys.path:
+    sys.path.insert(0, cmd_subfolder)
 
 import tagdoc as td
 from tagdoc import binary_search#,doc
@@ -17,10 +22,13 @@ from util.unicode import u2ascii
 
 GOLDDIR = '/users/sethmachine/desktop/Tokenized'
 NEWDIR = '/users/sethmachine/desktop/TokenizedPlus/'
+TESTDIR = '/users/sethmachine/desktop/Test'
+
+#test = td.TagDir(TESTDIR)
 
 #tokenization mistake in this file: line 171 has 2 sentences in 1 sentence
 #t = td.TagDoc('/users/sethmachine/desktop/Tokenized/CP/46_N_22_E.xml')
-#t = td.TagDoc('/users/sethmachine/desktop/Tokenized/RFC/MexicoCity.xml')
+t = td.TagDoc('/users/sethmachine/desktop/Test/CP/48_N_10_E.xml')
 
 xml_tokens_pattern = re.compile(r'<TOKENS>.+</TOKENS>', re.DOTALL)
 whitespace_pattern = re.compile(r' {2,}')
@@ -305,4 +313,15 @@ but , while [ most families][ i][ see seem] to [ have][ good family] and [ commu
 /home/u/fall11/sdworman/iso-space/Tokenized++/RFC/MexicoCity.xml
 > Break: check args
 > While executing: SPARSER::START-PRESERVE-SPACING-SECTION, in process toplevel(2).
+"""
+
+#another error (from test set)
+#CP/48_N_10_E.xml
+#broke on this sentence
+#The GPS routed us through the village ' Rot an der Rot ' .
+#because of the proper name in the single quotation marks
+"""
+> Break: new case for single-quote while looking to extend a capitalized sequence.
+>        The next word is #<word PERIOD> at position 14
+> While executing: SPARSER::CHECKOUT-SINGLE-QUOTE-FOR-CAPSEQ, in process toplevel(2).
 """

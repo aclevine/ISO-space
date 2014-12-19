@@ -117,6 +117,7 @@ def p2edges(string, sparser_path=SPARSER, split=False):
         its corresponding values.
 
     """
+    string = string.replace('\' Rot an der Rot \'', 'Rot an der Rot')
     string = string.replace('\' Baja California Sur \'', 'Baja California Sur')
     string = string.replace('the options that I or my', 'the options that or my')
     string = string.replace('$ " ', '')
