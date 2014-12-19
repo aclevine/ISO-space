@@ -11,7 +11,7 @@ PATH, PLACE, MOTION, NONMOTION_EVENT, SPATIAL_ENTITY,
 '''
 
 #===============================================================================
-from Corpora.corpus import Extent
+from util.Corpora.corpus import Extent
 from util.demo import Demo
 import re
 import nltk
@@ -168,11 +168,22 @@ class Types_Demo(Demo):
 # TESTING
 if __name__ == "__main__":
 
-    for type_name in ['PATH',
-                      'PLACE', 'MOTION', 'NONMOTION_EVENT',
-                      'SPATIAL_ENTITY', 'MOTION_SIGNAL', 
-                      'SPATIAL_SIGNAL', 'HAS_TAG']:
+    tag_types = ['PATH', 'PLACE', 
+                 'MOTION', 'NONMOTION_EVENT',
+                 'SPATIAL_ENTITY', 'MOTION_SIGNAL', 
+                 'SPATIAL_SIGNAL', 'HAS_TAG']
+    for type_name in tag_types:
         print type_name
         d = Types_Demo(type_name)
-        d.run_demo()
+        pred, test_data = d.run_demo()
         print '\n'
+        
+        for extent in test_data:
+            offsets = "{a},{b},{c}".format(a=extent.basename,
+                                           b=extent.lex[0].begin, 
+                                           c=extent.lex[-1].end)
+            if pred[offsets] == 'True':
+                SEND_TO_DOC = {'name': type_name}
+
+    
+    

@@ -6,7 +6,7 @@ Created on Oct 31, 2014
 @author: Aaron Levine
 @email: aclevine@brandeis.edu
 '''
-from Corpora.corpus import Corpus, Extent
+from util.Corpora.corpus import Corpus, Extent
 from sklearn.linear_model import LogisticRegression 
 from SKClassifier import SKClassifier
 from abc import abstractmethod
@@ -86,3 +86,4 @@ class Demo(object):
         return pred, test_data
         
         # TODO Return precision / recall / f-measure for averaging?
+        

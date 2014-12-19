@@ -6,7 +6,7 @@ Created on Nov 13, 2014
 
 from c_path import PathTag
 from util.demo import Demo
-from Corpora.corpus import Corpus
+from util.Corpora.corpus import Corpus
 from c_motion import get_motion_tag_indices
 import re
 

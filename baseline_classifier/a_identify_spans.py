@@ -7,7 +7,7 @@ Created on Sep 19, 2014
 a) Identify spans of spatial elements including locations, paths, events and other spatial entities.    
 '''
 #===============================================================================
-from Corpora.corpus import Extent
+from util.Corpora.corpus import Extent
 import nltk
 from util.demo import Demo
 #===============================================================================
@@ -104,10 +104,15 @@ class Spans_Demo(Demo):
         self.extent_class = Token
 
 if __name__ == "__main__":
-    d = Spans_Demo(train_path = './test_dev', test_path = './test_dev')
-    pred, test_data = d.run_demo(2)
     
-    #print pred
+    # SINGLE STAGE
+#     d = Spans_Demo(train_path = './test_dev', test_path = './test_dev')
+#     pred, test_data = d.run_demo(2)
+    
+    # FULL RUNTHROUGH
+    d = Spans_Demo(train_path = './test_dev', test_path = './test_dev')
+    pred, test_data = d.run_demo()
+    
     ongoing = False
     for extent in test_data:
         offsets = "{a},{b},{c}".format(a=extent.basename,
@@ -124,5 +129,5 @@ if __name__ == "__main__":
                 start = extent.lex[0].begin
             print extent.document.basename
             print start, extent.lex[-1].end
-            blah = {'start': start, 'end': extent.lex[-1].end}
+            SEND_TO_DOC = {'name': 'SPAN', 'start': start, 'end': extent.lex[-1].end}
 
