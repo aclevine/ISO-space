@@ -28,7 +28,7 @@ TESTDIR = '/users/sethmachine/desktop/Test'
 
 #tokenization mistake in this file: line 171 has 2 sentences in 1 sentence
 #t = td.TagDoc('/users/sethmachine/desktop/Tokenized/CP/46_N_22_E.xml')
-t = td.TagDoc('/users/sethmachine/desktop/Test/CP/48_N_10_E.xml')
+#t = td.TagDoc('/users/sethmachine/desktop/Test/CP/48_N_10_E.xml')
 
 xml_tokens_pattern = re.compile(r'<TOKENS>.+</TOKENS>', re.DOTALL)
 whitespace_pattern = re.compile(r' {2,}')
