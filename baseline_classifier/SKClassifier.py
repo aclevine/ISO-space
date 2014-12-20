@@ -78,11 +78,12 @@ class SKClassifier():
             true_answer_list = []
             for offsets, pred in pred.iteritems():
                 prediction_list.append(self.labels.get_index(pred))
-                true_answer_list.append(self.labels.get_index(actual.get(offsets, 'False')))
-                cm.add_data(prediction_list, true_answer_list)                
+                true_answer_list.append(self.labels.get_index(actual.get(offsets, 'False')))    
+            cm.add_data(prediction_list, true_answer_list)                
         else:
             cm.add_data([self.labels.get_index(x) for x in pred], [self.labels.get_index(x) for x in actual])
         cm.print_out()
+        return cm
         
     def load_model(self, path):
         self.clf = joblib.load(os.path.join(path, 'model.pkl'))

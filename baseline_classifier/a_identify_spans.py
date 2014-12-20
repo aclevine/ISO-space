@@ -87,18 +87,18 @@ def get_token_indices(sentence, tag_dict):
     return indices
 
 class Spans_Demo(Demo):
-    def __init__(self, train_path='./training', test_path = ''):
+    def __init__(self, train_path, test_path):
         super(Spans_Demo, self).__init__(train_path = train_path, test_path = test_path)
         self.feature_functions = [
-                                  lambda x: x.upper_case(),
-#                                   lambda x: x.next_upper_case(),
-#                                   lambda x: x.prev_upper_case(),
-#                                   lambda x: x.pos_tag(),
-#                                   lambda x: x.next_pos_tag(),
-#                                   lambda x: x.prev_pos_tag(),
-#                                   lambda x: x.simple_tag(),
-#                                   lambda x: x.next_simple_tag(),
-#                                   lambda x: x.prev_simple_tag()
+                                    lambda x: x.upper_case(),
+                                    lambda x: x.next_upper_case(),
+                                    lambda x: x.prev_upper_case(),
+                                    lambda x: x.pos_tag(),
+                                    lambda x: x.next_pos_tag(),
+                                    lambda x: x.prev_pos_tag(),
+                                    lambda x: x.simple_tag(),
+                                    lambda x: x.next_simple_tag(),
+                                    lambda x: x.prev_simple_tag()
                                  ] 
         self.label_function = lambda x: str(x.unconsumed_tag())
         self.indices_function = get_token_indices
@@ -106,16 +106,25 @@ class Spans_Demo(Demo):
 
 
 def generate_doc(train_path, test_path, out_path):
-    
+    ''' train model with corpus in train_path,
+    classify spanning tags for docs in test_path, 
+    write xmls of docs with new tags to out_path '''
     #classify test_data
     d = Spans_Demo(train_path, test_path)
     pred, test_data = d.generate_labels()
 
     #parse into XML tags    
     ongoing = False
-    doc_name = test_data[0].document.basename
     id_number = 0
+    curr_doc = test_data[0].document
+    doc_name = curr_doc.basename
+    
     for extent in test_data:
+        if doc_name != extent.document.basename:
+            curr_doc.save_xml(os.path.join(out_path, doc_name))
+            id_number = 0
+            curr_doc = extent.document
+            doc_name = curr_doc.basename
         offsets = "{a},{b},{c}".format(a=extent.basename,
                                        b=extent.lex[0].begin, 
                                        c=extent.lex[-1].end)
@@ -135,18 +144,20 @@ def generate_doc(train_path, test_path, out_path):
                    'id': 'sx{}'.format(id_number)}
             extent.document.insert_tag(tag)
             id_number += 1
-            if doc_name != extent.document.basename:
-                id_number = 0
-                doc_name = extent.document.basename
-                extent.document.save_xml(os.path.join(out_path, doc_name))
-    extent.document.save_xml(os.path.join(out_path, doc_name))
+    curr_doc.save_xml(os.path.join(out_path, doc_name))
 
 
 if __name__ == "__main__":
     
-    # SINGLE STAGE
+    # TESTING
 #     d = Spans_Demo(train_path = './test_dev', test_path = './test_dev')
 #     d.run_demo(2)
     
-    # FULL RUNTHROUGH
-    generate_doc('./data/train_dev', './data/test_dev_a', './data/test_dev_b')
+    # GENERATE DATA
+    train_path = './data/training'
+    test_path = './data/final/test/configuration1/0'
+    outpath = './data/final/test/configuration1/1'
+    
+    generate_doc(train_path, test_path, outpath)
+    
+    

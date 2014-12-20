@@ -39,21 +39,5 @@ class MotionSignalTypeDemo(MotionSignalDemo):
 
 if __name__ == "__main__":
 
-#     d = MotionSignalTypeDemo()
-#     d.run_demo()
-
     d = MotionSignalTypeDemo()
-    type_labels, test_data = d.generate_labels()
-    
-    doc_name = test_data[0].document.basename
-    for extent in test_data:
-        offsets = "{a},{b},{c}".format(a=extent.basename,
-                                       b=extent.lex[0].begin, 
-                                       c=extent.lex[-1].end)
-
-        tag = extent.document.query_extents('MOTION_SIGNAL', extent.lex[0].begin, extent.lex[-1].end)[0]
-        tag.attrs['motion_signal_type'] = type_labels[offsets]
-        if doc_name != extent.document.basename:
-            doc_name = extent.document.basename
-            extent.document.save_xml(os.path.join('data', 'test_dev', doc_name))
-    test_data[-1].document.save_xml(os.path.join('data', 'test_dev', doc_name))
+    d.run_demo()

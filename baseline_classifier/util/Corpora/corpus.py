@@ -74,7 +74,7 @@ class Document(BS):
     
     def query(self, tag_id):
         """Return the tag whose identifier matches the specified id."""
-        matches = lambda t : t.attrs['id'] == unicode(tag_id)
+        matches = lambda t : t.attrs.get('id', '') == unicode(tag_id)
         results = filter(matches, self.tags())
         if any(results):
             return results[0]
@@ -127,7 +127,9 @@ class Document(BS):
                 movelink_tag_dict[t.attrs['trigger']] = t.attrs
             # load qslinks
             if t.attrs.get('id', '').startswith('qs'):
-                if t.attrs['fromText']:
+                if t.attrs['trigger']:
+                    qslink_tag_dict[t.attrs['trigger']] = t.attrs                    
+                elif t.attrs['fromText']:
                     qslink_tag_dict[t.attrs['fromID']] = t.attrs
                 elif t.attrs['toText']:
                     qslink_tag_dict[t.attrs['toID']] = t.attrs
@@ -198,7 +200,8 @@ class Document(BS):
         )).TOKENS
         elements = [u'\n', text, u'\n', tags, u'\n', tokens, u'\n']
         for element in elements:
-            root.append(element)
+            if element:
+                root.append(element)
         xml += unicode(root)
         return xml
     
@@ -249,10 +252,6 @@ class HypotheticalDocument(Document):
             self.root.append(Tag(name='TAGS'))
         self.TAGS.append(tag)
         self.TAGS.append('\n')
-
-    def remove_tags(self):
-        """empty out the tags in the current document"""
-        self.TAGS = []
 
 class HypotheticalCorpus(Corpus):
     """docstring for HypotheticalCorpus"""

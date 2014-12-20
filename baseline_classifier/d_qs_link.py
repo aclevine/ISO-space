@@ -10,39 +10,20 @@ if signal:
     
 build dictionary of "trigger entities" for qslinks without signal triggers?
 '''
-from c_path import PathTag
+from d_olink import OLinkTag
 from util.demo import Demo
 import re
 from b_identify_types import get_tag_and_no_tag_indices
 
-class QSLinkTag(PathTag):
+class QSLinkTag(OLinkTag):
     def __init__(self, sent, tag_dict, movelink_tag_dict, olink_tag_dict, 
-                 qslink_tag_dict, front, back, basename):
+                 qslink_tag_dict, front, back, basename, doc):
         ''' use c_motion tags as a head to associate move-links with sentences'''
         super(QSLinkTag, self).__init__(sent, tag_dict, movelink_tag_dict, olink_tag_dict, 
-                                       qslink_tag_dict, front, back, basename)
+                                       qslink_tag_dict, front, back, basename, doc)
         head = tag_dict.get(self.lex[0].begin, {})
         self.tag = qslink_tag_dict.get(head['id'], {})
 
-    def tag_position(self, attribute_key):
-        '''
-        0 = empty field for movelink attribute
-        +n = movelink attribute is n tags right of c_motion tag
-        -n = movelink attribute is n tags left of c_motion tag
-        '''
-        if attribute_key in self.tag:
-            target = self.tag[attribute_key]
-            i = -1
-            for tag in reversed(self.prev_tags):
-                if tag['id'] == target:
-                    return i
-                i -= 1
-            i = 1
-            for tag in self.next_tags:
-                if tag['id'] == target:
-                    return i
-                i += 1    
-        return 0
    
     def is_qslink(self):
         if self.tag.get('id', ''):
@@ -50,25 +31,10 @@ class QSLinkTag(PathTag):
         else:
             return {'is_QSLink': False}
 
-    def from_id(self):
-        '''fromID IDREF'''
-        return self.tag_position('fromID')
-
-    def to_id(self):
-        '''toID IDREF'''
-        return self.tag_position('toID')
-            
     def rel_type(self):
         ''' relType ( IN | OUT | DC | EC | PO | TPP | ITPP | NTPP | INTPP | EQ ) '''
         return self.tag.get('relType', 'NOT_QSLINK')
     
-    def trajector(self):
-        '''trajector IDREF'''
-        return self.tag_position('trajector')
-
-    def landmark(self):    
-        '''landmark IDREF'''
-        return self.tag_position('landmark')
             
             
 # TAG TYPE FILTER
@@ -86,8 +52,8 @@ def get_top_tag_indices(sentence, tag_dict):
 
 # test variables
 class QSLinkDemo(Demo):
-    def __init__(self, doc_path='./training', split=0.8):
-        super(QSLinkDemo, self).__init__(doc_path, split)
+    def __init__(self, train_path='./data/train_dev', test_path = './data/test_dev'):
+        super(QSLinkDemo, self).__init__(train_path = train_path, test_path = test_path)
         self.indices_function = get_top_tag_indices
         self.extent_class = QSLinkTag
 

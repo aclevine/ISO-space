@@ -11,12 +11,14 @@ PATH, PLACE, MOTION, NONMOTION_EVENT, SPATIAL_ENTITY,
 '''
 
 #===============================================================================
-from util.Corpora.corpus import Extent
+from util.Corpora.corpus import Extent, Corpus, HypotheticalCorpus
 from util.demo import Demo
 import re
 import nltk
 import os
 from a_identify_spans import Spans_Demo
+from bs4.element import Tag
+
 #===============================================================================
 type_keys = {'PATH': ['p'], 'PLACE': ['pl'], 'MOTION': ['m'], 'NONMOTION_EVENT': ['e'],
              'SPATIAL_ENTITY': ['se'],  # spatial elements
@@ -120,10 +122,9 @@ class Tag(Extent):
         return {str(i) + 'next_' + str(n) + 
                 '_' + tok:True for i, (tok, lex) 
                 in enumerate(self.next_tokens[:n])}
-
-
     
 #===============================================================================
+
 def no_filter(tag):
     return True
 
@@ -157,9 +158,11 @@ def get_tag_and_no_tag_indices(sentence, tag_dict, tag_filter=no_filter):
 def get_tag_only_indices(sentence, tag_dict):
     return get_tag_and_no_tag_indices(sentence, tag_dict, has_tag)
 
-class Types_Demo(Demo):
-    def __init__(self, type_name, train_path='./data/train_dev', test_path = './data/test_dev_b', split=0.8):
-        super(Types_Demo, self).__init__(train_path = train_path, test_path = test_path, split = split)
+class TypesDemo(Demo):
+    def __init__(self, type_name, train_path='./data/training', test_path = './data/test_dev_b', 
+                 gold_path = '.data/gold_dev', split=0.8):
+        super(TypesDemo, self).__init__(train_path = train_path, test_path = test_path, 
+                                         gold_path = gold_path, split = split)
         self.feature_functions = [lambda x: x.curr_token(),
                                   lambda x: x.prev_n_bag_of_words(3),
                                   lambda x: x.next_n_bag_of_words(3)]
@@ -167,30 +170,36 @@ class Types_Demo(Demo):
         self.indices_function = get_tag_only_indices  # get_tag_and_no_tag_indices
         self.extent_class = Tag
 
-# TESTING
-def generate_documents():
-    return
+#===============================================================================
 
-if __name__ == "__main__":
-
+def generate_documents(train_path, test_path, clean_path, out_path):
     tag_types = ['PATH', 'PLACE', 
-                 #'MOTION', 'NONMOTION_EVENT',
-                 #'SPATIAL_ENTITY', 'MOTION_SIGNAL', 
-                 #'SPATIAL_SIGNAL', 'HAS_TAG'
+                'MOTION', 'NONMOTION_EVENT',
+                'SPATIAL_ENTITY', 'MOTION_SIGNAL', 
+                'SPATIAL_SIGNAL',
                  ]
-
-    demo = Spans_Demo('./data/train_dev', './data/test_dev_a')
-    _, clean_data = demo.generate_labels()
-    
+    # clean data to add tags to
+    clean_corpus = HypotheticalCorpus(clean_path)
+    clean_data = list(clean_corpus.documents())
+   
     for type_name in tag_types:
         # generate labels
-        demo = Types_Demo(type_name)
+        demo = TypesDemo(type_name, train_path, test_path)
         pred, test_data = demo.generate_labels()
         
-        # generate tags
-        doc_name = test_data[0].document.basename
+        # labels -> tagged docs
         id_number = 0
-        for i, extent in enumerate(test_data):
+        i = 0
+        curr_doc = clean_data[0]
+        doc_name = curr_doc.basename
+        for extent in test_data:
+            if doc_name != extent.document.basename:
+                curr_doc.save_xml(os.path.join(out_path, doc_name))
+                id_number = 0
+                i += 1
+                curr_doc = clean_data[i]
+                doc_name = curr_doc.basename
+            
             offsets = "{a},{b},{c}".format(a=extent.basename,
                                            b=extent.lex[0].begin, 
                                            c=extent.lex[-1].end)
@@ -201,14 +210,23 @@ if __name__ == "__main__":
                        'text': extent.tag['text'],
                        'id': '{}{}'.format(type_keys[type_name][0], id_number)
                        }
-                clean_data[i].document.insert_tag(tag)
-            id_number += 1
-            if doc_name != extent.document.basename:
-                id_number = 0
+                curr_doc.insert_tag(tag)
+                id_number += 1
+        curr_doc.save_xml(os.path.join(out_path, doc_name))
+        clean_corpus = HypotheticalCorpus(out_path)
+        clean_data = list(clean_corpus.documents())
 
-    # generate xml docs
-    for extent in clean_data:
-        if doc_name != extent.document.basename:
-            doc_name = extent.document.basename
-            extent.document.save_xml(os.path.join('data', 'test_dev_c', doc_name))
-    extent.document.save_xml(os.path.join('data', 'test_dev_c', doc_name))
+
+
+#===============================================================================
+
+
+if __name__ == "__main__":
+
+    train_path = './data/dev/training'
+    test_path = './data/dev/test/configuration1/1'
+    out_path = './data/dev/test/configuration1/a'    
+    clean_path = './data/dev/test/configuration1/0' 
+
+    generate_documents(train_path, test_path, clean_path, out_path)
+

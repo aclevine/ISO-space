@@ -35,8 +35,10 @@ def get_motion_tag_indices(sentence, tag_dict):
 
 # DEMOS
 class MotionDemo(Demo):
-    def __init__(self, train_path='./data/train_dev', test_path = './data/test_dev'):
-        super(MotionDemo, self).__init__(train_path = train_path, test_path = test_path)
+    def __init__(self, train_path='./data/train_dev', test_path = './data/test_dev',
+                 gold_path = './data/gold_dev'):
+        super(MotionDemo, self).__init__(train_path = train_path, test_path = test_path,
+                                         gold_path = gold_path)
         self.indices_function = get_motion_tag_indices
         self.extent_class = MotionTag
 
@@ -72,36 +74,12 @@ class MotionSenseDemo(MotionDemo):
 
 if __name__ == "__main__":
 
-#     d = MotionTypeDemo()
-#     d.run_demo()
-#       
-#     d = MotionClassDemo()
-#     d.run_demo()
-#          
-#     d = MotionSenseDemo()
-#     d.run_demo()
-
     d = MotionTypeDemo()
-    type_labels, test_data = d.generate_labels()
-    
+    d.run_demo()
+       
     d = MotionClassDemo()
-    class_labels, _ = d.generate_labels()
-           
+    d.run_demo()
+          
     d = MotionSenseDemo()
-    sense_labels, _ = d.generate_labels()
+    d.run_demo()
 
-    doc_name = test_data[0].document.basename    
-    for extent in test_data:
-        offsets = "{a},{b},{c}".format(a=extent.basename,
-                                       b=extent.lex[0].begin, 
-                                       c=extent.lex[-1].end)
-
-        tag = extent.document.query_extents('MOTION', extent.lex[0].begin, extent.lex[-1].end)[0]
-        tag.attrs['motion_type'] = type_labels[offsets]
-        tag.attrs['motion_class'] = class_labels[offsets]
-        tag.attrs['motion_sense'] = sense_labels[offsets]
-        if doc_name != extent.document.basename:
-            doc_name = extent.document.basename
-            extent.document.save_xml(os.path.join('data', 'test_dev', doc_name))
-    test_data[-1].document.save_xml(os.path.join('data', 'test_dev', doc_name))
-    
