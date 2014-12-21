@@ -242,22 +242,29 @@ def generate_movelinks(train_path, test_path, out_path):
                'MOVELINK', 'mvl')
 
     # fill attributes    
-    d = MoveLinkMoverDemo(train_path = train_path, test_path = test_path)  
+    d = MovelinkMoverDemo(train_path = train_path, test_path = test_path)  
     mover_labels, test_data = d.generate_labels()
 
-    d = MoveLinkSourceDemo(train_path = train_path, test_path = test_path)  
+    d = MovelinkSourceDemo(train_path = train_path, test_path = test_path)  
     source_labels, test_data = d.generate_labels()
    
-    d = MoveLinkGoalDemo(train_path = train_path, test_path = test_path)
+    d = MovelinkGoalDemo(train_path = train_path, test_path = test_path)
     goal_labels, _ = d.generate_labels()
     
-    d = MoveLinkMidPointDemo(train_path = train_path, test_path = test_path)  
+    d = MovelinkMidPointDemo(train_path = train_path, test_path = test_path)  
     midpoint_labels, _ = d.generate_labels()
+
+    d = MovelinkGoalMotionSignalIDDemo(train_path = train_path, test_path = test_path)  
+    motion_signal_id_labels, _ = d.generate_labels()
+
+    d = MovelinkPathIDDemo(train_path = train_path, test_path = test_path)  
+    path_id_labels, _ = d.generate_labels()
+
    
-    d = MoveLinkLandmarkDemo(train_path = train_path, test_path = test_path)  
+    d = MovelinkLandmarkDemo(train_path = train_path, test_path = test_path)  
     landmark_labels, _ = d.generate_labels()
       
-    d = MoveLinkGoalReachedDemo(train_path = train_path, test_path = test_path)  
+    d = MovelinkGoalReachedDemo(train_path = train_path, test_path = test_path)  
     goal_reached_labels, _ = d.generate_labels()
 
     #parse into XML tags
@@ -298,6 +305,10 @@ def generate_movelinks(train_path, test_path, out_path):
         tag.attrs['landmark'] = get_tag_id(extent, landmark_labels[offsets])
         #goal_reached   
         tag.attrs['goal_reached'] = goal_reached_labels[offsets]
+        #pathID
+        tag.attrs['pathID'] = path_id_labels[offsets]
+        #motion_signalID
+        tag.attrs['motion_signalID'] = motion_signal_id_labels[offsets]
             
     curr_doc.save_xml(os.path.join(out_path, doc_name))
     

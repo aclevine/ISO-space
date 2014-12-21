@@ -71,6 +71,12 @@ class Document(BS):
         and whose trigger has the specified trigger id."""
         matches = lambda t : unicode(t['trigger']) == unicode(trigger_id)
         return filter(matches, self.tags(ttypes=ttypes))
+
+    def query_links_by_attr(self, ttypes, attr_name, attr_value):
+        """Return a list of link tags whose types are in the list of ttypes
+        and whose attribute field has the specified value."""
+        matches = lambda t : unicode(t[attr_name]) == unicode(attr_value)
+        return filter(matches, self.tags(ttypes=ttypes))
     
     def query(self, tag_id):
         """Return the tag whose identifier matches the specified id."""
@@ -152,7 +158,27 @@ class Document(BS):
                 extent = extent_class(sent, tag_dict, movelink_tag_dict, olink_tag_dict,
                                       qslink_tag_dict, begin, end, self.basename, self)
                 yield extent
-    
+                
+    def qs_o_link_triples(self, indices_function, extent_class=Extent):
+        extents = self.extents(indices_function, extent_class)
+        for extent in extents:
+            trigger = extent.tag
+            tags = extent.prev_tags + extent.next_tags
+            for from_tag in tags:
+                for to_tag in tags:
+                    if to_tag != from_tag:
+                        extent.token = (trigger, from_tag, to_tag)
+                        yield extent
+        
+    def move_link_triples(self, indices_function, extent_class=Extent):
+        extents = self.extents(indices_function, extent_class)
+        for extent in extents:
+            trigger = extent.tag
+            tags = extent.prev_tags + extent.next_tags
+            for to_tag in tags:
+                extent.token = (extent.tag, extent.tag, to_tag)
+                yield extent
+                
     def validate(self):
         is_valid = True
         tag_count = len(self.tags())
@@ -237,6 +263,26 @@ class Corpus(object):
                     extent = extent_class(sent, tag_dict, movelink_tag_dict, olink_tag_dict,
                                           qslink_tag_dict, begin, end, doc.basename, doc)
                     yield extent
+                
+    def qs_o_link_triples(self, indices_function, extent_class=Extent):
+        extents = self.extents(indices_function, extent_class)
+        for extent in extents:
+            trigger = extent.tag
+            tags = extent.prev_tags + extent.next_tags
+            for from_tag in tags:
+                for to_tag in tags:
+                    if to_tag != from_tag:
+                        extent.token = (trigger, from_tag, to_tag)
+                        yield extent
+
+    def move_link_triples(self, indices_function, extent_class=Extent):
+        extents = self.extents(indices_function, extent_class)
+        for extent in extents:
+            trigger = extent.tag
+            tags = extent.prev_tags + extent.next_tags
+            for to_tag in tags:
+                extent.token = (extent.tag, extent.tag, to_tag)
+                yield extent
     
     def validate(self):
         map(Document.validate, self.documents())

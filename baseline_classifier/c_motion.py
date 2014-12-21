@@ -25,6 +25,15 @@ class MotionTag(Tag):
         # motion_sense ( LITERAL | FICTIVE | INTRINSIC_CHANGE )
         return self.tag['motion_sense']
 
+    def is_move_link(self):
+        trigger_id, from_id, to_id = map(lambda x: x['id'], self.token)
+        links = self.document.query_links(['MOVELINK'], trigger_id)
+        if links:
+            link = links[0]
+            if link['fromID'] == from_id and link['toID'] == to_id:
+                return True
+        return False
+
 # TAG TYPE FILTER
 def is_motion_tag(tag):
     tag_id = tag.get('id', '')
@@ -69,6 +78,14 @@ class MotionSenseDemo(MotionDemo):
     def get_feature_functions(self):
         return [lambda x: x.curr_token(),
                 ]
+
+
+class IsMovelinkDemo(MotionDemo):
+    def get_label_function(self):
+        return lambda x: str(x.is_move_link())
+
+    def get_feature_functions(self):
+        return []
 
 
 if __name__ == "__main__":

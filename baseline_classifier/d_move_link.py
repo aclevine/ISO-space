@@ -11,16 +11,15 @@ from c_motion import get_motion_tag_indices
 import re
 
 
-class MoveLinkTag(PathTag):
+class MovelinkTag(PathTag):
 
     def __init__(self, sent, tag_dict, movelink_tag_dict, olink_tag_dict, qslink_tag_dict, front, back, basename, doc):
         ''' use c_motion tags as a head to associate move-links with sentences'''
-        super(MoveLinkTag, self).__init__(sent, tag_dict, movelink_tag_dict, olink_tag_dict, qslink_tag_dict, front, back, basename, doc)
+        super(MovelinkTag, self).__init__(sent, tag_dict, movelink_tag_dict, olink_tag_dict, qslink_tag_dict, front, back, basename, doc)
         head = tag_dict.get(self.lex[0].begin, {})
         self.tag = movelink_tag_dict.get(head['id'], {})
         
     # LABEL EXTRACT
-    # Want to select position of tag in surrounding sentence, not tag itself.
     
     # skip trigger and from_id - move-links were identified using them
     def tag_position(self, attribute_key):
@@ -70,32 +69,62 @@ class MoveLinkTag(PathTag):
     
     def path_id(self):
         '''pathID IDREF'''
-        return self.tag['pathID']
+        return self.tag_position('pathID')
+
 
     def motion_signal_id(self):
         '''motion_signalID IDREFS'''
         return self.tag_position('motion_signalID')
 
-    # for evaluator
-    def motion_signal_extents(self):
-        self.tag.get('goal_reached', '')
-        return
-    
-    def mover_extents(self):
-        self.tag.get('goal_reached', '')        
-        return
-    
+    # EVAL LABELS    
     def source_extents(self):
-        self.tag.get('source', '')
-        return
+        tag_id = self.tag.get('source', '')
+        target_tag = self.document.query(tag_id)
+        if tag_id and target_tag:
+            return "{},{}".format(target_tag['start'], target_tag['end'])
+        else:
+            return "-1,-1"
     
     def goal_extents(self):
-        self.tag.get('goal', '')
-        return
+        tag_id = self.tag.get('goal', '')
+        target_tag = self.document.query(tag_id)
+        if tag_id and target_tag:
+            return "{},{}".format(target_tag['start'], target_tag['end'])
+        else:
+            return "-1,-1"
     
     def mid_point_extents(self):
-        return
+        tag_id = self.tag.get('midPoint', '')
+        target_tag = self.document.query(tag_id)
+        if tag_id and target_tag:
+            return "{},{}".format(target_tag['start'], target_tag['end'])
+        else:
+            return "-1,-1"
 
+    def landmark_extents(self):
+        tag_id = self.tag.get('landmark', '')
+        target_tag = self.document.query(tag_id)
+        if tag_id and target_tag:
+            return "{},{}".format(target_tag['start'], target_tag['end'])
+        else:
+            return "-1,-1"
+    
+    def motion_signal_id_extents(self):        
+        tag_id = self.tag.get('motion_signalID', '')        
+        target_tag = self.document.query(tag_id)
+        if tag_id and target_tag:
+            return "{},{}".format(target_tag['start'], target_tag['end'])
+        else:
+            return "-1,-1"
+
+    def path_id_extents(self):        
+        tag_id = self.tag.get('pathID', '')
+        target_tag = self.document.query(tag_id)
+        if tag_id and target_tag:
+            return "{},{}".format(target_tag['start'], target_tag['end'])
+        else:
+            return "-1,-1"
+                    
     # FEATURE EXTRACT
     def prev_tag_count(self):
         return {'prev_tag_count': len(self.prev_tags)}
@@ -120,14 +149,14 @@ class MoveLinkTag(PathTag):
         return feat_dict
 
 # DEMO
-class MoveLinkDemo(Demo):
+class MovelinkDemo(Demo):
     def __init__(self, train_path='', test_path = '', gold_path = ''):
-        super(MoveLinkDemo, self).__init__(train_path = train_path, test_path = test_path,
+        super(MovelinkDemo, self).__init__(train_path = train_path, test_path = test_path,
                                            gold_path = gold_path)
         self.indices_function = get_motion_tag_indices
-        self.extent_class = MoveLinkTag
+        self.extent_class = MovelinkTag
 
-class MoveLinkTriggerDemo(MoveLinkDemo):  
+class MovelinkTriggerDemo(MovelinkDemo):  
     def get_label_function(self):
         return  lambda x: str(x.trigger())
 
@@ -135,7 +164,7 @@ class MoveLinkTriggerDemo(MoveLinkDemo):
         return [lambda x: x.curr_token(),
                 ]
 
-class MoveLinkSourceDemo(MoveLinkDemo):  
+class MovelinkSourceDemo(MovelinkDemo):  
     def get_label_function(self):
         return  lambda x: str(x.source())
 
@@ -143,7 +172,7 @@ class MoveLinkSourceDemo(MoveLinkDemo):
         return [lambda x: x.curr_token(),
                 ]
 
-class MoveLinkGoalDemo(MoveLinkDemo):  
+class MovelinkGoalDemo(MovelinkDemo):  
     def get_label_function(self):
         return  lambda x: str(x.goal())
 
@@ -155,7 +184,7 @@ class MoveLinkGoalDemo(MoveLinkDemo):
                 lambda x: x.next_tag_types(),
                 ]
 
-class MoveLinkMidPointDemo(MoveLinkDemo):  
+class MovelinkMidPointDemo(MovelinkDemo):  
     def get_label_function(self):
         return  lambda x: str(x.mid_point())
 
@@ -163,7 +192,7 @@ class MoveLinkMidPointDemo(MoveLinkDemo):
         return [lambda x: x.curr_token(),
                 ]
 
-class MoveLinkMoverDemo(MoveLinkDemo):  
+class MovelinkMoverDemo(MovelinkDemo):  
     def get_label_function(self):
         return  lambda x: str(x.mover())
 
@@ -171,7 +200,7 @@ class MoveLinkMoverDemo(MoveLinkDemo):
         return [lambda x: x.curr_token(),
                 ]
 
-class MoveLinkLandmarkDemo(MoveLinkDemo):  
+class MovelinkLandmarkDemo(MovelinkDemo):  
     def get_label_function(self):
         return  lambda x: str(x.landmark())
 
@@ -179,7 +208,7 @@ class MoveLinkLandmarkDemo(MoveLinkDemo):
         return [lambda x: x.curr_token(),
                 ]
 
-class MoveLinkGoalReachedDemo(MoveLinkDemo):  
+class MovelinkGoalReachedDemo(MovelinkDemo):  
     def get_label_function(self):
         return  lambda x: str(x.goal_reached())
 
@@ -187,7 +216,7 @@ class MoveLinkGoalReachedDemo(MoveLinkDemo):
         return [lambda x: x.curr_token(),
                 ]
 
-class MoveLinkGoalPathIdDemo(MoveLinkDemo):
+class MovelinkGoalPathIdDemo(MovelinkDemo):
     def get_label_function(self):
         return  lambda x: str(x.path_id())
 
@@ -195,22 +224,75 @@ class MoveLinkGoalPathIdDemo(MoveLinkDemo):
         return [lambda x: x.curr_token(),
                 ]
 
+class MovelinkGoalMotionSignalIDDemo(MovelinkDemo):
+    def get_label_function(self):
+        return  lambda x: str(x.motion_signal_id())
+
+    def get_feature_functions(self):
+        return [lambda x: x.curr_token(),
+                ]
+
+class MovelinkPathIDDemo(MovelinkDemo):
+    def get_label_function(self):
+        return  lambda x: str(x.path_signal_id())
+
+    def get_feature_functions(self):
+        return [lambda x: x.curr_token(),
+                ]
+
+# FOR EVAL
+class MovelinkSourceExentsDemo(MovelinkDemo):
+    def get_label_function(self):
+        return  lambda x: str(x.source_extents())
+
+    def get_feature_functions(self):
+        return []
+
+class MovelinkGoalExentsDemo(MovelinkDemo):
+    def get_label_function(self):
+        return  lambda x: str(x.goal_extents())
+
+    def get_feature_functions(self):
+        return []
+
+class MovelinkMidpointExentsDemo(MovelinkDemo):
+    def get_label_function(self):
+        return  lambda x: str(x.mid_point_extents())
+
+    def get_feature_functions(self):
+        return []
+
+class MovelinkPathIDExentsDemo(MovelinkDemo):
+    def get_label_function(self):
+        return  lambda x: str(x.path_id_extents())
+
+    def get_feature_functions(self):
+        return []
+
+class MovelinkMotionSignalIDExentsDemo(MovelinkDemo):
+    def get_label_function(self):
+        return  lambda x: str(x.motion_signal_id_extents())
+
+    def get_feature_functions(self):
+        return []
+
+
 if __name__ == "__main__":
     
-    source = MoveLinkSourceDemo()  
+    source = MovelinkSourceDemo()  
     source.run_demo()
  
-    goal = MoveLinkGoalDemo()
+    goal = MovelinkGoalDemo()
     goal.run_demo()
   
-    mid_point = MoveLinkMidPointDemo()  
+    mid_point = MovelinkMidPointDemo()  
     mid_point.run_demo()
  
-    mover = MoveLinkMoverDemo()  
+    mover = MovelinkMoverDemo()  
     mover.run_demo()
  
-    d = MoveLinkLandmarkDemo()  
+    d = MovelinkLandmarkDemo()  
     d.run_demo()
     
-    d = MoveLinkGoalReachedDemo()  
+    d = MovelinkGoalReachedDemo()  
     d.run_demo()

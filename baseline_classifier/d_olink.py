@@ -9,13 +9,13 @@ if signal:
     dir = olink
 
 '''
-from c_path import PathTag
 from util.demo import Demo
-import re
 from b_identify_types import get_tag_and_no_tag_indices
+from c_path import PathTag
+from d_move_link import MovelinkTag
+import re
 
-
-class OLinkTag(PathTag):
+class OLinkTag(MovelinkTag):
     def __init__(self, sent, tag_dict, movelink_tag_dict, olink_tag_dict, 
                  qslink_tag_dict, front, back, basename, doc):
         ''' use c_motion tags as a head to associate move-links with sentences'''
@@ -23,30 +23,53 @@ class OLinkTag(PathTag):
                                        qslink_tag_dict, front, back, basename, doc)
         head = tag_dict.get(self.lex[0].begin, {})
         self.tag = olink_tag_dict.get(head['id'], {})
-        # bad docs:
+        # bad docs report
 #         if self.tag == {}:
 #             print self.basename
 #             print head
 
     def tag_position(self, attribute_key):
         '''
-        0 = empty field for movelink attribute
-        +n = movelink attribute is n tags right of c_motion tag
-        -n = movelink attribute is n tags left of c_motion tag
+        0 = empty field for link attribute
+        +n = link attribute is n tags right of c_motion tag
+        -n = link attribute is n tags left of c_motion tag
         '''
         if attribute_key in self.tag:
-            target = self.tag[attribute_key]
+            tag_target = self.tag[attribute_key]
             i = -1
             for tag in reversed(self.prev_tags):
-                if tag['id'] == target:
+                if tag['id'] == tag_target:
                     return i
                 i -= 1
             i = 1
             for tag in self.next_tags:
-                if tag['id'] == target:
+                if tag['id'] == tag_target:
                     return i
                 i += 1    
         return 0
+    
+    def token_position(self, attribute_key):
+        if attribute_key in self.tag:
+            tag_target = self.tag[attribute_key]
+            
+            for tag in self.prev_tags:
+                if tag['id'] == tag_target:
+                    text_target = tag['text']
+                    i  = -1
+                    for text, lex in reversed(self.prev_tokens):
+                        if text == text_target:
+                            return i
+                        i -= 1
+            for tag in self.next_tags:
+                if tag['id'] == tag_target:
+                    text_target = tag['text']
+                    i = 1
+                    for text, lex in self.next_tokens:
+                        if text == text_target:
+                            return i
+                        i += 1    
+        return 0
+    
    
     def is_olink(self):
         if self.tag.get('id', ''):
@@ -82,10 +105,6 @@ class OLinkTag(PathTag):
         '''landmark IDREF'''
         return self.tag_position('landmark')
     
-#     def trigger(self):
-#         '''source IDREF'''
-#         return self.tag_position('trigger')
-    
     def frame_type(self):
         '''frame_type ( ABSOLUTE | INTRINSIC | RELATIVE )'''
         return self.tag.get('frame_type', 'RELATIVE')
@@ -100,6 +119,14 @@ class OLinkTag(PathTag):
     def projective(self):
         '''projective ( TRUE | FALSE )'''
         return self.tag.get('projective', '')
+
+    def reference_pt_extents(self):
+        tag_id = self.tag.get('referencePt', '')        
+        target_tag = self.document.query(tag_id)
+        if tag_id and target_tag:
+            return "{},{}".format(target_tag['start'], target_tag['end'])
+        else:
+            return "-1,-1"
     
 # TAG TYPE FILTER
 def is_dir_tag(tag):
@@ -205,6 +232,14 @@ class OLinkTriggerDemo(OLinkDemo):
     def get_feature_functions(self):
         return [lambda x: x.curr_token(),
                 ]
+
+class OLinkRefPtExtentDemo(OLinkDemo):      
+    def get_label_function(self):
+        return  lambda x: str(x.reference_pt_extents())
+
+    def get_feature_functions(self):
+        return []
+
 
 if __name__ == "__main__":
     

@@ -34,8 +34,6 @@ class QSLinkTag(OLinkTag):
     def rel_type(self):
         ''' relType ( IN | OUT | DC | EC | PO | TPP | ITPP | NTPP | INTPP | EQ ) '''
         return self.tag.get('relType', 'NOT_QSLINK')
-    
-            
             
 # TAG TYPE FILTER
 def is_top_tag(tag):

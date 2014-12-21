@@ -27,7 +27,25 @@ class SignalTag(Tag):
             return True
         else:
             return False
-    
+
+    def is_qslink(self):
+        trigger_id, from_id, to_id = map(lambda x: x['id'], self.token)
+        links = self.document.query_links(['QSLINK'], trigger_id)
+        if links:
+            link = links[0]
+            if link['fromID'] == from_id and link['toID'] == to_id:
+                return True
+        return False
+
+    def is_olink(self):
+        trigger_id, from_id, to_id = map(lambda x: x['id'], self.token)
+        links = self.document.query_links(['OLINK'], trigger_id)
+        if links:
+            link = links[0]
+            if link['fromID'] == from_id and link['toID'] == to_id:
+                return True
+        return False
+
 # FILTER
 def is_signal_tag(tag):
     tag_id = tag.get('id', '')
@@ -70,6 +88,22 @@ class SignalTopologicalDemo(SignalDemo):
         return [lambda x: x.curr_token(),
                 ]
         
+
+class IsOlinkDemo(SignalDemo):
+    def get_label_function(self):
+        return  lambda x: str(x.is_olink())
+
+    def get_feature_functions(self):
+        return []
+
+class IsQSlinkDemo(SignalDemo):
+    def get_label_function(self):
+        return  lambda x: str(x.is_qslink())
+
+    def get_feature_functions(self):
+        return []
+
+
     
 if __name__ == "__main__":
 
