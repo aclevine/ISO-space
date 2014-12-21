@@ -35,8 +35,7 @@ def get_motion_tag_indices(sentence, tag_dict):
 
 # DEMOS
 class MotionDemo(Demo):
-    def __init__(self, train_path='./data/train_dev', test_path = './data/test_dev',
-                 gold_path = './data/gold_dev'):
+    def __init__(self, train_path = '', test_path = '', gold_path = ''):
         super(MotionDemo, self).__init__(train_path = train_path, test_path = test_path,
                                          gold_path = gold_path)
         self.indices_function = get_motion_tag_indices

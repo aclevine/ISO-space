@@ -10,6 +10,8 @@ from util.Corpora.corpus import Corpus, HypotheticalCorpus
 from sklearn.linear_model import LogisticRegression 
 from SKClassifier import SKClassifier
 from abc import abstractmethod
+import os
+import shutil
 
 class Demo(object):
     '''specify where system should pull training and test data from'''
@@ -168,4 +170,12 @@ class Demo(object):
         cm = clf.evaluate(test_labels, gold_labels)
         # output dict for 
         return cm
+
+def copy_folder(src, dest):
+    src_files = os.listdir(src)
+    for file_name in src_files:
+        full_file_name = os.path.join(src, file_name)
+        if (os.path.isfile(full_file_name)):
+            shutil.copy(full_file_name, dest)
+
 

@@ -12,6 +12,7 @@ from c_path import *
 from c_place import *
 from c_spatial_entity import *
 from c_spatial_signal import *
+from util.demo import copy_folder
 
 def generate_motion_attr(train_path, test_path, out_path):
     # generate labels
@@ -70,11 +71,11 @@ def generate_motion_signal_attr(train_path, test_path, out_path):
 
 def generate_event_attr(train_path, test_path, out_path):
     # generate labels
-    d = EventModDemo(train_path = train_path, test_path = test_path)
-    event_mod_labels, test_data = d.generate_labels()
+    mod = EventModDemo(train_path = train_path, test_path = test_path)
+    event_mod_labels, test_data = mod.generate_labels()
             
-    d = EventCountableDemo(train_path = train_path, test_path = test_path)
-    event_count_labels, _ = d.generate_labels()        
+    count = EventCountableDemo(train_path = train_path, test_path = test_path)
+    event_count_labels, _ = count.generate_labels()        
  
     # labels -> tagged doc
     curr_doc = test_data[0].document
@@ -227,7 +228,7 @@ def generate_signal_attr(train_path, test_path, out_path):
     curr_doc.save_xml(os.path.join(out_path, doc_name))
 
     
-def generate_doc(train_path, test_path, out_path):
+def generate_attributes(train_path, test_path, out_path):
 
     generate_motion_attr(train_path, test_path, out_path)
     generate_motion_signal_attr(train_path, test_path, out_path)
@@ -241,7 +242,10 @@ def generate_doc(train_path, test_path, out_path):
 if __name__ == "__main__":
 
     training_path = './data/training'
-    test_path = './data/final/test/configuration1/c'
-    generate_doc(training_path, test_path)
-        
+    hyp_c = './data/final/test/configuration1/c'
+    hyp_d = './data/final/test/configuration1/d'
+    generate_attributes(training_path, hyp_c, hyp_c)
 
+    copy_folder(hyp_c, hyp_d)
+    
+    

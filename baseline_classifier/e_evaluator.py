@@ -3,75 +3,168 @@ Created on Dec 19, 2014
 
 @author: Aaron Levine
 '''
-from b_identify_types import get_tag_and_no_tag_indices, get_tag_only_indices, Tag,\
-    TypesDemo
+from b_identify_types import *
+from c_fill_tag_attrs import *
+from d_fill_link_attrs import *
+
 from util.demo import Demo
-from util.Corpora.corpus import Extent
-import re
+import sys
 import numpy as np
-from c_motion import MotionTypeDemo, MotionSenseDemo, MotionClassDemo
 
-# 1a
-def is_element(tag):
-    tag_id = tag.get('id', '')
-    for pattern in ['p', 'pl', 'm', 'e', 'se']:
-        if re.findall('^{}\d+'.format(pattern), tag_id):
-            return True    
-    return False
-
-def get_elements(sentence, tag_dict):
-    return get_tag_and_no_tag_indices(sentence, tag_dict, is_element)
-
-class Demo1A(Demo):
-    def __init__(self, test_path = './data/test_dev', gold_path = './data/gold_dev'):
-        super(Demo1A, self).__init__(train_path = '', test_path = test_path, gold_path = gold_path)
+# DEMOS
+class SpatialElementDemo(Demo):
+    def __init__(self, test_path, gold_path):
+        super(SpatialElementDemo, self).__init__(train_path = '', test_path = test_path, 
+                                                 gold_path = gold_path)
         self.feature_functions = []
         self.label_function = lambda x: str(bool(x.tag))
-        self.indices_function = get_tag_and_no_tag_indices  # get_tag_and_no_tag_indices
+        self.indices_function = get_tag_and_no_tag_indices
         self.extent_class = Extent
 
 
+
+def evaluate_all(demo_list, hyp_path, gold_path):
+
+    p = []
+    r = []
+    f = []
+    a = []
+    
+    for tag_name, Demo in demo_list.iteritems():
+        print '\n\n' + '=' * 10 + ' {} '.format(tag_name) + '=' * 10
+        d = Demo(test_path = hyp_path, gold_path = gold_path)
+        cm = d.evaluate()
+        p.append(np.mean(cm.compute_precision()))
+        r.append(np.mean(cm.compute_recall()))
+        f.append(np.mean(cm.compute_f1()))
+        a.append(np.mean(cm.compute_accuracy()))
+    
+    print '\n' * 2 + '=' * 10 + 'OVERALL' + '=' * 10 
+    print 'mean precision: {}'.format(np.mean(p))
+    print 'mean recall: {}'.format(np.mean(r))
+    print 'mean f1: {}'.format(np.mean(f))
+    print 'mean accuracy: {}'.format(np.mean(a))
+
 if __name__ == "__main__":
 
-    x = './data/test_dev_c/'
-    y = './data/gold_dev/'
-    
-#     test = Demo1A(test_path = x, gold_path = y)
-#     cm = test.evaluate()
+    gold_path = './data/final/gold'
+
+    tag_types = ['PATH', 'PLACE', 
+                 'MOTION', 'NONMOTION_EVENT',
+                 'SPATIAL_ENTITY'] 
+
+    se_b_demo_list = dict([(name, 
+                            lambda test_path, gold_path: TypesDemo(name, 
+                                                                   train_path = '',
+                                                                   test_path = test_path, 
+                                                                   gold_path = gold_path)) 
+                            for name in tag_types])
+
+    se_c_demo_list = {
+                      'MOTION - motion_type': MotionTypeDemo, 
+                      'MOTION - motion_class': MotionClassDemo, 
+                      'MOTION - motion_sense': MotionSenseDemo,
+                     
+                      'NONMOTION_EVENT - mod': EventModDemo, 
+                      'NONMOTION_EVENT - countable': EventCountableDemo,
+                     
+                      'PATH - dimensionality': PathDimensionalityDemo, 
+                      'PATH - form': PathFormDemo, 
+                      'PATH - countable': PathCountableDemo, 
+                      'PATH - mod': PathModDemo,
+                      
+                      'PLACE - dimensionality': PlaceDimensionalityDemo, 
+                      'PLACE - form': PlaceFormDemo, 
+                      'PLACE - countable': PlaceCountableDemo, 
+                      'PLACE - mod': PlaceModDemo,
+                      
+                      'SPATIAL_ENTITY - dimensionality': EntityDimensionalityDemo, 
+                      'SPATIAL_ENTITY - form': EntityFormDemo, 
+                      'SPATIAL_ENTITY - countable': EntityCountableDemo, 
+                      'SPATIAL_ENTITY - mod': EntityModDemo,
+                     }
+
+    link_a_demo_list = {
+                        'MOVELINK': 1, # use the "has link tag" label
+                        'QSLINK': 1, 
+                        'OLINK': 1,
+                        }
+
+    # THESE ALL NEED TO CHANGE TO LABEL EXTENT EXTRACTORS
+    link_b_demo_list = {
+                        'MOVELINK - mover': MoveLinkMoverDemo,
+                        'MOVELINK - source': MoveLinkSourceDemo,
+                        'MOVELINK - goal': MoveLinkGoalDemo,
+                        'MOVELINK - midPoint': MoveLinkMidPointDemo,
+                        'MOVELINK - landmark': MoveLinkLandmarkDemo,
+                        'MOVELINK - goal_reached': MoveLinkGoalReachedDemo,
+                        
+                        'QSLINK - trajector': QSLinkFromIDDemo,
+                        'QSLINK - landmark': QSLinkToIDDemo,
+                        'QSLINK - relType': QSLinkRelTypeDemo,
+                        
+                        'OLINK - trajector': OLinkFromIDDemo,
+                        'OLINK - landmark': OLinkToIDDemo,
+                        'OLINK - relType': OLinkRelTypeDemo,
+                        'OLINK - referencePt': OLinkReferencePtDemo,
+                        'OLINK - projective': OLinkProjectiveDemo,
+                        'OLINK - frame_type': OLinkFrameTypeDemo,
+                        }
+
+    # CONIFG 1
+    hyp_1_a = './data/final/test/configuration1/a'
+    hyp_1_b = './data/final/test/configuration1/b'
+    hyp_1_c = './data/final/test/configuration1/c'
+    hyp_1_d = './data/final/test/configuration1/d'
+    hyp_1_e = './data/final/test/configuration1/e'
+
+
+#     # 1a
+#     sys.stdout = open('./results/baseline/1a.txt', 'w')
+#     print 'Identify spans of spatial elements including locations, paths, events and other spatial entities.'
+#     print '\n' * 2
+#     print '=' * 10 + ' IS SPATIAL ELEMENT: ' + '=' * 10
+#     test = SpatialElementDemo(test_path = hyp_1_a, gold_path = gold_path)
+#     test.evaluate()
 # 
-#     print "=" * 50
-#     
 #     # 1b
-#     tag_types = ['PATH', 'PLACE', 
-#                 'MOTION', 'NONMOTION_EVENT',
-#                 'SPATIAL_ENTITY']
-# 
-#     p = []
-#     r = []
-#     f = []
-#     a = []    
-#     for t_type in tag_types:
-#         print '\n{}'.format(t_type)
-#         test = TypesDemo(t_type, test_path = x, gold_path = y)
-#         cm = test.evaluate()   
-#         p.append(cm.compute_precision())
-#         r.append(cm.compute_recall())
-#         f.append(cm.compute_f1())
-#         a.append(cm.compute_accuracy())
-# 
-#     print 'mean precision: {}'.format(np.mean(p))
-#     print 'mean recall: {}'.format(np.mean(r))
-#     print 'mean f1: {}'.format(np.mean(f))
-#     print 'mean accuracy: {}'.format(np.mean(a))
-     
-    print "=" * 50
+#     sys.stdout = open('./results/baseline/1b.txt', 'w')
+#     print 'Classify spatial elements according to type: PATH, PLACE, MOTION, NONMOTION_EVENT, SPATIAL_ENTITY.'
+#     evaluate_all(se_b_demo_list, hyp_1_b, gold_path)
+#  
+#     # 1c
+#     sys.stdout = open('./results/baseline/1c.txt', 'w')    
+#     evaluate_all(se_c_demo_list, hyp_1_c, gold_path)
+#     
+#     # 1d
+#     sys.stdout = open('./results/baseline/1d.txt', 'w')    
+#     evaluate_all(link_a_demo_list, hyp_1_d, gold_path)
+
+    # 1e
+    sys.stdout = open('./results/baseline/1e.txt', 'w')
+    evaluate_all(link_b_demo_list, hyp_1_e, gold_path)
+
+    #===========================================================================
+
+    hyp_2_a = './data/final/test/configuration2/a'
+    hyp_2_b = './data/final/test/configuration2/b'
+    hyp_2_c = './data/final/test/configuration2/c'
+
+    # CONFIG 2
+    # 2a
+
+    # 2b
+
+    # 2c
+
+    #===========================================================================
+
+    hyp_3_a = './data/final/test/configuration3/a'
+    hyp_3_b = './data/final/test/configuration3/b'
+
+    # CONFIG 3
+    # 3a
+
+    # 3b
 
 
-    d = MotionTypeDemo(test_path = x, gold_path = y)
-    d.evaluate()
-       
-    d = MotionClassDemo(test_path = x, gold_path = y)
-    d.evaluate()
-          
-    d = MotionSenseDemo(test_path = x, gold_path = y)
-    d.evaluate()

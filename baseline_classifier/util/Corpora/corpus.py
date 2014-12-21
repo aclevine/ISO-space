@@ -200,7 +200,7 @@ class Document(BS):
         )).TOKENS
         elements = [u'\n', text, u'\n', tags, u'\n', tokens, u'\n']
         for element in elements:
-            if element:
+            if element: # if missing tags, system will crash
                 root.append(element)
         xml += unicode(root)
         return xml

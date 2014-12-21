@@ -26,8 +26,9 @@ def get_entity_tag_indices(sentence, tag_dict):
 
 # DEMO
 class EntityDemo(Demo):
-    def __init__(self, train_path='./data/train_dev', test_path = './data/test_dev'):
-        super(EntityDemo, self).__init__(train_path = train_path, test_path = test_path)
+    def __init__(self, train_path = '', test_path = '', gold_path = ''):
+        super(EntityDemo, self).__init__(train_path = train_path, test_path = test_path, 
+                                         gold_path = gold_path)
         self.indices_function = get_entity_tag_indices
         self.extent_class = EntityTag
 

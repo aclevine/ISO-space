@@ -47,7 +47,7 @@ class MoveLinkTag(PathTag):
     def source(self):
         '''source IDREF'''
         return self.tag_position('source')
-        
+
     def goal(self):
         '''goal IDREF'''
         return self.tag_position('goal')
@@ -76,6 +76,32 @@ class MoveLinkTag(PathTag):
         '''motion_signalID IDREFS'''
         return self.tag_position('motion_signalID')
 
+
+    # for evaluator
+    def motion_signal_extents(self):
+        self.tag.get('goal_reached', '')
+        return
+    
+    def mover_extents(self):
+        self.tag.get('goal_reached', '')        
+        return
+    
+    def source_extents(self):
+        self.tag.get('source', '')
+        return
+    
+    def goal_extents(self):
+        self.tag.get('goal', '')
+        return
+    
+    def mid_point_extents(self):
+        return
+
+
+
+
+
+
     # FEATURE EXTRACT
     def prev_tag_count(self):
         return {'prev_tag_count': len(self.prev_tags)}
@@ -101,8 +127,9 @@ class MoveLinkTag(PathTag):
 
 # DEMO
 class MoveLinkDemo(Demo):
-    def __init__(self, train_path='./data/train_dev', test_path = './data/test_dev'):
-        super(MoveLinkDemo, self).__init__(train_path = train_path, test_path = test_path)
+    def __init__(self, train_path='', test_path = '', gold_path = ''):
+        super(MoveLinkDemo, self).__init__(train_path = train_path, test_path = test_path,
+                                           gold_path = gold_path)
         self.indices_function = get_motion_tag_indices
         self.extent_class = MoveLinkTag
 

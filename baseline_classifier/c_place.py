@@ -24,8 +24,9 @@ def get_place_tag_indices(sentence, tag_dict):
 
 # DEMO
 class PlaceDemo(Demo):
-    def __init__(self, train_path='./data/train_dev', test_path = './data/test_dev'):
-        super(PlaceDemo, self).__init__(train_path = train_path, test_path = test_path)
+    def __init__(self, train_path = '', test_path = '', gold_path = ''):
+        super(PlaceDemo, self).__init__(train_path = train_path, test_path = test_path, 
+                                         gold_path = gold_path)
         self.indices_function = get_place_tag_indices
         self.extent_class = PlaceTag
 
@@ -62,6 +63,7 @@ class PlaceModDemo(PlaceDemo):
                 ]
 
 if __name__ == "__main__":
+    
     d = PlaceDimensionalityDemo()
     d.run_demo(verbose=2)
      

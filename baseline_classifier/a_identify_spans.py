@@ -105,7 +105,7 @@ class Spans_Demo(Demo):
         self.extent_class = Token
 
 
-def generate_doc(train_path, test_path, out_path):
+def generate_elements(train_path, test_path, out_path):
     ''' train model with corpus in train_path,
     classify spanning tags for docs in test_path, 
     write xmls of docs with new tags to out_path '''
@@ -158,6 +158,6 @@ if __name__ == "__main__":
     test_path = './data/final/test/configuration1/0'
     outpath = './data/final/test/configuration1/1'
     
-    generate_doc(train_path, test_path, outpath)
+    generate_elements(train_path, test_path, outpath)
     
     

@@ -28,7 +28,7 @@ class SignalTag(Tag):
         else:
             return 'NOT_DIRECTIONAL'
     
-# DEMO
+# FILTER
 def is_signal_tag(tag):
     tag_id = tag.get('id', '')
     return bool(re.findall('^s\d+', tag_id))
@@ -36,9 +36,11 @@ def is_signal_tag(tag):
 def get_signal_tag_indices(sentence, tag_dict):
     return get_tag_and_no_tag_indices(sentence, tag_dict, is_signal_tag)
 
+
+# MODELS
 class SignalDemo(Demo):
-    def __init__(self, train_path='./data/train_dev', test_path = './data/test_dev'):
-        super(SignalDemo, self).__init__(train_path = train_path, test_path = test_path)
+    def __init__(self, train_path = '', test_path = '', gold_path = ''):
+        super(SignalDemo, self).__init__(train_path = train_path, test_path = test_path, gold_path = gold_path)
         self.indices_function = get_signal_tag_indices
         self.extent_class = SignalTag
 

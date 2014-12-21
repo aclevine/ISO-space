@@ -11,14 +11,11 @@ PATH, PLACE, MOTION, NONMOTION_EVENT, SPATIAL_ENTITY,
 '''
 
 #===============================================================================
-from util.Corpora.corpus import Extent, Corpus, HypotheticalCorpus
-from util.demo import Demo
+from util.Corpora.corpus import Extent, HypotheticalCorpus
+from util.demo import Demo, copy_folder
 import re
 import nltk
 import os
-from a_identify_spans import Spans_Demo
-from bs4.element import Tag
-
 #===============================================================================
 type_keys = {'PATH': ['p'], 'PLACE': ['pl'], 'MOTION': ['m'], 'NONMOTION_EVENT': ['e'],
              'SPATIAL_ENTITY': ['se'],  # spatial elements
@@ -159,10 +156,9 @@ def get_tag_only_indices(sentence, tag_dict):
     return get_tag_and_no_tag_indices(sentence, tag_dict, has_tag)
 
 class TypesDemo(Demo):
-    def __init__(self, type_name, train_path='./data/training', test_path = './data/test_dev_b', 
-                 gold_path = '.data/gold_dev', split=0.8):
+    def __init__(self, type_name, train_path, test_path, gold_path):
         super(TypesDemo, self).__init__(train_path = train_path, test_path = test_path, 
-                                         gold_path = gold_path, split = split)
+                                         gold_path = gold_path)
         self.feature_functions = [lambda x: x.curr_token(),
                                   lambda x: x.prev_n_bag_of_words(3),
                                   lambda x: x.next_n_bag_of_words(3)]
@@ -172,17 +168,21 @@ class TypesDemo(Demo):
 
 #===============================================================================
 
-def generate_documents(train_path, test_path, clean_path, out_path):
-    tag_types = ['PATH', 'PLACE', 
-                'MOTION', 'NONMOTION_EVENT',
-                'SPATIAL_ENTITY', 'MOTION_SIGNAL', 
-                'SPATIAL_SIGNAL',
-                 ]
-    # clean data to add tags to
+def generate_tags(train_path, test_path, clean_path, out_path):
+    tag_types = {'PATH': {'form': '', 'countable': '', 'dimensionality': '', 'mod': ''}, 
+                 'PLACE': {'form': '', 'countable': '', 'dimensionality': '', 'mod': ''}, 
+                'MOTION': {'motion_class': '', 'motion_sense': '', 'motion_type': ''},
+                'NONMOTION_EVENT': {'mod': '', 'countable': ''},
+                'SPATIAL_ENTITY': {'form': '', 'countable': '', 'dimensionality': '', 'mod': ''}, 
+                'MOTION_SIGNAL': {'motion_signal_type': ''}, 
+                'SPATIAL_SIGNAL': {'semantic_type': ''},
+                }
+    
+    # clean data to write tags to
     clean_corpus = HypotheticalCorpus(clean_path)
     clean_data = list(clean_corpus.documents())
    
-    for type_name in tag_types:
+    for type_name, type_fields in tag_types.iteritems():
         # generate labels
         demo = TypesDemo(type_name, train_path, test_path)
         pred, test_data = demo.generate_labels()
@@ -208,25 +208,30 @@ def generate_documents(train_path, test_path, clean_path, out_path):
                        'start': extent.tag['start'], 
                        'end': extent.tag['end'],
                        'text': extent.tag['text'],
-                       'id': '{}{}'.format(type_keys[type_name][0], id_number)
+                       'id': '{}{}'.format(type_keys[type_name][0], id_number),
                        }
+                tag.update(type_fields)
                 curr_doc.insert_tag(tag)
                 id_number += 1
+        # switch to established files
         curr_doc.save_xml(os.path.join(out_path, doc_name))
         clean_corpus = HypotheticalCorpus(out_path)
         clean_data = list(clean_corpus.documents())
 
-
-
 #===============================================================================
-
 
 if __name__ == "__main__":
 
-    train_path = './data/dev/training'
-    test_path = './data/dev/test/configuration1/1'
-    out_path = './data/dev/test/configuration1/a'    
-    clean_path = './data/dev/test/configuration1/0' 
+    train_path = './data/training'
+    test_path = './data/final/test/configuration1/1'
+    clean_path = './data/final/test/configuration1/0' 
 
-    generate_documents(train_path, test_path, clean_path, out_path)
+    hyp_a = './data/final/test/configuration1/a'    
+    hyp_b = './data/final/test/configuration1/b'   
+    hyp_c = './data/final/test/configuration1/c'   
 
+    generate_tags(train_path, test_path, clean_path, hyp_a)
+
+    # copy to next stages
+    copy_folder(hyp_a, hyp_b)
+    copy_folder(hyp_a, hyp_c)
