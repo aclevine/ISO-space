@@ -18,15 +18,15 @@ class SignalTag(Tag):
 
     def is_directional(self):
         if self.tag['semantic_type'] in ['DIR_TOP', 'TOPOLOGICAL']:
-            return 'TOPOLOGICAL'
+            return True
         else:
-            return 'NOT_TOPOLOGICAL'
+            return False
             
     def is_topological(self):
         if self.tag['semantic_type'] in ['DIR_TOP', 'DIRECTIONAL']:
-            return 'DIRECTIONAL'
+            return True
         else:
-            return 'NOT_DIRECTIONAL'
+            return False
     
 # FILTER
 def is_signal_tag(tag):
@@ -40,7 +40,8 @@ def get_signal_tag_indices(sentence, tag_dict):
 # MODELS
 class SignalDemo(Demo):
     def __init__(self, train_path = '', test_path = '', gold_path = ''):
-        super(SignalDemo, self).__init__(train_path = train_path, test_path = test_path, gold_path = gold_path)
+        super(SignalDemo, self).__init__(train_path = train_path, test_path = test_path, 
+                                         gold_path = gold_path)
         self.indices_function = get_signal_tag_indices
         self.extent_class = SignalTag
 

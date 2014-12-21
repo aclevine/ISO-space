@@ -16,8 +16,8 @@ class Alphabet(object):
     instead of label string space.
     """
     def __init__(self):
-        self._index_to_label = {0: 'FALSE'}
-        self._label_to_index = {'FALSE': 0}
+        self._index_to_label = {0: 'False'}
+        self._label_to_index = {'False': 0}
         self.num_labels = 1
 
     def size(self):

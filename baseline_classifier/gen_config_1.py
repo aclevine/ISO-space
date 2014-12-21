@@ -4,8 +4,8 @@ Created on Dec 20, 2014
 @author: Aaron Levine
 @email: aclevine@brandeis.edu
 '''
-from a_identify_spans import generate_elements
 from util.demo import copy_folder
+from a_identify_spans import generate_elements
 from b_identify_types import generate_tags
 from d_fill_link_attrs import generate_qslinks, generate_olinks,\
     generate_movelinks

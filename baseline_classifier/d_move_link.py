@@ -76,7 +76,6 @@ class MoveLinkTag(PathTag):
         '''motion_signalID IDREFS'''
         return self.tag_position('motion_signalID')
 
-
     # for evaluator
     def motion_signal_extents(self):
         self.tag.get('goal_reached', '')
@@ -96,11 +95,6 @@ class MoveLinkTag(PathTag):
     
     def mid_point_extents(self):
         return
-
-
-
-
-
 
     # FEATURE EXTRACT
     def prev_tag_count(self):

@@ -37,7 +37,9 @@ def generate_motion_attr(train_path, test_path, out_path):
                                        b=extent.lex[0].begin, 
                                        c=extent.lex[-1].end)
 
-        tag = extent.document.query_extents(['MOTION'], extent.lex[0].begin, extent.lex[-1].end)[0]
+        tags = extent.document.query_extents(['MOTION'], extent.lex[0].begin, extent.lex[-1].end)
+        if tags:
+            tag = tags[0]        
         tag.attrs['motion_type'] = motion_type_labels[offsets]
         tag.attrs['motion_class'] = motion_class_labels[offsets]
         tag.attrs['motion_sense'] = motion_sense_labels[offsets]
@@ -61,8 +63,10 @@ def generate_motion_signal_attr(train_path, test_path, out_path):
         offsets = "{a},{b},{c}".format(a=extent.basename,
                                        b=extent.lex[0].begin, 
                                        c=extent.lex[-1].end)
-        tag = extent.document.query_extents(['MOTION_SIGNAL'], extent.lex[0].begin, extent.lex[-1].end)[0]
-        tag.attrs['motion_signal_type'] = motion_signal_type_labels[offsets]
+        tags = extent.document.query_extents(['MOTION_SIGNAL'], extent.lex[0].begin, extent.lex[-1].end)
+        if tags:
+            tag = tags[0]
+            tag.attrs['motion_signal_type'] = motion_signal_type_labels[offsets]
         if doc_name != extent.document.basename:
             doc_name = extent.document.basename
             extent.document.save_xml(os.path.join('data', 'test_dev', doc_name))
@@ -89,9 +93,11 @@ def generate_event_attr(train_path, test_path, out_path):
                                        b=extent.lex[0].begin, 
                                        c=extent.lex[-1].end)
  
-        tag = extent.document.query_extents(['NONMOTION_EVENT'], extent.lex[0].begin, extent.lex[-1].end)[0]
-        tag.attrs['mod'] = event_mod_labels[offsets]
-        tag.attrs['countable'] = event_count_labels[offsets]
+        tags = extent.document.query_extents(['NONMOTION_EVENT'], extent.lex[0].begin, extent.lex[-1].end)
+        if tags:
+            tag = tags[0]
+            tag.attrs['mod'] = event_mod_labels[offsets]
+            tag.attrs['countable'] = event_count_labels[offsets]
         if doc_name != extent.document.basename:
             doc_name = extent.document.basename
             extent.document.save_xml(os.path.join('data', 'test_dev', doc_name))
@@ -124,11 +130,13 @@ def generate_path_attr(train_path, test_path, out_path):
                                        b=extent.lex[0].begin, 
                                        c=extent.lex[-1].end)
  
-        tag = extent.document.query_extents(['PATH'], extent.lex[0].begin, extent.lex[-1].end)[0]
-        tag.attrs['form'] = path_form_labels[offsets]
-        tag.attrs['countable'] = path_count_labels[offsets]  
-        tag.attrs['dimensionality'] = path_dimension_labels[offsets]
-        tag.attrs['mod'] = path_mod_labels[offsets]
+        tags = extent.document.query_extents(['PATH'], extent.lex[0].begin, extent.lex[-1].end)
+        if tags:
+            tag = tags[0]
+            tag.attrs['form'] = path_form_labels[offsets]
+            tag.attrs['countable'] = path_count_labels[offsets]  
+            tag.attrs['dimensionality'] = path_dimension_labels[offsets]
+            tag.attrs['mod'] = path_mod_labels[offsets]
         if doc_name != extent.document.basename:
             doc_name = extent.document.basename
             extent.document.save_xml(os.path.join('data', 'test_dev', doc_name))
@@ -161,11 +169,13 @@ def generate_place_attr(train_path, test_path, out_path):
                                        b=extent.lex[0].begin, 
                                        c=extent.lex[-1].end)
  
-        tag = extent.document.query_extents(['PLACE'], extent.lex[0].begin, extent.lex[-1].end)[0]
-        tag.attrs['form'] = place_form_labels[offsets]
-        tag.attrs['countable'] = place_count_labels[offsets]  
-        tag.attrs['dimensionality'] = place_dimension_labels[offsets]
-        tag.attrs['mod'] = place_mod_labels[offsets]
+        tags = extent.document.query_extents(['PLACE'], extent.lex[0].begin, extent.lex[-1].end)
+        if tags:
+            tag = tags[0]
+            tag.attrs['form'] = place_form_labels[offsets]
+            tag.attrs['countable'] = place_count_labels[offsets]  
+            tag.attrs['dimensionality'] = place_dimension_labels[offsets]
+            tag.attrs['mod'] = place_mod_labels[offsets]
         if doc_name != extent.document.basename:
             doc_name = extent.document.basename
             extent.document.save_xml(os.path.join('data', 'test_dev', doc_name))
@@ -198,11 +208,13 @@ def generate_entity_attr(train_path, test_path, out_path):
                                        b=extent.lex[0].begin, 
                                        c=extent.lex[-1].end)
          
-        tag = extent.document.query_extents(['SPATIAL_ENTITY'], extent.lex[0].begin, extent.lex[-1].end)[0]
-        tag.attrs['form'] = entity_form_labels[offsets]
-        tag.attrs['countable'] = entity_count_labels[offsets]  
-        tag.attrs['dimensionality'] = entity_dimension_labels[offsets]
-        tag.attrs['mod'] = entity_mod_labels[offsets]
+        tags = extent.document.query_extents(['SPATIAL_ENTITY'], extent.lex[0].begin, extent.lex[-1].end)
+        if tags:
+            tag = tags[0]
+            tag.attrs['form'] = entity_form_labels[offsets]
+            tag.attrs['countable'] = entity_count_labels[offsets]  
+            tag.attrs['dimensionality'] = entity_dimension_labels[offsets]
+            tag.attrs['mod'] = entity_mod_labels[offsets]
     curr_doc.save_xml(os.path.join(out_path, doc_name))
 
 
@@ -223,7 +235,9 @@ def generate_signal_attr(train_path, test_path, out_path):
                                        b=extent.lex[0].begin, 
                                        c=extent.lex[-1].end)
  
-        tag = extent.document.query_extents(['SPATIAL_SIGNAL'], extent.lex[0].begin, extent.lex[-1].end)[0]
+        tags = extent.document.query_extents(['SPATIAL_SIGNAL'], extent.lex[0].begin, extent.lex[-1].end)
+        if tags:
+            tag = tags[0]
         tag.attrs['semantic_type'] = signal_type_labels[offsets]
     curr_doc.save_xml(os.path.join(out_path, doc_name))
 

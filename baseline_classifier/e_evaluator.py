@@ -21,8 +21,6 @@ class SpatialElementDemo(Demo):
         self.indices_function = get_tag_and_no_tag_indices
         self.extent_class = Extent
 
-
-
 def evaluate_all(demo_list, hyp_path, gold_path):
 
     p = []
@@ -54,10 +52,11 @@ if __name__ == "__main__":
                  'SPATIAL_ENTITY'] 
 
     se_b_demo_list = dict([(name, 
-                            lambda test_path, gold_path: TypesDemo(name, 
-                                                                   train_path = '',
-                                                                   test_path = test_path, 
-                                                                   gold_path = gold_path)) 
+                            lambda test_path, 
+                                gold_path: TypesDemo(name, 
+                                                     train_path = '',
+                                                     test_path = test_path, 
+                                                     gold_path = gold_path)) 
                             for name in tag_types])
 
     se_c_demo_list = {
@@ -85,9 +84,16 @@ if __name__ == "__main__":
                      }
 
     link_a_demo_list = {
-                        'MOVELINK': 1, # use the "has link tag" label
-                        'QSLINK': 1, 
-                        'OLINK': 1,
+                        # motion assures movelink
+                        'MOVELINK': lambda test_path, gold_path: 
+                                        TypesDemo('MOTION', 
+                                                  train_path = '',
+                                                  test_path = test_path, 
+                                                  gold_path = gold_path), 
+                        # TOP spatial signal assures qslink
+                        'QSLINK': SignalTopologicalDemo, 
+                        # DIR spatial signal assures qslink                        
+                        'OLINK': SignalDirectionalDemo,
                         }
 
     # THESE ALL NEED TO CHANGE TO LABEL EXTENT EXTRACTORS
@@ -135,14 +141,14 @@ if __name__ == "__main__":
 #     # 1c
 #     sys.stdout = open('./results/baseline/1c.txt', 'w')    
 #     evaluate_all(se_c_demo_list, hyp_1_c, gold_path)
-#     
-#     # 1d
-#     sys.stdout = open('./results/baseline/1d.txt', 'w')    
-#     evaluate_all(link_a_demo_list, hyp_1_d, gold_path)
+     
+    # 1d
+    sys.stdout = open('./results/baseline/1d.txt', 'w')    
+    evaluate_all(link_a_demo_list, hyp_1_d, gold_path)
 
     # 1e
-    sys.stdout = open('./results/baseline/1e.txt', 'w')
-    evaluate_all(link_b_demo_list, hyp_1_e, gold_path)
+#     sys.stdout = open('./results/baseline/1e.txt', 'w')
+#     evaluate_all(link_b_demo_list, hyp_1_e, gold_path)
 
     #===========================================================================
 
