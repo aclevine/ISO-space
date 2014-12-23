@@ -5,19 +5,21 @@
 import os, sys, inspect
 from os.path import basename
 cmd_subfolder = os.path.realpath(os.path.abspath(os.path.join(os.path.split(inspect.getfile( inspect.currentframe() ))[0],"baseline_classifier/Corpora")))
-cmd_subfolder = cmd_subfolder.replace('/crf', '')
+cmd_subfolder = cmd_subfolder.replace('/feature_engineering', '')
 if cmd_subfolder not in sys.path:
     sys.path.insert(0, cmd_subfolder)
 import xml.etree.ElementTree as ET
 import tokenizer
 import re
+import operator
 
+"""
 import stanford.taggers.pos as pos
 import stanford.taggers.ner as ner
 from sparser.sparser import p2edges as p
 from util.unicode import ureplace as u
 from util.unicode import u2ascii
-
+"""
                                       
 
 SPRL_FILE = "/users/sethmachine/desktop//CP.gold/45 N 22 E.xml"
@@ -237,11 +239,13 @@ class TagDoc:
         self.categories = ISO_CATEGORIES
         self.root = self.tree.getroot()
         self.sentences = [child for child in self.root.find('TOKENS')]
+        self.tokens = [token for sent in self.sentences for token in sent.getchildren()]
         self.text = self.root.find(TEXT).text
         self.tokenizer = tokenizer.Tokenizer(self.text)
         self.tokenizer.tokenize_text()
         self.xmlTags = [child for child in self.root.find('TAGS') if child.tag in self.categories and child.attrib['text']]
         self.tags = [Tag(child.tag, child.attrib, self.text, self.tokenizer) for child in self.root.find(TAGS)]
+        self.links = [child for child in self.tags if 'LINK' in child.name]
         self.tagDict = getTagDict(self.tags)
 
     def _get_tags(self):
@@ -262,6 +266,7 @@ class TagDir:
         self.docs = [TagDoc(f) for f in self.files]
         self.texts = [doc.text for doc in self.docs]
         self.tags = flatten([doc.tags for doc in self.docs])
+        self.tokens = flatten([doc.tokens for doc in self.docs])
         self.tagDict = getTagDict(self.tags)
 
     def get_multiwords(self, name='TRAJECTOR'):
@@ -323,10 +328,33 @@ def writeTagTypeCounts(tagdocs):
             print>>w, key + '\t' + str(d[key])
         print>>w, '\n'
     w.close()
+
+def mwlinks(links):
+	l = []
+	for link in links:
+		if len(link.attrib['fromText'].split(' ')) > 1 or len(link.attrib['toText'].split(' ')) > 1:
+			l.append(link)
+	return l
             
 
 #gold = TagDir(ISO_GOLD_DIR)
-#goldplus = TagDir('/users/sethmachine/desktop/Tokenized++')
+#g = TagDir('/users/sethmachine/desktop/Train++')
+
+#qs = [link for doc in g.docs for link in doc.links if link.name == 'QSLINK']
+"""
+tagset = {x.name for x in g.tags if 'text' in x.attrib}
+extents = {x for x in g.tags if 'text' in x.attrib}
+extents = {x.attrib['text'] for x in extents}
+counts = {}
+for lex in g.tokens:
+    if lex.text in counts:
+        counts[lex.text] += 1
+    else:
+        counts[lex.text] = 1
+s = sorted(counts.items(), key=operator.itemgetter(1), reverse=True)
+"""
+
+#counts.sort(key=lambda x: counts[x])
 
 #lazy (1 doc)
 #doc = TagDoc("/users/sethmachine/desktop/Tokenized/ANC/WhereToJapan/Asakusa.xml")

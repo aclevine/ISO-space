@@ -66,12 +66,14 @@ class Edge(object):
     """
     def __init__(self, edgeStr):
         m = edge_value_pattern.search(edgeStr)
+        self.m = m
         self.edgeStr = edgeStr
-        self.edges = [x for x in m.group('edge').split(' ') if x]
-        self.label1 = m.group('label1')
-        self.word = m.group('word')
-        self.label2 = m.group('label2')
-        self.edgeDict = {x.replace('e', ''):[] for x in self.edges}
+        if m:
+            self.edges = [x for x in m.group('edge').split(' ') if x]
+            self.label1 = m.group('label1')
+            self.word = m.group('word')
+            self.label2 = m.group('label2')
+            self.edgeDict = {x.replace('e', ''):[] for x in self.edges}
         self.keyvalues = {}
         
 
@@ -100,6 +102,13 @@ def split_edge(edge):
 
 vill_pattern = re.compile(r'(the )?(village|town) of')
 comm_pattern = re.compile(r'(?P<l>[0-9]+),(?P<r>[0-9]+)')
+
+def clean(string):
+    string = arrows_pattern.sub('', string)
+    string = string.replace('#ref-category ', '')
+    string = string.replace('#named-object ', '')
+    return string
+    
 
 def p2edges(string, sparser_path=SPARSER, split=False):
     """Wrapper around p(arse) to get actual edges output.
@@ -141,11 +150,13 @@ def p2edges(string, sparser_path=SPARSER, split=False):
         new_edge = Edge(edgeStr)
         edge_keyvalues = {}
         cached = None
+        if not new_edge.m:
+            continue
         for e in new_edge.edgeDict:
             for i in xrange(0, len(edges)):
                 #print edges[i][0], e
                 if edges[i][0] == e:
-                    edge_keyvalues = {x[0]:arrows_pattern.sub('', x[1]) for x in edges[i][1]}
+                    edge_keyvalues = {x[0]:clean(x[1]) for x in edges[i][1]}
                     new_edge.keyvalues[e] = edge_keyvalues
                     cached = edges[i]
                     break

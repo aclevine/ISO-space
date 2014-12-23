@@ -47,6 +47,9 @@ class Instance(object):
             
         """
         self.features[feature[KEY]] = feature[VALUE]
+
+    def addDict(self, featuredict):
+        self.features = dict(self.features.items() + featuredict.items())
     
     def __repr__(self):
         string = '\t'.join([self.label] +

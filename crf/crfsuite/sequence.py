@@ -26,10 +26,14 @@ class Sequence(object):
     Attributes:
         instances: A list of linearly CRFSuite Instances,
             each of which has a label and a set of discrete features.
+        window_features: An exhaustive list of functions taking a list of
+            Instances and adding in window based features.  These are called
+            right before printing the formatted string to output.
         
     """
-    def __init__(self):
+    def __init__(self, window_features=[]):
         self.instances = []
+        self.window_features = window_features
 
     def add(self, instance):
         """Adds an instance to the training sequence.
@@ -41,7 +45,18 @@ class Sequence(object):
             self.instances[-1].eos = False
         self.instances.append(instance)
 
+    def _feature_extract(self):
+        """Applies window feature extraction functions to instances.
+
+        """
+        for function in self.window_features:
+            function(self.instances)
+            
+        
+
     def __repr__(self):
+        if self.window_features:
+            self._feature_extract()
         #add in the __BOS__, __EOS__ features
         self.instances[0].bos = True
         self.instances[-1].eos = True
