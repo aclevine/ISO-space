@@ -50,7 +50,8 @@ print args.source
 xmls = getXmls(args.source)
 #gold = process.td.TagDir(args.source)
 
-f = Feature_Process(xmls, golddir=args.source, renew=False, debug=False, heavy=True)
+f = Feature_Process(xmls, golddir=args.source, renew=False, debug=False)
+f.heavy = True
 
 f.process()
 

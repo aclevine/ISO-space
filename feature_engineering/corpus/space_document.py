@@ -18,7 +18,7 @@ class Space_Document(object):
         self.root = ET.parse(filepath).getroot()
         self.text = self.root.find('TEXT').text
         self.ET_tags = self.root.find('TAGS')
-        self.tags = [child for child in self.ET_tags if 'LINK' not in child.tag]
+        self.tags = [child for child in self.ET_tags if 'LINK' not in child.tag and 'start' in child.attrib]
         self.tags.sort(key=lambda x: int(x.attrib['start']))
         self.links = [child for child in self.ET_tags if 'LINK' in child.tag]
         self.sentences = [child for child in self.root.find('TOKENS')]
@@ -31,4 +31,4 @@ class Space_Document(object):
         
         
 
-t = Space_Document('/users/sethmachine/desktop/Tokenized/RFC/Amazon.xml')
+#t = Space_Document('/users/sethmachine/desktop/Tokenized/RFC/Amazon.xml')

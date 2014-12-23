@@ -338,9 +338,9 @@ def mwlinks(links):
             
 
 #gold = TagDir(ISO_GOLD_DIR)
-g = TagDir('/users/sethmachine/desktop/Train++')
+#g = TagDir('/users/sethmachine/desktop/Train++')
 
-qs = [link for doc in g.docs for link in doc.links if link.name == 'QSLINK']
+#qs = [link for doc in g.docs for link in doc.links if link.name == 'QSLINK']
 """
 tagset = {x.name for x in g.tags if 'text' in x.attrib}
 extents = {x for x in g.tags if 'text' in x.attrib}

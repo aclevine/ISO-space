@@ -31,7 +31,7 @@ xml_tokens_pattern = re.compile(r'<TOKENS>.+</TOKENS>', re.DOTALL)
 sentence_pattern = re.compile(r'<s>.+?</s>', re.DOTALL)
 lex_attrs_pattern = re.compile(r'(?<=<lex)[^>]+')
 
-d = Space_Document('/users/sethmachine/desktop/Tokenized/RFC/Amazon.xml')
+#d = Space_Document('/users/sethmachine/desktop/Tokenized/RFC/Amazon.xml')
 
 """
 def process(tagdoc, golddir, newdir='', suffix='++', renew=False, debug=False):
@@ -152,11 +152,11 @@ class Feature_Process(object):
                     new_lex.add(('label', label))
                     new_lex.add(('word', new_lex.text.encode('utf-8')))
                     if type(tag) != type(None):
-                            new_lex.addAll([(key, tag.attrib[key]) for key in tag.attrib])
+                            new_lex.addAll([(key.encode('utf-8'), tag.attrib[key].encode('utf-8')) for key in tag.attrib])
                     greedyEdge = p(tokens[j], split=True)
                     if greedyEdge:
                         gedge = greedyEdge[0]
-                        if gedge.keyvalues:
+                        if gedge.keyvalues and gedge.m:
                             keyvalues = gedge.keyvalues[gedge.keyvalues.keys()[0]]
                             new_lex.addAll([('L' + key, keyvalues[key]) for key in keyvalues])
                     if pos_tags:
@@ -179,7 +179,7 @@ class Feature_Process(object):
             print>>w, new_text
             w.close()
             #print test(tagdoc, td.TagDoc(path))
-
+"""
 f = Feature_Process([d.filepath], GOLDDIR,
                     newdir='YOO', renew=True, debug=True)
 
@@ -187,7 +187,7 @@ f.heavy=True
 f.debug = False
 
 f.process()
-
+"""
             
 """
 def process(tagdoc, golddir, newdir='', suffix='++', renew=False, debug=False):

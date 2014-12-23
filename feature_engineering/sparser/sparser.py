@@ -66,12 +66,14 @@ class Edge(object):
     """
     def __init__(self, edgeStr):
         m = edge_value_pattern.search(edgeStr)
+        self.m = m
         self.edgeStr = edgeStr
-        self.edges = [x for x in m.group('edge').split(' ') if x]
-        self.label1 = m.group('label1')
-        self.word = m.group('word')
-        self.label2 = m.group('label2')
-        self.edgeDict = {x.replace('e', ''):[] for x in self.edges}
+        if m:
+            self.edges = [x for x in m.group('edge').split(' ') if x]
+            self.label1 = m.group('label1')
+            self.word = m.group('word')
+            self.label2 = m.group('label2')
+            self.edgeDict = {x.replace('e', ''):[] for x in self.edges}
         self.keyvalues = {}
         
 
@@ -148,6 +150,8 @@ def p2edges(string, sparser_path=SPARSER, split=False):
         new_edge = Edge(edgeStr)
         edge_keyvalues = {}
         cached = None
+        if not new_edge.m:
+            continue
         for e in new_edge.edgeDict:
             for i in xrange(0, len(edges)):
                 #print edges[i][0], e

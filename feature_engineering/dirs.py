@@ -69,7 +69,7 @@ def setup_newdir(filepath, olddir, newdir='', suffix='++', renew=False):
     print path
     if not renew:
         if os.path.exists(path): #don't redo our existing work :]
-            print test(td.TagDoc(filepath), td.TagDoc(path))
+            #print test(td.TagDoc(filepath), td.TagDoc(path))
             return
     return path
 
