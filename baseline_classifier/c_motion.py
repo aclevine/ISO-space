@@ -7,7 +7,7 @@ Created on Oct 27, 2014
 c. Identify their attributes according to type.
 '''
 from b_identify_types import Tag, get_tag_and_no_tag_indices
-from util.demo import Demo
+from util.iso_space_classifier import ISOSpaceClassifier
 import re
 import os
 
@@ -43,14 +43,14 @@ def get_motion_tag_indices(sentence, tag_dict):
     return get_tag_and_no_tag_indices(sentence, tag_dict, is_motion_tag)
 
 # DEMOS
-class MotionDemo(Demo):
+class MotionClassifier(ISOSpaceClassifier):
     def __init__(self, train_path = '', test_path = '', gold_path = ''):
-        super(MotionDemo, self).__init__(train_path = train_path, test_path = test_path,
+        super(MotionClassifier, self).__init__(train_path = train_path, test_path = test_path,
                                          gold_path = gold_path)
         self.indices_function = get_motion_tag_indices
         self.extent_class = MotionTag
 
-class MotionTypeDemo(MotionDemo):
+class MotionTypeClassifier(MotionClassifier):
     def get_label_function(self):
         return lambda x: str(x.motion_type())
 
@@ -63,7 +63,7 @@ class MotionTypeDemo(MotionDemo):
                 lambda x: x.curr_pos_tags()
                 ]
 
-class MotionClassDemo(MotionDemo):
+class MotionClassClassifier(MotionClassifier):
     def get_label_function(self):
         return lambda x: str(x.motion_class())
 
@@ -71,7 +71,7 @@ class MotionClassDemo(MotionDemo):
         return [lambda x: x.curr_token(),
                 ]
 
-class MotionSenseDemo(MotionDemo):
+class MotionSenseClassifier(MotionClassifier):
     def get_label_function(self):
         return lambda x: str(x.motion_sense())
 
@@ -80,22 +80,9 @@ class MotionSenseDemo(MotionDemo):
                 ]
 
 
-class IsMovelinkDemo(MotionDemo):
+class IsMovelinkClassifier(MotionClassifier):
     def get_label_function(self):
         return lambda x: str(x.is_move_link())
 
     def get_feature_functions(self):
         return []
-
-
-if __name__ == "__main__":
-
-    d = MotionTypeDemo()
-    d.run_demo()
-       
-    d = MotionClassDemo()
-    d.run_demo()
-          
-    d = MotionSenseDemo()
-    d.run_demo()
-

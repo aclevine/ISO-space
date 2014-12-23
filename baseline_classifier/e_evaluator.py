@@ -7,13 +7,13 @@ from b_identify_types import *
 from c_fill_tag_attrs import *
 from d_fill_link_attrs import *
 
-from util.demo import Demo
+from util.iso_space_classifier import ISOSpaceClassifier
 import sys
 import numpy as np
 
 
 # DEMO for SE.a task
-class SpatialElementDemo(Demo):
+class SpatialElementDemo(ISOSpaceClassifier):
     def __init__(self, test_path, gold_path):
         super(SpatialElementDemo, self).__init__(train_path = '', test_path = test_path, 
                                                  gold_path = gold_path)
@@ -57,65 +57,65 @@ tag_types = ['PATH', 'PLACE',
 
 se_b_demo_list = dict([(name, 
                         lambda test_path, 
-                            gold_path: TypesDemo(name, 
+                            gold_path: TypesClassifier(name, 
                                                  train_path = '',
                                                  test_path = test_path, 
                                                  gold_path = gold_path)) 
                         for name in tag_types])
 
 se_c_demo_list = {
-                  'MOTION - motion_type': MotionTypeDemo, 
-                  'MOTION - motion_class': MotionClassDemo, 
-                  'MOTION - motion_sense': MotionSenseDemo,
+                  'MOTION - motion_type': MotionTypeClassifier, 
+                  'MOTION - motion_class': MotionClassClassifier, 
+                  'MOTION - motion_sense': MotionSenseClassifier,
                  
-                  'NONMOTION_EVENT - mod': EventModDemo, 
-                  'NONMOTION_EVENT - countable': EventCountableDemo,
+                  'NONMOTION_EVENT - mod': EventModClassifier, 
+                  'NONMOTION_EVENT - countable': EventCountableClassifier,
                  
-                  'PATH - dimensionality': PathDimensionalityDemo, 
-                  'PATH - form': PathFormDemo, 
-                  'PATH - countable': PathCountableDemo, 
-                  'PATH - mod': PathModDemo,
+                  'PATH - dimensionality': PathDimensionalityClassifier, 
+                  'PATH - form': PathFormClassifier, 
+                  'PATH - countable': PathCountableClassifier, 
+                  'PATH - mod': PathModClassifier,
                   
-                  'PLACE - dimensionality': PlaceDimensionalityDemo, 
-                  'PLACE - form': PlaceFormDemo, 
-                  'PLACE - countable': PlaceCountableDemo, 
-                  'PLACE - mod': PlaceModDemo,
+                  'PLACE - dimensionality': PlaceDimensionalityClassifier, 
+                  'PLACE - form': PlaceFormClassifier, 
+                  'PLACE - countable': PlaceCountableClassifier, 
+                  'PLACE - mod': PlaceModClassifier,
                   
-                  'SPATIAL_ENTITY - dimensionality': EntityDimensionalityDemo, 
-                  'SPATIAL_ENTITY - form': EntityFormDemo, 
-                  'SPATIAL_ENTITY - countable': EntityCountableDemo, 
-                  'SPATIAL_ENTITY - mod': EntityModDemo,
+                  'SPATIAL_ENTITY - dimensionality': EntityDimensionalityClassifier, 
+                  'SPATIAL_ENTITY - form': EntityFormClassifier, 
+                  'SPATIAL_ENTITY - countable': EntityCountableClassifier, 
+                  'SPATIAL_ENTITY - mod': EntityModClassifier,
                  }
 
 link_a_demo_list = {
                     # motion assures movelink
                     'MOVELINK': lambda test_path, gold_path: 
-                                    TypesDemo('MOTION', 
+                                    TypesClassifier('MOTION', 
                                               train_path = '',
                                               test_path = test_path, 
                                               gold_path = gold_path), 
                     # TOP spatial signal assures qslink
-                    'QSLINK': SignalTopologicalDemo, 
+                    'QSLINK': SignalTopologicalClassifier, 
                     # DIR spatial signal assures qslink                        
-                    'OLINK': SignalDirectionalDemo,
+                    'OLINK': SignalDirectionalClassifier,
                     }
 
 link_b_demo_list = {
-                    'MOVELINK - source': MovelinkSourceExentsDemo,
-                    'MOVELINK - goal': MovelinkGoalExentsDemo,
-                    'MOVELINK - midPoint': MovelinkMidpointExentsDemo,
-                    'MOVELINK - landmark': MovelinkLandmarkDemo,
-                    'MOVELINK - motion': MovelinkLandmarkDemo,
-                    'MOVELINK - motion_signalID': MovelinkMotionSignalIDExentsDemo,
-                    'MOVELINK - pathID': MovelinkPathIDExentsDemo,
-                    'MOVELINK - goal_reached': MovelinkGoalReachedDemo,
+                    'MOVELINK - source': MovelinkSourceExentsClassifier,
+                    'MOVELINK - goal': MovelinkGoalExentsClassifier,
+                    'MOVELINK - midPoint': MovelinkMidpointExentsClassifier,
+                    'MOVELINK - landmark': MovelinkLandmarkClassifier,
+                    'MOVELINK - motion': MovelinkLandmarkClassifier,
+                    'MOVELINK - motion_signalID': MovelinkMotionSignalIDExentsClassifier,
+                    'MOVELINK - pathID': MovelinkPathIDExentsClassifier,
+                    'MOVELINK - goal_reached': MovelinkGoalReachedClassifier,
                      
-                    'QSLINK - relType': QSLinkRelTypeDemo,
+                    'QSLINK - relType': QSLinkRelTypeClassifier,
 
-                    'OLINK - referencePt': OLinkRefPtExtentDemo,                    
-                    'OLINK - relType': OLinkRelTypeDemo,
-                    'OLINK - projective': OLinkProjectiveDemo,
-                    'OLINK - frame_type': OLinkFrameTypeDemo,
+                    'OLINK - referencePt': OLinkRefPtExtentClassifier,                    
+                    'OLINK - relType': OLinkRelTypeClassifier,
+                    'OLINK - projective': OLinkProjectiveClassifier,
+                    'OLINK - frame_type': OLinkFrameTypeClassifier,
                     }
 
 
@@ -127,9 +127,9 @@ def evaluate_all(demo_list, hyp_path, gold_path):
     f = []
     a = []
     
-    for tag_name, Demo in demo_list.iteritems():
+    for tag_name, ISOSpaceClassifier in demo_list.iteritems():
         print '\n\n' + '=' * 10 + ' {} '.format(tag_name) + '=' * 10
-        d = Demo(test_path = hyp_path, gold_path = gold_path)
+        d = ISOSpaceClassifier(test_path = hyp_path, gold_path = gold_path)
         cm = d.evaluate()
         p.append(np.mean(cm.compute_precision()))
         r.append(np.mean(cm.compute_recall()))
@@ -150,7 +150,7 @@ def evaluate_links(hyp_path, gold_path):
     a = []
     
     print '=' * 10 + 'MOVELINK' + '=' * 10 
-    d = IsMovelinkDemo(test_path = hyp_path, gold_path = gold_path)
+    d = IsMovelinkClassifier(test_path = hyp_path, gold_path = gold_path)
     cm = d.evaluate_movelink()
     p.append(np.mean(cm.compute_precision()))
     r.append(np.mean(cm.compute_recall()))
@@ -158,7 +158,7 @@ def evaluate_links(hyp_path, gold_path):
     a.append(np.mean(cm.compute_accuracy()))
 
     print '=' * 10 + 'QSLINK' + '=' * 10 
-    d = IsOlinkDemo(test_path = hyp_path, gold_path = gold_path)
+    d = IsOlinkClassifier(test_path = hyp_path, gold_path = gold_path)
     cm = d.evaluate_qs_o_link()
     p.append(np.mean(cm.compute_precision()))
     r.append(np.mean(cm.compute_recall()))
@@ -166,7 +166,7 @@ def evaluate_links(hyp_path, gold_path):
     a.append(np.mean(cm.compute_accuracy()))
  
     print '=' * 10 + 'OLINK' + '=' * 10 
-    d = IsQSlinkDemo(test_path = hyp_path, gold_path = gold_path)
+    d = IsQSlinkClassifier(test_path = hyp_path, gold_path = gold_path)
     cm = d.evaluate_qs_o_link()
     p.append(np.mean(cm.compute_precision()))
     r.append(np.mean(cm.compute_recall()))
@@ -252,7 +252,5 @@ if __name__ == "__main__":
     hyp_3_a = './data/final/test/configuration3/a'
     hyp_3_b = './data/final/test/configuration3/b'
     config_3_eval(hyp_3_a, hyp_3_b, gold_path, outpath)
-
-
 
     

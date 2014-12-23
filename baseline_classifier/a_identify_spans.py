@@ -9,7 +9,7 @@ a) Identify spans of spatial elements including locations, paths, events and oth
 #===============================================================================
 from util.Corpora.corpus import Extent
 import nltk
-from util.demo import Demo
+from util.iso_space_classifier import ISOSpaceClassifier
 import os
 #===============================================================================
 
@@ -86,9 +86,9 @@ def get_token_indices(sentence, tag_dict):
         indices.append((start, end))
     return indices
 
-class Spans_Demo(Demo):
+class SpansClassifier(ISOSpaceClassifier):
     def __init__(self, train_path, test_path):
-        super(Spans_Demo, self).__init__(train_path = train_path, test_path = test_path)
+        super(SpansClassifier, self).__init__(train_path = train_path, test_path = test_path)
         self.feature_functions = [
                                     lambda x: x.upper_case(),
                                     lambda x: x.next_upper_case(),
@@ -110,7 +110,7 @@ def generate_elements(train_path, test_path, out_path):
     classify spanning tags for docs in test_path, 
     write xmls of docs with new tags to out_path '''
     #classify test_data
-    d = Spans_Demo(train_path, test_path)
+    d = SpansClassifier(train_path, test_path)
     pred, test_data = d.generate_labels()
 
     #parse into XML tags    
@@ -150,13 +150,9 @@ def generate_elements(train_path, test_path, out_path):
 if __name__ == "__main__":
     
     # TESTING
-#     d = Spans_Demo(train_path = './test_dev', test_path = './test_dev')
-#     d.run_demo(2)
-    
-    # GENERATE DATA
     train_path = './data/training'
-    test_path = './data/final/test/configuration1/0'
-    outpath = './data/final/test/configuration1/1'
+    test_path = './data/dev/test/configuration1/0'
+    outpath = './data/dev/test/configuration1/1'
     
     generate_elements(train_path, test_path, outpath)
     

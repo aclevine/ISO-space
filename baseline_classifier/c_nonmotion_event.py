@@ -5,7 +5,7 @@ Created on Nov 3, 2014
 '''
 from c_path import PathTag
 from b_identify_types import get_tag_and_no_tag_indices
-from util.demo import Demo
+from util.iso_space_classifier import ISOSpaceClassifier
 import re
 
 '''
@@ -28,14 +28,14 @@ def is_event_tag(tag):
 def get_event_tag_indices(sentence, tag_dict):
     return get_tag_and_no_tag_indices(sentence, tag_dict, is_event_tag)
 
-class EventDemo(Demo):
+class EventClassifier(ISOSpaceClassifier):
     def __init__(self, train_path = '', test_path = '', gold_path = ''):
-        super(EventDemo, self).__init__(train_path = train_path, test_path = test_path, 
+        super(EventClassifier, self).__init__(train_path = train_path, test_path = test_path, 
                                         gold_path = gold_path)
         self.indices_function = get_event_tag_indices
         self.extent_class = EventTag
 
-class EventCountableDemo(EventDemo):
+class EventCountableClassifier(EventClassifier):
     def get_label_function(self):
         return  lambda x: str(x.countable())
 
@@ -43,7 +43,7 @@ class EventCountableDemo(EventDemo):
         return [lambda x: x.curr_token(),
                 ]
 
-class EventElevationDemo(EventDemo):
+class EventElevationClassifier(EventClassifier):
     def get_label_function(self):
         return  lambda x: str(x.elevation())
 
@@ -51,7 +51,7 @@ class EventElevationDemo(EventDemo):
         return [lambda x: x.curr_token(),
                 ]
 
-class EventModDemo(EventDemo):
+class EventModClassifier(EventClassifier):
     def get_label_function(self):
         return  lambda x: str(x.mod())
 
@@ -61,12 +61,12 @@ class EventModDemo(EventDemo):
 
 if __name__ == "__main__":
 
-    d = EventElevationDemo()
+    d = EventElevationClassifier()
     d.run_demo()
 
-    d = EventModDemo()
+    d = EventModClassifier()
     d.run_demo()
 
-    d = EventCountableDemo()
+    d = EventCountableClassifier()
     d.run_demo()
     

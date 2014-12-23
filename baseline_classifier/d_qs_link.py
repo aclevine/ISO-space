@@ -11,7 +11,7 @@ if signal:
 build dictionary of "trigger entities" for qslinks without signal triggers?
 '''
 from d_olink import OLinkTag
-from util.demo import Demo
+from util.iso_space_classifier import ISOSpaceClassifier
 import re
 from b_identify_types import get_tag_and_no_tag_indices
 
@@ -49,14 +49,14 @@ def get_top_tag_indices(sentence, tag_dict):
     return get_tag_and_no_tag_indices(sentence, tag_dict, is_top_tag)
 
 # test variables
-class QSLinkDemo(Demo):
+class QSLinkClassifier(ISOSpaceClassifier):
     def __init__(self,  train_path='', test_path = '', gold_path = '', ):
-        super(QSLinkDemo, self).__init__(train_path = train_path, test_path = test_path,
+        super(QSLinkClassifier, self).__init__(train_path = train_path, test_path = test_path,
                                          gold_path = gold_path)
         self.indices_function = get_top_tag_indices
         self.extent_class = QSLinkTag
 
-class QSLinkIsLinkDemo(QSLinkDemo):
+class QSLinkIsLinkClassifier(QSLinkClassifier):
     def get_label_function(self):
         return  lambda x: str(x.is_qs_link())
 
@@ -64,7 +64,7 @@ class QSLinkIsLinkDemo(QSLinkDemo):
         return [lambda x: x.curr_token(),
                 ]
 
-class QSLinkFromIDDemo(QSLinkDemo):
+class QSLinkFromIDClassifier(QSLinkClassifier):
     def get_label_function(self):
         return  lambda x: str(x.from_id())
 
@@ -72,7 +72,7 @@ class QSLinkFromIDDemo(QSLinkDemo):
         return [lambda x: x.curr_token(),
                 ]
 
-class QSLinkToIDDemo(QSLinkDemo):
+class QSLinkToIDClassifier(QSLinkClassifier):
     def get_label_function(self):
         return  lambda x: str(x.to_id())
 
@@ -80,7 +80,7 @@ class QSLinkToIDDemo(QSLinkDemo):
         return [lambda x: x.curr_token(),
                 ]
 
-class QSLinkRelTypeDemo(QSLinkDemo):
+class QSLinkRelTypeClassifier(QSLinkClassifier):
     def get_label_function(self):
         return  lambda x: str(x.rel_type())
 
@@ -88,7 +88,7 @@ class QSLinkRelTypeDemo(QSLinkDemo):
         return [lambda x: x.curr_token(),
                 ]
 
-class QSLinkTrajectorDemo(QSLinkDemo):
+class QSLinkTrajectorClassifier(QSLinkClassifier):
     def get_label_function(self):
         return  lambda x: str(x.trajector())
 
@@ -96,7 +96,7 @@ class QSLinkTrajectorDemo(QSLinkDemo):
         return [lambda x: x.curr_token(),
                 ]
 
-class QSLinkLandmarkDemo(QSLinkDemo):
+class QSLinkLandmarkClassifier(QSLinkClassifier):
     def get_label_function(self):
         return  lambda x: str(x.landmark())
 
@@ -104,20 +104,3 @@ class QSLinkLandmarkDemo(QSLinkDemo):
         return [lambda x: x.curr_token(),
                 ]
 
-
-if __name__ == "__main__":
-    
-    from_id = QSLinkFromIDDemo()
-    from_id.run_demo()
-
-    to_id = QSLinkToIDDemo()
-    to_id.run_demo()
-
-    rel_type = QSLinkRelTypeDemo()
-    rel_type.run_demo()
-    
-    trajector = QSLinkTrajectorDemo()
-    trajector.run_demo()
-    
-    landmark = QSLinkLandmarkDemo()
-    landmark.run_demo()

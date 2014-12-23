@@ -4,7 +4,7 @@ Created on Dec 20, 2014
 @author: Aaron Levine
 @email: aclevine@brandeis.edu
 '''
-from util.demo import copy_folder
+from util.iso_space_classifier import copy_folder
 from a_identify_spans import generate_elements
 from b_identify_types import generate_tags
 from d_fill_link_attrs import generate_qslinks, generate_olinks,\

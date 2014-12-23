@@ -12,18 +12,18 @@ from c_path import *
 from c_place import *
 from c_spatial_entity import *
 from c_spatial_signal import *
-from util.demo import copy_folder
+from util.iso_space_classifier import copy_folder
 
 def generate_motion_attr(train_path, test_path, out_path):
     # generate labels
-    d = MotionTypeDemo(train_path = train_path, test_path = test_path)
-    motion_type_labels, test_data = d.generate_labels()
+    c = MotionTypeClassifier(train_path = train_path, test_path = test_path)
+    motion_type_labels, test_data = c.generate_labels()
      
-    d = MotionClassDemo(train_path = train_path, test_path = test_path)
-    motion_class_labels, _ = d.generate_labels()
+    c = MotionClassClassifier(train_path = train_path, test_path = test_path)
+    motion_class_labels, _ = c.generate_labels()
      
-    d = MotionSenseDemo(train_path = train_path, test_path = test_path)
-    motion_sense_labels, _ = d.generate_labels()
+    c = MotionSenseClassifier(train_path = train_path, test_path = test_path)
+    motion_sense_labels, _ = c.generate_labels()
 
     # labels -> tagged doc
     curr_doc = test_data[0].document
@@ -49,8 +49,8 @@ def generate_motion_attr(train_path, test_path, out_path):
 
 def generate_motion_signal_attr(train_path, test_path, out_path):
     # generate labels
-    d = MotionSignalTypeDemo(train_path = train_path, test_path = test_path)
-    motion_signal_type_labels, test_data = d.generate_labels()
+    c = MotionSignalTypeClassifier(train_path = train_path, test_path = test_path)
+    motion_signal_type_labels, test_data = c.generate_labels()
 
     # labels -> tagged doc
     curr_doc = test_data[0].document
@@ -75,11 +75,11 @@ def generate_motion_signal_attr(train_path, test_path, out_path):
 
 def generate_event_attr(train_path, test_path, out_path):
     # generate labels
-    mod = EventModDemo(train_path = train_path, test_path = test_path)
-    event_mod_labels, test_data = mod.generate_labels()
+    c = EventModClassifier(train_path = train_path, test_path = test_path)
+    event_mod_labels, test_data = c.generate_labels()
             
-    count = EventCountableDemo(train_path = train_path, test_path = test_path)
-    event_count_labels, _ = count.generate_labels()        
+    c = EventCountableClassifier(train_path = train_path, test_path = test_path)
+    event_count_labels, _ = c.generate_labels()        
  
     # labels -> tagged doc
     curr_doc = test_data[0].document
@@ -106,17 +106,17 @@ def generate_event_attr(train_path, test_path, out_path):
     
 def generate_path_attr(train_path, test_path, out_path):
     # generate labels
-    d = PathDimensionalityDemo(train_path = train_path, test_path = test_path)
-    path_dimension_labels, test_data = d.generate_labels()
+    c = PathDimensionalityClassifier(train_path = train_path, test_path = test_path)
+    path_dimension_labels, test_data = c.generate_labels()
        
-    d = PathFormDemo(train_path = train_path, test_path = test_path)
-    path_form_labels, _ = d.generate_labels()
+    c = PathFormClassifier(train_path = train_path, test_path = test_path)
+    path_form_labels, _ = c.generate_labels()
                                          
-    d = PathCountableDemo(train_path = train_path, test_path = test_path)
-    path_count_labels, _ = d.generate_labels()
+    c = PathCountableClassifier(train_path = train_path, test_path = test_path)
+    path_count_labels, _ = c.generate_labels()
    
-    d = PathModDemo(train_path = train_path, test_path = test_path)
-    path_mod_labels, _ = d.generate_labels()
+    c = PathModClassifier(train_path = train_path, test_path = test_path)
+    path_mod_labels, _ = c.generate_labels()
  
     # labels -> tagged doc
     curr_doc = test_data[0].document
@@ -145,17 +145,17 @@ def generate_path_attr(train_path, test_path, out_path):
 
 def generate_place_attr(train_path, test_path, out_path):
     # generate labels
-    d = PlaceDimensionalityDemo(train_path = train_path, test_path = test_path)
-    place_dimension_labels, test_data = d.generate_labels()
+    c = PlaceDimensionalityClassifier(train_path = train_path, test_path = test_path)
+    place_dimension_labels, test_data = c.generate_labels()
         
-    d = PlaceFormDemo(train_path = train_path, test_path = test_path)
-    place_form_labels, _ = d.generate_labels()
+    c = PlaceFormClassifier(train_path = train_path, test_path = test_path)
+    place_form_labels, _ = c.generate_labels()
         
-    d = PlaceCountableDemo(train_path = train_path, test_path = test_path)
-    place_count_labels, _ = d.generate_labels()
+    c = PlaceCountableClassifier(train_path = train_path, test_path = test_path)
+    place_count_labels, _ = c.generate_labels()
         
-    d = PlaceModDemo(train_path = train_path, test_path = test_path)
-    place_mod_labels, _ = d.generate_labels()
+    c = PlaceModClassifier(train_path = train_path, test_path = test_path)
+    place_mod_labels, _ = c.generate_labels()
  
     # labels -> tagged doc
     curr_doc = test_data[0].document
@@ -184,17 +184,17 @@ def generate_place_attr(train_path, test_path, out_path):
     
 def generate_entity_attr(train_path, test_path, out_path):
     # generate labels
-    d = EntityDimensionalityDemo(train_path = train_path, test_path = test_path)
-    entity_dimension_labels, test_data = d.generate_labels()
+    c = EntityDimensionalityClassifier(train_path = train_path, test_path = test_path)
+    entity_dimension_labels, test_data = c.generate_labels()
         
-    d = EntityFormDemo(train_path = train_path, test_path = test_path)
-    entity_form_labels, _ = d.generate_labels()
+    c = EntityFormClassifier(train_path = train_path, test_path = test_path)
+    entity_form_labels, _ = c.generate_labels()
         
-    d = EntityCountableDemo(train_path = train_path, test_path = test_path)
-    entity_count_labels, _ = d.generate_labels()
+    c = EntityCountableClassifier(train_path = train_path, test_path = test_path)
+    entity_count_labels, _ = c.generate_labels()
         
-    d = EntityModDemo(train_path = train_path, test_path = test_path)
-    entity_mod_labels, _ = d.generate_labels()
+    c = EntityModClassifier(train_path = train_path, test_path = test_path)
+    entity_mod_labels, _ = c.generate_labels()
  
     # labels -> tagged doc
     curr_doc = test_data[0].document
@@ -220,9 +220,9 @@ def generate_entity_attr(train_path, test_path, out_path):
 
 def generate_signal_attr(train_path, test_path, out_path):
     # generate labels
-    d = SignalSemanticTypeDemo(train_path = train_path, test_path = test_path)
-    signal_type_labels, test_data = d.generate_labels()
-     
+    c = SignalSemanticTypeClassifier(train_path = train_path, test_path = test_path)
+    signal_type_labels, test_data = c.generate_labels()
+    
     # labels -> tagged doc
     curr_doc = test_data[0].document
     doc_name = curr_doc.basename
@@ -255,9 +255,10 @@ def generate_attributes(train_path, test_path, out_path):
 
 if __name__ == "__main__":
 
+    # TESTING
     training_path = './data/training'
-    hyp_c = './data/final/test/configuration1/c'
-    hyp_d = './data/final/test/configuration1/d'
+    hyp_c = './data/dev/test/configuration1/c'
+    hyp_d = './data/dev/test/configuration1/d'
     generate_attributes(training_path, hyp_c, hyp_c)
 
     copy_folder(hyp_c, hyp_d)

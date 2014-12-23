@@ -13,7 +13,7 @@ from abc import abstractmethod
 import os
 import shutil
 
-class Demo(object):
+class ISOSpaceClassifier(object):
     '''specify where system should pull training and test data from'''
     def __init__(self, train_path='./training', test_path=None, gold_path=None, split=0.8):
         self.train_path = train_path

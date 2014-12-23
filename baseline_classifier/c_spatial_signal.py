@@ -7,7 +7,7 @@ Created on Oct 27, 2014
 c. Identify their attributes according to type.
 '''
 from b_identify_types import Tag, get_tag_and_no_tag_indices
-from util.demo import Demo
+from util.iso_space_classifier import ISOSpaceClassifier
 import re
 
 class SignalTag(Tag):
@@ -56,14 +56,14 @@ def get_signal_tag_indices(sentence, tag_dict):
 
 
 # MODELS
-class SignalDemo(Demo):
+class SignalClassifier(ISOSpaceClassifier):
     def __init__(self, train_path = '', test_path = '', gold_path = ''):
-        super(SignalDemo, self).__init__(train_path = train_path, test_path = test_path, 
+        super(SignalClassifier, self).__init__(train_path = train_path, test_path = test_path, 
                                          gold_path = gold_path)
         self.indices_function = get_signal_tag_indices
         self.extent_class = SignalTag
 
-class SignalSemanticTypeDemo(SignalDemo):
+class SignalSemanticTypeClassifier(SignalClassifier):
     def get_label_function(self):
         return  lambda x: str(x.semantic_type())
 
@@ -71,8 +71,8 @@ class SignalSemanticTypeDemo(SignalDemo):
         return [lambda x: x.curr_token(),
                 ]
     
-# subdivide SignalSemanticTypeDemo() into 2 tasks  
-class SignalDirectionalDemo(SignalDemo):
+# subdivide SignalSemanticTypeClassifier() into 2 tasks  
+class SignalDirectionalClassifier(SignalClassifier):
     def get_label_function(self):
         return  lambda x: str(x.is_directional())
 
@@ -80,7 +80,7 @@ class SignalDirectionalDemo(SignalDemo):
         return [lambda x: x.curr_token(),
                 ]
 
-class SignalTopologicalDemo(SignalDemo):
+class SignalTopologicalClassifier(SignalClassifier):
     def get_label_function(self):
         return  lambda x: str(x.is_topological())
 
@@ -89,29 +89,16 @@ class SignalTopologicalDemo(SignalDemo):
                 ]
         
 
-class IsOlinkDemo(SignalDemo):
+class IsOlinkClassifier(SignalClassifier):
     def get_label_function(self):
         return  lambda x: str(x.is_olink())
 
     def get_feature_functions(self):
         return []
 
-class IsQSlinkDemo(SignalDemo):
+class IsQSlinkClassifier(SignalClassifier):
     def get_label_function(self):
         return  lambda x: str(x.is_qslink())
 
     def get_feature_functions(self):
         return []
-
-
-    
-if __name__ == "__main__":
-
-    d = SignalSemanticTypeDemo()
-    d.run_demo()
-
-    d = SignalDirectionalDemo()
-    d.run_demo()
-
-    d = SignalTopologicalDemo()
-    d.run_demo()
