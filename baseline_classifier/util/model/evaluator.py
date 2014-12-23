@@ -1,3 +1,13 @@
+#!/usr/bin/env python
+'''
+Created on Sep 16, 2014
+
+@author: Aaron Levine, Einar Froyen
+@email: aclevine@brandeis.edu
+
+functions to generate formatted confusion matrix, precision, recall and f1 measure
+for model classified data vs a gold standard
+'''
 
 import numpy
 class ConfusionMatrix(object):

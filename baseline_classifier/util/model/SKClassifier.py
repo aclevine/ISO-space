@@ -2,7 +2,8 @@
 '''
 Created on Sep 16, 2014
 
-@author: Einar Froyen, Aaron Levine
+@author: Aaron Levine, Einar Froyen
+@email: aclevine@brandeis.edu
 '''
 import json
 

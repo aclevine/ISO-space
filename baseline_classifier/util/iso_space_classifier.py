@@ -196,8 +196,9 @@ class ISOSpaceClassifier(object):
     def evaluate_qs_o_link(self):
         return self.evaluate(self.get_qs_o_link_tuples)
 
-
 def copy_folder(src, dest):
+    if not os.path.exists(dest):
+        os.makedirs(dest)
     src_files = os.listdir(src)
     for file_name in src_files:
         full_file_name = os.path.join(src, file_name)

@@ -90,21 +90,22 @@ def get_token_indices(sentence, tag_dict):
 class SpansClassifier(ISOSpaceClassifier):
     def __init__(self, train_path, test_path):
         super(SpansClassifier, self).__init__(train_path = train_path, test_path = test_path)
-        self.feature_functions = [
-                                    lambda x: x.upper_case(),
-                                    lambda x: x.next_upper_case(),
-                                    lambda x: x.prev_upper_case(),
-                                    lambda x: x.pos_tag(),
-                                    lambda x: x.next_pos_tag(),
-                                    lambda x: x.prev_pos_tag(),
-                                    lambda x: x.simple_tag(),
-                                    lambda x: x.next_simple_tag(),
-                                    lambda x: x.prev_simple_tag()
-                                 ] 
         self.label_function = lambda x: str(x.unconsumed_tag())
         self.indices_function = get_token_indices
         self.extent_class = Token
-
+        
+    def get_feature_functions(self):
+        return [
+                lambda x: x.upper_case(),
+                lambda x: x.next_upper_case(),
+                lambda x: x.prev_upper_case(),
+                lambda x: x.pos_tag(),
+                lambda x: x.next_pos_tag(),
+                lambda x: x.prev_pos_tag(),
+                lambda x: x.simple_tag(),
+                lambda x: x.next_simple_tag(),
+                lambda x: x.prev_simple_tag()
+                ]
 
 def generate_elements(train_path, test_path, out_path):
     ''' train model with corpus in train_path,
