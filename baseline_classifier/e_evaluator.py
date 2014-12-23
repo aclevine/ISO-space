@@ -118,6 +118,7 @@ link_b_demo_list = {
                     'OLINK - frame_type': OLinkFrameTypeDemo,
                     }
 
+
 # helper functions
 def evaluate_all(demo_list, hyp_path, gold_path):
 
@@ -141,33 +142,15 @@ def evaluate_all(demo_list, hyp_path, gold_path):
     print 'mean f1: {}'.format(np.mean(f))
     print 'mean accuracy: {}'.format(np.mean(a))
 
-def config_1_eval(hyp_1_a, hyp_1_b, hyp_1_c, hyp_1_d, hyp_1_e, gold_path, outpath):
-    # 1a
-    sys.stdout = open(os.path.join(outpath, '1a.txt'), 'w')
-    print 'Identify spans of spatial elements including locations, paths, events and other spatial entities.'
-    print '\n' * 2
-    print '=' * 10 + ' IS SPATIAL ELEMENT: ' + '=' * 10
-    test = SpatialElementDemo(test_path = hyp_1_a, gold_path = gold_path)
-    test.evaluate()
- 
-    # 1b
-    sys.stdout = open(os.path.join(outpath, '1b.txt', 'w'))
-    print 'Classify spatial elements according to type: PATH, PLACE, MOTION, NONMOTION_EVENT, SPATIAL_ENTITY.'
-    evaluate_all(se_b_demo_list, hyp_1_b, gold_path)
-  
-    # 1c
-    sys.stdout = open(os.path.join(outpath, '1c.txt', 'w'))
-    evaluate_all(se_c_demo_list, hyp_1_c, gold_path)
-     
-    # 1d
+def evaluate_links(hyp_path, gold_path):
+    """ LINK.a task evaluations """
     p = []
     r = []
     f = []
     a = []
-
-    sys.stdout = open(os.path.join(outpath, '1d.txt', 'w'))
+    
     print '=' * 10 + 'MOVELINK' + '=' * 10 
-    d = IsMovelinkDemo(test_path = hyp_1_d, gold_path = gold_path)
+    d = IsMovelinkDemo(test_path = hyp_path, gold_path = gold_path)
     cm = d.evaluate_movelink()
     p.append(np.mean(cm.compute_precision()))
     r.append(np.mean(cm.compute_recall()))
@@ -175,7 +158,7 @@ def config_1_eval(hyp_1_a, hyp_1_b, hyp_1_c, hyp_1_d, hyp_1_e, gold_path, outpat
     a.append(np.mean(cm.compute_accuracy()))
 
     print '=' * 10 + 'QSLINK' + '=' * 10 
-    d = IsOlinkDemo(test_path = hyp_1_d, gold_path = gold_path)
+    d = IsOlinkDemo(test_path = hyp_path, gold_path = gold_path)
     cm = d.evaluate_qs_o_link()
     p.append(np.mean(cm.compute_precision()))
     r.append(np.mean(cm.compute_recall()))
@@ -183,7 +166,7 @@ def config_1_eval(hyp_1_a, hyp_1_b, hyp_1_c, hyp_1_d, hyp_1_e, gold_path, outpat
     a.append(np.mean(cm.compute_accuracy()))
  
     print '=' * 10 + 'OLINK' + '=' * 10 
-    d = IsQSlinkDemo(test_path = hyp_1_d, gold_path = gold_path)
+    d = IsQSlinkDemo(test_path = hyp_path, gold_path = gold_path)
     cm = d.evaluate_qs_o_link()
     p.append(np.mean(cm.compute_precision()))
     r.append(np.mean(cm.compute_recall()))
@@ -196,14 +179,58 @@ def config_1_eval(hyp_1_a, hyp_1_b, hyp_1_c, hyp_1_d, hyp_1_e, gold_path, outpat
     print 'mean f1: {}'.format(np.mean(f))
     print 'mean accuracy: {}'.format(np.mean(a))
 
+
+
+def config_1_eval(hyp_1_a, hyp_1_b, hyp_1_c, hyp_1_d, hyp_1_e, gold_path, outpath):
+    
+    # 1a
+    sys.stdout = open(os.path.join(outpath, '1a.txt'), 'w')
+    print 'Identify spans of spatial elements including locations, paths, events and other spatial entities.'
+    print '\n' * 2
+    print '=' * 10 + ' IS SPATIAL ELEMENT: ' + '=' * 10
+    test = SpatialElementDemo(test_path = hyp_1_a, gold_path = gold_path)
+    test.evaluate()
+    # 1b
+    sys.stdout = open(os.path.join(outpath, '1b.txt', 'w'))
+    print 'Classify spatial elements according to type: PATH, PLACE, MOTION, NONMOTION_EVENT, SPATIAL_ENTITY.'
+    evaluate_all(se_b_demo_list, hyp_1_b, gold_path)
+    # 1c
+    sys.stdout = open(os.path.join(outpath, '1c.txt', 'w'))
+    evaluate_all(se_c_demo_list, hyp_1_c, gold_path)
+    # 1d
+    sys.stdout = open(os.path.join(outpath, '1d.txt', 'w'))
+    evaluate_links(hyp_1_d, gold_path)
     # 1e
     sys.stdout = open(os.path.join(outpath, '1e.txt', 'w'))
     evaluate_all(link_b_demo_list, hyp_1_a, gold_path)
 
 
+def config_2_eval(hyp_2_a, hyp_2_b, hyp_2_c, gold_path, outpath):
+
+    # 2a
+    sys.stdout = open(os.path.join(outpath, '2a.txt'), 'w')    
+    evaluate_all(se_c_demo_list, hyp_2_a, gold_path)
+    # 2b
+    sys.stdout = open(os.path.join(outpath, '2b.txt'), 'w')    
+    evaluate_links(hyp_2_b, gold_path)
+    # 2c
+    sys.stdout = open(os.path.join(outpath, '2c.txt'), 'w')
+    evaluate_all(link_b_demo_list, hyp_2_c, gold_path)
+
+
+def config_3_eval(hyp_3_a, hyp_3_b, gold_path, outpath):
+    # 3a
+    sys.stdout = open('./results/baseline/3a.txt', 'w')    
+    evaluate_links(hyp_3_a, gold_path)
+    # 3b
+    sys.stdout = open('./results/baseline/3b.txt', 'w')
+    evaluate_all(link_b_demo_list, hyp_3_b, gold_path)
+
+
 if __name__ == "__main__":
 
-    gold_path = './data/final/gold'
+    gold_path = './data/final/gold'    
+    outpath = './results/baseline'
 
     # CONIFG 1
     hyp_1_a = './data/final/test/configuration1/a'
@@ -211,98 +238,21 @@ if __name__ == "__main__":
     hyp_1_c = './data/final/test/configuration1/c'
     hyp_1_d = './data/final/test/configuration1/d'
     hyp_1_e = './data/final/test/configuration1/e'
+    config_1_eval(hyp_1_a, hyp_1_b, hyp_1_c, hyp_1_d, hyp_1_e, gold_path, outpath)
 
 
-#     # 1a
-#     sys.stdout = open('./results/baseline/1a.txt', 'w')
-#     print 'Identify spans of spatial elements including locations, paths, events and other spatial entities.'
-#     print '\n' * 2
-#     print '=' * 10 + ' IS SPATIAL ELEMENT: ' + '=' * 10
-#     test = SpatialElementDemo(test_path = hyp_1_a, gold_path = gold_path)
-#     test.evaluate()
-# 
-#     # 1b
-#     sys.stdout = open('./results/baseline/1b.txt', 'w')
-#     print 'Classify spatial elements according to type: PATH, PLACE, MOTION, NONMOTION_EVENT, SPATIAL_ENTITY.'
-#     evaluate_all(se_b_demo_list, hyp_1_b, gold_path)
-#  
-#     # 1c
-#     sys.stdout = open('./results/baseline/1c.txt', 'w')    
-#     evaluate_all(se_c_demo_list, hyp_1_c, gold_path)
-     
-    # 1d
-#     sys.stdout = open('./results/baseline/1d.txt', 'w')    
-#     print '=' * 10 + 'MOVELINK' + '=' * 10 
-#     d = IsMovelinkDemo(test_path = hyp_1_d, gold_path = gold_path)
-#     cm = d.evaluate_movelink()
-# 
-#     print '=' * 10 + 'QSLINK' + '=' * 10 
-#     d = IsOlinkDemo(test_path = hyp_1_d, gold_path = gold_path)
-#     cm = d.evaluate_qs_o_link()
-# 
-#     print '=' * 10 + 'OLINK' + '=' * 10 
-#     d = IsQSlinkDemo(test_path = hyp_1_d, gold_path = gold_path)
-#     cm = d.evaluate_qs_o_link()
-
-
-    # 1e
-    sys.stdout = open('./results/baseline/1e.txt', 'w')
-    evaluate_all(link_b_demo_list, hyp_1_a, gold_path)
-
-    #===========================================================================
-
+    # CONFIG 2
     hyp_2_a = './data/final/test/configuration2/a'
     hyp_2_b = './data/final/test/configuration2/b'
     hyp_2_c = './data/final/test/configuration2/c'
+    config_2_eval(hyp_2_a, hyp_2_b, hyp_2_c, gold_path, outpath) 
 
-    # CONFIG 2
-    # 2a
-#     sys.stdout = open('./results/baseline/2a.txt', 'w')    
-#     evaluate_all(se_c_demo_list, hyp_1_c, gold_path)
-    
-    # 2b
-#     sys.stdout = open('./results/baseline/2b.txt', 'w')    
-#     print '=' * 10 + 'MOVELINK' + '=' * 10 
-#     d = IsMovelinkDemo(test_path = hyp_2_b, gold_path = gold_path)
-#     cm = d.evaluate_movelink()
-# 
-#     print '=' * 10 + 'QSLINK' + '=' * 10 
-#     d = IsOlinkDemo(test_path = hyp_2_b, gold_path = gold_path)
-#     cm = d.evaluate_qs_o_link()
-# 
-#     print '=' * 10 + 'OLINK' + '=' * 10 
-#     d = IsQSlinkDemo(test_path = hyp_2_b, gold_path = gold_path)
-#     cm = d.evaluate_qs_o_link()
-
-
-    # 2c
-#     sys.stdout = open('./results/baseline/2c.txt', 'w')
-#     evaluate_all(link_b_demo_list, hyp_2_c, gold_path)
-
-    #===========================================================================
-
-    hyp_3_a = './data/final/test/configuration3/a'
-    hyp_3_b = './data/final/test/configuration3/b'
 
     # CONFIG 3
+    hyp_3_a = './data/final/test/configuration3/a'
+    hyp_3_b = './data/final/test/configuration3/b'
+    config_3_eval(hyp_3_a, hyp_3_b, gold_path, outpath)
 
-    # 3a
-#     sys.stdout = open('./results/baseline/3a.txt', 'w')    
-#     print '=' * 10 + 'MOVELINK' + '=' * 10 
-#     d = IsMovelinkDemo(test_path = hyp_3_a, gold_path = gold_path)
-#     cm = d.evaluate_movelink()
-# 
-#     print '=' * 10 + 'QSLINK' + '=' * 10 
-#     d = IsOlinkDemo(test_path = hyp_3_a, gold_path = gold_path)
-#     cm = d.evaluate_qs_o_link()
-# 
-#     print '=' * 10 + 'OLINK' + '=' * 10 
-#     d = IsQSlinkDemo(test_path = hyp_3_a, gold_path = gold_path)
-#     cm = d.evaluate_qs_o_link()
-
-    # 3b
-#     sys.stdout = open('./results/baseline/3b.txt', 'w')
-#     evaluate_all(link_b_demo_list, hyp_3_b, gold_path)
 
 
     
