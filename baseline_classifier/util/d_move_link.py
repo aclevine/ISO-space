@@ -6,7 +6,7 @@ Created on Nov 13, 2014
 
 from util.c_path import PathTag
 from util.iso_space_classifier import ISOSpaceClassifier
-from util.Corpora.corpus import Corpus
+from util.corpora.corpus import Corpus
 from util.c_motion import get_motion_tag_indices
 import re
 

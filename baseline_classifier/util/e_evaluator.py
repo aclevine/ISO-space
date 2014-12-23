@@ -2,6 +2,9 @@
 Created on Dec 19, 2014
 
 @author: Aaron Levine
+@email: aclevine@brandeis.edu
+
+evaluate computer generated XMLs against human annotated gold standard
 '''
 #===============================================================================
 from util.b_identify_types import *
@@ -200,7 +203,6 @@ def config_1_eval(hyp_1_a, hyp_1_b, hyp_1_c, hyp_1_d, hyp_1_e, gold_path, outpat
     sys.stdout = open(os.path.join(outpath, '1e.txt', 'w'))
     evaluate_all(link_b_demo_list, hyp_1_a, gold_path)
 
-
 def config_2_eval(hyp_2_a, hyp_2_b, hyp_2_c, gold_path, outpath):
     # 2a
     sys.stdout = open(os.path.join(outpath, '2a.txt'), 'w')    
@@ -212,7 +214,6 @@ def config_2_eval(hyp_2_a, hyp_2_b, hyp_2_c, gold_path, outpath):
     sys.stdout = open(os.path.join(outpath, '2c.txt'), 'w')
     evaluate_all(link_b_demo_list, hyp_2_c, gold_path)
 
-
 def config_3_eval(hyp_3_a, hyp_3_b, gold_path, outpath):
     # 3a
     sys.stdout = open('./results/baseline/3a.txt', 'w')
@@ -220,6 +221,16 @@ def config_3_eval(hyp_3_a, hyp_3_b, gold_path, outpath):
     # 3b
     sys.stdout = open('./results/baseline/3b.txt', 'w')
     evaluate_all(link_b_demo_list, hyp_3_b, gold_path)
+
+# EVALUATE FROM SINGLE FINAL OUTPUT
+def config_1_eval_single(hyp_path, gold_path, outpath):
+    config_1_eval(hyp_path, hyp_path, hyp_path, hyp_path, hyp_path, gold_path, outpath)
+
+def config_2_eval_single(hyp_path, gold_path, outpath):
+    config_2_eval(hyp_path, hyp_path, hyp_path, gold_path, outpath)
+
+def config_3_eval_single(hyp_path, gold_path, outpath):
+    config_3_eval(hyp_path, hyp_path, gold_path, outpath)
 
 
 if __name__ == "__main__":

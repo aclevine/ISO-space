@@ -11,8 +11,8 @@ import numpy as np
 from sklearn.externals import joblib
 from sklearn.feature_extraction import DictVectorizer
 
-from util.alphabet import Alphabet
-from util.evaluator import ConfusionMatrix
+from util.model.alphabet import Alphabet
+from util.model.evaluator import ConfusionMatrix
 
 class SKClassifier():
     def __init__(self, clf, lfunc, ffuncs):

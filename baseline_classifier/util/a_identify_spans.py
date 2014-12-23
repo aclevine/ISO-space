@@ -7,7 +7,7 @@ Created on Sep 19, 2014
 a) Identify spans of spatial elements including locations, paths, events and other spatial entities.    
 '''
 #===============================================================================
-from util.Corpora.corpus import Extent
+from util.corpora.corpus import Extent
 from util.iso_space_classifier import ISOSpaceClassifier
 import nltk
 import os

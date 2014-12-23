@@ -11,7 +11,7 @@ PATH, PLACE, MOTION, NONMOTION_EVENT, SPATIAL_ENTITY,
 '''
 
 #===============================================================================
-from util.Corpora.corpus import Extent, HypotheticalCorpus
+from util.corpora.corpus import Extent, HypotheticalCorpus
 from util.iso_space_classifier import ISOSpaceClassifier, copy_folder
 import re
 import nltk

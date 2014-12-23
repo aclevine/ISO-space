@@ -6,9 +6,9 @@ Created on Oct 31, 2014
 @author: Aaron Levine
 @email: aclevine@brandeis.edu
 '''
-from util.Corpora.corpus import Corpus, HypotheticalCorpus
+from util.corpora.corpus import Corpus, HypotheticalCorpus
 from sklearn.linear_model import LogisticRegression 
-from util import SKClassifier
+from util.model import SKClassifier
 from abc import abstractmethod
 import os
 import shutil
