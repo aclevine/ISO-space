@@ -3,6 +3,7 @@ Created on Dec 19, 2014
 
 @author: Aaron Levine
 '''
+#===============================================================================
 from util.b_identify_types import *
 from util.c_fill_tag_attrs import *
 from util.d_fill_link_attrs import *
@@ -10,7 +11,7 @@ from util.d_fill_link_attrs import *
 from util.iso_space_classifier import ISOSpaceClassifier
 import sys
 import numpy as np
-
+#===============================================================================
 
 # DEMO for SE.a task
 class SpatialElementDemo(ISOSpaceClassifier):
@@ -26,15 +27,13 @@ class SpatialElementDemo(ISOSpaceClassifier):
     def get_feature_functions(self):
         return []
 
-# demo for LINK.a tasks
+# filters for LINK.a tasks
 def is_movelink_tag(tag):
     tag_id = tag.get('id', '')
     return bool(re.findall('^mvl\d+', tag_id))
 
 def get_movelink_indices(sentence, tag_dict):
     get_tag_and_no_tag_indices(sentence, tag_dict, is_movelink_tag)
-    
-
 
 def is_olink_tag(tag):
     tag_id = tag.get('id', '')
@@ -118,10 +117,9 @@ link_b_demo_list = {
                     'OLINK - frame_type': OLinkFrameTypeClassifier,
                     }
 
-
 # helper functions
 def evaluate_all(demo_list, hyp_path, gold_path):
-
+    """ SE.a, SE.b, SE.c and LINK.b evaluations """
     p = []
     r = []
     f = []
@@ -180,9 +178,7 @@ def evaluate_links(hyp_path, gold_path):
     print 'mean accuracy: {}'.format(np.mean(a))
 
 
-
 def config_1_eval(hyp_1_a, hyp_1_b, hyp_1_c, hyp_1_d, hyp_1_e, gold_path, outpath):
-    
     # 1a
     sys.stdout = open(os.path.join(outpath, '1a.txt'), 'w')
     print 'Identify spans of spatial elements including locations, paths, events and other spatial entities.'
@@ -206,7 +202,6 @@ def config_1_eval(hyp_1_a, hyp_1_b, hyp_1_c, hyp_1_d, hyp_1_e, gold_path, outpat
 
 
 def config_2_eval(hyp_2_a, hyp_2_b, hyp_2_c, gold_path, outpath):
-
     # 2a
     sys.stdout = open(os.path.join(outpath, '2a.txt'), 'w')    
     evaluate_all(se_c_demo_list, hyp_2_a, gold_path)
@@ -220,7 +215,7 @@ def config_2_eval(hyp_2_a, hyp_2_b, hyp_2_c, gold_path, outpath):
 
 def config_3_eval(hyp_3_a, hyp_3_b, gold_path, outpath):
     # 3a
-    sys.stdout = open('./results/baseline/3a.txt', 'w')    
+    sys.stdout = open('./results/baseline/3a.txt', 'w')
     evaluate_links(hyp_3_a, gold_path)
     # 3b
     sys.stdout = open('./results/baseline/3b.txt', 'w')
@@ -240,13 +235,11 @@ if __name__ == "__main__":
     hyp_1_e = './data/final/test/configuration1/e'
     config_1_eval(hyp_1_a, hyp_1_b, hyp_1_c, hyp_1_d, hyp_1_e, gold_path, outpath)
 
-
     # CONFIG 2
     hyp_2_a = './data/final/test/configuration2/a'
     hyp_2_b = './data/final/test/configuration2/b'
     hyp_2_c = './data/final/test/configuration2/c'
     config_2_eval(hyp_2_a, hyp_2_b, hyp_2_c, gold_path, outpath) 
-
 
     # CONFIG 3
     hyp_3_a = './data/final/test/configuration3/a'

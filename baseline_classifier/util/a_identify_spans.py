@@ -78,6 +78,7 @@ class Token(Extent):
         return {'prev_simple_tag': 'None'}
 
 #===============================================================================
+
 def get_token_indices(sentence, tag_dict):
     indices = []
     for i in range(len(sentence)):
@@ -147,13 +148,12 @@ def generate_elements(train_path, test_path, out_path):
     curr_doc.save_xml(os.path.join(out_path, doc_name))
 
 
-if __name__ == "__main__":
-    
+if __name__ == "__main__":    
     # TESTING
     train_path = './data/training'
     test_path = './data/dev/test/configuration1/0'
     outpath = './data/dev/test/configuration1/1'
     
     generate_elements(train_path, test_path, outpath)
-    
+
     
