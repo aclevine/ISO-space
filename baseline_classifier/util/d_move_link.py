@@ -4,10 +4,10 @@ Created on Nov 13, 2014
 @author: Aaron Levine
 '''
 
-from c_path import PathTag
+from util.c_path import PathTag
 from util.iso_space_classifier import ISOSpaceClassifier
 from util.Corpora.corpus import Corpus
-from c_motion import get_motion_tag_indices
+from util.c_motion import get_motion_tag_indices
 import re
 
 

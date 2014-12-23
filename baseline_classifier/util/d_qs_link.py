@@ -10,10 +10,10 @@ if signal:
     
 build dictionary of "trigger entities" for qslinks without signal triggers?
 '''
-from d_olink import OLinkTag
+from util.d_olink import OLinkTag
 from util.iso_space_classifier import ISOSpaceClassifier
 import re
-from b_identify_types import get_tag_and_no_tag_indices
+from util.b_identify_types import get_tag_and_no_tag_indices
 
 class QSLinkTag(OLinkTag):
     def __init__(self, sent, tag_dict, movelink_tag_dict, olink_tag_dict, 

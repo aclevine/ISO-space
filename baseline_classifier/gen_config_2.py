@@ -7,9 +7,9 @@ Created on Dec 20, 2014
 generate documents for configuration 2 tasks
 '''
 from util.iso_space_classifier import copy_folder
-from d_fill_link_attrs import generate_qslinks, generate_olinks,\
+from util.d_fill_link_attrs import generate_qslinks, generate_olinks,\
     generate_movelinks
-from c_fill_tag_attrs import generate_attributes
+from util.c_fill_tag_attrs import generate_attributes
 
 if __name__ == "__main__":
     

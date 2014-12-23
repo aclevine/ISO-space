@@ -8,7 +8,7 @@ Created on Oct 31, 2014
 '''
 from util.Corpora.corpus import Corpus, HypotheticalCorpus
 from sklearn.linear_model import LogisticRegression 
-from SKClassifier import SKClassifier
+from util import SKClassifier
 from abc import abstractmethod
 import os
 import shutil

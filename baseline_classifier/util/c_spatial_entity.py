@@ -3,34 +3,36 @@ Created on Oct 27, 2014
 
 @author: ACL73
 '''
-from c_path import PathTag
-from b_identify_types import get_tag_and_no_tag_indices
+from util.c_path import PathTag
+from util.b_identify_types import get_tag_and_no_tag_indices
 from util.iso_space_classifier import ISOSpaceClassifier
+
 import re
 
-class PlaceTag(PathTag):
+class EntityTag(PathTag):
     # LABEL EXTRACT
-    
+
     # FEATURE EXTRACT
-    def dummy(self):
+    def test(self):
         return
     
-def is_place_tag(tag):
+def is_entity_tag(tag):
     tag_id = tag.get('id', '')
-    return bool(re.findall('^pl\d+', tag_id))
+    return bool(re.findall('^se\d+', tag_id))
 
-def get_place_tag_indices(sentence, tag_dict):
-    return get_tag_and_no_tag_indices(sentence, tag_dict, is_place_tag)
+
+def get_entity_tag_indices(sentence, tag_dict):
+    return get_tag_and_no_tag_indices(sentence, tag_dict, is_entity_tag)
 
 # DEMO
-class PlaceClassifier(ISOSpaceClassifier):
+class EntityClassifier(ISOSpaceClassifier):
     def __init__(self, train_path = '', test_path = '', gold_path = ''):
-        super(PlaceClassifier, self).__init__(train_path = train_path, test_path = test_path, 
+        super(EntityClassifier, self).__init__(train_path = train_path, test_path = test_path, 
                                          gold_path = gold_path)
-        self.indices_function = get_place_tag_indices
-        self.extent_class = PlaceTag
+        self.indices_function = get_entity_tag_indices
+        self.extent_class = EntityTag
 
-class PlaceDimensionalityClassifier(PlaceClassifier):  
+class EntityDimensionalityClassifier(EntityClassifier):  
     def get_label_function(self):
         return  lambda x: str(x.dimensionality())
 
@@ -38,7 +40,7 @@ class PlaceDimensionalityClassifier(PlaceClassifier):
         return [lambda x: x.curr_token(),
                 ]
 
-class PlaceFormClassifier(PlaceClassifier):
+class EntityFormClassifier(EntityClassifier):
     def get_label_function(self):
         return  lambda x: str(x.form())
 
@@ -46,7 +48,7 @@ class PlaceFormClassifier(PlaceClassifier):
         return [lambda x: x.curr_token(),
                 ]
 
-class PlaceCountableClassifier(PlaceClassifier):
+class EntityCountableClassifier(EntityClassifier):
     def get_label_function(self):
         return  lambda x: str(x.countable())
 
@@ -54,7 +56,7 @@ class PlaceCountableClassifier(PlaceClassifier):
         return [lambda x: x.curr_token(),
                 ]
 
-class PlaceModClassifier(PlaceClassifier):
+class EntityModClassifier(EntityClassifier):
     def get_label_function(self):
         return  lambda x: str(x.mod())
 

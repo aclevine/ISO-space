@@ -8,8 +8,8 @@ a) Identify spans of spatial elements including locations, paths, events and oth
 '''
 #===============================================================================
 from util.Corpora.corpus import Extent
-import nltk
 from util.iso_space_classifier import ISOSpaceClassifier
+import nltk
 import os
 #===============================================================================
 

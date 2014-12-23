@@ -9,13 +9,13 @@ d)
 - Identify their attributes.
 '''
 #===============================================================================
-from d_move_link import *
-from d_olink import *
-from d_qs_link import *
+from util.d_move_link import *
+from util.d_olink import *
+from util.d_qs_link import *
 import os
-from c_motion import get_motion_tag_indices, MotionTag
+from util.c_motion import get_motion_tag_indices, MotionTag
 from util.Corpora.corpus import HypotheticalCorpus
-from c_spatial_signal import SignalTag
+from util.c_spatial_signal import SignalTag
 #===============================================================================
 
 def get_tag_id(extent, label):

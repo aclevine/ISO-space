@@ -3,9 +3,9 @@ Created on Dec 19, 2014
 
 @author: Aaron Levine
 '''
-from b_identify_types import *
-from c_fill_tag_attrs import *
-from d_fill_link_attrs import *
+from util.b_identify_types import *
+from util.c_fill_tag_attrs import *
+from util.d_fill_link_attrs import *
 
 from util.iso_space_classifier import ISOSpaceClassifier
 import sys
