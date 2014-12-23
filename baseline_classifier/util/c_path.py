@@ -6,8 +6,8 @@ Created on Oct 27, 2014
 
 c. Identify their attributes according to type.
 '''
-from b_identify_types import get_tag_and_no_tag_indices, Tag
-from util.demo import Demo
+from util.b_identify_types import get_tag_and_no_tag_indices, Tag
+from util.iso_space_classifier import ISOSpaceClassifier
 import re
 
 # check with Zach about what we're actually covering
@@ -53,14 +53,14 @@ def get_path_tag_indices(sentence, tag_dict):
     return get_tag_and_no_tag_indices(sentence, tag_dict, is_path_tag)
 
 # DEMOS
-class PathDemo(Demo):
+class PathClassifier(ISOSpaceClassifier):
     def __init__(self, train_path = '', test_path = '', gold_path = ''):
-        super(PathDemo, self).__init__(train_path = train_path, test_path = test_path, 
+        super(PathClassifier, self).__init__(train_path = train_path, test_path = test_path, 
                                        gold_path = gold_path)
         self.indices_function = get_path_tag_indices
         self.extent_class = PathTag
 
-class PathDimensionalityDemo(PathDemo):  
+class PathDimensionalityClassifier(PathClassifier):  
     def get_label_function(self):
         return  lambda x: str(x.dimensionality())
 
@@ -69,7 +69,7 @@ class PathDimensionalityDemo(PathDemo):
                 ]
 
 
-class PathFormDemo(PathDemo):
+class PathFormClassifier(PathClassifier):
     def get_label_function(self):
         return  lambda x: str(x.form())
 
@@ -77,7 +77,7 @@ class PathFormDemo(PathDemo):
         return [lambda x: x.curr_token(),
                 ]
 
-class PathCountableDemo(PathDemo):
+class PathCountableClassifier(PathClassifier):
     def get_label_function(self):
         return  lambda x: str(x.countable())
 
@@ -85,7 +85,7 @@ class PathCountableDemo(PathDemo):
         return [lambda x: x.curr_token(),
                 ]
 
-class PathElevationDemo(PathDemo):
+class PathElevationClassifier(PathClassifier):
     def get_label_function(self):
         return  lambda x: str(x.elevation())
 
@@ -93,27 +93,10 @@ class PathElevationDemo(PathDemo):
         return [lambda x: x.curr_token(),
                 ]
 
-class PathModDemo(PathDemo):
+class PathModClassifier(PathClassifier):
     def get_label_function(self):
         return  lambda x: str(x.mod())
 
     def get_feature_functions(self):
         return [lambda x: x.curr_token(),
                 ]
-
-if __name__ == "__main__":
-    d = PathDimensionalityDemo()
-    d.run_demo()
-    
-    d = PathFormDemo()
-    d.run_demo()
-    
-    d = PathCountableDemo()
-    d.run_demo()
-
-    d = PathElevationDemo()
-    d.run_demo()
-
-    d = PathModDemo()
-    d.run_demo()
-   

@@ -11,8 +11,8 @@ PATH, PLACE, MOTION, NONMOTION_EVENT, SPATIAL_ENTITY,
 '''
 
 #===============================================================================
-from util.Corpora.corpus import Extent, HypotheticalCorpus
-from util.demo import Demo, copy_folder
+from util.corpora.corpus import Extent, HypotheticalCorpus
+from util.iso_space_classifier import ISOSpaceClassifier, copy_folder
 import re
 import nltk
 import os
@@ -155,9 +155,9 @@ def get_tag_and_no_tag_indices(sentence, tag_dict, tag_filter=no_filter):
 def get_tag_only_indices(sentence, tag_dict):
     return get_tag_and_no_tag_indices(sentence, tag_dict, has_tag)
 
-class TypesDemo(Demo):
+class TypesClassifier(ISOSpaceClassifier):
     def __init__(self, type_name, train_path, test_path, gold_path):
-        super(TypesDemo, self).__init__(train_path = train_path, test_path = test_path, 
+        super(TypesClassifier, self).__init__(train_path = train_path, test_path = test_path, 
                                          gold_path = gold_path)
         self.feature_functions = [lambda x: x.curr_token(),
                                   lambda x: x.prev_n_bag_of_words(3),
@@ -184,8 +184,8 @@ def generate_tags(train_path, test_path, clean_path, out_path):
    
     for type_name, type_fields in tag_types.iteritems():
         # generate labels
-        demo = TypesDemo(type_name, train_path, test_path)
-        pred, test_data = demo.generate_labels()
+        c = TypesClassifier(type_name, train_path, test_path)
+        pred, test_data = c.generate_labels()
         
         # labels -> tagged docs
         id_number = 0
@@ -200,9 +200,9 @@ def generate_tags(train_path, test_path, clean_path, out_path):
                 curr_doc = clean_data[i]
                 doc_name = curr_doc.basename
             
-            offsets = "{a},{b},{c}".format(a=extent.basename,
-                                           b=extent.lex[0].begin, 
-                                           c=extent.lex[-1].end)
+            offsets = "{doc},{begin},{end}".format(doc=extent.basename,
+                                                   begin=extent.lex[0].begin, 
+                                                   end=extent.lex[-1].end)
             if pred[offsets] == 'True':
                 tag = {'name': type_name, 
                        'start': extent.tag['start'], 
@@ -222,13 +222,14 @@ def generate_tags(train_path, test_path, clean_path, out_path):
 
 if __name__ == "__main__":
 
+    #TESTING
     train_path = './data/training'
-    test_path = './data/final/test/configuration1/1'
-    clean_path = './data/final/test/configuration1/0' 
+    test_path = './data/dev/test/configuration1/1'
+    clean_path = './data/dev/test/configuration1/0' 
 
-    hyp_a = './data/final/test/configuration1/a'    
-    hyp_b = './data/final/test/configuration1/b'   
-    hyp_c = './data/final/test/configuration1/c'   
+    hyp_a = './data/dev/test/configuration1/a'    
+    hyp_b = './data/dev/test/configuration1/b'   
+    hyp_c = './data/dev/test/configuration1/c'   
 
     generate_tags(train_path, test_path, clean_path, hyp_a)
 

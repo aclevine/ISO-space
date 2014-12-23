@@ -9,10 +9,10 @@ if signal:
     dir = olink
 
 '''
-from util.demo import Demo
-from b_identify_types import get_tag_and_no_tag_indices
-from c_path import PathTag
-from d_move_link import MovelinkTag
+from util.iso_space_classifier import ISOSpaceClassifier
+from util.b_identify_types import get_tag_and_no_tag_indices
+from util.c_path import PathTag
+from util.d_move_link import MovelinkTag
 import re
 
 class OLinkTag(MovelinkTag):
@@ -141,32 +141,32 @@ def is_dir_tag(tag):
 def get_dir_tag_indices(sentence, tag_dict):
     return get_tag_and_no_tag_indices(sentence, tag_dict, is_dir_tag)
 
-# # alternate method of selecting olinks, didn't work
-# def is_tag(tag):
-#     ''' load c_path / pu / spatial entity / c_spatial_signal / c_nonmotion_event / c_motion heads'''
-#     tag_id = tag.get('id', '')
-#     return any([
-#                 bool(re.findall('^s\d+', tag_id)),
-#                 bool(re.findall('^p\d+', tag_id)),
-#                 bool(re.findall('^pl\d+', tag_id)),
-#                 bool(re.findall('^se\d+', tag_id)),
-#                 bool(re.findall('^e\d+', tag_id)),
-#                 bool(re.findall('^m\d+', tag_id))
-#                 ])
-# 
-# def get_tag_indices(sentence, tag_dict):
-#     return get_tag_and_no_tag_indices(sentence, tag_dict, is_tag)
+# alternate method of selecting olinks, didn't work
+def is_tag(tag):
+    ''' load c_path / pu / spatial entity / c_spatial_signal / c_nonmotion_event / c_motion heads'''
+    tag_id = tag.get('id', '')
+    return any([
+                bool(re.findall('^s\d+', tag_id)),
+                bool(re.findall('^p\d+', tag_id)),
+                bool(re.findall('^pl\d+', tag_id)),
+                bool(re.findall('^se\d+', tag_id)),
+                bool(re.findall('^e\d+', tag_id)),
+                bool(re.findall('^m\d+', tag_id))
+                ])
+ 
+def get_tag_indices(sentence, tag_dict):
+    return get_tag_and_no_tag_indices(sentence, tag_dict, is_tag)
 
 
 # TEST
-class OLinkDemo(Demo):
+class OLinkClassifier(ISOSpaceClassifier):
     def __init__(self,  train_path='', test_path = '', gold_path = ''):
-        super(OLinkDemo, self).__init__(train_path = train_path, test_path = test_path,
+        super(OLinkClassifier, self).__init__(train_path = train_path, test_path = test_path,
                                            gold_path = gold_path)
         self.indices_function = get_dir_tag_indices
         self.extent_class = OLinkTag
         
-class OLinkFromIDDemo(OLinkDemo):      
+class OLinkFromIDClassifier(OLinkClassifier):      
     # also trajector  
     def get_label_function(self):
         return  lambda x: str(x.from_id())
@@ -175,7 +175,7 @@ class OLinkFromIDDemo(OLinkDemo):
         return [lambda x: x.curr_token(),
                 ]
 
-class OLinkToIDDemo(OLinkDemo):      
+class OLinkToIDClassifier(OLinkClassifier):      
     # also landmark
     def get_label_function(self):
         return  lambda x: str(x.to_id())
@@ -184,7 +184,7 @@ class OLinkToIDDemo(OLinkDemo):
         return [lambda x: x.curr_token(),
                 ]
 
-class OLinkRelTypeDemo(OLinkDemo):      
+class OLinkRelTypeClassifier(OLinkClassifier):      
     def get_label_function(self):
         return  lambda x: str(x.rel_type())
 
@@ -192,7 +192,7 @@ class OLinkRelTypeDemo(OLinkDemo):
         return [lambda x: x.curr_token(),
                 ]
                     
-class OLinkFrameTypeDemo(OLinkDemo):      
+class OLinkFrameTypeClassifier(OLinkClassifier):      
     def get_label_function(self):
         return  lambda x: str(x.frame_type())
 
@@ -200,7 +200,7 @@ class OLinkFrameTypeDemo(OLinkDemo):
         return [lambda x: x.curr_token(),
                 ]
 
-class OLinkReferencePtDemo(OLinkDemo):      
+class OLinkReferencePtClassifier(OLinkClassifier):      
     def get_label_function(self):
         return  lambda x: str(x.reference_pt())
 
@@ -208,7 +208,7 @@ class OLinkReferencePtDemo(OLinkDemo):
         return [lambda x: x.curr_token(),
                 ]
 
-class OLinkProjectiveDemo(OLinkDemo): 
+class OLinkProjectiveClassifier(OLinkClassifier): 
     def get_label_function(self):
         return  lambda x: str(x.projective())
 
@@ -217,7 +217,7 @@ class OLinkProjectiveDemo(OLinkDemo):
                 ]
 
 
-class OLinkIsLinkDemo(OLinkDemo):    
+class OLinkIsLinkClassifier(OLinkClassifier):    
     def get_label_function(self):
         return  lambda x: str(x.is_olink())
 
@@ -225,7 +225,7 @@ class OLinkIsLinkDemo(OLinkDemo):
         return [lambda x: x.curr_token(),
                 ]
         
-class OLinkTriggerDemo(OLinkDemo):      
+class OLinkTriggerClassifier(OLinkClassifier):      
     def get_label_function(self):
         return  lambda x: str(x.trigger())
 
@@ -233,34 +233,10 @@ class OLinkTriggerDemo(OLinkDemo):
         return [lambda x: x.curr_token(),
                 ]
 
-class OLinkRefPtExtentDemo(OLinkDemo):      
+class OLinkRefPtExtentClassifier(OLinkClassifier):      
     def get_label_function(self):
         return  lambda x: str(x.reference_pt_extents())
 
     def get_feature_functions(self):
         return []
-
-
-if __name__ == "__main__":
-    
-    from_id = OLinkFromIDDemo()
-    from_id.run_demo()
-
-    to_id = OLinkToIDDemo()
-    from_id.run_demo()
-
-    rel_type = OLinkRelTypeDemo()
-    rel_type.run_demo()
-        
-    reference = OLinkReferencePtDemo()
-    reference.run_demo()
-
-    frame = OLinkFrameTypeDemo()
-    frame.run_demo()
-
-    projective = OLinkProjectiveDemo()
-    projective.run_demo()
-    
-    #absolute - cardnial dir
-    #intrinsic - also landmark
 

@@ -9,13 +9,13 @@ d)
 - Identify their attributes.
 '''
 #===============================================================================
-from d_move_link import *
-from d_olink import *
-from d_qs_link import *
+from util.d_move_link import *
+from util.d_olink import *
+from util.d_qs_link import *
 import os
-from c_motion import get_motion_tag_indices, MotionTag
-from util.Corpora.corpus import HypotheticalCorpus
-from c_spatial_signal import SignalTag
+from util.c_motion import get_motion_tag_indices, MotionTag
+from util.corpora.corpus import HypotheticalCorpus
+from util.c_spatial_signal import SignalTag
 #===============================================================================
 
 def get_tag_id(extent, label):
@@ -69,13 +69,13 @@ def generate_qslinks(train_path, test_path, out_path):
                'QSLINK', 'qsl')
 
     # generate labels
-    from_id = QSLinkFromIDDemo(train_path = train_path, test_path = test_path)
+    from_id = QSLinkFromIDClassifier(train_path = train_path, test_path = test_path)
     from_labels, test_data = from_id.generate_labels()
 
-    to_id = QSLinkToIDDemo(train_path = train_path, test_path = test_path)
+    to_id = QSLinkToIDClassifier(train_path = train_path, test_path = test_path)
     to_labels, _ = to_id.generate_labels()
  
-    rel_type = QSLinkRelTypeDemo(train_path = train_path, test_path = test_path)
+    rel_type = QSLinkRelTypeClassifier(train_path = train_path, test_path = test_path)
     rel_type_labels, _ = rel_type.generate_labels()
           
     #parse into XML tags    
@@ -147,22 +147,22 @@ def generate_olinks(train_path, test_path, out_path):
                'OLINK', 'ol')
 
     # generate labels
-    from_id = OLinkFromIDDemo(train_path = train_path, test_path = test_path)
+    from_id = OLinkFromIDClassifier(train_path = train_path, test_path = test_path)
     from_labels, test_data = from_id.generate_labels()
 
-    to_id = OLinkToIDDemo(train_path = train_path, test_path = test_path)
+    to_id = OLinkToIDClassifier(train_path = train_path, test_path = test_path)
     to_labels, _ = to_id.generate_labels()
  
-    rel_type = OLinkRelTypeDemo(train_path = train_path, test_path = test_path)
+    rel_type = OLinkRelTypeClassifier(train_path = train_path, test_path = test_path)
     rel_type_labels, _ = rel_type.generate_labels()
          
-    reference = OLinkReferencePtDemo(train_path = train_path, test_path = test_path)
+    reference = OLinkReferencePtClassifier(train_path = train_path, test_path = test_path)
     ref_labels, _ = reference.generate_labels()
  
-    projective = OLinkProjectiveDemo(train_path = train_path, test_path = test_path)
+    projective = OLinkProjectiveClassifier(train_path = train_path, test_path = test_path)
     proj_labels, _ = projective.generate_labels()
 
-    frame = OLinkFrameTypeDemo(train_path = train_path, test_path = test_path)
+    frame = OLinkFrameTypeClassifier(train_path = train_path, test_path = test_path)
     frame_labels, _ = projective.generate_labels()
  
     #parse into XML tags
@@ -242,29 +242,29 @@ def generate_movelinks(train_path, test_path, out_path):
                'MOVELINK', 'mvl')
 
     # fill attributes    
-    d = MovelinkMoverDemo(train_path = train_path, test_path = test_path)  
+    d = MovelinkMoverClassifier(train_path = train_path, test_path = test_path)  
     mover_labels, test_data = d.generate_labels()
 
-    d = MovelinkSourceDemo(train_path = train_path, test_path = test_path)  
+    d = MovelinkSourceClassifier(train_path = train_path, test_path = test_path)  
     source_labels, test_data = d.generate_labels()
    
-    d = MovelinkGoalDemo(train_path = train_path, test_path = test_path)
+    d = MovelinkGoalClassifier(train_path = train_path, test_path = test_path)
     goal_labels, _ = d.generate_labels()
     
-    d = MovelinkMidPointDemo(train_path = train_path, test_path = test_path)  
+    d = MovelinkMidPointClassifier(train_path = train_path, test_path = test_path)  
     midpoint_labels, _ = d.generate_labels()
 
-    d = MovelinkGoalMotionSignalIDDemo(train_path = train_path, test_path = test_path)  
+    d = MovelinkGoalMotionSignalIDClassifier(train_path = train_path, test_path = test_path)  
     motion_signal_id_labels, _ = d.generate_labels()
 
-    d = MovelinkPathIDDemo(train_path = train_path, test_path = test_path)  
+    d = MovelinkPathIDClassifier(train_path = train_path, test_path = test_path)  
     path_id_labels, _ = d.generate_labels()
 
    
-    d = MovelinkLandmarkDemo(train_path = train_path, test_path = test_path)  
+    d = MovelinkLandmarkClassifier(train_path = train_path, test_path = test_path)  
     landmark_labels, _ = d.generate_labels()
       
-    d = MovelinkGoalReachedDemo(train_path = train_path, test_path = test_path)  
+    d = MovelinkGoalReachedClassifier(train_path = train_path, test_path = test_path)  
     goal_reached_labels, _ = d.generate_labels()
 
     #parse into XML tags

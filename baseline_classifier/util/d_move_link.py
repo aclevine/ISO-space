@@ -4,10 +4,10 @@ Created on Nov 13, 2014
 @author: Aaron Levine
 '''
 
-from c_path import PathTag
-from util.demo import Demo
-from util.Corpora.corpus import Corpus
-from c_motion import get_motion_tag_indices
+from util.c_path import PathTag
+from util.iso_space_classifier import ISOSpaceClassifier
+from util.corpora.corpus import Corpus
+from util.c_motion import get_motion_tag_indices
 import re
 
 
@@ -149,14 +149,14 @@ class MovelinkTag(PathTag):
         return feat_dict
 
 # DEMO
-class MovelinkDemo(Demo):
+class MovelinkClassifier(ISOSpaceClassifier):
     def __init__(self, train_path='', test_path = '', gold_path = ''):
-        super(MovelinkDemo, self).__init__(train_path = train_path, test_path = test_path,
+        super(MovelinkClassifier, self).__init__(train_path = train_path, test_path = test_path,
                                            gold_path = gold_path)
         self.indices_function = get_motion_tag_indices
         self.extent_class = MovelinkTag
 
-class MovelinkTriggerDemo(MovelinkDemo):  
+class MovelinkTriggerClassifier(MovelinkClassifier):  
     def get_label_function(self):
         return  lambda x: str(x.trigger())
 
@@ -164,7 +164,7 @@ class MovelinkTriggerDemo(MovelinkDemo):
         return [lambda x: x.curr_token(),
                 ]
 
-class MovelinkSourceDemo(MovelinkDemo):  
+class MovelinkSourceClassifier(MovelinkClassifier):  
     def get_label_function(self):
         return  lambda x: str(x.source())
 
@@ -172,7 +172,7 @@ class MovelinkSourceDemo(MovelinkDemo):
         return [lambda x: x.curr_token(),
                 ]
 
-class MovelinkGoalDemo(MovelinkDemo):  
+class MovelinkGoalClassifier(MovelinkClassifier):  
     def get_label_function(self):
         return  lambda x: str(x.goal())
 
@@ -184,7 +184,7 @@ class MovelinkGoalDemo(MovelinkDemo):
                 lambda x: x.next_tag_types(),
                 ]
 
-class MovelinkMidPointDemo(MovelinkDemo):  
+class MovelinkMidPointClassifier(MovelinkClassifier):  
     def get_label_function(self):
         return  lambda x: str(x.mid_point())
 
@@ -192,7 +192,7 @@ class MovelinkMidPointDemo(MovelinkDemo):
         return [lambda x: x.curr_token(),
                 ]
 
-class MovelinkMoverDemo(MovelinkDemo):  
+class MovelinkMoverClassifier(MovelinkClassifier):  
     def get_label_function(self):
         return  lambda x: str(x.mover())
 
@@ -200,7 +200,7 @@ class MovelinkMoverDemo(MovelinkDemo):
         return [lambda x: x.curr_token(),
                 ]
 
-class MovelinkLandmarkDemo(MovelinkDemo):  
+class MovelinkLandmarkClassifier(MovelinkClassifier):  
     def get_label_function(self):
         return  lambda x: str(x.landmark())
 
@@ -208,7 +208,7 @@ class MovelinkLandmarkDemo(MovelinkDemo):
         return [lambda x: x.curr_token(),
                 ]
 
-class MovelinkGoalReachedDemo(MovelinkDemo):  
+class MovelinkGoalReachedClassifier(MovelinkClassifier):  
     def get_label_function(self):
         return  lambda x: str(x.goal_reached())
 
@@ -216,7 +216,7 @@ class MovelinkGoalReachedDemo(MovelinkDemo):
         return [lambda x: x.curr_token(),
                 ]
 
-class MovelinkGoalPathIdDemo(MovelinkDemo):
+class MovelinkGoalPathIdClassifier(MovelinkClassifier):
     def get_label_function(self):
         return  lambda x: str(x.path_id())
 
@@ -224,7 +224,7 @@ class MovelinkGoalPathIdDemo(MovelinkDemo):
         return [lambda x: x.curr_token(),
                 ]
 
-class MovelinkGoalMotionSignalIDDemo(MovelinkDemo):
+class MovelinkGoalMotionSignalIDClassifier(MovelinkClassifier):
     def get_label_function(self):
         return  lambda x: str(x.motion_signal_id())
 
@@ -232,7 +232,7 @@ class MovelinkGoalMotionSignalIDDemo(MovelinkDemo):
         return [lambda x: x.curr_token(),
                 ]
 
-class MovelinkPathIDDemo(MovelinkDemo):
+class MovelinkPathIDClassifier(MovelinkClassifier):
     def get_label_function(self):
         return  lambda x: str(x.path_signal_id())
 
@@ -241,58 +241,37 @@ class MovelinkPathIDDemo(MovelinkDemo):
                 ]
 
 # FOR EVAL
-class MovelinkSourceExentsDemo(MovelinkDemo):
+class MovelinkSourceExentsClassifier(MovelinkClassifier):
     def get_label_function(self):
         return  lambda x: str(x.source_extents())
 
     def get_feature_functions(self):
         return []
 
-class MovelinkGoalExentsDemo(MovelinkDemo):
+class MovelinkGoalExentsClassifier(MovelinkClassifier):
     def get_label_function(self):
         return  lambda x: str(x.goal_extents())
 
     def get_feature_functions(self):
         return []
 
-class MovelinkMidpointExentsDemo(MovelinkDemo):
+class MovelinkMidpointExentsClassifier(MovelinkClassifier):
     def get_label_function(self):
         return  lambda x: str(x.mid_point_extents())
 
     def get_feature_functions(self):
         return []
 
-class MovelinkPathIDExentsDemo(MovelinkDemo):
+class MovelinkPathIDExentsClassifier(MovelinkClassifier):
     def get_label_function(self):
         return  lambda x: str(x.path_id_extents())
 
     def get_feature_functions(self):
         return []
 
-class MovelinkMotionSignalIDExentsDemo(MovelinkDemo):
+class MovelinkMotionSignalIDExentsClassifier(MovelinkClassifier):
     def get_label_function(self):
         return  lambda x: str(x.motion_signal_id_extents())
 
     def get_feature_functions(self):
         return []
-
-
-if __name__ == "__main__":
-    
-    source = MovelinkSourceDemo()  
-    source.run_demo()
- 
-    goal = MovelinkGoalDemo()
-    goal.run_demo()
-  
-    mid_point = MovelinkMidPointDemo()  
-    mid_point.run_demo()
- 
-    mover = MovelinkMoverDemo()  
-    mover.run_demo()
- 
-    d = MovelinkLandmarkDemo()  
-    d.run_demo()
-    
-    d = MovelinkGoalReachedDemo()  
-    d.run_demo()
