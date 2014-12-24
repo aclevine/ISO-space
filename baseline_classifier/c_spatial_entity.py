@@ -3,9 +3,9 @@ Created on Oct 27, 2014
 
 @author: ACL73
 '''
-from util.c_path import PathTag
-from util.b_identify_types import get_tag_and_no_tag_indices
-from util.iso_space_classifier import ISOSpaceClassifier
+from c_path import PathTag
+from b_identify_types import get_tag_and_no_tag_indices
+from util.model.demo import Classifier
 
 import re
 
@@ -25,7 +25,7 @@ def get_entity_tag_indices(sentence, tag_dict):
     return get_tag_and_no_tag_indices(sentence, tag_dict, is_entity_tag)
 
 # DEMO
-class EntityClassifier(ISOSpaceClassifier):
+class EntityClassifier(Classifier):
     def __init__(self, train_path = '', test_path = '', gold_path = ''):
         super(EntityClassifier, self).__init__(train_path = train_path, test_path = test_path, 
                                          gold_path = gold_path)
@@ -63,3 +63,16 @@ class EntityModClassifier(EntityClassifier):
     def get_feature_functions(self):
         return [lambda x: x.curr_token(),
                 ]
+
+if __name__ == "__main__":
+    d = EntityDimensionalityClassifier()
+    d.run_demo()
+     
+    d = EntityFormClassifier()
+    d.run_demo()
+     
+    d = EntityCountableClassifier()
+    d.run_demo()
+     
+    d = EntityModClassifier()
+    d.run_demo()

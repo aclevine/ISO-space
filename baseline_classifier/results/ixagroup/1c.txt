@@ -1,0 +1,373 @@
+
+
+========== PATH - dimensionality ==========
+row = predicted, column = actual
+       LINE VOLUME False 
+LINE   0.0  0.0    1.0   
+VOLUME 0.0  0.0    3.0   
+False  0.0  0.0    0.0   
+
+========= Line =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= Volume =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= False =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+
+Accuracy: 0.000000%
+
+
+========== PATH - countable ==========
+row = predicted, column = actual
+      TRUE False 
+TRUE  0.0  4.0   
+False 0.0  0.0   
+
+========= True =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= False =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+
+Accuracy: 0.000000%
+
+
+========== PLACE - mod ==========
+row = predicted, column = actual
+            highest False 
+        0.0 0.0     19.0  
+highest 0.0 0.0     1.0   
+False   0.0 0.0     0.0   
+
+=========  =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= Highest =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= False =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+
+Accuracy: 0.000000%
+
+
+========== SPATIAL_ENTITY - dimensionality ==========
+row = predicted, column = actual
+       AREA VOLUME False 
+AREA   0.0  0.0    40.0  
+VOLUME 0.0  0.0    4.0   
+False  0.0  0.0    0.0   
+
+========= Area =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= Volume =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= False =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+
+Accuracy: 0.000000%
+
+
+========== SPATIAL_ENTITY - mod ==========
+row = predicted, column = actual
+          False 
+      0.0 44.0  
+False 0.0 0.0   
+
+=========  =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= False =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+
+Accuracy: 0.000000%
+
+
+========== PLACE - form ==========
+row = predicted, column = actual
+      NOM NAM False 
+NOM   0.0 0.0 11.0  
+NAM   0.0 0.0 9.0   
+False 0.0 0.0 0.0   
+
+========= Nom =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= Nam =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= False =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+
+Accuracy: 0.000000%
+
+
+========== MOTION - motion_sense ==========
+row = predicted, column = actual
+        LITERAL False 
+LITERAL 0.0     8.0   
+False   0.0     0.0   
+
+========= Literal =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= False =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+
+Accuracy: 0.000000%
+
+
+========== PATH - mod ==========
+row = predicted, column = actual
+          small major False 
+      0.0 0.0   0.0   2.0   
+small 0.0 0.0   0.0   1.0   
+major 0.0 0.0   0.0   1.0   
+False 0.0 0.0   0.0   0.0   
+
+=========  =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= Small =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= Major =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= False =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+
+Accuracy: 0.000000%
+
+
+========== NONMOTION_EVENT - countable ==========
+row = predicted, column = actual
+          False 
+      0.0 1.0   
+False 0.0 0.0   
+
+=========  =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= False =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+
+Accuracy: 0.000000%
+
+
+========== PATH - form ==========
+row = predicted, column = actual
+      NOM False 
+NOM   0.0 4.0   
+False 0.0 0.0   
+
+========= Nom =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= False =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+
+Accuracy: 0.000000%
+
+
+========== NONMOTION_EVENT - mod ==========
+row = predicted, column = actual
+          False 
+      0.0 1.0   
+False 0.0 0.0   
+
+=========  =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= False =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+
+Accuracy: 0.000000%
+
+
+========== SPATIAL_ENTITY - countable ==========
+row = predicted, column = actual
+      TRUE False 
+TRUE  0.0  44.0  
+False 0.0  0.0   
+
+========= True =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= False =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+
+Accuracy: 0.000000%
+
+
+========== MOTION - motion_type ==========
+row = predicted, column = actual
+         MANNER PATH COMPOUND False 
+MANNER   0.0    0.0  0.0      5.0   
+PATH     0.0    0.0  0.0      1.0   
+COMPOUND 0.0    0.0  0.0      2.0   
+False    0.0    0.0  0.0      0.0   
+
+========= Manner =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= Path =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= Compound =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= False =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+
+Accuracy: 0.000000%
+
+
+========== MOTION - motion_class ==========
+row = predicted, column = actual
+      MOVE HIT False 
+MOVE  0.0  0.0 7.0   
+HIT   0.0  0.0 1.0   
+False 0.0  0.0 0.0   
+
+========= Move =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= Hit =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= False =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+
+Accuracy: 0.000000%
+
+
+========== PLACE - countable ==========
+row = predicted, column = actual
+      TRUE FALSE False 
+TRUE  0.0  0.0   14.0  
+FALSE 0.0  0.0   6.0   
+False 0.0  0.0   0.0   
+
+========= True =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= False =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= False =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+
+Accuracy: 0.000000%
+
+
+========== SPATIAL_ENTITY - form ==========
+row = predicted, column = actual
+      NOM False 
+NOM   0.0 44.0  
+False 0.0 0.0   
+
+========= Nom =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= False =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+
+Accuracy: 0.000000%
+
+
+========== PLACE - dimensionality ==========
+row = predicted, column = actual
+       POINT AREA VOLUME False 
+POINT  0.0   0.0  0.0    7.0   
+AREA   0.0   0.0  0.0    12.0  
+VOLUME 0.0   0.0  0.0    1.0   
+False  0.0   0.0  0.0    0.0   
+
+========= Point =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= Area =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= Volume =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= False =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+
+Accuracy: 0.000000%
+
+
+==========OVERALL==========
+mean precision: 0.0
+mean recall: 0.0
+mean f1: 0.0
+mean accuracy: 0.0

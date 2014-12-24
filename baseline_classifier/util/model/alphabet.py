@@ -1,13 +1,9 @@
-#!/usr/bin/env python
-'''
-Created on Sep 16, 2014
+"""Utility classes
 
-@author: Aaron Levine, Einar Froyen
-@email: aclevine@brandeis.edu
+Every class in here should be fully functional. 
+You don't need to modify anything unless you want to.
 
-Alphabet / codebook classes for label/feature <-> array index
-'''
-
+"""
 import json
 
 class Alphabet(object):

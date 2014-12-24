@@ -12,7 +12,7 @@ PATH, PLACE, MOTION, NONMOTION_EVENT, SPATIAL_ENTITY,
 
 #===============================================================================
 from util.corpora.corpus import Extent, HypotheticalCorpus
-from util.iso_space_classifier import ISOSpaceClassifier, copy_folder
+from util.model.demo import Classifier, copy_folder
 import re
 import nltk
 import os
@@ -120,6 +120,11 @@ class Tag(Extent):
                 '_' + tok:True for i, (tok, lex) 
                 in enumerate(self.next_tokens[:n])}
     
+    def part_of_speech(self):
+        tokens = [tok for tok, lex in self.prev_tokens] + self.token + [tok for tok, lex in self.next_tokens]
+        print tokens
+        return
+    
 #===============================================================================
 
 def no_filter(tag):
@@ -155,16 +160,20 @@ def get_tag_and_no_tag_indices(sentence, tag_dict, tag_filter=no_filter):
 def get_tag_only_indices(sentence, tag_dict):
     return get_tag_and_no_tag_indices(sentence, tag_dict, has_tag)
 
-class TypesClassifier(ISOSpaceClassifier):
+class TypesClassifier(Classifier):
     def __init__(self, type_name, train_path, test_path, gold_path):
         super(TypesClassifier, self).__init__(train_path = train_path, test_path = test_path, 
                                          gold_path = gold_path)
-        self.feature_functions = [lambda x: x.curr_token(),
-                                  lambda x: x.prev_n_bag_of_words(3),
-                                  lambda x: x.next_n_bag_of_words(3)]
         self.label_function = lambda x: str(x.is_type(type_name))
         self.indices_function = get_tag_only_indices  # get_tag_and_no_tag_indices
         self.extent_class = Tag
+
+    def get_feature_functions(self):
+        return [
+                lambda x: x.curr_token(),
+                lambda x: x.part_of_speech()
+               ]
+
 
 #===============================================================================
 
@@ -184,8 +193,8 @@ def generate_tags(train_path, test_path, clean_path, out_path):
    
     for type_name, type_fields in tag_types.iteritems():
         # generate labels
-        c = TypesClassifier(type_name, train_path, test_path)
-        pred, test_data = c.generate_labels()
+        demo = TypesClassifier(type_name, train_path, test_path)
+        pred, test_data = demo.generate_labels()
         
         # labels -> tagged docs
         id_number = 0
@@ -200,9 +209,9 @@ def generate_tags(train_path, test_path, clean_path, out_path):
                 curr_doc = clean_data[i]
                 doc_name = curr_doc.basename
             
-            offsets = "{doc},{begin},{end}".format(doc=extent.basename,
-                                                   begin=extent.lex[0].begin, 
-                                                   end=extent.lex[-1].end)
+            offsets = "{a},{b},{c}".format(a=extent.basename,
+                                           b=extent.lex[0].begin, 
+                                           c=extent.lex[-1].end)
             if pred[offsets] == 'True':
                 tag = {'name': type_name, 
                        'start': extent.tag['start'], 
@@ -222,17 +231,19 @@ def generate_tags(train_path, test_path, clean_path, out_path):
 
 if __name__ == "__main__":
 
-    #TESTING
     train_path = './data/training'
-    test_path = './data/dev/test/configuration1/1'
-    clean_path = './data/dev/test/configuration1/0' 
+    test_path = './data/baseline/test.configuration1/'
+    clean_path = './data/baseline/test.configuration1/'
 
-    hyp_a = './data/dev/test/configuration1/a'    
-    hyp_b = './data/dev/test/configuration1/b'   
-    hyp_c = './data/dev/test/configuration1/c'   
+    hyp_a = './data/final/test/configuration1/a'    
+    hyp_b = './data/final/test/configuration1/b'   
+    hyp_c = './data/final/test/configuration1/c'   
 
     generate_tags(train_path, test_path, clean_path, hyp_a)
 
     # copy to next stages
     copy_folder(hyp_a, hyp_b)
     copy_folder(hyp_a, hyp_c)
+
+    d = TypesClassifier('PATH', train_path, test_path, gold_path = '')
+    d.run_demo()

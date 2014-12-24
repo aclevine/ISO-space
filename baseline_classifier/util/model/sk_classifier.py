@@ -2,8 +2,7 @@
 '''
 Created on Sep 16, 2014
 
-@author: Aaron Levine, Einar Froyen
-@email: aclevine@brandeis.edu
+@author: Einar Froyen, Aaron Levine
 '''
 import json
 
@@ -77,10 +76,13 @@ class SKClassifier():
         if type(pred) == dict:
             prediction_list = []
             true_answer_list = []
-            for offsets, pred in pred.iteritems():
-                prediction_list.append(self.labels.get_index(pred))
-                true_answer_list.append(self.labels.get_index(actual[offsets]))
-            cm.add_data(prediction_list, true_answer_list)                
+            combined = {} 
+            combined.update(pred)
+            combined.update(actual)
+            for offsets, _ in combined.iteritems():
+                prediction_list.append(self.labels.get_index(pred.get(offsets, False)))
+                true_answer_list.append(self.labels.get_index(actual.get(offsets, False)))
+            cm.add_data(prediction_list, true_answer_list)
         else:
             cm.add_data([self.labels.get_index(x) for x in pred], [self.labels.get_index(x) for x in actual])
         cm.print_out()

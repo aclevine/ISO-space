@@ -10,10 +10,10 @@ if signal:
     
 build dictionary of "trigger entities" for qslinks without signal triggers?
 '''
-from util.d_olink import OLinkTag
-from util.iso_space_classifier import ISOSpaceClassifier
+from d_olink import OLinkTag
+from util.model.demo import Classifier
 import re
-from util.b_identify_types import get_tag_and_no_tag_indices
+from b_identify_types import get_tag_and_no_tag_indices
 
 class QSLinkTag(OLinkTag):
     def __init__(self, sent, tag_dict, movelink_tag_dict, olink_tag_dict, 
@@ -49,7 +49,7 @@ def get_top_tag_indices(sentence, tag_dict):
     return get_tag_and_no_tag_indices(sentence, tag_dict, is_top_tag)
 
 # test variables
-class QSLinkClassifier(ISOSpaceClassifier):
+class QSLinkClassifier(Classifier):
     def __init__(self,  train_path='', test_path = '', gold_path = '', ):
         super(QSLinkClassifier, self).__init__(train_path = train_path, test_path = test_path,
                                          gold_path = gold_path)
@@ -104,3 +104,20 @@ class QSLinkLandmarkClassifier(QSLinkClassifier):
         return [lambda x: x.curr_token(),
                 ]
 
+
+if __name__ == "__main__":
+    
+    from_id = QSLinkFromIDClassifier()
+    from_id.run_demo()
+
+    to_id = QSLinkToIDClassifier()
+    to_id.run_demo()
+
+    rel_type = QSLinkRelTypeClassifier()
+    rel_type.run_demo()
+    
+    trajector = QSLinkTrajectorClassifier()
+    trajector.run_demo()
+    
+    landmark = QSLinkLandmarkClassifier()
+    landmark.run_demo()

@@ -6,10 +6,11 @@ Created on Oct 27, 2014
 
 c. Identify their attributes according to type.
 '''
-from util.b_identify_types import Tag, get_tag_and_no_tag_indices
-from util.iso_space_classifier import ISOSpaceClassifier
+from b_identify_types import Tag, get_tag_and_no_tag_indices
+from util.model.demo import Classifier
 import re
 import os
+from _warnings import warn
 
 class MotionTag(Tag):
     # LABEL EXTRACT
@@ -26,12 +27,22 @@ class MotionTag(Tag):
         return self.tag['motion_sense']
 
     def is_move_link(self):
-        trigger_id, from_id, to_id = map(lambda x: x['id'], self.token)
-        links = self.document.query_links(['MOVELINK'], trigger_id)
+#         return True
+        trigger_tag, _, to_tag = self.token
+        links = self.document.query_links(['MOVELINK'], trigger_tag['id'])
         if links:
             link = links[0]
-            if link['fromID'] == from_id and link['toID'] == to_id:
-                return True
+            try:
+                link_to_tag = self.document.query(link['toID'])
+            except KeyError:
+                warning = "malformed MOVELINK {} tag in {}".format(link['id'], self.document.basename)
+                warn(warning, RuntimeWarning)
+                link_to_tag = self.document.query('')
+            except Exception as e:
+                raise e
+            if link_to_tag:
+                if link_to_tag['start'] == to_tag['start'] and link_to_tag['end'] == to_tag['end']:
+                    return True
         return False
 
 # TAG TYPE FILTER
@@ -43,7 +54,7 @@ def get_motion_tag_indices(sentence, tag_dict):
     return get_tag_and_no_tag_indices(sentence, tag_dict, is_motion_tag)
 
 # DEMOS
-class MotionClassifier(ISOSpaceClassifier):
+class MotionClassifier(Classifier):
     def __init__(self, train_path = '', test_path = '', gold_path = ''):
         super(MotionClassifier, self).__init__(train_path = train_path, test_path = test_path,
                                          gold_path = gold_path)
@@ -86,3 +97,16 @@ class IsMovelinkClassifier(MotionClassifier):
 
     def get_feature_functions(self):
         return []
+
+
+if __name__ == "__main__":
+
+    d = MotionTypeClassifier()
+    d.run_demo()
+       
+    d = MotionClassClassifier()
+    d.run_demo()
+          
+    d = MotionSenseClassifier()
+    d.run_demo()
+

@@ -80,7 +80,7 @@ class Document(BS):
     
     def query(self, tag_id):
         """Return the tag whose identifier matches the specified id."""
-        matches = lambda t : t.attrs.get('id', '') == unicode(tag_id)
+        matches = lambda t : t.attrs.get('id', object()) == unicode(tag_id)
         results = filter(matches, self.tags())
         if any(results):
             return results[0]
@@ -160,25 +160,38 @@ class Document(BS):
                 yield extent
                 
     def qs_o_link_triples(self, indices_function, extent_class=Extent):
-        extents = self.extents(indices_function, extent_class)
-        for extent in extents:
-            trigger = extent.tag
-            tags = extent.prev_tags + extent.next_tags
-            for from_tag in tags:
-                for to_tag in tags:
-                    if to_tag != from_tag:
-                        extent.token = (trigger, from_tag, to_tag)
-                        yield extent
+        tag_dict, movelink_tag_dict, olink_tag_dict, qslink_tag_dict = self.sort_tags_by_begin_offset()
+        for s in self.tokenizer.tokenize_text().sentences:
+            sent = s.as_pairs()  # [ (token, lexeme obj), (token, lexeme obj), ...]
+            offsets = indices_function(sent, tag_dict)
+            for begin, end in offsets:
+                extent = extent_class(sent, tag_dict, movelink_tag_dict, olink_tag_dict,
+                                      qslink_tag_dict, begin, end, self.basename, self)
+                trigger = extent.tag
+                tags = extent.prev_tags + extent.next_tags
+                for from_tag in tags:
+                    for to_tag in tags:
+                        if to_tag['id'] != from_tag['id']:
+                            alt_extent = extent_class(sent, tag_dict, movelink_tag_dict, olink_tag_dict,
+                                                      qslink_tag_dict, begin, end, self.basename, self)                            
+                            alt_extent.token = (trigger, from_tag, to_tag)
+                            yield alt_extent
         
     def move_link_triples(self, indices_function, extent_class=Extent):
-        extents = self.extents(indices_function, extent_class)
-        for extent in extents:
-            trigger = extent.tag
-            tags = extent.prev_tags + extent.next_tags
-            for to_tag in tags:
-                extent.token = (extent.tag, extent.tag, to_tag)
-                yield extent
-                
+        tag_dict, movelink_tag_dict, olink_tag_dict, qslink_tag_dict = self.sort_tags_by_begin_offset()
+        for s in self.tokenizer.tokenize_text().sentences:
+            sent = s.as_pairs()  # [ (token, lexeme obj), (token, lexeme obj), ...]
+            offsets = indices_function(sent, tag_dict)
+            for begin, end in offsets:
+                extent = extent_class(sent, tag_dict, movelink_tag_dict, olink_tag_dict,
+                                      qslink_tag_dict, begin, end, self.basename, self)
+                tags = extent.prev_tags + extent.next_tags + [{'id': '', 'start': '-1', 'end': '-1'}]
+                for to_tag in tags:
+                    alt_extent = extent_class(sent, tag_dict, movelink_tag_dict, olink_tag_dict,
+                                              qslink_tag_dict, begin, end, self.basename, self)                    
+                    alt_extent.token = (extent.tag, extent.tag, to_tag)
+                    yield alt_extent
+        
     def validate(self):
         is_valid = True
         tag_count = len(self.tags())
@@ -265,24 +278,20 @@ class Corpus(object):
                     yield extent
                 
     def qs_o_link_triples(self, indices_function, extent_class=Extent):
-        extents = self.extents(indices_function, extent_class)
-        for extent in extents:
-            trigger = extent.tag
-            tags = extent.prev_tags + extent.next_tags
-            for from_tag in tags:
-                for to_tag in tags:
-                    if to_tag != from_tag:
-                        extent.token = (trigger, from_tag, to_tag)
-                        yield extent
+        extents = []
+        for doc in self.documents():
+            doc_extents = doc.qs_o_link_triples(indices_function, extent_class)
+            extents.extend(doc_extents)
+        return extents
+
 
     def move_link_triples(self, indices_function, extent_class=Extent):
-        extents = self.extents(indices_function, extent_class)
-        for extent in extents:
-            trigger = extent.tag
-            tags = extent.prev_tags + extent.next_tags
-            for to_tag in tags:
-                extent.token = (extent.tag, extent.tag, to_tag)
-                yield extent
+        extents = []
+        for doc in self.documents():
+            doc_extents = doc.move_link_triples(indices_function, extent_class)
+            extents.extend(doc_extents)
+        return extents
+
     
     def validate(self):
         map(Document.validate, self.documents())
