@@ -117,7 +117,7 @@ windows = [n_window(window=[1,1])]
 extras = [begins_capitalized, word_len]
 filters = []
 filters = ['pos', 'ner', 'word', 'FORM',
-           'CATEGORY']
+           'CATEGORY', 'LCATEGORY', 'LFORM']
 
 w = open('/users/sethmachine/desktop/nops.txt')
 t = w.read()
