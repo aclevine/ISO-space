@@ -8,12 +8,15 @@ Created on Oct 31, 2014
 '''
 from util.corpora.corpus import Corpus, HypotheticalCorpus
 from sklearn.linear_model import LogisticRegression 
-from util.model import SKClassifier
+from util.model.sk_classifier import SKClassifier
 from abc import abstractmethod
 import os
 import shutil
 
-class ISOSpaceClassifier(object):
+
+link_key = '{doc_name},({trigger_start}, {trigger_end}),({from_start},{from_end}),({to_start},{to_end})'
+
+class Classifier(object):
     '''specify where system should pull training and test data from'''
     def __init__(self, train_path='./training', test_path=None, gold_path=None, split=0.8):
         self.train_path = train_path
@@ -33,6 +36,7 @@ class ISOSpaceClassifier(object):
 
     def generate_test_train(self):
         """ create test and training instances based on provided paths """
+
         train_corpus = Corpus(self.train_path)
         extents = list(train_corpus.extents(self.indices_function,
                                             self.extent_class))
@@ -105,6 +109,7 @@ class ISOSpaceClassifier(object):
                       
     def generate_labels(self, verbose=0):
         """return extents and label dictionary for generating proposed XML docs"""        
+        
         # load data
         train_data, test_data = self.generate_test_train()
         labels = [self.label_function(x) for x in train_data]
@@ -134,36 +139,24 @@ class ISOSpaceClassifier(object):
                             )
         return pred, test_data
 
-    def get_extents(self):
-        test_corpus = Corpus(self.test_path)
-        return list(test_corpus.extents(self.indices_function,
-                                        self.extent_class))
 
-    def get_movelink_tuples(self):
-        test_corpus = Corpus(self.test_path)
-        return list(test_corpus.move_link_triples(self.indices_function,
-                                                  self.extent_class))
-
-
-    def get_qs_o_link_tuples(self):
-        test_corpus = Corpus(self.test_path)
-        return list(test_corpus.qs_o_link_triples(self.indices_function,
-                                                  self.extent_class))
-
-    def evaluate(self, get_instances = get_extents):
+    def evaluate(self):
         """ given test and gold copora paths with matching docs, 
         compare proposed tags with actual tags """
         clf = SKClassifier(LogisticRegression(),
                            self.label_function,
                            self.feature_functions)
+
         # hyp
-        test_data = self.get_instances()
+        test_corpus = Corpus(self.test_path)
+        test_data = list(test_corpus.extents(self.indices_function,
+                                             self.extent_class))
         test_labels = dict([
                             ("{a},{b},{c}".format(a=extent.basename,
                                                   b=extent.lex[0].begin, 
                                                   c=extent.lex[-1].end),  
-                            self.label_function(extent))
-                        for extent in test_data])
+                            self.label_function(extent)) 
+                        for extent in test_data])   
         clf.add_labels(test_labels.values())
         
         # ref
@@ -189,19 +182,96 @@ class ISOSpaceClassifier(object):
         cm = clf.evaluate(test_labels, gold_labels)
         # output dict for 
         return cm
-
+    
+    
     def evaluate_movelink(self):
-        return self.evaluate(self.get_movelink_tuples)
+        """ given test and gold copora paths with matching docs, 
+        compare proposed tags with actual tags """
+        clf = SKClassifier(LogisticRegression(),
+                           self.label_function,
+                           self.feature_functions)
+
+        # hyp
+        test_corpus = Corpus(self.test_path)
+        test_data = list(test_corpus.move_link_triples(self.indices_function,
+                                                       self.extent_class))
+        test_labels = dict([
+            (link_key.format(doc_name=extent.basename,
+                       trigger_start = extent.token[0]['start'], 
+                       trigger_end = extent.token[0]['end'],
+                       from_start = extent.token[1]['start'], 
+                       from_end = extent.token[1]['end'],
+                       to_start = extent.token[2]['start'],
+                       to_end = extent.token[2]['end']),
+                self.label_function(extent)) 
+            for extent in test_data])        
+        clf.add_labels(test_labels.values())
+        
+        # ref
+        gold_corpus = Corpus(self.gold_path)
+        gold_data = list(gold_corpus.move_link_triples(self.indices_function,
+                                                       self.extent_class))
+        gold_labels = dict([
+            (link_key.format(doc_name=extent.basename,
+                       trigger_start = extent.token[0]['start'], 
+                       trigger_end = extent.token[0]['end'],
+                       from_start = extent.token[1]['start'], 
+                       from_end = extent.token[1]['end'],
+                       to_start = extent.token[2]['start'],
+                       to_end = extent.token[2]['end']),
+                self.label_function(extent)) 
+            for extent in gold_data])        
+        clf.add_labels(gold_labels.values())            
+        cm = clf.evaluate(test_labels, gold_labels)
+        # output dict for 
+        return cm
 
     def evaluate_qs_o_link(self):
-        return self.evaluate(self.get_qs_o_link_tuples)
+        """ given test and gold copora paths with matching docs, 
+        compare proposed tags with actual tags """
+        clf = SKClassifier(LogisticRegression(),
+                           self.label_function,
+                           self.feature_functions)
+
+        # hyp
+        test_corpus = Corpus(self.test_path)
+        test_data = list(test_corpus.qs_o_link_triples(self.indices_function,
+                                                       self.extent_class))
+
+        test_labels = dict([
+            (link_key.format(doc_name=extent.basename,
+                       trigger_start = extent.token[0]['start'], 
+                       trigger_end = extent.token[0]['end'],
+                       from_start = extent.token[1]['start'], 
+                       from_end = extent.token[1]['end'],
+                       to_start = extent.token[2]['start'],
+                       to_end = extent.token[2]['end']),
+                self.label_function(extent)) 
+            for extent in test_data])
+        clf.add_labels(test_labels.values())
+        
+        # ref
+        gold_corpus = Corpus(self.gold_path)
+        gold_data = list(gold_corpus.qs_o_link_triples(self.indices_function,
+                                                       self.extent_class))
+        gold_labels = dict([
+            (link_key.format(doc_name=extent.basename,
+                       trigger_start = extent.token[0]['start'], 
+                       trigger_end = extent.token[0]['end'],
+                       from_start = extent.token[1]['start'], 
+                       from_end = extent.token[1]['end'],
+                       to_start = extent.token[2]['start'],
+                       to_end = extent.token[2]['end']),
+                self.label_function(extent)) 
+            for extent in gold_data])        
+        clf.add_labels(gold_labels.values())            
+        cm = clf.evaluate(test_labels, gold_labels)
+        # output dict for 
+        return cm
 
 def copy_folder(src, dest):
-    if not os.path.exists(dest):
-        os.makedirs(dest)
     src_files = os.listdir(src)
     for file_name in src_files:
         full_file_name = os.path.join(src, file_name)
         if (os.path.isfile(full_file_name)):
             shutil.copy(full_file_name, dest)
-

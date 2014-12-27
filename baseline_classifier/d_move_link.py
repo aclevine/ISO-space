@@ -4,10 +4,10 @@ Created on Nov 13, 2014
 @author: Aaron Levine
 '''
 
-from util.c_path import PathTag
-from util.iso_space_classifier import ISOSpaceClassifier
+from c_path import PathTag
+from util.model.demo import Classifier
 from util.corpora.corpus import Corpus
-from util.c_motion import get_motion_tag_indices
+from c_motion import get_motion_tag_indices
 import re
 
 
@@ -149,7 +149,7 @@ class MovelinkTag(PathTag):
         return feat_dict
 
 # DEMO
-class MovelinkClassifier(ISOSpaceClassifier):
+class MovelinkClassifier(Classifier):
     def __init__(self, train_path='', test_path = '', gold_path = ''):
         super(MovelinkClassifier, self).__init__(train_path = train_path, test_path = test_path,
                                            gold_path = gold_path)
@@ -275,3 +275,24 @@ class MovelinkMotionSignalIDExentsClassifier(MovelinkClassifier):
 
     def get_feature_functions(self):
         return []
+
+
+if __name__ == "__main__":
+    
+    source = MovelinkSourceClassifier()  
+    source.run_demo()
+ 
+    goal = MovelinkGoalClassifier()
+    goal.run_demo()
+  
+    mid_point = MovelinkMidPointClassifier()  
+    mid_point.run_demo()
+ 
+    mover = MovelinkMoverClassifier()  
+    mover.run_demo()
+ 
+    d = MovelinkLandmarkClassifier()  
+    d.run_demo()
+    
+    d = MovelinkGoalReachedClassifier()  
+    d.run_demo()

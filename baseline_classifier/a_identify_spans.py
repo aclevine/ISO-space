@@ -8,8 +8,8 @@ a) Identify spans of spatial elements including locations, paths, events and oth
 '''
 #===============================================================================
 from util.corpora.corpus import Extent
-from util.iso_space_classifier import ISOSpaceClassifier
 import nltk
+from util.model.demo import Classifier
 import os
 #===============================================================================
 
@@ -78,7 +78,6 @@ class Token(Extent):
         return {'prev_simple_tag': 'None'}
 
 #===============================================================================
-
 def get_token_indices(sentence, tag_dict):
     indices = []
     for i in range(len(sentence)):
@@ -87,32 +86,31 @@ def get_token_indices(sentence, tag_dict):
         indices.append((start, end))
     return indices
 
-class SpansClassifier(ISOSpaceClassifier):
+class Spans_Classifier(Classifier):
     def __init__(self, train_path, test_path):
-        super(SpansClassifier, self).__init__(train_path = train_path, test_path = test_path)
+        super(Spans_Classifier, self).__init__(train_path = train_path, test_path = test_path)
+        self.feature_functions = [
+                                    lambda x: x.upper_case(),
+                                    lambda x: x.next_upper_case(),
+                                    lambda x: x.prev_upper_case(),
+                                    lambda x: x.pos_tag(),
+                                    lambda x: x.next_pos_tag(),
+                                    lambda x: x.prev_pos_tag(),
+                                    lambda x: x.simple_tag(),
+                                    lambda x: x.next_simple_tag(),
+                                    lambda x: x.prev_simple_tag()
+                                 ] 
         self.label_function = lambda x: str(x.unconsumed_tag())
         self.indices_function = get_token_indices
         self.extent_class = Token
-        
-    def get_feature_functions(self):
-        return [
-                lambda x: x.upper_case(),
-                lambda x: x.next_upper_case(),
-                lambda x: x.prev_upper_case(),
-                lambda x: x.pos_tag(),
-                lambda x: x.next_pos_tag(),
-                lambda x: x.prev_pos_tag(),
-                lambda x: x.simple_tag(),
-                lambda x: x.next_simple_tag(),
-                lambda x: x.prev_simple_tag()
-                ]
+
 
 def generate_elements(train_path, test_path, out_path):
     ''' train model with corpus in train_path,
     classify spanning tags for docs in test_path, 
     write xmls of docs with new tags to out_path '''
     #classify test_data
-    d = SpansClassifier(train_path, test_path)
+    d = Spans_Classifier(train_path, test_path)
     pred, test_data = d.generate_labels()
 
     #parse into XML tags    
@@ -149,12 +147,17 @@ def generate_elements(train_path, test_path, out_path):
     curr_doc.save_xml(os.path.join(out_path, doc_name))
 
 
-if __name__ == "__main__":    
+if __name__ == "__main__":
+    
     # TESTING
+#     d = Spans_Classifier(train_path = './test_dev', test_path = './test_dev')
+#     d.run_demo(2)
+    
+    # GENERATE DATA
     train_path = './data/training'
-    test_path = './data/dev/test/configuration1/0'
-    outpath = './data/dev/test/configuration1/1'
+    test_path = './data/final/test/configuration1/0'
+    outpath = './data/final/test/configuration1/1'
     
     generate_elements(train_path, test_path, outpath)
-
+    
     

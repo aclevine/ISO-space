@@ -6,8 +6,8 @@ Created on Oct 27, 2014
 
 c. Identify their attributes according to type.
 '''
-from util.b_identify_types import get_tag_and_no_tag_indices, Tag
-from util.iso_space_classifier import ISOSpaceClassifier
+from b_identify_types import get_tag_and_no_tag_indices, Tag
+from util.model.demo import Classifier
 import re
 
 # check with Zach about what we're actually covering
@@ -53,7 +53,7 @@ def get_path_tag_indices(sentence, tag_dict):
     return get_tag_and_no_tag_indices(sentence, tag_dict, is_path_tag)
 
 # DEMOS
-class PathClassifier(ISOSpaceClassifier):
+class PathClassifier(Classifier):
     def __init__(self, train_path = '', test_path = '', gold_path = ''):
         super(PathClassifier, self).__init__(train_path = train_path, test_path = test_path, 
                                        gold_path = gold_path)
@@ -100,3 +100,20 @@ class PathModClassifier(PathClassifier):
     def get_feature_functions(self):
         return [lambda x: x.curr_token(),
                 ]
+
+if __name__ == "__main__":
+    d = PathDimensionalityClassifier()
+    d.run_demo()
+    
+    d = PathFormClassifier()
+    d.run_demo()
+    
+    d = PathCountableClassifier()
+    d.run_demo()
+
+    d = PathElevationClassifier()
+    d.run_demo()
+
+    d = PathModClassifier()
+    d.run_demo()
+   
