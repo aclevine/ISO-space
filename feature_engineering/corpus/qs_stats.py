@@ -157,10 +157,11 @@ def link_distance_singletons(docs):
 ground_dist_unattested = [x for x in xrange(-9,-3)] + [7]
 
 
+"""
 d = link_distance_pairs(train_corpus.documents, types=True)
 t = link_distance_singletons(train_corpus.documents)
 positives = positive_instances(training)
 l = link_type_pairs(positives, singletons=False, types=True)
 w = link_type_pairs(positives, singletons=True, types=False)
 r = link_types(positives)
-    
+"""

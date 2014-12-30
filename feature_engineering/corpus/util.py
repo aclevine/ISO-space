@@ -10,6 +10,23 @@ from collections import defaultdict
 from itertools import chain, combinations
 import os, re
 
+def is_full_qslink(link):
+    is_full = True
+    attrs = ['fromText', 'toText', 'trigger']
+    for attr in attrs:
+        if attr not in link.attrib or not link.attrib[attr]:
+            is_full = False
+    return is_full
+
+def is_same_qslink(link1, link2):
+    is_match = True
+    attrs = ['fromText', 'toText', 'trigger']
+    for attr in attrs:
+        if link1.attrib[attr] != link2.attrib[attr]:
+            is_full = False
+    return is_full
+    
+
 def getXmls(dirpath, recursive=True):
     files = []
     for f in os.listdir(dirpath):
