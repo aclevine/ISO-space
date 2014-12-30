@@ -127,15 +127,6 @@ class OLinkTag(MovelinkTag):
         else:
             return "-1,-1"
 
-    # FEATURE
-    def surrounding_tags(self):
-        feats = {}
-        for i, tag in enumerate(self.next_tags):
-            feats["tag_{}".format(i)] = re.sub('\d+', '', tag['id'])
-        for j, tag in enumerate(reversed(self.prev_tags)):
-            feats["tag_{}".format(-j)] = re.sub('\d+', '', tag['id'])
-
-    
 # TAG TYPE FILTER
 def is_dir_tag(tag):
     ''' load c_path / pu / spatial entity / c_spatial_signal / c_nonmotion_event / c_motion heads'''
@@ -181,6 +172,10 @@ class OLinkFromIDClassifier(OLinkClassifier):
 
     def get_feature_functions(self):
         return [lambda x: x.curr_token(),
+                lambda x: x.surrounding_tag_types(),
+                lambda x: x.surrounding_tag_text(),
+                lambda x: x.prev_tag_count(),
+                lambda x: x.next_tag_count(),
                 ]
 
 class OLinkToIDClassifier(OLinkClassifier):      
@@ -190,6 +185,10 @@ class OLinkToIDClassifier(OLinkClassifier):
 
     def get_feature_functions(self):
         return [lambda x: x.curr_token(),
+                lambda x: x.surrounding_tag_types(),
+                lambda x: x.surrounding_tag_text(),
+                lambda x: x.prev_tag_count(),
+                lambda x: x.next_tag_count(),
                 ]
 
 class OLinkRelTypeClassifier(OLinkClassifier):      
@@ -208,7 +207,7 @@ class OLinkFrameTypeClassifier(OLinkClassifier):
         return [lambda x: x.curr_token(),
                 ]
 
-class OLinkReferencePtClassifier(OLinkClassifier):      
+class OLinkReferencePtClassifier(OLinkClassifier):
     def get_label_function(self):
         return  lambda x: str(x.reference_pt())
 
@@ -268,7 +267,4 @@ if __name__ == "__main__":
 
     projective = OLinkProjectiveClassifier()
     projective.run_demo()
-    
-    #absolute - cardnial dir
-    #intrinsic - also landmark
 

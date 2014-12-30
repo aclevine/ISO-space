@@ -13,9 +13,9 @@ from d_fill_link_attrs import generate_qslinks, generate_olinks,\
 if __name__ == "__main__":
     
     train_path = './data/training'
-    clean_path = './data/baseline/configuration3/0'
-    hyp_a = './data/baseline/configuration3/a'
-    hyp_b = './data/baseline/configuration3/b'
+    clean_path = './data/dev/configuration3/0'
+    hyp_a = './data/dev/configuration3/a'
+    hyp_b = './data/dev/configuration3/b'
     
     # 2b + c
     copy_folder(clean_path, hyp_a)
@@ -23,4 +23,5 @@ if __name__ == "__main__":
     generate_olinks(train_path, hyp_a, hyp_a)
     generate_movelinks(train_path, hyp_a, hyp_a)
 
-    copy_folder(hyp_a, hyp_b)
+#     copy_folder(hyp_a, hyp_b)
+    

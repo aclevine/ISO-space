@@ -124,6 +124,7 @@ class MovelinkTag(PathTag):
             return "{},{}".format(target_tag['start'], target_tag['end'])
         else:
             return "-1,-1"
+
                     
     # FEATURE EXTRACT
     def prev_tag_count(self):
@@ -147,6 +148,24 @@ class MovelinkTag(PathTag):
             feat_dict['next_tag_%d_type' % i] = re.findall('[a-z]+', tag['id'])[0]
             i += 1
         return feat_dict
+
+    def surrounding_tag_types(self):
+        feats = {}
+        for i, tag in enumerate(self.next_tags):
+            feats["tag_{}_type".format(i)] = re.sub('\d+', '', tag['id'])
+        for j, tag in enumerate(reversed(self.prev_tags)):
+            feats["tag_{}_type".format(-j)] = re.sub('\d+', '', tag['id'])
+        return feats
+
+
+    def surrounding_tag_text(self):
+        feats = {}
+        for i, tag in enumerate(self.next_tags):
+            feats["tag_{}_text".format(i)] = re.sub('\d+', '', tag['text'])
+        for j, tag in enumerate(reversed(self.prev_tags)):
+            feats["tag_{}_text".format(-j)] = re.sub('\d+', '', tag['text'])
+        return feats
+
 
 # DEMO
 class MovelinkClassifier(Classifier):
@@ -197,7 +216,11 @@ class MovelinkMoverClassifier(MovelinkClassifier):
         return  lambda x: str(x.mover())
 
     def get_feature_functions(self):
-        return [lambda x: x.curr_token(),
+        return [lambda x: x.curr_token(), 
+                lambda x: x.surrounding_tag_types(),
+                lambda x: x.surrounding_tag_text(), 
+                lambda x: x.prev_tag_count(),
+                lambda x: x.next_tag_count(),                                            
                 ]
 
 class MovelinkLandmarkClassifier(MovelinkClassifier):  

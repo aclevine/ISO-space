@@ -70,6 +70,10 @@ class QSLinkFromIDClassifier(QSLinkClassifier):
 
     def get_feature_functions(self):
         return [lambda x: x.curr_token(),
+                lambda x: x.surrounding_tag_types(),
+                lambda x: x.surrounding_tag_text(),
+                lambda x: x.prev_tag_count(),
+                lambda x: x.next_tag_count(),
                 ]
 
 class QSLinkToIDClassifier(QSLinkClassifier):
@@ -78,6 +82,10 @@ class QSLinkToIDClassifier(QSLinkClassifier):
 
     def get_feature_functions(self):
         return [lambda x: x.curr_token(),
+                lambda x: x.surrounding_tag_types(),
+                lambda x: x.surrounding_tag_text(),
+                lambda x: x.prev_tag_count(),
+                lambda x: x.next_tag_count(),
                 ]
 
 class QSLinkRelTypeClassifier(QSLinkClassifier):

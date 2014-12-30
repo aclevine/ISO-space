@@ -8,8 +8,8 @@ from e_evaluator import config_3_eval_single
 
 if __name__ == "__main__":
 
-    hyp_path = './data/task8_hrijp_crf_vw_system_submission/configuration3/'
+    hyp_path = './data/utdTask8_configuration3a_run3'
     gold_path = './data/gold'
-    outpath = './results/hrijp_crf_vw/'
+    outpath = './results/utd/run3'
 
     config_3_eval_single(hyp_path, gold_path, outpath)
