@@ -4,17 +4,17 @@ Created on Sep 9, 2014
 @author: Aaron Levine
 '''
 import numpy
-import util.Corpora.corpus as xml
 import nltk
 
 
 if __name__ == "__main__":    
     
-    l = [1, 2, 3, 4]
-    l = list((1, 3, 5, 6, 7))
+    text = "eat the bees"
+    tokens = nltk.word_tokenize(text)
+
+    print nltk.pos_tag(tokens)
     
-    d = {1:4, 5:7}
-    print d[1]
+    print nltk.prase
     
 #     y = numpy.zeros(4)
 #     x = numpy.zeros(4)
