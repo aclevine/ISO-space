@@ -69,8 +69,7 @@ class OLinkTag(MovelinkTag):
                             return i
                         i += 1    
         return 0
-    
-   
+
     def is_olink(self):
         if self.tag.get('id', ''):
             return {'is_OLink': True}
@@ -127,6 +126,15 @@ class OLinkTag(MovelinkTag):
             return "{},{}".format(target_tag['start'], target_tag['end'])
         else:
             return "-1,-1"
+
+    # FEATURE
+    def surrounding_tags(self):
+        feats = {}
+        for i, tag in enumerate(self.next_tags):
+            feats["tag_{}".format(i)] = re.sub('\d+', '', tag['id'])
+        for j, tag in enumerate(reversed(self.prev_tags)):
+            feats["tag_{}".format(-j)] = re.sub('\d+', '', tag['id'])
+
     
 # TAG TYPE FILTER
 def is_dir_tag(tag):
