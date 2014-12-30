@@ -114,14 +114,14 @@ def generate_qslinks(train_path, test_path, out_path):
         to_offset = int(to_labels[offsets])
         if to_offset > 0:
             if extent.next_tags:
-                to_tag = extent.next_tags[min(from_offset, len(extent.next_tags)) - 1]
+                to_tag = extent.next_tags[min(to_offset, len(extent.next_tags)) - 1]
             elif extent.prev_tags:
                 to_tag = extent.prev_tags[-1]
             else:
                 to_tag = {'id': '', 'text': ''}
         else:
             if extent.prev_tags:
-                to_tag = extent.prev_tags[max(from_offset, -1 * len(extent.prev_tags))]
+                to_tag = extent.prev_tags[max(to_offset, -1 * len(extent.prev_tags))]
             elif extent.next_tags:
                 to_tag = extent.next_tags[0]
             else:
@@ -200,14 +200,14 @@ def generate_olinks(train_path, test_path, out_path):
         to_offset = int(to_labels[offsets])
         if to_offset > 0:
             if extent.next_tags:
-                to_tag = extent.next_tags[min(from_offset, len(extent.next_tags)) - 1]
+                to_tag = extent.next_tags[min(to_offset, len(extent.next_tags)) - 1]
             elif extent.prev_tags:
                 to_tag = extent.prev_tags[-1]
             else:
                 to_tag = {'id': '', 'text': ''}
         else:
             if extent.prev_tags:
-                to_tag = extent.prev_tags[max(from_offset, -1 * len(extent.prev_tags))]
+                to_tag = extent.prev_tags[max(to_offset, -1 * len(extent.prev_tags))]
             elif extent.next_tags:
                 to_tag = extent.next_tags[0]
             else:

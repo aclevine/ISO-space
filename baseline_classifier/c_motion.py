@@ -33,7 +33,7 @@ class MotionTag(Tag):
         if links:
             link = links[0]
             try:
-                link_to_tag = self.document.query(link['toID'])
+                link_to_tag = self.document.query(link['mover'])
             except KeyError:
                 warning = "malformed MOVELINK {} tag in {}".format(link['id'], self.document.basename)
                 warn(warning, RuntimeWarning)

@@ -1,0 +1,578 @@
+
+
+========== PATH - dimensionality ==========
+row = predicted, column = actual
+       False VOLUME LINE      AREA 
+False  0.0   14.0   10.0 56.0 14.0 
+VOLUME 0.0   0.0    0.0  0.0  0.0  
+LINE   0.0   0.0    0.0  0.0  0.0  
+       0.0   0.0    0.0  0.0  0.0  
+AREA   0.0   0.0    0.0  0.0  0.0  
+
+========= False =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= Volume =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= Line =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+=========  =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= Area =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+
+Accuracy: 0.000000%
+
+
+========== PATH - countable ==========
+row = predicted, column = actual
+      False TRUE FALSE 
+False 0.0   90.0 4.0   
+TRUE  0.0   0.0  0.0   
+FALSE 0.0   0.0  0.0   
+
+========= False =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= True =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= False =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+
+Accuracy: 0.000000%
+
+
+========== PLACE - mod ==========
+row = predicted, column = actual
+            False       small coastal southern highest rolling large major northern high smaller reserve's flat topped huge 
+False       0.0   282.0 6.0   1.0     1.0      1.0     1.0     1.0   1.0   2.0      3.0  1.0     1.0       1.0         1.0  
+            0.0   0.0   0.0   0.0     0.0      0.0     0.0     0.0   0.0   0.0      0.0  0.0     0.0       0.0         0.0  
+small       0.0   0.0   0.0   0.0     0.0      0.0     0.0     0.0   0.0   0.0      0.0  0.0     0.0       0.0         0.0  
+coastal     0.0   0.0   0.0   0.0     0.0      0.0     0.0     0.0   0.0   0.0      0.0  0.0     0.0       0.0         0.0  
+southern    0.0   0.0   0.0   0.0     0.0      0.0     0.0     0.0   0.0   0.0      0.0  0.0     0.0       0.0         0.0  
+highest     0.0   0.0   0.0   0.0     0.0      0.0     0.0     0.0   0.0   0.0      0.0  0.0     0.0       0.0         0.0  
+rolling     0.0   0.0   0.0   0.0     0.0      0.0     0.0     0.0   0.0   0.0      0.0  0.0     0.0       0.0         0.0  
+large       0.0   0.0   0.0   0.0     0.0      0.0     0.0     0.0   0.0   0.0      0.0  0.0     0.0       0.0         0.0  
+major       0.0   0.0   0.0   0.0     0.0      0.0     0.0     0.0   0.0   0.0      0.0  0.0     0.0       0.0         0.0  
+northern    0.0   0.0   0.0   0.0     0.0      0.0     0.0     0.0   0.0   0.0      0.0  0.0     0.0       0.0         0.0  
+high        0.0   0.0   0.0   0.0     0.0      0.0     0.0     0.0   0.0   0.0      0.0  0.0     0.0       0.0         0.0  
+smaller     0.0   0.0   0.0   0.0     0.0      0.0     0.0     0.0   0.0   0.0      0.0  0.0     0.0       0.0         0.0  
+reserve's   0.0   0.0   0.0   0.0     0.0      0.0     0.0     0.0   0.0   0.0      0.0  0.0     0.0       0.0         0.0  
+flat topped 0.0   0.0   0.0   0.0     0.0      0.0     0.0     0.0   0.0   0.0      0.0  0.0     0.0       0.0         0.0  
+huge        0.0   0.0   0.0   0.0     0.0      0.0     0.0     0.0   0.0   0.0      0.0  0.0     0.0       0.0         0.0  
+
+========= False =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+=========  =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= Small =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= Coastal =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= Southern =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= Highest =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= Rolling =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= Large =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= Major =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= Northern =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= High =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= Smaller =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= Reserve'S =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= Flat Topped =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= Huge =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+
+Accuracy: 0.000000%
+
+
+========== SPATIAL_ENTITY - dimensionality ==========
+row = predicted, column = actual
+       False       POINT AREA VOLUME 
+False  0.0   223.0 41.0  32.0 15.0   
+       0.0   0.0   0.0   0.0  0.0    
+POINT  0.0   0.0   0.0   0.0  0.0    
+AREA   0.0   0.0   0.0   0.0  0.0    
+VOLUME 0.0   0.0   0.0   0.0  0.0    
+
+========= False =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+=========  =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= Point =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= Area =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= Volume =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+
+Accuracy: 0.000000%
+
+
+========== SPATIAL_ENTITY - mod ==========
+row = predicted, column = actual
+      False       big large thick 
+False 0.0   308.0 1.0 1.0   1.0   
+      0.0   0.0   0.0 0.0   0.0   
+big   0.0   0.0   0.0 0.0   0.0   
+large 0.0   0.0   0.0 0.0   0.0   
+thick 0.0   0.0   0.0 0.0   0.0   
+
+========= False =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+=========  =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= Big =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= Large =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= Thick =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+
+Accuracy: 0.000000%
+
+
+========== PLACE - form ==========
+row = predicted, column = actual
+      False NAM   NOM   
+False 0.0   127.0 176.0 
+NAM   0.0   0.0   0.0   
+NOM   0.0   0.0   0.0   
+
+========= False =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= Nam =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= Nom =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+
+Accuracy: 0.000000%
+
+
+========== MOTION - motion_sense ==========
+row = predicted, column = actual
+                 False LITERAL FICTIVE INTRINSIC_CHANGE 
+False            0.0   169.0   10.0    2.0              
+LITERAL          0.0   0.0     0.0     0.0              
+FICTIVE          0.0   0.0     0.0     0.0              
+INTRINSIC_CHANGE 0.0   0.0     0.0     0.0              
+
+========= False =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= Literal =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= Fictive =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= Intrinsic_Change =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+
+Accuracy: 0.000000%
+
+
+========== PATH - mod ==========
+row = predicted, column = actual
+         False      narrow northern major southern small lower steep 
+False    0.0   85.0 1.0    1.0      2.0   1.0      1.0   1.0   2.0   
+         0.0   0.0  0.0    0.0      0.0   0.0      0.0   0.0   0.0   
+narrow   0.0   0.0  0.0    0.0      0.0   0.0      0.0   0.0   0.0   
+northern 0.0   0.0  0.0    0.0      0.0   0.0      0.0   0.0   0.0   
+major    0.0   0.0  0.0    0.0      0.0   0.0      0.0   0.0   0.0   
+southern 0.0   0.0  0.0    0.0      0.0   0.0      0.0   0.0   0.0   
+small    0.0   0.0  0.0    0.0      0.0   0.0      0.0   0.0   0.0   
+lower    0.0   0.0  0.0    0.0      0.0   0.0      0.0   0.0   0.0   
+steep    0.0   0.0  0.0    0.0      0.0   0.0      0.0   0.0   0.0   
+
+========= False =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+=========  =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= Narrow =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= Northern =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= Major =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= Southern =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= Small =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= Lower =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= Steep =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+
+Accuracy: 0.000000%
+
+
+========== NONMOTION_EVENT - countable ==========
+row = predicted, column = actual
+      False      TRUE FALSE 
+False 0.0   47.0 10.0 3.0   
+      0.0   0.0  0.0  0.0   
+TRUE  0.0   0.0  0.0  0.0   
+FALSE 0.0   0.0  0.0  0.0   
+
+========= False =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+=========  =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= True =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= False =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+
+Accuracy: 0.000000%
+
+
+========== PATH - form ==========
+row = predicted, column = actual
+      False NOM  NAM 
+False 0.0   87.0 7.0 
+NOM   0.0   0.0  0.0 
+NAM   0.0   0.0  0.0 
+
+========= False =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= Nom =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= Nam =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+
+Accuracy: 0.000000%
+
+
+========== NONMOTION_EVENT - mod ==========
+row = predicted, column = actual
+      False      
+False 0.0   60.0 
+      0.0   0.0  
+
+========= False =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+=========  =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+
+Accuracy: 0.000000%
+
+
+========== SPATIAL_ENTITY - countable ==========
+row = predicted, column = actual
+      False TRUE  FALSE 
+False 0.0   297.0 14.0  
+TRUE  0.0   0.0   0.0   
+FALSE 0.0   0.0   0.0   
+
+========= False =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= True =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= False =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+
+Accuracy: 0.000000%
+
+
+========== MOTION - motion_type ==========
+row = predicted, column = actual
+         False PATH  COMPOUND MANNER 
+False    0.0   103.0 59.0     19.0   
+PATH     0.0   0.0   0.0      0.0    
+COMPOUND 0.0   0.0   0.0      0.0    
+MANNER   0.0   0.0   0.0      0.0    
+
+========= False =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= Path =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= Compound =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= Manner =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+
+Accuracy: 0.000000%
+
+
+========== MOTION - motion_class ==========
+row = predicted, column = actual
+              False REACH MOVE_EXTERNAL MOVE_INTERNAL MOVE DEVIATE DETACH FOLLOW CROSS HIT LEAVE 
+False         0.0   70.0  7.0           10.0          40.0 4.0     1.0    15.0   16.0  8.0 10.0  
+REACH         0.0   0.0   0.0           0.0           0.0  0.0     0.0    0.0    0.0   0.0 0.0   
+MOVE_EXTERNAL 0.0   0.0   0.0           0.0           0.0  0.0     0.0    0.0    0.0   0.0 0.0   
+MOVE_INTERNAL 0.0   0.0   0.0           0.0           0.0  0.0     0.0    0.0    0.0   0.0 0.0   
+MOVE          0.0   0.0   0.0           0.0           0.0  0.0     0.0    0.0    0.0   0.0 0.0   
+DEVIATE       0.0   0.0   0.0           0.0           0.0  0.0     0.0    0.0    0.0   0.0 0.0   
+DETACH        0.0   0.0   0.0           0.0           0.0  0.0     0.0    0.0    0.0   0.0 0.0   
+FOLLOW        0.0   0.0   0.0           0.0           0.0  0.0     0.0    0.0    0.0   0.0 0.0   
+CROSS         0.0   0.0   0.0           0.0           0.0  0.0     0.0    0.0    0.0   0.0 0.0   
+HIT           0.0   0.0   0.0           0.0           0.0  0.0     0.0    0.0    0.0   0.0 0.0   
+LEAVE         0.0   0.0   0.0           0.0           0.0  0.0     0.0    0.0    0.0   0.0 0.0   
+
+========= False =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= Reach =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= Move_External =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= Move_Internal =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= Move =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= Deviate =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= Detach =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= Follow =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= Cross =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= Hit =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= Leave =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+
+Accuracy: 0.000000%
+
+
+========== PLACE - countable ==========
+row = predicted, column = actual
+      False TRUE  FALSE 
+False 0.0   296.0 7.0   
+TRUE  0.0   0.0   0.0   
+FALSE 0.0   0.0   0.0   
+
+========= False =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= True =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= False =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+
+Accuracy: 0.000000%
+
+
+========== SPATIAL_ENTITY - form ==========
+row = predicted, column = actual
+      False NOM   NAM 
+False 0.0   303.0 8.0 
+NOM   0.0   0.0   0.0 
+NAM   0.0   0.0   0.0 
+
+========= False =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= Nom =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= Nam =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+
+Accuracy: 0.000000%
+
+
+========== PLACE - dimensionality ==========
+row = predicted, column = actual
+       False       VOLUME POINT AREA 
+False  0.0   199.0 16.0   24.0  64.0 
+       0.0   0.0   0.0    0.0   0.0  
+VOLUME 0.0   0.0   0.0    0.0   0.0  
+POINT  0.0   0.0   0.0    0.0   0.0  
+AREA   0.0   0.0   0.0    0.0   0.0  
+
+========= False =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+=========  =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= Volume =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= Point =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= Area =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+
+Accuracy: 0.000000%
+
+
+==========OVERALL==========
+mean precision: 0.0
+mean recall: 0.0
+mean f1: 0.0
+mean accuracy: 0.0

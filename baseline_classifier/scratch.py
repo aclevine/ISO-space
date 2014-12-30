@@ -10,9 +10,12 @@ from util.corpora.corpus import Corpus
 if __name__ == "__main__":    
 
     
-    c = Corpus('../Train++')
+    c = Corpus('./data/dev')
     
-    l = [1, 2, 3, 4]
+    for doc in c.documents():
+        print doc.query('m4')
+    
+
 #     y = numpy.zeros(4)
 
 #     x = numpy.zeros(4)

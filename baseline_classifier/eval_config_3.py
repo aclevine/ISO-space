@@ -8,7 +8,7 @@ from e_evaluator import config_3_eval_single
 
 if __name__ == "__main__":
 
-    hyp_path = './data/utdTask8_configuration3a_run3'
+    hyp_path = './data/ixagroup_ehu_spaceeval/configuration3'
     gold_path = './data/gold'
     outpath = './results/utd/run3'
 
