@@ -262,9 +262,9 @@ class Classifier(object):
                        from_end = extent.token[1]['end'],
                        to_start = extent.token[2]['start'],
                        to_end = extent.token[2]['end']),
-                self.label_function(extent)) 
-            for extent in gold_data])        
-        clf.add_labels(gold_labels.values())            
+                self.label_function(extent))
+            for extent in gold_data])
+        clf.add_labels(gold_labels.values())
         cm = clf.evaluate(test_labels, gold_labels)
         # output dict for 
         return cm

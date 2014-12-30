@@ -234,7 +234,7 @@ class MovelinkGoalMotionSignalIDClassifier(MovelinkClassifier):
 
 class MovelinkPathIDClassifier(MovelinkClassifier):
     def get_label_function(self):
-        return  lambda x: str(x.path_signal_id())
+        return  lambda x: str(x.path_id())
 
     def get_feature_functions(self):
         return [lambda x: x.curr_token(),

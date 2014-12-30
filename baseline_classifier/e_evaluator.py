@@ -183,7 +183,9 @@ def config_1_eval(hyp_1_a, hyp_1_b, hyp_1_c, hyp_1_d, hyp_1_e, gold_path, outpat
     sys.stdout = open(os.path.join(outpath, '1a.txt'), 'w')
     print 'Identify spans of spatial elements including locations, paths, events and other spatial entities.'
     print '\n' * 2
-    evaluate_all({'IS SPATIAL ELEMENT' : SpatialElementClassifier}, hyp_1_a, gold_path)
+    print '=' * 10 + ' IS SPATIAL ELEMENT: ' + '=' * 10
+    test = SpatialElementClassifier(test_path = hyp_1_a, gold_path = gold_path)
+    test.evaluate()
     # 1b
     sys.stdout = open(os.path.join(outpath, '1b.txt'), 'w')
     print 'Classify spatial elements according to type: PATH, PLACE, MOTION, NONMOTION_EVENT, SPATIAL_ENTITY.'
@@ -230,13 +232,13 @@ def config_3_eval_single(hyp_path, gold_path, outpath):
 
 if __name__ == "__main__":
 
-    hyp_path = './data/baseline/Test.configuration1'
+    # TESTING
+    hyp_path = './data/baseline/configuration1/e'
     gold_path = './data/gold'
     outpath = './results/baseline/'
 
     config_1_eval_single(hyp_path, gold_path, outpath)
 
-    # TESTING
 #     # CONIFG 1
 #     hyp_1_a = './data/final/test/configuration1/a'
 #     hyp_1_b = './data/final/test/configuration1/b'

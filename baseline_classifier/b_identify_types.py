@@ -21,7 +21,9 @@ type_keys = {'PATH': ['p'], 'PLACE': ['pl'], 'MOTION': ['m'], 'NONMOTION_EVENT':
              'SPATIAL_ENTITY': ['se'],  # spatial elements
              'SPATIAL_SIGNAL': ['s'],  # spatial signal
              'MOTION_SIGNAL': ['ms'],  # c_motion signal
-             'HAS_TAG': ['p', 'pl', 'm', 'e', 'se', 's', 'ms']
+             'HAS_TAG': ['p', 'pl', 'm', 'e', 'se', 's', 'ms'],
+             'EVENT': ['e', 'm', 'ne'],
+             'SIGNAL': ['s', 'nss'],
              }
 
 class Tag(Extent):
@@ -49,7 +51,7 @@ class Tag(Extent):
             return self.tag[attribute_name] 
         else:
             return ''
-    
+        
     # FEATURE EXTRACT
     def bag_of_words(self, n):
         """ returns 2n+1 words surrounding target"""
@@ -122,7 +124,6 @@ class Tag(Extent):
     
     def part_of_speech(self):
         tokens = [tok for tok, lex in self.prev_tokens] + self.token + [tok for tok, lex in self.next_tokens]
-        print tokens
         return
     
 #===============================================================================
@@ -171,9 +172,7 @@ class TypesClassifier(Classifier):
     def get_feature_functions(self):
         return [
                 lambda x: x.curr_token(),
-                lambda x: x.part_of_speech()
                ]
-
 
 #===============================================================================
 
@@ -193,7 +192,7 @@ def generate_tags(train_path, test_path, clean_path, out_path):
    
     for type_name, type_fields in tag_types.iteritems():
         # generate labels
-        demo = TypesClassifier(type_name, train_path, test_path)
+        demo = TypesClassifier(type_name, train_path, test_path, gold_path = '')
         pred, test_data = demo.generate_labels()
         
         # labels -> tagged docs

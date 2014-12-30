@@ -5,18 +5,16 @@ Created on Sep 9, 2014
 '''
 import numpy
 import nltk
-
+from util.corpora.corpus import Corpus
 
 if __name__ == "__main__":    
-    
-    text = "eat the bees"
-    tokens = nltk.word_tokenize(text)
 
-    print nltk.pos_tag(tokens)
     
-    print nltk.prase
+    c = Corpus('../Train++')
     
+    l = [1, 2, 3, 4]
 #     y = numpy.zeros(4)
+
 #     x = numpy.zeros(4)
 #     x[0] += 1
 # 
