@@ -120,7 +120,7 @@ class Feature_Process(object):
             tags = [tag for tag in doc.tags if 'start' in tag.attrib]
             new_text = text
             for (i,m) in enumerate(re.finditer(sentence_pattern, text)):
-                sentence = doc.sentences[i]
+                sentence = doc.sents[i]
                 doc_lexes = sentence.getchildren()
                 xml_sentence = m.group()
                 tokens = [''.join([c if ord(c) < 128
