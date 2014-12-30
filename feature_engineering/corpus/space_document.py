@@ -141,6 +141,6 @@ def link_dist(sent, links):
 
         
 
-t = Space_Document('/users/sethmachine/desktop/Train++/RFC/Amazon.xml')
+#t = Space_Document('/users/sethmachine/desktop/Train++/RFC/Amazon.xml')
 #q = t.linkdict['QSLINK']
 #d = t.train_qslinks()

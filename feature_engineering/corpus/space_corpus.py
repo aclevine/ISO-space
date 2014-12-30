@@ -60,6 +60,7 @@ id_pattern = re.compile(r'[0-9]+')
 def get_type(ID):
 	return id_pattern.sub('', ID)
 
+"""
 train_corpus = Space_Corpus(train)
 
 
@@ -68,9 +69,12 @@ for doc in train_corpus.documents:
     qq += qs(doc)
 
 training = qq
-        
 
+positives = [x for x in qq if x[0] != False]
 
+qslinks = [link for link in train_corpus.get_linkdict()['QSLINK']
+           if is_full_qslink(link)]
+"""
 #linkdict = train_corpus.get_linkdict()
 #(types, d) = link_stats(linkdict)
 
