@@ -247,24 +247,3 @@ class OLinkRefPtExtentClassifier(OLinkClassifier):
     def get_feature_functions(self):
         return []
 
-
-if __name__ == "__main__":
-    
-    from_id = OLinkFromIDClassifier()
-    from_id.run_demo()
-
-    to_id = OLinkToIDClassifier()
-    from_id.run_demo()
-
-    rel_type = OLinkRelTypeClassifier()
-    rel_type.run_demo()
-        
-    reference = OLinkReferencePtClassifier()
-    reference.run_demo()
-
-    frame = OLinkFrameTypeClassifier()
-    frame.run_demo()
-
-    projective = OLinkProjectiveClassifier()
-    projective.run_demo()
-

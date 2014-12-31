@@ -4,14 +4,13 @@ Created on Nov 13, 2014
 @author: Aaron Levine
 '''
 
-from c_path import PathTag
 from util.model.demo import Classifier
 from util.corpora.corpus import Corpus
-from c_motion import get_motion_tag_indices
+from c_motion import get_motion_tag_indices, MotionTag
 import re
 
 
-class MovelinkTag(PathTag):
+class MovelinkTag(MotionTag):
 
     def __init__(self, sent, tag_dict, movelink_tag_dict, olink_tag_dict, qslink_tag_dict, front, back, basename, doc):
         ''' use c_motion tags as a head to associate move-links with sentences'''
@@ -166,7 +165,6 @@ class MovelinkTag(PathTag):
             feats["tag_{}_text".format(-j)] = re.sub('\d+', '', tag['text'])
         return feats
 
-
 # DEMO
 class MovelinkClassifier(Classifier):
     def __init__(self, train_path='', test_path = '', gold_path = ''):
@@ -299,23 +297,3 @@ class MovelinkMotionSignalIDExentsClassifier(MovelinkClassifier):
     def get_feature_functions(self):
         return []
 
-
-if __name__ == "__main__":
-    
-    source = MovelinkSourceClassifier()  
-    source.run_demo()
- 
-    goal = MovelinkGoalClassifier()
-    goal.run_demo()
-  
-    mid_point = MovelinkMidPointClassifier()  
-    mid_point.run_demo()
- 
-    mover = MovelinkMoverClassifier()  
-    mover.run_demo()
- 
-    d = MovelinkLandmarkClassifier()  
-    d.run_demo()
-    
-    d = MovelinkGoalReachedClassifier()  
-    d.run_demo()

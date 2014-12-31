@@ -172,6 +172,9 @@ class TypesClassifier(Classifier):
     def get_feature_functions(self):
         return [
                 lambda x: x.curr_token(),
+                lambda x: x.curr_pos_tags(),
+                lambda x: x.next_n_bag_of_words(3),
+                lambda x: x.prev_n_bag_of_words(3),
                ]
 
 #===============================================================================
