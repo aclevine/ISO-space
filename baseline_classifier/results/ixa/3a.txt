@@ -1,0 +1,61 @@
+
+
+==========MOVELINK==========
+row = predicted, column = actual
+      False  True   
+False 1624.0 1597.0 
+True  164.0  164.0  
+
+========= False =========
+Precision: 0.504191 
+Recall: 0.908277
+F-measure 0.648433
+========= True =========
+Precision: 0.500000 
+Recall: 0.093129
+F-measure 0.157013
+
+Accuracy: 50.380389%
+
+
+==========QSLINK==========
+row = predicted, column = actual
+      False  True   
+False 7777.0 7745.0 
+True  122.0  122.0  
+
+========= False =========
+Precision: 0.501031 
+Recall: 0.984555
+F-measure 0.664105
+========= True =========
+Precision: 0.500000 
+Recall: 0.015508
+F-measure 0.030083
+
+Accuracy: 50.101484%
+
+
+==========OLINK==========
+row = predicted, column = actual
+      False  True   
+False 7872.0 7838.0 
+True  28.0   28.0   
+
+========= False =========
+Precision: 0.501082 
+Recall: 0.996456
+F-measure 0.666836
+========= True =========
+Precision: 0.500000 
+Recall: 0.003560
+F-measure 0.007069
+
+Accuracy: 50.107827%
+
+
+==========OVERALL==========
+mean precision: 0.50105069221
+mean recall: 0.50024740888
+mean f1: 0.362256370198
+mean accuracy: 0.501965666726

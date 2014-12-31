@@ -69,8 +69,7 @@ class OLinkTag(MovelinkTag):
                             return i
                         i += 1    
         return 0
-    
-   
+
     def is_olink(self):
         if self.tag.get('id', ''):
             return {'is_OLink': True}
@@ -127,7 +126,7 @@ class OLinkTag(MovelinkTag):
             return "{},{}".format(target_tag['start'], target_tag['end'])
         else:
             return "-1,-1"
-    
+
 # TAG TYPE FILTER
 def is_dir_tag(tag):
     ''' load c_path / pu / spatial entity / c_spatial_signal / c_nonmotion_event / c_motion heads'''
@@ -173,6 +172,10 @@ class OLinkFromIDClassifier(OLinkClassifier):
 
     def get_feature_functions(self):
         return [lambda x: x.curr_token(),
+                lambda x: x.surrounding_tag_types(),
+                lambda x: x.surrounding_tag_text(),
+                lambda x: x.prev_tag_count(),
+                lambda x: x.next_tag_count(),
                 ]
 
 class OLinkToIDClassifier(OLinkClassifier):      
@@ -182,6 +185,10 @@ class OLinkToIDClassifier(OLinkClassifier):
 
     def get_feature_functions(self):
         return [lambda x: x.curr_token(),
+                lambda x: x.surrounding_tag_types(),
+                lambda x: x.surrounding_tag_text(),
+                lambda x: x.prev_tag_count(),
+                lambda x: x.next_tag_count(),
                 ]
 
 class OLinkRelTypeClassifier(OLinkClassifier):      
@@ -200,7 +207,7 @@ class OLinkFrameTypeClassifier(OLinkClassifier):
         return [lambda x: x.curr_token(),
                 ]
 
-class OLinkReferencePtClassifier(OLinkClassifier):      
+class OLinkReferencePtClassifier(OLinkClassifier):
     def get_label_function(self):
         return  lambda x: str(x.reference_pt())
 
@@ -239,28 +246,4 @@ class OLinkRefPtExtentClassifier(OLinkClassifier):
 
     def get_feature_functions(self):
         return []
-
-
-if __name__ == "__main__":
-    
-    from_id = OLinkFromIDClassifier()
-    from_id.run_demo()
-
-    to_id = OLinkToIDClassifier()
-    from_id.run_demo()
-
-    rel_type = OLinkRelTypeClassifier()
-    rel_type.run_demo()
-        
-    reference = OLinkReferencePtClassifier()
-    reference.run_demo()
-
-    frame = OLinkFrameTypeClassifier()
-    frame.run_demo()
-
-    projective = OLinkProjectiveClassifier()
-    projective.run_demo()
-    
-    #absolute - cardnial dir
-    #intrinsic - also landmark
 

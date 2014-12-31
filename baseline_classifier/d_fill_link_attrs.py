@@ -62,7 +62,6 @@ def make_links(train_path, test_path, out_path,
 #===============================================================================
 
 def generate_qslinks(train_path, test_path, out_path):
-
     # make link
     make_links(train_path, test_path, out_path, 
                get_top_tag_indices, SignalTag, 
@@ -113,17 +112,16 @@ def generate_qslinks(train_path, test_path, out_path):
         
         # landmark
         to_offset = int(to_labels[offsets])
-        from_offset = int(from_labels[offsets])
-        if from_offset > 0:
+        if to_offset > 0:
             if extent.next_tags:
-                to_tag = extent.next_tags[min(from_offset, len(extent.next_tags)) - 1]
+                to_tag = extent.next_tags[min(to_offset, len(extent.next_tags)) - 1]
             elif extent.prev_tags:
                 to_tag = extent.prev_tags[-1]
             else:
                 to_tag = {'id': '', 'text': ''}
         else:
             if extent.prev_tags:
-                to_tag = extent.prev_tags[max(from_offset, -1 * len(extent.prev_tags))]
+                to_tag = extent.prev_tags[max(to_offset, -1 * len(extent.prev_tags))]
             elif extent.next_tags:
                 to_tag = extent.next_tags[0]
             else:
@@ -163,7 +161,7 @@ def generate_olinks(train_path, test_path, out_path):
     proj_labels, _ = projective.generate_labels()
 
     frame = OLinkFrameTypeClassifier(train_path = train_path, test_path = test_path)
-    frame_labels, _ = projective.generate_labels()
+    frame_labels, _ = frame.generate_labels()
  
     #parse into XML tags
     curr_doc = test_data[0].document
@@ -197,18 +195,19 @@ def generate_olinks(train_path, test_path, out_path):
         tag.attrs['trajector'] = from_tag['id']
         tag.attrs['fromID'] = from_tag['id']
         tag.attrs['fromText'] = from_tag['text']
+        
         # landmark
         to_offset = int(to_labels[offsets])
-        if from_offset > 0:
+        if to_offset > 0:
             if extent.next_tags:
-                to_tag = extent.next_tags[min(from_offset, len(extent.next_tags)) - 1]
+                to_tag = extent.next_tags[min(to_offset, len(extent.next_tags)) - 1]
             elif extent.prev_tags:
                 to_tag = extent.prev_tags[-1]
             else:
                 to_tag = {'id': '', 'text': ''}
         else:
             if extent.prev_tags:
-                to_tag = extent.prev_tags[max(from_offset, -1 * len(extent.prev_tags))]
+                to_tag = extent.prev_tags[max(to_offset, -1 * len(extent.prev_tags))]
             elif extent.next_tags:
                 to_tag = extent.next_tags[0]
             else:

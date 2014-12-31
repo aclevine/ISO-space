@@ -3,96 +3,96 @@ Classify spatial elements according to type: PATH, PLACE, MOTION, NONMOTION_EVEN
 
 ========== MOTION ==========
 row = predicted, column = actual
-      False True  
-False 843.0 311.0 
-True  0.0   0.0   
+      False  True  
+False 1078.0 258.0 
+True  38.0   12.0  
 
 ========= False =========
-Precision: 0.730503 
-Recall: 1.000000
-F-measure 0.844266
+Precision: 0.806886 
+Recall: 0.965950
+F-measure 0.879282
 ========= True =========
-Precision: 0.000000 
-Recall: 0.000000
-F-measure 0.000000
+Precision: 0.240000 
+Recall: 0.044444
+F-measure 0.075000
 
-Accuracy: 73.050260%
+Accuracy: 78.643579%
 
 
 ========== PATH ==========
 row = predicted, column = actual
-      False True  
-False 843.0 311.0 
-True  0.0   0.0   
+      False  True  
+False 1078.0 258.0 
+True  38.0   12.0  
 
 ========= False =========
-Precision: 0.730503 
-Recall: 1.000000
-F-measure 0.844266
+Precision: 0.806886 
+Recall: 0.965950
+F-measure 0.879282
 ========= True =========
-Precision: 0.000000 
-Recall: 0.000000
-F-measure 0.000000
+Precision: 0.240000 
+Recall: 0.044444
+F-measure 0.075000
 
-Accuracy: 73.050260%
+Accuracy: 78.643579%
 
 
 ========== PLACE ==========
 row = predicted, column = actual
-      False True  
-False 843.0 311.0 
-True  0.0   0.0   
+      False  True  
+False 1078.0 258.0 
+True  38.0   12.0  
 
 ========= False =========
-Precision: 0.730503 
-Recall: 1.000000
-F-measure 0.844266
+Precision: 0.806886 
+Recall: 0.965950
+F-measure 0.879282
 ========= True =========
-Precision: 0.000000 
-Recall: 0.000000
-F-measure 0.000000
+Precision: 0.240000 
+Recall: 0.044444
+F-measure 0.075000
 
-Accuracy: 73.050260%
+Accuracy: 78.643579%
 
 
 ========== NONMOTION_EVENT ==========
 row = predicted, column = actual
-      False True  
-False 843.0 311.0 
-True  0.0   0.0   
+      False  True  
+False 1078.0 258.0 
+True  38.0   12.0  
 
 ========= False =========
-Precision: 0.730503 
-Recall: 1.000000
-F-measure 0.844266
+Precision: 0.806886 
+Recall: 0.965950
+F-measure 0.879282
 ========= True =========
-Precision: 0.000000 
-Recall: 0.000000
-F-measure 0.000000
+Precision: 0.240000 
+Recall: 0.044444
+F-measure 0.075000
 
-Accuracy: 73.050260%
+Accuracy: 78.643579%
 
 
 ========== SPATIAL_ENTITY ==========
 row = predicted, column = actual
-      False True  
-False 843.0 311.0 
-True  0.0   0.0   
+      False  True  
+False 1078.0 258.0 
+True  38.0   12.0  
 
 ========= False =========
-Precision: 0.730503 
-Recall: 1.000000
-F-measure 0.844266
+Precision: 0.806886 
+Recall: 0.965950
+F-measure 0.879282
 ========= True =========
-Precision: 0.000000 
-Recall: 0.000000
-F-measure 0.000000
+Precision: 0.240000 
+Recall: 0.044444
+F-measure 0.075000
 
-Accuracy: 73.050260%
+Accuracy: 78.643579%
 
 
 ==========OVERALL==========
-mean precision: 0.365251299827
-mean recall: 0.5
-mean f1: 0.4221331998
-mean accuracy: 0.730502599653
+mean precision: 0.523443113772
+mean recall: 0.505197132616
+mean f1: 0.477141109299
+mean accuracy: 0.786435786436

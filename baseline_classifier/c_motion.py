@@ -6,13 +6,13 @@ Created on Oct 27, 2014
 
 c. Identify their attributes according to type.
 '''
-from b_identify_types import Tag, get_tag_and_no_tag_indices
+from b_identify_types import get_tag_and_no_tag_indices
 from util.model.demo import Classifier
 import re
-import os
 from _warnings import warn
+from c_path import PathTag
 
-class MotionTag(Tag):
+class MotionTag(PathTag):
     # LABEL EXTRACT
     def motion_type(self):
         ''' motion_type ( MANNER | PATH | COMPOUND ) '''
@@ -33,7 +33,7 @@ class MotionTag(Tag):
         if links:
             link = links[0]
             try:
-                link_to_tag = self.document.query(link['toID'])
+                link_to_tag = self.document.query(link['mover'])
             except KeyError:
                 warning = "malformed MOVELINK {} tag in {}".format(link['id'], self.document.basename)
                 warn(warning, RuntimeWarning)

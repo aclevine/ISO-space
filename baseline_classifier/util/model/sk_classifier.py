@@ -49,7 +49,7 @@ class SKClassifier():
         self.clf.fit(X, y)
     
     def classify(self, instances, probs=False, keys=[]):
-        X, y = self.featurize(instances, test=True)        
+        X, y = self.featurize(instances, test=True)
         if probs:
             pred = self.clf.predict_proba(X)
             if keys:

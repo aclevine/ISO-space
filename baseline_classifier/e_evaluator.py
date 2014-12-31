@@ -180,42 +180,54 @@ def evaluate_links(hyp_path, gold_path):
 
 def config_1_eval(hyp_1_a, hyp_1_b, hyp_1_c, hyp_1_d, hyp_1_e, gold_path, outpath):
     # 1a
-    sys.stdout = open(os.path.join(outpath, '1a.txt'), 'w')
-    print 'Identify spans of spatial elements including locations, paths, events and other spatial entities.'
-    print '\n' * 2
-    evaluate_all({'IS SPATIAL ELEMENT' : SpatialElementClassifier}, hyp_1_a, gold_path)
+    with open(os.path.join(outpath, '1a.txt'), 'w') as fo:
+        sys.stdout = fo
+        print 'Identify spans of spatial elements including locations, paths, events and other spatial entities.'
+        print '\n' * 2
+        evaluate_all({'IS SPATIAL ELEMENT': SpatialElementClassifier}, hyp_1_a, gold_path)
+
     # 1b
-    sys.stdout = open(os.path.join(outpath, '1b.txt'), 'w')
-    print 'Classify spatial elements according to type: PATH, PLACE, MOTION, NONMOTION_EVENT, SPATIAL_ENTITY.'
-    evaluate_all(se_b_demo_list, hyp_1_b, gold_path)
+    with open(os.path.join(outpath, '1b.txt'), 'w') as fo:
+        sys.stdout = fo
+        print 'Classify spatial elements according to type: PATH, PLACE, MOTION, NONMOTION_EVENT, SPATIAL_ENTITY.'
+        evaluate_all(se_b_demo_list, hyp_1_b, gold_path)
     # 1c
-    sys.stdout = open(os.path.join(outpath, '1c.txt'), 'w')
-    evaluate_all(se_c_demo_list, hyp_1_c, gold_path)
+    with open(os.path.join(outpath, '1c.txt'), 'w') as fo:
+        sys.stdout = fo
+        evaluate_all(se_c_demo_list, hyp_1_c, gold_path)
     # 1d
-    sys.stdout = open(os.path.join(outpath, '1d.txt'), 'w')
-    evaluate_links(hyp_1_d, gold_path)
+    with open(os.path.join(outpath, '1d.txt'), 'w') as fo:
+        sys.stdout = fo
+        evaluate_links(hyp_1_d, gold_path)
     # 1e
-    sys.stdout = open(os.path.join(outpath, '1e.txt'), 'w')
-    evaluate_all(link_b_demo_list, hyp_1_a, gold_path)
+    with open(os.path.join(outpath, '1e.txt'), 'w') as fo:
+        sys.stdout = fo
+        evaluate_all(link_b_demo_list, hyp_1_a, gold_path)
 
 def config_2_eval(hyp_2_a, hyp_2_b, hyp_2_c, gold_path, outpath):
     # 2a
-    sys.stdout = open(os.path.join(outpath, '2a.txt'), 'w')    
-    evaluate_all(se_c_demo_list, hyp_2_a, gold_path)
+    with open(os.path.join(outpath, '2a.txt'), 'w') as fo:
+        sys.stdout = fo
+        evaluate_all(se_c_demo_list, hyp_2_a, gold_path)
     # 2b
-    sys.stdout = open(os.path.join(outpath, '2b.txt'), 'w')    
-    evaluate_links(hyp_2_b, gold_path)
+    with open(os.path.join(outpath, '2b.txt'), 'w') as fo:
+        sys.stdout = fo
+        evaluate_links(hyp_2_b, gold_path)
     # 2c
-    sys.stdout = open(os.path.join(outpath, '2c.txt'), 'w')
-    evaluate_all(link_b_demo_list, hyp_2_c, gold_path)
+    with open(os.path.join(outpath, '2c.txt'), 'w') as fo:
+        sys.stdout = fo
+        evaluate_all(link_b_demo_list, hyp_2_c, gold_path)
 
 def config_3_eval(hyp_3_a, hyp_3_b, gold_path, outpath):
     # 3a
-    sys.stdout = open(os.path.join(outpath, '3a.txt'), 'w')
-    evaluate_links(hyp_3_a, gold_path)
+    with open(os.path.join(outpath, '3a.txt'), 'w') as fo:
+        sys.stdout = fo
+        evaluate_links(hyp_3_a, gold_path)
     # 3b
-    sys.stdout = open(os.path.join(outpath, '3b.txt'), 'w')
-    evaluate_all(link_b_demo_list, hyp_3_b, gold_path)
+    with open(os.path.join(outpath, '3b.txt'), 'w') as fo:
+        sys.stdout = fo
+        evaluate_all(link_b_demo_list, hyp_3_b, gold_path)
+
 
 # EVALUATE FROM SINGLE FINAL OUTPUT
 def config_1_eval_single(hyp_path, gold_path, outpath):
@@ -230,13 +242,15 @@ def config_3_eval_single(hyp_path, gold_path, outpath):
 
 if __name__ == "__main__":
 
-    hyp_path = './data/baseline/Test.configuration1'
+    # TESTING
+    hyp_path = './data/baseline/configuration1/e'
     gold_path = './data/gold'
-    outpath = './results/baseline/'
+    outpath = './results/baseline'
 
     config_1_eval_single(hyp_path, gold_path, outpath)
 
-    # TESTING
+
+
 #     # CONIFG 1
 #     hyp_1_a = './data/final/test/configuration1/a'
 #     hyp_1_b = './data/final/test/configuration1/b'

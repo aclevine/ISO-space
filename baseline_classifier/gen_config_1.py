@@ -24,12 +24,13 @@ if __name__ == "__main__":
     hyp_d = './data/baseline/configuration1/d'
     hyp_e = './data/baseline/configuration1/e'
         
-    # 1a + 1b
-    generate_elements(train_path, clean_path, hyp_1)
+#     # 1a + 1b
+#     generate_elements(train_path, clean_path, hyp_1)
     generate_tags(train_path, hyp_1, clean_path, hyp_a)
     copy_folder(hyp_a, hyp_b)
-    
+
     # 1c
+    copy_folder(hyp_b, hyp_c)
     generate_attributes(train_path, hyp_c, hyp_c)
 
     #1d + e

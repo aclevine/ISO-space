@@ -4,14 +4,13 @@ Created on Nov 13, 2014
 @author: Aaron Levine
 '''
 
-from c_path import PathTag
 from util.model.demo import Classifier
 from util.corpora.corpus import Corpus
-from c_motion import get_motion_tag_indices
+from c_motion import get_motion_tag_indices, MotionTag
 import re
 
 
-class MovelinkTag(PathTag):
+class MovelinkTag(MotionTag):
 
     def __init__(self, sent, tag_dict, movelink_tag_dict, olink_tag_dict, qslink_tag_dict, front, back, basename, doc):
         ''' use c_motion tags as a head to associate move-links with sentences'''
@@ -124,6 +123,7 @@ class MovelinkTag(PathTag):
             return "{},{}".format(target_tag['start'], target_tag['end'])
         else:
             return "-1,-1"
+
                     
     # FEATURE EXTRACT
     def prev_tag_count(self):
@@ -147,6 +147,23 @@ class MovelinkTag(PathTag):
             feat_dict['next_tag_%d_type' % i] = re.findall('[a-z]+', tag['id'])[0]
             i += 1
         return feat_dict
+
+    def surrounding_tag_types(self):
+        feats = {}
+        for i, tag in enumerate(self.next_tags):
+            feats["tag_{}_type".format(i)] = re.sub('\d+', '', tag['id'])
+        for j, tag in enumerate(reversed(self.prev_tags)):
+            feats["tag_{}_type".format(-j)] = re.sub('\d+', '', tag['id'])
+        return feats
+
+
+    def surrounding_tag_text(self):
+        feats = {}
+        for i, tag in enumerate(self.next_tags):
+            feats["tag_{}_text".format(i)] = re.sub('\d+', '', tag['text'])
+        for j, tag in enumerate(reversed(self.prev_tags)):
+            feats["tag_{}_text".format(-j)] = re.sub('\d+', '', tag['text'])
+        return feats
 
 # DEMO
 class MovelinkClassifier(Classifier):
@@ -197,7 +214,11 @@ class MovelinkMoverClassifier(MovelinkClassifier):
         return  lambda x: str(x.mover())
 
     def get_feature_functions(self):
-        return [lambda x: x.curr_token(),
+        return [lambda x: x.curr_token(), 
+                lambda x: x.surrounding_tag_types(),
+                lambda x: x.surrounding_tag_text(), 
+                lambda x: x.prev_tag_count(),
+                lambda x: x.next_tag_count(),                                            
                 ]
 
 class MovelinkLandmarkClassifier(MovelinkClassifier):  
@@ -234,7 +255,7 @@ class MovelinkGoalMotionSignalIDClassifier(MovelinkClassifier):
 
 class MovelinkPathIDClassifier(MovelinkClassifier):
     def get_label_function(self):
-        return  lambda x: str(x.path_signal_id())
+        return  lambda x: str(x.path_id())
 
     def get_feature_functions(self):
         return [lambda x: x.curr_token(),
@@ -276,23 +297,3 @@ class MovelinkMotionSignalIDExentsClassifier(MovelinkClassifier):
     def get_feature_functions(self):
         return []
 
-
-if __name__ == "__main__":
-    
-    source = MovelinkSourceClassifier()  
-    source.run_demo()
- 
-    goal = MovelinkGoalClassifier()
-    goal.run_demo()
-  
-    mid_point = MovelinkMidPointClassifier()  
-    mid_point.run_demo()
- 
-    mover = MovelinkMoverClassifier()  
-    mover.run_demo()
- 
-    d = MovelinkLandmarkClassifier()  
-    d.run_demo()
-    
-    d = MovelinkGoalReachedClassifier()  
-    d.run_demo()
