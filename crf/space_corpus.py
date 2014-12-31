@@ -1,19 +1,19 @@
 # -*- coding: utf-8 -*-
 
-"""WRapper for a corpus of ISO-Space annotated documents for machine learning.
+"""Wrapper for a corpus of ISO-Space annotated documents for machine learning.
 
 .. moduleauthor:: Seth-David Donald Dworman <sdworman@brandeis.edu>
 
 """
-import os
-import re
+import os, re
 import xml.etree.ElementTree as ET
 
 from crfsuite.instance import Instance
 from crfsuite.sequence import Sequence
+import pycrfsuite
 from space_document import Space_Document
 
-train = '/users/sethmachine/desktop/Train++'
+train = '/users/sethmachine/desktop/Tokenized++'
 test = '/users/sethmachine/desktop/Test++'
 
 class Space_Corpus(object):
@@ -123,7 +123,7 @@ w = open('/users/sethmachine/desktop/nops.txt')
 t = w.read()
 w.close()
 #ignore N most frequent words from training which aren't spatial mentions
-stopwords = {line.decode('utf-8') for line in t.split('\n')[0:100]}
+stopwords = {line.decode('utf-8') for line in t.split('\n')[0:0]}
 
 c = Space_Corpus(train, extra_features=extras,
                  window_features=windows, filter_features=filters,
@@ -140,3 +140,9 @@ w.close()
 w = open('test++.txt', 'w')
 print>>w, str(b)
 w.close()
+
+train = c
+test = b
+
+tagger = pycrfsuite.Tagger()
+tagger.open('m.model')

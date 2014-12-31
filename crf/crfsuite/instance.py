@@ -50,7 +50,11 @@ class Instance(object):
 
     def addDict(self, featuredict):
         self.features = dict(self.features.items() + featuredict.items())
-    
+
+    def feature_list(self):
+        return [''.join([key, '=', self.features[key]])
+                for key in self.features]
+
     def __repr__(self):
         string = '\t'.join([self.label] +
                          [key + '=' + self.features[key] for key in self.features])

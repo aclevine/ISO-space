@@ -52,7 +52,8 @@ class Sequence(object):
         for function in self.window_features:
             function(self.instances)
             
-        
+    def feature_list(self):
+        return [instance.feature_list() for instance in self.instances]
 
     def __repr__(self):
         if self.window_features:
