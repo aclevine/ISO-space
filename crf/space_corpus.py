@@ -15,6 +15,7 @@ from space_document import Space_Document
 
 train = '/users/sethmachine/desktop/Tokenized++'
 test = '/users/sethmachine/desktop/Test++'
+testr = '/users/sethmachine/desktop/Test++--'
 
 class Space_Corpus(object):
     """Wrapper for a corpus of ISO-Space annotated documents.
@@ -132,7 +133,12 @@ c.set_sequences()
 b = Space_Corpus(test, extra_features=extras, window_features=windows,
                  filter_features=filters, stopwords=stopwords)
 b.set_sequences()
-        
+
+config_1b = Space_Corpus(test, extra_features=extras, window_features=windows,
+                 filter_features=filters, stopwords=stopwords)
+config_1b.set_sequences()
+
+
 w = open('train++.txt', 'w')
 print>>w, str(c)
 w.close()
