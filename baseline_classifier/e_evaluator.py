@@ -243,9 +243,9 @@ def config_3_eval_single(hyp_path, gold_path, outpath):
 if __name__ == "__main__":
 
     # TESTING
-    hyp_path = './data/baseline/configuration1/e'
+    hyp_path = './data/seth'
     gold_path = './data/gold'
-    outpath = './results/baseline'
+    outpath = './results/seth'
 
     config_1_eval_single(hyp_path, gold_path, outpath)
 
