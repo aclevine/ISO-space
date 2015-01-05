@@ -84,14 +84,20 @@ class Space_Document(object):
             #if not s.instances:
                 #print self.filepath
 
+    def sequence_list(self):
+        return [sequence.feature_list() for sequence in self.sequences]
+    
     def __repr__(self):
         return '\n'.join([str(sequence) for sequence in self.sequences if sequence.instances])
             
             
-"""            
+"""
 t = Space_Document(test)
 t.set_sequences()
 s = t.sequences[0]
 for x in s.instances:
     print x
+w = open('tiny_test.txt', 'w')
+print>>w, str(t)
+w.close()
 """
