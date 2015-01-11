@@ -56,7 +56,7 @@ class PlaceCountableClassifier(PlaceClassifier):
 
 class PlaceModClassifier(PlaceClassifier):
     def get_label_function(self):
-        return  lambda x: str(x.mod())
+        return lambda x: str(x.mod())
 
     def get_feature_functions(self):
         return [lambda x: x.curr_token(),

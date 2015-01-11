@@ -2,21 +2,25 @@
 
 ========== PATH - dimensionality ==========
 row = predicted, column = actual
-       LINE VOLUME False      AREA 
-LINE   0.0  0.0    0.0   1.0  0.0  
-VOLUME 0.0  0.0    2.0   0.0  1.0  
-False  10.0 14.0   0.0   55.0 13.0 
-       0.0  0.0    0.0   0.0  0.0  
-AREA   0.0  0.0    0.0   0.0  0.0  
+       LINE VOLUME AREA False      
+LINE   1.0  0.0    0.0  16.0  8.0  
+VOLUME 5.0  6.0    4.0  21.0  18.0 
+AREA   1.0  1.0    2.0  6.0   4.0  
+False  3.0  7.0    8.0  0.0   26.0 
+       0.0  0.0    0.0  0.0   0.0  
 
 ========= Line =========
-Precision: 0.000000 
-Recall: 0.000000
-F-measure 0.000000
+Precision: 0.040000 
+Recall: 0.100000
+F-measure 0.057143
 ========= Volume =========
-Precision: 0.000000 
-Recall: 0.000000
-F-measure 0.000000
+Precision: 0.111111 
+Recall: 0.428571
+F-measure 0.176471
+========= Area =========
+Precision: 0.142857 
+Recall: 0.142857
+F-measure 0.142857
 ========= False =========
 Precision: 0.000000 
 Recall: 0.000000
@@ -25,25 +29,21 @@ F-measure 0.000000
 Precision: 0.000000 
 Recall: 0.000000
 F-measure 0.000000
-========= Area =========
-Precision: 0.000000 
-Recall: 0.000000
-F-measure 0.000000
 
-Accuracy: 0.000000%
+Accuracy: 6.569343%
 
 
 ========== PATH - countable ==========
 row = predicted, column = actual
       TRUE False FALSE 
-TRUE  2.0  2.0   0.0   
-False 88.0 0.0   4.0   
+TRUE  49.0 43.0  1.0   
+False 41.0 0.0   3.0   
 FALSE 0.0  0.0   0.0   
 
 ========= True =========
-Precision: 0.500000 
-Recall: 0.022222
-F-measure 0.042553
+Precision: 0.526882 
+Recall: 0.544444
+F-measure 0.535519
 ========= False =========
 Precision: 0.000000 
 Recall: 0.000000
@@ -53,53 +53,58 @@ Precision: 0.000000
 Recall: 0.000000
 F-measure 0.000000
 
-Accuracy: 2.083333%
+Accuracy: 35.766423%
 
 
 ========== PLACE - mod ==========
 row = predicted, column = actual
-                  highest False small coastal southern rolling large major northern high smaller reserve's flat topped huge 
-            2.0   0.0     13.0  0.0   0.0     0.0      0.0     0.0   0.0   0.0      0.0  0.0     0.0       0.0         0.0  
-highest     0.0   1.0     0.0   0.0   0.0     0.0      0.0     0.0   0.0   0.0      0.0  0.0     0.0       0.0         0.0  
-False       280.0 0.0     0.0   6.0   1.0     1.0      1.0     1.0   1.0   2.0      3.0  1.0     1.0       1.0         1.0  
-small       0.0   0.0     0.0   0.0   0.0     0.0      0.0     0.0   0.0   0.0      0.0  0.0     0.0       0.0         0.0  
-coastal     0.0   0.0     0.0   0.0   0.0     0.0      0.0     0.0   0.0   0.0      0.0  0.0     0.0       0.0         0.0  
-southern    0.0   0.0     0.0   0.0   0.0     0.0      0.0     0.0   0.0   0.0      0.0  0.0     0.0       0.0         0.0  
-rolling     0.0   0.0     0.0   0.0   0.0     0.0      0.0     0.0   0.0   0.0      0.0  0.0     0.0       0.0         0.0  
-large       0.0   0.0     0.0   0.0   0.0     0.0      0.0     0.0   0.0   0.0      0.0  0.0     0.0       0.0         0.0  
-major       0.0   0.0     0.0   0.0   0.0     0.0      0.0     0.0   0.0   0.0      0.0  0.0     0.0       0.0         0.0  
-northern    0.0   0.0     0.0   0.0   0.0     0.0      0.0     0.0   0.0   0.0      0.0  0.0     0.0       0.0         0.0  
-high        0.0   0.0     0.0   0.0   0.0     0.0      0.0     0.0   0.0   0.0      0.0  0.0     0.0       0.0         0.0  
-smaller     0.0   0.0     0.0   0.0   0.0     0.0      0.0     0.0   0.0   0.0      0.0  0.0     0.0       0.0         0.0  
-reserve's   0.0   0.0     0.0   0.0   0.0     0.0      0.0     0.0   0.0   0.0      0.0  0.0     0.0       0.0         0.0  
-flat topped 0.0   0.0     0.0   0.0   0.0     0.0      0.0     0.0   0.0   0.0      0.0  0.0     0.0       0.0         0.0  
-huge        0.0   0.0     0.0   0.0   0.0     0.0      0.0     0.0   0.0   0.0      0.0  0.0     0.0       0.0         0.0  
+                  beautiful toped large many same important highest nicer wooden adjacent small northern other new poor larger strange more smaller rural left first deciduous comparable beech poorer False high coastal reserve's rolling southern major huge flat topped 
+            123.0 0.0       0.0   1.0   0.0  0.0  0.0       0.0     0.0   0.0    0.0      1.0   0.0      0.0   0.0 0.0  0.0    0.0     0.0  0.0     0.0   0.0  0.0   0.0       0.0        0.0   0.0    63.0  0.0  0.0     0.0       0.0     0.0      0.0   0.0  0.0         
+beautiful   1.0   0.0       0.0   0.0   0.0  0.0  0.0       0.0     0.0   0.0    0.0      0.0   0.0      0.0   0.0 0.0  0.0    0.0     0.0  0.0     0.0   0.0  0.0   0.0       0.0        0.0   0.0    0.0   0.0  0.0     0.0       0.0     0.0      0.0   0.0  0.0         
+toped       0.0   0.0       0.0   0.0   0.0  0.0  0.0       0.0     0.0   0.0    0.0      0.0   0.0      0.0   0.0 0.0  0.0    0.0     0.0  0.0     0.0   0.0  0.0   0.0       0.0        0.0   0.0    0.0   0.0  0.0     0.0       0.0     0.0      0.0   0.0  1.0         
+large       1.0   0.0       0.0   0.0   0.0  0.0  0.0       0.0     0.0   0.0    0.0      0.0   0.0      0.0   0.0 0.0  0.0    0.0     0.0  0.0     0.0   0.0  0.0   0.0       0.0        0.0   0.0    2.0   0.0  0.0     0.0       0.0     0.0      0.0   0.0  0.0         
+many        1.0   0.0       0.0   0.0   0.0  0.0  0.0       0.0     0.0   0.0    0.0      0.0   0.0      0.0   0.0 0.0  0.0    0.0     0.0  0.0     0.0   0.0  0.0   0.0       0.0        0.0   0.0    0.0   0.0  0.0     0.0       0.0     0.0      0.0   0.0  0.0         
+same        0.0   0.0       0.0   0.0   0.0  0.0  0.0       0.0     0.0   0.0    0.0      0.0   0.0      0.0   0.0 0.0  0.0    0.0     0.0  0.0     0.0   0.0  0.0   0.0       0.0        0.0   0.0    1.0   0.0  0.0     0.0       0.0     0.0      0.0   0.0  0.0         
+important   0.0   0.0       0.0   0.0   0.0  0.0  0.0       0.0     0.0   0.0    0.0      0.0   0.0      0.0   0.0 0.0  0.0    0.0     0.0  0.0     0.0   0.0  0.0   0.0       0.0        0.0   0.0    1.0   0.0  0.0     0.0       0.0     0.0      0.0   0.0  0.0         
+highest     0.0   0.0       0.0   0.0   0.0  0.0  0.0       1.0     0.0   0.0    0.0      0.0   0.0      0.0   0.0 0.0  0.0    0.0     0.0  0.0     0.0   0.0  0.0   0.0       0.0        0.0   0.0    0.0   0.0  0.0     0.0       0.0     0.0      0.0   0.0  0.0         
+nicer       1.0   0.0       0.0   0.0   0.0  0.0  0.0       0.0     0.0   0.0    0.0      0.0   0.0      0.0   0.0 0.0  0.0    0.0     0.0  0.0     0.0   0.0  0.0   0.0       0.0        0.0   0.0    0.0   0.0  0.0     0.0       0.0     0.0      0.0   0.0  0.0         
+wooden      0.0   0.0       0.0   0.0   0.0  0.0  0.0       0.0     0.0   0.0    0.0      0.0   0.0      0.0   0.0 0.0  0.0    0.0     0.0  0.0     0.0   0.0  0.0   0.0       0.0        0.0   0.0    1.0   0.0  0.0     0.0       0.0     0.0      0.0   0.0  0.0         
+adjacent    1.0   0.0       0.0   0.0   0.0  0.0  0.0       0.0     0.0   0.0    0.0      0.0   0.0      0.0   0.0 0.0  0.0    0.0     0.0  0.0     0.0   0.0  0.0   0.0       0.0        0.0   0.0    0.0   0.0  0.0     0.0       0.0     0.0      0.0   0.0  0.0         
+small       0.0   0.0       0.0   0.0   0.0  0.0  0.0       0.0     0.0   0.0    0.0      4.0   0.0      0.0   0.0 0.0  0.0    0.0     0.0  0.0     0.0   0.0  0.0   0.0       0.0        0.0   0.0    0.0   0.0  0.0     0.0       0.0     0.0      0.0   0.0  0.0         
+northern    0.0   0.0       0.0   0.0   0.0  0.0  0.0       0.0     0.0   0.0    0.0      0.0   1.0      0.0   0.0 0.0  0.0    0.0     0.0  0.0     0.0   0.0  0.0   0.0       0.0        0.0   0.0    0.0   0.0  0.0     0.0       0.0     0.0      0.0   0.0  0.0         
+other       1.0   0.0       0.0   0.0   0.0  0.0  0.0       0.0     0.0   0.0    0.0      0.0   0.0      0.0   0.0 0.0  0.0    0.0     0.0  0.0     0.0   0.0  0.0   0.0       0.0        0.0   0.0    0.0   0.0  0.0     0.0       0.0     0.0      0.0   0.0  0.0         
+new         1.0   0.0       0.0   0.0   0.0  0.0  0.0       0.0     0.0   0.0    0.0      0.0   0.0      0.0   0.0 0.0  0.0    0.0     0.0  0.0     0.0   0.0  0.0   0.0       0.0        0.0   0.0    0.0   0.0  0.0     0.0       0.0     0.0      0.0   0.0  0.0         
+poor        0.0   0.0       0.0   0.0   0.0  0.0  0.0       0.0     0.0   0.0    0.0      0.0   0.0      0.0   0.0 0.0  0.0    0.0     0.0  0.0     0.0   0.0  0.0   0.0       0.0        0.0   0.0    1.0   0.0  0.0     0.0       0.0     0.0      0.0   0.0  0.0         
+larger      0.0   0.0       0.0   0.0   0.0  0.0  0.0       0.0     0.0   0.0    0.0      0.0   0.0      0.0   0.0 0.0  0.0    0.0     0.0  0.0     0.0   0.0  0.0   0.0       0.0        0.0   0.0    1.0   0.0  0.0     0.0       0.0     0.0      0.0   0.0  0.0         
+strange     0.0   0.0       0.0   0.0   0.0  0.0  0.0       0.0     0.0   0.0    0.0      0.0   0.0      0.0   0.0 0.0  0.0    0.0     0.0  0.0     0.0   0.0  0.0   0.0       0.0        0.0   0.0    1.0   0.0  0.0     0.0       0.0     0.0      0.0   0.0  0.0         
+more        0.0   0.0       0.0   0.0   0.0  0.0  0.0       0.0     0.0   0.0    0.0      0.0   0.0      0.0   0.0 0.0  0.0    0.0     0.0  0.0     0.0   0.0  0.0   0.0       0.0        0.0   0.0    1.0   0.0  0.0     0.0       0.0     0.0      0.0   0.0  0.0         
+smaller     0.0   0.0       0.0   0.0   0.0  0.0  0.0       0.0     0.0   0.0    0.0      0.0   0.0      0.0   0.0 0.0  0.0    0.0     0.0  1.0     0.0   0.0  0.0   0.0       0.0        0.0   0.0    0.0   0.0  0.0     0.0       0.0     0.0      0.0   0.0  0.0         
+rural       0.0   0.0       0.0   0.0   0.0  0.0  0.0       0.0     0.0   0.0    0.0      0.0   0.0      0.0   0.0 0.0  0.0    0.0     0.0  0.0     0.0   0.0  0.0   0.0       0.0        0.0   0.0    1.0   0.0  0.0     0.0       0.0     0.0      0.0   0.0  0.0         
+left        1.0   0.0       0.0   0.0   0.0  0.0  0.0       0.0     0.0   0.0    0.0      0.0   0.0      0.0   0.0 0.0  0.0    0.0     0.0  0.0     0.0   0.0  0.0   0.0       0.0        0.0   0.0    0.0   0.0  0.0     0.0       0.0     0.0      0.0   0.0  0.0         
+first       1.0   0.0       0.0   0.0   0.0  0.0  0.0       0.0     0.0   0.0    0.0      0.0   0.0      0.0   0.0 0.0  0.0    0.0     0.0  0.0     0.0   0.0  0.0   0.0       0.0        0.0   0.0    0.0   0.0  0.0     0.0       0.0     0.0      0.0   0.0  0.0         
+deciduous   0.0   0.0       0.0   0.0   0.0  0.0  0.0       0.0     0.0   0.0    0.0      0.0   0.0      0.0   0.0 0.0  0.0    0.0     0.0  0.0     0.0   0.0  0.0   0.0       0.0        0.0   0.0    1.0   0.0  0.0     0.0       0.0     0.0      0.0   0.0  0.0         
+comparable  1.0   0.0       0.0   0.0   0.0  0.0  0.0       0.0     0.0   0.0    0.0      0.0   0.0      0.0   0.0 0.0  0.0    0.0     0.0  0.0     0.0   0.0  0.0   0.0       0.0        0.0   0.0    0.0   0.0  0.0     0.0       0.0     0.0      0.0   0.0  0.0         
+beech       1.0   0.0       0.0   0.0   0.0  0.0  0.0       0.0     0.0   0.0    0.0      0.0   0.0      0.0   0.0 0.0  0.0    0.0     0.0  0.0     0.0   0.0  0.0   0.0       0.0        0.0   0.0    0.0   0.0  0.0     0.0       0.0     0.0      0.0   0.0  0.0         
+poorer      1.0   0.0       0.0   0.0   0.0  0.0  0.0       0.0     0.0   0.0    0.0      0.0   0.0      0.0   0.0 0.0  0.0    0.0     0.0  0.0     0.0   0.0  0.0   0.0       0.0        0.0   0.0    0.0   0.0  0.0     0.0       0.0     0.0      0.0   0.0  0.0         
+False       147.0 0.0       0.0   0.0   0.0  0.0  0.0       0.0     0.0   0.0    0.0      1.0   1.0      0.0   0.0 0.0  0.0    0.0     0.0  0.0     0.0   0.0  0.0   0.0       0.0        0.0   0.0    0.0   3.0  1.0     1.0       1.0     1.0      1.0   1.0  0.0         
+high        0.0   0.0       0.0   0.0   0.0  0.0  0.0       0.0     0.0   0.0    0.0      0.0   0.0      0.0   0.0 0.0  0.0    0.0     0.0  0.0     0.0   0.0  0.0   0.0       0.0        0.0   0.0    0.0   0.0  0.0     0.0       0.0     0.0      0.0   0.0  0.0         
+coastal     0.0   0.0       0.0   0.0   0.0  0.0  0.0       0.0     0.0   0.0    0.0      0.0   0.0      0.0   0.0 0.0  0.0    0.0     0.0  0.0     0.0   0.0  0.0   0.0       0.0        0.0   0.0    0.0   0.0  0.0     0.0       0.0     0.0      0.0   0.0  0.0         
+reserve's   0.0   0.0       0.0   0.0   0.0  0.0  0.0       0.0     0.0   0.0    0.0      0.0   0.0      0.0   0.0 0.0  0.0    0.0     0.0  0.0     0.0   0.0  0.0   0.0       0.0        0.0   0.0    0.0   0.0  0.0     0.0       0.0     0.0      0.0   0.0  0.0         
+rolling     0.0   0.0       0.0   0.0   0.0  0.0  0.0       0.0     0.0   0.0    0.0      0.0   0.0      0.0   0.0 0.0  0.0    0.0     0.0  0.0     0.0   0.0  0.0   0.0       0.0        0.0   0.0    0.0   0.0  0.0     0.0       0.0     0.0      0.0   0.0  0.0         
+southern    0.0   0.0       0.0   0.0   0.0  0.0  0.0       0.0     0.0   0.0    0.0      0.0   0.0      0.0   0.0 0.0  0.0    0.0     0.0  0.0     0.0   0.0  0.0   0.0       0.0        0.0   0.0    0.0   0.0  0.0     0.0       0.0     0.0      0.0   0.0  0.0         
+major       0.0   0.0       0.0   0.0   0.0  0.0  0.0       0.0     0.0   0.0    0.0      0.0   0.0      0.0   0.0 0.0  0.0    0.0     0.0  0.0     0.0   0.0  0.0   0.0       0.0        0.0   0.0    0.0   0.0  0.0     0.0       0.0     0.0      0.0   0.0  0.0         
+huge        0.0   0.0       0.0   0.0   0.0  0.0  0.0       0.0     0.0   0.0    0.0      0.0   0.0      0.0   0.0 0.0  0.0    0.0     0.0  0.0     0.0   0.0  0.0   0.0       0.0        0.0   0.0    0.0   0.0  0.0     0.0       0.0     0.0      0.0   0.0  0.0         
+flat topped 0.0   0.0       0.0   0.0   0.0  0.0  0.0       0.0     0.0   0.0    0.0      0.0   0.0      0.0   0.0 0.0  0.0    0.0     0.0  0.0     0.0   0.0  0.0   0.0       0.0        0.0   0.0    0.0   0.0  0.0     0.0       0.0     0.0      0.0   0.0  0.0         
 
 =========  =========
-Precision: 0.133333 
-Recall: 0.007092
-F-measure 0.013468
-========= Highest =========
-Precision: 1.000000 
-Recall: 1.000000
-F-measure 1.000000
-========= False =========
+Precision: 0.654255 
+Recall: 0.436170
+F-measure 0.523404
+========= Beautiful =========
 Precision: 0.000000 
 Recall: 0.000000
 F-measure 0.000000
-========= Small =========
-Precision: 0.000000 
-Recall: 0.000000
-F-measure 0.000000
-========= Coastal =========
-Precision: 0.000000 
-Recall: 0.000000
-F-measure 0.000000
-========= Southern =========
-Precision: 0.000000 
-Recall: 0.000000
-F-measure 0.000000
-========= Rolling =========
+========= Toped =========
 Precision: 0.000000 
 Recall: 0.000000
 F-measure 0.000000
@@ -107,11 +112,99 @@ F-measure 0.000000
 Precision: 0.000000 
 Recall: 0.000000
 F-measure 0.000000
-========= Major =========
+========= Many =========
 Precision: 0.000000 
 Recall: 0.000000
 F-measure 0.000000
+========= Same =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= Important =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= Highest =========
+Precision: 1.000000 
+Recall: 1.000000
+F-measure 1.000000
+========= Nicer =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= Wooden =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= Adjacent =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= Small =========
+Precision: 1.000000 
+Recall: 0.666667
+F-measure 0.800000
 ========= Northern =========
+Precision: 1.000000 
+Recall: 0.500000
+F-measure 0.666667
+========= Other =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= New =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= Poor =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= Larger =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= Strange =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= More =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= Smaller =========
+Precision: 1.000000 
+Recall: 1.000000
+F-measure 1.000000
+========= Rural =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= Left =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= First =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= Deciduous =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= Comparable =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= Beech =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= Poorer =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= False =========
 Precision: 0.000000 
 Recall: 0.000000
 F-measure 0.000000
@@ -119,7 +212,7 @@ F-measure 0.000000
 Precision: 0.000000 
 Recall: 0.000000
 F-measure 0.000000
-========= Smaller =========
+========= Coastal =========
 Precision: 0.000000 
 Recall: 0.000000
 F-measure 0.000000
@@ -127,7 +220,15 @@ F-measure 0.000000
 Precision: 0.000000 
 Recall: 0.000000
 F-measure 0.000000
-========= Flat Topped =========
+========= Rolling =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= Southern =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= Major =========
 Precision: 0.000000 
 Recall: 0.000000
 F-measure 0.000000
@@ -135,23 +236,27 @@ F-measure 0.000000
 Precision: 0.000000 
 Recall: 0.000000
 F-measure 0.000000
+========= Flat Topped =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
 
-Accuracy: 0.949367%
+Accuracy: 34.482759%
 
 
 ========== SPATIAL_ENTITY - dimensionality ==========
 row = predicted, column = actual
        AREA VOLUME False       POINT 
-AREA   0.0  0.0    34.0  2.0   2.0   
-VOLUME 0.0  0.0    3.0   0.0   0.0   
-False  32.0 15.0   0.0   221.0 39.0  
+AREA   12.0 5.0    22.0  122.0 24.0  
+VOLUME 8.0  0.0    11.0  7.0   3.0   
+False  12.0 10.0   0.0   94.0  14.0  
        0.0  0.0    0.0   0.0   0.0   
 POINT  0.0  0.0    0.0   0.0   0.0   
 
 ========= Area =========
-Precision: 0.000000 
-Recall: 0.000000
-F-measure 0.000000
+Precision: 0.064865 
+Recall: 0.375000
+F-measure 0.110599
 ========= Volume =========
 Precision: 0.000000 
 Recall: 0.000000
@@ -169,22 +274,37 @@ Precision: 0.000000
 Recall: 0.000000
 F-measure 0.000000
 
-Accuracy: 0.000000%
+Accuracy: 3.488372%
 
 
 ========== SPATIAL_ENTITY - mod ==========
 row = predicted, column = actual
-            False thick large big 
-      4.0   37.0  0.0   0.0   0.0 
-False 304.0 0.0   1.0   1.0   1.0 
-thick 0.0   0.0   0.0   0.0   0.0 
-large 0.0   0.0   0.0   0.0   0.0 
-big   0.0   0.0   0.0   0.0   0.0 
+              alive pannier stable False thick large big 
+        179.0 0.0   0.0     0.0    32.0  0.0   0.0   0.0 
+alive   1.0   0.0   0.0     0.0    0.0   0.0   0.0   0.0 
+pannier 1.0   0.0   0.0     0.0    0.0   0.0   0.0   0.0 
+stable  0.0   0.0   0.0     0.0    1.0   0.0   0.0   0.0 
+False   127.0 0.0   0.0     0.0    0.0   1.0   1.0   1.0 
+thick   0.0   0.0   0.0     0.0    0.0   0.0   0.0   0.0 
+large   0.0   0.0   0.0     0.0    0.0   0.0   0.0   0.0 
+big     0.0   0.0   0.0     0.0    0.0   0.0   0.0   0.0 
 
 =========  =========
-Precision: 0.097561 
-Recall: 0.012987
-F-measure 0.022923
+Precision: 0.848341 
+Recall: 0.581169
+F-measure 0.689788
+========= Alive =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= Pannier =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= Stable =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
 ========= False =========
 Precision: 0.000000 
 Recall: 0.000000
@@ -202,44 +322,44 @@ Precision: 0.000000
 Recall: 0.000000
 F-measure 0.000000
 
-Accuracy: 1.149425%
+Accuracy: 52.034884%
 
 
 ========== PLACE - form ==========
 row = predicted, column = actual
-      NAM   NOM   False 
-NAM   1.0   0.0   7.0   
-NOM   0.0   2.0   6.0   
-False 126.0 174.0 0.0   
+      NAM  NOM  False 
+NAM   60.0 6.0  20.0  
+NOM   0.0  79.0 54.0  
+False 67.0 91.0 0.0   
 
 ========= Nam =========
-Precision: 0.125000 
-Recall: 0.007874
-F-measure 0.014815
+Precision: 0.697674 
+Recall: 0.472441
+F-measure 0.563380
 ========= Nom =========
-Precision: 0.250000 
-Recall: 0.011364
-F-measure 0.021739
+Precision: 0.593985 
+Recall: 0.448864
+F-measure 0.511327
 ========= False =========
 Precision: 0.000000 
 Recall: 0.000000
 F-measure 0.000000
 
-Accuracy: 0.949367%
+Accuracy: 36.870027%
 
 
 ========== MOTION - motion_sense ==========
 row = predicted, column = actual
                  LITERAL False FICTIVE INTRINSIC_CHANGE 
-LITERAL          3.0     3.0   0.0     0.0              
-False            166.0   0.0   10.0    2.0              
+LITERAL          105.0   41.0  9.0     0.0              
+False            64.0    0.0   1.0     2.0              
 FICTIVE          0.0     0.0   0.0     0.0              
 INTRINSIC_CHANGE 0.0     0.0   0.0     0.0              
 
 ========= Literal =========
-Precision: 0.500000 
-Recall: 0.017751
-F-measure 0.034286
+Precision: 0.677419 
+Recall: 0.621302
+F-measure 0.648148
 ========= False =========
 Precision: 0.000000 
 Recall: 0.000000
@@ -253,31 +373,99 @@ Precision: 0.000000
 Recall: 0.000000
 F-measure 0.000000
 
-Accuracy: 1.630435%
+Accuracy: 47.297297%
 
 
 ========== PATH - mod ==========
 row = predicted, column = actual
-              small major False narrow northern southern lower steep 
-         1.0  0.0   0.0   1.0   0.0    0.0      0.0      0.0   0.0   
-small    0.0  1.0   0.0   0.0   0.0    0.0      0.0      0.0   0.0   
-major    0.0  0.0   0.0   1.0   0.0    0.0      0.0      0.0   0.0   
-False    84.0 0.0   2.0   0.0   1.0    1.0      1.0      1.0   2.0   
-narrow   0.0  0.0   0.0   0.0   0.0    0.0      0.0      0.0   0.0   
-northern 0.0  0.0   0.0   0.0   0.0    0.0      0.0      0.0   0.0   
-southern 0.0  0.0   0.0   0.0   0.0    0.0      0.0      0.0   0.0   
-lower    0.0  0.0   0.0   0.0   0.0    0.0      0.0      0.0   0.0   
-steep    0.0  0.0   0.0   0.0   0.0    0.0      0.0      0.0   0.0   
+                 uninhabited major narrow southern many only small other pedestrian healthier used upper inland main busy Eschbach False northern lower steep 
+            39.0 0.0         0.0   0.0    0.0      0.0  0.0  0.0   0.0   0.0        0.0       0.0  0.0   0.0    0.0  0.0  0.0      36.0  0.0      0.0   0.0   
+uninhabited 0.0  0.0         0.0   0.0    0.0      0.0  0.0  0.0   0.0   0.0        0.0       0.0  0.0   0.0    0.0  0.0  0.0      1.0   0.0      0.0   0.0   
+major       0.0  0.0         2.0   0.0    0.0      0.0  0.0  0.0   0.0   0.0        0.0       0.0  0.0   0.0    0.0  0.0  0.0      1.0   0.0      0.0   0.0   
+narrow      0.0  0.0         0.0   1.0    0.0      0.0  0.0  0.0   0.0   0.0        0.0       0.0  0.0   0.0    0.0  0.0  0.0      0.0   0.0      0.0   0.0   
+southern    0.0  0.0         0.0   0.0    1.0      0.0  0.0  0.0   0.0   0.0        0.0       0.0  0.0   0.0    0.0  0.0  0.0      0.0   0.0      0.0   0.0   
+many        0.0  0.0         0.0   0.0    0.0      0.0  0.0  0.0   0.0   0.0        0.0       0.0  0.0   0.0    0.0  0.0  0.0      1.0   0.0      0.0   0.0   
+only        1.0  0.0         0.0   0.0    0.0      0.0  0.0  0.0   0.0   0.0        0.0       0.0  0.0   0.0    0.0  0.0  0.0      0.0   0.0      0.0   0.0   
+small       0.0  0.0         0.0   0.0    0.0      0.0  0.0  1.0   0.0   0.0        0.0       0.0  0.0   0.0    0.0  0.0  0.0      0.0   0.0      0.0   0.0   
+other       1.0  0.0         0.0   0.0    0.0      0.0  0.0  0.0   0.0   0.0        0.0       0.0  0.0   0.0    0.0  0.0  0.0      0.0   0.0      0.0   0.0   
+pedestrian  0.0  0.0         0.0   0.0    0.0      0.0  0.0  0.0   0.0   0.0        0.0       0.0  0.0   0.0    0.0  0.0  0.0      1.0   0.0      0.0   0.0   
+healthier   0.0  0.0         0.0   0.0    0.0      0.0  0.0  0.0   0.0   0.0        0.0       0.0  0.0   0.0    0.0  0.0  0.0      1.0   0.0      0.0   0.0   
+used        1.0  0.0         0.0   0.0    0.0      0.0  0.0  0.0   0.0   0.0        0.0       0.0  0.0   0.0    0.0  0.0  0.0      0.0   0.0      0.0   0.0   
+upper       0.0  0.0         0.0   0.0    0.0      0.0  0.0  0.0   0.0   0.0        0.0       0.0  0.0   0.0    0.0  0.0  0.0      1.0   0.0      0.0   0.0   
+inland      1.0  0.0         0.0   0.0    0.0      0.0  0.0  0.0   0.0   0.0        0.0       0.0  0.0   0.0    0.0  0.0  0.0      0.0   0.0      0.0   0.0   
+main        1.0  0.0         0.0   0.0    0.0      0.0  0.0  0.0   0.0   0.0        0.0       0.0  0.0   0.0    0.0  0.0  0.0      0.0   0.0      0.0   0.0   
+busy        1.0  0.0         0.0   0.0    0.0      0.0  0.0  0.0   0.0   0.0        0.0       0.0  0.0   0.0    0.0  0.0  0.0      0.0   0.0      0.0   0.0   
+Eschbach    0.0  0.0         0.0   0.0    0.0      0.0  0.0  0.0   0.0   0.0        0.0       0.0  0.0   0.0    0.0  0.0  0.0      1.0   0.0      0.0   0.0   
+False       40.0 0.0         0.0   0.0    0.0      0.0  0.0  0.0   0.0   0.0        0.0       0.0  0.0   0.0    0.0  0.0  0.0      0.0   1.0      1.0   2.0   
+northern    0.0  0.0         0.0   0.0    0.0      0.0  0.0  0.0   0.0   0.0        0.0       0.0  0.0   0.0    0.0  0.0  0.0      0.0   0.0      0.0   0.0   
+lower       0.0  0.0         0.0   0.0    0.0      0.0  0.0  0.0   0.0   0.0        0.0       0.0  0.0   0.0    0.0  0.0  0.0      0.0   0.0      0.0   0.0   
+steep       0.0  0.0         0.0   0.0    0.0      0.0  0.0  0.0   0.0   0.0        0.0       0.0  0.0   0.0    0.0  0.0  0.0      0.0   0.0      0.0   0.0   
 
 =========  =========
-Precision: 0.500000 
-Recall: 0.011765
-F-measure 0.022989
+Precision: 0.520000 
+Recall: 0.458824
+F-measure 0.487500
+========= Uninhabited =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= Major =========
+Precision: 0.666667 
+Recall: 1.000000
+F-measure 0.800000
+========= Narrow =========
+Precision: 1.000000 
+Recall: 1.000000
+F-measure 1.000000
+========= Southern =========
+Precision: 1.000000 
+Recall: 1.000000
+F-measure 1.000000
+========= Many =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= Only =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
 ========= Small =========
 Precision: 1.000000 
 Recall: 1.000000
 F-measure 1.000000
-========= Major =========
+========= Other =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= Pedestrian =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= Healthier =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= Used =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= Upper =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= Inland =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= Main =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= Busy =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= Eschbach =========
 Precision: 0.000000 
 Recall: 0.000000
 F-measure 0.000000
@@ -285,15 +473,7 @@ F-measure 0.000000
 Precision: 0.000000 
 Recall: 0.000000
 F-measure 0.000000
-========= Narrow =========
-Precision: 0.000000 
-Recall: 0.000000
-F-measure 0.000000
 ========= Northern =========
-Precision: 0.000000 
-Recall: 0.000000
-F-measure 0.000000
-========= Southern =========
 Precision: 0.000000 
 Recall: 0.000000
 F-measure 0.000000
@@ -306,21 +486,21 @@ Precision: 0.000000
 Recall: 0.000000
 F-measure 0.000000
 
-Accuracy: 2.083333%
+Accuracy: 32.116788%
 
 
 ========== NONMOTION_EVENT - countable ==========
 row = predicted, column = actual
            False TRUE FALSE 
-      0.0  1.0   0.0  0.0   
-False 47.0 0.0   10.0 3.0   
+      19.0 16.0  0.0  0.0   
+False 28.0 0.0   10.0 3.0   
 TRUE  0.0  0.0   0.0  0.0   
 FALSE 0.0  0.0   0.0  0.0   
 
 =========  =========
-Precision: 0.000000 
-Recall: 0.000000
-F-measure 0.000000
+Precision: 0.542857 
+Recall: 0.404255
+F-measure 0.463415
 ========= False =========
 Precision: 0.000000 
 Recall: 0.000000
@@ -334,61 +514,61 @@ Precision: 0.000000
 Recall: 0.000000
 F-measure 0.000000
 
-Accuracy: 0.000000%
+Accuracy: 25.000000%
 
 
 ========== PATH - form ==========
 row = predicted, column = actual
-      NOM  False NAM 
-NOM   2.0  2.0   0.0 
-False 85.0 0.0   7.0 
-NAM   0.0  0.0   0.0 
+      NOM  NAM False 
+NOM   49.0 0.0 42.0  
+NAM   0.0  1.0 1.0   
+False 38.0 6.0 0.0   
 
 ========= Nom =========
+Precision: 0.538462 
+Recall: 0.563218
+F-measure 0.550562
+========= Nam =========
 Precision: 0.500000 
-Recall: 0.022989
-F-measure 0.043956
+Recall: 0.142857
+F-measure 0.222222
 ========= False =========
 Precision: 0.000000 
 Recall: 0.000000
 F-measure 0.000000
-========= Nam =========
-Precision: 0.000000 
-Recall: 0.000000
-F-measure 0.000000
 
-Accuracy: 2.083333%
+Accuracy: 36.496350%
 
 
 ========== NONMOTION_EVENT - mod ==========
 row = predicted, column = actual
            False 
-      0.0  1.0   
-False 60.0 0.0   
+      19.0 16.0  
+False 41.0 0.0   
 
 =========  =========
-Precision: 0.000000 
-Recall: 0.000000
-F-measure 0.000000
+Precision: 0.542857 
+Recall: 0.316667
+F-measure 0.400000
 ========= False =========
 Precision: 0.000000 
 Recall: 0.000000
 F-measure 0.000000
 
-Accuracy: 0.000000%
+Accuracy: 25.000000%
 
 
 ========== SPATIAL_ENTITY - countable ==========
 row = predicted, column = actual
       TRUE  False FALSE 
-TRUE  4.0   37.0  0.0   
-False 293.0 0.0   14.0  
+TRUE  181.0 33.0  0.0   
+False 116.0 0.0   14.0  
 FALSE 0.0   0.0   0.0   
 
 ========= True =========
-Precision: 0.097561 
-Recall: 0.013468
-F-measure 0.023669
+Precision: 0.845794 
+Recall: 0.609428
+F-measure 0.708415
 ========= False =========
 Precision: 0.000000 
 Recall: 0.000000
@@ -398,61 +578,73 @@ Precision: 0.000000
 Recall: 0.000000
 F-measure 0.000000
 
-Accuracy: 1.149425%
+Accuracy: 52.616279%
 
 
 ========== MOTION - motion_type ==========
 row = predicted, column = actual
-         MANNER PATH  COMPOUND False 
-MANNER   0.0    0.0   2.0      2.0   
-PATH     0.0    1.0   0.0      0.0   
-COMPOUND 0.0    0.0   0.0      1.0   
-False    19.0   102.0 57.0     0.0   
+         PATH MANNER COMPOUND False 
+PATH     15.0 3.0    13.0     13.0  
+MANNER   33.0 2.0    21.0     18.0  
+COMPOUND 20.0 1.0    6.0      10.0  
+False    35.0 13.0   19.0     0.0   
 
-========= Manner =========
-Precision: 0.000000 
-Recall: 0.000000
-F-measure 0.000000
 ========= Path =========
-Precision: 1.000000 
-Recall: 0.009709
-F-measure 0.019231
+Precision: 0.340909 
+Recall: 0.145631
+F-measure 0.204082
+========= Manner =========
+Precision: 0.027027 
+Recall: 0.105263
+F-measure 0.043011
 ========= Compound =========
-Precision: 0.000000 
-Recall: 0.000000
-F-measure 0.000000
+Precision: 0.162162 
+Recall: 0.101695
+F-measure 0.125000
 ========= False =========
 Precision: 0.000000 
 Recall: 0.000000
 F-measure 0.000000
 
-Accuracy: 0.543478%
+Accuracy: 10.360360%
 
 
 ========== MOTION - motion_class ==========
 row = predicted, column = actual
-              MOVE False REACH MOVE_EXTERNAL MOVE_INTERNAL DEVIATE DETACH FOLLOW CROSS HIT LEAVE 
-MOVE          1.0  3.0   0.0   0.0           0.0           0.0     1.0    1.0    0.0   0.0 0.0   
-False         39.0 0.0   70.0  7.0           10.0          4.0     0.0    14.0   16.0  8.0 10.0  
-REACH         0.0  0.0   0.0   0.0           0.0           0.0     0.0    0.0    0.0   0.0 0.0   
-MOVE_EXTERNAL 0.0  0.0   0.0   0.0           0.0           0.0     0.0    0.0    0.0   0.0 0.0   
-MOVE_INTERNAL 0.0  0.0   0.0   0.0           0.0           0.0     0.0    0.0    0.0   0.0 0.0   
-DEVIATE       0.0  0.0   0.0   0.0           0.0           0.0     0.0    0.0    0.0   0.0 0.0   
-DETACH        0.0  0.0   0.0   0.0           0.0           0.0     0.0    0.0    0.0   0.0 0.0   
-FOLLOW        0.0  0.0   0.0   0.0           0.0           0.0     0.0    0.0    0.0   0.0 0.0   
-CROSS         0.0  0.0   0.0   0.0           0.0           0.0     0.0    0.0    0.0   0.0 0.0   
-HIT           0.0  0.0   0.0   0.0           0.0           0.0     0.0    0.0    0.0   0.0 0.0   
-LEAVE         0.0  0.0   0.0   0.0           0.0           0.0     0.0    0.0    0.0   0.0 0.0   
+              MOVE REACH FOLLOW HIT DETACH False MOVE_EXTERNAL MOVE_INTERNAL DEVIATE CROSS LEAVE 
+MOVE          14.0 19.0  9.0    4.0 1.0    28.0  3.0           5.0           1.0     4.0   4.0   
+REACH         3.0  28.0  3.0    1.0 0.0    10.0  1.0           1.0           0.0     3.0   2.0   
+FOLLOW        0.0  1.0   0.0    0.0 0.0    2.0   1.0           0.0           1.0     4.0   0.0   
+HIT           0.0  0.0   0.0    0.0 0.0    1.0   0.0           0.0           0.0     0.0   0.0   
+DETACH        0.0  0.0   0.0    1.0 0.0    0.0   0.0           0.0           0.0     0.0   0.0   
+False         23.0 22.0  3.0    2.0 0.0    0.0   2.0           4.0           2.0     5.0   4.0   
+MOVE_EXTERNAL 0.0  0.0   0.0    0.0 0.0    0.0   0.0           0.0           0.0     0.0   0.0   
+MOVE_INTERNAL 0.0  0.0   0.0    0.0 0.0    0.0   0.0           0.0           0.0     0.0   0.0   
+DEVIATE       0.0  0.0   0.0    0.0 0.0    0.0   0.0           0.0           0.0     0.0   0.0   
+CROSS         0.0  0.0   0.0    0.0 0.0    0.0   0.0           0.0           0.0     0.0   0.0   
+LEAVE         0.0  0.0   0.0    0.0 0.0    0.0   0.0           0.0           0.0     0.0   0.0   
 
 ========= Move =========
-Precision: 0.166667 
-Recall: 0.025000
-F-measure 0.043478
-========= False =========
+Precision: 0.152174 
+Recall: 0.350000
+F-measure 0.212121
+========= Reach =========
+Precision: 0.538462 
+Recall: 0.400000
+F-measure 0.459016
+========= Follow =========
 Precision: 0.000000 
 Recall: 0.000000
 F-measure 0.000000
-========= Reach =========
+========= Hit =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= Detach =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
+========= False =========
 Precision: 0.000000 
 Recall: 0.000000
 F-measure 0.000000
@@ -468,19 +660,7 @@ F-measure 0.000000
 Precision: 0.000000 
 Recall: 0.000000
 F-measure 0.000000
-========= Detach =========
-Precision: 0.000000 
-Recall: 0.000000
-F-measure 0.000000
-========= Follow =========
-Precision: 0.000000 
-Recall: 0.000000
-F-measure 0.000000
 ========= Cross =========
-Precision: 0.000000 
-Recall: 0.000000
-F-measure 0.000000
-========= Hit =========
 Precision: 0.000000 
 Recall: 0.000000
 F-measure 0.000000
@@ -489,20 +669,20 @@ Precision: 0.000000
 Recall: 0.000000
 F-measure 0.000000
 
-Accuracy: 0.543478%
+Accuracy: 18.918919%
 
 
 ========== PLACE - countable ==========
 row = predicted, column = actual
       TRUE  FALSE False 
-TRUE  2.0   0.0   9.0   
-FALSE 1.0   0.0   4.0   
-False 293.0 7.0   0.0   
+TRUE  112.0 0.0   50.0  
+FALSE 33.0  0.0   24.0  
+False 151.0 7.0   0.0   
 
 ========= True =========
-Precision: 0.181818 
-Recall: 0.006757
-F-measure 0.013029
+Precision: 0.691358 
+Recall: 0.378378
+F-measure 0.489083
 ========= False =========
 Precision: 0.000000 
 Recall: 0.000000
@@ -512,20 +692,20 @@ Precision: 0.000000
 Recall: 0.000000
 F-measure 0.000000
 
-Accuracy: 0.632911%
+Accuracy: 29.708223%
 
 
 ========== SPATIAL_ENTITY - form ==========
 row = predicted, column = actual
       NOM   False NAM 
-NOM   4.0   37.0  0.0 
-False 299.0 0.0   8.0 
+NOM   181.0 33.0  0.0 
+False 122.0 0.0   8.0 
 NAM   0.0   0.0   0.0 
 
 ========= Nom =========
-Precision: 0.097561 
-Recall: 0.013201
-F-measure 0.023256
+Precision: 0.845794 
+Recall: 0.597360
+F-measure 0.700193
 ========= False =========
 Precision: 0.000000 
 Recall: 0.000000
@@ -535,26 +715,26 @@ Precision: 0.000000
 Recall: 0.000000
 F-measure 0.000000
 
-Accuracy: 1.149425%
+Accuracy: 52.616279%
 
 
 ========== PLACE - dimensionality ==========
 row = predicted, column = actual
        AREA POINT VOLUME False       
-AREA   0.0  0.0   1.0    6.0   2.0   
-POINT  0.0  0.0   0.0    6.0   0.0   
-VOLUME 0.0  0.0   0.0    1.0   0.0   
-False  64.0 24.0  15.0   0.0   197.0 
+AREA   10.0 6.0   8.0    44.0  35.0  
+POINT  16.0 7.0   4.0    25.0  26.0  
+VOLUME 13.0 0.0   0.0    5.0   20.0  
+False  25.0 11.0  4.0    0.0   118.0 
        0.0  0.0   0.0    0.0   0.0   
 
 ========= Area =========
-Precision: 0.000000 
-Recall: 0.000000
-F-measure 0.000000
+Precision: 0.097087 
+Recall: 0.156250
+F-measure 0.119760
 ========= Point =========
-Precision: 0.000000 
-Recall: 0.000000
-F-measure 0.000000
+Precision: 0.089744 
+Recall: 0.291667
+F-measure 0.137255
 ========= Volume =========
 Precision: 0.000000 
 Recall: 0.000000
@@ -568,11 +748,11 @@ Precision: 0.000000
 Recall: 0.000000
 F-measure 0.000000
 
-Accuracy: 0.000000%
+Accuracy: 4.509284%
 
 
 ==========OVERALL==========
-mean precision: 0.0726979986377
-mean recall: 0.0131716345998
-mean f1: 0.0155383406421
-mean accuracy: 0.00879253690355
+mean precision: 0.180134267311
+mean recall: 0.14748827579
+mean f1: 0.153462900343
+mean accuracy: 0.296383286716
