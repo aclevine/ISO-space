@@ -243,29 +243,8 @@ def config_3_eval_single(hyp_path, gold_path, outpath):
 if __name__ == "__main__":
 
     # TESTING
-    hyp_path = './data/seth'
+    hyp_path = './data/utd1'
     gold_path = './data/gold'
-    outpath = './results/seth'
+    outpath = './results/utd'
 
     config_1_eval_single(hyp_path, gold_path, outpath)
-
-
-
-#     # CONIFG 1
-#     hyp_1_a = './data/final/test/configuration1/a'
-#     hyp_1_b = './data/final/test/configuration1/b'
-#     hyp_1_c = './data/final/test/configuration1/c'
-#     hyp_1_d = './data/final/test/configuration1/d'
-#     hyp_1_e = './data/final/test/configuration1/e'
-#     config_1_eval(hyp_1_a, hyp_1_b, hyp_1_c, hyp_1_d, hyp_1_e, gold_path, outpath)
-# 
-#     # CONFIG 2
-#     hyp_2_a = './data/final/test/configuration2/a'
-#     hyp_2_b = './data/final/test/configuration2/b'
-#     hyp_2_c = './data/final/test/configuration2/c'
-#     config_2_eval(hyp_2_a, hyp_2_b, hyp_2_c, gold_path, outpath) 
-# 
-#     # CONFIG 3
-#     hyp_3_a = './data/final/test/configuration3/a'
-#     hyp_3_b = './data/final/test/configuration3/b'
-#     config_3_eval(hyp_3_a, hyp_3_b, gold_path, outpath)

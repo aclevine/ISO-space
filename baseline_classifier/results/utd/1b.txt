@@ -1,0 +1,98 @@
+Classify spatial elements according to type: PATH, PLACE, MOTION, NONMOTION_EVENT, SPATIAL_ENTITY.
+
+
+========== MOTION ==========
+row = predicted, column = actual
+      False  True  
+False 1046.0 85.0  
+True  87.0   185.0 
+
+========= False =========
+Precision: 0.924845 
+Recall: 0.923213
+F-measure 0.924028
+========= True =========
+Precision: 0.680147 
+Recall: 0.685185
+F-measure 0.682657
+
+Accuracy: 87.740556%
+
+
+========== PATH ==========
+row = predicted, column = actual
+      False  True  
+False 1046.0 85.0  
+True  87.0   185.0 
+
+========= False =========
+Precision: 0.924845 
+Recall: 0.923213
+F-measure 0.924028
+========= True =========
+Precision: 0.680147 
+Recall: 0.685185
+F-measure 0.682657
+
+Accuracy: 87.740556%
+
+
+========== PLACE ==========
+row = predicted, column = actual
+      False  True  
+False 1046.0 85.0  
+True  87.0   185.0 
+
+========= False =========
+Precision: 0.924845 
+Recall: 0.923213
+F-measure 0.924028
+========= True =========
+Precision: 0.680147 
+Recall: 0.685185
+F-measure 0.682657
+
+Accuracy: 87.740556%
+
+
+========== NONMOTION_EVENT ==========
+row = predicted, column = actual
+      False  True  
+False 1046.0 85.0  
+True  87.0   185.0 
+
+========= False =========
+Precision: 0.924845 
+Recall: 0.923213
+F-measure 0.924028
+========= True =========
+Precision: 0.680147 
+Recall: 0.685185
+F-measure 0.682657
+
+Accuracy: 87.740556%
+
+
+========== SPATIAL_ENTITY ==========
+row = predicted, column = actual
+      False  True  
+False 1046.0 85.0  
+True  87.0   185.0 
+
+========= False =========
+Precision: 0.924845 
+Recall: 0.923213
+F-measure 0.924028
+========= True =========
+Precision: 0.680147 
+Recall: 0.685185
+F-measure 0.682657
+
+Accuracy: 87.740556%
+
+
+==========OVERALL==========
+mean precision: 0.802496164248
+mean recall: 0.804198947403
+mean f1: 0.80334254756
+mean accuracy: 0.877405559515
