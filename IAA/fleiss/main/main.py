@@ -160,7 +160,7 @@ def fleiss(xmls, unmatch=True, rowType=TOKEN, linkType='QSLINK'):
         #u.close()
         return fleiss_scores
     table = getTable(xmls, rowType, unmatch, linkType)
-    return fl.fleiss_wikpedia(table)
+    return fl.fleiss_wikpedia(table.table)
 
 def print_fleiss(scores):
     """Prints Fleiss' Kappa scores for each task.

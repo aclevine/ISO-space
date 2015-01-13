@@ -138,6 +138,7 @@ class Table(table.Table):
         for xml in linkdict.keys():
             links = linkdict[xml]
             for link in links:
+                #row = [ET.Element('QSLINK')]
                 row = [link]
                 for otherXml in range(0, self.numXmls):
                     no_match = True
@@ -146,6 +147,7 @@ class Table(table.Table):
                     otherLinks = linkdict[otherXml]
                     for otherLink in otherLinks:
                         if self._is_link_equal(link, otherLink):
+                            #row.append(ET.Element('QSLINK'))
                             row.append(otherLink)
                             otherLinks.remove(otherLink)
                             no_match = False
