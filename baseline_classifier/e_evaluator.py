@@ -32,7 +32,6 @@ def is_movelink_tag(tag):
 
 def get_movelink_indices(sentence, tag_dict):
     get_tag_and_no_tag_indices(sentence, tag_dict, is_movelink_tag)
-    
 
 
 def is_olink_tag(tag):
@@ -52,15 +51,16 @@ def get_qslink_indices(sentence, tag_dict):
 # helper variables
 tag_types = ['PATH', 'PLACE', 
              'MOTION', 'NONMOTION_EVENT',
-             'SPATIAL_ENTITY'] 
+             'SPATIAL_ENTITY',] 
 
-se_b_demo_list = dict([(name, 
-                        lambda test_path, 
-                            gold_path: TypesClassifier(name, 
-                                                 train_path = '',
-                                                 test_path = test_path, 
-                                                 gold_path = gold_path)) 
-                        for name in tag_types])
+
+def load_classifier(name):
+    return lambda test_path, gold_path: TypesClassifier(type_name = name, 
+                                                        train_path = '',
+                                                        test_path = test_path, 
+                                                        gold_path = gold_path)
+
+se_b_demo_list = dict([(x, load_classifier(x)) for x in tag_types])
 
 se_c_demo_list = {
                   'MOTION - motion_type': MotionTypeClassifier, 
@@ -126,9 +126,9 @@ def evaluate_all(demo_list, hyp_path, gold_path):
     f = []
     a = []
     
-    for tag_name, Classifier in demo_list.iteritems():
+    for tag_name, classifier in demo_list.iteritems():
         print '\n\n' + '=' * 10 + ' {} '.format(tag_name) + '=' * 10
-        d = Classifier(test_path = hyp_path, gold_path = gold_path)
+        d = classifier(test_path = hyp_path, gold_path = gold_path)
         cm = d.evaluate()
         p.append(np.mean(cm.compute_precision()))
         r.append(np.mean(cm.compute_recall()))
@@ -185,7 +185,6 @@ def config_1_eval(hyp_1_a, hyp_1_b, hyp_1_c, hyp_1_d, hyp_1_e, gold_path, outpat
         print 'Identify spans of spatial elements including locations, paths, events and other spatial entities.'
         print '\n' * 2
         evaluate_all({'IS SPATIAL ELEMENT': SpatialElementClassifier}, hyp_1_a, gold_path)
-
     # 1b
     with open(os.path.join(outpath, '1b.txt'), 'w') as fo:
         sys.stdout = fo
@@ -242,9 +241,10 @@ def config_3_eval_single(hyp_path, gold_path, outpath):
 
 if __name__ == "__main__":
 
+    #task8_hrijp_crf_vw_system_submission/configuration1
     # TESTING
-    hyp_path = './data/utd1'
+    hyp_path = './data/ixa/Test.configuration1'
     gold_path = './data/gold'
-    outpath = './results/utd'
-
+    outpath = './results/ixa'
+ 
     config_1_eval_single(hyp_path, gold_path, outpath)

@@ -33,7 +33,7 @@ class Tag(Extent):
         ''' check if tag id matches given element type. untagged tokens always come back false '''
         type_key = type_keys[element_type]
         for key in type_key:
-            if self.tag != {} and re.findall('^%s\d+' % key, self.tag['id']):
+            if self.tag != {} and re.findall('^{}\d+'.format(key), self.tag['id']):
                 return True
         return False
 
