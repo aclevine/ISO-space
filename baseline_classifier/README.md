@@ -93,8 +93,7 @@ NONMOTION_EVENT, SPATIAL_ENTITY, MOTION_SIGNAL, and SPATIAL_SIGNAL
 
 
 
-## util.c_motion_signal.py, util.c_motion.py, util.c_nonmotion_event.py
-## util.c_path.py, util.c_place.py, util.c_spatial_entity.py, util.c_spatial_signal.py
+## util.c_motion_signal.py + util.c_motion.py + util.c_nonmotion_event.py + util.c_path.py, util.c_place.py + util.c_spatial_entity.py + util.c_spatial_signal.py
 
 7 sets of 5-10 baseline maximum entropy models for identifying attributes 
 for each of the 7 extent / spatial element tag types. 
@@ -111,7 +110,7 @@ The number of models depends on the required attributes for a given tag type.
 		<PLACE id="pl0" start="477" end="483" text="Munich" countable="TRUE" dcl="FALSE" dimensionality="AREA" form="NAM"/>
 		...
 		
-## util.d_move_link.py, util.d_olink.py, util.d_qs_link.py
+## util.d_move_link.py + util.d_olink.py + util.d_qs_link.py
 		
 3 sets of 5-10 baseline maximum entropy models for identifying spatial links
 (potential relations between 2-3 previously tagged spatial elements in the same sentence) 
