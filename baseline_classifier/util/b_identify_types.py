@@ -7,7 +7,7 @@ Created on July 30, 2014
 
 b) Classify spatial elements according to type: 
 PATH, PLACE, MOTION, NONMOTION_EVENT, SPATIAL_ENTITY,
-'MOTION_SIGNAL', 'SPATIAL_SIGNAL'
+MOTION_SIGNAL, SPATIAL_SIGNAL
 '''
 
 #===============================================================================

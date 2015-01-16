@@ -6,7 +6,7 @@ Created on Oct 27, 2014
 
 c. Identify their attributes according to type.
 '''
-from b_identify_types import get_tag_and_no_tag_indices, Tag
+from util.b_identify_types import get_tag_and_no_tag_indices, Tag
 from util.model.demo import Classifier
 import re
 

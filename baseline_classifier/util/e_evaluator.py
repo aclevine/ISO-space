@@ -2,16 +2,22 @@
 Created on Dec 19, 2014
 
 @author: Aaron Levine
+
+functions for:
+    -extracting features to be evaluated for each sub-task
+    -calculating recall, precision, f1 and accuracy measures using 
+        model.sk_classifier.py and model.evaluator.py
+    -taking mean of recall, precision, f1 and accuracy for each sub-task
 '''
-from b_identify_types import *
-from c_fill_tag_attrs import *
-from d_fill_link_attrs import *
+from util.b_identify_types import *
+from util.c_fill_tag_attrs import *
+from util.d_fill_link_attrs import *
 
 from util.model.demo import Classifier
 import sys
 import numpy as np
 
-# DEMO for SE.a task
+# classifier for SE.a task
 class SpatialElementClassifier(Classifier):
     def __init__(self, test_path, gold_path):
         super(SpatialElementClassifier, self).__init__(train_path = '', test_path = test_path, 
@@ -25,7 +31,7 @@ class SpatialElementClassifier(Classifier):
     def get_feature_functions(self):
         return []
 
-# demo for LINK.a tasks
+# classifier for LINK.a tasks
 def is_movelink_tag(tag):
     tag_id = tag.get('id', '')
     return bool(re.findall('^mvl\d+', tag_id))
@@ -49,10 +55,12 @@ def get_qslink_indices(sentence, tag_dict):
     return get_tag_and_no_tag_indices(sentence, tag_dict, is_qslink_tag)
 
 # helper variables
-tag_types = ['PATH', 'PLACE', 
-             'MOTION', 'NONMOTION_EVENT',
-             'SPATIAL_ENTITY',] 
-
+tag_types = ['PATH', 
+             'PLACE', 
+             'MOTION', 
+             'NONMOTION_EVENT',
+             'SPATIAL_ENTITY',
+             ] 
 
 def load_classifier(name):
     return lambda test_path, gold_path: TypesClassifier(type_name = name, 
@@ -178,7 +186,9 @@ def evaluate_links(hyp_path, gold_path):
     print 'mean f1: {}'.format(np.mean(f))
     print 'mean accuracy: {}'.format(np.mean(a))
 
+
 def config_1_eval(hyp_1_a, hyp_1_b, hyp_1_c, hyp_1_d, hyp_1_e, gold_path, outpath):
+    """calculate metrics for tasks 1a - 1e, print to text files"""
     # 1a
     with open(os.path.join(outpath, '1a.txt'), 'w') as fo:
         sys.stdout = fo
@@ -203,7 +213,9 @@ def config_1_eval(hyp_1_a, hyp_1_b, hyp_1_c, hyp_1_d, hyp_1_e, gold_path, outpat
         sys.stdout = fo
         evaluate_all(link_b_demo_list, hyp_1_a, gold_path)
 
+
 def config_2_eval(hyp_2_a, hyp_2_b, hyp_2_c, gold_path, outpath):
+    """calculate metrics for tasks 2a - 2c, print to text files"""
     # 2a
     with open(os.path.join(outpath, '2a.txt'), 'w') as fo:
         sys.stdout = fo
@@ -217,7 +229,9 @@ def config_2_eval(hyp_2_a, hyp_2_b, hyp_2_c, gold_path, outpath):
         sys.stdout = fo
         evaluate_all(link_b_demo_list, hyp_2_c, gold_path)
 
+
 def config_3_eval(hyp_3_a, hyp_3_b, gold_path, outpath):
+    """calculate metrics for tasks 3a - 3b, print to text files"""
     # 3a
     with open(os.path.join(outpath, '3a.txt'), 'w') as fo:
         sys.stdout = fo
@@ -230,21 +244,14 @@ def config_3_eval(hyp_3_a, hyp_3_b, gold_path, outpath):
 
 # EVALUATE FROM SINGLE FINAL OUTPUT
 def config_1_eval_single(hyp_path, gold_path, outpath):
+    """calculate metrics for tasks 1a - 1e using single set of annotated files"""
     config_1_eval(hyp_path, hyp_path, hyp_path, hyp_path, hyp_path, gold_path, outpath)
 
 def config_2_eval_single(hyp_path, gold_path, outpath):
+    """calculate metrics for tasks 2a - 2c using single set of annotated files"""
     config_2_eval(hyp_path, hyp_path, hyp_path, gold_path, outpath)
 
 def config_3_eval_single(hyp_path, gold_path, outpath):
+    """calculate metrics for tasks 3a - 3b using single set of annotated files"""
     config_3_eval(hyp_path, hyp_path, gold_path, outpath)
 
-
-if __name__ == "__main__":
-
-    #task8_hrijp_crf_vw_system_submission/configuration1
-    # TESTING
-    hyp_path = './data/ixa/Test.configuration1'
-    gold_path = './data/gold'
-    outpath = './results/ixa'
- 
-    config_1_eval_single(hyp_path, gold_path, outpath)

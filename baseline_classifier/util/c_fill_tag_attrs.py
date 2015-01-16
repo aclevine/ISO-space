@@ -4,15 +4,16 @@ Created on Dec 19, 2014
 @author: Aaron Levine
 '''
 
-from c_path import *
-from c_motion_signal import *
-from c_motion import *
-from c_nonmotion_event import *
-from c_path import *
-from c_place import *
-from c_spatial_entity import *
-from c_spatial_signal import *
+from util.c_path import *
+from util.c_motion_signal import *
+from util.c_motion import *
+from util.c_nonmotion_event import *
+from util.c_path import *
+from util.c_place import *
+from util.c_spatial_entity import *
+from util.c_spatial_signal import *
 from util.model.demo import copy_folder
+import os
 
 def generate_motion_attr(train_path, test_path, out_path):
     # generate labels
@@ -261,5 +262,4 @@ if __name__ == "__main__":
     generate_attributes(training_path, hyp_c, hyp_c)
 
     copy_folder(hyp_c, hyp_d)
-    
     

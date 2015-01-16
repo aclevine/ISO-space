@@ -6,11 +6,11 @@ Created on Oct 27, 2014
 
 c. Identify their attributes according to type.
 '''
-from b_identify_types import get_tag_and_no_tag_indices
+from util.b_identify_types import get_tag_and_no_tag_indices
 from util.model.demo import Classifier
 import re
 from _warnings import warn
-from c_path import PathTag
+from util.c_path import PathTag
 
 class MotionTag(PathTag):
     # LABEL EXTRACT

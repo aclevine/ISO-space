@@ -3,8 +3,8 @@ Created on Nov 3, 2014
 
 @author: ACL73
 '''
-from c_path import PathTag
-from b_identify_types import get_tag_and_no_tag_indices
+from util.c_path import PathTag
+from util.b_identify_types import get_tag_and_no_tag_indices
 from util.model.demo import Classifier
 import re
 

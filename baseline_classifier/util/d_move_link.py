@@ -6,7 +6,7 @@ Created on Nov 13, 2014
 
 from util.model.demo import Classifier
 from util.corpora.corpus import Corpus
-from c_motion import get_motion_tag_indices, MotionTag
+from util.c_motion import get_motion_tag_indices, MotionTag
 import re
 
 
