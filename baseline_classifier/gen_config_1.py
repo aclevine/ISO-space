@@ -5,11 +5,11 @@ Created on Dec 20, 2014
 @email: aclevine@brandeis.edu
 '''
 from util.model.demo import copy_folder
-from a_identify_spans import generate_elements
-from b_identify_types import generate_tags
-from d_fill_link_attrs import generate_qslinks, generate_olinks,\
+from util.a_identify_spans import generate_elements
+from util.b_identify_types import generate_tags
+from util.d_fill_link_attrs import generate_qslinks, generate_olinks,\
     generate_movelinks
-from c_fill_tag_attrs import generate_attributes
+from util.c_fill_tag_attrs import generate_attributes
 
 if __name__ == "__main__":
     

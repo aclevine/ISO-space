@@ -2,16 +2,22 @@
 Created on Dec 19, 2014
 
 @author: Aaron Levine
+
+functions for:
+    -extracting features to be evaluated for each sub-task
+    -calculating recall, precision, f1 and accuracy measures using 
+        model.sk_classifier.py and model.evaluator.py
+    -taking mean of recall, precision, f1 and accuracy for each sub-task
 '''
-from b_identify_types import *
-from c_fill_tag_attrs import *
-from d_fill_link_attrs import *
+from util.b_identify_types import *
+from util.c_fill_tag_attrs import *
+from util.d_fill_link_attrs import *
 
 from util.model.demo import Classifier
 import sys
 import numpy as np
 
-# DEMO for SE.a task
+# classifier for SE.a task
 class SpatialElementClassifier(Classifier):
     def __init__(self, test_path, gold_path):
         super(SpatialElementClassifier, self).__init__(train_path = '', test_path = test_path, 
@@ -25,14 +31,13 @@ class SpatialElementClassifier(Classifier):
     def get_feature_functions(self):
         return []
 
-# demo for LINK.a tasks
+# classifier for LINK.a tasks
 def is_movelink_tag(tag):
     tag_id = tag.get('id', '')
     return bool(re.findall('^mvl\d+', tag_id))
 
 def get_movelink_indices(sentence, tag_dict):
     get_tag_and_no_tag_indices(sentence, tag_dict, is_movelink_tag)
-    
 
 
 def is_olink_tag(tag):
@@ -50,17 +55,20 @@ def get_qslink_indices(sentence, tag_dict):
     return get_tag_and_no_tag_indices(sentence, tag_dict, is_qslink_tag)
 
 # helper variables
-tag_types = ['PATH', 'PLACE', 
-             'MOTION', 'NONMOTION_EVENT',
-             'SPATIAL_ENTITY'] 
+tag_types = ['PATH', 
+             'PLACE', 
+             'MOTION', 
+             'NONMOTION_EVENT',
+             'SPATIAL_ENTITY',
+             ] 
 
-se_b_demo_list = dict([(name, 
-                        lambda test_path, 
-                            gold_path: TypesClassifier(name, 
-                                                 train_path = '',
-                                                 test_path = test_path, 
-                                                 gold_path = gold_path)) 
-                        for name in tag_types])
+def load_classifier(name):
+    return lambda test_path, gold_path: TypesClassifier(type_name = name, 
+                                                        train_path = '',
+                                                        test_path = test_path, 
+                                                        gold_path = gold_path)
+
+se_b_demo_list = dict([(x, load_classifier(x)) for x in tag_types])
 
 se_c_demo_list = {
                   'MOTION - motion_type': MotionTypeClassifier, 
@@ -126,9 +134,9 @@ def evaluate_all(demo_list, hyp_path, gold_path):
     f = []
     a = []
     
-    for tag_name, Classifier in demo_list.iteritems():
+    for tag_name, classifier in demo_list.iteritems():
         print '\n\n' + '=' * 10 + ' {} '.format(tag_name) + '=' * 10
-        d = Classifier(test_path = hyp_path, gold_path = gold_path)
+        d = classifier(test_path = hyp_path, gold_path = gold_path)
         cm = d.evaluate()
         p.append(np.mean(cm.compute_precision()))
         r.append(np.mean(cm.compute_recall()))
@@ -178,14 +186,15 @@ def evaluate_links(hyp_path, gold_path):
     print 'mean f1: {}'.format(np.mean(f))
     print 'mean accuracy: {}'.format(np.mean(a))
 
+
 def config_1_eval(hyp_1_a, hyp_1_b, hyp_1_c, hyp_1_d, hyp_1_e, gold_path, outpath):
+    """calculate metrics for tasks 1a - 1e, print to text files"""
     # 1a
     with open(os.path.join(outpath, '1a.txt'), 'w') as fo:
         sys.stdout = fo
         print 'Identify spans of spatial elements including locations, paths, events and other spatial entities.'
         print '\n' * 2
         evaluate_all({'IS SPATIAL ELEMENT': SpatialElementClassifier}, hyp_1_a, gold_path)
-
     # 1b
     with open(os.path.join(outpath, '1b.txt'), 'w') as fo:
         sys.stdout = fo
@@ -204,7 +213,9 @@ def config_1_eval(hyp_1_a, hyp_1_b, hyp_1_c, hyp_1_d, hyp_1_e, gold_path, outpat
         sys.stdout = fo
         evaluate_all(link_b_demo_list, hyp_1_a, gold_path)
 
+
 def config_2_eval(hyp_2_a, hyp_2_b, hyp_2_c, gold_path, outpath):
+    """calculate metrics for tasks 2a - 2c, print to text files"""
     # 2a
     with open(os.path.join(outpath, '2a.txt'), 'w') as fo:
         sys.stdout = fo
@@ -218,7 +229,9 @@ def config_2_eval(hyp_2_a, hyp_2_b, hyp_2_c, gold_path, outpath):
         sys.stdout = fo
         evaluate_all(link_b_demo_list, hyp_2_c, gold_path)
 
+
 def config_3_eval(hyp_3_a, hyp_3_b, gold_path, outpath):
+    """calculate metrics for tasks 3a - 3b, print to text files"""
     # 3a
     with open(os.path.join(outpath, '3a.txt'), 'w') as fo:
         sys.stdout = fo
@@ -231,41 +244,14 @@ def config_3_eval(hyp_3_a, hyp_3_b, gold_path, outpath):
 
 # EVALUATE FROM SINGLE FINAL OUTPUT
 def config_1_eval_single(hyp_path, gold_path, outpath):
+    """calculate metrics for tasks 1a - 1e using single set of annotated files"""
     config_1_eval(hyp_path, hyp_path, hyp_path, hyp_path, hyp_path, gold_path, outpath)
 
 def config_2_eval_single(hyp_path, gold_path, outpath):
+    """calculate metrics for tasks 2a - 2c using single set of annotated files"""
     config_2_eval(hyp_path, hyp_path, hyp_path, gold_path, outpath)
 
 def config_3_eval_single(hyp_path, gold_path, outpath):
+    """calculate metrics for tasks 3a - 3b using single set of annotated files"""
     config_3_eval(hyp_path, hyp_path, gold_path, outpath)
 
-
-if __name__ == "__main__":
-
-    # TESTING
-    hyp_path = './data/seth'
-    gold_path = './data/gold'
-    outpath = './results/seth'
-
-    config_1_eval_single(hyp_path, gold_path, outpath)
-
-
-
-#     # CONIFG 1
-#     hyp_1_a = './data/final/test/configuration1/a'
-#     hyp_1_b = './data/final/test/configuration1/b'
-#     hyp_1_c = './data/final/test/configuration1/c'
-#     hyp_1_d = './data/final/test/configuration1/d'
-#     hyp_1_e = './data/final/test/configuration1/e'
-#     config_1_eval(hyp_1_a, hyp_1_b, hyp_1_c, hyp_1_d, hyp_1_e, gold_path, outpath)
-# 
-#     # CONFIG 2
-#     hyp_2_a = './data/final/test/configuration2/a'
-#     hyp_2_b = './data/final/test/configuration2/b'
-#     hyp_2_c = './data/final/test/configuration2/c'
-#     config_2_eval(hyp_2_a, hyp_2_b, hyp_2_c, gold_path, outpath) 
-# 
-#     # CONFIG 3
-#     hyp_3_a = './data/final/test/configuration3/a'
-#     hyp_3_b = './data/final/test/configuration3/b'
-#     config_3_eval(hyp_3_a, hyp_3_b, gold_path, outpath)

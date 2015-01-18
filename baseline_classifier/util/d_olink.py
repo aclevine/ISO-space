@@ -10,9 +10,9 @@ if signal:
 
 '''
 from util.model.demo import Classifier
-from b_identify_types import get_tag_and_no_tag_indices
-from c_path import PathTag
-from d_move_link import MovelinkTag
+from util.b_identify_types import get_tag_and_no_tag_indices
+from util.c_path import PathTag
+from util.d_move_link import MovelinkTag
 import re
 
 class OLinkTag(MovelinkTag):

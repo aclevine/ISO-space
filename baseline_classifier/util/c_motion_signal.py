@@ -3,7 +3,7 @@ Created on Nov 3, 2014
 
 @author: ACL73
 '''
-from b_identify_types import Tag, get_tag_and_no_tag_indices
+from util.b_identify_types import Tag, get_tag_and_no_tag_indices
 from util.model.demo import Classifier
 import re
 

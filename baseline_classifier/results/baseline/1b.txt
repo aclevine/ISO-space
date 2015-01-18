@@ -4,73 +4,73 @@ Classify spatial elements according to type: PATH, PLACE, MOTION, NONMOTION_EVEN
 ========== MOTION ==========
 row = predicted, column = actual
       False  True  
-False 1078.0 258.0 
-True  38.0   12.0  
+False 1212.0 141.0 
+True  20.0   13.0  
 
 ========= False =========
-Precision: 0.806886 
-Recall: 0.965950
-F-measure 0.879282
+Precision: 0.895787 
+Recall: 0.983766
+F-measure 0.937718
 ========= True =========
-Precision: 0.240000 
-Recall: 0.044444
-F-measure 0.075000
+Precision: 0.393939 
+Recall: 0.084416
+F-measure 0.139037
 
-Accuracy: 78.643579%
+Accuracy: 88.383838%
 
 
 ========== PATH ==========
 row = predicted, column = actual
-      False  True  
-False 1078.0 258.0 
-True  38.0   12.0  
+      False  True 
+False 1301.0 73.0 
+True  9.0    3.0  
 
 ========= False =========
-Precision: 0.806886 
-Recall: 0.965950
-F-measure 0.879282
+Precision: 0.946870 
+Recall: 0.993130
+F-measure 0.969449
 ========= True =========
-Precision: 0.240000 
-Recall: 0.044444
-F-measure 0.075000
+Precision: 0.250000 
+Recall: 0.039474
+F-measure 0.068182
 
-Accuracy: 78.643579%
+Accuracy: 94.083694%
 
 
 ========== PLACE ==========
 row = predicted, column = actual
-      False  True  
-False 1078.0 258.0 
-True  38.0   12.0  
+      True  False 
+True  48.0  192.0 
+False 213.0 933.0 
 
-========= False =========
-Precision: 0.806886 
-Recall: 0.965950
-F-measure 0.879282
 ========= True =========
-Precision: 0.240000 
-Recall: 0.044444
-F-measure 0.075000
+Precision: 0.200000 
+Recall: 0.183908
+F-measure 0.191617
+========= False =========
+Precision: 0.814136 
+Recall: 0.829333
+F-measure 0.821664
 
-Accuracy: 78.643579%
+Accuracy: 70.779221%
 
 
 ========== NONMOTION_EVENT ==========
 row = predicted, column = actual
-      False  True  
-False 1078.0 258.0 
-True  38.0   12.0  
+      False  True 
+False 1335.0 48.0 
+True  3.0    0.0  
 
 ========= False =========
-Precision: 0.806886 
-Recall: 0.965950
-F-measure 0.879282
+Precision: 0.965293 
+Recall: 0.997758
+F-measure 0.981257
 ========= True =========
-Precision: 0.240000 
-Recall: 0.044444
-F-measure 0.075000
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
 
-Accuracy: 78.643579%
+Accuracy: 96.320346%
 
 
 ========== SPATIAL_ENTITY ==========
@@ -92,7 +92,7 @@ Accuracy: 78.643579%
 
 
 ==========OVERALL==========
-mean precision: 0.523443113772
-mean recall: 0.505197132616
-mean f1: 0.477141109299
-mean accuracy: 0.786435786436
+mean precision: 0.551291217971
+mean recall: 0.512217876546
+mean f1: 0.506320577799
+mean accuracy: 0.856421356421

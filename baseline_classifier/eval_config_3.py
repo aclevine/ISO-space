@@ -4,12 +4,18 @@ Created on Dec 23, 2014
 @author: Aaron Levine
 @email: aclevine@brandeis.edu
 '''
-from e_evaluator import config_3_eval_single
+from util.e_evaluator import config_3_eval_single
+import re
 
 if __name__ == "__main__":
 
-    hyp_path = './data/ixagroup_ehu_spaceeval/configuration3'
-    gold_path = './data/gold'
-    outpath = './results/utd/run3'
+    # load paths
+    with open('config.txt') as fo:
+        text = fo.read()
+    hyp_path = re.findall('CONFIG_3_EVAL_PATH = (.*)', text)[0]
+    gold_path = re.findall('GOLD_PATH = (.*)', text)[0]
+    outpath = re.findall('RESULT_PATH = (.*)', text)[0]
+
+    # run evaluations    
 
     config_3_eval_single(hyp_path, gold_path, outpath)
