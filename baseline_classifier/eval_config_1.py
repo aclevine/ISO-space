@@ -5,6 +5,7 @@ Created on Dec 23, 2014
 @email: aclevine@brandeis.edu
 '''
 from util.e_evaluator import config_1_eval_single
+import bs4
 import re
 
 if __name__ == "__main__":
