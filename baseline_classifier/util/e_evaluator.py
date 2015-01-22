@@ -255,3 +255,11 @@ def config_3_eval_single(hyp_path, gold_path, outpath):
     """calculate metrics for tasks 3a - 3b using single set of annotated files"""
     config_3_eval(hyp_path, hyp_path, gold_path, outpath)
 
+if __name__ == "__main__":
+
+    #TESTING
+    hyp_path = '../data/task8_hrijp_crf_vw_system_submission'
+    gold_path = '../data/gold'
+    outpath = '../results/honda'
+    
+    config_1_eval_single(hyp_path, gold_path, outpath)
