@@ -1,5 +1,12 @@
-__author__ = "Zachary Yocum"
-__email__ = "zyocum@brandeis.edu"
+#!/usr/bin/env python
+"""
+Created on August 10, 2014
+
+@author: Zachary Yocum, Aaron Levine
+@email: zyocum@brandeis.edu, aclevine@brandeis.edu
+
+ISO-space XML parser
+"""
 
 import os
 from warnings import warn

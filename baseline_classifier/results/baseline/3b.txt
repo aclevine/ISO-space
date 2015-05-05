@@ -118,75 +118,32 @@ F-measure 0.000000
 Accuracy: 80.808081%
 
 
-========== MOVELINK - motion ==========
-row = predicted, column = actual
-      0     2    1   False 3   -2 
-0     161.0 10.0 6.0 17.0  2.0 2.0 
-2     0.0   0.0  0.0 0.0   0.0 0.0 
-1     0.0   0.0  0.0 0.0   0.0 0.0 
-False 0.0   0.0  0.0 0.0   0.0 0.0 
-3     0.0   0.0  0.0 0.0   0.0 0.0 
--2    0.0   0.0  0.0 0.0   0.0 0.0 
-
-========= 0 =========
-Precision: 0.813131 
-Recall: 1.000000
-F-measure 0.896936
-========= 2 =========
-Precision: 0.000000 
-Recall: 0.000000
-F-measure 0.000000
-========= 1 =========
-Precision: 0.000000 
-Recall: 0.000000
-F-measure 0.000000
-========= False =========
-Precision: 0.000000 
-Recall: 0.000000
-F-measure 0.000000
-========= 3 =========
-Precision: 0.000000 
-Recall: 0.000000
-F-measure 0.000000
-========= -2 =========
-Precision: 0.000000 
-Recall: 0.000000
-F-measure 0.000000
-
-Accuracy: 81.313131%
-
-
 ========== OLINK - frame_type ==========
 row = predicted, column = actual
-          FALSE INTRINSIC ABSOLUTE False RELATIVE 
-FALSE     0.0   21.0      4.0      3.0   5.0      
-INTRINSIC 0.0   0.0       0.0      0.0   0.0      
-ABSOLUTE  0.0   0.0       0.0      0.0   0.0      
-False     0.0   0.0       0.0      0.0   0.0      
-RELATIVE  0.0   0.0       0.0      0.0   0.0      
+          INTRINSIC ABSOLUTE RELATIVE False 
+INTRINSIC 21.0      2.0      5.0      1.0   
+ABSOLUTE  0.0       2.0      0.0      0.0   
+RELATIVE  0.0       0.0      0.0      2.0   
+False     0.0       0.0      0.0      0.0   
 
-========= False =========
-Precision: 0.000000 
-Recall: 0.000000
-F-measure 0.000000
 ========= Intrinsic =========
-Precision: 0.000000 
-Recall: 0.000000
-F-measure 0.000000
+Precision: 0.724138 
+Recall: 1.000000
+F-measure 0.840000
 ========= Absolute =========
-Precision: 0.000000 
-Recall: 0.000000
-F-measure 0.000000
-========= False =========
-Precision: 0.000000 
-Recall: 0.000000
-F-measure 0.000000
+Precision: 1.000000 
+Recall: 0.500000
+F-measure 0.666667
 ========= Relative =========
 Precision: 0.000000 
 Recall: 0.000000
 F-measure 0.000000
+========= False =========
+Precision: 0.000000 
+Recall: 0.000000
+F-measure 0.000000
 
-Accuracy: 0.000000%
+Accuracy: 69.696970%
 
 
 ========== MOVELINK - goal_reached ==========
@@ -1495,7 +1452,7 @@ Accuracy: 78.787879%
 
 
 ==========OVERALL==========
-mean precision: 0.175228874919
-mean recall: 0.18416460518
-mean f1: 0.173728209956
-mean accuracy: 0.664211344211
+mean precision: 0.214457330932
+mean recall: 0.216872766723
+mean f1: 0.207137006159
+mean accuracy: 0.709882154882

@@ -1,0 +1,29 @@
+Identify spans of spatial elements including locations, paths, events and other spatial entities.
+
+
+
+
+
+========== IS SPATIAL ELEMENT ==========
+row = predicted, column = actual
+      False  True  
+False 4697.0 607.0 
+True  229.0  735.0 
+
+========= False =========
+Precision: 0.885558 
+Recall: 0.953512
+F-measure 0.918280
+========= True =========
+Precision: 0.762448 
+Recall: 0.547690
+F-measure 0.637467
+
+Accuracy: 86.662412%
+
+
+==========OVERALL==========
+mean precision: 0.824003101081
+mean recall: 0.750600996083
+mean f1: 0.777873523021
+mean accuracy: 0.866624122527

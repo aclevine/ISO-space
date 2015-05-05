@@ -1,20 +1,16 @@
-"""Utility classes
+#!/usr/bin/env python
+"""
+Created on Sep 19, 2014
 
-Every class in here should be fully functional. 
-You don't need to modify anything unless you want to.
+@author: Aaron Levine
+@email: aclevine@brandeis.edu
 
+ lphabet / codebook utility for model
 """
 import json
 
 class Alphabet(object):
-    """Two way map for label/feature and label/feature index
-
-    It is an essentially a code book for labels or features
-    This class makes it convenient for us to use numpy.array
-    instead of dictionary because it allows us to use index instead of
-    label string. The implemention of classifiers uses label index space
-    instead of label string space.
-    """
+    """ Two way map for label/feature and label/feature index"""
     def __init__(self):
         self._index_to_label = {}
         self._label_to_index = {}
@@ -62,12 +58,7 @@ class Alphabet(object):
 
     @classmethod
     def from_dict(cls, alphabet_dictionary):
-        """Create an Alphabet from dictionary
-
-        alphabet_dictionary is a dictionary with only one field
-        _label_to_index which is a map from label to index
-        and should be created with to_dict method above.
-        """
+        """ Create an Alphabet from dictionary"""
         alphabet = cls()
         alphabet._label_to_index = alphabet_dictionary['_label_to_index']
         for label, index in alphabet._label_to_index.items():

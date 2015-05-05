@@ -85,10 +85,4 @@ def gen(corpus=test, model='m.model', indir=INDIR, outdir=''):
             print>>f, s
 
 gen()
-                    
-        
-        
-        
-        
-        
-    
+

@@ -1,13 +1,15 @@
-'''
+#!/usr/bin/env python
+"""
 Created on Dec 19, 2014
 
 @author: Aaron Levine
 @email: aclevine@brandeis.edu
 
-d) 
+
+Generate XML tags for task d:
 - Identify relations between triggers and spatial elements. 
 - Identify their attributes.
-'''
+"""
 #===============================================================================
 from util.d_move_link import *
 from util.d_olink import *
@@ -62,6 +64,9 @@ def make_links(train_path, test_path, out_path,
 #===============================================================================
 
 def generate_qslinks(train_path, test_path, out_path):
+    # make outpath
+    if not os.path.exists(out_path):
+        os.makedirs(out_path)
     # make link
     make_links(train_path, test_path, out_path, 
                get_top_tag_indices, SignalTag, 
@@ -138,7 +143,9 @@ def generate_qslinks(train_path, test_path, out_path):
 #=============================================================================== 
 
 def generate_olinks(train_path, test_path, out_path):
-
+    # make outpath
+    if not os.path.exists(out_path):
+        os.makedirs(out_path)
     # make link
     make_links(train_path, test_path, out_path, 
                get_dir_tag_indices, SignalTag, 
@@ -234,7 +241,9 @@ def generate_olinks(train_path, test_path, out_path):
 
 
 def generate_movelinks(train_path, test_path, out_path):
-
+    # make outpath
+    if not os.path.exists(out_path):
+        os.makedirs(out_path)
     # make movelink
     make_links(train_path, test_path, out_path, 
                get_motion_tag_indices, MotionTag, 
@@ -259,7 +268,6 @@ def generate_movelinks(train_path, test_path, out_path):
     d = MovelinkPathIDClassifier(train_path = train_path, test_path = test_path)  
     path_id_labels, _ = d.generate_labels()
 
-   
     d = MovelinkLandmarkClassifier(train_path = train_path, test_path = test_path)  
     landmark_labels, _ = d.generate_labels()
       

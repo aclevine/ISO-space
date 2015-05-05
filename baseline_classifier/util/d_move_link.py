@@ -1,10 +1,11 @@
-'''
+#!/usr/bin/env python
+"""
 Created on Nov 13, 2014
 
 @author: Aaron Levine
-'''
+"""
 
-from util.model.demo import Classifier
+from util.model.baseline_classifier import Classifier
 from util.corpora.corpus import Corpus
 from util.c_motion import get_motion_tag_indices, MotionTag
 import re
@@ -13,7 +14,7 @@ import re
 class MovelinkTag(MotionTag):
 
     def __init__(self, sent, tag_dict, movelink_tag_dict, olink_tag_dict, qslink_tag_dict, front, back, basename, doc):
-        ''' use c_motion tags as a head to associate move-links with sentences'''
+        """ use c_motion tags as a head to associate move-links with sentences"""
         super(MovelinkTag, self).__init__(sent, tag_dict, movelink_tag_dict, olink_tag_dict, qslink_tag_dict, front, back, basename, doc)
         head = tag_dict.get(self.lex[0].begin, {})
         self.tag = movelink_tag_dict.get(head['id'], {})
@@ -22,11 +23,11 @@ class MovelinkTag(MotionTag):
     
     # skip trigger and from_id - move-links were identified using them
     def tag_position(self, attribute_key):
-        '''
+        """
         0 = empty field for movelink attribute
         +n = movelink attribute is n tags right of c_motion tag
         -n = movelink attribute is n tags left of c_motion tag
-        '''
+        """
         if attribute_key in self.tag:
             target = self.tag[attribute_key]
             i = -1
@@ -43,36 +44,36 @@ class MovelinkTag(MotionTag):
         return 0
 
     def source(self):
-        '''source IDREF'''
+        """source IDREF"""
         return self.tag_position('source')
 
     def goal(self):
-        '''goal IDREF'''
+        """goal IDREF"""
         return self.tag_position('goal')
 
     def mid_point(self):
-        '''midPoint IDREF'''
+        """midPoint IDREF"""
         return self.tag_position('midPoint')
     
     def mover(self):
-        '''mover IDREF'''
+        """mover IDREF"""
         return self.tag_position('mover')
 
     def landmark(self):
-        '''landmark IDREF'''
+        """landmark IDREF"""
         return self.tag_position('landmark')
 
     def goal_reached(self):
-        '''goal_reached ( YES | NO | UNCERTAIN )'''
+        """goal_reached ( YES | NO | UNCERTAIN )"""
         return self.tag.get('goal_reached', '')
     
     def path_id(self):
-        '''pathID IDREF'''
+        """pathID IDREF"""
         return self.tag_position('pathID')
 
 
     def motion_signal_id(self):
-        '''motion_signalID IDREFS'''
+        """motion_signalID IDREFS"""
         return self.tag_position('motion_signalID')
 
     # EVAL LABELS    

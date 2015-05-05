@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<SpaceEvalTaskv1.2>
+<TEXT><![CDATA[
+
+02-Aug-2005 -- Continues from 48N 26E.
+
+After an easy entry to Romania we visited the church of Pătrăuţi. There we met the priest, who was building a new wooden church to prevent the old one from damage. He gave us an very interesting guide of the church's history. It is painted outside at one wall and also inside it is completely painted.
+
+Then passing Suceava and Botoşani we headed to Săveni, where we took road 29 towards Manoleasa. This road brought us to a distance of 410 m to 48N 27E, so it is not very difficult to find the point! We parked our car beside the hardly used street. Only some horse-drawn trolleys with hay came along from time to time. So we entered a huge field-area again and walked around a corn-field and through a sunflower-field to a meadow, where we easily could locate the CP. Back at the car we headed on to Iaşi and on the way along the river Prut we were able to see the country Moldavia at the other edge.
+
+Continues at 46N 15E
+
+﻿http://confluence.org/confluence.php?id=9787]]></TEXT>
+<TAGS><PLACE countable="TRUE" dimensionality="AREA" end="72" form="NAM" id="pl0" mod="" start="65" text="Romania"/>
+<SPATIAL_ENTITY countable="TRUE" dimensionality="AREA" end="75" form="NOM" id="se1" mod="" start="73" text="we"/>
+<MOTION end="83" id="m2" motion_class="REACH" motion_sense="LITERAL" motion_type="PATH" start="76" text="visited"/>
+<PLACE countable="TRUE" dimensionality="AREA" end="94" form="NOM" id="pl3" mod="" start="88" text="church"/>
+<SPATIAL_ENTITY countable="TRUE" dimensionality="AREA" end="116" form="NOM" id="se4" mod="" start="114" text="we"/>
+<MOTION end="120" id="m5" motion_class="HIT" motion_sense="LITERAL" motion_type="PATH" start="117" text="met"/>
+<SPATIAL_ENTITY countable="TRUE" dimensionality="AREA" end="216" form="NOM" id="se6" mod="" start="214" text="us"/>
+<PLACE countable="TRUE" dimensionality="AREA" end="256" form="NOM" id="pl7" mod="" start="250" text="church"/>
+<PATH countable="TRUE" dimensionality="" end="301" form="NOM" id="p8" mod="" start="297" text="wall"/>
+<MOTION end="357" id="m9" motion_class="CROSS" motion_sense="LITERAL" motion_type="PATH" start="350" text="passing"/>
+<PLACE countable="TRUE" dimensionality="" end="365" form="NOM" id="pl10" mod="" start="358" text="Suceava"/>
+<SPATIAL_ENTITY countable="TRUE" dimensionality="AREA" end="381" form="NOM" id="se11" mod="" start="379" text="we"/>
+<MOTION end="388" id="m12" motion_class="MOVE" motion_sense="LITERAL" motion_type="PATH" start="382" text="headed"/>
+<MOTION_SIGNAL end="391" id="ms13" motion_signal_type="PATH" start="389" text="to"/>
+<PLACE countable="TRUE" dimensionality="" end="398" form="NOM" id="pl14" mod="" start="392" text="Săveni"/>
+<SPATIAL_SIGNAL end="405" id="s15" semantic_type="TOPOLOGICAL" start="400" text="where"/>
+<SPATIAL_ENTITY countable="TRUE" dimensionality="AREA" end="408" form="NOM" id="se16" mod="" start="406" text="we"/>
+<MOTION end="413" id="m17" motion_class="MOVE" motion_sense="LITERAL" motion_type="PATH" start="409" text="took"/>
+<PATH countable="TRUE" dimensionality="" end="418" form="NOM" id="p18" mod="" start="414" text="road"/>
+<MEASURE end="421" id="me19" start="419" text="29" unit="" value=""/>
+<MOTION_SIGNAL end="429" id="ms20" motion_signal_type="PATH" start="422" text="towards"/>
+<PLACE countable="TRUE" dimensionality="" end="439" form="NOM" id="pl21" mod="" start="430" text="Manoleasa"/>
+<PATH countable="TRUE" dimensionality="" end="450" form="NOM" id="p22" mod="" start="446" text="road"/>
+<SPATIAL_ENTITY countable="TRUE" dimensionality="AREA" end="461" form="NOM" id="se23" mod="" start="459" text="us"/>
+<MOTION_SIGNAL end="464" id="ms24" motion_signal_type="PATH" start="462" text="to"/>
+<PLACE countable="TRUE" dimensionality="POINT" end="542" form="NOM" id="pl25" mod="" start="537" text="point"/>
+<SPATIAL_ENTITY countable="TRUE" dimensionality="AREA" end="546" form="NOM" id="se26" mod="" start="544" text="We"/>
+<NONMOTION_EVENT countable="" end="553" id="e27" mod="" start="547" text="parked"/>
+<SPATIAL_ENTITY countable="TRUE" dimensionality="" end="561" form="NOM" id="se28" mod="" start="558" text="car"/>
+<SPATIAL_ENTITY countable="TRUE" dimensionality="AREA" end="668" form="NOM" id="se29" mod="" start="666" text="we"/>
+<MOTION end="676" id="m30" motion_class="REACH" motion_sense="LITERAL" motion_type="PATH" start="669" text="entered"/>
+<MOTION end="711" id="m31" motion_class="REACH" motion_sense="LITERAL" motion_type="COMPOUND" start="705" text="walked"/>
+<MOTION_SIGNAL end="718" id="ms32" motion_signal_type="PATH" start="712" text="around"/>
+<MOTION_SIGNAL end="743" id="ms33" motion_signal_type="PATH" start="736" text="through"/>
+<SPATIAL_SIGNAL end="780" id="s34" semantic_type="TOPOLOGICAL" start="775" text="where"/>
+<SPATIAL_ENTITY countable="TRUE" dimensionality="AREA" end="783" form="NOM" id="se35" mod="" start="781" text="we"/>
+<PLACE countable="TRUE" dimensionality="" end="810" form="NOM" id="pl36" mod="" start="808" text="CP"/>
+<SPATIAL_ENTITY countable="" dimensionality="" end="830" form="" id="se37" mod="" start="824" text="car we"/>
+<MOTION end="837" id="m38" motion_class="MOVE" motion_sense="LITERAL" motion_type="PATH" start="831" text="headed"/>
+<MOTION_SIGNAL end="843" id="ms39" motion_signal_type="" start="838" text="on to"/>
+<PLACE countable="TRUE" dimensionality="" end="848" form="NOM" id="pl40" mod="" start="844" text="Iaşi"/>
+<SPATIAL_SIGNAL end="855" id="s41" semantic_type="DIR_TOP" start="853" text="on"/>
+<PATH countable="TRUE" dimensionality="AREA" end="863" form="NOM" id="p42" mod="" start="860" text="way"/>
+<SPATIAL_SIGNAL end="869" id="s43" semantic_type="DIR_TOP" start="864" text="along"/>
+<PATH countable="" dimensionality="" end="884" form="" id="p44" mod="" start="874" text="river Prut"/>
+<SPATIAL_ENTITY countable="" dimensionality="" end="887" form="" id="se45" mod="" start="885" text="we"/>
+<PLACE countable="TRUE" dimensionality="" end="925" form="NOM" id="pl46" mod="" start="917" text="Moldavia"/>
+<SPATIAL_SIGNAL end="928" id="s47" semantic_type="TOPOLOGICAL" start="926" text="at"/>
+<PATH countable="" dimensionality="" end="943" form="" id="p48" mod="" start="939" text="edge"/>
+<SPATIAL_ENTITY countable="TRUE" dimensionality="" end="955" form="NOM" id="se49" mod="" start="946" text="Continues"/>
+<SPATIAL_SIGNAL end="958" id="s50" semantic_type="TOPOLOGICAL" start="956" text="at"/>
+<PLACE countable="TRUE" dimensionality="" end="962" form="NOM" id="pl51" mod="" start="959" text="46N"/>
+</TAGS>
+<TOKENS>
+<s>
+<lex begin="2" end="13">02-Aug-2005</lex>
+<lex begin="14" end="16">--</lex>
+<lex begin="17" end="26">Continues</lex>
+<lex begin="27" end="31">from</lex>
+<lex begin="32" end="35">48N</lex>
+<lex begin="36" end="39">26E</lex>
+<lex begin="39" end="40">.</lex>
+</s>
+<s>
+<lex begin="42" end="47">After</lex>
+<lex begin="48" end="50">an</lex>
+<lex begin="51" end="55">easy</lex>
+<lex begin="56" end="61">entry</lex>
+<lex begin="62" end="64">to</lex>
+<lex begin="65" end="72">Romania</lex>
+<lex begin="73" end="75">we</lex>
+<lex begin="76" end="83">visited</lex>
+<lex begin="84" end="87">the</lex>
+<lex begin="88" end="94">church</lex>
+<lex begin="95" end="97">of</lex>
+<lex begin="98" end="106">Pătrăuţi</lex>
+<lex begin="106" end="107">.</lex>
+</s>
+<s>
+<lex begin="108" end="113">There</lex>
+<lex begin="114" end="116">we</lex>
+<lex begin="117" end="120">met</lex>
+<lex begin="121" end="124">the</lex>
+<lex begin="125" end="131">priest</lex>
+<lex begin="131" end="132">,</lex>
+<lex begin="133" end="136">who</lex>
+<lex begin="137" end="140">was</lex>
+<lex begin="141" end="149">building</lex>
+<lex begin="150" end="151">a</lex>
+<lex begin="152" end="155">new</lex>
+<lex begin="156" end="162">wooden</lex>
+<lex begin="163" end="169">church</lex>
+<lex begin="170" end="172">to</lex>
+<lex begin="173" end="180">prevent</lex>
+<lex begin="181" end="184">the</lex>
+<lex begin="185" end="188">old</lex>
+<lex begin="189" end="192">one</lex>
+<lex begin="193" end="197">from</lex>
+<lex begin="198" end="204">damage</lex>
+<lex begin="204" end="205">.</lex>
+</s>
+<s>
+<lex begin="206" end="208">He</lex>
+<lex begin="209" end="213">gave</lex>
+<lex begin="214" end="216">us</lex>
+<lex begin="217" end="219">an</lex>
+<lex begin="220" end="224">very</lex>
+<lex begin="225" end="236">interesting</lex>
+<lex begin="237" end="242">guide</lex>
+<lex begin="243" end="245">of</lex>
+<lex begin="246" end="249">the</lex>
+<lex begin="250" end="256">church</lex>
+<lex begin="256" end="258">'s</lex>
+<lex begin="259" end="266">history</lex>
+<lex begin="266" end="267">.</lex>
+</s>
+<s>
+<lex begin="268" end="270">It</lex>
+<lex begin="271" end="273">is</lex>
+<lex begin="274" end="281">painted</lex>
+<lex begin="282" end="289">outside</lex>
+<lex begin="290" end="292">at</lex>
+<lex begin="293" end="296">one</lex>
+<lex begin="297" end="301">wall</lex>
+<lex begin="302" end="305">and</lex>
+<lex begin="306" end="310">also</lex>
+<lex begin="311" end="317">inside</lex>
+<lex begin="318" end="320">it</lex>
+<lex begin="321" end="323">is</lex>
+<lex begin="324" end="334">completely</lex>
+<lex begin="335" end="342">painted</lex>
+<lex begin="342" end="343">.</lex>
+</s>
+<s>
+<lex begin="345" end="349">Then</lex>
+<lex begin="350" end="357">passing</lex>
+<lex begin="358" end="365">Suceava</lex>
+<lex begin="366" end="369">and</lex>
+<lex begin="370" end="378">Botoşani</lex>
+<lex begin="379" end="381">we</lex>
+<lex begin="382" end="388">headed</lex>
+<lex begin="389" end="391">to</lex>
+<lex begin="392" end="398">Săveni</lex>
+<lex begin="398" end="399">,</lex>
+<lex begin="400" end="405">where</lex>
+<lex begin="406" end="408">we</lex>
+<lex begin="409" end="413">took</lex>
+<lex begin="414" end="418">road</lex>
+<lex begin="419" end="421">29</lex>
+<lex begin="422" end="429">towards</lex>
+<lex begin="430" end="439">Manoleasa</lex>
+<lex begin="439" end="440">.</lex>
+</s>
+<s>
+<lex begin="441" end="445">This</lex>
+<lex begin="446" end="450">road</lex>
+<lex begin="451" end="458">brought</lex>
+<lex begin="459" end="461">us</lex>
+<lex begin="462" end="464">to</lex>
+<lex begin="465" end="466">a</lex>
+<lex begin="467" end="475">distance</lex>
+<lex begin="476" end="478">of</lex>
+<lex begin="479" end="482">410</lex>
+<lex begin="483" end="484">m</lex>
+<lex begin="485" end="487">to</lex>
+<lex begin="488" end="491">48N</lex>
+<lex begin="492" end="495">27E</lex>
+<lex begin="495" end="496">,</lex>
+<lex begin="497" end="499">so</lex>
+<lex begin="500" end="502">it</lex>
+<lex begin="503" end="505">is</lex>
+<lex begin="506" end="509">not</lex>
+<lex begin="510" end="514">very</lex>
+<lex begin="515" end="524">difficult</lex>
+<lex begin="525" end="527">to</lex>
+<lex begin="528" end="532">find</lex>
+<lex begin="533" end="536">the</lex>
+<lex begin="537" end="542">point</lex>
+<lex begin="542" end="543">!</lex>
+</s>
+<s>
+<lex begin="544" end="546">We</lex>
+<lex begin="547" end="553">parked</lex>
+<lex begin="554" end="557">our</lex>
+<lex begin="558" end="561">car</lex>
+<lex begin="562" end="568">beside</lex>
+<lex begin="569" end="572">the</lex>
+<lex begin="573" end="579">hardly</lex>
+<lex begin="580" end="584">used</lex>
+<lex begin="585" end="591">street</lex>
+<lex begin="591" end="592">.</lex>
+</s>
+<s>
+<lex begin="593" end="597">Only</lex>
+<lex begin="598" end="602">some</lex>
+<lex begin="603" end="614">horse-drawn</lex>
+<lex begin="615" end="623">trolleys</lex>
+<lex begin="624" end="628">with</lex>
+<lex begin="629" end="632">hay</lex>
+<lex begin="633" end="637">came</lex>
+<lex begin="638" end="643">along</lex>
+<lex begin="644" end="648">from</lex>
+<lex begin="649" end="653">time</lex>
+<lex begin="654" end="656">to</lex>
+<lex begin="657" end="661">time</lex>
+<lex begin="661" end="662">.</lex>
+</s>
+<s>
+<lex begin="663" end="665">So</lex>
+<lex begin="666" end="668">we</lex>
+<lex begin="669" end="676">entered</lex>
+<lex begin="677" end="678">a</lex>
+<lex begin="679" end="683">huge</lex>
+<lex begin="684" end="694">field-area</lex>
+<lex begin="695" end="700">again</lex>
+<lex begin="701" end="704">and</lex>
+<lex begin="705" end="711">walked</lex>
+<lex begin="712" end="718">around</lex>
+<lex begin="719" end="720">a</lex>
+<lex begin="721" end="731">corn-field</lex>
+<lex begin="732" end="735">and</lex>
+<lex begin="736" end="743">through</lex>
+<lex begin="744" end="745">a</lex>
+<lex begin="746" end="761">sunflower-field</lex>
+<lex begin="762" end="764">to</lex>
+<lex begin="765" end="766">a</lex>
+<lex begin="767" end="773">meadow</lex>
+<lex begin="773" end="774">,</lex>
+<lex begin="775" end="780">where</lex>
+<lex begin="781" end="783">we</lex>
+<lex begin="784" end="790">easily</lex>
+<lex begin="791" end="796">could</lex>
+<lex begin="797" end="803">locate</lex>
+<lex begin="804" end="807">the</lex>
+<lex begin="808" end="810">CP</lex>
+<lex begin="810" end="811">.</lex>
+</s>
+<s>
+<lex begin="812" end="816">Back</lex>
+<lex begin="817" end="819">at</lex>
+<lex begin="820" end="823">the</lex>
+<lex begin="824" end="827">car</lex>
+<lex begin="828" end="830">we</lex>
+<lex begin="831" end="837">headed</lex>
+<lex begin="838" end="840">on</lex>
+<lex begin="841" end="843">to</lex>
+<lex begin="844" end="848">Iaşi</lex>
+<lex begin="849" end="852">and</lex>
+<lex begin="853" end="855">on</lex>
+<lex begin="856" end="859">the</lex>
+<lex begin="860" end="863">way</lex>
+<lex begin="864" end="869">along</lex>
+<lex begin="870" end="873">the</lex>
+<lex begin="874" end="879">river</lex>
+<lex begin="880" end="884">Prut</lex>
+<lex begin="885" end="887">we</lex>
+<lex begin="888" end="892">were</lex>
+<lex begin="893" end="897">able</lex>
+<lex begin="898" end="900">to</lex>
+<lex begin="901" end="904">see</lex>
+<lex begin="905" end="908">the</lex>
+<lex begin="909" end="916">country</lex>
+<lex begin="917" end="925">Moldavia</lex>
+<lex begin="926" end="928">at</lex>
+<lex begin="929" end="932">the</lex>
+<lex begin="933" end="938">other</lex>
+<lex begin="939" end="943">edge</lex>
+<lex begin="943" end="944">.</lex>
+</s>
+<lex begin="946" end="955">Continues</lex>
+<lex begin="956" end="958">at</lex>
+<lex begin="959" end="962">46N</lex>
+<lex begin="963" end="966">15E</lex>
+<lex begin="968" end="1013">﻿http://confluence.org/confluence.php?id=9787</lex>
+</TOKENS>
+</SpaceEvalTaskv1.2>

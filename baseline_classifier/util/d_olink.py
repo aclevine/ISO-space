@@ -1,4 +1,5 @@
-'''
+#!/usr/bin/env python
+"""
 Created on Nov 13, 2014
 
 @author: Aaron Levine
@@ -8,17 +9,18 @@ if signal:
     top = qslink
     dir = olink
 
-'''
-from util.model.demo import Classifier
+"""
+from util.model.baseline_classifier import Classifier
 from util.b_identify_types import get_tag_and_no_tag_indices
 from util.c_path import PathTag
 from util.d_move_link import MovelinkTag
 import re
 
+
 class OLinkTag(MovelinkTag):
     def __init__(self, sent, tag_dict, movelink_tag_dict, olink_tag_dict, 
                  qslink_tag_dict, front, back, basename, doc):
-        ''' use c_motion tags as a head to associate move-links with sentences'''
+        """ use c_motion tags as a head to associate move-links with sentences"""
         super(OLinkTag, self).__init__(sent, tag_dict, movelink_tag_dict, olink_tag_dict, 
                                        qslink_tag_dict, front, back, basename, doc)
         head = tag_dict.get(self.lex[0].begin, {})
@@ -29,11 +31,11 @@ class OLinkTag(MovelinkTag):
 #             print head
 
     def tag_position(self, attribute_key):
-        '''
+        """
         0 = empty field for link attribute
         +n = link attribute is n tags right of c_motion tag
         -n = link attribute is n tags left of c_motion tag
-        '''
+        """
         if attribute_key in self.tag:
             tag_target = self.tag[attribute_key]
             i = -1
@@ -77,7 +79,7 @@ class OLinkTag(MovelinkTag):
             return {'is_OLink': False}
 
     def from_id(self):
-        '''fromID IDREF'''
+        """fromID IDREF"""
         label = self.tag_position('fromID') 
         if label != 0:
             return label
@@ -85,7 +87,7 @@ class OLinkTag(MovelinkTag):
             return -1
 
     def to_id(self):
-        '''toID IDREF'''
+        """toID IDREF"""
         label =  self.tag_position('toID')
         if label != 0:
             return label
@@ -93,30 +95,30 @@ class OLinkTag(MovelinkTag):
             return 1
 
     def rel_type(self):
-        ''' relType CDATA '''
+        """ relType CDATA """
         return self.tag.get('relType', 'IN')
 
     def trajector(self):
-        '''trajector IDREF'''
+        """trajector IDREF"""
         return self.tag_position('trajector')
     
     def landmark(self):
-        '''landmark IDREF'''
+        """landmark IDREF"""
         return self.tag_position('landmark')
     
     def frame_type(self):
-        '''frame_type ( ABSOLUTE | INTRINSIC | RELATIVE )'''
+        """frame_type ( ABSOLUTE | INTRINSIC | RELATIVE )"""
         return self.tag.get('frame_type', 'RELATIVE')
 
     def reference_pt(self):
-        '''referencePt IDREF'''
+        """referencePt IDREF"""
         if self.tag.get('referencePt', '0').isalpha():
             return self.tag['referencePt']
         else:
             return self.tag_position('referencePt')
 
     def projective(self):
-        '''projective ( TRUE | FALSE )'''
+        """projective ( TRUE | FALSE )"""
         return self.tag.get('projective', '')
 
     def reference_pt_extents(self):
@@ -129,7 +131,7 @@ class OLinkTag(MovelinkTag):
 
 # TAG TYPE FILTER
 def is_dir_tag(tag):
-    ''' load c_path / pu / spatial entity / c_spatial_signal / c_nonmotion_event / c_motion heads'''
+    """ load c_path / pu / spatial entity / c_spatial_signal / c_nonmotion_event / c_motion heads"""
     tag_id = tag.get('id', '')
     if bool(re.findall('^s\d+', tag_id)):
         sem_type = tag.get('semantic_type', '')
@@ -142,7 +144,7 @@ def get_dir_tag_indices(sentence, tag_dict):
 
 # # alternate method of selecting olinks, didn't work
 # def is_tag(tag):
-#     ''' load c_path / pu / spatial entity / c_spatial_signal / c_nonmotion_event / c_motion heads'''
+#     """ load c_path / pu / spatial entity / c_spatial_signal / c_nonmotion_event / c_motion heads"""
 #     tag_id = tag.get('id', '')
 #     return any([
 #                 bool(re.findall('^s\d+', tag_id)),
@@ -246,4 +248,3 @@ class OLinkRefPtExtentClassifier(OLinkClassifier):
 
     def get_feature_functions(self):
         return []
-

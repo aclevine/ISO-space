@@ -1,4 +1,5 @@
-'''
+#!/usr/bin/env python
+"""
 Created on Nov 13, 2014
 
 @author: Aaron Levine
@@ -9,16 +10,16 @@ if signal:
     dir = d_olink
     
 build dictionary of "trigger entities" for qslinks without signal triggers?
-'''
+"""
 from util.d_olink import OLinkTag
-from util.model.demo import Classifier
+from util.model.baseline_classifier import Classifier
 import re
 from util.b_identify_types import get_tag_and_no_tag_indices
 
 class QSLinkTag(OLinkTag):
     def __init__(self, sent, tag_dict, movelink_tag_dict, olink_tag_dict, 
                  qslink_tag_dict, front, back, basename, doc):
-        ''' use c_motion tags as a head to associate move-links with sentences'''
+        """ use c_motion tags as a head to associate move-links with sentences"""
         super(QSLinkTag, self).__init__(sent, tag_dict, movelink_tag_dict, olink_tag_dict, 
                                        qslink_tag_dict, front, back, basename, doc)
         head = tag_dict.get(self.lex[0].begin, {})
@@ -32,12 +33,12 @@ class QSLinkTag(OLinkTag):
             return {'is_QSLink': False}
 
     def rel_type(self):
-        ''' relType ( IN | OUT | DC | EC | PO | TPP | ITPP | NTPP | INTPP | EQ ) '''
+        """ relType ( IN | OUT | DC | EC | PO | TPP | ITPP | NTPP | INTPP | EQ ) """
         return self.tag.get('relType', 'NOT_QSLINK')
             
 # TAG TYPE FILTER
 def is_top_tag(tag):
-    ''' load c_path / pu / spatial entity / c_spatial_signal / c_nonmotion_event / c_motion heads'''
+    """ load c_path / pu / spatial entity / c_spatial_signal / c_nonmotion_event / c_motion heads"""
     tag_id = tag.get('id', '')
     if bool(re.findall('^s\d+', tag_id)):
         sem_type = tag.get('semantic_type', '')
@@ -111,21 +112,3 @@ class QSLinkLandmarkClassifier(QSLinkClassifier):
     def get_feature_functions(self):
         return [lambda x: x.curr_token(),
                 ]
-
-
-if __name__ == "__main__":
-    
-    from_id = QSLinkFromIDClassifier()
-    from_id.run_demo()
-
-    to_id = QSLinkToIDClassifier()
-    to_id.run_demo()
-
-    rel_type = QSLinkRelTypeClassifier()
-    rel_type.run_demo()
-    
-    trajector = QSLinkTrajectorClassifier()
-    trajector.run_demo()
-    
-    landmark = QSLinkLandmarkClassifier()
-    landmark.run_demo()

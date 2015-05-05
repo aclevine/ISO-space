@@ -1,0 +1,1039 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<SpaceEvalTaskv1.2>
+<TEXT><![CDATA[
+
+12-May-2008 -- This is the second out of two confluence points that I visited on a bicycle trip from Zurich into the Vosges Mountains and the Black Forest. The story starts from 48°N 7°E.
+
+On confluence day, I started cycling at 5:30 a.m. in the village Midlach in the Vosges Mountains. I came through the city of Colmar and entered Germany at the border town Brisach. At noon time, I reached Freiburg – a city that is located 10 km west of the confluence.
+
+From Freiburg, a nice bike-path along the Dreisam creek leads to the village Stegen (4 km from CP). From here, a narrow valley of the Eschbach stream follows upwards to the confluence. At a small village called Obertal (510 m from CP) I left the main road and searched for some tracks that would lead upwards to the confluence point. My approach was quite complicated; I detoured to the top of the hill to a place with a wayside cross and some nice benches. From this viewpoint (300m from CP) I could see the highest peak of the snow covered Feldberg (1494 m).
+
+I parked my bicycle and continued on foot by climbing down a steep grade directly towards the confluence point – passing by some grazing cows. Straight away I could see the unique marker of the point: a green sail from a windsurfing board with the inscription “Am 18.07.07 Hier war die 4. Klasse der Grundschule Stegen-Eschbach. Konfluenz-Punkt” which means ‘On 18th July 2007 Here has been the fourth grade elementary school Stegen-Eschbach. Confluence-Point’. Even though I consider such markers as pollution, I followed the slogan of the Confluence Project which says “take nothing but pictures, leave nothing but footprints”. So I kept the sail as it was.
+
+Getting a perfect zero reading turned out to be a lengthy back and forth – which is normally the case at densely forested steep grades. With 4 m accuracy, I finally located the confluence about 6 m west of the sail directly at the track. When I took the picture of the GPS, the accuracy turned to 5 m again.
+
+Let me here consider an interesting geographical feature: The Vosges Mountains and the Black Forest are two related mountain ranges with similar heights (1424 m and 1494 m). Both are aligned north-south, one is in France and the other in Germany. They are geological related and divided from each other by the Rhine Rift. The Upper Rhine River runs in the middle of that valley which is also the country border. Interestingly, both mountain ranges have comparable confluences: 48°N 7°E (in France) and 48°N 8°E (in Germany). Both are located in upper valleys that open out in the Rhine Rift. Both have similar heights (730 m and 555 m), both are in a mixed spruce and beech forest at steep grades. While visiting both confluence points, I noticed these striking similarities. Maybe 40 Million years ago, before the rift had formed, they had been together at one location.
+
+After documentation I went back to Freiburg, where I took a train back home to Zurich. Unfortunately I had to be in office the next day which did not leave riding back by bike as an option.
+
+CP visit details:
+
+    Time at the CP: 14:10 pm
+    riding time: 6 hours
+    riding distance: 101 km
+    hiking time: 20 min
+    hiking distance: 300 m
+    Distance to a road: 510 km
+    Distance to a track: 0 m
+    Distance to houses: 337 m
+    Topography: steep grade, northern hillside
+    Minimal distance according to GPS: 0 m
+    Position accuracy at the CP: 4 m
+    GPS height: 555 m
+    Vegetation: spruce and deciduous forest. Some ferns in the lower layer. Nearby a meadow with gazing land and young tree plantation with maple or plane trees.
+    Weather: fine, 25° C (felt temperature)
+    Description of the CP: In the Southern Black Forest, in the upper valley of the Eschbach steam. Right next to a track about one third up the hillside.
+    Given Name: The Green Sail Confluence
+
+Coordinator's Note: A previous visitor has left rubbish behind in the form of a large plastic sheet. This is not acceptable if anyone goes here in the future please remove and dispose of it.
+
+]]></TEXT>
+<TAGS><SPATIAL_ENTITY countable="" dimensionality="" end="71" form="" id="se0" mod="" start="70" text="I"></SPATIAL_ENTITY>
+<MOTION end="79" id="m1" motion_class="" motion_sense="" motion_type="" start="72" text="visited"></MOTION>
+<MOTION_SIGNAL end="82" id="ms2" motion_signal_type="" start="80" text="on"></MOTION_SIGNAL>
+<MOTION end="97" id="m3" motion_class="" motion_sense="" motion_type="" start="93" text="trip"></MOTION>
+<MOTION_SIGNAL end="102" id="ms4" motion_signal_type="" start="98" text="from"></MOTION_SIGNAL>
+<PLACE countable="" dimensionality="" end="109" form="" id="pl5" mod="" start="103" text="Zurich"></PLACE>
+<MOTION_SIGNAL end="114" id="ms6" motion_signal_type="" start="110" text="into"></MOTION_SIGNAL>
+<PLACE countable="" dimensionality="" end="149" form="" id="pl7" mod="" start="144" text="Black"></PLACE>
+<PLACE countable="" dimensionality="" end="204" form="" id="pl8" mod="" start="194" text="confluence"></PLACE>
+<SPATIAL_ENTITY countable="" dimensionality="" end="211" form="" id="se9" mod="" start="210" text="I"></SPATIAL_ENTITY>
+<PLACE countable="" dimensionality="" end="240" form="" id="pl10" mod="" start="236" text="a.m."></PLACE>
+<SPATIAL_SIGNAL end="243" id="s11" semantic_type="" start="241" text="in"></SPATIAL_SIGNAL>
+<PLACE countable="" dimensionality="" end="255" form="" id="pl12" mod="" start="248" text="village"></PLACE>
+<SPATIAL_ENTITY countable="" dimensionality="" end="290" form="" id="se13" mod="" start="289" text="I"></SPATIAL_ENTITY>
+<MOTION end="295" id="m14" motion_class="" motion_sense="" motion_type="" start="291" text="came"></MOTION>
+<MOTION_SIGNAL end="303" id="ms15" motion_signal_type="" start="296" text="through"></MOTION_SIGNAL>
+<PLACE countable="" dimensionality="" end="312" form="" id="pl16" mod="" start="308" text="city"></PLACE>
+<PLACE countable="" dimensionality="" end="322" form="" id="pl17" mod="" start="316" text="Colmar"></PLACE>
+<MOTION end="334" id="m18" motion_class="" motion_sense="" motion_type="" start="327" text="entered"></MOTION>
+<PLACE countable="" dimensionality="" end="342" form="" id="pl19" mod="" start="335" text="Germany"></PLACE>
+<SPATIAL_SIGNAL end="345" id="s20" semantic_type="" start="343" text="at"></SPATIAL_SIGNAL>
+<PLACE countable="" dimensionality="" end="361" form="" id="pl21" mod="" start="357" text="town"></PLACE>
+<SPATIAL_ENTITY countable="" dimensionality="" end="386" form="" id="se22" mod="" start="385" text="I"></SPATIAL_ENTITY>
+<MOTION end="394" id="m23" motion_class="" motion_sense="" motion_type="" start="387" text="reached"></MOTION>
+<PLACE countable="" dimensionality="" end="457" form="" id="pl24" mod="" start="447" text="confluence"></PLACE>
+<MOTION_SIGNAL end="464" id="ms25" motion_signal_type="" start="460" text="From"></MOTION_SIGNAL>
+<PLACE countable="" dimensionality="" end="473" form="" id="pl26" mod="" start="465" text="Freiburg"></PLACE>
+<SPATIAL_SIGNAL end="497" id="s27" semantic_type="" start="492" text="along"></SPATIAL_SIGNAL>
+<PLACE countable="" dimensionality="" end="543" form="" id="pl28" mod="" start="529" text="village Stegen"></PLACE>
+<MOTION_SIGNAL end="564" id="ms29" motion_signal_type="" start="560" text="From"></MOTION_SIGNAL>
+<PLACE countable="" dimensionality="" end="569" form="" id="pl30" mod="" start="565" text="here"></PLACE>
+<PATH countable="" dimensionality="" end="609" form="" id="p31" mod="" start="603" text="stream"></PATH>
+<PLACE countable="" dimensionality="" end="643" form="" id="pl32" mod="" start="633" text="confluence"></PLACE>
+<PLACE countable="" dimensionality="" end="663" form="" id="pl33" mod="" start="656" text="village"></PLACE>
+<PLACE countable="" dimensionality="" end="678" form="" id="pl34" mod="" start="671" text="Obertal"></PLACE>
+<SPATIAL_ENTITY countable="" dimensionality="" end="696" form="" id="se35" mod="" start="695" text="I"></SPATIAL_ENTITY>
+<MOTION end="701" id="m36" motion_class="" motion_sense="" motion_type="" start="697" text="left"></MOTION>
+<PATH countable="" dimensionality="" end="715" form="" id="p37" mod="" start="711" text="road"></PATH>
+<PATH countable="" dimensionality="" end="744" form="" id="p38" mod="" start="738" text="tracks"></PATH>
+<PLACE countable="" dimensionality="" end="792" form="" id="pl39" mod="" start="787" text="point"></PLACE>
+<SPATIAL_ENTITY countable="" dimensionality="" end="830" form="" id="se40" mod="" start="829" text="I"></SPATIAL_ENTITY>
+<PLACE countable="" dimensionality="" end="850" form="" id="pl41" mod="" start="847" text="top"></PLACE>
+<PLACE countable="" dimensionality="" end="862" form="" id="pl42" mod="" start="858" text="hill"></PLACE>
+<PLACE countable="" dimensionality="" end="873" form="" id="pl43" mod="" start="868" text="place"></PLACE>
+<SPATIAL_ENTITY countable="" dimensionality="" end="954" form="" id="se44" mod="" start="953" text="I"></SPATIAL_ENTITY>
+<PLACE countable="" dimensionality="" end="981" form="" id="pl45" mod="" start="977" text="peak"></PLACE>
+<SPATIAL_ENTITY countable="" dimensionality="" end="993" form="" id="se46" mod="" start="989" text="snow"></SPATIAL_ENTITY>
+<SPATIAL_SIGNAL end="1001" id="s47" semantic_type="" start="994" text="covered"></SPATIAL_SIGNAL>
+<PLACE countable="" dimensionality="" end="1010" form="" id="pl48" mod="" start="1002" text="Feldberg"></PLACE>
+<SPATIAL_ENTITY countable="" dimensionality="" end="1023" form="" id="se49" mod="" start="1022" text="I"></SPATIAL_ENTITY>
+<NONMOTION_EVENT countable="" end="1030" id="e50" mod="" start="1024" text="parked"></NONMOTION_EVENT>
+<MOTION end="1075" id="m51" motion_class="" motion_sense="" motion_type="" start="1067" text="climbing"></MOTION>
+<MOTION_SIGNAL end="1080" id="ms52" motion_signal_type="" start="1076" text="down"></MOTION_SIGNAL>
+<MOTION_SIGNAL end="1111" id="ms53" motion_signal_type="" start="1104" text="towards"></MOTION_SIGNAL>
+<PLACE countable="" dimensionality="" end="1132" form="" id="pl54" mod="" start="1127" text="point"></PLACE>
+<MOTION end="1142" id="m55" motion_class="" motion_sense="" motion_type="" start="1135" text="passing"></MOTION>
+<MOTION_SIGNAL end="1145" id="ms56" motion_signal_type="" start="1143" text="by"></MOTION_SIGNAL>
+<SPATIAL_ENTITY countable="" dimensionality="" end="1180" form="" id="se57" mod="" start="1179" text="I"></SPATIAL_ENTITY>
+<PLACE countable="" dimensionality="" end="1221" form="" id="pl58" mod="" start="1216" text="point"></PLACE>
+<PLACE countable="" dimensionality="" end="1403" form="" id="pl59" mod="" start="1399" text="Here"></PLACE>
+<SPATIAL_ENTITY countable="" dimensionality="" end="1497" form="" id="se60" mod="" start="1496" text="I"></SPATIAL_ENTITY>
+<SPATIAL_ENTITY countable="" dimensionality="" end="1535" form="" id="se61" mod="" start="1534" text="I"></SPATIAL_ENTITY>
+<MOTION end="1544" id="m62" motion_class="" motion_sense="" motion_type="" start="1536" text="followed"></MOTION>
+<SPATIAL_ENTITY countable="" dimensionality="" end="1656" form="" id="se63" mod="" start="1655" text="I"></SPATIAL_ENTITY>
+<SPATIAL_ENTITY countable="" dimensionality="" end="1839" form="" id="se64" mod="" start="1838" text="I"></SPATIAL_ENTITY>
+<PLACE countable="" dimensionality="" end="1870" form="" id="pl65" mod="" start="1860" text="confluence"></PLACE>
+<SPATIAL_SIGNAL end="1909" id="s66" semantic_type="" start="1907" text="at"></SPATIAL_SIGNAL>
+<SPATIAL_ENTITY countable="" dimensionality="" end="1927" form="" id="se67" mod="" start="1926" text="I"></SPATIAL_ENTITY>
+<MOTION end="1932" id="m68" motion_class="" motion_sense="" motion_type="" start="1928" text="took"></MOTION>
+<SPATIAL_ENTITY countable="" dimensionality="" end="1998" form="" id="se69" mod="" start="1996" text="me"></SPATIAL_ENTITY>
+<PLACE countable="" dimensionality="" end="2084" form="" id="pl70" mod="" start="2079" text="Black"></PLACE>
+<SPATIAL_SIGNAL end="2205" id="s71" semantic_type="" start="2203" text="in"></SPATIAL_SIGNAL>
+<PLACE countable="" dimensionality="" end="2212" form="" id="pl72" mod="" start="2206" text="France"></PLACE>
+<PLACE countable="" dimensionality="" end="2237" form="" id="pl73" mod="" start="2230" text="Germany"></PLACE>
+<PLACE countable="" dimensionality="" end="2307" form="" id="pl74" mod="" start="2302" text="Rhine"></PLACE>
+<PLACE countable="" dimensionality="" end="2323" form="" id="pl75" mod="" start="2318" text="Upper"></PLACE>
+<SPATIAL_SIGNAL end="2343" id="s76" semantic_type="" start="2341" text="in"></SPATIAL_SIGNAL>
+<SPATIAL_SIGNAL end="2481" id="s77" semantic_type="" start="2479" text="in"></SPATIAL_SIGNAL>
+<PLACE countable="" dimensionality="" end="2488" form="" id="pl78" mod="" start="2482" text="France"></PLACE>
+<SPATIAL_SIGNAL end="2506" id="s79" semantic_type="" start="2504" text="in"></SPATIAL_SIGNAL>
+<PLACE countable="" dimensionality="" end="2514" form="" id="pl80" mod="" start="2507" text="Germany"></PLACE>
+<PLACE countable="" dimensionality="" end="2577" form="" id="pl81" mod="" start="2572" text="Rhine"></PLACE>
+<MOTION end="2704" id="m82" motion_class="" motion_sense="" motion_type="" start="2696" text="visiting"></MOTION>
+<PLACE countable="" dimensionality="" end="2727" form="" id="pl83" mod="" start="2721" text="points"></PLACE>
+<SPATIAL_ENTITY countable="" dimensionality="" end="2730" form="" id="se84" mod="" start="2729" text="I"></SPATIAL_ENTITY>
+<SPATIAL_ENTITY countable="" dimensionality="" end="2828" form="" id="se85" mod="" start="2824" text="they"></SPATIAL_ENTITY>
+<SPATIAL_ENTITY countable="" dimensionality="" end="2886" form="" id="se86" mod="" start="2885" text="I"></SPATIAL_ENTITY>
+<MOTION end="2891" id="m87" motion_class="" motion_sense="" motion_type="" start="2887" text="went"></MOTION>
+<MOTION_SIGNAL end="2899" id="ms88" motion_signal_type="" start="2892" text="back to"></MOTION_SIGNAL>
+<PLACE countable="" dimensionality="" end="2908" form="" id="pl89" mod="" start="2900" text="Freiburg"></PLACE>
+<SPATIAL_SIGNAL end="2915" id="s90" semantic_type="" start="2910" text="where"></SPATIAL_SIGNAL>
+<SPATIAL_ENTITY countable="" dimensionality="" end="2917" form="" id="se91" mod="" start="2916" text="I"></SPATIAL_ENTITY>
+<NONMOTION_EVENT countable="" end="2922" id="e92" mod="" start="2918" text="took"></NONMOTION_EVENT>
+<MOTION end="2930" id="m93" motion_class="" motion_sense="" motion_type="" start="2925" text="train"></MOTION>
+<MOTION_SIGNAL end="2943" id="ms94" motion_signal_type="" start="2931" text="back home to"></MOTION_SIGNAL>
+<PLACE countable="" dimensionality="" end="2950" form="" id="pl95" mod="" start="2944" text="Zurich"></PLACE>
+<SPATIAL_ENTITY countable="" dimensionality="" end="2967" form="" id="se96" mod="" start="2966" text="I"></SPATIAL_ENTITY>
+<MOTION end="3027" id="m97" motion_class="" motion_sense="" motion_type="" start="3021" text="riding"></MOTION>
+<MOTION_SIGNAL end="3040" id="ms98" motion_signal_type="" start="3028" text="back by bike"></MOTION_SIGNAL>
+<PLACE countable="" dimensionality="" end="3093" form="" id="pl99" mod="" start="3091" text="CP"></PLACE>
+<PATH countable="" dimensionality="" end="3230" form="" id="p100" mod="" start="3226" text="road"></PATH>
+<PLACE countable="" dimensionality="" end="3290" form="" id="pl101" mod="" start="3284" text="houses"></PLACE>
+<PLACE countable="" dimensionality="" end="3419" form="" id="pl102" mod="" start="3417" text="CP"></PLACE>
+<PLACE countable="" dimensionality="" end="3490" form="" id="pl103" mod="" start="3484" text="forest"></PLACE>
+<SPATIAL_ENTITY countable="" dimensionality="" end="3502" form="" id="se104" mod="" start="3497" text="ferns"></SPATIAL_ENTITY>
+<SPATIAL_SIGNAL end="3505" id="s105" semantic_type="" start="3503" text="in"></SPATIAL_SIGNAL>
+<PLACE countable="" dimensionality="" end="3695" form="" id="pl106" mod="" start="3687" text="Southern"></PLACE>
+<SPATIAL_SIGNAL end="3712" id="s107" semantic_type="" start="3710" text="in"></SPATIAL_SIGNAL>
+<PLACE countable="" dimensionality="" end="3833" form="" id="pl108" mod="" start="3828" text="Green"></PLACE>
+<SPATIAL_SIGNAL end="3916" id="s109" semantic_type="" start="3914" text="in"></SPATIAL_SIGNAL>
+<PLACE countable="" dimensionality="" end="3994" form="" id="pl110" mod="" start="3990" text="here"></PLACE>
+<SPATIAL_SIGNAL end="3997" id="s111" semantic_type="" start="3995" text="in"></SPATIAL_SIGNAL>
+</TAGS>
+<TOKENS>
+<s>
+<lex begin="2" end="13">12-May-2008</lex>
+<lex begin="14" end="16">--</lex>
+<lex begin="17" end="21">This</lex>
+<lex begin="22" end="24">is</lex>
+<lex begin="25" end="28">the</lex>
+<lex begin="29" end="35">second</lex>
+<lex begin="36" end="39">out</lex>
+<lex begin="40" end="42">of</lex>
+<lex begin="43" end="46">two</lex>
+<lex begin="47" end="57">confluence</lex>
+<lex begin="58" end="64">points</lex>
+<lex begin="65" end="69">that</lex>
+<lex begin="70" end="71">I</lex>
+<lex begin="72" end="79">visited</lex>
+<lex begin="80" end="82">on</lex>
+<lex begin="83" end="84">a</lex>
+<lex begin="85" end="92">bicycle</lex>
+<lex begin="93" end="97">trip</lex>
+<lex begin="98" end="102">from</lex>
+<lex begin="103" end="109">Zurich</lex>
+<lex begin="110" end="114">into</lex>
+<lex begin="115" end="118">the</lex>
+<lex begin="119" end="125">Vosges</lex>
+<lex begin="126" end="135">Mountains</lex>
+<lex begin="136" end="139">and</lex>
+<lex begin="140" end="143">the</lex>
+<lex begin="144" end="149">Black</lex>
+<lex begin="150" end="156">Forest</lex>
+<lex begin="156" end="157">.</lex>
+</s>
+<s>
+<lex begin="158" end="161">The</lex>
+<lex begin="162" end="167">story</lex>
+<lex begin="168" end="174">starts</lex>
+<lex begin="175" end="179">from</lex>
+<lex begin="180" end="184">48°N</lex>
+<lex begin="185" end="188">7°E</lex>
+<lex begin="188" end="189">.</lex>
+</s>
+<s>
+<lex begin="191" end="193">On</lex>
+<lex begin="194" end="204">confluence</lex>
+<lex begin="205" end="208">day</lex>
+<lex begin="208" end="209">,</lex>
+<lex begin="210" end="211">I</lex>
+<lex begin="212" end="219">started</lex>
+<lex begin="220" end="227">cycling</lex>
+<lex begin="228" end="230">at</lex>
+<lex begin="231" end="235">5:30</lex>
+<lex begin="236" end="240">a.m.</lex>
+<lex begin="241" end="243">in</lex>
+<lex begin="244" end="247">the</lex>
+<lex begin="248" end="255">village</lex>
+<lex begin="256" end="263">Midlach</lex>
+<lex begin="264" end="266">in</lex>
+<lex begin="267" end="270">the</lex>
+<lex begin="271" end="277">Vosges</lex>
+<lex begin="278" end="287">Mountains</lex>
+<lex begin="287" end="288">.</lex>
+</s>
+<s>
+<lex begin="289" end="290">I</lex>
+<lex begin="291" end="295">came</lex>
+<lex begin="296" end="303">through</lex>
+<lex begin="304" end="307">the</lex>
+<lex begin="308" end="312">city</lex>
+<lex begin="313" end="315">of</lex>
+<lex begin="316" end="322">Colmar</lex>
+<lex begin="323" end="326">and</lex>
+<lex begin="327" end="334">entered</lex>
+<lex begin="335" end="342">Germany</lex>
+<lex begin="343" end="345">at</lex>
+<lex begin="346" end="349">the</lex>
+<lex begin="350" end="356">border</lex>
+<lex begin="357" end="361">town</lex>
+<lex begin="362" end="369">Brisach</lex>
+<lex begin="369" end="370">.</lex>
+</s>
+<s>
+<lex begin="371" end="373">At</lex>
+<lex begin="374" end="378">noon</lex>
+<lex begin="379" end="383">time</lex>
+<lex begin="383" end="384">,</lex>
+<lex begin="385" end="386">I</lex>
+<lex begin="387" end="394">reached</lex>
+<lex begin="395" end="403">Freiburg</lex>
+<lex begin="404" end="405">–</lex>
+<lex begin="406" end="407">a</lex>
+<lex begin="408" end="412">city</lex>
+<lex begin="413" end="417">that</lex>
+<lex begin="418" end="420">is</lex>
+<lex begin="421" end="428">located</lex>
+<lex begin="429" end="431">10</lex>
+<lex begin="432" end="434">km</lex>
+<lex begin="435" end="439">west</lex>
+<lex begin="440" end="442">of</lex>
+<lex begin="443" end="446">the</lex>
+<lex begin="447" end="457">confluence</lex>
+<lex begin="457" end="458">.</lex>
+</s>
+<s>
+<lex begin="460" end="464">From</lex>
+<lex begin="465" end="473">Freiburg</lex>
+<lex begin="473" end="474">,</lex>
+<lex begin="475" end="476">a</lex>
+<lex begin="477" end="481">nice</lex>
+<lex begin="482" end="491">bike-path</lex>
+<lex begin="492" end="497">along</lex>
+<lex begin="498" end="501">the</lex>
+<lex begin="502" end="509">Dreisam</lex>
+<lex begin="510" end="515">creek</lex>
+<lex begin="516" end="521">leads</lex>
+<lex begin="522" end="524">to</lex>
+<lex begin="525" end="528">the</lex>
+<lex begin="529" end="536">village</lex>
+<lex begin="537" end="543">Stegen</lex>
+<lex begin="544" end="545">(</lex>
+<lex begin="545" end="546">4</lex>
+<lex begin="547" end="549">km</lex>
+<lex begin="550" end="554">from</lex>
+<lex begin="555" end="557">CP</lex>
+<lex begin="557" end="558">)</lex>
+<lex begin="558" end="559">.</lex>
+</s>
+<s>
+<lex begin="560" end="564">From</lex>
+<lex begin="565" end="569">here</lex>
+<lex begin="569" end="570">,</lex>
+<lex begin="571" end="572">a</lex>
+<lex begin="573" end="579">narrow</lex>
+<lex begin="580" end="586">valley</lex>
+<lex begin="587" end="589">of</lex>
+<lex begin="590" end="593">the</lex>
+<lex begin="594" end="602">Eschbach</lex>
+<lex begin="603" end="609">stream</lex>
+<lex begin="610" end="617">follows</lex>
+<lex begin="618" end="625">upwards</lex>
+<lex begin="626" end="628">to</lex>
+<lex begin="629" end="632">the</lex>
+<lex begin="633" end="643">confluence</lex>
+<lex begin="643" end="644">.</lex>
+</s>
+<s>
+<lex begin="645" end="647">At</lex>
+<lex begin="648" end="649">a</lex>
+<lex begin="650" end="655">small</lex>
+<lex begin="656" end="663">village</lex>
+<lex begin="664" end="670">called</lex>
+<lex begin="671" end="678">Obertal</lex>
+<lex begin="679" end="680">(</lex>
+<lex begin="680" end="683">510</lex>
+<lex begin="684" end="685">m</lex>
+<lex begin="686" end="690">from</lex>
+<lex begin="691" end="693">CP</lex>
+<lex begin="693" end="694">)</lex>
+<lex begin="695" end="696">I</lex>
+<lex begin="697" end="701">left</lex>
+<lex begin="702" end="705">the</lex>
+<lex begin="706" end="710">main</lex>
+<lex begin="711" end="715">road</lex>
+<lex begin="716" end="719">and</lex>
+<lex begin="720" end="728">searched</lex>
+<lex begin="729" end="732">for</lex>
+<lex begin="733" end="737">some</lex>
+<lex begin="738" end="744">tracks</lex>
+<lex begin="745" end="749">that</lex>
+<lex begin="750" end="755">would</lex>
+<lex begin="756" end="760">lead</lex>
+<lex begin="761" end="768">upwards</lex>
+<lex begin="769" end="771">to</lex>
+<lex begin="772" end="775">the</lex>
+<lex begin="776" end="786">confluence</lex>
+<lex begin="787" end="792">point</lex>
+<lex begin="792" end="793">.</lex>
+</s>
+<s>
+<lex begin="794" end="796">My</lex>
+<lex begin="797" end="805">approach</lex>
+<lex begin="806" end="809">was</lex>
+<lex begin="810" end="815">quite</lex>
+<lex begin="816" end="827">complicated</lex>
+<lex begin="827" end="828">;</lex>
+<lex begin="829" end="830">I</lex>
+<lex begin="831" end="839">detoured</lex>
+<lex begin="840" end="842">to</lex>
+<lex begin="843" end="846">the</lex>
+<lex begin="847" end="850">top</lex>
+<lex begin="851" end="853">of</lex>
+<lex begin="854" end="857">the</lex>
+<lex begin="858" end="862">hill</lex>
+<lex begin="863" end="865">to</lex>
+<lex begin="866" end="867">a</lex>
+<lex begin="868" end="873">place</lex>
+<lex begin="874" end="878">with</lex>
+<lex begin="879" end="880">a</lex>
+<lex begin="881" end="888">wayside</lex>
+<lex begin="889" end="894">cross</lex>
+<lex begin="895" end="898">and</lex>
+<lex begin="899" end="903">some</lex>
+<lex begin="904" end="908">nice</lex>
+<lex begin="909" end="916">benches</lex>
+<lex begin="916" end="917">.</lex>
+</s>
+<s>
+<lex begin="918" end="922">From</lex>
+<lex begin="923" end="927">this</lex>
+<lex begin="928" end="937">viewpoint</lex>
+<lex begin="938" end="939">(</lex>
+<lex begin="939" end="943">300m</lex>
+<lex begin="944" end="948">from</lex>
+<lex begin="949" end="951">CP</lex>
+<lex begin="951" end="952">)</lex>
+<lex begin="953" end="954">I</lex>
+<lex begin="955" end="960">could</lex>
+<lex begin="961" end="964">see</lex>
+<lex begin="965" end="968">the</lex>
+<lex begin="969" end="976">highest</lex>
+<lex begin="977" end="981">peak</lex>
+<lex begin="982" end="984">of</lex>
+<lex begin="985" end="988">the</lex>
+<lex begin="989" end="993">snow</lex>
+<lex begin="994" end="1001">covered</lex>
+<lex begin="1002" end="1010">Feldberg</lex>
+<lex begin="1011" end="1012">(</lex>
+<lex begin="1012" end="1016">1494</lex>
+<lex begin="1017" end="1018">m</lex>
+<lex begin="1018" end="1019">)</lex>
+<lex begin="1019" end="1020">.</lex>
+</s>
+<s>
+<lex begin="1022" end="1023">I</lex>
+<lex begin="1024" end="1030">parked</lex>
+<lex begin="1031" end="1033">my</lex>
+<lex begin="1034" end="1041">bicycle</lex>
+<lex begin="1042" end="1045">and</lex>
+<lex begin="1046" end="1055">continued</lex>
+<lex begin="1056" end="1058">on</lex>
+<lex begin="1059" end="1063">foot</lex>
+<lex begin="1064" end="1066">by</lex>
+<lex begin="1067" end="1075">climbing</lex>
+<lex begin="1076" end="1080">down</lex>
+<lex begin="1081" end="1082">a</lex>
+<lex begin="1083" end="1088">steep</lex>
+<lex begin="1089" end="1094">grade</lex>
+<lex begin="1095" end="1103">directly</lex>
+<lex begin="1104" end="1111">towards</lex>
+<lex begin="1112" end="1115">the</lex>
+<lex begin="1116" end="1126">confluence</lex>
+<lex begin="1127" end="1132">point</lex>
+<lex begin="1133" end="1134">–</lex>
+<lex begin="1135" end="1142">passing</lex>
+<lex begin="1143" end="1145">by</lex>
+<lex begin="1146" end="1150">some</lex>
+<lex begin="1151" end="1158">grazing</lex>
+<lex begin="1159" end="1163">cows</lex>
+<lex begin="1163" end="1164">.</lex>
+</s>
+<s>
+<lex begin="1165" end="1173">Straight</lex>
+<lex begin="1174" end="1178">away</lex>
+<lex begin="1179" end="1180">I</lex>
+<lex begin="1181" end="1186">could</lex>
+<lex begin="1187" end="1190">see</lex>
+<lex begin="1191" end="1194">the</lex>
+<lex begin="1195" end="1201">unique</lex>
+<lex begin="1202" end="1208">marker</lex>
+<lex begin="1209" end="1211">of</lex>
+<lex begin="1212" end="1215">the</lex>
+<lex begin="1216" end="1221">point</lex>
+<lex begin="1221" end="1222">:</lex>
+<lex begin="1223" end="1224">a</lex>
+<lex begin="1225" end="1230">green</lex>
+<lex begin="1231" end="1235">sail</lex>
+<lex begin="1236" end="1240">from</lex>
+<lex begin="1241" end="1242">a</lex>
+<lex begin="1243" end="1254">windsurfing</lex>
+<lex begin="1255" end="1260">board</lex>
+<lex begin="1261" end="1265">with</lex>
+<lex begin="1266" end="1269">the</lex>
+<lex begin="1270" end="1281">inscription</lex>
+<lex begin="1282" end="1283">“</lex>
+<lex begin="1283" end="1285">Am</lex>
+<lex begin="1286" end="1294">18.07.07</lex>
+<lex begin="1295" end="1299">Hier</lex>
+<lex begin="1300" end="1303">war</lex>
+<lex begin="1304" end="1307">die</lex>
+<lex begin="1308" end="1309">4</lex>
+<lex begin="1309" end="1310">.</lex>
+</s>
+<s>
+<lex begin="1311" end="1317">Klasse</lex>
+<lex begin="1318" end="1321">der</lex>
+<lex begin="1322" end="1333">Grundschule</lex>
+<lex begin="1334" end="1349">Stegen-Eschbach</lex>
+<lex begin="1349" end="1350">.</lex>
+</s>
+<s>
+<lex begin="1351" end="1366">Konfluenz-Punkt</lex>
+<lex begin="1366" end="1367">”</lex>
+<lex begin="1368" end="1373">which</lex>
+<lex begin="1374" end="1379">means</lex>
+<lex begin="1380" end="1381">‘</lex>
+<lex begin="1381" end="1383">On</lex>
+<lex begin="1384" end="1388">18th</lex>
+<lex begin="1389" end="1393">July</lex>
+<lex begin="1394" end="1398">2007</lex>
+<lex begin="1399" end="1403">Here</lex>
+<lex begin="1404" end="1407">has</lex>
+<lex begin="1408" end="1412">been</lex>
+<lex begin="1413" end="1416">the</lex>
+<lex begin="1417" end="1423">fourth</lex>
+<lex begin="1424" end="1429">grade</lex>
+<lex begin="1430" end="1440">elementary</lex>
+<lex begin="1441" end="1447">school</lex>
+<lex begin="1448" end="1463">Stegen-Eschbach</lex>
+<lex begin="1463" end="1464">.</lex>
+</s>
+<s>
+<lex begin="1465" end="1481">Confluence-Point</lex>
+<lex begin="1481" end="1482">’</lex>
+<lex begin="1482" end="1483">.</lex>
+</s>
+<s>
+<lex begin="1484" end="1488">Even</lex>
+<lex begin="1489" end="1495">though</lex>
+<lex begin="1496" end="1497">I</lex>
+<lex begin="1498" end="1506">consider</lex>
+<lex begin="1507" end="1511">such</lex>
+<lex begin="1512" end="1519">markers</lex>
+<lex begin="1520" end="1522">as</lex>
+<lex begin="1523" end="1532">pollution</lex>
+<lex begin="1532" end="1533">,</lex>
+<lex begin="1534" end="1535">I</lex>
+<lex begin="1536" end="1544">followed</lex>
+<lex begin="1545" end="1548">the</lex>
+<lex begin="1549" end="1555">slogan</lex>
+<lex begin="1556" end="1558">of</lex>
+<lex begin="1559" end="1562">the</lex>
+<lex begin="1563" end="1573">Confluence</lex>
+<lex begin="1574" end="1581">Project</lex>
+<lex begin="1582" end="1587">which</lex>
+<lex begin="1588" end="1592">says</lex>
+<lex begin="1593" end="1594">“</lex>
+<lex begin="1594" end="1598">take</lex>
+<lex begin="1599" end="1606">nothing</lex>
+<lex begin="1607" end="1610">but</lex>
+<lex begin="1611" end="1619">pictures</lex>
+<lex begin="1619" end="1620">,</lex>
+<lex begin="1621" end="1626">leave</lex>
+<lex begin="1627" end="1634">nothing</lex>
+<lex begin="1635" end="1638">but</lex>
+<lex begin="1639" end="1649">footprints</lex>
+<lex begin="1649" end="1650">”</lex>
+<lex begin="1650" end="1651">.</lex>
+</s>
+<s>
+<lex begin="1652" end="1654">So</lex>
+<lex begin="1655" end="1656">I</lex>
+<lex begin="1657" end="1661">kept</lex>
+<lex begin="1662" end="1665">the</lex>
+<lex begin="1666" end="1670">sail</lex>
+<lex begin="1671" end="1673">as</lex>
+<lex begin="1674" end="1676">it</lex>
+<lex begin="1677" end="1680">was</lex>
+<lex begin="1680" end="1681">.</lex>
+</s>
+<s>
+<lex begin="1683" end="1690">Getting</lex>
+<lex begin="1691" end="1692">a</lex>
+<lex begin="1693" end="1700">perfect</lex>
+<lex begin="1701" end="1705">zero</lex>
+<lex begin="1706" end="1713">reading</lex>
+<lex begin="1714" end="1720">turned</lex>
+<lex begin="1721" end="1724">out</lex>
+<lex begin="1725" end="1727">to</lex>
+<lex begin="1728" end="1730">be</lex>
+<lex begin="1731" end="1732">a</lex>
+<lex begin="1733" end="1740">lengthy</lex>
+<lex begin="1741" end="1745">back</lex>
+<lex begin="1746" end="1749">and</lex>
+<lex begin="1750" end="1755">forth</lex>
+<lex begin="1756" end="1757">–</lex>
+<lex begin="1758" end="1763">which</lex>
+<lex begin="1764" end="1766">is</lex>
+<lex begin="1767" end="1775">normally</lex>
+<lex begin="1776" end="1779">the</lex>
+<lex begin="1780" end="1784">case</lex>
+<lex begin="1785" end="1787">at</lex>
+<lex begin="1788" end="1795">densely</lex>
+<lex begin="1796" end="1804">forested</lex>
+<lex begin="1805" end="1810">steep</lex>
+<lex begin="1811" end="1817">grades</lex>
+<lex begin="1817" end="1818">.</lex>
+</s>
+<s>
+<lex begin="1819" end="1823">With</lex>
+<lex begin="1824" end="1825">4</lex>
+<lex begin="1826" end="1827">m</lex>
+<lex begin="1828" end="1836">accuracy</lex>
+<lex begin="1836" end="1837">,</lex>
+<lex begin="1838" end="1839">I</lex>
+<lex begin="1840" end="1847">finally</lex>
+<lex begin="1848" end="1855">located</lex>
+<lex begin="1856" end="1859">the</lex>
+<lex begin="1860" end="1870">confluence</lex>
+<lex begin="1871" end="1876">about</lex>
+<lex begin="1877" end="1878">6</lex>
+<lex begin="1879" end="1880">m</lex>
+<lex begin="1881" end="1885">west</lex>
+<lex begin="1886" end="1888">of</lex>
+<lex begin="1889" end="1892">the</lex>
+<lex begin="1893" end="1897">sail</lex>
+<lex begin="1898" end="1906">directly</lex>
+<lex begin="1907" end="1909">at</lex>
+<lex begin="1910" end="1913">the</lex>
+<lex begin="1914" end="1919">track</lex>
+<lex begin="1919" end="1920">.</lex>
+</s>
+<s>
+<lex begin="1921" end="1925">When</lex>
+<lex begin="1926" end="1927">I</lex>
+<lex begin="1928" end="1932">took</lex>
+<lex begin="1933" end="1936">the</lex>
+<lex begin="1937" end="1944">picture</lex>
+<lex begin="1945" end="1947">of</lex>
+<lex begin="1948" end="1951">the</lex>
+<lex begin="1952" end="1955">GPS</lex>
+<lex begin="1955" end="1956">,</lex>
+<lex begin="1957" end="1960">the</lex>
+<lex begin="1961" end="1969">accuracy</lex>
+<lex begin="1970" end="1976">turned</lex>
+<lex begin="1977" end="1979">to</lex>
+<lex begin="1980" end="1981">5</lex>
+<lex begin="1982" end="1983">m</lex>
+<lex begin="1984" end="1989">again</lex>
+<lex begin="1989" end="1990">.</lex>
+</s>
+<s>
+<lex begin="1992" end="1995">Let</lex>
+<lex begin="1996" end="1998">me</lex>
+<lex begin="1999" end="2003">here</lex>
+<lex begin="2004" end="2012">consider</lex>
+<lex begin="2013" end="2015">an</lex>
+<lex begin="2016" end="2027">interesting</lex>
+<lex begin="2028" end="2040">geographical</lex>
+<lex begin="2041" end="2048">feature</lex>
+<lex begin="2048" end="2049">:</lex>
+<lex begin="2050" end="2053">The</lex>
+<lex begin="2054" end="2060">Vosges</lex>
+<lex begin="2061" end="2070">Mountains</lex>
+<lex begin="2071" end="2074">and</lex>
+<lex begin="2075" end="2078">the</lex>
+<lex begin="2079" end="2084">Black</lex>
+<lex begin="2085" end="2091">Forest</lex>
+<lex begin="2092" end="2095">are</lex>
+<lex begin="2096" end="2099">two</lex>
+<lex begin="2100" end="2107">related</lex>
+<lex begin="2108" end="2116">mountain</lex>
+<lex begin="2117" end="2123">ranges</lex>
+<lex begin="2124" end="2128">with</lex>
+<lex begin="2129" end="2136">similar</lex>
+<lex begin="2137" end="2144">heights</lex>
+<lex begin="2145" end="2146">(</lex>
+<lex begin="2146" end="2150">1424</lex>
+<lex begin="2151" end="2152">m</lex>
+<lex begin="2153" end="2156">and</lex>
+<lex begin="2157" end="2161">1494</lex>
+<lex begin="2162" end="2163">m</lex>
+<lex begin="2163" end="2164">)</lex>
+<lex begin="2164" end="2165">.</lex>
+</s>
+<s>
+<lex begin="2166" end="2170">Both</lex>
+<lex begin="2171" end="2174">are</lex>
+<lex begin="2175" end="2182">aligned</lex>
+<lex begin="2183" end="2194">north-south</lex>
+<lex begin="2194" end="2195">,</lex>
+<lex begin="2196" end="2199">one</lex>
+<lex begin="2200" end="2202">is</lex>
+<lex begin="2203" end="2205">in</lex>
+<lex begin="2206" end="2212">France</lex>
+<lex begin="2213" end="2216">and</lex>
+<lex begin="2217" end="2220">the</lex>
+<lex begin="2221" end="2226">other</lex>
+<lex begin="2227" end="2229">in</lex>
+<lex begin="2230" end="2237">Germany</lex>
+<lex begin="2237" end="2238">.</lex>
+</s>
+<s>
+<lex begin="2239" end="2243">They</lex>
+<lex begin="2244" end="2247">are</lex>
+<lex begin="2248" end="2258">geological</lex>
+<lex begin="2259" end="2266">related</lex>
+<lex begin="2267" end="2270">and</lex>
+<lex begin="2271" end="2278">divided</lex>
+<lex begin="2279" end="2283">from</lex>
+<lex begin="2284" end="2288">each</lex>
+<lex begin="2289" end="2294">other</lex>
+<lex begin="2295" end="2297">by</lex>
+<lex begin="2298" end="2301">the</lex>
+<lex begin="2302" end="2307">Rhine</lex>
+<lex begin="2308" end="2312">Rift</lex>
+<lex begin="2312" end="2313">.</lex>
+</s>
+<s>
+<lex begin="2314" end="2317">The</lex>
+<lex begin="2318" end="2323">Upper</lex>
+<lex begin="2324" end="2329">Rhine</lex>
+<lex begin="2330" end="2335">River</lex>
+<lex begin="2336" end="2340">runs</lex>
+<lex begin="2341" end="2343">in</lex>
+<lex begin="2344" end="2347">the</lex>
+<lex begin="2348" end="2354">middle</lex>
+<lex begin="2355" end="2357">of</lex>
+<lex begin="2358" end="2362">that</lex>
+<lex begin="2363" end="2369">valley</lex>
+<lex begin="2370" end="2375">which</lex>
+<lex begin="2376" end="2378">is</lex>
+<lex begin="2379" end="2383">also</lex>
+<lex begin="2384" end="2387">the</lex>
+<lex begin="2388" end="2395">country</lex>
+<lex begin="2396" end="2402">border</lex>
+<lex begin="2402" end="2403">.</lex>
+</s>
+<s>
+<lex begin="2404" end="2417">Interestingly</lex>
+<lex begin="2417" end="2418">,</lex>
+<lex begin="2419" end="2423">both</lex>
+<lex begin="2424" end="2432">mountain</lex>
+<lex begin="2433" end="2439">ranges</lex>
+<lex begin="2440" end="2444">have</lex>
+<lex begin="2445" end="2455">comparable</lex>
+<lex begin="2456" end="2467">confluences</lex>
+<lex begin="2467" end="2468">:</lex>
+<lex begin="2469" end="2473">48°N</lex>
+<lex begin="2474" end="2477">7°E</lex>
+<lex begin="2478" end="2479">(</lex>
+<lex begin="2479" end="2481">in</lex>
+<lex begin="2482" end="2488">France</lex>
+<lex begin="2488" end="2489">)</lex>
+<lex begin="2490" end="2493">and</lex>
+<lex begin="2494" end="2498">48°N</lex>
+<lex begin="2499" end="2502">8°E</lex>
+<lex begin="2503" end="2504">(</lex>
+<lex begin="2504" end="2506">in</lex>
+<lex begin="2507" end="2514">Germany</lex>
+<lex begin="2514" end="2515">)</lex>
+<lex begin="2515" end="2516">.</lex>
+</s>
+<s>
+<lex begin="2517" end="2521">Both</lex>
+<lex begin="2522" end="2525">are</lex>
+<lex begin="2526" end="2533">located</lex>
+<lex begin="2534" end="2536">in</lex>
+<lex begin="2537" end="2542">upper</lex>
+<lex begin="2543" end="2550">valleys</lex>
+<lex begin="2551" end="2555">that</lex>
+<lex begin="2556" end="2560">open</lex>
+<lex begin="2561" end="2564">out</lex>
+<lex begin="2565" end="2567">in</lex>
+<lex begin="2568" end="2571">the</lex>
+<lex begin="2572" end="2577">Rhine</lex>
+<lex begin="2578" end="2582">Rift</lex>
+<lex begin="2582" end="2583">.</lex>
+</s>
+<s>
+<lex begin="2584" end="2588">Both</lex>
+<lex begin="2589" end="2593">have</lex>
+<lex begin="2594" end="2601">similar</lex>
+<lex begin="2602" end="2609">heights</lex>
+<lex begin="2610" end="2611">(</lex>
+<lex begin="2611" end="2614">730</lex>
+<lex begin="2615" end="2616">m</lex>
+<lex begin="2617" end="2620">and</lex>
+<lex begin="2621" end="2624">555</lex>
+<lex begin="2625" end="2626">m</lex>
+<lex begin="2626" end="2627">)</lex>
+<lex begin="2627" end="2628">,</lex>
+<lex begin="2629" end="2633">both</lex>
+<lex begin="2634" end="2637">are</lex>
+<lex begin="2638" end="2640">in</lex>
+<lex begin="2641" end="2642">a</lex>
+<lex begin="2643" end="2648">mixed</lex>
+<lex begin="2649" end="2655">spruce</lex>
+<lex begin="2656" end="2659">and</lex>
+<lex begin="2660" end="2665">beech</lex>
+<lex begin="2666" end="2672">forest</lex>
+<lex begin="2673" end="2675">at</lex>
+<lex begin="2676" end="2681">steep</lex>
+<lex begin="2682" end="2688">grades</lex>
+<lex begin="2688" end="2689">.</lex>
+</s>
+<s>
+<lex begin="2690" end="2695">While</lex>
+<lex begin="2696" end="2704">visiting</lex>
+<lex begin="2705" end="2709">both</lex>
+<lex begin="2710" end="2720">confluence</lex>
+<lex begin="2721" end="2727">points</lex>
+<lex begin="2727" end="2728">,</lex>
+<lex begin="2729" end="2730">I</lex>
+<lex begin="2731" end="2738">noticed</lex>
+<lex begin="2739" end="2744">these</lex>
+<lex begin="2745" end="2753">striking</lex>
+<lex begin="2754" end="2766">similarities</lex>
+<lex begin="2766" end="2767">.</lex>
+</s>
+<s>
+<lex begin="2768" end="2773">Maybe</lex>
+<lex begin="2774" end="2776">40</lex>
+<lex begin="2777" end="2784">Million</lex>
+<lex begin="2785" end="2790">years</lex>
+<lex begin="2791" end="2794">ago</lex>
+<lex begin="2794" end="2795">,</lex>
+<lex begin="2796" end="2802">before</lex>
+<lex begin="2803" end="2806">the</lex>
+<lex begin="2807" end="2811">rift</lex>
+<lex begin="2812" end="2815">had</lex>
+<lex begin="2816" end="2822">formed</lex>
+<lex begin="2822" end="2823">,</lex>
+<lex begin="2824" end="2828">they</lex>
+<lex begin="2829" end="2832">had</lex>
+<lex begin="2833" end="2837">been</lex>
+<lex begin="2838" end="2846">together</lex>
+<lex begin="2847" end="2849">at</lex>
+<lex begin="2850" end="2853">one</lex>
+<lex begin="2854" end="2862">location</lex>
+<lex begin="2862" end="2863">.</lex>
+</s>
+<s>
+<lex begin="2865" end="2870">After</lex>
+<lex begin="2871" end="2884">documentation</lex>
+<lex begin="2885" end="2886">I</lex>
+<lex begin="2887" end="2891">went</lex>
+<lex begin="2892" end="2896">back</lex>
+<lex begin="2897" end="2899">to</lex>
+<lex begin="2900" end="2908">Freiburg</lex>
+<lex begin="2908" end="2909">,</lex>
+<lex begin="2910" end="2915">where</lex>
+<lex begin="2916" end="2917">I</lex>
+<lex begin="2918" end="2922">took</lex>
+<lex begin="2923" end="2924">a</lex>
+<lex begin="2925" end="2930">train</lex>
+<lex begin="2931" end="2935">back</lex>
+<lex begin="2936" end="2940">home</lex>
+<lex begin="2941" end="2943">to</lex>
+<lex begin="2944" end="2950">Zurich</lex>
+<lex begin="2950" end="2951">.</lex>
+</s>
+<s>
+<lex begin="2952" end="2965">Unfortunately</lex>
+<lex begin="2966" end="2967">I</lex>
+<lex begin="2968" end="2971">had</lex>
+<lex begin="2972" end="2974">to</lex>
+<lex begin="2975" end="2977">be</lex>
+<lex begin="2978" end="2980">in</lex>
+<lex begin="2981" end="2987">office</lex>
+<lex begin="2988" end="2991">the</lex>
+<lex begin="2992" end="2996">next</lex>
+<lex begin="2997" end="3000">day</lex>
+<lex begin="3001" end="3006">which</lex>
+<lex begin="3007" end="3010">did</lex>
+<lex begin="3011" end="3014">not</lex>
+<lex begin="3015" end="3020">leave</lex>
+<lex begin="3021" end="3027">riding</lex>
+<lex begin="3028" end="3032">back</lex>
+<lex begin="3033" end="3035">by</lex>
+<lex begin="3036" end="3040">bike</lex>
+<lex begin="3041" end="3043">as</lex>
+<lex begin="3044" end="3046">an</lex>
+<lex begin="3047" end="3053">option</lex>
+<lex begin="3053" end="3054">.</lex>
+</s>
+<s>
+<lex begin="3056" end="3058">CP</lex>
+<lex begin="3059" end="3064">visit</lex>
+<lex begin="3065" end="3072">details</lex>
+<lex begin="3072" end="3073">:</lex>
+<lex begin="3079" end="3083">Time</lex>
+<lex begin="3084" end="3086">at</lex>
+<lex begin="3087" end="3090">the</lex>
+<lex begin="3091" end="3093">CP</lex>
+<lex begin="3093" end="3094">:</lex>
+<lex begin="3095" end="3100">14:10</lex>
+<lex begin="3101" end="3103">pm</lex>
+<lex begin="3108" end="3114">riding</lex>
+<lex begin="3115" end="3119">time</lex>
+<lex begin="3119" end="3120">:</lex>
+<lex begin="3121" end="3122">6</lex>
+<lex begin="3123" end="3128">hours</lex>
+<lex begin="3133" end="3139">riding</lex>
+<lex begin="3140" end="3148">distance</lex>
+<lex begin="3148" end="3149">:</lex>
+<lex begin="3150" end="3153">101</lex>
+<lex begin="3154" end="3156">km</lex>
+<lex begin="3161" end="3167">hiking</lex>
+<lex begin="3168" end="3172">time</lex>
+<lex begin="3172" end="3173">:</lex>
+<lex begin="3174" end="3176">20</lex>
+<lex begin="3177" end="3180">min</lex>
+<lex begin="3185" end="3191">hiking</lex>
+<lex begin="3192" end="3200">distance</lex>
+<lex begin="3200" end="3201">:</lex>
+<lex begin="3202" end="3205">300</lex>
+<lex begin="3206" end="3207">m</lex>
+<lex begin="3212" end="3220">Distance</lex>
+<lex begin="3221" end="3223">to</lex>
+<lex begin="3224" end="3225">a</lex>
+<lex begin="3226" end="3230">road</lex>
+<lex begin="3230" end="3231">:</lex>
+<lex begin="3232" end="3235">510</lex>
+<lex begin="3236" end="3238">km</lex>
+<lex begin="3243" end="3251">Distance</lex>
+<lex begin="3252" end="3254">to</lex>
+<lex begin="3255" end="3256">a</lex>
+<lex begin="3257" end="3262">track</lex>
+<lex begin="3262" end="3263">:</lex>
+<lex begin="3264" end="3265">0</lex>
+<lex begin="3266" end="3267">m</lex>
+<lex begin="3272" end="3280">Distance</lex>
+<lex begin="3281" end="3283">to</lex>
+<lex begin="3284" end="3290">houses</lex>
+<lex begin="3290" end="3291">:</lex>
+<lex begin="3292" end="3295">337</lex>
+<lex begin="3296" end="3297">m</lex>
+<lex begin="3302" end="3312">Topography</lex>
+<lex begin="3312" end="3313">:</lex>
+<lex begin="3314" end="3319">steep</lex>
+<lex begin="3320" end="3325">grade</lex>
+<lex begin="3325" end="3326">,</lex>
+<lex begin="3327" end="3335">northern</lex>
+<lex begin="3336" end="3344">hillside</lex>
+<lex begin="3349" end="3356">Minimal</lex>
+<lex begin="3357" end="3365">distance</lex>
+<lex begin="3366" end="3375">according</lex>
+<lex begin="3376" end="3378">to</lex>
+<lex begin="3379" end="3382">GPS</lex>
+<lex begin="3382" end="3383">:</lex>
+<lex begin="3384" end="3385">0</lex>
+<lex begin="3386" end="3387">m</lex>
+<lex begin="3392" end="3400">Position</lex>
+<lex begin="3401" end="3409">accuracy</lex>
+<lex begin="3410" end="3412">at</lex>
+<lex begin="3413" end="3416">the</lex>
+<lex begin="3417" end="3419">CP</lex>
+<lex begin="3419" end="3420">:</lex>
+<lex begin="3421" end="3422">4</lex>
+<lex begin="3423" end="3424">m</lex>
+<lex begin="3429" end="3432">GPS</lex>
+<lex begin="3433" end="3439">height</lex>
+<lex begin="3439" end="3440">:</lex>
+<lex begin="3441" end="3444">555</lex>
+<lex begin="3445" end="3446">m</lex>
+<lex begin="3451" end="3461">Vegetation</lex>
+<lex begin="3461" end="3462">:</lex>
+<lex begin="3463" end="3469">spruce</lex>
+<lex begin="3470" end="3473">and</lex>
+<lex begin="3474" end="3483">deciduous</lex>
+<lex begin="3484" end="3490">forest</lex>
+<lex begin="3490" end="3491">.</lex>
+</s>
+<s>
+<lex begin="3492" end="3496">Some</lex>
+<lex begin="3497" end="3502">ferns</lex>
+<lex begin="3503" end="3505">in</lex>
+<lex begin="3506" end="3509">the</lex>
+<lex begin="3510" end="3515">lower</lex>
+<lex begin="3516" end="3521">layer</lex>
+<lex begin="3521" end="3522">.</lex>
+</s>
+<s>
+<lex begin="3523" end="3529">Nearby</lex>
+<lex begin="3530" end="3531">a</lex>
+<lex begin="3532" end="3538">meadow</lex>
+<lex begin="3539" end="3543">with</lex>
+<lex begin="3544" end="3550">gazing</lex>
+<lex begin="3551" end="3555">land</lex>
+<lex begin="3556" end="3559">and</lex>
+<lex begin="3560" end="3565">young</lex>
+<lex begin="3566" end="3570">tree</lex>
+<lex begin="3571" end="3581">plantation</lex>
+<lex begin="3582" end="3586">with</lex>
+<lex begin="3587" end="3592">maple</lex>
+<lex begin="3593" end="3595">or</lex>
+<lex begin="3596" end="3601">plane</lex>
+<lex begin="3602" end="3607">trees</lex>
+<lex begin="3607" end="3608">.</lex>
+</s>
+<s>
+<lex begin="3613" end="3620">Weather</lex>
+<lex begin="3620" end="3621">:</lex>
+<lex begin="3622" end="3626">fine</lex>
+<lex begin="3626" end="3627">,</lex>
+<lex begin="3628" end="3631">25°</lex>
+<lex begin="3632" end="3633">C</lex>
+<lex begin="3634" end="3635">(</lex>
+<lex begin="3635" end="3639">felt</lex>
+<lex begin="3640" end="3651">temperature</lex>
+<lex begin="3651" end="3652">)</lex>
+<lex begin="3657" end="3668">Description</lex>
+<lex begin="3669" end="3671">of</lex>
+<lex begin="3672" end="3675">the</lex>
+<lex begin="3676" end="3678">CP</lex>
+<lex begin="3678" end="3679">:</lex>
+<lex begin="3680" end="3682">In</lex>
+<lex begin="3683" end="3686">the</lex>
+<lex begin="3687" end="3695">Southern</lex>
+<lex begin="3696" end="3701">Black</lex>
+<lex begin="3702" end="3708">Forest</lex>
+<lex begin="3708" end="3709">,</lex>
+<lex begin="3710" end="3712">in</lex>
+<lex begin="3713" end="3716">the</lex>
+<lex begin="3717" end="3722">upper</lex>
+<lex begin="3723" end="3729">valley</lex>
+<lex begin="3730" end="3732">of</lex>
+<lex begin="3733" end="3736">the</lex>
+<lex begin="3737" end="3745">Eschbach</lex>
+<lex begin="3746" end="3751">steam</lex>
+<lex begin="3751" end="3752">.</lex>
+</s>
+<s>
+<lex begin="3753" end="3758">Right</lex>
+<lex begin="3759" end="3763">next</lex>
+<lex begin="3764" end="3766">to</lex>
+<lex begin="3767" end="3768">a</lex>
+<lex begin="3769" end="3774">track</lex>
+<lex begin="3775" end="3780">about</lex>
+<lex begin="3781" end="3784">one</lex>
+<lex begin="3785" end="3790">third</lex>
+<lex begin="3791" end="3793">up</lex>
+<lex begin="3794" end="3797">the</lex>
+<lex begin="3798" end="3806">hillside</lex>
+<lex begin="3806" end="3807">.</lex>
+</s>
+<s>
+<lex begin="3812" end="3817">Given</lex>
+<lex begin="3818" end="3822">Name</lex>
+<lex begin="3822" end="3823">:</lex>
+<lex begin="3824" end="3827">The</lex>
+<lex begin="3828" end="3833">Green</lex>
+<lex begin="3834" end="3838">Sail</lex>
+<lex begin="3839" end="3849">Confluence</lex>
+<lex begin="3851" end="3862">Coordinator</lex>
+<lex begin="3862" end="3864">'s</lex>
+<lex begin="3865" end="3869">Note</lex>
+<lex begin="3869" end="3870">:</lex>
+<lex begin="3871" end="3872">A</lex>
+<lex begin="3873" end="3881">previous</lex>
+<lex begin="3882" end="3889">visitor</lex>
+<lex begin="3890" end="3893">has</lex>
+<lex begin="3894" end="3898">left</lex>
+<lex begin="3899" end="3906">rubbish</lex>
+<lex begin="3907" end="3913">behind</lex>
+<lex begin="3914" end="3916">in</lex>
+<lex begin="3917" end="3920">the</lex>
+<lex begin="3921" end="3925">form</lex>
+<lex begin="3926" end="3928">of</lex>
+<lex begin="3929" end="3930">a</lex>
+<lex begin="3931" end="3936">large</lex>
+<lex begin="3937" end="3944">plastic</lex>
+<lex begin="3945" end="3950">sheet</lex>
+<lex begin="3950" end="3951">.</lex>
+</s>
+<s>
+<lex begin="3952" end="3956">This</lex>
+<lex begin="3957" end="3959">is</lex>
+<lex begin="3960" end="3963">not</lex>
+<lex begin="3964" end="3974">acceptable</lex>
+<lex begin="3975" end="3977">if</lex>
+<lex begin="3978" end="3984">anyone</lex>
+<lex begin="3985" end="3989">goes</lex>
+<lex begin="3990" end="3994">here</lex>
+<lex begin="3995" end="3997">in</lex>
+<lex begin="3998" end="4001">the</lex>
+<lex begin="4002" end="4008">future</lex>
+<lex begin="4009" end="4015">please</lex>
+<lex begin="4016" end="4022">remove</lex>
+<lex begin="4023" end="4026">and</lex>
+<lex begin="4027" end="4034">dispose</lex>
+<lex begin="4035" end="4037">of</lex>
+<lex begin="4038" end="4040">it</lex>
+<lex begin="4040" end="4041">.</lex>
+</s>
+</TOKENS>
+</SpaceEvalTaskv1.2>

@@ -1,6 +1,6 @@
 #!/usr/bin/env python
-'''
-Created on July 30, 2014
+"""
+Created on Sep 19, 2014
 
 @author: Aaron Levine
 @email: aclevine@brandeis.edu
@@ -8,15 +8,14 @@ Created on July 30, 2014
 b) Classify spatial elements according to type: 
 PATH, PLACE, MOTION, NONMOTION_EVENT, SPATIAL_ENTITY,
 MOTION_SIGNAL, SPATIAL_SIGNAL
-'''
-
-#===============================================================================
+"""
 from util.corpora.corpus import Extent, HypotheticalCorpus
-from util.model.demo import Classifier, copy_folder
+from util.model.baseline_classifier import Classifier, copy_folder
 import re
 import nltk
 import os
-#===============================================================================
+
+# resources
 type_keys = {'PATH': ['p'], 'PLACE': ['pl'], 'MOTION': ['m'], 'NONMOTION_EVENT': ['e'],
              'SPATIAL_ENTITY': ['se'],  # spatial elements
              'SPATIAL_SIGNAL': ['s'],  # spatial signal
@@ -26,11 +25,21 @@ type_keys = {'PATH': ['p'], 'PLACE': ['pl'], 'MOTION': ['m'], 'NONMOTION_EVENT':
              'SIGNAL': ['s', 'nss'],
              }
 
+tag_types = {'PATH': {'form': '', 'countable': '', 'dimensionality': '', 'mod': ''}, 
+             'PLACE': {'form': '', 'countable': '', 'dimensionality': '', 'mod': ''}, 
+            'MOTION': {'motion_class': '', 'motion_sense': '', 'motion_type': ''},
+            'NONMOTION_EVENT': {'mod': '', 'countable': ''},
+            'SPATIAL_ENTITY': {'form': '', 'countable': '', 'dimensionality': '', 'mod': ''}, 
+            'MOTION_SIGNAL': {'motion_signal_type': ''}, 
+            'SPATIAL_SIGNAL': {'semantic_type': ''},
+            }
+
+# feature / label extractors
 class Tag(Extent):
-    '''a class for loading tokens from XML doc with surrounding token and tag data'''    
+    """a class for loading tokens from XML doc with surrounding token and tag data"""    
     # LABEL EXTRACT
     def is_type(self, element_type):
-        ''' check if tag id matches given element type. untagged tokens always come back false '''
+        """ check if tag id matches given element type. untagged tokens always come back false """
         type_key = type_keys[element_type]
         for key in type_key:
             if self.tag != {} and re.findall('^{}\d+'.format(key), self.tag['id']):
@@ -39,14 +48,14 @@ class Tag(Extent):
 
     # # c) Identify their attributes according to type.
     def has_attribute(self, attribute_name):
-        ''' check tag dictionary of instance for attribute. '''
+        """ check tag dictionary of instance for attribute. """
         if self.tag.has_key(attribute_name) and self.tag[attribute_name] != '':
             return True
         else:
             return False
 
     def get_attribute(self, attribute_name):
-        ''' check tag dictionary of instance for attribute. if attribute doesn't exist, return the empty string. '''
+        """ check tag dictionary of instance for attribute. if attribute doesn't exist, return the empty string. """
         if self.tag.has_key(attribute_name):
             return self.tag[attribute_name] 
         else:
@@ -56,12 +65,12 @@ class Tag(Extent):
     def bag_of_words(self, n):
         """ returns 2n+1 words surrounding target"""
         tokens = self.token
-        tokens.extend([tok for tok, lex in self.prev_tokens[len(self.prev_tokens) - n:]])
-        tokens.extend([tok for tok, lex in self.next_tokens[:n]])
+        tokens.extend([tok for tok, _ in self.prev_tokens[len(self.prev_tokens) - n:]])
+        tokens.extend([tok for tok, _ in self.next_tokens[:n]])
         return {'bag_' + tok:True for tok in tokens}
 
     def curr_token(self):
-        ''' pull prev n tokens in sentence before target word.'''
+        """ pull prev n tokens in sentence before target word."""
         return {'curr_extent_' + ' '.join(self.token):True}
 
     def curr_tokens(self):
@@ -71,59 +80,59 @@ class Tag(Extent):
         return {'curr_tags_' + nltk.pos_tag(tok)[0][1]:True for tok in self.token}
 
     def curr_token_count(self):
-        ''' pull prev n tokens in sentence before target word.'''
+        """ pull prev n tokens in sentence before target word."""
         return {'curr_count_' + str(len(self.token)):True}
 
     def prev_n_bag_of_words(self, n):
-        ''' pull prev n tokens in sentence before target word.'''
+        """ pull prev n tokens in sentence before target word."""
         if n > len(self.next_tokens):
             n = len(self.next_tokens)
         return {'prev_' + str(n) + 
-                '_' + tok:True for tok, lex 
+                '_' + tok:True for tok, _ 
                 in self.prev_tokens[len(self.prev_tokens) - n:]}
 
     def next_n_bag_of_words(self, n):
-        ''' pull next n tokens in sentence after target word.'''
+        """ pull next n tokens in sentence after target word."""
         if n > len(self.next_tokens):
             n = len(self.next_tokens)
         return {'next_' + str(n) + 
-                '_' + tok:True for tok, lex 
+                '_' + tok:True for tok, _ 
                 in self.next_tokens[:n]}
 
     def prev_n_bag_of_pos_tags(self, n):
-        ''' pull prev n tokens in sentence before target word.'''
+        """ pull prev n tokens in sentence before target word."""
         if n > len(self.next_tokens):
             n = len(self.next_tokens)
         return {'prev_tag_' + str(n) + 
-                '_' + nltk.pos_tag(tok)[0][1]:True for tok, lex 
+                '_' + nltk.pos_tag(tok)[0][1]:True for tok, _ 
                 in self.prev_tokens[len(self.prev_tokens) - n:]}
 
     def next_n_bag_of_pos_tags(self, n):
-        ''' pull next n tokens in sentence after target word.'''
+        """ pull next n tokens in sentence after target word."""
         if n > len(self.next_tokens):
             n = len(self.next_tokens)
         return {'next_tag_' + str(n) + 
-                '_' + nltk.pos_tag(tok)[0][1]:True for tok, lex 
+                '_' + nltk.pos_tag(tok)[0][1]:True for tok, _ 
                 in self.next_tokens[:n]}
     
     def ordered_prev_n_bag_of_words(self, n):
-        ''' pull prev n tokens in sentence before target word.'''
+        """ pull prev n tokens in sentence before target word."""
         if n > len(self.next_tokens):
             n = len(self.next_tokens)
         return {str(i) + 'prev_' + str(n) + 
-                '_' + tok:True for i, (tok, lex)
+                '_' + tok:True for i, (tok, _)
                 in enumerate(self.prev_tokens[len(self.prev_tokens) - n:])}
 
     def ordered_next_n_bag_of_words(self, n):
-        ''' pull next n tokens in sentence after target word.'''
+        """ pull next n tokens in sentence after target word."""
         if n > len(self.next_tokens):
             n = len(self.next_tokens)
         return {str(i) + 'next_' + str(n) + 
-                '_' + tok:True for i, (tok, lex) 
+                '_' + tok:True for i, (tok, _) 
                 in enumerate(self.next_tokens[:n])}
     
     def part_of_speech(self):
-        tokens = [tok for tok, lex in self.prev_tokens] + self.token + [tok for tok, lex in self.next_tokens]
+        tokens = [tok for tok, _ in self.prev_tokens] + self.token + [tok for tok, _ in self.next_tokens]
         return
     
 #===============================================================================
@@ -139,7 +148,7 @@ def get_tag_and_no_tag_indices(sentence, tag_dict, tag_filter=no_filter):
     done = False
     indices = []
     for i in range(len(sentence)):
-        token, lex = sentence[i]  # (token, lexeme obj)
+        _, lex = sentence[i]  # (token, lexeme obj)
         tag = tag_dict.get(lex.begin, {})
         if tag_filter(tag):
             if unconsumed_tag == {}:
@@ -180,15 +189,9 @@ class TypesClassifier(Classifier):
 #===============================================================================
 
 def generate_tags(train_path, test_path, clean_path, out_path):
-    tag_types = {'PATH': {'form': '', 'countable': '', 'dimensionality': '', 'mod': ''}, 
-                 'PLACE': {'form': '', 'countable': '', 'dimensionality': '', 'mod': ''}, 
-                'MOTION': {'motion_class': '', 'motion_sense': '', 'motion_type': ''},
-                'NONMOTION_EVENT': {'mod': '', 'countable': ''},
-                'SPATIAL_ENTITY': {'form': '', 'countable': '', 'dimensionality': '', 'mod': ''}, 
-                'MOTION_SIGNAL': {'motion_signal_type': ''}, 
-                'SPATIAL_SIGNAL': {'semantic_type': ''},
-                }
-    
+    # make outpath
+    if not os.path.exists(out_path):
+        os.makedirs(out_path)
     # clean data to write tags to
     clean_corpus = HypotheticalCorpus(clean_path)
     clean_data = list(clean_corpus.documents())
@@ -233,6 +236,7 @@ def generate_tags(train_path, test_path, clean_path, out_path):
 
 if __name__ == "__main__":
 
+    # DEMO
     train_path = './data/training'
     test_path = './data/baseline/test.configuration1/'
     clean_path = './data/baseline/test.configuration1/'

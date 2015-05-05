@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<SpaceEvalTaskv1.2>
+<TEXT><![CDATA[
+
+22-Mar-2008 -- On our easter holiday trip to Munich I convinced the family to visit this beautiful confluence. After having left the highway, it´s only a short trip through Augsburg and some smaller villages to come to this point.
+
+We drove some small roads along nice Bavarian meadows and stopped about 500 m away from the confluence. From here we had a wonderful view on the Alps while dancing towards the desired zeros.
+
+After taking our pictures we continued our trip to Munich and the Bavarian Alps where we went skiing for one perfect day.
+
+﻿http://confluence.org/confluence.php?id=2349]]></TEXT>
+<TAGS><MOTION end="43" id="m0" motion_class="" motion_sense="" motion_type="" start="39" text="trip"></MOTION>
+<MOTION_SIGNAL end="46" id="ms1" motion_signal_type="" start="44" text="to"></MOTION_SIGNAL>
+<PLACE countable="" dimensionality="" end="53" form="" id="pl2" mod="" start="47" text="Munich"></PLACE>
+<SPATIAL_ENTITY countable="" dimensionality="" end="55" form="" id="se3" mod="" start="54" text="I"></SPATIAL_ENTITY>
+<MOTION end="85" id="m4" motion_class="" motion_sense="" motion_type="" start="80" text="visit"></MOTION>
+<PATH countable="" dimensionality="" end="142" form="" id="p5" mod="" start="135" text="highway"></PATH>
+<MOTION end="166" id="m6" motion_class="" motion_sense="" motion_type="" start="162" text="trip"></MOTION>
+<MOTION_SIGNAL end="174" id="ms7" motion_signal_type="" start="167" text="through"></MOTION_SIGNAL>
+<PLACE countable="" dimensionality="" end="183" form="" id="pl8" mod="" start="175" text="Augsburg"></PLACE>
+<MOTION end="217" id="m9" motion_class="" motion_sense="" motion_type="" start="213" text="come"></MOTION>
+<MOTION_SIGNAL end="220" id="ms10" motion_signal_type="" start="218" text="to"></MOTION_SIGNAL>
+<PLACE countable="" dimensionality="" end="231" form="" id="pl11" mod="" start="226" text="point"></PLACE>
+<SPATIAL_ENTITY countable="" dimensionality="" end="236" form="" id="se12" mod="" start="234" text="We"></SPATIAL_ENTITY>
+<MOTION end="242" id="m13" motion_class="" motion_sense="" motion_type="" start="237" text="drove"></MOTION>
+<PATH countable="" dimensionality="" end="259" form="" id="p14" mod="" start="254" text="roads"></PATH>
+<SPATIAL_SIGNAL end="265" id="s15" semantic_type="" start="260" text="along"></SPATIAL_SIGNAL>
+<PLACE countable="" dimensionality="" end="270" form="" id="pl16" mod="" start="266" text="nice"></PLACE>
+<SPATIAL_SIGNAL end="316" id="s17" semantic_type="" start="312" text="away"></SPATIAL_SIGNAL>
+<PLACE countable="" dimensionality="" end="336" form="" id="pl18" mod="" start="326" text="confluence"></PLACE>
+<MOTION_SIGNAL end="342" id="ms19" motion_signal_type="" start="338" text="From"></MOTION_SIGNAL>
+<PLACE countable="" dimensionality="" end="347" form="" id="pl20" mod="" start="343" text="here"></PLACE>
+<SPATIAL_ENTITY countable="" dimensionality="" end="350" form="" id="se21" mod="" start="348" text="we"></SPATIAL_ENTITY>
+<MOTION end="397" id="m22" motion_class="" motion_sense="" motion_type="" start="390" text="dancing"></MOTION>
+<MOTION_SIGNAL end="405" id="ms23" motion_signal_type="" start="398" text="towards"></MOTION_SIGNAL>
+<SPATIAL_ENTITY countable="" dimensionality="" end="454" form="" id="se24" mod="" start="452" text="we"></SPATIAL_ENTITY>
+<MOTION end="473" id="m25" motion_class="" motion_sense="" motion_type="" start="469" text="trip"></MOTION>
+<MOTION_SIGNAL end="476" id="ms26" motion_signal_type="" start="474" text="to"></MOTION_SIGNAL>
+<PLACE countable="" dimensionality="" end="483" form="" id="pl27" mod="" start="477" text="Munich"></PLACE>
+<PLACE countable="" dimensionality="" end="505" form="" id="pl28" mod="" start="501" text="Alps"></PLACE>
+<SPATIAL_SIGNAL end="511" id="s29" semantic_type="" start="506" text="where"></SPATIAL_SIGNAL>
+<SPATIAL_ENTITY countable="" dimensionality="" end="514" form="" id="se30" mod="" start="512" text="we"></SPATIAL_ENTITY>
+<MOTION end="519" id="m31" motion_class="" motion_sense="" motion_type="" start="515" text="went"></MOTION>
+<NONMOTION_EVENT countable="" end="526" id="e32" mod="" start="520" text="skiing"></NONMOTION_EVENT>
+</TAGS>
+<TOKENS>
+<s>
+<lex begin="2" end="13">22-Mar-2008</lex>
+<lex begin="14" end="16">--</lex>
+<lex begin="17" end="19">On</lex>
+<lex begin="20" end="23">our</lex>
+<lex begin="24" end="30">easter</lex>
+<lex begin="31" end="38">holiday</lex>
+<lex begin="39" end="43">trip</lex>
+<lex begin="44" end="46">to</lex>
+<lex begin="47" end="53">Munich</lex>
+<lex begin="54" end="55">I</lex>
+<lex begin="56" end="65">convinced</lex>
+<lex begin="66" end="69">the</lex>
+<lex begin="70" end="76">family</lex>
+<lex begin="77" end="79">to</lex>
+<lex begin="80" end="85">visit</lex>
+<lex begin="86" end="90">this</lex>
+<lex begin="91" end="100">beautiful</lex>
+<lex begin="101" end="111">confluence</lex>
+<lex begin="111" end="112">.</lex>
+</s>
+<s>
+<lex begin="113" end="118">After</lex>
+<lex begin="119" end="125">having</lex>
+<lex begin="126" end="130">left</lex>
+<lex begin="131" end="134">the</lex>
+<lex begin="135" end="142">highway</lex>
+<lex begin="142" end="143">,</lex>
+<lex begin="144" end="148">it´s</lex>
+<lex begin="149" end="153">only</lex>
+<lex begin="154" end="155">a</lex>
+<lex begin="156" end="161">short</lex>
+<lex begin="162" end="166">trip</lex>
+<lex begin="167" end="174">through</lex>
+<lex begin="175" end="183">Augsburg</lex>
+<lex begin="184" end="187">and</lex>
+<lex begin="188" end="192">some</lex>
+<lex begin="193" end="200">smaller</lex>
+<lex begin="201" end="209">villages</lex>
+<lex begin="210" end="212">to</lex>
+<lex begin="213" end="217">come</lex>
+<lex begin="218" end="220">to</lex>
+<lex begin="221" end="225">this</lex>
+<lex begin="226" end="231">point</lex>
+<lex begin="231" end="232">.</lex>
+</s>
+<s>
+<lex begin="234" end="236">We</lex>
+<lex begin="237" end="242">drove</lex>
+<lex begin="243" end="247">some</lex>
+<lex begin="248" end="253">small</lex>
+<lex begin="254" end="259">roads</lex>
+<lex begin="260" end="265">along</lex>
+<lex begin="266" end="270">nice</lex>
+<lex begin="271" end="279">Bavarian</lex>
+<lex begin="280" end="287">meadows</lex>
+<lex begin="288" end="291">and</lex>
+<lex begin="292" end="299">stopped</lex>
+<lex begin="300" end="305">about</lex>
+<lex begin="306" end="309">500</lex>
+<lex begin="310" end="311">m</lex>
+<lex begin="312" end="316">away</lex>
+<lex begin="317" end="321">from</lex>
+<lex begin="322" end="325">the</lex>
+<lex begin="326" end="336">confluence</lex>
+<lex begin="336" end="337">.</lex>
+</s>
+<s>
+<lex begin="338" end="342">From</lex>
+<lex begin="343" end="347">here</lex>
+<lex begin="348" end="350">we</lex>
+<lex begin="351" end="354">had</lex>
+<lex begin="355" end="356">a</lex>
+<lex begin="357" end="366">wonderful</lex>
+<lex begin="367" end="371">view</lex>
+<lex begin="372" end="374">on</lex>
+<lex begin="375" end="378">the</lex>
+<lex begin="379" end="383">Alps</lex>
+<lex begin="384" end="389">while</lex>
+<lex begin="390" end="397">dancing</lex>
+<lex begin="398" end="405">towards</lex>
+<lex begin="406" end="409">the</lex>
+<lex begin="410" end="417">desired</lex>
+<lex begin="418" end="423">zeros</lex>
+<lex begin="423" end="424">.</lex>
+</s>
+<s>
+<lex begin="426" end="431">After</lex>
+<lex begin="432" end="438">taking</lex>
+<lex begin="439" end="442">our</lex>
+<lex begin="443" end="451">pictures</lex>
+<lex begin="452" end="454">we</lex>
+<lex begin="455" end="464">continued</lex>
+<lex begin="465" end="468">our</lex>
+<lex begin="469" end="473">trip</lex>
+<lex begin="474" end="476">to</lex>
+<lex begin="477" end="483">Munich</lex>
+<lex begin="484" end="487">and</lex>
+<lex begin="488" end="491">the</lex>
+<lex begin="492" end="500">Bavarian</lex>
+<lex begin="501" end="505">Alps</lex>
+<lex begin="506" end="511">where</lex>
+<lex begin="512" end="514">we</lex>
+<lex begin="515" end="519">went</lex>
+<lex begin="520" end="526">skiing</lex>
+<lex begin="527" end="530">for</lex>
+<lex begin="531" end="534">one</lex>
+<lex begin="535" end="542">perfect</lex>
+<lex begin="543" end="546">day</lex>
+<lex begin="546" end="547">.</lex>
+</s>
+<lex begin="549" end="594">﻿http://confluence.org/confluence.php?id=2349</lex>
+</TOKENS>
+</SpaceEvalTaskv1.2>

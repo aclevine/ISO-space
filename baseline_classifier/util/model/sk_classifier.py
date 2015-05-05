@@ -2,17 +2,19 @@
 '''
 Created on Sep 16, 2014
 
-@author: Einar Froyen, Aaron Levine
-'''
-import json
+@author: Aaron Levine
+@email: aclevine@brandeis.edu
 
-import os
+generalized class for loading data into variety of scikit-learn models 
+and then evaluating their performance on a test set.
+'''
+import os, json
 import numpy as np
 from sklearn.externals import joblib
 from sklearn.feature_extraction import DictVectorizer
-
 from util.model.alphabet import Alphabet
 from util.model.evaluator import ConfusionMatrix
+
 
 class SKClassifier():
     def __init__(self, clf, lfunc, ffuncs):
